@@ -1,0 +1,183 @@
+{
+  "Rows": {
+    "Count": 22
+  },
+  "Cols": {
+    "Count": 24
+  },
+  "AttachInfos": {
+    "0,1": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "ImageViewerCommand.ImageViewerCommand, ImageViewerCommand",
+            "TargetCell": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=图片详情页sj!B1"
+            },
+            "BreakpointIdentity": "7c3aaf54-06d3-479d-b5b4-93c36d8d9a80"
+          }
+        ]
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Underline": true
+      },
+      {
+        "FontFamily": null,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "宋体"
+      ]
+    },
+    "CellStyles": {
+      "0,0": 0,
+      "1,0": 0,
+      "2,0": 0,
+      "3,0": 0,
+      "4,0": 0,
+      "4,23": 0,
+      "5,0": 0,
+      "5,23": 0,
+      "6,0": 0,
+      "6,23": 0,
+      "7,0": 0,
+      "7,23": 0,
+      "8,0": 0,
+      "8,23": 0,
+      "9,0": 0,
+      "9,23": 0,
+      "10,0": 0,
+      "10,23": 0,
+      "11,0": 0,
+      "11,23": 0,
+      "12,0": 0,
+      "12,23": 0,
+      "13,0": 0,
+      "13,23": 0,
+      "14,0": 0,
+      "14,23": 0,
+      "15,0": 0,
+      "15,23": 0,
+      "16,0": 0,
+      "16,23": 0,
+      "17,0": 0,
+      "17,23": 0,
+      "18,0": 0,
+      "18,23": 0,
+      "19,0": 0,
+      "19,23": 0,
+      "20,0": 0,
+      "20,23": 0,
+      "21,1": 1
+    },
+    "RowStyles": {
+      "21": 2
+    },
+    "SheetStyle": {
+      "FontFamily": 0,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
+    }
+  },
+  "Spans": [
+    "0,1,21,22",
+    "21,1,1,2"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PageLoadedCommandList": [
+      {
+        "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+        "ConditionAndCommandPairList": [
+          {
+            "Condition": {
+              "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+              "param": {
+                "$type": "Forguncy.Model.IfConditionCurrentUserInfoParam, ServerDesignerCommon",
+                "currentUserProperty": {
+                  "UserProperty": "用户名"
+                }
+              },
+              "value": "杨金磊"
+            },
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
+                "PropertyItemsList": [
+                  {
+                    "Location": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=图片详情页sj!22:22"
+                    },
+                    "Value": false
+                  }
+                ],
+                "BreakpointIdentity": "c6467f85-54a8-4cac-9967-fe0f2013c39c"
+              }
+            ],
+            "ID": "b4d5e60a-ef7d-4b17-a3c6-e87e3d5eea54"
+          },
+          {
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
+                "PropertyItemsList": [
+                  {
+                    "Location": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=图片详情页sj!22:22"
+                    },
+                    "Value": true
+                  }
+                ],
+                "BreakpointIdentity": "59f4c6d2-d3e8-4908-8a85-b1c9c3ce4dd0"
+              }
+            ],
+            "ID": "9ff93589-a55b-4a08-8c56-1929e7feff55"
+          }
+        ],
+        "BreakpointIdentity": "dcd2136c-8cb5-4f36-879e-09707ea19cdd"
+      }
+    ],
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "库存表"
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//yoIyUILjN2dgkoGOwHchRseK4zs4gEuBc6Ihc4/GbjGtO8AWXSvAIntK+gcT8i5U5KGyS6AIpxZnbu28HKmnwQZQv8CB7augvMYlRUuQbJ2k0g/wJ2FO5dEyTn70of4deC9Xy/5CJVo10IMS1nrguQmkWYA6np3retroyXJ58ayx/NmqLVLhyGhE0BA3R86KFTeTs/8Qwug5T9QsonZvixxuKjDOd97ANXkTQSryPRwsOYOwkdQNGkqCUNdgT5FQ75I9B9FZH5nUPUrK+J7pxhRdvNkEgOe+0F1QnrIPPtjn2LinmL04pxqhEoFAy512TWrrJB3vaHMfl17OgVJ39Lnv+p2nqKvNNS+n9SuRyw+UafpeN2oL8pLTap7mUOuF2sYwgqEv9nW8st9Hdb/mDBnfSyz8Gl++EPGjgBVfXDCEPUc2NgGk9d/VDxfzJZRZeOSybLY7/NMaQxu40I/d6Fp5B3w2vFYtggQvdKoJjofEBapMng/CSudTaPb7jqoCvLn1aJXauw7LTq1JQQ0P1ZO/jeuPkD9QJB/BsZNXb3LPS1o0WvXBcKEW/F6ME8Gdaz34s8jBQcxQEWSuBP/t88/SQV0CesrGYhr2XlvNBrfS7NtnqZ1AtklP4FEiPDmuMSarjm59uxOnUfpOp2UaFPlG+CjEF7Q8PUzs5YCtHQpRe1NrXQIKfsVoQhU7HSkNTpmydeGXDdhkh1gvr4nrHL48SP5y4rakuwEG+/ot6NtLGG59QtaFVZP44fryWmv3jmbYONAePxniCyOF321mnHmZ2Xk17bRJr5iAwKzPOBvvNRhVYSGFu0kVRusEF/wYzA46yDfxAKWHtyK1loP4RohjiuQts6zfy58Wgmu1ExvYUERqPqTUrL0bPmAhUTnkI/ZqH6t9hhxx0K7pZaVA7g==|920

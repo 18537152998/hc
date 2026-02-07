@@ -1,0 +1,1099 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "28": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      }
+    },
+    "Count": 29
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 34.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 27.0
+        }
+      },
+      "39": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 46.0
+        }
+      },
+      "41": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 57.0
+        }
+      },
+      "43": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 43.0
+        }
+      },
+      "55": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      }
+    },
+    "Count": 56
+  },
+  "Values": {
+    "1,3": "国家",
+    "1,13": "仓库代码",
+    "1,27": "邮编",
+    "1,46": "查询",
+    "1,51": "显示全部",
+    "3,1": "删除",
+    "3,3": "地址",
+    "3,27": "偏远类型",
+    "5,7": "代码",
+    "5,30": "电话",
+    "5,37": "仓库代码",
+    "5,40": "偏远类型",
+    "5,41": "分区"
+  },
+  "AttachInfos": {
+    "1,7": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "ShowDropdownButtonWhenGetFocus": 2,
+        "SelectOnly": false,
+        "ValidateItem": true,
+        "LoadOnDemand": true,
+        "TemplateKey": "样式3",
+        "IsBounding": true,
+        "DataSource": "FBA仓库",
+        "ValueColumnBindingInfo": {
+          "TableName": "FBA仓库",
+          "ColumnName": "国家",
+          "GUID": "807d19ba-7258-4da6-bf80-bc18f8914fd8"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "FBA仓库",
+          "ColumnName": "国家",
+          "GUID": "920bbece-18aa-42f0-954c-7ef3c6bde4e2"
+        },
+        "AddNullItemWhenBinding": true
+      }
+    },
+    "1,18": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "ShowDropdownButtonWhenGetFocus": 2,
+        "SelectOnly": false,
+        "ValidateItem": true,
+        "LoadOnDemand": true,
+        "TemplateKey": "样式3",
+        "IsBounding": true,
+        "DataSource": "FBA仓库",
+        "ValueColumnBindingInfo": {
+          "TableName": "FBA仓库",
+          "ColumnName": "仓库代码",
+          "GUID": "bdca0bb9-89b9-4b03-a24a-0ebf809e7bea"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "FBA仓库",
+          "ColumnName": "仓库代码",
+          "GUID": "e21c40a2-242e-4e09-8a72-b76316a482ee"
+        },
+        "DropDownSubItems": [
+          {
+            "GUID": "0be447f91c7f439bbbd21883483ca890",
+            "BindingInfo": {
+              "TableName": "FBA仓库",
+              "ColumnName": "邮编",
+              "GUID": "45a18e7d-2a00-4e36-99c9-0a1ba66d622d"
+            },
+            "ColumnName": "邮编",
+            "Alignment": 3
+          }
+        ],
+        "AddNullItemWhenBinding": true
+      }
+    },
+    "1,32": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "样式3"
+      }
+    },
+    "1,46": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "FBA仓库",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "SubConditions": [
+                {
+                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 6,
+                  "ColumnBindingInfo": {
+                    "TableName": "FBA仓库",
+                    "ColumnName": "国家",
+                    "GUID": "0ef0c025-e498-4ba9-9e11-5800c1bff9af"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=偏远查询!H2"
+                  }
+                },
+                {
+                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 6,
+                  "ColumnBindingInfo": {
+                    "TableName": "FBA仓库",
+                    "ColumnName": "邮编",
+                    "GUID": "42b4e84b-9873-4435-8a6f-19fa514575aa"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=偏远查询!AG2"
+                  }
+                },
+                {
+                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 6,
+                  "ColumnBindingInfo": {
+                    "TableName": "FBA仓库",
+                    "ColumnName": "偏远类型",
+                    "GUID": "d797540c-e8d3-4df8-8af3-85001afc0e95"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=偏远查询!AG4"
+                  }
+                },
+                {
+                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 6,
+                  "ColumnBindingInfo": {
+                    "TableName": "FBA仓库",
+                    "ColumnName": "拼接地址",
+                    "GUID": "eda594bc-cd65-42e8-b30c-459e25cb6a8d"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=偏远查询!H4"
+                  }
+                },
+                {
+                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 6,
+                  "ColumnBindingInfo": {
+                    "TableName": "FBA仓库",
+                    "ColumnName": "仓库代码",
+                    "GUID": "2860720c-3631-4636-a4bd-895460b53cbf"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=偏远查询!S2"
+                  }
+                }
+              ],
+              "RelationType": 1
+            },
+            "ID": "c6e10767773948998b3b8b01fee92983",
+            "BreakpointIdentity": "4f11437d-bc07-4858-9d15-5e14a1943a4e"
+          },
+          {
+            "$type": "SetCurrentRowCommand.SetCurrentRowCommand, SetCurrentRowCommand",
+            "CurrentRowInfo": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "SubConditions": [
+                {
+                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 6,
+                  "ColumnBindingInfo": {
+                    "TableName": "FBA仓库",
+                    "ColumnName": "仓库代码",
+                    "GUID": "ff665914-7db1-41da-bff9-0c13291ec480"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=偏远查询!S2"
+                  }
+                },
+                {
+                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 6,
+                  "ColumnBindingInfo": {
+                    "TableName": "FBA仓库",
+                    "ColumnName": "邮编",
+                    "GUID": "347b028f-793c-484f-838a-3796944e246b"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=偏远查询!AG2"
+                  }
+                }
+              ],
+              "RelationType": 1
+            },
+            "BreakpointIdentity": "fb33e202-2efb-43af-9d0a-38fb2cee2930"
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "SubConditions": [
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=偏远查询!H2"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=偏远查询!S2"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=偏远查询!AG4"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=偏远查询!I4"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=偏远查询!H4"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    }
+                  ]
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "请输入【国家/邮编/地址/仓库代码/偏远类型】等信息查询",
+                    "BreakpointIdentity": "2d8f0e80-475a-4949-b2ba-c492f71ff7eb"
+                  }
+                ],
+                "ID": "f8eecea0-c81c-4934-b0b1-79b61f1cfa78"
+              },
+              {
+                "CommandList": [],
+                "ID": "bf524c76-d197-4ba4-8e19-2783cf10dff9"
+              }
+            ],
+            "Disabled": true,
+            "BreakpointIdentity": "e9906a41-bb6a-4037-a69c-dadad1d0f096"
+          }
+        ],
+        "Text": "查询",
+        "TemplateKey": "透明按钮_无底色_",
+        "Icon": {
+          "Name": "Application/047_search_8.svg",
+          "BuiltIn": true,
+          "Color": "Background 1 0"
+        },
+        "IconSize": 20.0
+      }
+    },
+    "1,51": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "FBA仓库",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 1,
+              "ColumnBindingInfo": {
+                "TableName": "FBA仓库",
+                "ColumnName": "ID",
+                "GUID": "ae299fb2-6169-4191-8fa4-818997769351"
+              },
+              "Value": "%Null%"
+            },
+            "ID": "09d461ea615948069ad6fa9cdb03c211",
+            "BreakpointIdentity": "5be1e2c3-3fb1-407c-b31b-c61c3f38b701"
+          }
+        ],
+        "Text": "显示全部",
+        "TemplateKey": "样式8"
+      }
+    },
+    "3,1": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+            "TableName": "FBA仓库",
+            "UpdateType": "delete",
+            "ShowConfirm": true,
+            "ConfirmText": "您确定要删除吗？",
+            "RowsToUpdate": 2,
+            "RowsToUpdateListViewName": "表格1",
+            "ParamNameToSaveNewRowValue": "NewRow",
+            "BreakpointIdentity": "8435ab59-43bd-4c28-aed6-4d1cf63ceb1c"
+          }
+        ],
+        "Text": "删除",
+        "TemplateKey": "透明按钮_无底色_"
+      }
+    },
+    "3,7": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "样式3"
+      }
+    },
+    "3,32": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "ShowDropdownButtonWhenGetFocus": 2,
+        "SelectOnly": false,
+        "ValidateItem": true,
+        "TemplateKey": "样式3",
+        "IsBounding": true,
+        "DataSource": "FBA仓库",
+        "ValueColumnBindingInfo": {
+          "TableName": "FBA仓库",
+          "ColumnName": "偏远类型",
+          "GUID": "7656f55c-34ae-4bc7-9e18-7468f93d1691"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "FBA仓库",
+          "ColumnName": "偏远类型",
+          "GUID": "6651996e-302d-4cf4-a8e2-c94e5273f144"
+        },
+        "ItemsQuery": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "FBA仓库",
+            "ColumnName": "国家",
+            "GUID": "bd6f5a1b-b4b8-453e-9df9-0a098e43ded3"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=偏远查询!H2"
+          }
+        },
+        "AddNullItemWhenBinding": true
+      }
+    },
+    "5,1": {
+      "ListViewInfo": {
+        "Name": "表格1",
+        "TableName": "FBA仓库",
+        "RowIndex": 5,
+        "ColumnIndex": 1,
+        "RowCount": 23,
+        "ColumnCount": 54,
+        "TopCondition": null,
+        "ListViewStyleName": "样式4",
+        "ShowColumnHeaderInDesigner": true,
+        "IsRowHeaderVisible": true,
+        "IsRowHeaderCheckBoxVisible": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "AllowEditInListview": true,
+        "AllowAddNewRow": true,
+        "ShowDeleteButton": true,
+        "ColumnOperation": 2,
+        "DoNotLoadDataWhenLoadPage": true
+      }
+    },
+    "6,4": {
+      "BindingInfo": {
+        "TableName": "FBA仓库",
+        "ColumnName": "国家",
+        "GUID": "8865ddab-c891-4179-9b45-33a1db9e2e03"
+      }
+    },
+    "6,7": {
+      "BindingInfo": {
+        "TableName": "FBA仓库",
+        "ColumnName": "国家代码",
+        "GUID": "99fcc4f4-f34d-41db-9634-007c8a19e31c"
+      }
+    },
+    "6,9": {
+      "BindingInfo": {
+        "TableName": "FBA仓库",
+        "ColumnName": "州省",
+        "GUID": "2466266e-cd83-4568-a175-c141538b5c71"
+      }
+    },
+    "6,14": {
+      "BindingInfo": {
+        "TableName": "FBA仓库",
+        "ColumnName": "城市",
+        "GUID": "f772e320-d3ee-4525-8667-ffdf0d657b83"
+      }
+    },
+    "6,20": {
+      "BindingInfo": {
+        "TableName": "FBA仓库",
+        "ColumnName": "地址",
+        "GUID": "d4323500-4685-4881-a375-fc6d93ef9568"
+      }
+    },
+    "6,30": {
+      "BindingInfo": {
+        "TableName": "FBA仓库",
+        "ColumnName": "收件电话",
+        "GUID": "c02e10ff-0646-40c8-8021-bdb1f2ec883a"
+      }
+    },
+    "6,32": {
+      "BindingInfo": {
+        "TableName": "FBA仓库",
+        "ColumnName": "邮编",
+        "GUID": "eb5d78ab-09f0-4c45-9f80-57879a66509e"
+      }
+    },
+    "6,37": {
+      "BindingInfo": {
+        "TableName": "FBA仓库",
+        "ColumnName": "仓库代码",
+        "GUID": "3e807247-d82a-4c85-acf7-6aeb206be50d"
+      }
+    },
+    "6,41": {
+      "BindingInfo": {
+        "TableName": "FBA仓库",
+        "ColumnName": "收费分区",
+        "GUID": "ce4bf232-b78e-4ae6-8d52-2547f3f198ea"
+      }
+    },
+    "6,42": {
+      "BindingInfo": {
+        "TableName": "FBA仓库",
+        "ColumnName": "是_否偏远",
+        "GUID": "d7f85f38-a115-47d9-9070-79b9106c16e1"
+      }
+    },
+    "6,45": {
+      "BindingInfo": {
+        "TableName": "FBA仓库",
+        "ColumnName": "偏远类型",
+        "GUID": "fd5f54a5-15cf-4bcd-9738-28c1ef4c060d"
+      }
+    },
+    "6,49": {
+      "BindingInfo": {
+        "TableName": "FBA仓库",
+        "ColumnName": "偏远渠道",
+        "GUID": "c99655b2-252e-414c-91e6-f0fdcf41281c"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "FontWeight": 1,
+        "HorizontalAlignment": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Formatter": 4,
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 5,
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "FontWeight": 1,
+        "Foreground": 6,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "FontWeight": 1,
+        "Foreground": 6,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontSize": 16.0,
+        "FontWeight": 1,
+        "HorizontalAlignment": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "FontWeight": 1,
+        "Foreground": 7,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 4,
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": 1,
+        "BorderLeft": 1,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": 1,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 6,
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "FontWeight": 1,
+        "BorderBottom": 2,
+        "BorderTop": 2,
+        "BorderLeft": 2,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": 2,
+        "BorderTop": 2,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": 2,
+        "BorderTop": 2,
+        "BorderLeft": null,
+        "BorderRight": 2
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": 1,
+        "BorderLeft": null,
+        "BorderRight": 1
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": 1,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": 1
+      },
+      {
+        "BorderBottom": 1,
+        "BorderTop": null,
+        "BorderLeft": 1,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": 1,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": 1,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": 1
+      },
+      {
+        "FontSize": 16.0,
+        "FontWeight": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "Bold",
+        "Right",
+        "black",
+        "@",
+        "Accent 1 0",
+        "Background 1 0",
+        "#FFFF0000",
+        "DarkGray",
+        "Text 1 50"
+      ],
+      "Borders": [
+        {
+          "Color": 3
+        },
+        {
+          "Color": 8
+        },
+        {
+          "Color": 9
+        }
+      ]
+    },
+    "CellStyles": {
+      "1,2": 0,
+      "1,3": 1,
+      "1,4": 0,
+      "1,5": 0,
+      "1,7": 2,
+      "1,8": 2,
+      "1,9": 2,
+      "1,10": 2,
+      "1,11": 2,
+      "1,12": 0,
+      "1,13": 1,
+      "1,14": 0,
+      "1,15": 0,
+      "1,16": 0,
+      "1,17": 0,
+      "1,18": 2,
+      "1,19": 3,
+      "1,20": 3,
+      "1,21": 3,
+      "1,22": 3,
+      "1,23": 3,
+      "1,24": 3,
+      "1,25": 3,
+      "1,27": 1,
+      "1,32": 4,
+      "1,33": 3,
+      "1,34": 3,
+      "1,35": 3,
+      "1,36": 3,
+      "1,46": 5,
+      "1,47": 0,
+      "1,48": 0,
+      "1,49": 0,
+      "1,51": 6,
+      "1,52": 0,
+      "1,53": 0,
+      "1,54": 0,
+      "2,1": 7,
+      "2,2": 7,
+      "2,3": 7,
+      "2,4": 7,
+      "2,5": 7,
+      "3,1": 8,
+      "3,3": 1,
+      "3,6": 0,
+      "3,7": 9,
+      "3,8": 2,
+      "3,9": 2,
+      "3,10": 2,
+      "3,11": 2,
+      "3,12": 2,
+      "3,13": 2,
+      "3,14": 2,
+      "3,15": 2,
+      "3,16": 2,
+      "3,17": 2,
+      "3,18": 2,
+      "3,19": 2,
+      "3,20": 2,
+      "3,21": 2,
+      "3,22": 2,
+      "3,23": 2,
+      "3,24": 2,
+      "3,25": 2,
+      "3,27": 1,
+      "3,28": 0,
+      "3,29": 0,
+      "3,30": 0,
+      "3,31": 0,
+      "3,32": 2,
+      "3,33": 2,
+      "3,34": 2,
+      "3,35": 2,
+      "3,36": 2,
+      "5,1": 10,
+      "5,2": 11,
+      "5,3": 11,
+      "5,4": 11,
+      "5,5": 11,
+      "5,6": 11,
+      "5,7": 11,
+      "5,8": 11,
+      "5,9": 11,
+      "5,10": 11,
+      "5,11": 11,
+      "5,12": 11,
+      "5,13": 11,
+      "5,14": 11,
+      "5,15": 11,
+      "5,16": 11,
+      "5,17": 11,
+      "5,18": 11,
+      "5,19": 11,
+      "5,20": 11,
+      "5,21": 11,
+      "5,22": 11,
+      "5,23": 11,
+      "5,24": 11,
+      "5,25": 11,
+      "5,26": 11,
+      "5,27": 11,
+      "5,28": 11,
+      "5,29": 11,
+      "5,30": 11,
+      "5,31": 11,
+      "5,32": 11,
+      "5,33": 11,
+      "5,34": 11,
+      "5,35": 11,
+      "5,36": 11,
+      "5,37": 11,
+      "5,38": 11,
+      "5,39": 11,
+      "5,40": 12,
+      "5,41": 13,
+      "5,42": 13,
+      "5,43": 14,
+      "5,44": 11,
+      "5,45": 11,
+      "5,46": 11,
+      "5,47": 11,
+      "5,48": 11,
+      "5,49": 11,
+      "5,50": 11,
+      "5,51": 11,
+      "5,52": 11,
+      "5,53": 11,
+      "5,54": 15,
+      "6,1": 16,
+      "6,9": 0,
+      "6,10": 0,
+      "6,11": 0,
+      "6,12": 0,
+      "6,13": 0,
+      "6,14": 0,
+      "6,15": 0,
+      "6,16": 0,
+      "6,17": 0,
+      "6,18": 0,
+      "6,19": 0,
+      "6,20": 0,
+      "6,21": 0,
+      "6,22": 0,
+      "6,23": 0,
+      "6,24": 0,
+      "6,25": 0,
+      "6,26": 0,
+      "6,27": 0,
+      "6,28": 0,
+      "6,29": 0,
+      "6,32": 0,
+      "6,33": 0,
+      "6,34": 0,
+      "6,35": 0,
+      "6,36": 0,
+      "6,37": 0,
+      "6,38": 0,
+      "6,39": 0,
+      "6,40": 0,
+      "6,41": 0,
+      "6,42": 0,
+      "6,43": 0,
+      "6,44": 0,
+      "6,45": 0,
+      "6,54": 17,
+      "7,1": 16,
+      "7,54": 17,
+      "8,1": 16,
+      "8,54": 17,
+      "9,1": 16,
+      "9,54": 17,
+      "10,1": 16,
+      "10,54": 17,
+      "11,1": 16,
+      "11,54": 17,
+      "12,1": 16,
+      "12,54": 17,
+      "13,1": 16,
+      "13,54": 17,
+      "14,1": 16,
+      "14,54": 17,
+      "15,1": 16,
+      "15,54": 17,
+      "16,1": 16,
+      "16,54": 17,
+      "17,1": 16,
+      "17,54": 17,
+      "18,1": 16,
+      "18,54": 17,
+      "19,1": 16,
+      "19,54": 17,
+      "20,1": 16,
+      "20,54": 17,
+      "21,1": 16,
+      "21,54": 17,
+      "22,1": 16,
+      "22,54": 17,
+      "23,1": 16,
+      "23,54": 17,
+      "24,1": 16,
+      "24,54": 17,
+      "25,1": 16,
+      "25,54": 17,
+      "26,1": 16,
+      "26,54": 17,
+      "27,1": 18,
+      "27,2": 19,
+      "27,3": 19,
+      "27,4": 19,
+      "27,5": 19,
+      "27,6": 19,
+      "27,7": 19,
+      "27,8": 19,
+      "27,9": 19,
+      "27,10": 19,
+      "27,11": 19,
+      "27,12": 19,
+      "27,13": 19,
+      "27,14": 19,
+      "27,15": 19,
+      "27,16": 19,
+      "27,17": 19,
+      "27,18": 19,
+      "27,19": 19,
+      "27,20": 19,
+      "27,21": 19,
+      "27,22": 19,
+      "27,23": 19,
+      "27,24": 19,
+      "27,25": 19,
+      "27,26": 19,
+      "27,27": 19,
+      "27,28": 19,
+      "27,29": 19,
+      "27,30": 19,
+      "27,31": 19,
+      "27,32": 19,
+      "27,33": 19,
+      "27,34": 19,
+      "27,35": 19,
+      "27,36": 19,
+      "27,37": 19,
+      "27,38": 19,
+      "27,39": 19,
+      "27,40": 19,
+      "27,41": 19,
+      "27,42": 19,
+      "27,43": 19,
+      "27,44": 19,
+      "27,45": 19,
+      "27,46": 19,
+      "27,47": 19,
+      "27,48": 19,
+      "27,49": 19,
+      "27,50": 19,
+      "27,51": 19,
+      "27,52": 19,
+      "27,53": 19,
+      "27,54": 20
+    },
+    "RowStyles": {
+      "5": 21
+    },
+    "SheetStyle": {
+      "FontFamily": 0,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
+    }
+  },
+  "Spans": [
+    "1,3,1,3",
+    "1,7,1,5",
+    "1,13,1,4",
+    "1,18,1,8",
+    "1,27,1,4",
+    "1,32,1,5",
+    "1,46,1,4",
+    "1,51,1,4",
+    "3,1,1,2",
+    "3,3,1,3",
+    "3,7,1,19",
+    "3,27,1,4",
+    "3,32,1,5",
+    "6,1,1,2",
+    "6,4,1,3",
+    "6,7,1,2",
+    "6,9,1,5",
+    "6,14,1,6",
+    "6,20,1,10",
+    "6,30,1,2",
+    "6,32,1,5",
+    "6,37,1,4",
+    "6,42,1,3",
+    "6,45,1,4",
+    "6,49,1,6",
+    "7,1,21,54",
+    "5,1,1,2",
+    "5,4,1,3",
+    "5,7,1,2",
+    "5,9,1,5",
+    "5,14,1,6",
+    "5,20,1,10",
+    "5,30,1,2",
+    "5,32,1,5",
+    "5,37,1,4",
+    "5,42,1,3",
+    "5,45,1,4",
+    "5,49,1,6"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//tTkcP8fTR+UgyJqc66HZZl/zw36Nh26YXLBuBraDRYahJ0sVzz9KiIYJvsDQh3F8+/xZFEJJRBG846dVmlbi+5zIwYIo5BmIg++zb4zgbPSXD8VwHuZlEnQuq6cEyybLWLivYYg4zH8I8UEBqvafc8qFCo6BNf0SlP7tOFNzhgaSxfC3FU1+NHnD1OgURQ7bYjZBfDZP/PKSmSQocL2EeK9pl2n8uQc6sR+H7DM4m/mcRCREIMEmQJMU1Ddm80pBFO1A50RWNE6Ovuxz+zpaa7YXsKf4QiwALLwN42dPTWpuk48imLLzOh1WACToaTyi2BNEqlecPWmhV0h0Of1ZI4aS1wzc3K2YqYymLlfK8yc4MKqExzzFreydOPMN4zcZ9sgqp8FP9bHdJDyGfoYba+jqaCSMWHx7ZePUUlMBSmJW0dLdxnUyTeT2ar4DTZ3OJGHSRPXqMnaFKk9GJ0ME1j/+e3wHQLk6tDQjFUAHC2l61KOiutjwAsf4b+dAUUbyUU3i9zK6Oo/XbXjuClmW6tbSbIOuNENuOTGTiC29MGVZmRCaZpj/g0gaWcUQF0KGl2L7C+WZ02c5u8Ebvmi7pNyn/f0FdOemA8AfnbuL+Ibvd/Ejk9hpFVf9cE74qmKEfx98nP386gxf8M8appMkzerbDgKeba1K0Ts9qwF2Tzd+Cl1g6nYnLDnRf6jlGOpMzG+g6lSKR8tnxKjqZDKebKKLMJOmMJvMGzEC7io1EmJEzsoV8Vzyr18MfiK/8S/nlcUOkWODsLEeLj9JYoja4CMsXC6V3dUvGxADnkOfE+PjA0Tz764XiEPfzJM5bq1kJwEIT53GxpwsmO4yEYoFWnPyiyG9EHOKReK+lILgsz4gW6x+qBoGaR2Rbru1Luxti4KbJheHtpcgq8ZGDPpwwA==|920

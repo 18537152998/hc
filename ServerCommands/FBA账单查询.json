@@ -1,0 +1,538 @@
+{
+  "$type": "Forguncy.SaveLoad.ServerCommandSaveData, ServerDesignerCommon",
+  "Name": "FBA账单查询",
+  "Enabled": true,
+  "Triggers": {
+    "$type": "System.Collections.Generic.List`1[[Forguncy.SaveLoad.TriggerSaveDataBase, ServerDesignerCommon]], System.Private.CoreLib",
+    "$values": [
+      {
+        "$type": "Forguncy.SaveLoad.PostRequestTriggerSaveData, ServerDesignerCommon",
+        "Permission": {
+          "$type": "Forguncy.SaveLoad.ServerCommandPermissionSaveData, ServerDesignerCommon",
+          "PermissionData": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionData, Forguncy.RbacPermission.Core",
+            "permissionResource": {
+              "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionResource, Forguncy.RbacPermission.Core"
+            },
+            "permissionBindings": {
+              "$type": "System.Collections.Generic.List`1[[Forguncy.RbacPermission.Core.Impl.ServerCommand.IServerCommandPermissionBinding, Forguncy.RbacPermission.Core]], System.Private.CoreLib",
+              "$values": [
+                {
+                  "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionBinding, Forguncy.RbacPermission.Core",
+                  "roleNames": {
+                    "$type": "System.Collections.Generic.List`1[[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+                    "$values": [
+                      "FGC_LoginUser"
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "Parameters": {
+          "$type": "System.Collections.Generic.List`1[[Forguncy.SaveLoad.PostRequestParameterSaveData, ServerDesignerCommon]], System.Private.CoreLib",
+          "$values": [
+            {
+              "$type": "Forguncy.SaveLoad.PostRequestParameterSaveData, ServerDesignerCommon",
+              "Type": 1,
+              "ArrayParamItems": {
+                "$type": "System.Collections.Generic.List`1[[Forguncy.SaveLoad.ParameterItemSaveData, ServerDesignerCommon]], System.Private.CoreLib",
+                "$values": [
+                  {
+                    "$type": "Forguncy.SaveLoad.ParameterItemSaveData, ServerDesignerCommon",
+                    "Name": "fbaid",
+                    "DataValidationInfo": {
+                      "$type": "Forguncy.SaveLoad.DataValidationInfoSaveData, ServerDesignerCommon"
+                    }
+                  },
+                  {
+                    "$type": "Forguncy.SaveLoad.ParameterItemSaveData, ServerDesignerCommon",
+                    "Name": "对账码",
+                    "DataValidationInfo": {
+                      "$type": "Forguncy.SaveLoad.DataValidationInfoSaveData, ServerDesignerCommon"
+                    }
+                  }
+                ]
+              },
+              "Name": "FBA发货表",
+              "DataValidationInfo": {
+                "$type": "Forguncy.SaveLoad.DataValidationInfoSaveData, ServerDesignerCommon"
+              }
+            },
+            {
+              "$type": "Forguncy.SaveLoad.PostRequestParameterSaveData, ServerDesignerCommon",
+              "Type": 1,
+              "ArrayParamItems": {
+                "$type": "System.Collections.Generic.List`1[[Forguncy.SaveLoad.ParameterItemSaveData, ServerDesignerCommon]], System.Private.CoreLib",
+                "$values": [
+                  {
+                    "$type": "Forguncy.SaveLoad.ParameterItemSaveData, ServerDesignerCommon",
+                    "Name": "主单号",
+                    "DataValidationInfo": {
+                      "$type": "Forguncy.SaveLoad.DataValidationInfoSaveData, ServerDesignerCommon"
+                    }
+                  },
+                  {
+                    "$type": "Forguncy.SaveLoad.ParameterItemSaveData, ServerDesignerCommon",
+                    "Name": "发票唛头",
+                    "DataValidationInfo": {
+                      "$type": "Forguncy.SaveLoad.DataValidationInfoSaveData, ServerDesignerCommon"
+                    }
+                  },
+                  {
+                    "$type": "Forguncy.SaveLoad.ParameterItemSaveData, ServerDesignerCommon",
+                    "Name": "shipmentID",
+                    "DataValidationInfo": {
+                      "$type": "Forguncy.SaveLoad.DataValidationInfoSaveData, ServerDesignerCommon"
+                    }
+                  },
+                  {
+                    "$type": "Forguncy.SaveLoad.ParameterItemSaveData, ServerDesignerCommon",
+                    "Name": "服务商单号",
+                    "DataValidationInfo": {
+                      "$type": "Forguncy.SaveLoad.DataValidationInfoSaveData, ServerDesignerCommon"
+                    }
+                  }
+                ]
+              },
+              "Name": "账单对账",
+              "DataValidationInfo": {
+                "$type": "Forguncy.SaveLoad.DataValidationInfoSaveData, ServerDesignerCommon"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "Commands": {
+    "$type": "System.Collections.Generic.List`1[[GrapeCity.Forguncy.Commands.Command, Forguncy.Commands]], System.Private.CoreLib",
+    "$values": [
+      {
+        "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+        "TableName": "对账详情表",
+        "ShowConfirm": false,
+        "RowsToUpdate": 1,
+        "RowsToUpdateCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "SubConditions": {
+            "$type": "System.Collections.Generic.List`1[[ForguncyDataAccess.ISqlCondition, ForguncyDataAccess]], System.Private.CoreLib",
+            "$values": [
+              {
+                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                "SubConditions": {
+                  "$type": "System.Collections.Generic.List`1[[ForguncyDataAccess.ISqlCondition, ForguncyDataAccess]], System.Private.CoreLib",
+                  "$values": [
+                    {
+                      "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                      "CompareType": 8,
+                      "ColumnBindingInfo": {
+                        "$type": "ForguncyDataAccess.BindingInfo, ForguncyDataAccess",
+                        "TableName": "对账详情表",
+                        "ColumnName": "运单号",
+                        "GUID": "ee7aab1c-8acb-4638-95b6-b392696a8c24"
+                      },
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=Item.对账码"
+                      },
+                      "LeftBracket": 1
+                    },
+                    {
+                      "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                      "CompareType": 8,
+                      "ColumnBindingInfo": {
+                        "$type": "ForguncyDataAccess.BindingInfo, ForguncyDataAccess",
+                        "TableName": "对账详情表",
+                        "ColumnName": "自定义唛头",
+                        "GUID": "a8a72674-aaab-446e-89b8-42e101ef4849"
+                      },
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=Item.对账码"
+                      }
+                    },
+                    {
+                      "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                      "CompareType": 8,
+                      "ColumnBindingInfo": {
+                        "$type": "ForguncyDataAccess.BindingInfo, ForguncyDataAccess",
+                        "TableName": "对账详情表",
+                        "ColumnName": "FBA_ID",
+                        "GUID": "e81cb53d-cdb7-4e6d-b748-4799416b018d"
+                      },
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=Item.对账码"
+                      }
+                    },
+                    {
+                      "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                      "CompareType": 8,
+                      "ColumnBindingInfo": {
+                        "$type": "ForguncyDataAccess.BindingInfo, ForguncyDataAccess",
+                        "TableName": "对账详情表",
+                        "ColumnName": "服务商单号",
+                        "GUID": "a7a4b83c-0d56-4884-9c17-8484104bfc1e"
+                      },
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=Item.对账码"
+                      },
+                      "RightBracket": 1
+                    }
+                  ]
+                },
+                "RelationType": 1
+              },
+              {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "$type": "ForguncyDataAccess.BindingInfo, ForguncyDataAccess",
+                  "TableName": "对账详情表",
+                  "ColumnName": "自发对账ID",
+                  "GUID": "ed9c9940-c3bb-45fa-9e6d-c300e8737ba3"
+                },
+                "Value": "%Null%"
+              }
+            ]
+          }
+        },
+        "UpdateBindingValues": {
+          "$type": "System.Collections.Generic.List`1[[Forguncy.Model.UpdateBindingValueItem, ServerDesignerCommon]], System.Private.CoreLib",
+          "$values": [
+            {
+              "$type": "Forguncy.Model.UpdateBindingValueItem, ServerDesignerCommon",
+              "BindingInfo": {
+                "$type": "ForguncyDataAccess.BindingInfo, ForguncyDataAccess",
+                "TableName": "对账详情表",
+                "ColumnName": "FBA对账ID",
+                "GUID": "35a895ec-3561-44bb-946d-9f475c3874b4"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=Item.fbaid"
+              }
+            },
+            {
+              "$type": "Forguncy.Model.UpdateBindingValueItem, ServerDesignerCommon",
+              "BindingInfo": {
+                "$type": "ForguncyDataAccess.BindingInfo, ForguncyDataAccess",
+                "TableName": "对账详情表",
+                "ColumnName": "来源",
+                "GUID": "12c5bd7e-748e-4a24-b7d2-c705e1cad8d5"
+              },
+              "Value": "FBA"
+            },
+            {
+              "$type": "Forguncy.Model.UpdateBindingValueItem, ServerDesignerCommon",
+              "BindingInfo": {
+                "$type": "ForguncyDataAccess.BindingInfo, ForguncyDataAccess",
+                "TableName": "对账详情表",
+                "ColumnName": "归属地",
+                "GUID": "37339b95-e7d9-4892-a54b-37dbf3410aa0"
+              },
+              "Value": "杭州"
+            },
+            {
+              "$type": "Forguncy.Model.UpdateBindingValueItem, ServerDesignerCommon",
+              "BindingInfo": {
+                "$type": "ForguncyDataAccess.BindingInfo, ForguncyDataAccess",
+                "TableName": "对账详情表",
+                "ColumnName": "平台",
+                "GUID": "1472f3c6-9e29-4b0f-ae3f-ebeac201b662"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=Item.账户"
+              }
+            },
+            {
+              "$type": "Forguncy.Model.UpdateBindingValueItem, ServerDesignerCommon",
+              "BindingInfo": {
+                "$type": "ForguncyDataAccess.BindingInfo, ForguncyDataAccess",
+                "TableName": "对账详情表",
+                "ColumnName": "站点",
+                "GUID": "d5fd3f2d-a716-409f-83b6-1ac9c357b9c3"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=Item.站点"
+              }
+            },
+            {
+              "$type": "Forguncy.Model.UpdateBindingValueItem, ServerDesignerCommon",
+              "BindingInfo": {
+                "$type": "ForguncyDataAccess.BindingInfo, ForguncyDataAccess",
+                "TableName": "对账详情表",
+                "ColumnName": "件数",
+                "GUID": "1f7cb940-bfac-49d7-8320-a99ee7f8a243"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=Item.件数"
+              }
+            },
+            {
+              "$type": "Forguncy.Model.UpdateBindingValueItem, ServerDesignerCommon",
+              "BindingInfo": {
+                "$type": "ForguncyDataAccess.BindingInfo, ForguncyDataAccess",
+                "TableName": "对账详情表",
+                "ColumnName": "抛",
+                "GUID": "3dcf9c42-4eb9-4e9a-acdd-91084961bbc7"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=Item.抛重"
+              }
+            },
+            {
+              "$type": "Forguncy.Model.UpdateBindingValueItem, ServerDesignerCommon",
+              "BindingInfo": {
+                "$type": "ForguncyDataAccess.BindingInfo, ForguncyDataAccess",
+                "TableName": "对账详情表",
+                "ColumnName": "实",
+                "GUID": "39dbe4f4-f878-4313-bd8d-03d0df558d55"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=Item.实重"
+              }
+            },
+            {
+              "$type": "Forguncy.Model.UpdateBindingValueItem, ServerDesignerCommon",
+              "BindingInfo": {
+                "$type": "ForguncyDataAccess.BindingInfo, ForguncyDataAccess",
+                "TableName": "对账详情表",
+                "ColumnName": "邮编",
+                "GUID": "30c0c005-227d-4820-9547-787d94911766"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=Item.邮编"
+              }
+            },
+            {
+              "$type": "Forguncy.Model.UpdateBindingValueItem, ServerDesignerCommon",
+              "BindingInfo": {
+                "$type": "ForguncyDataAccess.BindingInfo, ForguncyDataAccess",
+                "TableName": "对账详情表",
+                "ColumnName": "单价",
+                "GUID": "030aeef0-cfed-431c-8151-161224084289"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=Item.单价"
+              }
+            },
+            {
+              "$type": "Forguncy.Model.UpdateBindingValueItem, ServerDesignerCommon",
+              "BindingInfo": {
+                "$type": "ForguncyDataAccess.BindingInfo, ForguncyDataAccess",
+                "TableName": "对账详情表",
+                "ColumnName": "结算记录",
+                "GUID": "28f2b7c0-c72a-4b92-ad55-cd86a33eafe7"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=Item.结算记录"
+              }
+            },
+            {
+              "$type": "Forguncy.Model.UpdateBindingValueItem, ServerDesignerCommon",
+              "BindingInfo": {
+                "$type": "ForguncyDataAccess.BindingInfo, ForguncyDataAccess",
+                "TableName": "对账详情表",
+                "ColumnName": "结算金额",
+                "GUID": "293e85c2-64e7-4984-9ef9-831f03ba053a"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=Item.结算金额"
+              }
+            },
+            {
+              "$type": "Forguncy.Model.UpdateBindingValueItem, ServerDesignerCommon",
+              "BindingInfo": {
+                "$type": "ForguncyDataAccess.BindingInfo, ForguncyDataAccess",
+                "TableName": "对账详情表",
+                "ColumnName": "识别号",
+                "GUID": "5a4e7009-e4c0-4d8a-882a-79633f3e55df"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=Item.shipmentID"
+              }
+            },
+            {
+              "$type": "Forguncy.Model.UpdateBindingValueItem, ServerDesignerCommon",
+              "BindingInfo": {
+                "$type": "ForguncyDataAccess.BindingInfo, ForguncyDataAccess",
+                "TableName": "对账详情表",
+                "ColumnName": "预估金额",
+                "GUID": "0434cad9-b43a-40fc-9b42-42df7d6544cc"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=Item.预估运费"
+              }
+            },
+            {
+              "$type": "Forguncy.Model.UpdateBindingValueItem, ServerDesignerCommon",
+              "BindingInfo": {
+                "$type": "ForguncyDataAccess.BindingInfo, ForguncyDataAccess",
+                "TableName": "对账详情表",
+                "ColumnName": "货代",
+                "GUID": "0e738539-055a-44e9-a8b4-dd66e37f3484"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=Item.货代"
+              }
+            }
+          ]
+        },
+        "Disabled": true,
+        "BreakpointIdentity": "e99c7e91-5e3f-48f9-bba5-6e587a018e22"
+      },
+      {
+        "$type": "Forguncy.Model.LoopCommand, ServerDesignerCommon",
+        "LoopInfo": {
+          "$type": "Forguncy.Model.CountLoopInfo, ServerDesignerCommon",
+          "LoopCount": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=FBA发货表"
+          },
+          "LoopItemParamName": "Item"
+        },
+        "CommandList": {
+          "$type": "System.Collections.Generic.List`1[[GrapeCity.Forguncy.Commands.Command, Forguncy.Commands]], System.Private.CoreLib",
+          "$values": [
+            {
+              "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+              "TableName": "对账详情表",
+              "ShowConfirm": false,
+              "RowsToUpdate": 1,
+              "RowsToUpdateCondition": {
+                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                "SubConditions": {
+                  "$type": "System.Collections.Generic.List`1[[ForguncyDataAccess.ISqlCondition, ForguncyDataAccess]], System.Private.CoreLib",
+                  "$values": [
+                    {
+                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                      "SubConditions": {
+                        "$type": "System.Collections.Generic.List`1[[ForguncyDataAccess.ISqlCondition, ForguncyDataAccess]], System.Private.CoreLib",
+                        "$values": [
+                          {
+                            "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                            "CompareType": 8,
+                            "ColumnBindingInfo": {
+                              "$type": "ForguncyDataAccess.BindingInfo, ForguncyDataAccess",
+                              "TableName": "对账详情表",
+                              "ColumnName": "运单号",
+                              "GUID": "e9801fbc-5743-423e-84cd-25ce92ad376b"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=Item.对账码"
+                            },
+                            "LeftBracket": 1
+                          },
+                          {
+                            "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                            "CompareType": 8,
+                            "ColumnBindingInfo": {
+                              "$type": "ForguncyDataAccess.BindingInfo, ForguncyDataAccess",
+                              "TableName": "对账详情表",
+                              "ColumnName": "自定义唛头",
+                              "GUID": "4a03bffe-9caa-4692-a45b-fbc73515f5d6"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=Item.对账码"
+                            }
+                          },
+                          {
+                            "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                            "CompareType": 8,
+                            "ColumnBindingInfo": {
+                              "$type": "ForguncyDataAccess.BindingInfo, ForguncyDataAccess",
+                              "TableName": "对账详情表",
+                              "ColumnName": "FBA_ID",
+                              "GUID": "45feac55-347e-4f75-95e0-2f0cd7b8fdaa"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=Item.对账码"
+                            }
+                          },
+                          {
+                            "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                            "CompareType": 8,
+                            "ColumnBindingInfo": {
+                              "$type": "ForguncyDataAccess.BindingInfo, ForguncyDataAccess",
+                              "TableName": "对账详情表",
+                              "ColumnName": "服务商单号",
+                              "GUID": "ebb083ec-81bc-4b74-9fa8-7a476c8680d4"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=Item.对账码"
+                            },
+                            "RightBracket": 1
+                          }
+                        ]
+                      },
+                      "RelationType": 1
+                    },
+                    {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "$type": "ForguncyDataAccess.BindingInfo, ForguncyDataAccess",
+                        "TableName": "对账详情表",
+                        "ColumnName": "自发对账ID",
+                        "GUID": "22bf5f2c-3995-4301-927e-e108b751e084"
+                      },
+                      "Value": "%Null%"
+                    }
+                  ]
+                }
+              },
+              "UpdateBindingValues": {
+                "$type": "System.Collections.Generic.List`1[[Forguncy.Model.UpdateBindingValueItem, ServerDesignerCommon]], System.Private.CoreLib",
+                "$values": [
+                  {
+                    "$type": "Forguncy.Model.UpdateBindingValueItem, ServerDesignerCommon",
+                    "BindingInfo": {
+                      "$type": "ForguncyDataAccess.BindingInfo, ForguncyDataAccess",
+                      "TableName": "对账详情表",
+                      "ColumnName": "FBA对账ID",
+                      "GUID": "eea1cb4d-42f8-42a3-aa4b-688124bd0cb8"
+                    },
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=Item.fbaid"
+                    }
+                  },
+                  {
+                    "$type": "Forguncy.Model.UpdateBindingValueItem, ServerDesignerCommon",
+                    "BindingInfo": {
+                      "$type": "ForguncyDataAccess.BindingInfo, ForguncyDataAccess",
+                      "TableName": "对账详情表",
+                      "ColumnName": "来源",
+                      "GUID": "fb9d00b6-d0c9-4d65-b689-af07cae649ca"
+                    },
+                    "Value": "FBA"
+                  }
+                ]
+              },
+              "BreakpointIdentity": "b9989412-0505-4c1a-ad81-8ed0048a701d"
+            }
+          ]
+        },
+        "BreakpointIdentity": "d181acb5-fb42-4785-8de4-fd18a15f8a06"
+      }
+    ]
+  }
+}

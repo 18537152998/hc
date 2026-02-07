@@ -1,0 +1,473 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 40.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 48.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      }
+    },
+    "Count": 17,
+    "DefaultSize": 32.0
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "98": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 32.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      }
+    },
+    "Count": 100,
+    "DefaultSize": 32.0
+  },
+  "Values": {
+    "1,6": "清空数据"
+  },
+  "AttachInfos": {
+    "1,6": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+            "ListviewName": "表格1",
+            "UpdateType": 2,
+            "UpdateRowType": 2,
+            "BreakpointIdentity": "3ec832af-cefd-4da4-85db-438c0bde5292"
+          },
+          {
+            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+            "ListviewName": "表格1",
+            "UpdateType": 3,
+            "BreakpointIdentity": "b3b4271e-1bd2-4f7d-bb71-21771a70f5b7"
+          }
+        ],
+        "Text": "清空数据",
+        "ClickMode": 1,
+        "TemplateKey": "_RS_Main"
+      }
+    },
+    "3,1": {
+      "ListViewInfo": {
+        "Name": "表格1",
+        "TableName": "FBA发货详情表",
+        "RowIndex": 3,
+        "ColumnIndex": 1,
+        "RowCount": 12,
+        "ColumnCount": 98,
+        "TopCondition": null,
+        "ListViewStyleName": "样式1",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "AllowEditInListview": true,
+        "AllowAddNewRow": true,
+        "ShowDeleteButton": true,
+        "ColumnOperation": 2
+      }
+    },
+    "4,1": {
+      "NameUsedInJavaScript": "FBA发货表ID",
+      "BindingInfo": {
+        "TableName": "FBA发货详情表",
+        "ColumnName": "FBA发货表ID",
+        "GUID": "18413c42-60fe-4bbc-87ca-6179f8d83dca"
+      }
+    },
+    "4,4": {
+      "NameUsedInJavaScript": "销售账户",
+      "BindingInfo": {
+        "TableName": "FBA发货详情表",
+        "ColumnName": "销售账户",
+        "GUID": "de446bd6-570e-40fb-9287-d835ef080a85"
+      }
+    },
+    "4,7": {
+      "NameUsedInJavaScript": "箱号",
+      "BindingInfo": {
+        "TableName": "FBA发货详情表",
+        "ColumnName": "箱号",
+        "GUID": "03eab312-fa65-47a2-bbe2-27de766bafde"
+      }
+    },
+    "4,10": {
+      "NameUsedInJavaScript": "产品",
+      "BindingInfo": {
+        "TableName": "FBA发货详情表",
+        "ColumnName": "产品",
+        "GUID": "be5d99bc-0593-40ed-b67d-3da641f6564c"
+      }
+    },
+    "4,13": {
+      "NameUsedInJavaScript": "ASIN",
+      "BindingInfo": {
+        "TableName": "FBA发货详情表",
+        "ColumnName": "ASIN",
+        "GUID": "ebdd2489-bdf6-4e07-804e-c19baa6ff784"
+      }
+    },
+    "4,16": {
+      "NameUsedInJavaScript": "外箱尺寸cm",
+      "BindingInfo": {
+        "TableName": "FBA发货详情表",
+        "ColumnName": "外箱尺寸cm",
+        "GUID": "e08c8227-df54-4773-a9bf-0c80810a39f5"
+      }
+    },
+    "4,19": {
+      "NameUsedInJavaScript": "发出数量",
+      "BindingInfo": {
+        "TableName": "FBA发货详情表",
+        "ColumnName": "发出数量",
+        "GUID": "049c9513-8497-4346-a15c-ceec3d74cb00"
+      }
+    },
+    "4,22": {
+      "NameUsedInJavaScript": "重量kg",
+      "BindingInfo": {
+        "TableName": "FBA发货详情表",
+        "ColumnName": "重量kg",
+        "GUID": "27b2c38f-92fe-4321-bf23-6c0c5b08c8b6"
+      }
+    },
+    "4,25": {
+      "NameUsedInJavaScript": "每箱单号",
+      "BindingInfo": {
+        "TableName": "FBA发货详情表",
+        "ColumnName": "每箱单号",
+        "GUID": "6938bd7e-39e8-432b-8b04-93aa3d54fafd"
+      }
+    },
+    "4,28": {
+      "NameUsedInJavaScript": "长cm",
+      "BindingInfo": {
+        "TableName": "FBA发货详情表",
+        "ColumnName": "长cm",
+        "GUID": "73e59e6b-909b-43f9-9af3-11c9506c65ff"
+      }
+    },
+    "4,31": {
+      "NameUsedInJavaScript": "宽cm",
+      "BindingInfo": {
+        "TableName": "FBA发货详情表",
+        "ColumnName": "宽cm",
+        "GUID": "9eb2f146-9812-4e65-831e-f5e9150d4fba"
+      }
+    },
+    "4,34": {
+      "NameUsedInJavaScript": "高cm",
+      "BindingInfo": {
+        "TableName": "FBA发货详情表",
+        "ColumnName": "高cm",
+        "GUID": "8b7fe090-7dab-4c77-88b6-691349538d81"
+      }
+    },
+    "4,37": {
+      "NameUsedInJavaScript": "长in",
+      "BindingInfo": {
+        "TableName": "FBA发货详情表",
+        "ColumnName": "长in",
+        "GUID": "ade632d2-e7ec-4e0d-a82f-e2c4e2a6a03d"
+      }
+    },
+    "4,40": {
+      "NameUsedInJavaScript": "宽in",
+      "BindingInfo": {
+        "TableName": "FBA发货详情表",
+        "ColumnName": "宽in",
+        "GUID": "60780d5e-e054-448c-b25f-cbc2c867e337"
+      }
+    },
+    "4,43": {
+      "NameUsedInJavaScript": "高in",
+      "BindingInfo": {
+        "TableName": "FBA发货详情表",
+        "ColumnName": "高in",
+        "GUID": "796ab062-81b4-4489-868e-417815ca53dc"
+      }
+    },
+    "4,46": {
+      "NameUsedInJavaScript": "抛重kg",
+      "BindingInfo": {
+        "TableName": "FBA发货详情表",
+        "ColumnName": "抛重kg",
+        "GUID": "a815f6fd-cf96-4a74-b74a-9eab50209969"
+      }
+    },
+    "4,49": {
+      "NameUsedInJavaScript": "实重kg",
+      "BindingInfo": {
+        "TableName": "FBA发货详情表",
+        "ColumnName": "实重kg",
+        "GUID": "d476379e-7c6f-42c0-887b-4695142e239c"
+      }
+    },
+    "4,52": {
+      "NameUsedInJavaScript": "实重lb",
+      "BindingInfo": {
+        "TableName": "FBA发货详情表",
+        "ColumnName": "实重lb",
+        "GUID": "658b461b-9609-4c5e-9e3f-7e4137fef53f"
+      }
+    },
+    "4,55": {
+      "NameUsedInJavaScript": "出库状态",
+      "BindingInfo": {
+        "TableName": "FBA发货详情表",
+        "ColumnName": "出库状态",
+        "GUID": "5b7c4660-edb7-4183-8aa0-96b5d40497a8"
+      }
+    },
+    "4,58": {
+      "NameUsedInJavaScript": "出库时间",
+      "BindingInfo": {
+        "TableName": "FBA发货详情表",
+        "ColumnName": "出库时间",
+        "GUID": "0223a28c-0e7b-492b-b076-c193e3c80b21"
+      }
+    },
+    "4,61": {
+      "NameUsedInJavaScript": "出库员ID",
+      "BindingInfo": {
+        "TableName": "FBA发货详情表",
+        "ColumnName": "出库员ID",
+        "GUID": "12f90e4e-6919-4c17-be86-11de530c77b6"
+      }
+    },
+    "4,64": {
+      "NameUsedInJavaScript": "上架数量",
+      "BindingInfo": {
+        "TableName": "FBA发货详情表",
+        "ColumnName": "上架数量",
+        "GUID": "4ff4d828-4cf2-47a9-8f7d-e6875c45aa01"
+      }
+    },
+    "4,67": {
+      "NameUsedInJavaScript": "围长cm",
+      "BindingInfo": {
+        "TableName": "FBA发货详情表",
+        "ColumnName": "围长cm",
+        "GUID": "885432f5-3d3c-46cc-868d-d9e20361f4ef"
+      }
+    },
+    "4,70": {
+      "NameUsedInJavaScript": "sku",
+      "BindingInfo": {
+        "TableName": "FBA发货详情表",
+        "ColumnName": "sku",
+        "GUID": "34ce070c-2880-44af-b2a0-93b2df46d76a"
+      }
+    },
+    "4,73": {
+      "NameUsedInJavaScript": "发货识别码",
+      "BindingInfo": {
+        "TableName": "FBA发货详情表",
+        "ColumnName": "发货识别码",
+        "GUID": "1367b9bb-734b-4c55-9eff-cb7ca2927fbc"
+      }
+    },
+    "4,76": {
+      "NameUsedInJavaScript": "CBM",
+      "BindingInfo": {
+        "TableName": "FBA发货详情表",
+        "ColumnName": "CBM",
+        "GUID": "e277405d-7dc8-4816-8f93-476c3237438a"
+      }
+    },
+    "4,79": {
+      "NameUsedInJavaScript": "箱数",
+      "BindingInfo": {
+        "TableName": "FBA发货详情表",
+        "ColumnName": "箱数",
+        "GUID": "597ad888-7202-4446-b048-64153e21cb28"
+      }
+    },
+    "4,82": {
+      "NameUsedInJavaScript": "出库数量",
+      "BindingInfo": {
+        "TableName": "FBA发货详情表",
+        "ColumnName": "出库数量",
+        "GUID": "5888083d-10ac-4b94-93e2-b27ece7e2fff"
+      }
+    },
+    "4,85": {
+      "NameUsedInJavaScript": "库存子表ID2",
+      "BindingInfo": {
+        "TableName": "FBA发货详情表",
+        "ColumnName": "库存子表ID2",
+        "GUID": "e2524e4f-9350-4df7-9714-f27b49befdd5"
+      }
+    },
+    "4,88": {
+      "NameUsedInJavaScript": "妥投数量",
+      "BindingInfo": {
+        "TableName": "FBA发货详情表",
+        "ColumnName": "妥投数量",
+        "GUID": "a7d42239-8505-4a05-a2fb-a90a6c3924c5"
+      }
+    },
+    "4,91": {
+      "NameUsedInJavaScript": "库存子表ID",
+      "BindingInfo": {
+        "TableName": "FBA发货详情表",
+        "ColumnName": "库存子表ID",
+        "GUID": "36d36942-7ea2-4146-88c1-b8242ccb55ae"
+      }
+    },
+    "4,94": {
+      "NameUsedInJavaScript": "单采购编号",
+      "BindingInfo": {
+        "TableName": "FBA发货详情表",
+        "ColumnName": "单采购编号",
+        "GUID": "014352fb-4cee-445e-a197-a68d8fd533e5"
+      }
+    },
+    "4,97": {
+      "NameUsedInJavaScript": "多采购编号",
+      "BindingInfo": {
+        "TableName": "FBA发货详情表",
+        "ColumnName": "单价",
+        "GUID": "487ac690-fed0-469b-9c31-646e32ddd03a"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Underline": true
+      },
+      {
+        "HorizontalAlignment": 0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Right",
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "1,6": 0,
+      "15,1": 1
+    },
+    "SheetStyle": {
+      "FontFamily": 1
+    }
+  },
+  "Spans": [
+    "1,1,1,3",
+    "15,1,1,98",
+    "1,6,1,4",
+    "5,1,10,98",
+    "3,1,1,3",
+    "4,1,1,3",
+    "3,4,1,3",
+    "4,4,1,3",
+    "3,7,1,3",
+    "4,7,1,3",
+    "3,10,1,3",
+    "4,10,1,3",
+    "3,13,1,3",
+    "4,13,1,3",
+    "3,16,1,3",
+    "4,16,1,3",
+    "3,19,1,3",
+    "4,19,1,3",
+    "3,22,1,3",
+    "4,22,1,3",
+    "3,25,1,3",
+    "4,25,1,3",
+    "3,28,1,3",
+    "4,28,1,3",
+    "3,31,1,3",
+    "4,31,1,3",
+    "3,34,1,3",
+    "4,34,1,3",
+    "3,37,1,3",
+    "4,37,1,3",
+    "3,40,1,3",
+    "4,40,1,3",
+    "3,43,1,3",
+    "4,43,1,3",
+    "3,46,1,3",
+    "4,46,1,3",
+    "3,49,1,3",
+    "4,49,1,3",
+    "3,52,1,3",
+    "4,52,1,3",
+    "3,55,1,3",
+    "4,55,1,3",
+    "3,58,1,3",
+    "4,58,1,3",
+    "3,61,1,3",
+    "4,61,1,3",
+    "3,64,1,3",
+    "4,64,1,3",
+    "3,67,1,3",
+    "4,67,1,3",
+    "3,70,1,3",
+    "4,70,1,3",
+    "3,73,1,3",
+    "4,73,1,3",
+    "3,76,1,3",
+    "4,76,1,3",
+    "3,79,1,3",
+    "4,79,1,3",
+    "3,82,1,3",
+    "4,82,1,3",
+    "3,85,1,3",
+    "4,85,1,3",
+    "3,88,1,3",
+    "4,88,1,3",
+    "3,91,1,3",
+    "4,91,1,3",
+    "3,94,1,3",
+    "4,94,1,3",
+    "4,97,1,2",
+    "3,97,1,2"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "FBA发货详情表"
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//+YtnOywA2icRSKjLFBV0Kx5iwyHSghRyArdz83fwxPuYBcntozMdPmSXIAQeD7x5cYTdcczCjueUbb+o8wMvprne8s18TXAT9xHpmQEb2h8aIA68QgBYyFRXSmEnj32DDWV2s2d8UkGtQ8RZ47feZc0mf5/buTK7IqSZ8x35VsRrtDJgSgrcvZ90/4wG/959ybAAn9VhSdWw4NQ7IzD/QCCef+u5nReSqCJCruMGgUS11vn6uyj6SfSgSQ4iNd9tLl1I911u6YXsMNy2cOmBDjwT2ch4zEwNDir8yOCnU1gYndUniGZwDLeguTsL4d3mi+sZKiF4Fv8iQ5CezmMoan8RDs8P90v+u+OFXdY6Gm7mcZB7WiMhi9gVd0OrkUhZu0zVyDhA1grsQ88bgA7khsithPzY19fYabZOcIpEyFw9V0iAJThYIXB2GQk/R+w3pO/y6V/2MV03XyrQ4o1q32Ls4aD880P1Yy8nxNODHQyHzVuoC6Vpoxf3UVzc6rMcfCwC3zjGNC5Cn0W10mMOHJ9L5tmtzgGCHaMaQs5x3kE1ur05QS31cWfyAcDFF1EuPajRCHG8gkqLN3jZYpRYNtuPl+CudjiekIMp7mc6LxxFRhhMBCZxsSysonbA5VHh10qm50fVJEkAJ10mSZ5xjA+/5VF7ELLHkpEdbqtP30pASkgLEHf3Z7dPnZahSkeVGyindptVUd3AY7qzsr8w3nBHFRbOJOFhHQLiWDVStem0oyGD+cVQNrgBxblULkTuFWN/AecIJFRQKHI8vcOC6lz9ZpIc32WmJYM8gPsr0qZGSRVGhHq5G2aC7gEkwZAQbiWXbdu/Mui4HcWyhbkjR/+tTdMaOYhEMb6AGZ/EN3IcNPeNa3C330rrluWiHV6Bq4/U3vgkJAIcqCcYMMgGkw==|920

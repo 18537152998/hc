@@ -1,0 +1,284 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      }
+    },
+    "Count": 19
+  },
+  "Cols": {
+    "Count": 47
+  },
+  "Values": {
+    "1,37": "发出数量"
+  },
+  "AttachInfos": {
+    "1,1": {
+      "ListViewInfo": {
+        "Name": "表格1",
+        "TableName": "正报退税汇总表_子表",
+        "RowIndex": 1,
+        "ColumnIndex": 1,
+        "RowCount": 16,
+        "ColumnCount": 45,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "正报退税汇总表_子表",
+            "ColumnName": "采购入库码",
+            "GUID": "6ee42c69-940c-4e04-8f3a-57324c3fc510"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "='FBA发货汇总 (2)'!A19"
+          }
+        },
+        "NullFormulaValueQueryPolicy": 0,
+        "TopCondition": null,
+        "ListViewStyleName": "样式1",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "2,1": {
+      "NameUsedInJavaScript": "合同号",
+      "BindingInfo": {
+        "TableName": "正报退税汇总表_子表",
+        "ColumnName": "合同号",
+        "GUID": "8e01ecb9-2493-44d6-ad5c-b98fd849d928"
+      }
+    },
+    "2,9": {
+      "BindingInfo": {
+        "TableName": "正报退税汇总表_子表",
+        "ColumnName": "采购入库码",
+        "GUID": "b4f8958f-6398-47bf-b5b0-8f9896875ef0",
+        "RelationBinding": {
+          "RelatedTable": "采购记录表",
+          "RelatedColumn": "采购编号",
+          "DisplayColumn": "采购订单编号"
+        }
+      }
+    },
+    "2,14": {
+      "BindingInfo": {
+        "TableName": "正报退税汇总表_子表",
+        "ColumnName": "开票日期",
+        "GUID": "9f4f4efa-0083-478d-a5ce-e17baf0adc95"
+      }
+    },
+    "2,19": {
+      "BindingInfo": {
+        "TableName": "正报退税汇总表_子表",
+        "ColumnName": "发票号码",
+        "GUID": "467bb07d-83f2-4eae-9c08-aabe77d004fc"
+      }
+    },
+    "2,25": {
+      "BindingInfo": {
+        "TableName": "正报退税汇总表_子表",
+        "ColumnName": "SKU",
+        "GUID": "4a408f42-516f-4b31-a6a7-f5901c09adc4"
+      }
+    },
+    "2,33": {
+      "BindingInfo": {
+        "TableName": "正报退税汇总表_子表",
+        "ColumnName": "采购入库码",
+        "GUID": "1d0d5d93-2995-406a-a099-51fdc563b9e4",
+        "RelationBinding": {
+          "RelatedTable": "采购记录表",
+          "RelatedColumn": "采购编号",
+          "DisplayColumn": "入库数量"
+        }
+      }
+    },
+    "2,37": {
+      "BindingInfo": {
+        "TableName": "正报退税汇总表_子表",
+        "ColumnName": "产品数量",
+        "GUID": "a282b9e6-c771-49e3-be8d-94ca599f1d67"
+      }
+    },
+    "2,41": {
+      "BindingInfo": {
+        "TableName": "正报退税汇总表_子表",
+        "ColumnName": "开票金额",
+        "GUID": "b35d7520-0294-4d3d-8f23-4f1f392b75db"
+      }
+    },
+    "18,1": {
+      "BindingInfo": {
+        "TableName": "FBA发货详情表",
+        "ColumnName": "单采购编号",
+        "GUID": "3d0c6acd-5a33-46e0-9e68-27e1c99804ad"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "HorizontalAlignment": 0
+      },
+      {
+        "FontFamily": 1,
+        "HorizontalAlignment": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "HorizontalAlignment": 0
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 2
+      },
+      {
+        "FontFamily": 1
+      },
+      {
+        "Formatter": 3,
+        "HorizontalAlignment": 0
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 4,
+        "HorizontalAlignment": 0
+      },
+      {
+        "Background": 5,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Center",
+        "Body",
+        "[AUTO]General",
+        "yyyy/m/d",
+        " ¥#,##0.00_);[Red] ¥(#,##0.00)",
+        "#FFFFFF00"
+      ]
+    },
+    "CellStyles": {
+      "1,1": 0,
+      "1,9": 0,
+      "1,14": 0,
+      "1,25": 1,
+      "1,26": 2,
+      "1,27": 2,
+      "1,28": 2,
+      "1,29": 2,
+      "1,30": 2,
+      "1,31": 2,
+      "1,32": 2,
+      "1,33": 3,
+      "1,37": 4,
+      "1,41": 5,
+      "2,1": 0,
+      "2,14": 6,
+      "2,19": 3,
+      "2,25": 1,
+      "2,26": 2,
+      "2,27": 2,
+      "2,28": 2,
+      "2,29": 2,
+      "2,30": 2,
+      "2,31": 2,
+      "2,32": 2,
+      "2,33": 3,
+      "2,37": 3,
+      "2,41": 7,
+      "17,18": 2,
+      "18,0": 8,
+      "18,14": 9,
+      "18,15": 9,
+      "18,16": 9,
+      "18,17": 9,
+      "18,18": 9,
+      "18,19": 9,
+      "18,20": 9,
+      "18,21": 9
+    },
+    "SheetStyle": {
+      "FontFamily": 1,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
+    }
+  },
+  "Spans": [
+    "18,1,1,4",
+    "1,1,1,8",
+    "2,1,1,8",
+    "1,14,1,5",
+    "2,14,1,5",
+    "3,1,14,45",
+    "1,25,1,8",
+    "2,25,1,8",
+    "2,19,1,6",
+    "1,19,1,6",
+    "2,33,1,4",
+    "1,33,1,4",
+    "2,37,1,4",
+    "1,37,1,4",
+    "2,41,1,5",
+    "1,41,1,5",
+    "2,9,1,5",
+    "1,9,1,5"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "正报退税汇总表_子表"
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//dnVrCl7VkwcntAwZnkQeMfZzeaxEMIcveiQPVpaTr93dZFw4oCYqnZ5Rg47kLPxnfZqZXEQ7FX0MQRW6KiD+XOwfLSpm9kyUKU7MnlFK/o+u2oGDn3bTHOYr8U5LGaP02SWHUcl6FeqSswC172rPjhT0Td/zrStLFW1VBVftbF28Tk+0j33IG7j12yM6VO5EuuwljQNQjKZOIfI26AZyWe/hxoNFP7kAHmqFmDvpMmNvFT+fNyCJKg/+Mf1PcvbQ/eYEcwQ+ARzD/3yp1pC7pfJisuDkyRY6kU+xTXi21J6e14E4ci7C8z7H4FbPf3M+HSafi5YxhrATdwhGSsdwf2+cp2MYFLa0FWDqDnLhyVcKZiv+jsBx0bfKDM6jwl4vrzg3Zykz6XSd/a5GX/Y1pka0EXeUS6HHQj199gkBpjkTc0RsXGD5qCjNkj+P4iTyXjKg7Z4aqiXGXBSO0s54ONEEFunVypAiinB4W/C30z8krCvPRNLGmrTY5gh81dgyNJLsqZRNEtQE6ay1CD/9OB70nygMWDWRD3YO5gatm7No5u5WU1FB+R1QAjyua03W1JZ2Q6P6Kq1YVsvsp7mVb/AaYfk07tujqGxf77BcAGghBsFghP28p5LbgOU2WQDL+HzE2PwZpzk/w3Vhd1xO5msaG0f7Ol50tuvwrwOLJvOVT3Xgefo4+D8XcBfUxaRgMjeM8HbCKL3++ORdAvnK6vABH6+R851k5rBP9i2oBXTVHM3Di0BXgPjd0CiXOjoRNMyh88StNDKqwpD1Tj7yqTnZzuuR6l5Xv+YuTf7ya4MhukdxyQk88rqynTGcYzVcsLhCte08t81mU22NWnEDG/rnIaWCJeZhhKsRhYzlGepf6EyU+pO9x3gzqp0rZVQtqwRAkJvh+CSNyzCeq/Fb2Q==|920

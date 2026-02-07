@@ -1,0 +1,2064 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 50.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      }
+    },
+    "Count": 40
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "112": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "113": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "114": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "115": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "116": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      62,
+      63,
+      64,
+      65,
+      107
+    ],
+    "Count": 117,
+    "DefaultSize": 16.0
+  },
+  "Values": {
+    "0,50": "退货注意点：20kg以上退滨州大货仓库，20kg以下寄特拉华仓库",
+    "0,107": "需退货",
+    "2,1": "特拉华仓库地址：1710W 4TH ST WILMINGTON DELAWARE 19805  电话：6465088516",
+    "2,48": "滨州大货仓库地址：ATTN:1500 edgmont avenue chester pa 19013 电话：6465088516",
+    "4,103": "手动入库",
+    "39,92": "合计",
+    "39,97": "条"
+  },
+  "Formulas": {
+    "4,109": "DD5&DE5",
+    "4,107": "IF(BT5=\"特拉华\",\"ZF\",IF(BT5=\"滨州大货\",\"ZP\",IF(BT5=\"伊能UK\",\"ZUK\",IF(BT5=\"德国诺程\",\"ZDE\",IF(BT5=\"亚特兰大\",\"ZA\")))))",
+    "39,94": "COUNTA(D5)",
+    "4,63": "$DD$1"
+  },
+  "AttachInfos": {
+    "0,1": {
+      "CellType": {
+        "$type": "Forguncy.RadioGroupCellType, ServerDesignerCommon",
+        "Style": 3,
+        "IsBounding": true,
+        "DataSource": "美国仓",
+        "ValueColumnBindingInfo": {
+          "TableName": "美国仓",
+          "ColumnName": "退货仓库",
+          "GUID": "2407b4a8-dbc1-4a78-8413-39c535d28a21"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "美国仓",
+          "ColumnName": "退货仓库",
+          "GUID": "dc99a00e-5bca-4cae-ad39-07a9738e7658"
+        },
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "SubConditions": [
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionCurrentUserInfoParam, ServerDesignerCommon",
+                        "currentUserProperty": {
+                          "UserProperty": "角色",
+                          "PropertyType": 3
+                        }
+                      },
+                      "value": "财务",
+                      "compareType": 10
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionCurrentUserInfoParam, ServerDesignerCommon",
+                        "currentUserProperty": {
+                          "UserProperty": "角色",
+                          "PropertyType": 3
+                        }
+                      },
+                      "value": "采购",
+                      "compareType": 10
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionCurrentUserInfoParam, ServerDesignerCommon",
+                        "currentUserProperty": {
+                          "UserProperty": "角色",
+                          "PropertyType": 3
+                        }
+                      },
+                      "value": "Administrator",
+                      "compareType": 10
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionCurrentUserInfoParam, ServerDesignerCommon",
+                        "currentUserProperty": {
+                          "UserProperty": "角色",
+                          "PropertyType": 3
+                        }
+                      },
+                      "value": "制单",
+                      "compareType": 10
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionCurrentUserInfoParam, ServerDesignerCommon",
+                        "currentUserProperty": {
+                          "UserProperty": "角色",
+                          "PropertyType": 3
+                        }
+                      },
+                      "value": "会计"
+                    }
+                  ],
+                  "RelationType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                    "TargetTableName": "美国仓",
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                      "SubConditions": [
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "美国仓",
+                            "ColumnName": "退货仓库",
+                            "GUID": "22af0914-7374-49f0-bcfd-67b78613f176"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=待退货!B1"
+                          }
+                        },
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "美国仓",
+                            "ColumnName": "入库状态",
+                            "GUID": "560c4d9a-9ab6-4f17-a740-bc22dfcb2d98"
+                          },
+                          "Value": "%Null%"
+                        },
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "美国仓",
+                            "ColumnName": "出库状态",
+                            "GUID": "02427644-ccc1-4aa4-ab04-3c098e3461a2"
+                          },
+                          "Value": "%Null%"
+                        }
+                      ]
+                    },
+                    "ID": "38baab1c8317480d834f99a09827f311",
+                    "BreakpointIdentity": "c1b8ab65-d71a-4b53-9884-1add86d6d2e3"
+                  }
+                ],
+                "ID": "fa2ac584-79f1-4f4a-b0b2-0693306cf923"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                    "TargetTableName": "美国仓",
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                      "SubConditions": [
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "美国仓",
+                            "ColumnName": "退货仓库",
+                            "GUID": "f7a7276c-6914-4b9f-b23e-f67e66b4d903"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=待退货!B1"
+                          }
+                        },
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "美国仓",
+                            "ColumnName": "入库状态",
+                            "GUID": "c728aecd-32bc-4b7c-8791-4d0b028e56c8"
+                          },
+                          "Value": "%Null%"
+                        },
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "美国仓",
+                            "ColumnName": "出库状态",
+                            "GUID": "cfc4815f-f26b-405e-acbb-dbc589c1627f"
+                          },
+                          "Value": "%Null%"
+                        },
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "美国仓",
+                            "ColumnName": "平台",
+                            "GUID": "420708c0-389e-4c42-b0c2-91923cc12140"
+                          },
+                          "Value": "%CurrentUser.账户%"
+                        }
+                      ]
+                    },
+                    "ID": "1de33d651bfb4f3fbe2c899011cce96a",
+                    "BreakpointIdentity": "41d93f66-934f-4a9f-bbb1-6edb0494766c"
+                  }
+                ],
+                "ID": "482ca95a-7767-4b5d-816d-6923eddeca89"
+              }
+            ],
+            "BreakpointIdentity": "42b38691-69cf-4c85-898f-1cadf304b990"
+          }
+        ],
+        "AddNullItemWhenBinding": true,
+        "NoneItemText": "全部"
+      }
+    },
+    "3,1": {
+      "ListViewInfo": {
+        "Name": "表格1",
+        "TableName": "美国仓",
+        "RowIndex": 3,
+        "ColumnIndex": 1,
+        "RowCount": 36,
+        "ColumnCount": 111,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "SubConditions": [
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "美国仓",
+                "ColumnName": "入库状态",
+                "GUID": "daa14272-a3a4-43c7-ad77-f3d2884b14be"
+              },
+              "Value": "%Null%"
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "美国仓",
+                "ColumnName": "退货指令",
+                "GUID": "606bef10-32e8-4fe7-bd7d-a4a923c1e9e8"
+              },
+              "Value": "需退货"
+            }
+          ]
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "样式1",
+        "ShowColumnHeaderInDesigner": true,
+        "IsRowHeaderVisible": true,
+        "AllowEditInListview": true,
+        "AllowAddNewRow": true,
+        "ShowDeleteButton": true,
+        "AllowDragFill": true,
+        "RowHeaderContextMenu": {
+          "ContextMenuItems": [
+            {
+              "Text": "插入",
+              "Visible": true,
+              "OperationType": 2
+            },
+            {
+              "Text": "删除",
+              "OperationType": 3
+            },
+            {
+              "Text": "复制并插入",
+              "OperationType": 4
+            }
+          ]
+        },
+        "ColumnOperation": 2,
+        "ShowGridLine": true
+      }
+    },
+    "4,3": {
+      "BindingInfo": {
+        "TableName": "美国仓",
+        "ColumnName": "订单日期",
+        "GUID": "08dd9665-9c51-46c3-8afc-398702c3e1bb"
+      }
+    },
+    "4,8": {
+      "BindingInfo": {
+        "TableName": "美国仓",
+        "ColumnName": "平台",
+        "GUID": "93f422bd-6f6a-4ec8-afac-b741148d6ab1"
+      },
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "DropdownButtonModeInListview": 3,
+        "Items": [
+          {
+            "Value": "AliceEU",
+            "DisplayValue": "AliceEU"
+          },
+          {
+            "Value": "AliceJP",
+            "DisplayValue": "AliceJP"
+          },
+          {
+            "Value": "AliceUS",
+            "DisplayValue": "AliceUS"
+          },
+          {
+            "Value": "CrystalEU",
+            "DisplayValue": "CrystalEU"
+          },
+          {
+            "Value": "CrystalJP",
+            "DisplayValue": "CrystalJP"
+          },
+          {
+            "Value": "DennyUS",
+            "DisplayValue": "DennyUS"
+          },
+          {
+            "Value": "GraceEU",
+            "DisplayValue": "GraceEU"
+          },
+          {
+            "Value": "GraceUS",
+            "DisplayValue": "GraceUS"
+          },
+          {
+            "Value": "NewstartJP",
+            "DisplayValue": "NewstartJP"
+          },
+          {
+            "Value": "NewstartUS",
+            "DisplayValue": "NewstartUS"
+          },
+          {
+            "Value": "SherryEU",
+            "DisplayValue": "SherryEU"
+          },
+          {
+            "Value": "SherryJP",
+            "DisplayValue": "SherryJP"
+          },
+          {
+            "Value": "SherryUS",
+            "DisplayValue": "SherryUS"
+          },
+          {
+            "Value": "YIFUNEU",
+            "DisplayValue": "YIFUNEU"
+          },
+          {
+            "Value": "YIFUNJP",
+            "DisplayValue": "YIFUNJP"
+          },
+          {
+            "Value": "YIFUNUS",
+            "DisplayValue": "YIFUNUS"
+          }
+        ]
+      }
+    },
+    "4,11": {
+      "BindingInfo": {
+        "TableName": "美国仓",
+        "ColumnName": "站点",
+        "GUID": "260a5157-df1b-4756-a76e-499c722de883"
+      },
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "DropdownButtonModeInListview": 3,
+        "SelectOnly": false,
+        "IsBounding": true,
+        "DataSource": "美国仓",
+        "ValueColumnBindingInfo": {
+          "TableName": "美国仓",
+          "ColumnName": "站点",
+          "GUID": "464a6565-a86e-4603-a0cb-2a9e88474150"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "美国仓",
+          "ColumnName": "站点",
+          "GUID": "721ead8e-19ec-4655-87c1-932681e061df"
+        }
+      }
+    },
+    "4,14": {
+      "BindingInfo": {
+        "TableName": "美国仓",
+        "ColumnName": "订单编号",
+        "GUID": "984f1d8f-105a-40b9-a11a-f6de0dee8642"
+      }
+    },
+    "4,22": {
+      "BindingInfo": {
+        "TableName": "美国仓",
+        "ColumnName": "SKU",
+        "GUID": "599ea112-d7ef-4c7f-8c07-e9bf16aeb80e"
+      }
+    },
+    "4,29": {
+      "BindingInfo": {
+        "TableName": "美国仓",
+        "ColumnName": "识别码",
+        "GUID": "f4bb748c-e4b8-49b4-9a90-9dbff283597f",
+        "RelationBinding": {
+          "RelatedTable": "库存表",
+          "RelatedColumn": "识别码",
+          "DisplayColumn": "商品名"
+        }
+      }
+    },
+    "4,38": {
+      "BindingInfo": {
+        "TableName": "美国仓",
+        "ColumnName": "识别码",
+        "GUID": "1dfec52d-5dcd-4d82-9457-97ac12aedfc4",
+        "IsImagePath": true,
+        "RelationBinding": {
+          "RelatedTable": "库存表",
+          "RelatedColumn": "识别码",
+          "DisplayColumn": "图片"
+        }
+      },
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PageName": "图片详情页",
+            "PassValues": [
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=待退货!AM5"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=#REF!"
+                }
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=待退货!I5&待退货!L5&待退货!W5"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=#REF!"
+                }
+              }
+            ],
+            "IgnoreTargetPageCachedCurrentRowInfo": false,
+            "BreakpointIdentity": "754c243b-268d-40b0-980d-d5b1465a3969"
+          }
+        ]
+      }
+    },
+    "4,40": {
+      "BindingInfo": {
+        "TableName": "美国仓",
+        "ColumnName": "数量",
+        "GUID": "833aa076-3164-46c5-a443-fd5197df71e8"
+      }
+    },
+    "4,43": {
+      "BindingInfo": {
+        "TableName": "美国仓",
+        "ColumnName": "订单编号",
+        "GUID": "10839a56-8bf4-40d0-8e35-dc9d056a322d",
+        "RelationBinding": {
+          "RelatedTable": "订单信息表__2_",
+          "RelatedColumn": "订单编号",
+          "DisplayColumn": "长cm"
+        }
+      }
+    },
+    "4,46": {
+      "BindingInfo": {
+        "TableName": "美国仓",
+        "ColumnName": "订单编号",
+        "GUID": "bd05493c-befb-40ad-8112-76a3c218a891",
+        "RelationBinding": {
+          "RelatedTable": "订单信息表__2_",
+          "RelatedColumn": "订单编号",
+          "DisplayColumn": "宽cm"
+        }
+      }
+    },
+    "4,49": {
+      "BindingInfo": {
+        "TableName": "美国仓",
+        "ColumnName": "订单编号",
+        "GUID": "0ce36136-9bd0-4ad2-a8f2-cb50a96def8b",
+        "RelationBinding": {
+          "RelatedTable": "订单信息表__2_",
+          "RelatedColumn": "订单编号",
+          "DisplayColumn": "高cm"
+        }
+      }
+    },
+    "4,52": {
+      "BindingInfo": {
+        "TableName": "美国仓",
+        "ColumnName": "订单编号",
+        "GUID": "913b8bd1-2406-45ce-96e0-8a565aa03bab",
+        "RelationBinding": {
+          "RelatedTable": "订单信息表__2_",
+          "RelatedColumn": "订单编号",
+          "DisplayColumn": "包装重量"
+        }
+      }
+    },
+    "4,56": {
+      "BindingInfo": {
+        "TableName": "美国仓",
+        "ColumnName": "订单编号",
+        "GUID": "c1c4e348-28b8-47b3-97db-8c8a0b19b429",
+        "RelationBinding": {
+          "RelatedTable": "订单信息表__2_",
+          "RelatedColumn": "订单编号",
+          "DisplayColumn": "详细地址"
+        }
+      },
+      "CellType": {
+        "$type": "Forguncy.MultilineTextBox, ServerDesignerCommon"
+      }
+    },
+    "4,63": {
+      "BindingInfo": {
+        "TableName": "美国仓",
+        "ColumnName": "退货指令",
+        "GUID": "c470abc8-4072-415c-80fe-3c35e978bfb1"
+      }
+    },
+    "4,66": {
+      "BindingInfo": {
+        "TableName": "美国仓",
+        "ColumnName": "客户名",
+        "GUID": "044e2243-1b9b-414b-b6c0-e43e0d367a29"
+      }
+    },
+    "4,71": {
+      "BindingInfo": {
+        "TableName": "美国仓",
+        "ColumnName": "退货仓库",
+        "GUID": "03dffc08-f43e-484f-9bce-7892c216fed1"
+      },
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "DropdownButtonModeInListview": 3,
+        "SelectOnly": false,
+        "Items": [
+          {
+            "Value": "特拉华",
+            "DisplayValue": "特拉华"
+          },
+          {
+            "Value": "滨州大货",
+            "DisplayValue": "滨州大货"
+          },
+          {
+            "Value": "伊能UK",
+            "DisplayValue": "伊能UK"
+          },
+          {
+            "Value": "德国诺程",
+            "DisplayValue": "德国诺程"
+          },
+          {
+            "Value": "亚特兰大",
+            "DisplayValue": "亚特兰大"
+          },
+          {
+            "Value": "德国科隆",
+            "DisplayValue": "德国科隆"
+          },
+          {
+            "Value": "伊能德国",
+            "DisplayValue": "伊能德国"
+          },
+          {
+            "Value": "出口易英国",
+            "DisplayValue": "出口易英国"
+          },
+          {
+            "Value": "出口易德国",
+            "DisplayValue": "出口易德国"
+          },
+          {
+            "Value": "速辰德国",
+            "DisplayValue": "速辰德国"
+          }
+        ]
+      },
+      "DataValidationInfo": {
+        "IgnoreBlank": false
+      }
+    },
+    "4,75": {
+      "BindingInfo": {
+        "TableName": "美国仓",
+        "ColumnName": "退货时间",
+        "GUID": "1b2a3e2c-f752-4738-82d7-396f3ec1fa7f"
+      },
+      "CellType": {
+        "$type": "Forguncy.DateCellType, ServerDesignerCommon",
+        "DropdownButtonModeInListview": 3
+      }
+    },
+    "4,79": {
+      "BindingInfo": {
+        "TableName": "美国仓",
+        "ColumnName": "退货单号预付标签",
+        "GUID": "7b88d7d7-9a15-4b47-a3a0-6cd00731bdba"
+      }
+    },
+    "4,86": {
+      "BindingInfo": {
+        "TableName": "美国仓",
+        "ColumnName": "产品情况",
+        "GUID": "1ebadbcc-53a4-4167-ac41-9a6ddc0343cd"
+      },
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "DropdownButtonModeInListview": 3,
+        "SelectOnly": false,
+        "Items": [
+          {
+            "Value": "全新",
+            "DisplayValue": "全新"
+          },
+          {
+            "Value": "已用无破损",
+            "DisplayValue": "已用无破损"
+          },
+          {
+            "Value": "已用有破损",
+            "DisplayValue": "已用有破损"
+          },
+          {
+            "Value": "售后维修",
+            "DisplayValue": "售后维修"
+          }
+        ]
+      }
+    },
+    "4,92": {
+      "BindingInfo": {
+        "TableName": "美国仓",
+        "ColumnName": "需要做的处理",
+        "GUID": "e9d12207-28cf-4c99-88b7-d76d75531186"
+      },
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "DropdownButtonModeInListview": 3,
+        "SelectOnly": false,
+        "Items": [
+          {
+            "Value": "全新保存待寄出",
+            "DisplayValue": "全新保存待寄出"
+          },
+          {
+            "Value": "破损需维修保存",
+            "DisplayValue": "破损需维修保存"
+          },
+          {
+            "Value": "破损需报废",
+            "DisplayValue": "破损需报废"
+          },
+          {
+            "Value": "需维修退回",
+            "DisplayValue": "需维修退回"
+          }
+        ]
+      }
+    },
+    "4,98": {
+      "BindingInfo": {
+        "TableName": "美国仓",
+        "ColumnName": "退仓运费usd",
+        "GUID": "1e05ab81-2efe-4ac3-9d53-649519fbc23b"
+      }
+    },
+    "4,103": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+            "ListviewName": "表格1",
+            "UpdateType": 3,
+            "BreakpointIdentity": "67ec9586-3279-43a0-80a5-f1baaa2197d3"
+          },
+          {
+            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+            "TableName": "美国仓",
+            "ShowConfirm": false,
+            "CheckDataValidation": false,
+            "UpdateBindingValues": [
+              {
+                "BindingInfo": {
+                  "TableName": "美国仓",
+                  "ColumnName": "入库状态",
+                  "GUID": "c6417d75-dd25-4a2b-86b5-09dbdb851783"
+                },
+                "Value": "1"
+              },
+              {
+                "BindingInfo": {
+                  "TableName": "美国仓",
+                  "ColumnName": "入库时间",
+                  "GUID": "a71bd5e0-13d6-4be4-a4e2-7d00c48758cd"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=TODAY()"
+                }
+              }
+            ],
+            "BreakpointIdentity": "faa2c126-e544-415d-b23b-81d58da949e6"
+          },
+          {
+            "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+            "MessageFormula": "确定要手动入库？",
+            "BreakpointIdentity": "a022c3d6-bd16-43d5-80f7-d6d7006843ee"
+          }
+        ],
+        "Text": "手动入库",
+        "ClickMode": 1
+      }
+    },
+    "4,108": {
+      "BindingInfo": {
+        "TableName": "美国仓",
+        "ColumnName": "序号",
+        "GUID": "8bd06e33-349d-46e1-a829-acc6ddd30dfb"
+      }
+    },
+    "4,109": {
+      "BindingInfo": {
+        "TableName": "美国仓",
+        "ColumnName": "库存编号",
+        "GUID": "d4a84369-6a36-4041-ae46-cee6fa6d1bcf"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Foreground": 0,
+        "Underline": true,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 9.333333333333332
+      },
+      {
+        "FontFamily": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 13.333333333333332,
+        "Foreground": 2,
+        "HorizontalAlignment": 3,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 4,
+        "Foreground": 2,
+        "WordWrap": true,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 5,
+        "Foreground": 2,
+        "WordWrap": true,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 5,
+        "Foreground": 2,
+        "WordWrap": true
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 13.333333333333332,
+        "HorizontalAlignment": 3,
+        "BorderBottom": null,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "BorderBottom": null,
+        "BorderTop": 0,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "HorizontalAlignment": 3,
+        "BorderBottom": null,
+        "BorderTop": 0,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": 0,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontSize": 12.0,
+        "HorizontalAlignment": 3,
+        "BorderTop": 0
+      },
+      {
+        "BorderTop": 0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "HorizontalAlignment": 3,
+        "BorderTop": 0
+      },
+      {
+        "FontSize": 12.0,
+        "BorderTop": 0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "BorderBottom": null,
+        "BorderTop": 0,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 13.333333333333332,
+        "HorizontalAlignment": 3,
+        "BorderBottom": null,
+        "BorderTop": 0,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontSize": 12.0,
+        "BorderBottom": null,
+        "BorderTop": 0,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontSize": 13.333333333333332,
+        "HorizontalAlignment": 3,
+        "BorderBottom": null,
+        "BorderTop": 0,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": 0,
+        "BorderLeft": null,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 1,
+        "HorizontalAlignment": 3,
+        "BorderBottom": 1,
+        "BorderTop": null,
+        "BorderLeft": 0,
+        "BorderRight": 1
+      },
+      {
+        "FontFamily": 1,
+        "BorderBottom": 1,
+        "BorderTop": null,
+        "BorderLeft": 1,
+        "BorderRight": 1
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 8,
+        "HorizontalAlignment": 3,
+        "BorderBottom": 1,
+        "BorderTop": null,
+        "BorderLeft": 1,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": 1,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": 1,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": 1
+      },
+      {
+        "FontFamily": 1,
+        "HorizontalAlignment": 3,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": 1,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 10.666666666666666,
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 10.666666666666666,
+        "HorizontalAlignment": 3,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": 1,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 10.666666666666666,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 10.666666666666666,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": 1
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 10.666666666666666,
+        "HorizontalAlignment": 3,
+        "BorderBottom": 1,
+        "BorderLeft": 1
+      },
+      {
+        "BorderBottom": 1
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 10.666666666666666,
+        "HorizontalAlignment": 3,
+        "WordWrap": true
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 10.666666666666666,
+        "HorizontalAlignment": 3,
+        "BorderBottom": 1,
+        "BorderTop": null,
+        "BorderLeft": 1,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 10.666666666666666,
+        "BorderBottom": 1,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 10.666666666666666,
+        "HorizontalAlignment": 3,
+        "BorderBottom": 1,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 10.666666666666666,
+        "BorderBottom": 1,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": 1
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 10.666666666666666,
+        "Formatter": 9,
+        "HorizontalAlignment": 3,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 10.666666666666666,
+        "HorizontalAlignment": 3,
+        "VerticalAlignment": 10,
+        "WordWrap": true,
+        "BorderBottom": 1,
+        "BorderTop": null,
+        "BorderLeft": 1,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": 1,
+        "BorderRight": 1
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 10.666666666666666,
+        "HorizontalAlignment": 3,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 10.666666666666666,
+        "Formatter": 8,
+        "HorizontalAlignment": 3,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": 1,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 10.666666666666666,
+        "Formatter": 11,
+        "HorizontalAlignment": 3,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 10.666666666666666,
+        "Formatter": 12,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 10.666666666666666,
+        "Foreground": 0,
+        "HorizontalAlignment": 3,
+        "Underline": true,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Formatter": 13,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 13,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "HorizontalAlignment": 3,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontSize": 13.333333333333332,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "WordWrap": true,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontSize": 10.666666666666666,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Blue",
+        "Body",
+        "#FFFF0000",
+        "Center",
+        "Accent 1 80",
+        "Accent 2 0",
+        "DarkGray",
+        "#D8D8D8",
+        "yyyy/m/d",
+        "0.0",
+        "Top",
+        "@",
+        "0.00",
+        "[AUTO]General"
+      ],
+      "Borders": [
+        {
+          "Color": 6
+        },
+        {
+          "Color": 7
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,0": 0,
+      "0,1": 1,
+      "0,33": 2,
+      "0,34": 2,
+      "0,35": 2,
+      "0,36": 2,
+      "0,37": 2,
+      "0,38": 2,
+      "0,39": 2,
+      "0,40": 2,
+      "0,41": 2,
+      "0,42": 2,
+      "0,43": 2,
+      "0,44": 2,
+      "0,45": 2,
+      "0,46": 2,
+      "0,47": 2,
+      "0,48": 2,
+      "0,49": 2,
+      "0,50": 3,
+      "0,51": 2,
+      "0,52": 2,
+      "0,53": 2,
+      "0,54": 2,
+      "0,55": 2,
+      "0,56": 2,
+      "0,57": 2,
+      "0,58": 2,
+      "0,59": 2,
+      "0,60": 2,
+      "0,61": 2,
+      "0,62": 2,
+      "0,63": 2,
+      "0,64": 2,
+      "0,65": 2,
+      "0,66": 2,
+      "0,67": 2,
+      "0,68": 2,
+      "0,69": 2,
+      "0,70": 2,
+      "0,71": 2,
+      "0,72": 2,
+      "0,73": 2,
+      "1,33": 2,
+      "1,34": 2,
+      "1,35": 2,
+      "1,36": 2,
+      "1,37": 2,
+      "1,38": 2,
+      "1,39": 2,
+      "1,40": 2,
+      "1,41": 2,
+      "1,42": 2,
+      "1,43": 2,
+      "1,44": 2,
+      "1,45": 2,
+      "1,46": 2,
+      "1,47": 2,
+      "1,48": 2,
+      "1,49": 2,
+      "1,50": 2,
+      "1,51": 2,
+      "1,52": 2,
+      "1,53": 3,
+      "1,54": 2,
+      "1,55": 2,
+      "1,56": 2,
+      "1,57": 2,
+      "1,58": 2,
+      "1,59": 2,
+      "1,60": 2,
+      "1,61": 2,
+      "1,62": 2,
+      "1,63": 2,
+      "1,64": 2,
+      "1,65": 2,
+      "1,66": 2,
+      "1,67": 2,
+      "1,68": 2,
+      "1,69": 2,
+      "1,70": 2,
+      "1,71": 2,
+      "1,72": 2,
+      "1,73": 2,
+      "2,1": 4,
+      "2,48": 5,
+      "2,105": 6,
+      "2,106": 5,
+      "3,1": 7,
+      "3,2": 8,
+      "3,3": 9,
+      "3,4": 10,
+      "3,5": 10,
+      "3,6": 10,
+      "3,7": 10,
+      "3,8": 9,
+      "3,9": 10,
+      "3,10": 10,
+      "3,11": 11,
+      "3,12": 12,
+      "3,13": 12,
+      "3,14": 10,
+      "3,15": 10,
+      "3,16": 10,
+      "3,17": 10,
+      "3,18": 10,
+      "3,19": 9,
+      "3,20": 10,
+      "3,21": 10,
+      "3,22": 12,
+      "3,23": 12,
+      "3,24": 12,
+      "3,25": 12,
+      "3,26": 12,
+      "3,27": 12,
+      "3,28": 12,
+      "3,29": 12,
+      "3,30": 12,
+      "3,31": 12,
+      "3,32": 12,
+      "3,33": 12,
+      "3,34": 12,
+      "3,35": 12,
+      "3,36": 12,
+      "3,37": 12,
+      "3,38": 10,
+      "3,39": 10,
+      "3,40": 13,
+      "3,41": 12,
+      "3,42": 12,
+      "3,43": 13,
+      "3,44": 12,
+      "3,45": 12,
+      "3,46": 13,
+      "3,47": 12,
+      "3,48": 12,
+      "3,49": 13,
+      "3,50": 12,
+      "3,51": 12,
+      "3,52": 12,
+      "3,53": 14,
+      "3,54": 12,
+      "3,55": 12,
+      "3,56": 12,
+      "3,57": 12,
+      "3,58": 12,
+      "3,59": 12,
+      "3,60": 15,
+      "3,61": 16,
+      "3,62": 10,
+      "3,63": 12,
+      "3,64": 12,
+      "3,65": 12,
+      "3,66": 16,
+      "3,67": 10,
+      "3,68": 10,
+      "3,69": 17,
+      "3,70": 16,
+      "3,71": 10,
+      "3,72": 10,
+      "3,73": 17,
+      "3,74": 16,
+      "3,75": 10,
+      "3,76": 10,
+      "3,77": 17,
+      "3,78": 10,
+      "3,79": 10,
+      "3,80": 10,
+      "3,81": 18,
+      "3,82": 10,
+      "3,83": 10,
+      "3,84": 17,
+      "3,85": 10,
+      "3,86": 10,
+      "3,87": 18,
+      "3,88": 10,
+      "3,89": 10,
+      "3,90": 17,
+      "3,91": 10,
+      "3,92": 10,
+      "3,93": 18,
+      "3,94": 10,
+      "3,95": 10,
+      "3,96": 17,
+      "3,97": 10,
+      "3,98": 10,
+      "3,99": 10,
+      "3,100": 10,
+      "3,101": 17,
+      "3,102": 18,
+      "3,103": 18,
+      "3,104": 10,
+      "3,105": 14,
+      "3,106": 12,
+      "3,107": 17,
+      "3,108": 17,
+      "3,109": 17,
+      "3,110": 10,
+      "3,111": 19,
+      "4,1": 20,
+      "4,2": 21,
+      "4,3": 22,
+      "4,4": 23,
+      "4,5": 23,
+      "4,6": 23,
+      "4,7": 24,
+      "4,8": 25,
+      "4,11": 26,
+      "4,14": 27,
+      "4,15": 28,
+      "4,16": 28,
+      "4,17": 28,
+      "4,18": 28,
+      "4,19": 28,
+      "4,20": 28,
+      "4,21": 29,
+      "4,22": 30,
+      "4,23": 31,
+      "4,24": 31,
+      "4,25": 31,
+      "4,26": 31,
+      "4,27": 31,
+      "4,28": 31,
+      "4,29": 32,
+      "4,38": 33,
+      "4,39": 34,
+      "4,40": 35,
+      "4,41": 34,
+      "4,42": 36,
+      "4,43": 33,
+      "4,44": 34,
+      "4,45": 36,
+      "4,46": 33,
+      "4,47": 34,
+      "4,48": 36,
+      "4,49": 33,
+      "4,50": 34,
+      "4,51": 36,
+      "4,52": 37,
+      "4,53": 28,
+      "4,54": 28,
+      "4,55": 28,
+      "4,56": 38,
+      "4,57": 34,
+      "4,58": 34,
+      "4,59": 34,
+      "4,60": 34,
+      "4,61": 34,
+      "4,62": 36,
+      "4,63": 30,
+      "4,64": 31,
+      "4,65": 39,
+      "4,66": 40,
+      "4,67": 28,
+      "4,68": 28,
+      "4,69": 28,
+      "4,70": 28,
+      "4,71": 40,
+      "4,72": 28,
+      "4,73": 28,
+      "4,74": 29,
+      "4,75": 41,
+      "4,76": 28,
+      "4,77": 28,
+      "4,78": 28,
+      "4,79": 42,
+      "4,80": 28,
+      "4,81": 28,
+      "4,82": 28,
+      "4,83": 28,
+      "4,84": 28,
+      "4,85": 28,
+      "4,86": 40,
+      "4,87": 28,
+      "4,88": 28,
+      "4,89": 28,
+      "4,90": 28,
+      "4,91": 28,
+      "4,92": 40,
+      "4,93": 28,
+      "4,94": 28,
+      "4,95": 28,
+      "4,96": 28,
+      "4,97": 28,
+      "4,98": 43,
+      "4,99": 28,
+      "4,100": 28,
+      "4,101": 28,
+      "4,102": 28,
+      "4,103": 44,
+      "4,104": 28,
+      "4,105": 28,
+      "4,106": 28,
+      "4,107": 2,
+      "4,109": 2,
+      "4,110": 2,
+      "4,113": 45,
+      "5,1": 46,
+      "5,77": 47,
+      "5,92": 47,
+      "5,103": 47,
+      "5,111": 47,
+      "6,1": 46,
+      "6,77": 47,
+      "6,92": 47,
+      "6,103": 47,
+      "6,111": 47,
+      "7,1": 46,
+      "7,77": 47,
+      "7,92": 47,
+      "7,103": 47,
+      "7,111": 47,
+      "8,1": 46,
+      "8,77": 47,
+      "8,92": 47,
+      "8,103": 47,
+      "8,111": 47,
+      "9,1": 46,
+      "9,77": 47,
+      "9,92": 47,
+      "9,103": 47,
+      "9,111": 47,
+      "10,1": 46,
+      "10,77": 47,
+      "10,92": 47,
+      "10,103": 47,
+      "10,111": 47,
+      "11,1": 46,
+      "11,77": 47,
+      "11,92": 47,
+      "11,103": 47,
+      "11,111": 47,
+      "12,1": 46,
+      "12,77": 47,
+      "12,92": 47,
+      "12,103": 47,
+      "12,111": 47,
+      "13,1": 46,
+      "13,77": 47,
+      "13,92": 47,
+      "13,103": 47,
+      "13,111": 47,
+      "14,1": 46,
+      "14,77": 47,
+      "14,92": 47,
+      "14,103": 47,
+      "14,111": 47,
+      "15,1": 46,
+      "15,77": 47,
+      "15,92": 47,
+      "15,103": 47,
+      "15,111": 47,
+      "16,1": 46,
+      "16,77": 47,
+      "16,92": 47,
+      "16,103": 47,
+      "16,111": 47,
+      "17,1": 46,
+      "17,77": 47,
+      "17,92": 47,
+      "17,103": 47,
+      "17,111": 47,
+      "18,1": 46,
+      "18,77": 47,
+      "18,92": 47,
+      "18,103": 47,
+      "18,111": 47,
+      "19,1": 46,
+      "19,77": 47,
+      "19,92": 47,
+      "19,103": 47,
+      "19,111": 47,
+      "20,1": 46,
+      "20,77": 47,
+      "20,92": 47,
+      "20,103": 47,
+      "20,111": 47,
+      "21,1": 46,
+      "21,77": 47,
+      "21,92": 47,
+      "21,103": 47,
+      "21,111": 47,
+      "22,1": 46,
+      "22,77": 47,
+      "22,92": 47,
+      "22,103": 47,
+      "22,111": 47,
+      "23,1": 46,
+      "23,77": 47,
+      "23,92": 47,
+      "23,103": 47,
+      "23,111": 47,
+      "24,1": 46,
+      "24,77": 47,
+      "24,92": 47,
+      "24,103": 47,
+      "24,111": 47,
+      "25,1": 46,
+      "25,77": 47,
+      "25,92": 47,
+      "25,103": 47,
+      "25,111": 47,
+      "26,1": 46,
+      "26,77": 47,
+      "26,92": 47,
+      "26,103": 47,
+      "26,111": 47,
+      "27,1": 46,
+      "27,77": 47,
+      "27,92": 47,
+      "27,103": 47,
+      "27,111": 47,
+      "28,1": 46,
+      "28,77": 47,
+      "28,92": 47,
+      "28,103": 47,
+      "28,111": 47,
+      "29,1": 46,
+      "29,77": 47,
+      "29,92": 47,
+      "29,103": 47,
+      "29,111": 47,
+      "30,1": 46,
+      "30,77": 47,
+      "30,92": 47,
+      "30,103": 47,
+      "30,111": 47,
+      "31,1": 46,
+      "31,77": 47,
+      "31,92": 47,
+      "31,103": 47,
+      "31,111": 47,
+      "32,1": 46,
+      "32,77": 47,
+      "32,92": 47,
+      "32,103": 47,
+      "32,111": 47,
+      "33,1": 46,
+      "33,77": 47,
+      "33,92": 47,
+      "33,103": 47,
+      "33,111": 47,
+      "34,1": 46,
+      "34,77": 47,
+      "34,92": 47,
+      "34,103": 47,
+      "34,111": 47,
+      "35,1": 46,
+      "35,111": 47,
+      "36,1": 46,
+      "36,77": 47,
+      "36,92": 47,
+      "36,103": 47,
+      "36,111": 47,
+      "37,1": 46,
+      "37,77": 47,
+      "37,92": 47,
+      "37,103": 47,
+      "37,111": 47,
+      "38,1": 48,
+      "38,2": 49,
+      "38,3": 49,
+      "38,4": 49,
+      "38,5": 49,
+      "38,6": 49,
+      "38,7": 49,
+      "38,8": 49,
+      "38,9": 49,
+      "38,10": 49,
+      "38,11": 49,
+      "38,12": 49,
+      "38,13": 49,
+      "38,14": 49,
+      "38,15": 49,
+      "38,16": 49,
+      "38,17": 49,
+      "38,18": 49,
+      "38,19": 49,
+      "38,20": 49,
+      "38,21": 49,
+      "38,22": 49,
+      "38,23": 49,
+      "38,24": 49,
+      "38,25": 49,
+      "38,26": 49,
+      "38,27": 49,
+      "38,28": 49,
+      "38,29": 49,
+      "38,30": 49,
+      "38,31": 49,
+      "38,32": 49,
+      "38,33": 49,
+      "38,34": 49,
+      "38,35": 49,
+      "38,36": 49,
+      "38,37": 49,
+      "38,38": 49,
+      "38,39": 49,
+      "38,40": 49,
+      "38,41": 49,
+      "38,42": 49,
+      "38,43": 49,
+      "38,44": 49,
+      "38,45": 49,
+      "38,46": 49,
+      "38,47": 49,
+      "38,48": 49,
+      "38,49": 49,
+      "38,50": 49,
+      "38,51": 49,
+      "38,52": 49,
+      "38,53": 49,
+      "38,54": 49,
+      "38,55": 49,
+      "38,56": 49,
+      "38,57": 49,
+      "38,58": 49,
+      "38,59": 49,
+      "38,60": 49,
+      "38,61": 49,
+      "38,62": 49,
+      "38,63": 49,
+      "38,64": 49,
+      "38,65": 49,
+      "38,66": 49,
+      "38,67": 49,
+      "38,68": 49,
+      "38,69": 49,
+      "38,70": 49,
+      "38,71": 49,
+      "38,72": 49,
+      "38,73": 49,
+      "38,74": 49,
+      "38,75": 49,
+      "38,76": 49,
+      "38,77": 50,
+      "38,78": 49,
+      "38,79": 49,
+      "38,80": 49,
+      "38,81": 49,
+      "38,82": 49,
+      "38,83": 49,
+      "38,84": 49,
+      "38,85": 49,
+      "38,86": 49,
+      "38,87": 49,
+      "38,88": 49,
+      "38,89": 49,
+      "38,90": 49,
+      "38,91": 49,
+      "38,92": 50,
+      "38,93": 49,
+      "38,94": 49,
+      "38,95": 49,
+      "38,96": 49,
+      "38,97": 49,
+      "38,98": 49,
+      "38,99": 49,
+      "38,100": 49,
+      "38,101": 49,
+      "38,102": 49,
+      "38,103": 50,
+      "38,104": 49,
+      "38,105": 49,
+      "38,106": 49,
+      "38,107": 49,
+      "38,108": 49,
+      "38,109": 49,
+      "38,110": 49,
+      "38,111": 50,
+      "39,92": 51,
+      "39,93": 2,
+      "39,94": 52,
+      "39,97": 51
+    },
+    "RowStyles": {
+      "2": 53,
+      "3": 54,
+      "4": 55
+    },
+    "SheetStyle": {
+      "FontFamily": 1,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
+    }
+  },
+  "Spans": [
+    "2,1,1,45",
+    "2,48,1,57",
+    "4,1,1,2",
+    "4,3,1,5",
+    "4,8,1,3",
+    "4,109,1,3",
+    "5,1,34,111",
+    "39,94,1,3",
+    "4,66,1,5",
+    "4,71,1,4",
+    "4,75,1,4",
+    "4,79,1,7",
+    "4,86,1,6",
+    "4,92,1,6",
+    "4,98,1,5",
+    "4,103,1,4",
+    "4,14,1,8",
+    "4,40,1,3",
+    "4,38,1,2",
+    "4,43,1,3",
+    "4,49,1,3",
+    "4,52,1,4",
+    "4,56,1,7",
+    "4,46,1,3",
+    "4,63,1,3",
+    "4,11,1,3",
+    "0,1,2,32",
+    "4,22,1,7",
+    "4,29,1,9",
+    "3,1,1,2",
+    "3,3,1,5",
+    "3,8,1,3",
+    "3,11,1,3",
+    "3,14,1,8",
+    "3,22,1,7",
+    "3,29,1,9",
+    "3,38,1,2",
+    "3,40,1,3",
+    "3,43,1,3",
+    "3,46,1,3",
+    "3,49,1,3",
+    "3,52,1,4",
+    "3,56,1,7",
+    "3,63,1,3",
+    "3,66,1,5",
+    "3,71,1,4",
+    "3,75,1,4",
+    "3,79,1,7",
+    "3,86,1,6",
+    "3,92,1,6",
+    "3,98,1,5",
+    "3,103,1,4",
+    "3,109,1,3"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "MasterPageName": "美国仓母版",
+    "PageLoadedCommandList": [
+      {
+        "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+        "ConditionAndCommandPairList": [
+          {
+            "Condition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "SubConditions": [
+                {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionCurrentUserInfoParam, ServerDesignerCommon",
+                    "currentUserProperty": {
+                      "UserProperty": "角色",
+                      "PropertyType": 3
+                    }
+                  },
+                  "value": "财务",
+                  "compareType": 10
+                },
+                {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionCurrentUserInfoParam, ServerDesignerCommon",
+                    "currentUserProperty": {
+                      "UserProperty": "角色",
+                      "PropertyType": 3
+                    }
+                  },
+                  "value": "Administrator",
+                  "compareType": 10
+                },
+                {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionCurrentUserInfoParam, ServerDesignerCommon",
+                    "currentUserProperty": {
+                      "UserProperty": "角色",
+                      "PropertyType": 3
+                    }
+                  },
+                  "value": "采购",
+                  "compareType": 10
+                },
+                {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionCurrentUserInfoParam, ServerDesignerCommon",
+                    "currentUserProperty": {
+                      "UserProperty": "角色",
+                      "PropertyType": 3
+                    }
+                  },
+                  "value": "制单",
+                  "compareType": 10
+                },
+                {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionCurrentUserInfoParam, ServerDesignerCommon",
+                    "currentUserProperty": {
+                      "UserProperty": "角色",
+                      "PropertyType": 3
+                    }
+                  },
+                  "value": "会计"
+                }
+              ],
+              "RelationType": 1
+            },
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                "TargetTableName": "美国仓",
+                "SqlCondition": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "SubConditions": [
+                    {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "美国仓",
+                        "ColumnName": "入库状态",
+                        "GUID": "34646e0e-4c86-488a-bbc2-74b3d25a78a1"
+                      }
+                    },
+                    {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "美国仓",
+                        "ColumnName": "退货指令",
+                        "GUID": "f01a0e0f-99eb-4c71-b8fb-3fc7f75214df"
+                      },
+                      "Value": "需退货"
+                    }
+                  ]
+                },
+                "ID": "fc5e5670a931497da048d6e44beffc02",
+                "BreakpointIdentity": "f079580e-7cf7-4cba-ace5-bddf9136ff8e"
+              }
+            ],
+            "ID": "1afab1c9-c510-43f7-b700-a4c03f9f3144"
+          },
+          {
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                "TargetTableName": "美国仓",
+                "SqlCondition": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "SubConditions": [
+                    {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "美国仓",
+                        "ColumnName": "入库状态",
+                        "GUID": "0084a810-3570-42dd-889d-cfc0211eaabb"
+                      }
+                    },
+                    {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "美国仓",
+                        "ColumnName": "退货指令",
+                        "GUID": "4ca9f888-30cc-4669-906a-cc599f6dae3e"
+                      },
+                      "Value": "需退货"
+                    },
+                    {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "美国仓",
+                        "ColumnName": "平台",
+                        "GUID": "f1511353-679f-4f21-b7ba-4835fd0343af"
+                      },
+                      "Value": "%CurrentUser.账户%"
+                    }
+                  ]
+                },
+                "ID": "f0d6b57250b34dbb8bca3e661706f9b6",
+                "BreakpointIdentity": "a3c94599-4b61-4d88-82a0-e1a722cce74b"
+              }
+            ],
+            "ID": "b55d62f1-19ff-4913-8f34-7a4f132f96ca"
+          }
+        ],
+        "BreakpointIdentity": "eebe285e-5acf-4a02-a2f9-c5da64e51e8b"
+      }
+    ],
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "美国仓"
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//wbtYJsUnK56IQCk29CMt+ZzK/Y3a+jqvMqPK/4B2/H+UKhVIxkhY+X3vGNrDHmqpqSeI22raBPGoJay49JLoWC0OGezUXUI5SqHPIfdNpBoPdStjuGf91Kkp7Dq/A3CyupgGFDK/EQD3pZbIa66CvLCGjONtXwtmeQDhvdqFdclWOt5YZdP52dFnVvOu2aKiitr9/Evbo5d0gYt0m61KPVUDduuSgD7JksPM8/wWqbsEuTHlAb+8zKKNQAuJw2hzX0z6iCFDnarGfX6W5Ypm35QE6N5mdRt/zyTHqBAOHnqdUQgLVTLvz5I3i7BYyFWMtezbiuBW04hlc0PxgzlruUKU/HGVURqfbrbhoXkwQO/SEKoG1Uio1/ZNF9nid+MfrPkNyxEAHcQ428DoHTKDyJGAs5s+C3m07zxmPrVrYaxSLZkTZE594wfERms2kJugpvYDDYZCTOO0nEqAdTpKKyaiecQDXrkoUatKDks05pkMcWK7/CAPxb41Zw0blgrtaMSNbYZWc23/WOFih2xpL5tulpu98zDoXQXq6GyxGPotM58/5qNPNs6+ciaNST8h8lLyAQazkOT2phD0ZfmK/cQkHR6Emrn7JTEGL4QWSM5XKxalHuxFDctvJk0LiKxHAZHaOithNEYBKOPfIxSXzjZt6PD6SqX3H0SmU2Ke7PsCUhqSrmP9YNtBrdzKsw4/BCJPTCyUgp6kPELbS+7/Vy2UycJXwfFKVhmFfDCZvaXrMCexM3CSPs+eBEcJtoyxw3B5Be/q5JwtesXDsDYH+T1aSrvoAGb0WM4Utu2IyGBGhz7XYLV1/SOsUcl/pIlRJmQNAiP3xFtiE5BPvIeWqj2l9kiinUi8F2/cu7C2ss/EGM1+h8wmPcZjaPJB0FPsHzjj8x0FjNwsoXzqYJ7VjA==|920

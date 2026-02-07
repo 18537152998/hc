@@ -1,0 +1,437 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 40.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 48.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      }
+    },
+    "Count": 20,
+    "DefaultSize": 32.0
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "64": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 32.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      }
+    },
+    "Count": 66,
+    "DefaultSize": 32.0
+  },
+  "Values": {
+    "3,63": "删除",
+    "18,37": "设置每页显示行数"
+  },
+  "AttachInfos": {
+    "2,1": {
+      "ListViewInfo": {
+        "Name": "表格1",
+        "TableName": "FBA备货表",
+        "RowIndex": 2,
+        "ColumnIndex": 1,
+        "RowCount": 16,
+        "ColumnCount": 64,
+        "TopCondition": null,
+        "ListViewStyleName": "样式1",
+        "ShowColumnHeaderInDesigner": true,
+        "IsRowHeaderVisible": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "AllowEditInListview": true,
+        "ShowDeleteButton": true,
+        "AllowDragFill": true,
+        "ColumnOperation": 2
+      }
+    },
+    "3,2": {
+      "NameUsedInJavaScript": "日期",
+      "BindingInfo": {
+        "TableName": "FBA备货表",
+        "ColumnName": "日期",
+        "GUID": "da0a1141-5231-4412-8a12-77c9783249ec"
+      }
+    },
+    "3,5": {
+      "NameUsedInJavaScript": "账户",
+      "BindingInfo": {
+        "TableName": "FBA备货表",
+        "ColumnName": "账户",
+        "GUID": "b07f532f-a3ae-4eaf-b7dc-0bae09f874a4"
+      }
+    },
+    "3,8": {
+      "NameUsedInJavaScript": "站点",
+      "BindingInfo": {
+        "TableName": "FBA备货表",
+        "ColumnName": "站点",
+        "GUID": "df609103-d865-42a2-9562-f9ad4623da16"
+      }
+    },
+    "3,11": {
+      "NameUsedInJavaScript": "ASIN",
+      "BindingInfo": {
+        "TableName": "FBA备货表",
+        "ColumnName": "ASIN",
+        "GUID": "e53805c9-48bd-48cd-8a8a-9f55eea8c858"
+      }
+    },
+    "3,14": {
+      "NameUsedInJavaScript": "SKU",
+      "BindingInfo": {
+        "TableName": "FBA备货表",
+        "ColumnName": "SKU",
+        "GUID": "00e7ca5d-cdea-4ebf-b142-e35a372b9699"
+      }
+    },
+    "3,17": {
+      "NameUsedInJavaScript": "数量",
+      "BindingInfo": {
+        "TableName": "FBA备货表",
+        "ColumnName": "数量",
+        "GUID": "210846b5-19a9-4551-978d-e3892cd05839"
+      }
+    },
+    "3,20": {
+      "NameUsedInJavaScript": "总价",
+      "BindingInfo": {
+        "TableName": "FBA备货表",
+        "ColumnName": "总价",
+        "GUID": "085b3063-e943-48d8-9525-f47a77e43b65"
+      }
+    },
+    "3,23": {
+      "NameUsedInJavaScript": "备注",
+      "BindingInfo": {
+        "TableName": "FBA备货表",
+        "ColumnName": "备注",
+        "GUID": "d31f93d1-be12-4700-9d8b-f631eecce14e"
+      }
+    },
+    "3,26": {
+      "NameUsedInJavaScript": "采购状态",
+      "BindingInfo": {
+        "TableName": "FBA备货表",
+        "ColumnName": "采购状态",
+        "GUID": "b6d62f00-6517-4c26-87bd-65225bb66731"
+      }
+    },
+    "3,29": {
+      "NameUsedInJavaScript": "采购者",
+      "BindingInfo": {
+        "TableName": "FBA备货表",
+        "ColumnName": "采购者",
+        "GUID": "ccd04410-6bca-404c-bec7-bc2ba4532a4c"
+      }
+    },
+    "3,32": {
+      "NameUsedInJavaScript": "到货日期",
+      "BindingInfo": {
+        "TableName": "FBA备货表",
+        "ColumnName": "到货日期",
+        "GUID": "27716f1d-4ba1-44aa-bd54-0277675f8855"
+      }
+    },
+    "3,35": {
+      "NameUsedInJavaScript": "订单状态",
+      "BindingInfo": {
+        "TableName": "FBA备货表",
+        "ColumnName": "订单状态",
+        "GUID": "680d1584-7d8d-48dc-aff7-4c902064ba16"
+      }
+    },
+    "3,38": {
+      "NameUsedInJavaScript": "流转采购状态",
+      "BindingInfo": {
+        "TableName": "FBA备货表",
+        "ColumnName": "流转采购状态",
+        "GUID": "cea6e4dc-fc87-4df1-b28c-8ce7cbb5f0fb"
+      }
+    },
+    "3,41": {
+      "NameUsedInJavaScript": "_30天销量",
+      "BindingInfo": {
+        "TableName": "FBA备货表",
+        "ColumnName": "_30天销量",
+        "GUID": "4c0d931f-a845-43e3-9837-4265a44dd6a9"
+      }
+    },
+    "3,44": {
+      "NameUsedInJavaScript": "_30天Max销量",
+      "BindingInfo": {
+        "TableName": "FBA备货表",
+        "ColumnName": "_30天Max销量",
+        "GUID": "486ef989-c1ca-4b56-8189-d7d02ea937df"
+      }
+    },
+    "3,47": {
+      "NameUsedInJavaScript": "在途",
+      "BindingInfo": {
+        "TableName": "FBA备货表",
+        "ColumnName": "在途",
+        "GUID": "7620f4d8-16e3-4cb9-a24d-b6c9cabdf911"
+      }
+    },
+    "3,50": {
+      "NameUsedInJavaScript": "总库存",
+      "BindingInfo": {
+        "TableName": "FBA备货表",
+        "ColumnName": "总库存",
+        "GUID": "18a966f8-c247-403d-a2c9-6884e3746ea9"
+      }
+    },
+    "3,53": {
+      "NameUsedInJavaScript": "入库量",
+      "BindingInfo": {
+        "TableName": "FBA备货表",
+        "ColumnName": "入库量",
+        "GUID": "3d412bed-65f2-4907-9885-7a84357057aa"
+      }
+    },
+    "3,56": {
+      "NameUsedInJavaScript": "财务入库追踪",
+      "BindingInfo": {
+        "TableName": "FBA备货表",
+        "ColumnName": "财务入库追踪",
+        "GUID": "2f320e77-8dc4-45b7-b0ef-aafac1babb9e"
+      }
+    },
+    "3,59": {
+      "NameUsedInJavaScript": "订货票型",
+      "BindingInfo": {
+        "TableName": "FBA备货表",
+        "ColumnName": "订货票型",
+        "GUID": "0787851b-da4f-46bd-a375-dd51dac532fc"
+      }
+    },
+    "3,62": {
+      "BindingInfo": {
+        "TableName": "FBA备货表",
+        "ColumnName": "识别码",
+        "GUID": "ea17ee70-64e6-4beb-91a4-8f46d8b3c2a8",
+        "RelationBinding": {
+          "RelatedTable": "正报信息表",
+          "RelatedColumn": "识别码",
+          "DisplayColumn": "订货票型"
+        }
+      }
+    },
+    "3,63": {
+      "NameUsedInJavaScript": "删除",
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.DeleteRecordCommand, ServerDesignerCommon",
+            "ConfirmText": "您确定要删除吗？",
+            "BreakpointIdentity": "16cdb0a7-11f0-4bf7-9012-d3ab168fd4b0"
+          }
+        ],
+        "Text": "删除"
+      }
+    },
+    "18,1": {
+      "CellType": {
+        "$type": "ElementUI.CellTypes.PaginationCellType, ElementUI",
+        "ListviewName": "表格1",
+        "pagerCount": 7,
+        "layout": [
+          {
+            "layoutItem": "prev"
+          },
+          {
+            "layoutItem": "pager"
+          },
+          {
+            "layoutItem": "next"
+          },
+          {
+            "layoutItem": "jumper"
+          },
+          {
+            "layoutItem": "->"
+          },
+          {
+            "layoutItem": "total"
+          }
+        ],
+        "pageSizes": [
+          {},
+          {
+            "value": 20
+          },
+          {
+            "value": 30
+          },
+          {
+            "value": 40
+          },
+          {
+            "value": 50
+          },
+          {
+            "value": 100
+          }
+        ]
+      }
+    },
+    "18,36": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "18,37": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.OperateCellTypeCommand, ServerDesignerCommon",
+            "TargetPageElement": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=FBA备货表wh!B19"
+            },
+            "TargetType": "ElementUI.CellTypes.PaginationCellType, ElementUI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e50995ee76bfe560",
+            "MethodName": "SetPageSize",
+            "ParameterValues": {
+              "pageSize": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=FBA备货表wh!AK19"
+              }
+            },
+            "BreakpointIdentity": "6120924d-e474-41d2-acd6-cf3bacf60df5"
+          }
+        ],
+        "Text": "设置每页显示行数",
+        "TemplateKey": "_RS_Main1"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Foreground": 0,
+        "Underline": true
+      },
+      {
+        "HorizontalAlignment": 1
+      },
+      {
+        "Formatter": 2
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Accent 1",
+        "Right",
+        "@",
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "3,63": 0,
+      "18,1": 1,
+      "18,36": 2
+    },
+    "SheetStyle": {
+      "FontFamily": 3
+    }
+  },
+  "Spans": [
+    "3,2,1,3",
+    "2,2,1,3",
+    "3,5,1,3",
+    "2,5,1,3",
+    "3,8,1,3",
+    "2,8,1,3",
+    "3,11,1,3",
+    "2,11,1,3",
+    "3,14,1,3",
+    "2,14,1,3",
+    "3,17,1,3",
+    "2,17,1,3",
+    "3,20,1,3",
+    "2,20,1,3",
+    "3,23,1,3",
+    "2,23,1,3",
+    "3,26,1,3",
+    "2,26,1,3",
+    "3,29,1,3",
+    "2,29,1,3",
+    "3,32,1,3",
+    "2,32,1,3",
+    "3,35,1,3",
+    "2,35,1,3",
+    "3,38,1,3",
+    "2,38,1,3",
+    "3,41,1,3",
+    "2,41,1,3",
+    "3,44,1,3",
+    "2,44,1,3",
+    "3,47,1,3",
+    "2,47,1,3",
+    "3,50,1,3",
+    "2,50,1,3",
+    "3,53,1,3",
+    "2,53,1,3",
+    "3,56,1,3",
+    "2,56,1,3",
+    "3,59,1,3",
+    "2,59,1,3",
+    "3,63,1,2",
+    "2,63,1,2",
+    "4,1,14,64",
+    "18,1,1,35",
+    "18,37,1,3"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "FBA备货表"
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//Vi0z2pJYfLb+uqGzCRs+CUCzNlvEs23SoNc+DU+Buxa/qcr95pW53AH0kRFAePhZp2CLH7vRBr5sHQ3+93TZWZdF1xASrbe4GdM/xHEL1aOsDaHQIKZL41yggHgBUzFinaanx592Pl5freHpy++FEALgBlAjdY+snBs7JQuuMCEdcFVUFl3kascUCBj94c51wlAMCOfE/JdMVMn1KBDeQqXskdsHN7ikmRL4BrMmIvrul8xESrMYhsDmhzgUCuIgR8giq800UQG6Dj8MaQwEflRckLBdHgveQlFlZReN5WpQILwK/IcaRQKw4mNOoy/fz3z8Hp1HfJEtIfa6ecQOpYyE4+qZ6h7NwD8MLbAc0lZ9X/Q4zgXV18OvL1D8lFEY+3utK8Y1/ZPGnLG2b4UlQefjyV7soZ02qLBqpJfy2kg5difs8qIRnM7KrX8MEm6ktMi8+HHElygDuwumrwwKBFvJllKCz2PYcv1wwKL6PrAml5pB8CYmRi/A59GH2K7avLh8VDtaVmRiqPrJ8MBdXErKmxii/zJI50gne9NyAFLiSJNqGkrbDs1x/30jA4VFTYrWpzD9ZIDmfvsf6vi9JBhVLu2Rc8M0RuIVbeQN0IYph6Hg+bK4yVYOOV9WkeOIJwQ1PEiuuZbClILznh+lr5j1GH2t5uKoYCIN2jZv0QU8Q3lcmP4STANFwfFyny6gai039akfAwTywAYvJdceEyBKSNZ0oGwumNYCRnYS2UJ9xmeCB+P+wmGzkIiRenI80fZyWK1dRbEjnrzOgJk5ipnpz0af2mPtaWx72o+kq2mxTtv/0pWDl73J8ybq0ynGMJapgGtqi/rSv1nF2xSO/IC+3BqJ69XU2lDK2JCfuhHyRGnguXfeXXeLdSdMQgHn/UErQpZPB6V+fC7krf6xRg==|920

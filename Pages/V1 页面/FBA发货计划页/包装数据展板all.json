@@ -1,0 +1,2756 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "42": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53
+    ],
+    "Count": 54
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "51": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 32.0
+        }
+      },
+      "52": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 32.0
+        }
+      },
+      "53": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 73.0
+        }
+      },
+      "54": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "55": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 21.0
+        }
+      },
+      "56": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 21.0
+        }
+      },
+      "57": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 21.0
+        }
+      },
+      "58": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 21.0
+        }
+      },
+      "59": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 21.0
+        }
+      },
+      "60": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 21.0
+        }
+      },
+      "61": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 21.0
+        }
+      },
+      "62": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 21.0
+        }
+      },
+      "63": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      }
+    },
+    "Count": 64
+  },
+  "Values": {
+    "1,7": "—",
+    "1,17": 2,
+    "1,55": "包装用时",
+    "43,12": "包装数量",
+    "43,23": "指令",
+    "43,26": "状态",
+    "43,31": "预计用时",
+    "43,35": "包装用时",
+    "43,39": "包装签名",
+    "43,61": "包装用时"
+  },
+  "Formulas": {
+    "44,31": "IF(M45=\"\",0,IFERROR(M45/AZ45,0))",
+    "44,35": "IF(AC45=\"\",0,IFERROR(AC45/AZ45,0))",
+    "44,61": "IF(BH45=\"\",0,IFERROR(BH45/BI45,0))"
+  },
+  "AttachInfos": {
+    "1,1": {
+      "CellType": {
+        "$type": "Forguncy.DateCellType, ServerDesignerCommon",
+        "CellDefaultValue": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=TODAY()-WEEKDAY(TODAY(),2)+1"
+        },
+        "TemplateKey": "样式1"
+      }
+    },
+    "1,8": {
+      "CellType": {
+        "$type": "Forguncy.DateCellType, ServerDesignerCommon",
+        "CellDefaultValue": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=TODAY()-WEEKDAY(TODAY(),2)+7"
+        },
+        "TemplateKey": "样式1"
+      }
+    },
+    "1,14": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=包装数据展板all!B2"
+                },
+                "Value": "%Null%"
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=包装数据展板all!I2"
+                },
+                "Value": "%Null%"
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=包装数据展板all!R2"
+                },
+                "Value": "4"
+              }
+            ],
+            "BreakpointIdentity": "08cb8cab-49df-4f57-9b53-625c96d9aa38"
+          }
+        ],
+        "TemplateKey": "透明按钮_无底色_",
+        "Icon": {
+          "Name": "Application/062_refresh_6.svg",
+          "BuiltIn": true,
+          "Color": "Accent 1 -25"
+        },
+        "IconSize": 20.0
+      }
+    },
+    "1,17": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "TemplateKey": "样式1",
+        "Items": [
+          {
+            "Value": "4"
+          },
+          {
+            "Value": "0",
+            "DisplayValue": "三周计划"
+          },
+          {
+            "Value": "1",
+            "DisplayValue": "上周计划"
+          },
+          {
+            "Value": "2",
+            "DisplayValue": "本周计划"
+          },
+          {
+            "Value": "3",
+            "DisplayValue": "下周计划"
+          }
+        ],
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=包装数据展板all!R2"
+                      }
+                    ]
+                  },
+                  "value": "1"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=包装数据展板all!B2"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=TODAY()-WEEKDAY(TODAY(),2)-6"
+                        }
+                      },
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=包装数据展板all!I2"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=TODAY()-WEEKDAY(TODAY(),2)"
+                        }
+                      }
+                    ],
+                    "BreakpointIdentity": "ef0bd76e-9363-4b2d-8e91-ecac9c31aa03"
+                  },
+                  {
+                    "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                    "TargetTableName": "包装计划表",
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                      "SubConditions": [
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "CompareType": 3,
+                          "ColumnBindingInfo": {
+                            "TableName": "包装计划表",
+                            "ColumnName": "日期",
+                            "GUID": "36894a6d-a2fc-4b6a-886b-e1c7786355cd"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=包装数据展板all!B2"
+                          }
+                        },
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "CompareType": 5,
+                          "ColumnBindingInfo": {
+                            "TableName": "包装计划表",
+                            "ColumnName": "日期",
+                            "GUID": "b1e927ef-e082-44fa-8c62-d71bb412d6fb"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=包装数据展板all!I2"
+                          }
+                        }
+                      ]
+                    },
+                    "ID": "26fbef6b374c4c919b55d34d61748eab",
+                    "BreakpointIdentity": "b4edf378-8bab-425d-bfdf-259a17ab2c43"
+                  }
+                ],
+                "ID": "eeea1677-78cb-4d64-aa06-435501f91b6f"
+              },
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=包装数据展板all!R2"
+                      }
+                    ]
+                  },
+                  "value": "2"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=包装数据展板all!B2"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=TODAY()-WEEKDAY(TODAY(),2)+1"
+                        }
+                      },
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=包装数据展板all!I2"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=TODAY()-WEEKDAY(TODAY(),2)+7"
+                        }
+                      }
+                    ],
+                    "BreakpointIdentity": "a13a824a-5065-4278-9058-5c43c31d910f"
+                  },
+                  {
+                    "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                    "TargetTableName": "包装计划表",
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                      "SubConditions": [
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "CompareType": 3,
+                          "ColumnBindingInfo": {
+                            "TableName": "包装计划表",
+                            "ColumnName": "日期",
+                            "GUID": "3a1e39de-93a7-4948-a6c2-7a97ef46786f"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=包装数据展板all!B2"
+                          }
+                        },
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "CompareType": 5,
+                          "ColumnBindingInfo": {
+                            "TableName": "包装计划表",
+                            "ColumnName": "日期",
+                            "GUID": "6d8e8d2c-9a10-4f63-8e94-83b974eef16d"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=包装数据展板all!I2"
+                          }
+                        }
+                      ]
+                    },
+                    "ID": "85d9e2d474ee488a8d1a0915f84f22be",
+                    "BreakpointIdentity": "a85fe528-0bbc-4933-aac7-1d0b2864b754"
+                  }
+                ],
+                "ID": "668ede32-078a-4815-9da9-9769856ef80f"
+              },
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=包装数据展板all!R2"
+                      }
+                    ]
+                  },
+                  "value": "3"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=包装数据展板all!B2"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=TODAY()-WEEKDAY(TODAY(),2)+8"
+                        }
+                      },
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=包装数据展板all!I2"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=TODAY()-WEEKDAY(TODAY(),2)+14"
+                        }
+                      }
+                    ],
+                    "BreakpointIdentity": "1152d580-1565-4f8f-b972-bc205cdc2d1c"
+                  },
+                  {
+                    "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                    "TargetTableName": "包装计划表",
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                      "SubConditions": [
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "CompareType": 3,
+                          "ColumnBindingInfo": {
+                            "TableName": "包装计划表",
+                            "ColumnName": "日期",
+                            "GUID": "e4bf8ab8-dd19-45a7-aa98-39b11a4be36b"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=包装数据展板all!B2"
+                          }
+                        },
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "CompareType": 5,
+                          "ColumnBindingInfo": {
+                            "TableName": "包装计划表",
+                            "ColumnName": "日期",
+                            "GUID": "66c04cb1-f564-4945-b48f-62ad20769cf7"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=包装数据展板all!I2"
+                          }
+                        }
+                      ]
+                    },
+                    "ID": "17bf77cf9d6242c7a351271010d0ac71",
+                    "BreakpointIdentity": "34da833a-2fb0-42c4-8e20-15b475bc7736"
+                  }
+                ],
+                "ID": "afdcf433-7b94-421c-9d6e-f1367bf48137"
+              },
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=包装数据展板all!R2"
+                      }
+                    ]
+                  },
+                  "value": "0"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=包装数据展板all!B2"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=TODAY()-WEEKDAY(TODAY(),2)-6"
+                        }
+                      },
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=包装数据展板all!I2"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=TODAY()-WEEKDAY(TODAY(),2)+14"
+                        }
+                      }
+                    ],
+                    "BreakpointIdentity": "93b0f950-192b-4aaf-9c6b-6af5de294dfb"
+                  },
+                  {
+                    "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                    "TargetTableName": "包装计划表",
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                      "SubConditions": [
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "CompareType": 3,
+                          "ColumnBindingInfo": {
+                            "TableName": "包装计划表",
+                            "ColumnName": "日期",
+                            "GUID": "82856c42-3c71-4c25-bd53-2a91ca058fe0"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=包装数据展板all!B2"
+                          }
+                        },
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "CompareType": 5,
+                          "ColumnBindingInfo": {
+                            "TableName": "包装计划表",
+                            "ColumnName": "日期",
+                            "GUID": "3c38ddba-0f9c-4ba3-be2b-29d1653c38a4"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=包装数据展板all!I2"
+                          }
+                        }
+                      ]
+                    },
+                    "ID": "5277b1bf5f814d4da2a0ad976af16ed0",
+                    "BreakpointIdentity": "7fce2447-e92d-43e1-995c-ea30fdeb58a1"
+                  }
+                ],
+                "ID": "8a0f75e4-36d9-4070-b487-d972c6852d66"
+              }
+            ],
+            "BreakpointIdentity": "66578894-83a2-48d7-89c6-19c6292a18e6"
+          }
+        ],
+        "CellDefaultValue": 2
+      }
+    },
+    "1,23": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "ShowDropdownButtonWhenGetFocus": 2,
+        "SelectOnly": false,
+        "LoadOnDemand": true,
+        "TemplateKey": "样式1",
+        "WaterMark": "平台",
+        "IsBounding": true,
+        "DataSource": "包装计划表",
+        "ValueColumnBindingInfo": {
+          "TableName": "包装计划表",
+          "ColumnName": "平台",
+          "GUID": "76c87eb6-b66b-4e75-b0fd-d64d81f2ae78"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "包装计划表",
+          "ColumnName": "平台",
+          "GUID": "b20d92db-c785-42f4-8de2-d0e2d47ab179"
+        },
+        "ItemsQuery": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "SubConditions": [
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 3,
+              "ColumnBindingInfo": {
+                "TableName": "包装计划表",
+                "ColumnName": "日期",
+                "GUID": "4df9516c-ea56-4d85-9f70-3a89256b610d"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=包装数据展板all!B2"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 5,
+              "ColumnBindingInfo": {
+                "TableName": "包装计划表",
+                "ColumnName": "日期",
+                "GUID": "80474374-a08c-4cf2-954e-ca72ad2396b2"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=包装数据展板all!I2"
+              }
+            }
+          ]
+        },
+        "AddNullItemWhenBinding": true
+      }
+    },
+    "1,28": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "ShowDropdownButtonWhenGetFocus": 2,
+        "SelectOnly": false,
+        "TemplateKey": "样式1",
+        "WaterMark": "站点",
+        "IsBounding": true,
+        "DataSource": "包装计划表",
+        "ValueColumnBindingInfo": {
+          "TableName": "包装计划表",
+          "ColumnName": "站点",
+          "GUID": "4f2a8c6c-5742-4353-8e74-ba2b79218b4e"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "包装计划表",
+          "ColumnName": "站点",
+          "GUID": "62927bee-65bf-4b0a-a597-d00cc08ccd97"
+        },
+        "AddNullItemWhenBinding": true
+      }
+    },
+    "1,33": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "TemplateKey": "样式1",
+        "WaterMark": "包装指令",
+        "IsBounding": true,
+        "DataSource": "包装计划表",
+        "ValueColumnBindingInfo": {
+          "TableName": "包装计划表",
+          "ColumnName": "包装指令",
+          "GUID": "a7d29f4c-a6e1-4c80-bfb1-25fc20863a36"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "包装计划表",
+          "ColumnName": "包装指令",
+          "GUID": "7d0613a0-23ea-4b4d-95ab-f1470e3baa6a"
+        },
+        "AddNullItemWhenBinding": true
+      }
+    },
+    "1,39": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "TemplateKey": "样式1",
+        "WaterMark": "货代",
+        "IsBounding": true,
+        "DataSource": "包装计划表",
+        "ValueColumnBindingInfo": {
+          "TableName": "包装计划表",
+          "ColumnName": "货代选择",
+          "GUID": "3b17254a-9972-4ef2-9751-1dc93de531b4"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "包装计划表",
+          "ColumnName": "货代选择",
+          "GUID": "4fad2010-b4b0-4fb2-8892-dfed1568331d"
+        },
+        "AddNullItemWhenBinding": true
+      }
+    },
+    "1,45": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "TemplateKey": "样式1",
+        "WaterMark": "包装账户",
+        "IsBounding": true,
+        "DataSource": "包装账户对应表",
+        "ValueColumnBindingInfo": {
+          "TableName": "包装账户对应表",
+          "ColumnName": "包装账户",
+          "GUID": "fffe47b5-53c6-45dc-8be4-bf36e243ff29"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "包装账户对应表",
+          "ColumnName": "包装账户",
+          "GUID": "2792ae58-5747-41af-98d5-ecf9211776d0"
+        },
+        "AddNullItemWhenBinding": true
+      }
+    },
+    "3,1": {
+      "CellType": {
+        "$type": "Forguncy.PivotTableCellType, ServerDesignerCommon",
+        "PivotTableSetting": {
+          "SelectedListViewName": "数据展板1",
+          "Rows": [
+            {
+              "DatabaseColumnName": "包装账户",
+              "DisplayName": "包装账户",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=包装数据展板all!AV45"
+              },
+              "BackgroundValue": {}
+            },
+            {
+              "DatabaseColumnName": "站点",
+              "DisplayName": "站点",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=包装数据展板all!J45"
+              },
+              "BackgroundValue": {}
+            },
+            {
+              "DatabaseColumnName": "平台",
+              "DisplayName": "平台",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=包装数据展板all!G45"
+              },
+              "BackgroundValue": {}
+            }
+          ],
+          "Cols": [
+            {
+              "DatabaseColumnName": "指令",
+              "DisplayName": "指令",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=包装数据展板all!X45"
+              },
+              "BackgroundValue": {}
+            },
+            {
+              "DatabaseColumnName": "货代选择",
+              "DisplayName": "货代选择",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=包装数据展板all!S45"
+              },
+              "BackgroundValue": {}
+            }
+          ],
+          "Values": [
+            {
+              "DatabaseColumnName": "预计用时",
+              "DisplayName": "预计用时",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=包装数据展板all!AF45"
+              },
+              "Format": "0.0",
+              "Aggregator": 0,
+              "TotalAggregator": 0,
+              "BackgroundValue": {}
+            },
+            {
+              "DatabaseColumnName": "包装用时",
+              "DisplayName": "包装用时",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=包装数据展板all!AJ45"
+              },
+              "Format": "0.0",
+              "Aggregator": 0,
+              "TotalAggregator": 0,
+              "BackgroundValue": {}
+            }
+          ],
+          "DatabaseColumns": [
+            {
+              "DatabaseColumnName": "日期",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=包装数据展板all!C45"
+              }
+            },
+            {
+              "DatabaseColumnName": "平台",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=包装数据展板all!G45"
+              }
+            },
+            {
+              "DatabaseColumnName": "站点",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=包装数据展板all!J45"
+              }
+            },
+            {
+              "DatabaseColumnName": "包装数量",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=包装数据展板all!M45"
+              }
+            },
+            {
+              "DatabaseColumnName": "类别",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=包装数据展板all!P45"
+              }
+            },
+            {
+              "DatabaseColumnName": "货代选择",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=包装数据展板all!S45"
+              }
+            },
+            {
+              "DatabaseColumnName": "票号",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=包装数据展板all!V45"
+              }
+            },
+            {
+              "DatabaseColumnName": "指令",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=包装数据展板all!X45"
+              }
+            },
+            {
+              "DatabaseColumnName": "状态",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=包装数据展板all!AA45"
+              }
+            },
+            {
+              "DatabaseColumnName": "完成数量",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=包装数据展板all!AC45"
+              }
+            },
+            {
+              "DatabaseColumnName": "预计用时",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=包装数据展板all!AF45"
+              }
+            },
+            {
+              "DatabaseColumnName": "包装用时",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=包装数据展板all!AJ45"
+              }
+            },
+            {
+              "DatabaseColumnName": "包装签名",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=包装数据展板all!AN45"
+              }
+            },
+            {
+              "DatabaseColumnName": "完成时间",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=包装数据展板all!AR45"
+              }
+            },
+            {
+              "DatabaseColumnName": "包装账户",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=包装数据展板all!AV45"
+              }
+            },
+            {
+              "DatabaseColumnName": "包装标准",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=包装数据展板all!AZ45"
+              }
+            },
+            {
+              "DatabaseColumnName": "包装量",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=包装数据展板all!BA45"
+              }
+            },
+            {
+              "DatabaseColumnName": "识别码",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=包装数据展板all!BB45"
+              }
+            }
+          ],
+          "CollapseRowHeaderIndex": 1,
+          "CollapseColumnHeaderIndex": 0,
+          "ForceFrozenRowHeader": true
+        },
+        "PivotTableStyle": {
+          "IsRowHeaderAutoFitWidth": true,
+          "GrayAreaColor": "Background 1 0",
+          "UseSimpleBar": true
+        },
+        "PivotTableClickCommand": {
+          "RowHeaderList": [
+            {
+              "Label": "包装账户"
+            },
+            {
+              "Label": "站点"
+            },
+            {
+              "Label": "平台"
+            }
+          ],
+          "ColumnHeaderList": [
+            {
+              "Label": "指令"
+            },
+            {
+              "Label": "货代选择"
+            }
+          ],
+          "CellValueList": [
+            {
+              "Label": "值的标题"
+            },
+            {
+              "Label": "单元格值"
+            }
+          ],
+          "CommandList": []
+        },
+        "PivotTableID": "34b7e171-1130-4bd7-b62c-364f9081e735",
+        "TemplateKey": "样式1"
+      }
+    },
+    "3,55": {
+      "CellType": {
+        "$type": "Forguncy.PivotTableCellType, ServerDesignerCommon",
+        "PivotTableSetting": {
+          "SelectedListViewName": "表格1",
+          "Rows": [
+            {
+              "DatabaseColumnName": "包装签名",
+              "DisplayName": "包装签名",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=包装数据展板all!BD45"
+              }
+            }
+          ],
+          "Values": [
+            {
+              "DatabaseColumnName": "包装用时",
+              "DisplayName": "包装用时",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=包装数据展板all!BJ45"
+              },
+              "Format": "0.0",
+              "Aggregator": 0,
+              "TotalAggregator": 0
+            }
+          ],
+          "DatabaseColumns": [
+            {
+              "DatabaseColumnName": "包装签名",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=包装数据展板all!BD45"
+              }
+            },
+            {
+              "DatabaseColumnName": "完成数量",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=包装数据展板all!BH45"
+              }
+            },
+            {
+              "DatabaseColumnName": "包装量",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=包装数据展板all!BI45"
+              }
+            },
+            {
+              "DatabaseColumnName": "包装用时",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=包装数据展板all!BJ45"
+              }
+            }
+          ],
+          "ForceFrozenRowHeader": true
+        },
+        "ShowSubtotal": false,
+        "PivotTableConditionalFormatSetting": {
+          "Conditions": [
+            {
+              "Label": "包装用时",
+              "DataConditionFormatRulesCollection": {
+                "Rules": [
+                  {
+                    "$type": "Forguncy.ConditionFormat.Top10Rule, ServerDesignerCommon",
+                    "Operator": 1,
+                    "Rank": 5,
+                    "GUID": "97c6e1b3-e7b2-4e21-9723-afb67ad76841",
+                    "StyleInfo": {
+                      "Background": "#FFFFC000",
+                      "Underline": null,
+                      "Strikethrough": null
+                    }
+                  },
+                  {
+                    "$type": "Forguncy.ConditionFormat.Top10Rule, ServerDesignerCommon",
+                    "Rank": 5,
+                    "GUID": "42d335a1-dde3-4bf7-989c-1f791e1c2f0b",
+                    "StyleInfo": {
+                      "Background": "#FF92D050",
+                      "Underline": null,
+                      "Strikethrough": null
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "PivotTableStyle": {
+          "IsDataColumnAutoFitWidth": true,
+          "IsRowHeaderAutoFitWidth": true,
+          "UseSimpleBar": true
+        },
+        "PivotTableID": "b20cd7e5-48cc-464e-9218-65723068ede8",
+        "TemplateKey": "样式1"
+      }
+    },
+    "43,0": {
+      "ListViewInfo": {
+        "Name": "数据展板1",
+        "TableName": "包装计划表",
+        "RowIndex": 43,
+        "RowCount": 11,
+        "ColumnCount": 54,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "SubConditions": [
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 3,
+              "ColumnBindingInfo": {
+                "TableName": "包装计划表",
+                "ColumnName": "日期",
+                "GUID": "1ac76a93-9460-41e3-9a3a-265966ff57f6"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=包装数据展板all!B2"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 5,
+              "ColumnBindingInfo": {
+                "TableName": "包装计划表",
+                "ColumnName": "日期",
+                "GUID": "9b28c23d-db94-4d03-b107-8cea95f97c5d"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=包装数据展板all!I2"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "包装计划表",
+                "ColumnName": "平台",
+                "GUID": "4386f36e-212f-40f2-ae94-55261b8eaa6f"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=包装数据展板all!X2"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "包装计划表",
+                "ColumnName": "包装识别码",
+                "GUID": "0ce6439e-42b4-4408-a107-ef9a211b02c1",
+                "RelationBinding": {
+                  "RelatedTable": "包装账户对应表",
+                  "RelatedColumn": "包装账户识别码",
+                  "DisplayColumn": "包装账户"
+                }
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=包装数据展板all!AT2"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "包装计划表",
+                "ColumnName": "站点",
+                "GUID": "f45e8c5b-9a86-4cbc-ada6-5796d8ac0129"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=包装数据展板all!AC2"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "包装计划表",
+                "ColumnName": "货代选择",
+                "GUID": "0e5458f2-a1ec-4a47-95fc-be7072c2efca"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=包装数据展板all!AN2"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "包装计划表",
+                "ColumnName": "包装指令",
+                "GUID": "0894c706-32ac-4a0c-a855-fbca95724b1a"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=包装数据展板all!AH2"
+              }
+            }
+          ]
+        },
+        "OrderByCondition": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "包装计划表",
+                "ColumnName": "日期",
+                "GUID": "19e6e094-5c2e-41b8-bab3-bd8e648e935e"
+              },
+              "Order": 0
+            },
+            {
+              "ColumnBindingInfo": {
+                "TableName": "包装计划表",
+                "ColumnName": "票号",
+                "GUID": "2dbd63df-f7d3-43ce-8f24-22081cce7d85"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "TopCondition": null,
+        "TableLoadOnDemandInfo": {
+          "IsEnabled": true
+        },
+        "ListViewStyleName": "样式4",
+        "ShowColumnHeaderInDesigner": true,
+        "IsRowHeaderVisible": true,
+        "IsRowHeaderCheckBoxVisible": true,
+        "IsTotalRowAtFirstRow": true,
+        "AllowEditInListview": true,
+        "AllowAddNewRow": true,
+        "AllowDragFill": true,
+        "AllowDragMove": true,
+        "DisableAutoSelectRow": true,
+        "RowHeaderContextMenu": {
+          "ContextMenuItems": [
+            {
+              "Text": "插入",
+              "Visible": true,
+              "OperationType": 2
+            },
+            {
+              "Text": "删除",
+              "Visible": true,
+              "OperationType": 3
+            },
+            {
+              "Text": "复制并插入",
+              "Visible": true,
+              "OperationType": 4
+            }
+          ]
+        },
+        "ColumnOperation": 2,
+        "MoveFocusHorizontally": true
+      }
+    },
+    "43,55": {
+      "ListViewInfo": {
+        "Name": "表格1",
+        "TableName": "包装计划表",
+        "RowIndex": 43,
+        "ColumnIndex": 55,
+        "RowCount": 11,
+        "ColumnCount": 8,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "SubConditions": [
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 3,
+              "ColumnBindingInfo": {
+                "TableName": "包装计划表",
+                "ColumnName": "日期",
+                "GUID": "ea845fd1-a1f6-4b6b-ad0e-9a2e8d64f796"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=包装数据展板all!B2"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 5,
+              "ColumnBindingInfo": {
+                "TableName": "包装计划表",
+                "ColumnName": "日期",
+                "GUID": "5f2b1d66-e707-4610-86e1-5b7f65a7a61f"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=包装数据展板all!I2"
+              }
+            }
+          ]
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "样式1",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2,
+        "ShowGridLine": true
+      }
+    },
+    "44,2": {
+      "IsAutoMergeInListview": true,
+      "BindingInfo": {
+        "TableName": "包装计划表",
+        "ColumnName": "日期",
+        "GUID": "8e5f0777-bf02-4f50-89d0-a3458d8be57c"
+      }
+    },
+    "44,6": {
+      "IsAutoMergeInListview": true,
+      "BindingInfo": {
+        "TableName": "包装计划表",
+        "ColumnName": "平台",
+        "GUID": "9294c92c-d09c-4b2d-9387-0785ec74dd94"
+      }
+    },
+    "44,9": {
+      "IsAutoMergeInListview": true,
+      "BindingInfo": {
+        "TableName": "包装计划表",
+        "ColumnName": "站点",
+        "GUID": "d09506b2-6f90-4abd-8311-feba64bb6b76"
+      },
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "DropdownButtonModeInListview": 3,
+        "IsBounding": true,
+        "DataSource": "库存表",
+        "ValueColumnBindingInfo": {
+          "TableName": "库存表",
+          "ColumnName": "站点",
+          "GUID": "63f00039-b752-4c6e-b2d9-3511dd070872"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "库存表",
+          "ColumnName": "站点",
+          "GUID": "d9526d76-ef98-4f33-a795-b58d24daeeb0"
+        },
+        "ItemsQuery": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "库存表",
+            "ColumnName": "账户",
+            "GUID": "b0c1e773-6566-46ec-8ebf-d6e3aa5b4e42"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=包装数据展板all!G45"
+          }
+        }
+      }
+    },
+    "44,12": {
+      "TotalRowSetting": {},
+      "BindingInfo": {
+        "TableName": "包装计划表",
+        "ColumnName": "计划包装",
+        "GUID": "9ee51739-0a7c-4e4e-8b73-5f62ae0fcc32"
+      }
+    },
+    "44,15": {
+      "BindingInfo": {
+        "TableName": "包装计划表",
+        "ColumnName": "类别",
+        "GUID": "f83f9239-2005-4f0b-918a-5271848620cb"
+      },
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "DropdownButtonModeInListview": 3,
+        "SelectOnly": false,
+        "Items": [
+          {
+            "Value": "天平",
+            "DisplayValue": "天平"
+          },
+          {
+            "Value": "",
+            "DisplayValue": ""
+          }
+        ]
+      }
+    },
+    "44,18": {
+      "BindingInfo": {
+        "TableName": "包装计划表",
+        "ColumnName": "货代选择",
+        "GUID": "600f6712-3029-4e8c-8922-685f5db3744c"
+      },
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "ShowDropdownButtonWhenGetFocus": 2,
+        "DropdownButtonModeInListview": 3,
+        "SelectOnly": false,
+        "WaterMark": "请选择",
+        "Items": [
+          {
+            "Value": "鑫鲲鹏",
+            "DisplayValue": "鑫鲲鹏"
+          },
+          {
+            "Value": "港通",
+            "DisplayValue": "港通"
+          },
+          {
+            "Value": "凯西",
+            "DisplayValue": "凯西"
+          },
+          {
+            "Value": "佳成",
+            "DisplayValue": "佳成"
+          },
+          {
+            "Value": "伊能",
+            "DisplayValue": "伊能"
+          },
+          {
+            "Value": "海豚",
+            "DisplayValue": "海豚"
+          },
+          {
+            "Value": "OKS",
+            "DisplayValue": "OKS"
+          },
+          {
+            "Value": "日本转运",
+            "DisplayValue": "日本转运"
+          },
+          {
+            "Value": "海外仓-LEO",
+            "DisplayValue": "海外仓-LEO"
+          },
+          {
+            "Value": "海外仓-永春",
+            "DisplayValue": "海外仓-永春"
+          }
+        ],
+        "AddNullItemWhenBinding": true
+      }
+    },
+    "44,21": {
+      "BindingInfo": {
+        "TableName": "包装计划表",
+        "ColumnName": "票号",
+        "GUID": "38731c96-49c0-4ddc-8a4e-d5fe29237c49"
+      }
+    },
+    "44,23": {
+      "TotalRowSetting": {},
+      "BindingInfo": {
+        "TableName": "包装计划表",
+        "ColumnName": "包装指令",
+        "GUID": "3acbef1a-b8dc-4c53-8a8a-ea74c43f4bb8"
+      },
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "DropdownButtonModeInListview": 3,
+        "Items": [
+          {
+            "Value": "包装",
+            "DisplayValue": "包装"
+          },
+          {
+            "Value": "加急",
+            "DisplayValue": "加急"
+          },
+          {
+            "Value": "取消",
+            "DisplayValue": "取消"
+          },
+          {
+            "Value": "延迟",
+            "DisplayValue": "延迟"
+          },
+          {
+            "Value": "存货",
+            "DisplayValue": "存货"
+          }
+        ]
+      },
+      "RulesGuidList": [
+        "3737d1ff-08ad-41f4-a929-71a711ea3705",
+        "528669a7-cf9d-43f1-891d-0be177c61786",
+        "63c7c8e1-28ac-411b-9c7c-edf9efe74839"
+      ]
+    },
+    "44,26": {
+      "BindingInfo": {
+        "TableName": "包装计划表",
+        "ColumnName": "包装状态",
+        "GUID": "c8238ed1-e693-4937-a2ac-cba40fd88d89"
+      },
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=包装数据展板all!AC45"
+                      }
+                    ]
+                  },
+                  "value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=包装数据展板all!M45"
+                  },
+                  "compareType": 3
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "包装计划表",
+                    "ShowConfirm": false,
+                    "CheckDataValidation": false,
+                    "UpdateBindingValues": [
+                      {
+                        "BindingInfo": {
+                          "TableName": "包装计划表",
+                          "ColumnName": "包装状态",
+                          "GUID": "84a8a7b8-bb82-48bd-9520-b19d4f5ed1b3"
+                        },
+                        "Value": "完成包装"
+                      }
+                    ],
+                    "ParamNameToSaveNewRowValue": "NewRow",
+                    "BreakpointIdentity": "369fc0fd-fe80-489d-9e2a-aa9f9b3cb36a"
+                  }
+                ],
+                "ID": "fb5862e8-4171-4638-8de5-b7b58e7992f4"
+              },
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=包装数据展板all!AC45"
+                      }
+                    ]
+                  },
+                  "value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=包装数据展板all!M45"
+                  },
+                  "compareType": 4
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "包装计划表",
+                    "ShowConfirm": false,
+                    "CheckDataValidation": false,
+                    "UpdateBindingValues": [
+                      {
+                        "BindingInfo": {
+                          "TableName": "包装计划表",
+                          "ColumnName": "包装状态",
+                          "GUID": "46f037df-d448-4f12-b5cd-00044dc2e9e1"
+                        },
+                        "Value": "部分完成"
+                      }
+                    ],
+                    "ParamNameToSaveNewRowValue": "NewRow",
+                    "BreakpointIdentity": "1f2ad84d-aebd-48d8-8350-3538d54dcea5"
+                  }
+                ],
+                "ID": "a195db56-85f5-4427-bf4a-7085eec129a3"
+              }
+            ],
+            "Disabled": true,
+            "BreakpointIdentity": "538e8199-eade-4f71-a3b6-4da95a6b060f"
+          }
+        ],
+        "ClickMode": 1
+      }
+    },
+    "44,28": {
+      "BindingInfo": {
+        "TableName": "包装计划表",
+        "ColumnName": "完成数量",
+        "GUID": "3d3f7ff4-5ed2-47da-8204-06f38269ab90"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ]
+      }
+    },
+    "44,31": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "ReadOnly": true
+      }
+    },
+    "44,35": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "ReadOnly": true
+      }
+    },
+    "44,39": {
+      "BindingInfo": {
+        "TableName": "包装计划表",
+        "ColumnName": "包装签名",
+        "GUID": "a83c1142-464d-4c1c-be43-071c57aaf32b"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ]
+      }
+    },
+    "44,43": {
+      "BindingInfo": {
+        "TableName": "包装计划表",
+        "ColumnName": "完成时间",
+        "GUID": "256d3c7c-c94b-41ac-b31d-5f5118ff4a18"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "ReadOnly": true
+      }
+    },
+    "44,47": {
+      "BindingInfo": {
+        "TableName": "包装计划表",
+        "ColumnName": "包装识别码",
+        "GUID": "532aa743-0236-4cad-a9e2-17e82a5ed02a",
+        "RelationBinding": {
+          "RelatedTable": "包装账户对应表",
+          "RelatedColumn": "包装账户识别码",
+          "DisplayColumn": "包装账户"
+        }
+      }
+    },
+    "44,51": {
+      "BindingInfo": {
+        "TableName": "包装计划表",
+        "ColumnName": "识别码",
+        "GUID": "36bf5459-8b78-495c-b902-7dc1b94f6dec",
+        "RelationBinding": {
+          "RelatedTable": "库存表",
+          "RelatedColumn": "识别码",
+          "DisplayColumn": "包装量"
+        }
+      }
+    },
+    "44,53": {
+      "BindingInfo": {
+        "TableName": "包装计划表",
+        "ColumnName": "识别码",
+        "GUID": "a7155299-1707-41a3-b0ad-055ac4d77adf"
+      }
+    },
+    "44,55": {
+      "NameUsedInJavaScript": "包装签名",
+      "BindingInfo": {
+        "TableName": "包装计划表",
+        "ColumnName": "包装签名",
+        "GUID": "a8d7bf26-cf42-46b2-8c4b-0de504ddacea"
+      }
+    },
+    "44,59": {
+      "NameUsedInJavaScript": "完成数量",
+      "BindingInfo": {
+        "TableName": "包装计划表",
+        "ColumnName": "完成数量",
+        "GUID": "13dd2de8-b332-4733-ac33-2a435e93a355"
+      }
+    },
+    "44,60": {
+      "NameUsedInJavaScript": "包装量",
+      "BindingInfo": {
+        "TableName": "包装计划表",
+        "ColumnName": "识别码",
+        "GUID": "a00a1de4-d95a-498e-aafe-b2a44677ca3c",
+        "RelationBinding": {
+          "RelatedTable": "库存表",
+          "RelatedColumn": "识别码",
+          "DisplayColumn": "包装量"
+        }
+      }
+    },
+    "44,61": {
+      "NameUsedInJavaScript": "包装用时"
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Background": null,
+        "FontFamily": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "HorizontalAlignment": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 10.666666666666666,
+        "HorizontalAlignment": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": null,
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "HorizontalAlignment": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "HorizontalAlignment": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontSize": 16.0,
+        "FontWeight": 2,
+        "HorizontalAlignment": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": null,
+        "FontFamily": 0,
+        "FontSize": 18.666666666666664,
+        "FontWeight": 2,
+        "HorizontalAlignment": 3,
+        "BorderBottom": null,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 1
+      },
+      {
+        "Background": null,
+        "FontFamily": 0,
+        "FontSize": 18.666666666666664,
+        "FontWeight": 2,
+        "HorizontalAlignment": 3,
+        "BorderBottom": null,
+        "BorderTop": 0,
+        "BorderLeft": 1,
+        "BorderRight": 1
+      },
+      {
+        "Background": null,
+        "FontFamily": 0,
+        "FontSize": 18.666666666666664,
+        "FontWeight": 2,
+        "HorizontalAlignment": 3,
+        "BorderBottom": null,
+        "BorderTop": 0,
+        "BorderLeft": 1,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": 0,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": null,
+        "FontFamily": 0,
+        "FontSize": 18.666666666666664,
+        "FontWeight": 2,
+        "HorizontalAlignment": 3,
+        "BorderBottom": null,
+        "BorderTop": 0,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": 0,
+        "BorderLeft": null,
+        "BorderRight": 1
+      },
+      {
+        "Background": 6,
+        "FontFamily": 0,
+        "FontSize": 18.666666666666664,
+        "FontWeight": 2,
+        "HorizontalAlignment": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": 1,
+        "BorderRight": null
+      },
+      {
+        "Background": null,
+        "FontFamily": 0,
+        "FontSize": 18.666666666666664,
+        "FontWeight": 2,
+        "HorizontalAlignment": 3,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": 1,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": 1
+      },
+      {
+        "BorderTop": 0
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": 0,
+        "BorderLeft": null,
+        "BorderRight": 0
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "Background": null,
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "Foreground": 7,
+        "BorderBottom": 2,
+        "BorderTop": 2,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "Background": null,
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "BorderBottom": 2,
+        "BorderTop": 2,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": null,
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "Formatter": 9,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": null,
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": null,
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "Formatter": 10,
+        "HorizontalAlignment": 1,
+        "BorderBottom": 2,
+        "BorderTop": 2,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": 2,
+        "BorderTop": 2,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": null,
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "Formatter": 11,
+        "HorizontalAlignment": 3,
+        "VerticalAlignment": 12,
+        "WordWrap": true,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": null,
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "Foreground": 7,
+        "Formatter": 11,
+        "HorizontalAlignment": 1,
+        "WordWrap": true,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": null,
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "Foreground": 7,
+        "Underline": false,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": null,
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "Formatter": 10,
+        "HorizontalAlignment": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": null,
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "Formatter": 13,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": null,
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "Formatter": 13,
+        "BorderBottom": 2,
+        "BorderTop": 2,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": null,
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "Formatter": 11,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": null,
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "Formatter": 14,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": null,
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "BorderBottom": 2,
+        "BorderTop": 2
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 10,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Formatter": 10,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderLeft": 0,
+        "BorderRight": null
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "Center",
+        "Bold",
+        "Left",
+        "DarkGray",
+        "Background 1 -35",
+        "#FFFF0000",
+        "#FF000000",
+        "Text 1 50",
+        "yyyy/m/d",
+        "0_);[Red](0)",
+        "@",
+        "Top",
+        "0.0_);[Red](0.0)",
+        "yyyy/m/d/ hh:mm"
+      ],
+      "Borders": [
+        {
+          "Color": 4
+        },
+        {
+          "Color": 5
+        },
+        {
+          "Color": 8
+        }
+      ]
+    },
+    "CellStyles": {
+      "1,1": 0,
+      "1,7": 1,
+      "1,8": 0,
+      "1,14": 2,
+      "1,17": 3,
+      "1,18": 4,
+      "1,19": 4,
+      "1,20": 4,
+      "1,21": 4,
+      "1,22": 4,
+      "1,23": 1,
+      "1,24": 4,
+      "1,25": 4,
+      "1,26": 4,
+      "1,27": 5,
+      "1,28": 1,
+      "1,29": 4,
+      "1,30": 4,
+      "1,31": 4,
+      "1,33": 5,
+      "1,39": 5,
+      "1,45": 1,
+      "1,46": 4,
+      "1,47": 4,
+      "1,48": 4,
+      "1,49": 4,
+      "1,55": 6,
+      "3,1": 5,
+      "3,55": 5,
+      "43,0": 7,
+      "43,1": 8,
+      "43,2": 9,
+      "43,3": 10,
+      "43,4": 10,
+      "43,5": 10,
+      "43,6": 11,
+      "43,7": 10,
+      "43,8": 10,
+      "43,9": 11,
+      "43,10": 10,
+      "43,11": 10,
+      "43,12": 11,
+      "43,13": 10,
+      "43,14": 10,
+      "43,15": 11,
+      "43,16": 10,
+      "43,17": 10,
+      "43,18": 11,
+      "43,19": 10,
+      "43,20": 10,
+      "43,21": 10,
+      "43,22": 12,
+      "43,23": 13,
+      "43,26": 9,
+      "43,27": 12,
+      "43,28": 9,
+      "43,29": 10,
+      "43,30": 12,
+      "43,31": 14,
+      "43,34": 15,
+      "43,35": 14,
+      "43,38": 15,
+      "43,39": 14,
+      "43,43": 11,
+      "43,44": 10,
+      "43,45": 10,
+      "43,46": 10,
+      "43,47": 10,
+      "43,48": 10,
+      "43,49": 10,
+      "43,50": 10,
+      "43,51": 16,
+      "43,52": 10,
+      "43,53": 17,
+      "43,55": 18,
+      "43,56": 10,
+      "43,57": 10,
+      "43,58": 10,
+      "43,59": 10,
+      "43,60": 16,
+      "43,61": 10,
+      "43,62": 17,
+      "44,0": 19,
+      "44,1": 20,
+      "44,2": 21,
+      "44,6": 22,
+      "44,9": 22,
+      "44,12": 23,
+      "44,13": 24,
+      "44,14": 24,
+      "44,15": 25,
+      "44,16": 4,
+      "44,17": 4,
+      "44,18": 3,
+      "44,21": 26,
+      "44,23": 3,
+      "44,26": 27,
+      "44,28": 28,
+      "44,31": 29,
+      "44,35": 30,
+      "44,36": 24,
+      "44,37": 24,
+      "44,38": 24,
+      "44,39": 31,
+      "44,43": 32,
+      "44,47": 32,
+      "44,51": 33,
+      "44,52": 20,
+      "44,53": 20,
+      "44,55": 34,
+      "44,59": 35,
+      "44,61": 36,
+      "44,62": 37,
+      "45,0": 38,
+      "45,1": 4,
+      "45,2": 4,
+      "45,3": 4,
+      "45,4": 4,
+      "45,5": 4,
+      "45,6": 4,
+      "45,7": 4,
+      "45,8": 4,
+      "45,9": 4,
+      "45,10": 4,
+      "45,11": 4,
+      "45,12": 4,
+      "45,13": 4,
+      "45,14": 4,
+      "45,15": 4,
+      "45,16": 4,
+      "45,17": 4,
+      "45,18": 4,
+      "45,19": 4,
+      "45,20": 4,
+      "45,21": 4,
+      "45,22": 4,
+      "45,23": 4,
+      "45,24": 4,
+      "45,25": 4,
+      "45,26": 4,
+      "45,27": 4,
+      "45,28": 4,
+      "45,29": 4,
+      "45,30": 4,
+      "45,31": 4,
+      "45,32": 4,
+      "45,33": 4,
+      "45,34": 4,
+      "45,35": 4,
+      "45,36": 4,
+      "45,37": 4,
+      "45,38": 4,
+      "45,39": 4,
+      "45,40": 4,
+      "45,41": 4,
+      "45,42": 4,
+      "45,43": 39,
+      "45,53": 37,
+      "45,55": 34,
+      "45,62": 37,
+      "46,0": 38,
+      "46,1": 4,
+      "46,2": 4,
+      "46,3": 4,
+      "46,4": 4,
+      "46,5": 4,
+      "46,6": 4,
+      "46,7": 4,
+      "46,8": 4,
+      "46,9": 4,
+      "46,10": 4,
+      "46,11": 4,
+      "46,12": 4,
+      "46,13": 4,
+      "46,14": 4,
+      "46,15": 4,
+      "46,16": 4,
+      "46,17": 4,
+      "46,18": 4,
+      "46,19": 4,
+      "46,20": 4,
+      "46,21": 4,
+      "46,22": 4,
+      "46,23": 4,
+      "46,24": 4,
+      "46,25": 4,
+      "46,26": 4,
+      "46,27": 4,
+      "46,28": 4,
+      "46,29": 4,
+      "46,30": 4,
+      "46,31": 4,
+      "46,32": 4,
+      "46,33": 4,
+      "46,34": 4,
+      "46,35": 4,
+      "46,36": 4,
+      "46,37": 4,
+      "46,38": 4,
+      "46,39": 4,
+      "46,40": 4,
+      "46,41": 4,
+      "46,42": 4,
+      "46,43": 39,
+      "46,53": 37,
+      "46,55": 34,
+      "46,62": 37,
+      "47,0": 38,
+      "47,1": 4,
+      "47,2": 4,
+      "47,3": 4,
+      "47,4": 4,
+      "47,5": 4,
+      "47,6": 4,
+      "47,7": 4,
+      "47,8": 4,
+      "47,9": 4,
+      "47,10": 4,
+      "47,11": 4,
+      "47,12": 4,
+      "47,13": 4,
+      "47,14": 4,
+      "47,15": 4,
+      "47,16": 4,
+      "47,17": 4,
+      "47,18": 4,
+      "47,19": 4,
+      "47,20": 4,
+      "47,21": 4,
+      "47,22": 4,
+      "47,23": 4,
+      "47,24": 4,
+      "47,25": 4,
+      "47,26": 4,
+      "47,27": 4,
+      "47,28": 4,
+      "47,29": 4,
+      "47,30": 4,
+      "47,31": 4,
+      "47,32": 4,
+      "47,33": 4,
+      "47,34": 4,
+      "47,35": 4,
+      "47,36": 4,
+      "47,37": 4,
+      "47,38": 4,
+      "47,39": 4,
+      "47,40": 4,
+      "47,41": 4,
+      "47,42": 4,
+      "47,43": 39,
+      "47,53": 37,
+      "47,55": 34,
+      "47,62": 37,
+      "48,0": 38,
+      "48,1": 4,
+      "48,2": 4,
+      "48,3": 4,
+      "48,4": 4,
+      "48,5": 4,
+      "48,6": 4,
+      "48,7": 4,
+      "48,8": 4,
+      "48,9": 4,
+      "48,10": 4,
+      "48,11": 4,
+      "48,12": 4,
+      "48,13": 4,
+      "48,14": 4,
+      "48,15": 4,
+      "48,16": 4,
+      "48,17": 4,
+      "48,18": 4,
+      "48,19": 4,
+      "48,20": 4,
+      "48,21": 4,
+      "48,22": 4,
+      "48,23": 4,
+      "48,24": 4,
+      "48,25": 4,
+      "48,26": 4,
+      "48,27": 4,
+      "48,28": 4,
+      "48,29": 4,
+      "48,30": 4,
+      "48,31": 4,
+      "48,32": 4,
+      "48,33": 4,
+      "48,34": 4,
+      "48,35": 4,
+      "48,36": 4,
+      "48,37": 4,
+      "48,38": 4,
+      "48,39": 4,
+      "48,40": 4,
+      "48,41": 4,
+      "48,42": 4,
+      "48,43": 39,
+      "48,53": 37,
+      "48,55": 34,
+      "48,62": 37,
+      "49,0": 38,
+      "49,1": 4,
+      "49,2": 4,
+      "49,3": 4,
+      "49,4": 4,
+      "49,5": 4,
+      "49,6": 4,
+      "49,7": 4,
+      "49,8": 4,
+      "49,9": 4,
+      "49,10": 4,
+      "49,11": 4,
+      "49,12": 4,
+      "49,13": 4,
+      "49,14": 4,
+      "49,15": 4,
+      "49,16": 4,
+      "49,17": 4,
+      "49,18": 4,
+      "49,19": 4,
+      "49,20": 4,
+      "49,21": 4,
+      "49,22": 4,
+      "49,23": 4,
+      "49,24": 4,
+      "49,25": 4,
+      "49,26": 4,
+      "49,27": 4,
+      "49,28": 4,
+      "49,29": 4,
+      "49,30": 4,
+      "49,31": 4,
+      "49,32": 4,
+      "49,33": 4,
+      "49,34": 4,
+      "49,35": 4,
+      "49,36": 4,
+      "49,37": 4,
+      "49,38": 4,
+      "49,39": 4,
+      "49,40": 4,
+      "49,41": 4,
+      "49,42": 4,
+      "49,43": 39,
+      "49,53": 37,
+      "49,55": 34,
+      "49,62": 37,
+      "50,0": 38,
+      "50,1": 4,
+      "50,2": 4,
+      "50,3": 4,
+      "50,4": 4,
+      "50,5": 4,
+      "50,6": 4,
+      "50,7": 4,
+      "50,8": 4,
+      "50,9": 4,
+      "50,10": 4,
+      "50,11": 4,
+      "50,12": 4,
+      "50,13": 4,
+      "50,14": 4,
+      "50,15": 4,
+      "50,16": 4,
+      "50,17": 4,
+      "50,18": 4,
+      "50,19": 4,
+      "50,20": 4,
+      "50,21": 4,
+      "50,22": 4,
+      "50,23": 4,
+      "50,24": 4,
+      "50,25": 4,
+      "50,26": 4,
+      "50,27": 4,
+      "50,28": 4,
+      "50,29": 4,
+      "50,30": 4,
+      "50,31": 4,
+      "50,32": 4,
+      "50,33": 4,
+      "50,34": 4,
+      "50,35": 4,
+      "50,36": 4,
+      "50,37": 4,
+      "50,38": 4,
+      "50,39": 4,
+      "50,40": 4,
+      "50,41": 4,
+      "50,42": 4,
+      "50,43": 39,
+      "50,53": 37,
+      "50,55": 34,
+      "50,62": 37,
+      "51,0": 38,
+      "51,1": 4,
+      "51,2": 4,
+      "51,3": 4,
+      "51,4": 4,
+      "51,5": 4,
+      "51,6": 4,
+      "51,7": 4,
+      "51,8": 4,
+      "51,9": 4,
+      "51,10": 4,
+      "51,11": 4,
+      "51,12": 4,
+      "51,13": 4,
+      "51,14": 4,
+      "51,15": 4,
+      "51,16": 4,
+      "51,17": 4,
+      "51,18": 4,
+      "51,19": 4,
+      "51,20": 4,
+      "51,21": 4,
+      "51,22": 4,
+      "51,23": 4,
+      "51,24": 4,
+      "51,25": 4,
+      "51,26": 4,
+      "51,27": 4,
+      "51,28": 4,
+      "51,29": 4,
+      "51,30": 4,
+      "51,31": 4,
+      "51,32": 4,
+      "51,33": 4,
+      "51,34": 4,
+      "51,35": 4,
+      "51,36": 4,
+      "51,37": 4,
+      "51,38": 4,
+      "51,39": 4,
+      "51,40": 4,
+      "51,41": 4,
+      "51,42": 4,
+      "51,43": 39,
+      "51,53": 37,
+      "51,55": 34,
+      "51,62": 37,
+      "52,0": 38,
+      "52,1": 4,
+      "52,2": 4,
+      "52,3": 4,
+      "52,4": 4,
+      "52,5": 4,
+      "52,6": 4,
+      "52,7": 4,
+      "52,8": 4,
+      "52,9": 4,
+      "52,10": 4,
+      "52,11": 4,
+      "52,12": 4,
+      "52,13": 4,
+      "52,14": 4,
+      "52,15": 4,
+      "52,16": 4,
+      "52,17": 4,
+      "52,18": 4,
+      "52,19": 4,
+      "52,20": 4,
+      "52,21": 4,
+      "52,22": 4,
+      "52,23": 4,
+      "52,24": 4,
+      "52,25": 4,
+      "52,26": 4,
+      "52,27": 4,
+      "52,28": 4,
+      "52,29": 4,
+      "52,30": 4,
+      "52,31": 4,
+      "52,32": 4,
+      "52,33": 4,
+      "52,34": 4,
+      "52,35": 4,
+      "52,36": 4,
+      "52,37": 4,
+      "52,38": 4,
+      "52,39": 4,
+      "52,40": 4,
+      "52,41": 4,
+      "52,42": 4,
+      "52,43": 39,
+      "52,53": 37,
+      "52,55": 34,
+      "52,62": 37,
+      "53,0": 40,
+      "53,1": 41,
+      "53,2": 41,
+      "53,3": 41,
+      "53,4": 41,
+      "53,5": 41,
+      "53,6": 41,
+      "53,7": 41,
+      "53,8": 41,
+      "53,9": 41,
+      "53,10": 41,
+      "53,11": 41,
+      "53,12": 41,
+      "53,13": 41,
+      "53,14": 41,
+      "53,15": 41,
+      "53,16": 41,
+      "53,17": 41,
+      "53,18": 41,
+      "53,19": 41,
+      "53,20": 41,
+      "53,21": 41,
+      "53,22": 41,
+      "53,23": 41,
+      "53,24": 41,
+      "53,25": 41,
+      "53,26": 41,
+      "53,27": 41,
+      "53,28": 41,
+      "53,29": 41,
+      "53,30": 41,
+      "53,31": 41,
+      "53,32": 41,
+      "53,33": 41,
+      "53,34": 41,
+      "53,35": 41,
+      "53,36": 41,
+      "53,37": 41,
+      "53,38": 41,
+      "53,39": 41,
+      "53,40": 41,
+      "53,41": 41,
+      "53,42": 41,
+      "53,43": 42,
+      "53,44": 43,
+      "53,45": 43,
+      "53,46": 43,
+      "53,47": 43,
+      "53,48": 43,
+      "53,49": 43,
+      "53,50": 43,
+      "53,51": 43,
+      "53,52": 43,
+      "53,53": 44,
+      "53,55": 45,
+      "53,56": 43,
+      "53,57": 43,
+      "53,58": 43,
+      "53,59": 43,
+      "53,60": 43,
+      "53,61": 43,
+      "53,62": 44
+    },
+    "SheetStyle": {
+      "FontFamily": 0,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
+    }
+  },
+  "Spans": [
+    "1,1,1,6",
+    "1,8,1,6",
+    "1,14,1,2",
+    "1,17,1,5",
+    "1,23,1,4",
+    "1,28,1,4",
+    "1,33,1,5",
+    "1,39,1,5",
+    "1,45,1,5",
+    "1,55,1,8",
+    "3,1,39,53",
+    "3,55,39,8",
+    "44,2,1,4",
+    "44,6,1,3",
+    "44,9,1,3",
+    "44,12,1,3",
+    "44,15,1,3",
+    "44,18,1,3",
+    "44,21,1,2",
+    "44,23,1,3",
+    "44,26,1,2",
+    "44,28,1,3",
+    "44,31,1,4",
+    "44,35,1,4",
+    "44,39,1,4",
+    "44,43,1,4",
+    "44,47,1,4",
+    "44,55,1,4",
+    "44,61,1,2",
+    "45,0,9,54",
+    "45,55,9,8",
+    "43,2,1,4",
+    "43,6,1,3",
+    "43,9,1,3",
+    "43,12,1,3",
+    "43,15,1,3",
+    "43,18,1,3",
+    "43,21,1,2",
+    "43,23,1,3",
+    "43,26,1,2",
+    "43,28,1,3",
+    "43,31,1,4",
+    "43,35,1,4",
+    "43,39,1,4",
+    "43,43,1,4",
+    "43,47,1,4",
+    "43,55,1,4",
+    "43,61,1,2"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "包装计划表",
+    "ConditionFormatRulesCollection": {
+      "Rules": [
+        {
+          "$type": "Forguncy.ConditionFormat.CellValueRule, ServerDesignerCommon",
+          "Operator": 3,
+          "Value1": "=\"存货\"",
+          "GUID": "3737d1ff-08ad-41f4-a929-71a711ea3705",
+          "StyleInfo": {
+            "Background": "#FF92D050",
+            "Underline": null,
+            "Strikethrough": null
+          }
+        },
+        {
+          "$type": "Forguncy.ConditionFormat.CellValueRule, ServerDesignerCommon",
+          "Operator": 3,
+          "Value1": "=\"取消\"",
+          "Priority": 1,
+          "GUID": "528669a7-cf9d-43f1-891d-0be177c61786",
+          "StyleInfo": {
+            "Foreground": "#FFFF0000",
+            "Underline": null,
+            "Strikethrough": true
+          }
+        },
+        {
+          "$type": "Forguncy.ConditionFormat.CellValueRule, ServerDesignerCommon",
+          "Operator": 3,
+          "Value1": "=\"加急\"",
+          "Priority": 2,
+          "GUID": "63c7c8e1-28ac-411b-9c7c-edf9efe74839",
+          "StyleInfo": {
+            "Background": "#FFFF0000",
+            "Underline": null,
+            "Strikethrough": null
+          }
+        }
+      ]
+    }
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//PAKq+m6Ag6KycDIcv5/CqbhyiNoe1xNHzwVJekvBuckDXJuqrWEpD0qWaHKrht6yhQtnMOgHWR3xRzMapV9jz4DlcDDHwvLAf4W7tBGypBXaao7y0YVYGqxyYdMCgFqDEFftyQTMH8VLvrjYK9kHq1UO3500laPxGk5wf4SoidmxedSWyESOzWUy6NemAUL6qFEOpiVBGfXYCE3jMheJ7+kF6rFguneRajRHAXI7TFbQYqB0oU+rBHvZBwmKamx8dWO06RC4szxACe4TjpIXz30aaCWFqrTkT/K6yGBYfUgoX4WRN2xkDkJ7gz6TUb6mZhvN9PtO2bGpDXQoDTGOHkb3H0iArMvmDsw8l5mKMNrxmJ8bzBNPn/bbE125ftwcybKexVVJqCidJDy8F+zjvYBWORwjx1exYeOk2SOUit8iTfqvFSi+UvxD5X0fm5dbZUiTOx6gPWDpaWHYgz94u4j92RFO2g+8pFLXg78DztblsEOP35R0tTsJMkeU9r0UzZQ78UcCawN/8bnV2HA+Mdkd6ObBRmGbVJO03nfB1EUaYnjXWNQlRGoOMWgJ6a/BhBLCq9e0fNbc84wBNtcVfTkP9rArFp1mDpBJijbwHDPiUTqTtq40rbPL6AYlUk6ErsQLSay+Q1NHiJWH2i8IVDXRXAYca6OVZUcS/cPhzkP/0hDyUMqsMK/v6ZvOHj/C251hxTbMbdpbIdQxjE113W1LecsFIl/G5LpJbf5CEw2NlVBfWmRgcFMTY4nvaB4o8OC4KkEOIoNwe2XRtHAPDvP6RCxMrEdvrsB9LNRKqcf6v7yZATW0wgPxNpi55c/rA+JH7WSyKkNxRDVAyHDrlZMjfcCx7zpTpRAMG2VY4y6ndgIuN84pZI++ks6/vbofXWODKnLPtDfvwBcOOdx8bw==|920

@@ -1,0 +1,333 @@
+{
+  "Rows": {
+    "Count": 34
+  },
+  "Cols": {
+    "InLogicalVisibleIndexes": [
+      36,
+      37
+    ],
+    "Count": 38
+  },
+  "Values": {
+    "29,6": "确定上传"
+  },
+  "AttachInfos": {
+    "2,2": {
+      "BindingInfo": {
+        "TableName": "供应商考核评分",
+        "ColumnName": "营业执照",
+        "GUID": "d8d179e6-16de-4f5b-8a3d-99a4b71d45c2",
+        "IsImagePath": true
+      },
+      "CellType": {
+        "$type": "Forguncy.UploadImageCellType, ServerDesignerCommon",
+        "UploadImageLimit": {
+          "IsCompressImage": true,
+          "MaxWidth": 1000.0,
+          "MaxHeight": 1000.0,
+          "AllowExtensions": ".art, .bmp, .cmx, .cod, .dib, .gif, .ico, .ief, .jfif, .jpe, .jpeg, .jpg, .pbm, .pgm, .png, .pnm, .pnz, .ppm, .ras, .rf, .rgb, .svg, .tif, .tiff, .wbmp, .xbm, .xpm, .xwd"
+        }
+      }
+    },
+    "29,6": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+            "TableName": "供应商考核评分",
+            "ShowConfirm": false,
+            "BreakpointIdentity": "1b2be7e3-635f-4016-82ae-35bfe80bdaa5"
+          },
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "ReloadData": true,
+            "BreakpointIdentity": "b5e0c258-c9b3-4c8f-87b0-09490448301c"
+          }
+        ],
+        "Text": "确定上传",
+        "TemplateKey": "样式28"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 0
+      },
+      {
+        "Background": null,
+        "FontSize": 32.0,
+        "FontWeight": 1,
+        "Foreground": null,
+        "Formatter": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontSize": 32.0,
+        "FontWeight": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "#FFFFFFFF",
+        "Bold",
+        "[AUTO]General",
+        "宋体"
+      ]
+    },
+    "CellStyles": {
+      "0,1": 0,
+      "0,35": 0,
+      "0,36": 0,
+      "0,37": 1,
+      "1,1": 0,
+      "1,2": 0,
+      "1,3": 0,
+      "2,1": 0,
+      "3,1": 0,
+      "4,1": 0,
+      "5,1": 0,
+      "6,1": 0,
+      "6,36": 0,
+      "7,1": 0,
+      "7,36": 0,
+      "8,1": 0,
+      "8,36": 0,
+      "9,1": 0,
+      "9,36": 0,
+      "10,1": 0,
+      "10,36": 0,
+      "11,1": 0,
+      "11,36": 0,
+      "12,1": 0,
+      "12,36": 0,
+      "13,1": 0,
+      "13,36": 0,
+      "14,1": 0,
+      "14,36": 0,
+      "15,1": 0,
+      "15,36": 0,
+      "16,1": 0,
+      "16,36": 0,
+      "17,1": 0,
+      "17,36": 0,
+      "18,1": 0,
+      "18,36": 0,
+      "19,1": 0,
+      "19,36": 0,
+      "20,1": 0,
+      "20,36": 0,
+      "21,1": 0,
+      "21,36": 0,
+      "22,1": 0,
+      "22,36": 0,
+      "23,1": 0,
+      "23,36": 0,
+      "24,1": 0,
+      "24,36": 0,
+      "25,1": 0,
+      "25,36": 0,
+      "26,1": 0,
+      "26,36": 0,
+      "27,1": 0,
+      "27,36": 0,
+      "28,1": 0,
+      "28,2": 0,
+      "28,3": 0,
+      "28,4": 0,
+      "28,5": 0,
+      "28,6": 0,
+      "28,7": 0,
+      "28,8": 0,
+      "28,9": 0,
+      "28,10": 0,
+      "28,11": 0,
+      "28,12": 0,
+      "28,13": 0,
+      "28,14": 0,
+      "28,15": 0,
+      "28,16": 0,
+      "28,17": 0,
+      "28,18": 0,
+      "28,19": 0,
+      "28,20": 0,
+      "28,21": 0,
+      "28,22": 0,
+      "28,23": 0,
+      "28,24": 0,
+      "28,25": 0,
+      "28,26": 0,
+      "28,27": 0,
+      "28,28": 0,
+      "28,29": 0,
+      "28,30": 0,
+      "28,31": 0,
+      "28,32": 0,
+      "28,33": 0,
+      "28,35": 0,
+      "28,36": 0,
+      "29,1": 0,
+      "29,2": 0,
+      "29,3": 0,
+      "29,4": 0,
+      "29,5": 0,
+      "29,6": 2,
+      "29,7": 3,
+      "29,8": 3,
+      "29,9": 3,
+      "29,10": 3,
+      "29,11": 3,
+      "29,12": 3,
+      "29,13": 3,
+      "29,14": 3,
+      "29,15": 3,
+      "29,16": 3,
+      "29,17": 3,
+      "29,18": 3,
+      "29,19": 3,
+      "29,20": 3,
+      "29,21": 3,
+      "29,22": 3,
+      "29,23": 3,
+      "29,24": 3,
+      "29,25": 3,
+      "29,26": 3,
+      "29,27": 3,
+      "29,28": 3,
+      "29,29": 3,
+      "29,30": 3,
+      "29,31": 3,
+      "29,32": 0,
+      "29,33": 0,
+      "29,35": 0,
+      "29,36": 0,
+      "30,1": 0,
+      "30,2": 0,
+      "30,3": 0,
+      "30,4": 0,
+      "30,5": 0,
+      "30,6": 3,
+      "30,7": 3,
+      "30,8": 3,
+      "30,9": 3,
+      "30,10": 3,
+      "30,11": 3,
+      "30,12": 3,
+      "30,13": 3,
+      "30,14": 3,
+      "30,15": 3,
+      "30,16": 3,
+      "30,17": 3,
+      "30,18": 3,
+      "30,19": 3,
+      "30,20": 3,
+      "30,21": 3,
+      "30,22": 3,
+      "30,23": 3,
+      "30,24": 3,
+      "30,25": 3,
+      "30,26": 3,
+      "30,27": 3,
+      "30,28": 3,
+      "30,29": 3,
+      "30,30": 3,
+      "30,31": 3,
+      "30,32": 0,
+      "30,33": 0,
+      "30,35": 0,
+      "30,36": 0,
+      "31,1": 0,
+      "31,2": 0,
+      "31,3": 0,
+      "31,4": 0,
+      "31,5": 0,
+      "31,6": 0,
+      "31,7": 0,
+      "31,8": 0,
+      "31,9": 0,
+      "31,10": 0,
+      "31,11": 0,
+      "31,12": 0,
+      "31,13": 0,
+      "31,14": 0,
+      "31,15": 0,
+      "31,16": 0,
+      "31,17": 0,
+      "31,18": 0,
+      "31,19": 0,
+      "31,20": 0,
+      "31,21": 0,
+      "31,22": 0,
+      "31,23": 0,
+      "31,24": 0,
+      "31,25": 0,
+      "31,26": 0,
+      "31,27": 0,
+      "31,28": 0,
+      "31,29": 0,
+      "31,30": 0,
+      "31,31": 0,
+      "31,32": 0,
+      "31,33": 0,
+      "31,35": 0,
+      "31,36": 0,
+      "32,1": 0,
+      "32,35": 0,
+      "32,36": 0,
+      "33,1": 0,
+      "33,35": 0,
+      "33,36": 0
+    },
+    "SheetStyle": {
+      "FontFamily": 3,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
+    }
+  },
+  "Spans": [
+    "1,2,1,2",
+    "29,6,2,26",
+    "2,2,26,34"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "供应商考核评分"
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//oRO21LTNTwYz4TNE8+MO+zLbXQSJ+6CpOyKPXe8X9DaHIUx5aJ/3qZT7O1Cftyv2wz82LGVVUoznI4gsi73Gq9blPV1lU8O/Ly4GxHnnPFfv3UUiwihc1I2h339yrkSZsLSAlBXnBxSvAsSd7faSFdT8FFih+2MoEFhdNrm+mBjhrQqBFFsCzeK8kdnE0gXlOasbSRH8asCdwLI3xuejWFYrep9Osq27h8b+jeEyxFqegkZLn5uV/QumD7YlYtJ+9lPg9i+e0JzI2bRsrCVrLMYT7g8SB761zOBd2nEnj60z3d0hVMnZG03r50SOpnmWCGDwaclTKP0ukMbqnVNoDJ+NPd5+SukQxNGi0DspHpRgpU7KILop0vj4TWkQwkWgfQa3rh4OuNfErNgeojj8VnVR7bULnuQeQSpeCiqaX43hH5meN24Rgevwp8MdpOF0gTsopOTHlMqxD2G6xLf7fgltLIhB5VM1ocFaC+t2ECaEs7/SdEpojd+v2s9PuWXf9yKGx9lfPQCIdPRyzkGQeYXhICkbEwt/mdE/WU9bQMY8zirxe/5lIi5JF7E1GJOp+SkOp8betb6uV36EiEZef4evPN6JZgH0vaoOEDRarN+vKPLN8vYB0JjaPnDQ1uuBuJbooiJo/hUyet+8Em36JdUho4+9rm0D8hieCyct4agTyOt1oqdH0BRU5nWR/PwCw9S9KPcmUIfYPW+BuOa15/97g8Ii5J6s6aoD1e76ZVlq0ON0g0bub9SA4FQeheL5s8ACXZYXDtffcaV1LSss8gJXYlhC6xWmlALsgyoTdWeTOpvK4aEBfvfXhOAF+c5+IAdf706BmYUM1xxXg2OI+EkHf1dRcgNz87ZQg+O1jqr5EyAnam4SO998TJay/ZRTdf+5hFndrAVmIFEq4QI1+g==|920

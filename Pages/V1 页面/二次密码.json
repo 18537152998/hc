@@ -1,0 +1,406 @@
+{
+  "Rows": {
+    "Count": 20
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 70.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      20
+    ],
+    "Count": 21
+  },
+  "Values": {
+    "2,20": "%CurrentUser.查询密码%",
+    "3,20": 20,
+    "4,20": 31,
+    "5,3": "请输入查询密码",
+    "14,5": "GO"
+  },
+  "AttachInfos": {
+    "8,3": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "ShowPassword": true,
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "Icon": {
+          "Name": "Application/078_lock_1.svg",
+          "BuiltIn": true,
+          "Color": "Background 1 0"
+        },
+        "TemplateKey": "样式11",
+        "ForguncyAttribute": ""
+      },
+      "DataValidationInfo": {
+        "IgnoreBlank": false
+      }
+    },
+    "14,5": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionCurrentUserInfoParam, ServerDesignerCommon",
+                    "currentUserProperty": {
+                      "UserProperty": "查询密码",
+                      "PropertyType": 4
+                    }
+                  },
+                  "value": "%Null%"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "请通过管理员设置查询密码！",
+                    "BreakpointIdentity": "62490d0b-181e-4389-b7ec-d6172246b7ea"
+                  }
+                ],
+                "ID": "7a698e46-7570-4ba0-ba4b-87f5c5734fa9"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                    "ConditionAndCommandPairList": [
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=二次密码!D9"
+                              }
+                            ]
+                          },
+                          "value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=二次密码!U3"
+                          }
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+                            "PageName": "运营报表展示",
+                            "PassValues": [
+                              {
+                                "Source": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=二次密码!D9"
+                                },
+                                "TargetCell": {
+                                  "SerializeProperty": "=运营报表展示!CQ8"
+                                }
+                              },
+                              {
+                                "Source": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=二次密码!U6"
+                                },
+                                "TargetCell": {
+                                  "SerializeProperty": "=运营报表展示!H4"
+                                }
+                              }
+                            ],
+                            "IgnoreTargetPageCachedCurrentRowInfo": false,
+                            "BreakpointIdentity": "f4476bd6-8f53-4247-a787-2ae7c7b8fbcd"
+                          }
+                        ],
+                        "ID": "1589dba6-40dc-4a9b-a17b-58d807021891"
+                      },
+                      {
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                            "MessageFormula": "密码错误，请重试！",
+                            "BreakpointIdentity": "6d10126f-f454-41c5-b9c0-a44c341b1d2f"
+                          }
+                        ],
+                        "ID": "140b39d8-25bf-4bc7-9183-97fb6566d2ab"
+                      }
+                    ],
+                    "BreakpointIdentity": "892e6f72-b52d-4c7d-9a5b-3871cec42f1e"
+                  }
+                ],
+                "ID": "73756fd6-e7e9-41e1-916b-98c3cc517cec"
+              }
+            ],
+            "BreakpointIdentity": "61e72fd3-7d44-42d8-b3d6-23c6f90a4cfa"
+          }
+        ],
+        "Text": "GO",
+        "TemplateKey": "样式8"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Background": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Foreground": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Foreground": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": null,
+        "FontFamily": 2,
+        "FontSize": 16.0,
+        "Foreground": null,
+        "Formatter": 3,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "#FFFFFF00",
+        "Background 1 0",
+        "Body",
+        "@"
+      ]
+    },
+    "CellStyles": {
+      "2,20": 0,
+      "3,20": 1,
+      "4,20": 1,
+      "5,3": 2,
+      "5,20": 0,
+      "8,3": 3
+    },
+    "SheetStyle": {
+      "FontFamily": 2,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
+    }
+  },
+  "Spans": [
+    "5,3,2,8",
+    "8,3,4,14",
+    "14,5,2,10"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PageLoadedCommandList": [
+      {
+        "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+        "ConditionAndCommandPairList": [
+          {
+            "Condition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "SubConditions": [
+                {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=二次密码!U4"
+                      }
+                    ]
+                  },
+                  "value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=DAY(TODAY())"
+                  },
+                  "compareType": 5
+                },
+                {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=二次密码!U5"
+                      }
+                    ]
+                  },
+                  "value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=DAY(TODAY())"
+                  },
+                  "compareType": 3
+                }
+              ]
+            },
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                "PropertyItemsList": [
+                  {
+                    "TargetCells": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=二次密码!F15"
+                    },
+                    "PropertyType": 1,
+                    "Value": true
+                  }
+                ],
+                "BreakpointIdentity": "8da16553-4341-456e-bade-aa7299e297e8"
+              },
+              {
+                "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                "PropertyItemsList": [
+                  {
+                    "TargetCells": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=二次密码!U6"
+                    },
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=TODAY()-30"
+                    }
+                  }
+                ],
+                "BreakpointIdentity": "492baee2-030e-4839-a716-c6af3515d173"
+              },
+              {
+                "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                "ConditionAndCommandPairList": [
+                  {
+                    "Condition": {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=二次密码!U3"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    "CommandList": [
+                      {
+                        "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                        "PropertyItemsList": [
+                          {
+                            "TargetCells": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=二次密码!D6"
+                            },
+                            "Value": "请通过管理员设置查询密码"
+                          }
+                        ],
+                        "BreakpointIdentity": "8d19be4f-6823-4f4d-b9b2-1c10cc27a921"
+                      }
+                    ],
+                    "ID": "3acabc29-cfe6-4e25-9e28-e8a87cf56d2d"
+                  },
+                  {
+                    "CommandList": [
+                      {
+                        "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                        "PropertyItemsList": [
+                          {
+                            "TargetCells": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=二次密码!D6"
+                            },
+                            "Value": "请输入查询密码"
+                          }
+                        ],
+                        "BreakpointIdentity": "4ab23079-b15e-4212-a954-be3bf05eab14"
+                      }
+                    ],
+                    "ID": "7c96e80f-100a-46a4-9b9e-6fcc83bad825"
+                  }
+                ],
+                "BreakpointIdentity": "85bf5cd0-4092-4a0f-8166-a7f028f5aa02"
+              }
+            ],
+            "ID": "e9103eb1-57ab-4117-b1a4-a17518a2968c"
+          },
+          {
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                "PropertyItemsList": [
+                  {
+                    "TargetCells": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=二次密码!F15"
+                    },
+                    "PropertyType": 1,
+                    "Value": false
+                  }
+                ],
+                "BreakpointIdentity": "073e8296-26c2-43c7-bde1-545e19d9a3ec"
+              }
+            ],
+            "ID": "7623bf85-d52a-4228-aa0d-497c4cca8f09"
+          }
+        ],
+        "BreakpointIdentity": "2d90e14e-b439-4e62-9551-f374a5cc2163"
+      }
+    ],
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "BackgroundPictures": [
+    {
+      "FitToBrowserWidth": true,
+      "FitToBrowserHeight": true,
+      "Name": "400283af-7b13-4b3b-b235-37cf7951652a",
+      "DisplayName": "背景图1",
+      "ForguncyPictureName": "图片资源9",
+      "ForguncyPictureSourceType": 0,
+      "StyleInfo": {
+        "Fill": null
+      },
+      "IsAutomaticFill": false,
+      "Size": "470,400"
+    }
+  ]
+}//ArO/yZCFlObRnEdSPFF/0nyuOP9FYM1mqx20t4bopT1+2cuaFTYinSI99dGsy2489eFtjig93j9JKXRA1keqr7aVQHEa3gUyobZll4perMHMgme4xH18MkooIXa2BsFB++GK0ZqinxGYSOoJWAJ8b2k6UPTL+v7DLT/Yz0SU5GNFbLKn4IZMUZ0+ntpaH+H1x7hRUPNN4a+PWJUpYyM1EtxIOiUGNz9NiteoaJgn2Z1wRR17LE8yHZlQUjPXPSmKGKsMZ07W5+arhLUm1xrqjNMvPP3kBSIXJZtncmcBY5K8heNssk3mXLPJw0FKae4D7nzrAg7hy/eSnVJl3y5rRzzWPB9N98hZYwAaBejqRI0ly1cyROsqodLU79GNmkMe2YCMBvWb9G5i433iPc3X39bBaCta+Mm7BXJepRUWjQiwm7SYbyw0+575bJYEr1vqXJyNHWAlqjbQPzkxjbE3H4em1rMIipdWp7fJSdIRKgcJtpNZVnpQ71jz39hjzvz2uR3JHaTndfNrN0XAFPpbUKebGVZO0+Nak8CTuMz5PA9GCkdZ1s+ggtjdwG6j4L+pUuJB+rExN0gHKILUFbYcWJFdrJXX8xYCW3KxKQyyk/fI1WIFcC3z9htj5Ao15f7KSUNWzHrOfrLduSyPFMIF9SlJs+GKIk4EBXf9Cme1wY5qRBkWVKnyyXHgG7NYcyUi6GpCHMy0ZvvPmog54vH7FD8Quzlu9PTECugHZpWu+1+ffvkZjOh/j8xCng7kGCBpY83PZPFDnxBE4dv/gAVrthP0RFXnxPS9+UgoEqHmTedXFLi1shqc6yF6d6jmeUazFYpbQECXD9H7IpeIv16CJnEfFAuYfoCl0+2h7RITexNGhXI+6cvtzTuTXBuCabcYNz/kYXunGbHv33bKem5GTQ==|920

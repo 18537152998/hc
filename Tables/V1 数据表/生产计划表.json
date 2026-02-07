@@ -1,0 +1,203 @@
+{
+  "Name": "生产计划表",
+  "FlowProcess": {
+    "FlowStates": [
+      {
+        "Id": "5e173554-85fd-491a-b655-8aaebf4a3494",
+        "StateName": "未审核"
+      },
+      {
+        "Id": "2b55660f-6a4d-4429-91ce-b53cee6df4a6",
+        "StateName": "审核中"
+      },
+      {
+        "Id": "7569550b-56d0-40fa-8384-686101328d61",
+        "StateName": "已审核"
+      }
+    ],
+    "FlowPaths": [
+      {
+        "StartState": {
+          "Id": "5e173554-85fd-491a-b655-8aaebf4a3494",
+          "StateName": "未审核"
+        },
+        "Action": {
+          "ActionName": "提交",
+          "GUID": "64b710a9-a421-486c-b8eb-723491e1364d"
+        },
+        "ToState": {
+          "Id": "2b55660f-6a4d-4429-91ce-b53cee6df4a6",
+          "StateName": "审核中"
+        },
+        "Assignees": [
+          {
+            "FlowProcessRoleType": 6,
+            "Name": "(None)"
+          }
+        ],
+        "Errors": []
+      },
+      {
+        "$type": "Forguncy.SaveLoad.ApprovalProcessPathSaveData, ServerDesignerCommon",
+        "StartState": {
+          "Id": "2b55660f-6a4d-4429-91ce-b53cee6df4a6",
+          "StateName": "审核中"
+        },
+        "ToState": {
+          "Id": "7569550b-56d0-40fa-8384-686101328d61",
+          "StateName": "已审核"
+        },
+        "Assignees": [
+          {
+            "FlowProcessRoleType": 6,
+            "Name": "(None)"
+          }
+        ],
+        "Errors": [],
+        "Items": [
+          {
+            "GUID": "c65796d2-55a2-441c-914c-ac8e7cb4696e",
+            "Role": {
+              "FlowProcessRoleType": 1,
+              "Name": "总经理",
+              "FilterBy": {
+                "FilterByType": 2
+              }
+            },
+            "OperatorsPolicy": 1,
+            "RejectSetting": {
+              "RejectBehavior": 2
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "Columns": [
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
+      "Unique": true,
+      "AutoIncrement": true,
+      "DatabaseColumnType": "System.Int64",
+      "MaxLength": -1,
+      "Name": "ID",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Double",
+      "Name": "日期",
+      "ColumnType": "System.DateTime, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "Name": "产品表ID",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "Name": "数量",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Double",
+      "Name": "完成日期",
+      "ColumnType": "System.DateTime, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "Name": "申请人",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "Name": "备注",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "Name": "组装状态",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "Name": "账户",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
+      "Unique": true,
+      "DatabaseColumnType": "System.String",
+      "IsAutoGenreatedIDSettingEnable": true,
+      "AutoGenreatedIDSetting": {
+        "Composition": [
+          {
+            "ComponentType": 2,
+            "Content": "yyyyMMdd"
+          },
+          {
+            "Content": "-"
+          },
+          {
+            "ComponentType": 3,
+            "Content": 2
+          }
+        ]
+      },
+      "Name": "生产批次",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "Name": "组装人员",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Name": "发货批次",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.UserExtraBingingColumnSaveData, ServerDesignerCommon",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+      "Name": "FGC_Creator"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.DateExtraBingingColumnSaveData, ServerDesignerCommon",
+      "ColumnType": "System.DateTime, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+      "Name": "FGC_CreateDate"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.UserExtraBingingColumnSaveData, ServerDesignerCommon",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+      "Name": "FGC_LastModifier"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.DateExtraBingingColumnSaveData, ServerDesignerCommon",
+      "ColumnType": "System.DateTime, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+      "Name": "FGC_LastModifyDate"
+    }
+  ],
+  "PrimaryKey": [
+    "ID"
+  ],
+  "Relations": [
+    {
+      "PrimaryTable": "包装人员",
+      "PrimaryColumn": "ID",
+      "ForeignTable": "生产计划表",
+      "ForeignColumn": "组装人员"
+    }
+  ],
+  "Indexes": []
+}

@@ -1,0 +1,192 @@
+{
+  "Rows": {
+    "Count": 27
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 77.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 77.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 77.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 39.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 19.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      8,
+      9
+    ],
+    "Count": 10,
+    "DefaultSize": 77.0
+  },
+  "Formulas": {
+    "0,2": "ROUND(I1,2)"
+  },
+  "AttachInfos": {
+    "0,0": {
+      "ListViewInfo": {
+        "Name": "表格1",
+        "TableName": "工资条",
+        "RowCount": 19,
+        "ColumnCount": 9,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "SubConditions": [
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "工资条",
+                "ColumnName": "所属公司",
+                "GUID": "5032259a-77b9-4d03-a3aa-62de74f998d0"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=交通代发1!J3"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "工资条",
+                "ColumnName": "年月",
+                "GUID": "43fca3f7-7fc8-4bf4-ad1b-46828e4bb233"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=交通代发1!J1"
+              }
+            }
+          ]
+        },
+        "NullFormulaValueQueryPolicy": 0,
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_NewFashionListStyle1",
+        "ShowColumnHeaderInDesigner": true,
+        "IsColumnHeaderVisible": false,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      },
+      "BindingInfo": {
+        "TableName": "工资条",
+        "ColumnName": "银行卡",
+        "GUID": "9540b46a-2a12-4bcc-b4e4-9fa49ad24c12"
+      }
+    },
+    "0,1": {
+      "BindingInfo": {
+        "TableName": "工资条",
+        "ColumnName": "姓名",
+        "GUID": "562bbe26-ccf2-4f98-b4c9-f29bf1bc3731"
+      }
+    },
+    "0,8": {
+      "BindingInfo": {
+        "TableName": "工资条",
+        "ColumnName": "_10号发",
+        "GUID": "f94f9b76-cc62-4c6a-8482-3752c935a4e4"
+      }
+    },
+    "0,9": {
+      "BindingInfo": {
+        "TableName": "工资条",
+        "ColumnName": "年月",
+        "GUID": "e042b418-927d-4d7c-be2b-6c84d61d80a1"
+      }
+    },
+    "2,9": {
+      "BindingInfo": {
+        "TableName": "工资条",
+        "ColumnName": "所属公司",
+        "GUID": "2db5c58e-b715-4fbb-b1da-352b0d0a96da"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 1
+      },
+      {
+        "Formatter": 2
+      },
+      {
+        "Background": 3,
+        "FontFamily": 0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "0.00",
+        "General",
+        "#FFFFFF00"
+      ]
+    },
+    "CellStyles": {
+      "0,1": 0,
+      "0,2": 1,
+      "0,8": 2,
+      "0,9": 3,
+      "1,9": 0,
+      "2,9": 3
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "1,0,18,9"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "工资条"
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//PYPS2ivl2jQQWJaFPbZHUQcis67kHrBDsvXq2V6hmjus3flN3BIKbyX/AgU/rLYQGjZKudbBfy8oQG7ia8gIcvw3Ys177wW8LpkBdzaFFd/Pck7wo/h3X3eT38Po75haPmvCsx0nHjsbaX3mykVvjDIOcbxZYf5e0lTLAQ+Op3avuPsaQtl0moj59GolvoxgIrWG+mmjnrJ3aXQVuRUjB0YAvfOqHEawYA2lG3sb3AGCsPm8EsYfkKOp+5KE+QAXWktRhY4pzqHFD7UCTPSdcgcKbVbnr/RlbUbg1aLMz4WrmsdKHKF7+zXgt+Od9xSFEvPI/eBwHtWgA2vkW/vkNnqLr2a/k2612U66yVyQC7YAJEydKLN3zHUMPBkWalcbTd3T89qVjbTMI6byn2OnQ/SA9nBkzLIS6nSJF4DsGcNgnYrtYOLd1rxhTgcnS7/n6lWkz/wv17l83k+E9AXpQvmNDUiRDZgvr9++MeqDQ/TjGqdNgQb3buPo8QbcgZRGU3P4PIx00qnhs94HHPfM81yqn87cnRDQ/n9Ygk3R9xCGE/j20qhB3a6h2wsg+1HEDVRkstJQYKIQwfTE3yW8zYw361aElKLxgd3+83hwpM8tyGB2dda7PiUuDLZVB+lobOx13ajfFN9HL/sWT2X4Uhmdc9CiR1oo4M7lpOKkMj3Oy8FWgYnDA1LHSavbVN8Y95Chvpgi/It4F6SHi4c3RvJIJ9DnTuOzMBrHXTL4gM4tvOLLSYPURvsvlPeMvWTV5I3vF5TKSju+CRhSJTgWuHyBImYs/dEs8JzaFWaOJ0hZkMDiQ00ET/axx5Z9uE41NgaqHUDmGlIx/lvCNYPL5puhX8azipyTDWP6u5c0PF7VdN1r0l5JOEUBoN2olhZxaExnOhRAPTntKWRO0fD+Sg==|920

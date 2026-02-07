@@ -1,0 +1,86 @@
+{
+  "Rows": {
+    "Count": 13
+  },
+  "Cols": {
+    "Count": 7
+  },
+  "Values": {
+    "0,0": "%CurrentUser.UserName%",
+    "12,1": "确定"
+  },
+  "AttachInfos": {
+    "0,0": {
+      "CellType": {
+        "$type": "Forguncy.CheckBoxGroupCellType, ServerDesignerCommon",
+        "CellDefaultValue": "%CurrentUser.UserName%",
+        "Style": 1,
+        "LayoutMode": 1,
+        "IsBounding": true,
+        "DataSource": "包装账户对应表",
+        "ValueColumnBindingInfo": {
+          "TableName": "包装账户对应表",
+          "ColumnName": "包装签名表",
+          "GUID": "7f222ecf-5206-4f95-8e36-5b16c04181c2"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "包装账户对应表",
+          "ColumnName": "包装签名表",
+          "GUID": "45c1275a-c332-4015-92ee-6d5c77a97d1e"
+        }
+      }
+    },
+    "12,1": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "PassValueBack": true,
+            "BreakpointIdentity": "6e133175-ef2a-4a9b-87aa-b60d239f5d2d"
+          }
+        ],
+        "Text": "确定",
+        "TemplateKey": "样式8"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Types": {
+      "Strs": [
+        "Body"
+      ]
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "0,0,12,7",
+    "12,1,1,4"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "IsMobilePage": true
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//TKXv4XS6ALmEVpxt93tmuBUyBMY0YBa6RaUZ4XH3WQ20iYnmHMuZchlo8E6O5K2ZEZkDDIAZj3GRhMubCKaG8c5YVQa0IruvgHgpUjMkiVZ2Hhddpqjkm+7qSOMbpb+OLmgSXQ58gZgcZMLO8hpcQXW8cQCZGOuQnHNI2vM0htjOLochtK/kg+zY9Niu8Oz390zkM65xmNMDLBK0kjJiIgU4eOcwFTLY63sZ6KUpN77AHbzBzJg53UCNiyh1Gqo+RjeUgisKLav2+lnPPGdo6PSNFcW7YuisW0jSdHGYOX4+/UGEBJA95eHzv6HGqoC6XAVDNES42JwGwQJg66l88y7DBMiMDUhgKOKFY09OrQkzjTIriTYXMijzNKAwkPu18wAYY9QDpPfrBTZ5quPzPPYREhNLVyM0ZbAjIpagmtQ05+PXURb7Wu1AzCC2kWVSb0DP99yo7MAdIL2CxFZu+4XAWui8HPsCplDJPd3eCkbFIcuJ6k28yE8aLFY7NFi5jgQDKIptcnxaPzdxDB8fBU4nqUrgZxqeNpJI0MAYPMZ5KRZCMNxPD9O9uIDSYYvKcYqu5IURq1nO7rYMPh0msz18xy4fhNVgZr1H3821rZt3PN6P+DKsrVEaWNZ+su7FZa4YwdQGH2lgucVaT46fIIcmaUm7w0lzTnInXrv8OMdQfT8gH0dvSdV+xuJ7oZVgSO1LtZjAs62RNRxksKsrlt98UfjBkvHLndlEU/ly+9Njm4VwW/VSk5nx4rlXDMnoX2bIx2MH26qZ7Hlq5FUdNRpgIVBKm68DkVAycXg//YuH521mSZoW0dBJlV+f0OTxZqgsmgKaSAK/D4fQgcxtV5Wu1Tx7eWUZOPH1dP4XxSAyUDCWx3begoQ9lsR8bmyYd07X73Y7Kx0Stde922OzqQ==|920

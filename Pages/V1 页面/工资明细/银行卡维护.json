@@ -1,0 +1,328 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 8.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 8.0
+        }
+      }
+    },
+    "Count": 23
+  },
+  "Cols": {
+    "Count": 46
+  },
+  "Values": {
+    "0,1": "*请选择工资年月",
+    "8,35": "操作"
+  },
+  "AttachInfos": {
+    "0,8": {
+      "CellType": {
+        "$type": "LayDateCellType.LayDateCellType, LayDateCellType",
+        "DefaultValue": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=TODAY()-30"
+        },
+        "LayDateMode": 4,
+        "AutoLimit": false
+      }
+    },
+    "2,1": {
+      "CellType": {
+        "$type": "Forguncy.RadioGroupCellType, ServerDesignerCommon",
+        "Style": 1,
+        "ItemSpace": 20,
+        "IsBounding": true,
+        "DataSource": "社保基数比例",
+        "ValueColumnBindingInfo": {
+          "TableName": "社保基数比例",
+          "ColumnName": "公司名",
+          "GUID": "89505fc9-5f2b-49ad-a4ac-c67d6e23fb09"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "社保基数比例",
+          "ColumnName": "公司名",
+          "GUID": "2314219d-9f26-448c-be07-ca11d7cc3dcb"
+        },
+        "AddNullItemWhenBinding": true,
+        "NoneItemText": "全部"
+      }
+    },
+    "8,1": {
+      "ListViewInfo": {
+        "Name": "表格1",
+        "TableName": "工资条",
+        "RowIndex": 8,
+        "ColumnIndex": 1,
+        "RowCount": 14,
+        "ColumnCount": 45,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "SubConditions": [
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "工资条",
+                "ColumnName": "所属公司",
+                "GUID": "2720b23f-ed1f-49b9-ac8c-2ea4acf90794"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=银行卡维护!B3"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "工资条",
+                "ColumnName": "年月",
+                "GUID": "78f2557a-8d18-46b7-8c91-54e201b54374",
+                "AttachType": {
+                  "$type": "ForguncyDataAccess.DateColumnAttachObj, ForguncyDataAccess",
+                  "ColumnAttachType": 1
+                }
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=YEAR(银行卡维护!I1)"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "工资条",
+                "ColumnName": "年月",
+                "GUID": "cd580cef-84d3-47a2-9cd4-68d5e92db5e1",
+                "AttachType": {
+                  "$type": "ForguncyDataAccess.DateColumnAttachObj, ForguncyDataAccess",
+                  "ColumnAttachType": 4
+                }
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=MONTH(银行卡维护!I1)"
+              }
+            }
+          ]
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "样式21",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "AllowEditInListview": true,
+        "ShowDeleteButton": true,
+        "IsSingleSelection": true,
+        "ColumnOperation": 2
+      }
+    },
+    "9,2": {
+      "BindingInfo": {
+        "TableName": "工资条",
+        "ColumnName": "所属公司",
+        "GUID": "93368903-50d1-42df-a03c-f74adae97557"
+      }
+    },
+    "9,7": {
+      "BindingInfo": {
+        "TableName": "工资条",
+        "ColumnName": "姓名",
+        "GUID": "396f875a-75aa-4c14-9d7b-af1baf918600"
+      }
+    },
+    "9,12": {
+      "BindingInfo": {
+        "TableName": "工资条",
+        "ColumnName": "开户行",
+        "GUID": "8582f800-54ab-46cd-9a2b-57f2296d741e"
+      }
+    },
+    "9,17": {
+      "BindingInfo": {
+        "TableName": "工资条",
+        "ColumnName": "银行代码",
+        "GUID": "6fd03b53-5509-4c8d-81a9-fcc193808af1"
+      }
+    },
+    "9,23": {
+      "BindingInfo": {
+        "TableName": "工资条",
+        "ColumnName": "银行卡",
+        "GUID": "fcc772bf-a88b-42c2-bc48-10b9b4c6f62f"
+      }
+    },
+    "9,35": {
+      "BindingInfo": {
+        "TableName": "工资条",
+        "ColumnName": "FGC_LastModifier",
+        "GUID": "4e82d750-85b8-48ce-8ae6-2f63e96d5f7e"
+      }
+    },
+    "9,38": {
+      "BindingInfo": {
+        "TableName": "工资条",
+        "ColumnName": "FGC_LastModifyDate",
+        "GUID": "544e7809-7e46-45d8-9ab9-0a796694fb6d"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "Foreground": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": null,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "Foreground": 3,
+        "WordWrap": true,
+        "Underline": true
+      },
+      {
+        "HorizontalAlignment": 4
+      },
+      {
+        "FontFamily": 0,
+        "HorizontalAlignment": 4
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "#FFFF0000",
+        "DarkGray",
+        "Blue",
+        "Center"
+      ],
+      "Borders": [
+        {
+          "Color": 2
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,1": 0,
+      "0,2": 1,
+      "0,3": 1,
+      "0,4": 1,
+      "0,5": 1,
+      "0,6": 1,
+      "0,7": 1,
+      "0,8": 2,
+      "0,9": 3,
+      "0,10": 3,
+      "0,11": 3,
+      "0,12": 3,
+      "0,13": 3,
+      "0,14": 3,
+      "0,15": 4,
+      "2,1": 5,
+      "8,1": 6,
+      "8,2": 6,
+      "8,7": 6,
+      "8,12": 6,
+      "8,17": 6,
+      "8,23": 6,
+      "8,35": 6,
+      "8,38": 6,
+      "9,1": 6,
+      "9,2": 6,
+      "9,7": 6,
+      "9,12": 6,
+      "9,17": 6,
+      "9,23": 7,
+      "9,35": 6,
+      "9,38": 6
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "0,8,1,8",
+    "2,1,5,34",
+    "9,2,1,5",
+    "9,7,1,5",
+    "9,12,1,5",
+    "9,17,1,6",
+    "9,23,1,12",
+    "10,1,12,45",
+    "9,35,1,3",
+    "9,38,1,8",
+    "8,2,1,5",
+    "8,7,1,5",
+    "8,12,1,5",
+    "8,17,1,6",
+    "8,23,1,12",
+    "8,35,1,3",
+    "8,38,1,8"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "工资条"
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//u0naztzEYeUkE1kdpsiJbXGDzSQTRpi+eiol5sAqo4zOy6SmBBqrE9/NGBf4RhkvA9zO1uC+jHO2viOIN8n5R25gWoSx/gsqnpSUYAOFqVRdlSORWKx/YIJCI+bBrZxeF/PJxsUYdm7rPL3FyCJzo3tc3llaBrgAE5edi4ilo9v/M4ZEzUi7z3DRFECPkvq7/nuFaXSXFYriKZWNmruVqUA4gInnlHxD0XbVgSivHmndRT+LkI4G4kR1d4HrjOtmKC43TWIo0p9VA+g0k6C5osMzJEyTlSGNjF8XudqnIntM9CVoNO3pFuzWNPzgQGD1LDtxM/RcwIbdBr51GZP/4Z43u5HTZdC/CS0zsMXNmHLdajJH++AuJ1cZ3BOKijNzZO7plVddFLoxfq6ZuRg9Xm0jJxxIow1EPUMO1rRa+kVjKPSx0SIPJGZhXbrbR+u5iBYuZDi3hOUFh94eVgwD6D7HWHGiHBJkW3hMSlveAeDT5Y0FnXoUr/WNVdoo6abOhE8zk6ox2XfGCx7bEEjokY1EmsqX5tUCLPZrelgdBOt520giSPoTayu7RTwq03bRp+3k6mjR7zrtOYWk4J+7NfD52umFkFGjZ72n3u3w8d4Wd4t0vuYQENXT7XuwSt254GrYcOO/Fi/ne2YNLVnSy8nvkQQ5Ef+4JOP01F/RfSS7dvql+b+5vVgIKp7IWHRDaLoCGkAKy8P2TLEXryMrZ1KlsOTi+z9H1Dpvzw931j1PGLwQynxV51S+GbwHAm/K4qX8bQcOYAg/kT3zr22LzlnRWSqw+lO4S9eZ7fH6bKOOEtO1osVo1P0d+dVfsOCEW4GYYLcY8rQ1Y6tt08qiGISqufwLRHbXwEypUz7uqUKX2pjFfgZBB8xc0k4Xg4+sXBc8JzNfMnoaW8i+6Ih07g==|920

@@ -1,0 +1,268 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 40.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 48.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      }
+    },
+    "Count": 23,
+    "DefaultSize": 32.0
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "27": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 32.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      }
+    },
+    "Count": 29,
+    "DefaultSize": 32.0
+  },
+  "Values": {
+    "0,5": "采购形式发票管理",
+    "3,24": "查看",
+    "3,26": "删除"
+  },
+  "AttachInfos": {
+    "2,1": {
+      "ListViewInfo": {
+        "Name": "表格1",
+        "TableName": "采购形式发票1",
+        "RowIndex": 2,
+        "ColumnIndex": 1,
+        "RowCount": 19,
+        "ColumnCount": 27,
+        "TopCondition": null,
+        "ListViewStyleName": "样式1",
+        "ShowColumnHeaderInDesigner": true,
+        "IsRowHeaderVisible": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "3,2": {
+      "NameUsedInJavaScript": "发票日期",
+      "BindingInfo": {
+        "TableName": "采购形式发票1",
+        "ColumnName": "发票日期",
+        "GUID": "fbe29f52-c8bd-4498-af02-d532dc689132"
+      }
+    },
+    "3,5": {
+      "NameUsedInJavaScript": "发票号",
+      "BindingInfo": {
+        "TableName": "采购形式发票1",
+        "ColumnName": "发票号",
+        "GUID": "db810da2-4a2f-48f9-851d-fc2dab756720"
+      }
+    },
+    "3,9": {
+      "NameUsedInJavaScript": "采购表合并ID",
+      "BindingInfo": {
+        "TableName": "采购形式发票1",
+        "ColumnName": "采购表合并ID",
+        "GUID": "c51d29bb-22b4-4602-b536-c8c55b814f0d"
+      }
+    },
+    "3,12": {
+      "NameUsedInJavaScript": "公司名称cn",
+      "BindingInfo": {
+        "TableName": "采购形式发票1",
+        "ColumnName": "公司名称cn",
+        "GUID": "8f292397-fdda-40f6-a5f0-28a6c2376d54"
+      }
+    },
+    "3,15": {
+      "NameUsedInJavaScript": "地址cn",
+      "BindingInfo": {
+        "TableName": "采购形式发票1",
+        "ColumnName": "地址cn",
+        "GUID": "da64f3cb-d6d9-4c9f-a0dd-81f2b4090eb9"
+      }
+    },
+    "3,18": {
+      "BindingInfo": {
+        "TableName": "采购形式发票1",
+        "ColumnName": "FGC_Creator",
+        "GUID": "4dcaa8ff-7e9b-4c5f-aca3-29f68ac88830"
+      }
+    },
+    "3,20": {
+      "BindingInfo": {
+        "TableName": "采购形式发票1",
+        "ColumnName": "FGC_LastModifyDate",
+        "GUID": "80d27950-53f3-4baa-be85-65aeceada5af"
+      }
+    },
+    "3,24": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PageName": "采购形式发票",
+            "BreakpointIdentity": "6d06ab29-5549-4de5-877e-c4204cc9f128"
+          }
+        ],
+        "Text": "查看",
+        "ClickMode": 1
+      }
+    },
+    "3,26": {
+      "NameUsedInJavaScript": "删除",
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.DeleteRecordCommand, ServerDesignerCommon",
+            "ConfirmText": "您确定要删除吗？",
+            "BreakpointIdentity": "3f5e8d7d-fac9-492d-bc8a-f0bb6ead1180"
+          }
+        ],
+        "Text": "删除"
+      }
+    },
+    "21,1": {
+      "CellType": {
+        "$type": "Forguncy.PageNavigateCellType, ServerDesignerCommon",
+        "PageingListviewName": "表格1",
+        "FirstImage": {
+          "Name": "Arrow/277_move_first_3.svg",
+          "BuiltIn": true,
+          "Color": "Text 1 50"
+        },
+        "PreviousImage": {
+          "Name": "Arrow/291_left_arrow_2.svg",
+          "BuiltIn": true,
+          "Color": "Text 1 50"
+        },
+        "NextImage": {
+          "Name": "Arrow/292_move_next_3.svg",
+          "BuiltIn": true,
+          "Color": "Text 1 50"
+        },
+        "LastImage": {
+          "Name": "Arrow/278_move_last_3.svg",
+          "BuiltIn": true,
+          "Color": "Text 1 50"
+        }
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontWeight": 0
+      },
+      {
+        "Foreground": 1
+      },
+      {
+        "Formatter": 2
+      },
+      {
+        "FontFamily": 3,
+        "Formatter": 2
+      },
+      {
+        "Foreground": 4,
+        "Underline": true
+      },
+      {
+        "HorizontalAlignment": 5
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Bold",
+        "#FFFF0000",
+        "yyyy/MM/dd",
+        "Body",
+        "Accent 1",
+        "Right"
+      ]
+    },
+    "CellStyles": {
+      "0,5": 0,
+      "2,18": 1,
+      "2,20": 1,
+      "3,2": 2,
+      "3,20": 3,
+      "3,24": 4,
+      "3,26": 4,
+      "21,1": 5
+    },
+    "SheetStyle": {
+      "FontFamily": 3
+    }
+  },
+  "Spans": [
+    "3,2,1,3",
+    "2,2,1,3",
+    "3,5,1,4",
+    "2,5,1,4",
+    "3,9,1,3",
+    "2,9,1,3",
+    "3,12,1,3",
+    "2,12,1,3",
+    "3,15,1,3",
+    "2,15,1,3",
+    "3,26,1,2",
+    "2,26,1,2",
+    "21,1,1,27",
+    "3,18,1,2",
+    "2,18,1,2",
+    "3,24,1,2",
+    "2,24,1,2",
+    "3,20,1,4",
+    "2,20,1,4",
+    "4,1,17,27"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "采购形式发票1"
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}///Mu9tFFsrbYy1e7KH0oc15hA1Aw6OB0xFNr82wDlpUwOqndWcXuKntMFqRxp70aNc/xM3nwDs5WSBugBJwgDlzEHzlUxz22MhOhEpDDxAWYliwSMSNEOsLk6u2IKtfYf1vyVoRwk7NgX5Lme+p68a9A+SXy/OvQWYQrxgn95vIeYNaPCVwN6cXXW8AhRoBPkkt808ZMDVkNutlW5Bo15i3xEeZ6TI0rXMm0kk08Pfyz+3vBWSHsV+UD+9XRh0cTRbVObU650TxW0CHX2wM2+kRuAVtdGgPYo85pq7jNZ/QkbNBDQgJebKklMrGkRixLDnAe+Kl18HyiyQpdwNqP8ULMeQUsS+3f8c4ZTV9Cy+vreM++8BksJ70dsHh9c3F27R2xkuxYsKS9sPQqPx8XCQhXPbk+KSqyXK0cN8b0N+eGadNl9abPzuGs2pmnbfxJWr6YNSirRRFrhnNzFsXgmK5nLhurkfGD0Y5f3VSO1OPw5gzgIce7KILPFfGbyGvplHGE+ZM0Ii5tat2MdnyAVgsP/212RrysSYxt1MSJQPKvJGrJRZy/0JOCjZ7//Go3quL8oqur/+iLu0MyC9JECIn/eKaliiYBwHxSb56NGVOdAQ9AkKXDR+9HqaTQL1ESAgt36M1ayKV5E465BIeALiDOxhqvel2NWdJgrJpHB193F2dbQPc0AJc8qUlOyDodE988kY/gxn5McCSyPvzmFAFKMkTXABWbdtTnfOV4hTGKSQF1BDjrv3c3StBuFP46UzkQq5oe6dfg7XHL/AMo588LCybfyjuenQksw0EnxJwclG+8bZJ0hNrAFcBiJIGNTbJkl9WV+GrVyzgmEDcaInrE6T9P9tQUkbNREtFaky/AJxtVmZexGpk5zJOyILR6l/TY7NZcYuGIZl6/vulDhtQ==|920

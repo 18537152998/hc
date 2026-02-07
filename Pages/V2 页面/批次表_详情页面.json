@@ -1,0 +1,332 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "18": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 32.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      }
+    },
+    "Count": 21,
+    "DefaultSize": 32.0
+  },
+  "Cols": {
+    "Count": 31,
+    "DefaultSize": 32.0
+  },
+  "Values": {
+    "1,1": "批次表信息",
+    "3,1": "批次号",
+    "3,17": "公司产品ID",
+    "6,1": "采购单ID",
+    "6,17": "采购入库单ID",
+    "9,1": "发票ID",
+    "9,17": "初始数量",
+    "12,1": "剩余数量",
+    "12,17": "单位成本",
+    "15,1": "批次状态",
+    "19,5": "取消"
+  },
+  "AttachInfos": {
+    "4,1": {
+      "BindingInfo": {
+        "TableName": "批次表",
+        "ColumnName": "批次号",
+        "GUID": "a53e449b-8085-448b-ad2f-efd10c0c22b5"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "4,17": {
+      "BindingInfo": {
+        "TableName": "批次表",
+        "ColumnName": "公司产品ID",
+        "GUID": "3209d30f-3253-45ce-8358-1be468e8b4e3",
+        "RelationBinding": {
+          "RelatedTable": "公司产品表",
+          "RelatedColumn": "ID",
+          "DisplayColumn": "SPU"
+        }
+      }
+    },
+    "7,1": {
+      "BindingInfo": {
+        "TableName": "批次表",
+        "ColumnName": "采购单ID",
+        "GUID": "62b45bc4-f4e6-41c6-a502-92e3978cf28b",
+        "RelationBinding": {
+          "RelatedTable": "采购单",
+          "RelatedColumn": "ID",
+          "DisplayColumn": "采购单号"
+        }
+      },
+      "CellType": {
+        "$type": "Forguncy.NumberCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "7,17": {
+      "BindingInfo": {
+        "TableName": "批次表",
+        "ColumnName": "采购入库单ID",
+        "GUID": "9fd9a350-8230-4eae-98e1-4ef32b04f154",
+        "RelationBinding": {
+          "RelatedTable": "采购入库单",
+          "RelatedColumn": "ID",
+          "DisplayColumn": "入库单号"
+        }
+      },
+      "CellType": {
+        "$type": "Forguncy.NumberCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      },
+      "DataValidationInfo": {}
+    },
+    "10,1": {
+      "BindingInfo": {
+        "TableName": "批次表",
+        "ColumnName": "发票ID",
+        "GUID": "b062039e-3a8c-42ae-a3a2-56b9312269b6"
+      },
+      "CellType": {
+        "$type": "Forguncy.NumberCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "10,17": {
+      "BindingInfo": {
+        "TableName": "批次表",
+        "ColumnName": "初始数量",
+        "GUID": "d474712f-1b08-4d9e-9ab0-ccd8c5c32eae"
+      },
+      "CellType": {
+        "$type": "Forguncy.NumberCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "13,1": {
+      "BindingInfo": {
+        "TableName": "批次表",
+        "ColumnName": "剩余数量",
+        "GUID": "c0d58fb1-5263-47ce-a269-03531ae44ccd"
+      },
+      "CellType": {
+        "$type": "Forguncy.NumberCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "13,17": {
+      "BindingInfo": {
+        "TableName": "批次表",
+        "ColumnName": "单位成本",
+        "GUID": "6dbbc294-788f-4e28-b7ec-eda730703ba7"
+      },
+      "CellType": {
+        "$type": "Forguncy.NumberCellType, ServerDesignerCommon",
+        "DecimalPlacesNumber": 4,
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "16,1": {
+      "BindingInfo": {
+        "TableName": "批次表",
+        "ColumnName": "批次状态",
+        "GUID": "ad70643a-a5b4-441b-a2d3-676bd33162bc"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "19,1": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=批次表_详情页面!B20"
+                      }
+                    ]
+                  },
+                  "value": "添加"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "批次表",
+                    "UpdateType": "add",
+                    "BreakpointIdentity": "2b8927ab-5af6-4272-b657-dd6c8fa29a26"
+                  }
+                ],
+                "ID": "d7a2615d-124c-4b5c-9ff7-a72f6a6ed04d"
+              },
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=批次表_详情页面!B20"
+                      }
+                    ]
+                  },
+                  "value": "更改"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "批次表",
+                    "BreakpointIdentity": "95211418-0473-485e-bf33-001fdde6d7ea"
+                  }
+                ],
+                "ID": "0dae6401-4d02-4a18-8bdb-bb024ecbf04a"
+              }
+            ],
+            "BreakpointIdentity": "bfc33775-ba78-4ac8-ac04-58bc692d8d83"
+          },
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "NavigateType": "back",
+            "BreakpointIdentity": "2c5466a3-e1f2-464e-ae13-322ec8b35213"
+          }
+        ],
+        "TemplateKey": "_RS_Main1"
+      }
+    },
+    "19,5": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "NavigateType": "back",
+            "BreakpointIdentity": "bb66b0d3-eb5b-4823-bd21-ebc44703bbf3"
+          }
+        ],
+        "Text": "取消",
+        "TemplateKey": "_RS_Minor3"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontSize": 16.0,
+        "FontWeight": 0,
+        "TextIndent": 10,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "Formatter": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Bold",
+        "#1890FF",
+        "@",
+        "Body"
+      ],
+      "Borders": [
+        {
+          "Style": 5,
+          "Color": 1
+        }
+      ]
+    },
+    "CellStyles": {
+      "1,1": 0,
+      "4,1": 1,
+      "16,1": 1
+    },
+    "SheetStyle": {
+      "FontFamily": 3,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
+    }
+  },
+  "Spans": [
+    "1,1,1,6",
+    "3,1,1,6",
+    "3,17,1,6",
+    "4,1,1,13",
+    "4,17,1,13",
+    "6,1,1,6",
+    "6,17,1,6",
+    "7,1,1,13",
+    "7,17,1,13",
+    "9,1,1,6",
+    "9,17,1,6",
+    "10,1,1,13",
+    "10,17,1,13",
+    "12,1,1,6",
+    "12,17,1,6",
+    "13,1,1,13",
+    "13,17,1,13",
+    "15,1,1,6",
+    "16,1,1,13",
+    "19,1,1,3",
+    "19,5,1,3"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "ShouldCheckDirty": true,
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//LkiaQ0lutJLtPNeRBF8fAxU6SE6LGFePqHXios8QO3SwALiSeza7/9h7AGy9qZFQ/aXcSgSbxE/sAuau9ccCBSQeppfg+LIlcj6/PEF00ij7O8KpwfcXrinFzhFiYbsqqqw3SSgu1TOXPVyjOlsaAQ3YqSusNR7SlGcq5JYC+dMef+RDiqlK8qZtzL6G9SnEiYz113hC5HSgdU3/JzTuOUBI6n50qp2rNS6CrreLHL36mZMgOCv4m7ReG9NBkcU/cMdCRGKEH+ZDOe6f4t6RSNj940OV4H0pH5LwhNbG5CfQmVZd5u2rF2ATP0wGWJu2bz14YSsoAs9ACLK4+nXhSkKViB+c9sA6cKTBdZsy4kQHMqSaAXogw1rxo+O8/3BTxkJOQlVMav3W+CPdis58IXV9pRgsMyNKX0Vy0DjUv9URuE2EsbBMmBxd08K2rJW254baMcniGZXBPf4obhjW/1VHv7JC4+cQiYYdlkBT5nB0HAw73l0+jvhtagERc3GWSQCsGAhIsl37Xnv8NUcZYWUoENMlSOX5gQtoDy62nhREHERT9FDETZ6bG5p0Z9ZisAaUvNHkdfsUnlHe5nlj5B6c8XFVsZrf0/fZc1W7WpHYcAS6p4EzTHAMlJj0XSw+jbrVWL8xFlAM6RDFFZQGxwP5iGHaWTJ0j2tbSU+ej2nuaAIoOh8+yHPbJ1+4+Sbao494gwmI8ZKBa8pSAY3xH+9/yaUtqrhmTP3R3LnjwqYFf2scfY0rD2hebv2wf5sROVs7cmD5nqPn9Gk2ytUAst5+VxhFszDNCqcIJwdz5pk9ZzOn9bpfNFr+sbYO6yEpC9ufMUW87oc6fSer6mdyI6uBkK6E2PKDQNGPIOUPX7RvlUWI0MPq2ViblnZli2ktXLFuIBQbHg2daLifRMwAhg==|920

@@ -1,0 +1,340 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "18": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 32.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      }
+    },
+    "Count": 21,
+    "DefaultSize": 32.0
+  },
+  "Cols": {
+    "Count": 31,
+    "DefaultSize": 32.0
+  },
+  "Values": {
+    "1,1": "库存流水表信息",
+    "3,1": "业务类型",
+    "3,17": "业务单号",
+    "6,1": "仓库ID",
+    "6,17": "公司产品ID",
+    "9,1": "SKU",
+    "9,17": "入库数量",
+    "12,1": "出库数量",
+    "12,17": "发生日期",
+    "15,1": "单位成本",
+    "15,17": "是否有效",
+    "19,5": "取消"
+  },
+  "AttachInfos": {
+    "4,1": {
+      "BindingInfo": {
+        "TableName": "库存流水表",
+        "ColumnName": "业务类型",
+        "GUID": "6a3e4869-15d6-4a5f-bdde-eea8321265be"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "4,17": {
+      "BindingInfo": {
+        "TableName": "库存流水表",
+        "ColumnName": "业务单号",
+        "GUID": "124eec6a-03f2-45de-a876-ea9b63e246a8"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "7,1": {
+      "BindingInfo": {
+        "TableName": "库存流水表",
+        "ColumnName": "仓库ID",
+        "GUID": "a0e5999e-f12c-4d72-9e38-8e2ad64450c8"
+      },
+      "CellType": {
+        "$type": "Forguncy.NumberCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "7,17": {
+      "BindingInfo": {
+        "TableName": "库存流水表",
+        "ColumnName": "公司产品ID",
+        "GUID": "8aa7df6f-110b-43ff-8b55-b06bdc7d9aff"
+      },
+      "CellType": {
+        "$type": "Forguncy.NumberCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "10,1": {
+      "BindingInfo": {
+        "TableName": "库存流水表",
+        "ColumnName": "SKU",
+        "GUID": "68a5868c-c713-41f6-8eff-0403bc17d109"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "10,17": {
+      "BindingInfo": {
+        "TableName": "库存流水表",
+        "ColumnName": "入库数量",
+        "GUID": "aad19028-a6d4-465d-aeff-f964f0312181"
+      },
+      "CellType": {
+        "$type": "Forguncy.NumberCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "13,1": {
+      "BindingInfo": {
+        "TableName": "库存流水表",
+        "ColumnName": "出库数量",
+        "GUID": "931c0b0d-f591-454a-a90f-c8a5e5c25213"
+      },
+      "CellType": {
+        "$type": "Forguncy.NumberCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "13,17": {
+      "BindingInfo": {
+        "TableName": "库存流水表",
+        "ColumnName": "发生日期",
+        "GUID": "0779ab42-692d-4859-9d19-6fc3e17252ec"
+      },
+      "CellType": {
+        "$type": "Forguncy.DateCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "16,1": {
+      "BindingInfo": {
+        "TableName": "库存流水表",
+        "ColumnName": "单位成本",
+        "GUID": "f560016b-b172-4fbc-8bd0-fde66703fe4c"
+      },
+      "CellType": {
+        "$type": "Forguncy.NumberCellType, ServerDesignerCommon",
+        "DecimalPlacesNumber": 4,
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "16,17": {
+      "BindingInfo": {
+        "TableName": "库存流水表",
+        "ColumnName": "是否有效",
+        "GUID": "e285d042-f07e-4093-aaee-998b61f96a20"
+      },
+      "CellType": {
+        "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
+        "Style": 1
+      }
+    },
+    "19,1": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=库存流水表_详情页面!B20"
+                      }
+                    ]
+                  },
+                  "value": "添加"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "库存流水表",
+                    "UpdateType": "add",
+                    "BreakpointIdentity": "e006558c-01cb-496a-abf3-87610b211840"
+                  }
+                ],
+                "ID": "008d85f7-19eb-489f-b00a-99b406581b7e"
+              },
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=库存流水表_详情页面!B20"
+                      }
+                    ]
+                  },
+                  "value": "更改"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "库存流水表",
+                    "BreakpointIdentity": "3abbefa9-245f-4df1-9d49-4752e91e7169"
+                  }
+                ],
+                "ID": "3fe75931-e028-49a5-b4c1-38db667f6338"
+              }
+            ],
+            "BreakpointIdentity": "c6b886bd-0417-43f7-9f5c-a172e452ce97"
+          },
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "NavigateType": "back",
+            "BreakpointIdentity": "ae194e81-dfd5-493f-9fe6-405dd08da228"
+          }
+        ],
+        "TemplateKey": "_RS_Main1"
+      }
+    },
+    "19,5": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "NavigateType": "back",
+            "BreakpointIdentity": "1e66b14c-388c-4e78-8e75-1af25cbc04de"
+          }
+        ],
+        "Text": "取消",
+        "TemplateKey": "_RS_Minor3"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontSize": 16.0,
+        "FontWeight": 0,
+        "TextIndent": 10,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "Formatter": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Bold",
+        "#1890FF",
+        "@",
+        "Body"
+      ],
+      "Borders": [
+        {
+          "Style": 5,
+          "Color": 1
+        }
+      ]
+    },
+    "CellStyles": {
+      "1,1": 0,
+      "4,1": 1,
+      "4,17": 1,
+      "10,1": 1
+    },
+    "SheetStyle": {
+      "FontFamily": 3,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
+    }
+  },
+  "Spans": [
+    "1,1,1,6",
+    "3,1,1,6",
+    "3,17,1,6",
+    "4,1,1,13",
+    "4,17,1,13",
+    "6,1,1,6",
+    "6,17,1,6",
+    "7,1,1,13",
+    "7,17,1,13",
+    "9,1,1,6",
+    "9,17,1,6",
+    "10,1,1,13",
+    "10,17,1,13",
+    "12,1,1,6",
+    "12,17,1,6",
+    "13,1,1,13",
+    "13,17,1,13",
+    "15,1,1,6",
+    "15,17,1,6",
+    "16,1,1,13",
+    "16,17,1,13",
+    "19,1,1,3",
+    "19,5,1,3"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "ShouldCheckDirty": true,
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//UICPhGmNhyugmhEnhSupHlpfMFTWEHjJpsBtuDVgXuX/vmgVVB50eFKTZFgupgBRiVZR/AlqByn9vM+h1KvJKTDjOligdsG6ZeiDtviiR9inW/HUIhKJMXIyiGWSpw13gDxqMDaWH8l3EA6M3zY+1oL0JpUF1i2Zp3nLdCX3sY9aW+pzK7sfTVNzfvOzQqhSmQrU6cCeUzkJsc6hwxaZjReaJU0zL9wpi0gqUJJ9FLH9ZP4pZ1sU9Lige782myfv71ODn8BqqPNzGrdhh8DwvVxt2b451n5n14mK+arnyY2gZRLFTllvY1Oigng2Ulqi4uJCAQM7T393ao7BWg7fReGeFlgS2+8slSftRtPbDWltQ9yC5axdpzxQ89aFMbmSktow8FM8Pd73nYTso/3iM5qu2S61owTGqkv4QnrIE94DqGG7G7sRh6LEPpMGzQZkHcik+v+v7Gjok86Bt9IN0brz1rTBxLNWbDmY3XToFN6v8h9K0+cG5T5zFfyV1/GrGVn+0SE+g+J5iIKJQe7R0i5eU1dyIgMc3W4JwQ/j3f/RufEwp8LArArXH8FCfRT+98N4cxkt9nhdiI2vsm/tCWtSZ+cbbTTjoXLD1qY6UO8U8uJO7ftOTslG42eENcOcvKHwDKr2/v4lL9sWrMy9Iy9wZ084FwgOh2ukzfZUiYPJmktQzIM87X6g8TOpIzJOK2T0f4iIieiyuuIk8JLruC6at1olPATVXRN0/Rnld4o5ugMJoNA+PO8zyIEFy/ENSzXhydIo6Zg1ffyBodGQfaQzopBWa5QTFA+mXUWAt88AJip3HsQiKEjfpYL7Wri1w9tPE8CGocnU2Qbhz6SYm+JtjOSJrz2uExLLZxJBfZHNPhwZvEG7xFPdRAyJaOqn4ldPD6EicUXHehi8WG0VMQ==|920

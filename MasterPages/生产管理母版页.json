@@ -1,0 +1,513 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0
+        }
+      }
+    },
+    "Count": 35
+  },
+  "Cols": {
+    "Count": 93
+  },
+  "AttachInfos": {
+    "0,8": {
+      "IsPlaceHolderCell": true
+    },
+    "1,0": {
+      "CellType": {
+        "$type": "Forguncy.CustomMenu.ForguncyMenuCellType, Forguncy.CustomMenu",
+        "TemplateKey": "样式5",
+        "Items": [
+          {
+            "Value": "概览",
+            "Text": "概览",
+            "SelectedIconColor": "Background 1",
+            "IsOldMenuPath": false,
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                "PageName": "生产概览",
+                "IgnoreTargetPageCachedCurrentRowInfo": false,
+                "BreakpointIdentity": "7e91ae52-6f94-4c2b-b7e4-450d3da43e66"
+              }
+            ],
+            "CanVisitRoleList": [
+              "FGC_LoginUser"
+            ]
+          },
+          {
+            "Value": "全部库存",
+            "Text": "全部库存",
+            "SelectedIconColor": "Background 1",
+            "IsOldMenuPath": false,
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                "PageName": "配件库存表页面",
+                "IgnoreTargetPageCachedCurrentRowInfo": false,
+                "BreakpointIdentity": "9e7ee3be-e11f-492f-9d72-59080269f6be"
+              }
+            ],
+            "CanVisitRoleList": [
+              "FGC_LoginUser"
+            ]
+          },
+          {
+            "Value": "产品表",
+            "Text": "产品表",
+            "SelectedIconColor": "Background 1",
+            "IsOldMenuPath": false,
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                "PageName": "产品表页面",
+                "IgnoreTargetPageCachedCurrentRowInfo": false,
+                "BreakpointIdentity": "0d5cfeba-753f-4610-ac91-d7dd7ca4f78f"
+              }
+            ],
+            "CanVisitRoleList": [
+              "FGC_LoginUser"
+            ]
+          },
+          {
+            "Value": "冷却盘",
+            "Text": "冷却盘",
+            "SelectedIconColor": "Background 1",
+            "IsOldMenuPath": false,
+            "CanVisitRoleList": [
+              "FGC_LoginUser"
+            ],
+            "SubItems": [
+              {
+                "Value": "生产计划",
+                "Text": "生产计划",
+                "SelectedIconColor": "Background 1",
+                "IsOldMenuPath": false,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                    "ConditionAndCommandPairList": [
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionCurrentUserInfoParam, ServerDesignerCommon",
+                            "currentUserProperty": {
+                              "UserProperty": "角色",
+                              "PropertyType": 3
+                            }
+                          },
+                          "value": "财务",
+                          "compareType": 10
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                            "PageName": "生产计划表-cw65",
+                            "IgnoreTargetPageCachedCurrentRowInfo": false,
+                            "BreakpointIdentity": "5e80a4ea-fa09-400a-b595-21d6021e6cd8"
+                          }
+                        ],
+                        "ID": "a5dc8713-c119-4bc7-bce3-a1e59345ff57"
+                      },
+                      {
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                            "PageName": "生产计划表-yy",
+                            "IgnoreTargetPageCachedCurrentRowInfo": false,
+                            "BreakpointIdentity": "24ae730e-827c-450d-bb9f-1cc430debe1c"
+                          }
+                        ],
+                        "ID": "f6bbb8be-5880-40e4-b30d-828eb39b6e32"
+                      }
+                    ],
+                    "BreakpointIdentity": "3fe7ffc3-e747-4164-979e-4bfb99458dab"
+                  }
+                ],
+                "CanVisitRoleList": [
+                  "FGC_LoginUser"
+                ]
+              },
+              {
+                "Value": "配件库存",
+                "Text": "配件库存",
+                "SelectedIconColor": "Background 1",
+                "IsOldMenuPath": false,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "PageName": "配件库存表页面",
+                    "PassValues": [
+                      {
+                        "Source": "冷却盘",
+                        "TargetCell": {
+                          "SerializeProperty": "=配件库存表页面!BH1"
+                        }
+                      }
+                    ],
+                    "IgnoreTargetPageCachedCurrentRowInfo": false,
+                    "BreakpointIdentity": "f821ea26-dd92-4948-a7df-a1a45b279a89"
+                  }
+                ],
+                "CanVisitRoleList": [
+                  "FGC_LoginUser"
+                ]
+              }
+            ]
+          },
+          {
+            "Value": "红酒帽热缩机",
+            "Text": "红酒帽热缩机",
+            "SelectedIconColor": "Background 1",
+            "IsOldMenuPath": false,
+            "CanVisitRoleList": [
+              "销售",
+              "财务"
+            ],
+            "SubItems": [
+              {
+                "Value": "生产计划",
+                "Text": "生产计划",
+                "SelectedIconColor": "Background 1",
+                "IsOldMenuPath": false,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                    "ConditionAndCommandPairList": [
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionCurrentUserInfoParam, ServerDesignerCommon",
+                            "currentUserProperty": {
+                              "UserProperty": "角色",
+                              "PropertyType": 3
+                            }
+                          },
+                          "value": "财务",
+                          "compareType": 10
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                            "PageName": "生产计划表-cw65",
+                            "IgnoreTargetPageCachedCurrentRowInfo": false,
+                            "BreakpointIdentity": "429b2bde-0673-4e44-ab70-1d8e7ffab91f"
+                          }
+                        ],
+                        "ID": "5afb7114-efbc-4235-8d30-2ed4f42f181c"
+                      },
+                      {
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                            "PageName": "生产计划表-yy",
+                            "IgnoreTargetPageCachedCurrentRowInfo": false,
+                            "BreakpointIdentity": "ca85beae-e84f-42fa-b7a3-4e6ee2619621"
+                          }
+                        ],
+                        "ID": "46757b75-b428-4422-acc9-4f23d63346aa"
+                      }
+                    ],
+                    "BreakpointIdentity": "3419add7-006d-4ebd-8f7b-3d185fb7c325"
+                  }
+                ],
+                "CanVisitRoleList": [
+                  "FGC_LoginUser"
+                ]
+              },
+              {
+                "Value": "配件库存",
+                "Text": "配件库存",
+                "SelectedIconColor": "Background 1",
+                "IsOldMenuPath": false,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "PageName": "配件库存表页面",
+                    "PassValues": [
+                      {
+                        "Source": "红酒帽热缩机",
+                        "TargetCell": {
+                          "SerializeProperty": "=配件库存表页面!BH1"
+                        }
+                      }
+                    ],
+                    "IgnoreTargetPageCachedCurrentRowInfo": false,
+                    "BreakpointIdentity": "61c0f92a-f468-4401-b808-76056549f9b1"
+                  }
+                ],
+                "CanVisitRoleList": [
+                  "FGC_LoginUser"
+                ]
+              }
+            ]
+          }
+        ],
+        "MenuLevelsStyle": [
+          {
+            "FontSize": 14.6666666666667,
+            "Width": 120.0
+          },
+          {
+            "FontSize": 12.0,
+            "Width": 120.0
+          }
+        ]
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Background": null,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "Background": null,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 1
+      },
+      {
+        "Background": null,
+        "FontFamily": 2,
+        "FontSize": 14.666666984558105,
+        "Foreground": null,
+        "Formatter": 3,
+        "TextIndent": 40,
+        "HorizontalAlignment": 4
+      },
+      {
+        "Background": null,
+        "FontFamily": 5,
+        "FontStretch": 6,
+        "FontStyle": 6,
+        "FontWeight": 6,
+        "Foreground": null,
+        "Formatter": null,
+        "TextIndent": 0,
+        "HorizontalAlignment": 7,
+        "VerticalAlignment": 8,
+        "WordWrap": false,
+        "Underline": false,
+        "Strikethrough": false,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": null,
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "Background": null,
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 9
+      },
+      {
+        "Background": 10
+      },
+      {
+        "Background": 11
+      },
+      {
+        "Background": 12
+      },
+      {
+        "Background": 13
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Background 1 -35",
+        "LightGray",
+        "微软雅黑",
+        "[AUTO]General",
+        "Left",
+        "Body",
+        "Normal",
+        "General",
+        "Center",
+        "Accent 4 0",
+        "Text 2 40",
+        "#FFFFFF00",
+        "Accent 2 0",
+        "Accent 5 0"
+      ],
+      "Borders": [
+        {
+          "Color": 0
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,0": 0,
+      "0,1": 1,
+      "0,2": 1,
+      "0,3": 1,
+      "0,4": 1,
+      "0,8": 2,
+      "1,0": 3,
+      "18,0": 4,
+      "18,1": 4,
+      "18,2": 4,
+      "18,3": 4,
+      "18,4": 4,
+      "19,0": 4,
+      "19,1": 4,
+      "19,2": 4,
+      "19,3": 4,
+      "19,4": 4,
+      "20,0": 4,
+      "20,1": 4,
+      "20,2": 4,
+      "20,3": 4,
+      "20,4": 4,
+      "21,0": 4,
+      "21,1": 4,
+      "21,2": 4,
+      "21,3": 4,
+      "21,4": 4,
+      "22,0": 4,
+      "22,1": 4,
+      "22,2": 4,
+      "22,3": 4,
+      "22,4": 4,
+      "23,0": 0,
+      "23,1": 1,
+      "23,2": 1,
+      "23,3": 1,
+      "23,4": 1,
+      "24,0": 4,
+      "24,1": 4,
+      "24,2": 4,
+      "24,3": 4,
+      "24,4": 4,
+      "24,5": 4,
+      "24,6": 4,
+      "25,0": 4,
+      "25,1": 4,
+      "25,2": 4,
+      "25,3": 4,
+      "25,4": 4,
+      "25,5": 4,
+      "25,6": 4,
+      "26,0": 0,
+      "26,1": 1,
+      "26,2": 1,
+      "26,3": 1,
+      "26,4": 1,
+      "27,0": 0,
+      "27,1": 1,
+      "27,2": 1,
+      "27,3": 1,
+      "27,4": 1,
+      "28,0": 0,
+      "28,1": 1,
+      "28,2": 1,
+      "28,3": 1,
+      "28,4": 1,
+      "29,0": 0,
+      "29,1": 1,
+      "29,2": 1,
+      "29,3": 1,
+      "29,4": 1,
+      "30,0": 0,
+      "30,1": 1,
+      "30,2": 1,
+      "30,3": 1,
+      "30,4": 1,
+      "31,0": 0,
+      "31,1": 1,
+      "31,2": 1,
+      "31,3": 1,
+      "31,4": 1,
+      "32,0": 0,
+      "32,1": 1,
+      "32,2": 1,
+      "32,3": 1,
+      "32,4": 1,
+      "33,0": 0,
+      "33,1": 1,
+      "33,2": 1,
+      "33,3": 1,
+      "33,4": 1,
+      "34,0": 5,
+      "34,1": 6,
+      "34,2": 6,
+      "34,3": 6,
+      "34,4": 6
+    },
+    "ColStyles": {
+      "64": 7,
+      "65": 8,
+      "66": 9,
+      "67": 7,
+      "68": 8,
+      "69": 9,
+      "70": 9,
+      "71": 9,
+      "72": 9,
+      "73": 9,
+      "74": 9,
+      "75": 9,
+      "76": 10,
+      "77": 10,
+      "78": 10,
+      "79": 8,
+      "80": 8,
+      "81": 8,
+      "82": 11,
+      "83": 11,
+      "84": 11,
+      "85": 9,
+      "86": 9,
+      "87": 9,
+      "88": 9,
+      "89": 9,
+      "90": 10,
+      "91": 10,
+      "92": 10
+    },
+    "SheetStyle": {
+      "FontFamily": 2,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
+    }
+  },
+  "Spans": [
+    "0,8,35,85",
+    "1,0,17,8"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.MasterPage, ServerDesignerCommon",
+    "PageLoadedCommandList": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//esxNywUeiPOV3/a0c37roVX/4JN2Cfs23Z7U06wVLmyfEUj2FBFoJWUH04RraWNQ7y+hmoN3Lv6P7doVaCVJPdFonUyVN0AAaqzSI+EZoWZYXoC/vD8RvIyiijtPXjdfnhkhuLSaHeINziQ6Zy00Zh3CqM2zm95owXh0cxmL6tI3UNfmWzuihChD+STzN86DAIyTxEv5OLm95nNp3YJl+TttvnsLU/9ZKWjYlyK8ceX82rGdHkFYPK8FNxMx2Sx+1MRIoimobfjNr2kHPuzJ81phBhzf+Hnc7DSv6JBQTeFEUtnwYcNk9hfJSkx0FDP+o+SqsmvUzqH65F3XNwPXhFKblboYDNHepqVSuDCAtHvR3qEMfLY8nFHuyk2G4EQ40G+2k3BS/P1Xn38iVVO1lxlwfptlCSXcwdL8LNUSvUq4M3PpSLqbRoGyTCpETz6rrQKZsDd8qfdOA2+JdJm0OQF/Suwgm99+0ocj+TEcv7xVTVrOLiyQ+DurIY7+ZfT4ObhRgVRMIbY403gMxXKaP4XJDsaVO0VW+f7nVG9msSap5VN3ULNBXUerN+hsxgdT3tqPSytTIgKoSEEs3DtwiS1ZJjhd+1qWOpQA1zf3tIPQIiGs98b5RXl8iq/fWmo3le8kYEZ4DTyl509AK51HaUdKwy5aZ1k6DjGS5MliFDrlGln1m+zW71tRatXTj9NH5Qs/UcfpnMUKPHKJBnu6UbVkninbwF59Is5oTBnnwsbp9lhM1kalUYWQRanKOtbe0mGrV5Of/V3ZT4EWYMy2gJjXh7Ok9XiZCv7LKaxJKCJ++TcqVm/zF4lDHuf0I+eSDfd/FtgHbWRWboFhoEiVmSP4iqIg0or1zvOo3A0ItICccXQO0zWtYfhbuYlzMxkvAxU/48zFraSIhv8hbMiPfQ==|920

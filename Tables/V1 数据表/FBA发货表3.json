@@ -1,0 +1,1579 @@
+{
+  "Name": "FBA发货表3",
+  "PermissionData": {
+    "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionData, Forguncy.RbacPermission.Core",
+    "permissionResource": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionResource, Forguncy.RbacPermission.Core",
+      "enabledTypes": 4,
+      "detailTables": []
+    },
+    "permissionBindings": [
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.RowBindingConfig, Forguncy.RbacPermission.Core",
+          "operationTypes": 13,
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.RowFilter, Forguncy.RbacPermission.Core",
+            "userFieldName": "",
+            "filterType": 4,
+            "condition": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "FBA发货表3",
+                "ColumnName": "合同协议号",
+                "GUID": "3eeb2574-9576-4ba3-b918-61ada7206133"
+              },
+              "Value": "%Null%"
+            }
+          }
+        },
+        "dataPermissionType": 2,
+        "roleNames": [
+          "FGC_LoginUser"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.RowBindingConfig, Forguncy.RbacPermission.Core",
+          "operationTypes": 1,
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.RowFilter, Forguncy.RbacPermission.Core",
+            "userFieldName": "",
+            "filterType": 4,
+            "condition": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 1,
+              "ColumnBindingInfo": {
+                "TableName": "FBA发货表3",
+                "ColumnName": "合同协议号",
+                "GUID": "f5c93136-23fd-455c-881b-b61a269ab89c"
+              },
+              "Value": "%Null%"
+            }
+          }
+        },
+        "dataPermissionType": 2,
+        "roleNames": [
+          "FGC_LoginUser"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.RowBindingConfig, Forguncy.RbacPermission.Core",
+          "operationTypes": 13,
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.RowFilter, Forguncy.RbacPermission.Core"
+          }
+        },
+        "dataPermissionType": 2,
+        "roleNames": [
+          "财务主管",
+          "财务",
+          "制单"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.CreateRecordBindingConfig, Forguncy.RbacPermission.Core",
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.CreateRecordFilter, Forguncy.RbacPermission.Core"
+          }
+        },
+        "dataPermissionType": 1,
+        "roleNames": [
+          "FGC_LoginUser"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "FBA对账码": 5,
+            "ID": 5,
+            "SHIPMENT_ID": 5,
+            "referenceID": 5,
+            "上架情况": 5,
+            "上架数量": 5,
+            "上架时间": 5,
+            "主单号": 5,
+            "件数": 5,
+            "入库情况": 5,
+            "出货状态": 5,
+            "到货时间": 5,
+            "制单信息": 5,
+            "制单员": 5,
+            "包装人员": 5,
+            "单价": 5,
+            "单据链接": 5,
+            "发票唛头": 5,
+            "发票类型": 5,
+            "发货地址": 5,
+            "发货批次": 5,
+            "发货数量": 5,
+            "合同协议号": 5,
+            "合同协议日期": 5,
+            "合并报关ID": 5,
+            "国内物流单号": 5,
+            "国内运费": 5,
+            "国际运费": 5,
+            "备注": 5,
+            "妥投日期": 5,
+            "平台": 5,
+            "开船日": 5,
+            "总品名": 5,
+            "总实重kg": 5,
+            "总实重lb": 5,
+            "总抛重kg": 5,
+            "总方数": 5,
+            "报关方式": 5,
+            "提单号": 5,
+            "文本日期": 5,
+            "日期": 5,
+            "时效赔偿": 5,
+            "时效预赔期": 5,
+            "海外仓": 5,
+            "渠道": 5,
+            "目的地邮编": 5,
+            "站点": 5,
+            "签收情况": 5,
+            "签收日": 5,
+            "结算": 5,
+            "船期": 5,
+            "账户_报关方式": 5,
+            "货代": 5,
+            "货件状态": 5,
+            "货值返还": 5,
+            "运费账单日期": 5,
+            "运输时效": 5,
+            "采购总价": 5,
+            "问题及处理进度": 5,
+            "预估运费": 5,
+            "预计送达时间": 5,
+            "合并清关": 5
+          },
+          "subTableOperations": {},
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core"
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "财务主管"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "FBA对账码": 5,
+            "ID": 5,
+            "SHIPMENT_ID": 5,
+            "referenceID": 5,
+            "上架情况": 5,
+            "上架数量": 5,
+            "上架时间": 5,
+            "主单号": 5,
+            "件数": 5,
+            "入库情况": 5,
+            "出货状态": 5,
+            "到货时间": 5,
+            "制单信息": 5,
+            "制单员": 5,
+            "包装人员": 5,
+            "单价": 5,
+            "单据链接": 5,
+            "发票唛头": 5,
+            "发票类型": 5,
+            "发货地址": 5,
+            "发货批次": 5,
+            "发货数量": 5,
+            "合同协议号": 1,
+            "合同协议日期": 5,
+            "合并报关ID": 5,
+            "国内物流单号": 5,
+            "国内运费": 1,
+            "国际运费": 1,
+            "备注": 5,
+            "妥投日期": 5,
+            "平台": 5,
+            "开船日": 5,
+            "总品名": 5,
+            "总实重kg": 5,
+            "总实重lb": 5,
+            "总抛重kg": 5,
+            "总方数": 5,
+            "报关方式": 5,
+            "提单号": 0,
+            "文本日期": 5,
+            "日期": 5,
+            "时效赔偿": 5,
+            "时效预赔期": 5,
+            "海外仓": 5,
+            "渠道": 5,
+            "目的地邮编": 5,
+            "站点": 5,
+            "签收情况": 5,
+            "签收日": 5,
+            "结算": 1,
+            "船期": 5,
+            "账户_报关方式": 5,
+            "货代": 5,
+            "货件状态": 5,
+            "货值返还": 1,
+            "运费账单日期": 5,
+            "运输时效": 5,
+            "采购总价": 5,
+            "问题及处理进度": 5,
+            "预估运费": 5,
+            "预计送达时间": 5,
+            "合并清关": 5
+          },
+          "subTableOperations": {},
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core"
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "销售"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "FBA对账码": 5,
+            "ID": 5,
+            "SHIPMENT_ID": 5,
+            "referenceID": 5,
+            "上架情况": 5,
+            "上架数量": 5,
+            "上架时间": 5,
+            "主单号": 5,
+            "件数": 5,
+            "入库情况": 5,
+            "出货状态": 5,
+            "到货时间": 5,
+            "制单信息": 5,
+            "制单员": 5,
+            "包装人员": 5,
+            "单价": 5,
+            "单据链接": 5,
+            "发票唛头": 5,
+            "发票类型": 5,
+            "发货地址": 5,
+            "发货批次": 5,
+            "发货数量": 5,
+            "合同协议号": 5,
+            "合同协议日期": 5,
+            "合并报关ID": 5,
+            "国内物流单号": 5,
+            "国内运费": 5,
+            "国际运费": 5,
+            "备注": 5,
+            "妥投日期": 5,
+            "平台": 5,
+            "开船日": 5,
+            "总品名": 5,
+            "总实重kg": 5,
+            "总实重lb": 5,
+            "总抛重kg": 5,
+            "总方数": 5,
+            "报关方式": 5,
+            "提单号": 5,
+            "文本日期": 5,
+            "日期": 5,
+            "时效赔偿": 5,
+            "时效预赔期": 5,
+            "海外仓": 5,
+            "渠道": 5,
+            "目的地邮编": 5,
+            "站点": 5,
+            "签收情况": 5,
+            "签收日": 5,
+            "结算": 5,
+            "船期": 5,
+            "账户_报关方式": 5,
+            "货代": 5,
+            "货件状态": 5,
+            "货值返还": 5,
+            "运费账单日期": 5,
+            "运输时效": 5,
+            "采购总价": 5,
+            "问题及处理进度": 5,
+            "预估运费": 5,
+            "预计送达时间": 5,
+            "合并清关": 5
+          },
+          "subTableOperations": {},
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core"
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "财务"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "FBA对账码": 5,
+            "ID": 5,
+            "SHIPMENT_ID": 1,
+            "referenceID": 5,
+            "上架情况": 5,
+            "上架数量": 5,
+            "上架时间": 5,
+            "主单号": 1,
+            "件数": 1,
+            "入库情况": 5,
+            "出货状态": 5,
+            "到货时间": 5,
+            "制单信息": 1,
+            "制单员": 5,
+            "包装人员": 5,
+            "单价": 5,
+            "单据链接": 5,
+            "发票唛头": 5,
+            "发票类型": 5,
+            "发货地址": 1,
+            "发货批次": 5,
+            "发货数量": 5,
+            "合同协议号": 5,
+            "合同协议日期": 5,
+            "合并报关ID": 5,
+            "国内物流单号": 5,
+            "国内运费": 1,
+            "国际运费": 1,
+            "备注": 5,
+            "妥投日期": 5,
+            "平台": 5,
+            "开船日": 5,
+            "总品名": 1,
+            "总实重kg": 5,
+            "总实重lb": 5,
+            "总抛重kg": 5,
+            "总方数": 5,
+            "报关方式": 5,
+            "提单号": 5,
+            "文本日期": 5,
+            "日期": 5,
+            "时效赔偿": 5,
+            "时效预赔期": 5,
+            "海外仓": 5,
+            "渠道": 5,
+            "目的地邮编": 5,
+            "站点": 5,
+            "签收情况": 5,
+            "签收日": 5,
+            "结算": 1,
+            "船期": 5,
+            "账户_报关方式": 5,
+            "货代": 1,
+            "货件状态": 1,
+            "货值返还": 0,
+            "运费账单日期": 1,
+            "运输时效": 5,
+            "采购总价": 5,
+            "问题及处理进度": 5,
+            "预估运费": 5,
+            "预计送达时间": 5,
+            "合并清关": 5
+          },
+          "subTableOperations": {},
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core"
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "包装"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "FBA对账码": 5,
+            "ID": 5,
+            "SHIPMENT_ID": 5,
+            "referenceID": 5,
+            "上架情况": 5,
+            "上架数量": 5,
+            "上架时间": 5,
+            "主单号": 5,
+            "件数": 5,
+            "入库情况": 5,
+            "出货状态": 5,
+            "到货时间": 5,
+            "制单信息": 5,
+            "制单员": 5,
+            "包装人员": 5,
+            "单价": 5,
+            "单据链接": 5,
+            "发票唛头": 5,
+            "发票类型": 5,
+            "发货地址": 5,
+            "发货批次": 5,
+            "发货数量": 5,
+            "合同协议号": 1,
+            "合同协议日期": 5,
+            "合并报关ID": 5,
+            "国内物流单号": 5,
+            "国内运费": 1,
+            "国际运费": 1,
+            "备注": 5,
+            "妥投日期": 5,
+            "平台": 5,
+            "开船日": 5,
+            "总品名": 5,
+            "总实重kg": 5,
+            "总实重lb": 5,
+            "总抛重kg": 5,
+            "总方数": 5,
+            "报关方式": 5,
+            "提单号": 5,
+            "文本日期": 5,
+            "日期": 5,
+            "时效赔偿": 5,
+            "时效预赔期": 5,
+            "海外仓": 5,
+            "渠道": 5,
+            "目的地邮编": 5,
+            "站点": 5,
+            "签收情况": 5,
+            "签收日": 5,
+            "结算": 5,
+            "船期": 5,
+            "账户_报关方式": 5,
+            "货代": 5,
+            "货件状态": 5,
+            "货值返还": 1,
+            "运费账单日期": 5,
+            "运输时效": 5,
+            "采购总价": 5,
+            "问题及处理进度": 5,
+            "预估运费": 5,
+            "预计送达时间": 5,
+            "合并清关": 5
+          },
+          "subTableOperations": {},
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core"
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "执行"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "FBA对账码": 5,
+            "ID": 5,
+            "SHIPMENT_ID": 5,
+            "referenceID": 5,
+            "上架情况": 5,
+            "上架数量": 5,
+            "上架时间": 5,
+            "主单号": 5,
+            "件数": 5,
+            "入库情况": 5,
+            "出货状态": 5,
+            "到货时间": 5,
+            "制单信息": 5,
+            "制单员": 5,
+            "包装人员": 5,
+            "单价": 5,
+            "单据链接": 5,
+            "发票唛头": 5,
+            "发票类型": 5,
+            "发货地址": 5,
+            "发货批次": 5,
+            "发货数量": 5,
+            "合同协议号": 5,
+            "合同协议日期": 5,
+            "合并报关ID": 5,
+            "国内物流单号": 5,
+            "国内运费": 5,
+            "国际运费": 5,
+            "备注": 5,
+            "妥投日期": 5,
+            "平台": 5,
+            "开船日": 5,
+            "总品名": 5,
+            "总实重kg": 5,
+            "总实重lb": 5,
+            "总抛重kg": 5,
+            "总方数": 5,
+            "报关方式": 5,
+            "提单号": 5,
+            "文本日期": 5,
+            "日期": 5,
+            "时效赔偿": 5,
+            "时效预赔期": 5,
+            "海外仓": 5,
+            "渠道": 5,
+            "目的地邮编": 5,
+            "站点": 5,
+            "签收情况": 5,
+            "签收日": 5,
+            "结算": 1,
+            "船期": 5,
+            "账户_报关方式": 5,
+            "货代": 5,
+            "货件状态": 5,
+            "货值返还": 5,
+            "运费账单日期": 5,
+            "运输时效": 5,
+            "采购总价": 5,
+            "问题及处理进度": 5,
+            "预估运费": 5,
+            "预计送达时间": 5,
+            "合并清关": 5
+          },
+          "subTableOperations": {},
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core"
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "审计"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "FBA对账码": 5,
+            "ID": 5,
+            "SHIPMENT_ID": 5,
+            "referenceID": 5,
+            "上架情况": 5,
+            "上架数量": 5,
+            "上架时间": 5,
+            "主单号": 5,
+            "件数": 5,
+            "入库情况": 5,
+            "出货状态": 5,
+            "到货时间": 5,
+            "制单信息": 5,
+            "制单员": 5,
+            "包装人员": 5,
+            "单价": 5,
+            "单据链接": 5,
+            "发票唛头": 5,
+            "发票类型": 5,
+            "发货地址": 5,
+            "发货批次": 5,
+            "发货数量": 5,
+            "合同协议号": 1,
+            "合同协议日期": 5,
+            "合并报关ID": 5,
+            "国内物流单号": 5,
+            "国内运费": 5,
+            "国际运费": 5,
+            "备注": 5,
+            "妥投日期": 5,
+            "平台": 5,
+            "开船日": 5,
+            "总品名": 5,
+            "总实重kg": 5,
+            "总实重lb": 5,
+            "总抛重kg": 5,
+            "总方数": 5,
+            "报关方式": 5,
+            "提单号": 0,
+            "文本日期": 5,
+            "日期": 5,
+            "时效赔偿": 5,
+            "时效预赔期": 5,
+            "海外仓": 5,
+            "渠道": 5,
+            "目的地邮编": 5,
+            "站点": 1,
+            "签收情况": 5,
+            "签收日": 5,
+            "结算": 1,
+            "船期": 5,
+            "账户_报关方式": 5,
+            "货代": 5,
+            "货件状态": 5,
+            "货值返还": 1,
+            "运费账单日期": 5,
+            "运输时效": 5,
+            "采购总价": 5,
+            "问题及处理进度": 5,
+            "预估运费": 5,
+            "预计送达时间": 5,
+            "合并清关": 5
+          },
+          "subTableOperations": {},
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core"
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "欧洲主管"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "FBA对账码": 5,
+            "ID": 5,
+            "SHIPMENT_ID": 5,
+            "referenceID": 5,
+            "上架情况": 5,
+            "上架数量": 5,
+            "上架时间": 5,
+            "主单号": 5,
+            "件数": 5,
+            "入库情况": 5,
+            "出货状态": 5,
+            "到货时间": 5,
+            "制单信息": 5,
+            "制单员": 5,
+            "包装人员": 5,
+            "单价": 5,
+            "单据链接": 5,
+            "发票唛头": 5,
+            "发票类型": 5,
+            "发货地址": 5,
+            "发货批次": 5,
+            "发货数量": 5,
+            "合同协议号": 5,
+            "合同协议日期": 5,
+            "合并报关ID": 5,
+            "国内物流单号": 5,
+            "国内运费": 5,
+            "国际运费": 5,
+            "备注": 5,
+            "妥投日期": 5,
+            "平台": 5,
+            "开船日": 5,
+            "总品名": 5,
+            "总实重kg": 5,
+            "总实重lb": 5,
+            "总抛重kg": 5,
+            "总方数": 5,
+            "报关方式": 5,
+            "提单号": 5,
+            "文本日期": 5,
+            "日期": 5,
+            "时效赔偿": 5,
+            "时效预赔期": 5,
+            "海外仓": 5,
+            "渠道": 5,
+            "目的地邮编": 5,
+            "站点": 5,
+            "签收情况": 5,
+            "签收日": 5,
+            "结算": 5,
+            "船期": 5,
+            "账户_报关方式": 5,
+            "货代": 5,
+            "货件状态": 5,
+            "货值返还": 5,
+            "运费账单日期": 5,
+            "运输时效": 5,
+            "采购总价": 5,
+            "问题及处理进度": 5,
+            "预估运费": 5,
+            "预计送达时间": 5,
+            "合并清关": 5
+          },
+          "subTableOperations": {},
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core"
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "采购助理"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "FBA对账码": 5,
+            "ID": 5,
+            "SHIPMENT_ID": 5,
+            "referenceID": 5,
+            "上架情况": 5,
+            "上架数量": 5,
+            "上架时间": 5,
+            "主单号": 5,
+            "件数": 5,
+            "入库情况": 5,
+            "出货状态": 5,
+            "到货时间": 5,
+            "制单信息": 5,
+            "制单员": 5,
+            "包装人员": 5,
+            "单价": 5,
+            "单据链接": 5,
+            "发票唛头": 5,
+            "发票类型": 5,
+            "发货地址": 5,
+            "发货批次": 5,
+            "发货数量": 5,
+            "合同协议号": 5,
+            "合同协议日期": 5,
+            "合并报关ID": 5,
+            "国内物流单号": 5,
+            "国内运费": 5,
+            "国际运费": 5,
+            "备注": 5,
+            "妥投日期": 5,
+            "平台": 5,
+            "开船日": 5,
+            "总品名": 5,
+            "总实重kg": 5,
+            "总实重lb": 5,
+            "总抛重kg": 5,
+            "总方数": 5,
+            "报关方式": 5,
+            "提单号": 5,
+            "文本日期": 5,
+            "日期": 5,
+            "时效赔偿": 5,
+            "时效预赔期": 5,
+            "海外仓": 5,
+            "渠道": 5,
+            "目的地邮编": 5,
+            "站点": 5,
+            "签收情况": 5,
+            "签收日": 5,
+            "结算": 5,
+            "船期": 5,
+            "账户_报关方式": 5,
+            "货代": 5,
+            "货件状态": 5,
+            "货值返还": 5,
+            "运费账单日期": 5,
+            "运输时效": 5,
+            "采购总价": 5,
+            "问题及处理进度": 5,
+            "预估运费": 5,
+            "预计送达时间": 5,
+            "合并清关": 5
+          },
+          "subTableOperations": {},
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core"
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "会计",
+          "制单"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "FBA对账码": 5,
+            "ID": 5,
+            "SHIPMENT_ID": 5,
+            "referenceID": 5,
+            "上架情况": 5,
+            "上架数量": 5,
+            "上架时间": 5,
+            "主单号": 5,
+            "件数": 5,
+            "入库情况": 5,
+            "出货状态": 5,
+            "到货时间": 5,
+            "制单信息": 5,
+            "制单员": 5,
+            "包装人员": 5,
+            "单价": 5,
+            "单据链接": 5,
+            "发票唛头": 5,
+            "发票类型": 5,
+            "发货地址": 5,
+            "发货批次": 5,
+            "发货数量": 5,
+            "合同协议号": 1,
+            "合同协议日期": 5,
+            "合并报关ID": 5,
+            "国内物流单号": 5,
+            "国内运费": 1,
+            "国际运费": 1,
+            "备注": 5,
+            "妥投日期": 5,
+            "平台": 5,
+            "开船日": 5,
+            "总品名": 5,
+            "总实重kg": 5,
+            "总实重lb": 5,
+            "总抛重kg": 5,
+            "总方数": 5,
+            "报关方式": 5,
+            "提单号": 0,
+            "文本日期": 5,
+            "日期": 5,
+            "时效赔偿": 5,
+            "时效预赔期": 5,
+            "海外仓": 5,
+            "渠道": 5,
+            "目的地邮编": 5,
+            "站点": 5,
+            "签收情况": 5,
+            "签收日": 5,
+            "结算": 1,
+            "船期": 5,
+            "账户_报关方式": 5,
+            "货代": 5,
+            "货件状态": 5,
+            "货值返还": 1,
+            "运费账单日期": 5,
+            "运输时效": 5,
+            "采购总价": 5,
+            "问题及处理进度": 5,
+            "预估运费": 5,
+            "预计送达时间": 5,
+            "合并清关": 5
+          },
+          "subTableOperations": {},
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core"
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "销售助理"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "FBA对账码": 5,
+            "ID": 5,
+            "SHIPMENT_ID": 5,
+            "referenceID": 5,
+            "上架情况": 5,
+            "上架数量": 5,
+            "上架时间": 5,
+            "主单号": 5,
+            "件数": 5,
+            "入库情况": 5,
+            "出货状态": 5,
+            "到货时间": 5,
+            "制单信息": 5,
+            "制单员": 5,
+            "包装人员": 5,
+            "单价": 5,
+            "单据链接": 5,
+            "发票唛头": 5,
+            "发票类型": 5,
+            "发货地址": 5,
+            "发货批次": 5,
+            "发货数量": 5,
+            "合同协议号": 1,
+            "合同协议日期": 5,
+            "合并报关ID": 5,
+            "国内物流单号": 5,
+            "国内运费": 1,
+            "国际运费": 1,
+            "备注": 5,
+            "妥投日期": 5,
+            "平台": 5,
+            "开船日": 5,
+            "总品名": 5,
+            "总实重kg": 5,
+            "总实重lb": 5,
+            "总抛重kg": 5,
+            "总方数": 5,
+            "报关方式": 5,
+            "提单号": 0,
+            "文本日期": 5,
+            "日期": 5,
+            "时效赔偿": 5,
+            "时效预赔期": 5,
+            "海外仓": 5,
+            "渠道": 5,
+            "目的地邮编": 5,
+            "站点": 5,
+            "签收情况": 5,
+            "签收日": 5,
+            "结算": 1,
+            "船期": 5,
+            "账户_报关方式": 5,
+            "货代": 5,
+            "货件状态": 5,
+            "货值返还": 1,
+            "运费账单日期": 5,
+            "运输时效": 5,
+            "采购总价": 5,
+            "问题及处理进度": 5,
+            "预估运费": 5,
+            "预计送达时间": 5,
+            "合并清关": 5
+          },
+          "subTableOperations": {},
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core"
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "执行助理"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "FBA对账码": 5,
+            "ID": 1,
+            "SHIPMENT_ID": 5,
+            "referenceID": 5,
+            "上架情况": 5,
+            "上架数量": 5,
+            "上架时间": 5,
+            "主单号": 5,
+            "件数": 5,
+            "入库情况": 5,
+            "出货状态": 5,
+            "到货时间": 5,
+            "制单信息": 5,
+            "制单员": 5,
+            "包装人员": 5,
+            "单价": 5,
+            "单据链接": 5,
+            "发票唛头": 5,
+            "发票类型": 5,
+            "发货地址": 5,
+            "发货批次": 5,
+            "发货数量": 5,
+            "合同协议号": 5,
+            "合同协议日期": 5,
+            "合并报关ID": 5,
+            "国内物流单号": 5,
+            "国内运费": 5,
+            "国际运费": 5,
+            "备注": 5,
+            "妥投日期": 5,
+            "平台": 5,
+            "开船日": 5,
+            "总品名": 5,
+            "总实重kg": 5,
+            "总实重lb": 5,
+            "总抛重kg": 5,
+            "总方数": 5,
+            "报关方式": 5,
+            "提单号": 5,
+            "文本日期": 5,
+            "日期": 5,
+            "时效赔偿": 5,
+            "时效预赔期": 5,
+            "海外仓": 5,
+            "渠道": 5,
+            "目的地邮编": 5,
+            "站点": 5,
+            "签收情况": 5,
+            "签收日": 5,
+            "结算": 1,
+            "船期": 5,
+            "账户_报关方式": 5,
+            "货代": 5,
+            "货件状态": 5,
+            "货值返还": 5,
+            "运费账单日期": 5,
+            "运输时效": 5,
+            "采购总价": 0,
+            "问题及处理进度": 5,
+            "预估运费": 5,
+            "预计送达时间": 5,
+            "合并清关": 5
+          },
+          "subTableOperations": {},
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core"
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "物流会计"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "FBA对账码": 5,
+            "ID": 1,
+            "SHIPMENT_ID": 5,
+            "referenceID": 5,
+            "上架情况": 5,
+            "上架数量": 5,
+            "上架时间": 5,
+            "主单号": 5,
+            "件数": 5,
+            "入库情况": 5,
+            "出货状态": 5,
+            "到货时间": 5,
+            "制单信息": 5,
+            "制单员": 5,
+            "包装人员": 5,
+            "单价": 5,
+            "单据链接": 5,
+            "发票唛头": 5,
+            "发票类型": 5,
+            "发货地址": 5,
+            "发货批次": 5,
+            "发货数量": 5,
+            "合同协议号": 5,
+            "合同协议日期": 5,
+            "合并报关ID": 5,
+            "国内物流单号": 5,
+            "国内运费": 5,
+            "国际运费": 5,
+            "备注": 5,
+            "妥投日期": 5,
+            "平台": 5,
+            "开船日": 5,
+            "总品名": 5,
+            "总实重kg": 5,
+            "总实重lb": 5,
+            "总抛重kg": 5,
+            "总方数": 5,
+            "报关方式": 5,
+            "提单号": 5,
+            "文本日期": 5,
+            "日期": 5,
+            "时效赔偿": 5,
+            "时效预赔期": 5,
+            "海外仓": 5,
+            "渠道": 5,
+            "目的地邮编": 5,
+            "站点": 5,
+            "签收情况": 5,
+            "签收日": 5,
+            "结算": 5,
+            "船期": 5,
+            "账户_报关方式": 5,
+            "货代": 5,
+            "货件状态": 5,
+            "货值返还": 5,
+            "运费账单日期": 5,
+            "运输时效": 5,
+            "采购总价": 5,
+            "问题及处理进度": 5,
+            "预估运费": 5,
+            "预计送达时间": 5,
+            "合并清关": 5
+          },
+          "subTableOperations": {},
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core"
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "Administrator"
+        ]
+      }
+    ]
+  },
+  "Columns": [
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
+      "Unique": true,
+      "AutoIncrement": true,
+      "DatabaseColumnType": "System.Int64",
+      "MaxLength": -1,
+      "Name": "ID",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Double",
+      "MaxLength": -1,
+      "Name": "日期",
+      "ColumnType": "System.DateTime, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "平台",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Double",
+      "MaxLength": -1,
+      "Name": "件数",
+      "ColumnType": "System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "SHIPMENT_ID",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "总品名",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "发货地址",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Unique": true,
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "主单号",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "货代",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Double",
+      "MaxLength": -1,
+      "Name": "到货时间",
+      "ColumnType": "System.DateTime, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Double",
+      "MaxLength": -1,
+      "Name": "总抛重kg",
+      "ColumnType": "System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Double",
+      "MaxLength": -1,
+      "Name": "总实重kg",
+      "ColumnType": "System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Double",
+      "MaxLength": -1,
+      "Name": "总实重lb",
+      "ColumnType": "System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Double",
+      "MaxLength": -1,
+      "Name": "总方数",
+      "ColumnType": "System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Double",
+      "MaxLength": -1,
+      "Name": "出货状态",
+      "ColumnType": "System.DateTime, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "MaxLength": -1,
+      "Name": "包装人员",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "备注",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Double",
+      "MaxLength": -1,
+      "Name": "国内运费",
+      "ColumnType": "System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Double",
+      "MaxLength": -1,
+      "Name": "国际运费",
+      "ColumnType": "System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "制单信息",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "制单员",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "货件状态",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "结算",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Double",
+      "MaxLength": -1,
+      "Name": "妥投日期",
+      "ColumnType": "System.DateTime, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "国内物流单号",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "发票唛头",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "问题及处理进度",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Double",
+      "MaxLength": -1,
+      "Name": "船期",
+      "ColumnType": "System.DateTime, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "目的地邮编",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Double",
+      "MaxLength": -1,
+      "Name": "采购总价",
+      "ColumnType": "System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "海外仓",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "货值返还",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "站点",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "MaxLength": -1,
+      "Name": "发货数量",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "MaxLength": -1,
+      "Name": "上架数量",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Double",
+      "MaxLength": -1,
+      "Name": "运费账单日期",
+      "ColumnType": "System.DateTime, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "referenceID",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Double",
+      "MaxLength": -1,
+      "Name": "预计送达时间",
+      "ColumnType": "System.DateTime, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.FormulaColumnSaveData, ServerDesignerCommon",
+      "Formula": "=YEAR([日期])&\"-\"&MONTH([日期])&\"-\"&DAY([日期])",
+      "Name": "文本日期",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "渠道",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Double",
+      "MaxLength": -1,
+      "Name": "单价",
+      "ColumnType": "System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Double",
+      "MaxLength": -1,
+      "Name": "预估运费",
+      "ColumnType": "System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Double",
+      "MaxLength": -1,
+      "Name": "开船日",
+      "ColumnType": "System.DateTime, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Double",
+      "MaxLength": -1,
+      "Name": "签收日",
+      "ColumnType": "System.DateTime, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Double",
+      "MaxLength": -1,
+      "Name": "时效赔偿",
+      "ColumnType": "System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "MaxLength": -1,
+      "Name": "时效预赔期",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "签收情况",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "上架情况",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "入库情况",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.FormulaColumnSaveData, ServerDesignerCommon",
+      "Formula": "=[到货时间]-[签收日]",
+      "Name": "上架时间",
+      "ColumnType": "System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.FormulaColumnSaveData, ServerDesignerCommon",
+      "Formula": "=[签收日]-[开船日]",
+      "Name": "运输时效",
+      "ColumnType": "System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.FormulaColumnSaveData, ServerDesignerCommon",
+      "Formula": "=[主单号]&\",\"&[SHIPMENT_ID]&\",\"&[国内物流单号]&\",\"&[发票唛头]",
+      "Name": "FBA对账码",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.FormulaColumnSaveData, ServerDesignerCommon",
+      "Formula": "=YEAR([日期])&MONTH([日期])&DAY([日期])",
+      "Name": "合同协议日期",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "报关方式",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.FormulaColumnSaveData, ServerDesignerCommon",
+      "Formula": "=[平台]&[报关方式]",
+      "Name": "账户_报关方式",
+      "ColumnType": "System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "合并报关ID",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "发票类型",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "合同协议号",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "提单号",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "单据链接",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Double",
+      "MaxLength": -1,
+      "Name": "发货批次",
+      "ColumnType": "System.DateTime, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "Name": "合并清关",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.UserExtraBingingColumnSaveData, ServerDesignerCommon",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+      "Name": "FGC_Creator"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.DateExtraBingingColumnSaveData, ServerDesignerCommon",
+      "ColumnType": "System.DateTime, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+      "Name": "FGC_CreateDate"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.UserExtraBingingColumnSaveData, ServerDesignerCommon",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+      "Name": "FGC_LastModifier"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.DateExtraBingingColumnSaveData, ServerDesignerCommon",
+      "ColumnType": "System.DateTime, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+      "Name": "FGC_LastModifyDate"
+    }
+  ],
+  "PrimaryKey": [
+    "ID"
+  ],
+  "Relations": [
+    {
+      "PrimaryTable": "正报退税汇总表",
+      "PrimaryColumn": "合同号",
+      "ForeignTable": "FBA发货表3",
+      "ForeignColumn": "合同协议号"
+    },
+    {
+      "PrimaryTable": "货代",
+      "PrimaryColumn": "货代",
+      "ForeignTable": "FBA发货表3",
+      "ForeignColumn": "货代"
+    }
+  ],
+  "Indexes": []
+}

@@ -1,0 +1,1921 @@
+{
+  "Name": "导出csv",
+  "Description": "导出csv",
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.SaveLoad.MonthlyAndDaysOfMonthScheduleTriggerSaveData, ServerDesignerCommon",
+      "DaysOfMonth": [
+        3
+      ],
+      "Months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "StartDateTime": 45161.083333333336,
+      "ScheduleRunInDebugServer": false
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.Commands.ServerImportExportCSVCommand, ServerDesignerCommon",
+      "CSVOperation": 1,
+      "FilePath": "D:\\UPDATA\\hc订单表",
+      "TableName": "订单信息表__2_",
+      "Columns": [
+        {
+          "BindingColumn": {
+            "TableName": "订单信息表__2_",
+            "ColumnName": "ID",
+            "GUID": "87a0708c-350c-449c-b43f-da8502a5aba3"
+          },
+          "CSVColumnNameOrIndex": "ID",
+          "IsPrimaryKey": true
+        },
+        {
+          "BindingColumn": {
+            "TableName": "订单信息表__2_",
+            "ColumnName": "发货信息表ID",
+            "GUID": "3cf857d3-6cda-4738-8f7f-f6a15f8f948e"
+          },
+          "CSVColumnNameOrIndex": "发货信息表ID"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "订单信息表__2_",
+            "ColumnName": "最晚发货日期",
+            "GUID": "c277055d-e8fa-4b42-9dcb-b2aa48b104b5"
+          },
+          "CSVColumnNameOrIndex": "最晚发货日期"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "订单信息表__2_",
+            "ColumnName": "订单日期",
+            "GUID": "02c19992-90e3-4759-ba71-ace475c9b216"
+          },
+          "CSVColumnNameOrIndex": "订单日期"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "订单信息表__2_",
+            "ColumnName": "平台",
+            "GUID": "c0750716-430d-4f73-8d36-529813475b55"
+          },
+          "CSVColumnNameOrIndex": "平台"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "订单信息表__2_",
+            "ColumnName": "销售账户",
+            "GUID": "07c2a0d0-5cf6-46be-ac97-dbb6c3a3776e"
+          },
+          "CSVColumnNameOrIndex": "销售账户"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "订单信息表__2_",
+            "ColumnName": "订单编号",
+            "GUID": "1748ab85-95f6-412f-b042-6dcd7f313864"
+          },
+          "CSVColumnNameOrIndex": "订单编号"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "订单信息表__2_",
+            "ColumnName": "品名",
+            "GUID": "9604bf2c-485e-4fe2-8325-c0fe6e388ada"
+          },
+          "CSVColumnNameOrIndex": "品名"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "订单信息表__2_",
+            "ColumnName": "数量",
+            "GUID": "a39e43dc-6d93-4189-a751-53f9bf0cccc4"
+          },
+          "CSVColumnNameOrIndex": "数量"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "订单信息表__2_",
+            "ColumnName": "收件人名",
+            "GUID": "1617bf32-dcc7-45d5-a4f0-f027074d23bf"
+          },
+          "CSVColumnNameOrIndex": "收件人名"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "订单信息表__2_",
+            "ColumnName": "地址1",
+            "GUID": "9785c673-4e42-4867-a43a-212870ceb232"
+          },
+          "CSVColumnNameOrIndex": "地址1"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "订单信息表__2_",
+            "ColumnName": "地址2",
+            "GUID": "750dbcf6-8a0c-4596-873c-c1988d5298cf"
+          },
+          "CSVColumnNameOrIndex": "地址2"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "订单信息表__2_",
+            "ColumnName": "城市",
+            "GUID": "907bedf3-f1e7-4ef8-ba74-011570137000"
+          },
+          "CSVColumnNameOrIndex": "城市"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "订单信息表__2_",
+            "ColumnName": "州",
+            "GUID": "e6c2a9f0-2848-4439-9433-4dde9b2a80b3"
+          },
+          "CSVColumnNameOrIndex": "州"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "订单信息表__2_",
+            "ColumnName": "邮编",
+            "GUID": "5e477c05-acbe-4fa3-bd5c-f185bd82be70"
+          },
+          "CSVColumnNameOrIndex": "邮编"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "订单信息表__2_",
+            "ColumnName": "站点",
+            "GUID": "829bae70-b0c7-4e42-adc0-226fdecbfd4a"
+          },
+          "CSVColumnNameOrIndex": "站点"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "订单信息表__2_",
+            "ColumnName": "目的国家",
+            "GUID": "06eaf01c-39f0-4b32-ace9-9c015c4fa120"
+          },
+          "CSVColumnNameOrIndex": "目的国家"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "订单信息表__2_",
+            "ColumnName": "电话",
+            "GUID": "907f869f-a5d6-472e-b869-ec2746afd362"
+          },
+          "CSVColumnNameOrIndex": "电话"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "订单信息表__2_",
+            "ColumnName": "详细地址",
+            "GUID": "e215382a-2c6d-41f8-86ea-7afc97005111"
+          },
+          "CSVColumnNameOrIndex": "详细地址"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "订单信息表__2_",
+            "ColumnName": "SKU",
+            "GUID": "0ba98fce-2af6-4e12-84bd-d8af04024081"
+          },
+          "CSVColumnNameOrIndex": "SKU"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "订单信息表__2_",
+            "ColumnName": "ASIN",
+            "GUID": "7e220691-cca0-4f30-9bf8-2cc6ba275053"
+          },
+          "CSVColumnNameOrIndex": "ASIN"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "订单信息表__2_",
+            "ColumnName": "订单状态",
+            "GUID": "cf6e11c5-46bd-4f9e-b965-755a525558a5"
+          },
+          "CSVColumnNameOrIndex": "订单状态"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "订单信息表__2_",
+            "ColumnName": "a单价",
+            "GUID": "26fe4fb4-d693-4047-a3a5-9f3d97cf11f9"
+          },
+          "CSVColumnNameOrIndex": "a单价"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "订单信息表__2_",
+            "ColumnName": "a运费",
+            "GUID": "a5f5d88e-8606-42a8-a94d-0fb5ac22fca8"
+          },
+          "CSVColumnNameOrIndex": "a运费"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "订单信息表__2_",
+            "ColumnName": "a折扣",
+            "GUID": "08c556ec-3108-46cd-bc53-d70cf8662be8"
+          },
+          "CSVColumnNameOrIndex": "a折扣"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "订单信息表__2_",
+            "ColumnName": "售价",
+            "GUID": "a96d9b13-7a34-4c7c-897d-47460f469e4c"
+          },
+          "CSVColumnNameOrIndex": "售价"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "订单信息表__2_",
+            "ColumnName": "币种",
+            "GUID": "e57d4aed-50a5-4fb0-85ce-710a7077f729"
+          },
+          "CSVColumnNameOrIndex": "币种"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "订单信息表__2_",
+            "ColumnName": "实际到账",
+            "GUID": "aaa3d33c-5f98-46b7-b9a7-8372bd8b9d5c"
+          },
+          "CSVColumnNameOrIndex": "实际到账"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "订单信息表__2_",
+            "ColumnName": "进价",
+            "GUID": "696803ba-fe68-46d2-84f2-83ea6b326b2d"
+          },
+          "CSVColumnNameOrIndex": "进价"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "订单信息表__2_",
+            "ColumnName": "结算状态",
+            "GUID": "0e53c0b2-705d-4f4b-9d18-0b28894cc877"
+          },
+          "CSVColumnNameOrIndex": "结算状态"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "订单信息表__2_",
+            "ColumnName": "运费",
+            "GUID": "5c973dec-e358-4a1d-91c9-319e58683850"
+          },
+          "CSVColumnNameOrIndex": "运费"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "订单信息表__2_",
+            "ColumnName": "关税",
+            "GUID": "2a8248ae-9895-4b59-870f-d1551336ce80"
+          },
+          "CSVColumnNameOrIndex": "关税"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "订单信息表__2_",
+            "ColumnName": "其他费用",
+            "GUID": "4a4b49c7-089d-4fb9-b71b-b5d1ba84d9be"
+          },
+          "CSVColumnNameOrIndex": "其他费用"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "订单信息表__2_",
+            "ColumnName": "毛利",
+            "GUID": "0c2d5d16-f55d-4994-9ad5-dc54dd4b7b97"
+          },
+          "CSVColumnNameOrIndex": "毛利"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "订单信息表__2_",
+            "ColumnName": "实际发货日期",
+            "GUID": "d43a97ee-29e1-40ea-b3ff-d72666117eb2"
+          },
+          "CSVColumnNameOrIndex": "实际发货日期"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "订单信息表__2_",
+            "ColumnName": "快递追踪号",
+            "GUID": "c2900a89-661d-4cc6-93cf-b4657edf6661"
+          },
+          "CSVColumnNameOrIndex": "快递追踪号"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "订单信息表__2_",
+            "ColumnName": "运费账单号码",
+            "GUID": "afaf62ad-174e-428b-b8ba-0a37089c04bb"
+          },
+          "CSVColumnNameOrIndex": "运费账单号码"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "订单信息表__2_",
+            "ColumnName": "制单时间",
+            "GUID": "bf18bee5-675e-42f1-ab86-605c25af9ab9"
+          },
+          "CSVColumnNameOrIndex": "制单时间"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "订单信息表__2_",
+            "ColumnName": "制单要求",
+            "GUID": "6d8e0d57-3d85-4b86-a387-e5b6d0ad7cf6"
+          },
+          "CSVColumnNameOrIndex": "制单要求"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "订单信息表__2_",
+            "ColumnName": "制单员",
+            "GUID": "26539873-06c5-4b10-9e11-d64b82af55d1"
+          },
+          "CSVColumnNameOrIndex": "制单员"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "订单信息表__2_",
+            "ColumnName": "包装尺寸",
+            "GUID": "0a4a6128-d3ae-4c04-9cff-056bc99dad6d"
+          },
+          "CSVColumnNameOrIndex": "包装尺寸"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "订单信息表__2_",
+            "ColumnName": "长cm",
+            "GUID": "b37781c6-678a-48b3-8354-52a7cefeab3f"
+          },
+          "CSVColumnNameOrIndex": "长cm"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "订单信息表__2_",
+            "ColumnName": "宽cm",
+            "GUID": "482bce8f-ea5e-4818-8c85-e607b04ad1ad"
+          },
+          "CSVColumnNameOrIndex": "宽cm"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "订单信息表__2_",
+            "ColumnName": "高cm",
+            "GUID": "c3730521-be64-422d-991f-83eac3d7ab25"
+          },
+          "CSVColumnNameOrIndex": "高cm"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "订单信息表__2_",
+            "ColumnName": "抛重",
+            "GUID": "edd64005-7d4e-48f1-b85c-f4c9aad7ef0f"
+          },
+          "CSVColumnNameOrIndex": "抛重"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "订单信息表__2_",
+            "ColumnName": "包装重量",
+            "GUID": "1ce3c63d-efdc-4d6a-a770-30b993788988"
+          },
+          "CSVColumnNameOrIndex": "包装重量"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "订单信息表__2_",
+            "ColumnName": "包装人员ID",
+            "GUID": "8d66308f-15a5-422d-bd96-202bf2fefa3d"
+          },
+          "CSVColumnNameOrIndex": "包装人员ID"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "订单信息表__2_",
+            "ColumnName": "出库员ID",
+            "GUID": "43da6298-e6c0-455e-80f7-7770dc82cff5"
+          },
+          "CSVColumnNameOrIndex": "出库员ID"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "订单信息表__2_",
+            "ColumnName": "出库状态",
+            "GUID": "9222b508-6bc8-433c-ac36-a43bdb497134"
+          },
+          "CSVColumnNameOrIndex": "出库状态"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "订单信息表__2_",
+            "ColumnName": "出库时间",
+            "GUID": "5335085a-7058-4dee-89e5-6dd4c27ef3d4"
+          },
+          "CSVColumnNameOrIndex": "出库时间"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "订单信息表__2_",
+            "ColumnName": "投递状态",
+            "GUID": "1b1159df-298f-4f93-91cd-f1fd1b98f3c6"
+          },
+          "CSVColumnNameOrIndex": "投递状态"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "订单信息表__2_",
+            "ColumnName": "备注",
+            "GUID": "a10efd53-6acd-4f27-b2ec-68e4c2582219"
+          },
+          "CSVColumnNameOrIndex": "备注"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "订单信息表__2_",
+            "ColumnName": "销量统计",
+            "GUID": "c225b8b5-cff4-479d-b978-623eded5a564"
+          },
+          "CSVColumnNameOrIndex": "销量统计"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "订单信息表__2_",
+            "ColumnName": "预估运费",
+            "GUID": "451c0d38-79e3-4180-b0f8-347ed9eb247f"
+          },
+          "CSVColumnNameOrIndex": "预估运费"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "订单信息表__2_",
+            "ColumnName": "预估重量",
+            "GUID": "1bffd842-9371-4371-b5f2-ab20401fb90e"
+          },
+          "CSVColumnNameOrIndex": "预估重量"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "订单信息表__2_",
+            "ColumnName": "收款人民币",
+            "GUID": "15e640d5-ed1e-4db5-be2d-f28e2a847c4a"
+          },
+          "CSVColumnNameOrIndex": "收款人民币"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "订单信息表__2_",
+            "ColumnName": "采购状态",
+            "GUID": "d87e048f-87b8-4ed4-90b9-1dd1ce572013"
+          },
+          "CSVColumnNameOrIndex": "采购状态"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "订单信息表__2_",
+            "ColumnName": "采购者",
+            "GUID": "c97f4a90-3287-4c88-8bc7-55955c42d190"
+          },
+          "CSVColumnNameOrIndex": "采购者"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "订单信息表__2_",
+            "ColumnName": "流转采购状态",
+            "GUID": "7059222a-712c-457c-80ef-c1131e112eb9"
+          },
+          "CSVColumnNameOrIndex": "流转采购状态"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "订单信息表__2_",
+            "ColumnName": "识别码",
+            "GUID": "5d9c1e89-44ed-4e34-afd5-92ac980507ef"
+          },
+          "CSVColumnNameOrIndex": "识别码"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "订单信息表__2_",
+            "ColumnName": "预估毛利润",
+            "GUID": "4a772d57-3a64-44d5-a388-7e0e86d57f51"
+          },
+          "CSVColumnNameOrIndex": "预估毛利润"
+        }
+      ],
+      "QueryCondition": {
+        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+        "CompareType": 4,
+        "ColumnBindingInfo": {
+          "TableName": "订单信息表__2_",
+          "ColumnName": "订单日期",
+          "GUID": "71bc0399-0718-4805-9a91-628826bd1daa"
+        },
+        "Value": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=TODAY()-365"
+        }
+      },
+      "BreakpointIdentity": "1c8bfbb3-bee1-4745-9d8f-63d3c7c12cbb"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.ServerImportExportCSVCommand, ServerDesignerCommon",
+      "CSVOperation": 1,
+      "FilePath": "D:\\UPDATA\\hcFBA备货表",
+      "TableName": "FBA备货表",
+      "Columns": [
+        {
+          "BindingColumn": {
+            "TableName": "FBA备货表",
+            "ColumnName": "ID",
+            "GUID": "d1aa07b5-f2d1-4ae7-902b-288a7908c2e5"
+          },
+          "CSVColumnNameOrIndex": "ID",
+          "IsPrimaryKey": true
+        },
+        {
+          "BindingColumn": {
+            "TableName": "FBA备货表",
+            "ColumnName": "日期",
+            "GUID": "9346bd90-6047-4de5-a47d-9a15a55722f4"
+          },
+          "CSVColumnNameOrIndex": "日期"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "FBA备货表",
+            "ColumnName": "账户",
+            "GUID": "85a4304d-91a6-4a4c-9bd9-431c4f7fde0a"
+          },
+          "CSVColumnNameOrIndex": "账户"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "FBA备货表",
+            "ColumnName": "站点",
+            "GUID": "57adbb56-c513-4ddd-b47d-3a7fdb42a574"
+          },
+          "CSVColumnNameOrIndex": "站点"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "FBA备货表",
+            "ColumnName": "ASIN",
+            "GUID": "a19ecfe6-3b5d-4b18-a04f-005064af6a07"
+          },
+          "CSVColumnNameOrIndex": "ASIN"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "FBA备货表",
+            "ColumnName": "SKU",
+            "GUID": "37290e49-f54b-44d4-b6e4-3289ce478295"
+          },
+          "CSVColumnNameOrIndex": "SKU"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "FBA备货表",
+            "ColumnName": "数量",
+            "GUID": "c228a52c-30db-4e7f-ad92-b3d242b4a1ec"
+          },
+          "CSVColumnNameOrIndex": "数量"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "FBA备货表",
+            "ColumnName": "总价",
+            "GUID": "b9fcaa36-b0ed-454e-81f3-2b4bf78f61b9"
+          },
+          "CSVColumnNameOrIndex": "总价"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "FBA备货表",
+            "ColumnName": "备注",
+            "GUID": "c0ea9c64-19ee-41c8-93f6-8cfccd5fd7b6"
+          },
+          "CSVColumnNameOrIndex": "备注"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "FBA备货表",
+            "ColumnName": "采购状态",
+            "GUID": "a3703cb1-7dfc-4e4d-8839-964dc07183a5"
+          },
+          "CSVColumnNameOrIndex": "采购状态"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "FBA备货表",
+            "ColumnName": "采购者",
+            "GUID": "2fb996b0-50b3-40a6-b367-18529cf71542"
+          },
+          "CSVColumnNameOrIndex": "采购者"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "FBA备货表",
+            "ColumnName": "到货日期",
+            "GUID": "b9e8fc63-93d7-4cb1-b909-52e2bb37977b"
+          },
+          "CSVColumnNameOrIndex": "到货日期"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "FBA备货表",
+            "ColumnName": "订单状态",
+            "GUID": "55aa91d3-3639-4f1a-9c74-3b7a6d1d7abb"
+          },
+          "CSVColumnNameOrIndex": "订单状态"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "FBA备货表",
+            "ColumnName": "流转采购状态",
+            "GUID": "379a8ecb-b1da-447c-9b5f-1342208fe8d2"
+          },
+          "CSVColumnNameOrIndex": "流转采购状态"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "FBA备货表",
+            "ColumnName": "_30天销量",
+            "GUID": "67958864-3f28-4208-9d87-f896c34fc29d"
+          },
+          "CSVColumnNameOrIndex": "_30天销量"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "FBA备货表",
+            "ColumnName": "_30天Max销量",
+            "GUID": "9944f929-f0fc-45d9-be9b-48f60b914cea"
+          },
+          "CSVColumnNameOrIndex": "_30天Max销量"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "FBA备货表",
+            "ColumnName": "在途",
+            "GUID": "b618bc62-1649-46da-aa57-fc628350b618"
+          },
+          "CSVColumnNameOrIndex": "在途"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "FBA备货表",
+            "ColumnName": "总库存",
+            "GUID": "d44ecf20-9eae-42a9-91e7-70a5d4c5352c"
+          },
+          "CSVColumnNameOrIndex": "总库存"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "FBA备货表",
+            "ColumnName": "入库量",
+            "GUID": "5df1819a-d450-4591-9b3f-44ecde3003ed"
+          },
+          "CSVColumnNameOrIndex": "入库量"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "FBA备货表",
+            "ColumnName": "识别码",
+            "GUID": "c298e177-8578-403f-b22b-7a8a38c299ab"
+          },
+          "CSVColumnNameOrIndex": "识别码"
+        }
+      ],
+      "QueryCondition": {
+        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+        "CompareType": 4,
+        "ColumnBindingInfo": {
+          "TableName": "FBA备货表",
+          "ColumnName": "日期",
+          "GUID": "8b0b2d91-8222-4e41-a829-42b1faab62c0"
+        },
+        "Value": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=TODAY()-365"
+        }
+      },
+      "BreakpointIdentity": "37c81cfa-ebe6-452a-83e9-2aff977851dc"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.ServerImportExportCSVCommand, ServerDesignerCommon",
+      "CSVOperation": 1,
+      "FilePath": "D:\\UPDATA\\hcFBA发货表",
+      "TableName": "FBA发货表3",
+      "Columns": [
+        {
+          "BindingColumn": {
+            "TableName": "FBA发货表3",
+            "ColumnName": "ID",
+            "GUID": "d8aed40e-45bf-4448-a38a-815856edebda"
+          },
+          "CSVColumnNameOrIndex": "ID",
+          "IsPrimaryKey": true
+        },
+        {
+          "BindingColumn": {
+            "TableName": "FBA发货表3",
+            "ColumnName": "日期",
+            "GUID": "1dddfc74-e47c-4005-b115-15afbf71de04"
+          },
+          "CSVColumnNameOrIndex": "日期"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "FBA发货表3",
+            "ColumnName": "平台",
+            "GUID": "3a2339df-7e76-4f31-a72b-a7b9e6ec00f5"
+          },
+          "CSVColumnNameOrIndex": "平台"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "FBA发货表3",
+            "ColumnName": "件数",
+            "GUID": "d7ff4995-559c-47a6-8d39-66ab7ba83bc9"
+          },
+          "CSVColumnNameOrIndex": "件数"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "FBA发货表3",
+            "ColumnName": "SHIPMENT_ID",
+            "GUID": "7ed0b403-a82d-40e9-ac64-98c3cec3f57a"
+          },
+          "CSVColumnNameOrIndex": "FBA订单号"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "FBA发货表3",
+            "ColumnName": "总品名",
+            "GUID": "f31ff321-16b5-4717-b419-8c18d0bf3d54"
+          },
+          "CSVColumnNameOrIndex": "总品名"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "FBA发货表3",
+            "ColumnName": "发货地址",
+            "GUID": "1804e224-0b3f-495e-8e7b-6de8f5c7852a"
+          },
+          "CSVColumnNameOrIndex": "发货地址"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "FBA发货表3",
+            "ColumnName": "主单号",
+            "GUID": "a711ab1e-9ee6-4c19-8700-f01871d8483f"
+          },
+          "CSVColumnNameOrIndex": "主单号"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "FBA发货表3",
+            "ColumnName": "货代",
+            "GUID": "53dc0aa0-7070-4894-946a-8f759bfb140f"
+          },
+          "CSVColumnNameOrIndex": "货代"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "FBA发货表3",
+            "ColumnName": "到货时间",
+            "GUID": "352e2cab-aa84-4e3c-829d-d5ac0a0b9e79"
+          },
+          "CSVColumnNameOrIndex": "到货时间"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "FBA发货表3",
+            "ColumnName": "总抛重kg",
+            "GUID": "3b3ab566-17fa-4d45-aac1-c998550044ff"
+          },
+          "CSVColumnNameOrIndex": "总抛重kg"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "FBA发货表3",
+            "ColumnName": "总实重kg",
+            "GUID": "49e80a01-0596-438d-a714-85a373ba8eac"
+          },
+          "CSVColumnNameOrIndex": "总实重kg"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "FBA发货表3",
+            "ColumnName": "总实重lb",
+            "GUID": "023a4a64-63e9-48ac-adbd-adcadce70f99"
+          },
+          "CSVColumnNameOrIndex": "总实重lb"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "FBA发货表3",
+            "ColumnName": "出货状态",
+            "GUID": "87647de2-dee7-4581-9913-7db4c622c70a"
+          },
+          "CSVColumnNameOrIndex": "出货状态"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "FBA发货表3",
+            "ColumnName": "包装人员",
+            "GUID": "8afabe2c-a586-4293-be5f-0a1562804ecb"
+          },
+          "CSVColumnNameOrIndex": "包装人员"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "FBA发货表3",
+            "ColumnName": "备注",
+            "GUID": "8abfae1c-f501-4668-8639-ff12940ee759"
+          },
+          "CSVColumnNameOrIndex": "备注"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "FBA发货表3",
+            "ColumnName": "国内运费",
+            "GUID": "e5e4340b-5817-4fb2-98af-c76a2fead529"
+          },
+          "CSVColumnNameOrIndex": "国内运费"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "FBA发货表3",
+            "ColumnName": "国际运费",
+            "GUID": "53a1d7c7-5235-4b12-8fa4-fc44a06d6d0b"
+          },
+          "CSVColumnNameOrIndex": "国际运费"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "FBA发货表3",
+            "ColumnName": "制单信息",
+            "GUID": "b2c00d32-3df8-45a1-bda2-20c6fad98ebb"
+          },
+          "CSVColumnNameOrIndex": "制单信息"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "FBA发货表3",
+            "ColumnName": "制单员",
+            "GUID": "a82eb67e-6876-4ae1-9b32-54c0639937a6"
+          },
+          "CSVColumnNameOrIndex": "制单员"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "FBA发货表3",
+            "ColumnName": "货件状态",
+            "GUID": "b1b7bbd0-2788-49ec-adb6-19b59159c7d4"
+          },
+          "CSVColumnNameOrIndex": "货件状态"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "FBA发货表3",
+            "ColumnName": "结算",
+            "GUID": "ca846299-97e3-431a-b6bd-269fc15ef7b3"
+          },
+          "CSVColumnNameOrIndex": "结算"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "FBA发货表3",
+            "ColumnName": "妥投日期",
+            "GUID": "7c117299-11ae-4334-ae6b-ceed402d6620"
+          },
+          "CSVColumnNameOrIndex": "妥投日期"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "FBA发货表3",
+            "ColumnName": "国内物流单号",
+            "GUID": "04f9884a-7cfb-4dcb-bbac-fb89d31b99fe"
+          },
+          "CSVColumnNameOrIndex": "国内物流单号"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "FBA发货表3",
+            "ColumnName": "发票唛头",
+            "GUID": "5a3e3fa0-a879-439f-a633-23163727d4f9"
+          },
+          "CSVColumnNameOrIndex": "发票唛头"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "FBA发货表3",
+            "ColumnName": "问题及处理进度",
+            "GUID": "0aaaa6cd-7f53-4e0f-8530-96de08e2e805"
+          },
+          "CSVColumnNameOrIndex": "问题及处理进度"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "FBA发货表3",
+            "ColumnName": "船期",
+            "GUID": "ede6b78c-ba02-402f-ab87-1a9e80995ffd"
+          },
+          "CSVColumnNameOrIndex": "船期"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "FBA发货表3",
+            "ColumnName": "目的地邮编",
+            "GUID": "dddfe33b-1740-4723-bebe-10426a79e947"
+          },
+          "CSVColumnNameOrIndex": "目的地邮编"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "FBA发货表3",
+            "ColumnName": "采购总价",
+            "GUID": "04a0d779-7b47-472a-a52f-f28ac86ff3b8"
+          },
+          "CSVColumnNameOrIndex": "采购总价"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "FBA发货表3",
+            "ColumnName": "海外仓",
+            "GUID": "c3d0f9d2-2de1-44f1-888b-a545c34860c8"
+          },
+          "CSVColumnNameOrIndex": "海外仓"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "FBA发货表3",
+            "ColumnName": "货值返还",
+            "GUID": "c58c378f-9b1a-4fb0-a832-788df17770b6"
+          },
+          "CSVColumnNameOrIndex": "货值返还"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "FBA发货表3",
+            "ColumnName": "站点",
+            "GUID": "3b8155ac-e1d8-492a-8124-060e041e2932"
+          },
+          "CSVColumnNameOrIndex": "站点"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "FBA发货表3",
+            "ColumnName": "发货数量",
+            "GUID": "8980283d-2f0a-4c9d-bdc5-b032401ad686"
+          },
+          "CSVColumnNameOrIndex": "发货数量"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "FBA发货表3",
+            "ColumnName": "上架数量",
+            "GUID": "733657d0-22e7-4d87-babd-e451c701f70d"
+          },
+          "CSVColumnNameOrIndex": "上架数量"
+        }
+      ],
+      "QueryCondition": {
+        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+        "CompareType": 4,
+        "ColumnBindingInfo": {
+          "TableName": "FBA发货表3",
+          "ColumnName": "日期",
+          "GUID": "2b7a4930-ff39-4b34-8185-c790311630f2"
+        },
+        "Value": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=TODAY()-365"
+        }
+      },
+      "BreakpointIdentity": "497b1359-c0f8-48bd-9acb-b649ce1cddaf"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.ServerImportExportCSVCommand, ServerDesignerCommon",
+      "CSVOperation": 1,
+      "FilePath": "D:\\UPDATA\\hc采购表",
+      "TableName": "采购记录表",
+      "Columns": [
+        {
+          "BindingColumn": {
+            "TableName": "采购记录表",
+            "ColumnName": "ID",
+            "GUID": "fefd0bd2-23e9-4403-ac20-a4c7a369f1c4"
+          },
+          "CSVColumnNameOrIndex": "ID",
+          "IsPrimaryKey": true
+        },
+        {
+          "BindingColumn": {
+            "TableName": "采购记录表",
+            "ColumnName": "采购编号",
+            "GUID": "b919044b-54fa-460d-9fe7-7f99204d7de6"
+          },
+          "CSVColumnNameOrIndex": "采购编号"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "采购记录表",
+            "ColumnName": "采购日期",
+            "GUID": "0567053c-2d96-4665-a80c-a7f5ef1f0129"
+          },
+          "CSVColumnNameOrIndex": "采购日期"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "采购记录表",
+            "ColumnName": "商品名称",
+            "GUID": "0282248d-7b18-4ef3-a55f-15b7b580777f"
+          },
+          "CSVColumnNameOrIndex": "商品名称"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "采购记录表",
+            "ColumnName": "销售账户",
+            "GUID": "8ddb846d-21f3-4575-aad1-8c033d8a88dd"
+          },
+          "CSVColumnNameOrIndex": "销售账户"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "采购记录表",
+            "ColumnName": "站点",
+            "GUID": "e93390ab-95f1-4c7b-956d-5078ff3d6d51"
+          },
+          "CSVColumnNameOrIndex": "站点"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "采购记录表",
+            "ColumnName": "销售订单编号",
+            "GUID": "ea1bad16-ea60-498d-af0b-fbc6e1768543"
+          },
+          "CSVColumnNameOrIndex": "销售订单编号"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "采购记录表",
+            "ColumnName": "SKU",
+            "GUID": "fe094ad5-a61b-40f6-9d62-1755a0b9c21d"
+          },
+          "CSVColumnNameOrIndex": "SKU"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "采购记录表",
+            "ColumnName": "ASIN",
+            "GUID": "46a6eea1-e576-44fe-a765-aa07905142e8"
+          },
+          "CSVColumnNameOrIndex": "ASIN"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "采购记录表",
+            "ColumnName": "数量",
+            "GUID": "5dc9b542-63bb-4f31-bbf9-a37b8ca429bc"
+          },
+          "CSVColumnNameOrIndex": "数量"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "采购记录表",
+            "ColumnName": "单价",
+            "GUID": "a21b64e6-7c06-41c7-9a88-39452f3c0965"
+          },
+          "CSVColumnNameOrIndex": "单价"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "采购记录表",
+            "ColumnName": "运费",
+            "GUID": "23c360fe-5ead-4682-a946-6cabed6d3133"
+          },
+          "CSVColumnNameOrIndex": "运费"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "采购记录表",
+            "ColumnName": "金额",
+            "GUID": "a1a073aa-4816-4328-9b60-c5bfde67dda2"
+          },
+          "CSVColumnNameOrIndex": "金额"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "采购记录表",
+            "ColumnName": "收货地点",
+            "GUID": "e28aaa96-91c0-462b-ada5-3606dacdbe04"
+          },
+          "CSVColumnNameOrIndex": "收货地点"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "采购记录表",
+            "ColumnName": "采购平台",
+            "GUID": "68902c21-fdcc-4065-a6b0-20050c6e96fd"
+          },
+          "CSVColumnNameOrIndex": "采购平台"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "采购记录表",
+            "ColumnName": "快递公司",
+            "GUID": "dfb18037-9d02-412e-a759-709fd48ec50c"
+          },
+          "CSVColumnNameOrIndex": "快递公司"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "采购记录表",
+            "ColumnName": "采购订单编号",
+            "GUID": "887cf3f0-439c-482c-85bb-4f0f345efddb"
+          },
+          "CSVColumnNameOrIndex": "采购订单编号"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "采购记录表",
+            "ColumnName": "快递单号",
+            "GUID": "c51545fb-5dac-43f0-9b9d-b6077ff6a8f9"
+          },
+          "CSVColumnNameOrIndex": "快递单号"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "采购记录表",
+            "ColumnName": "入库状态",
+            "GUID": "104b8ed1-3fc6-4905-a1a1-73c900945d60"
+          },
+          "CSVColumnNameOrIndex": "入库状态"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "采购记录表",
+            "ColumnName": "采购补充",
+            "GUID": "803994f0-a4af-46c4-ad5a-79da83d360f0"
+          },
+          "CSVColumnNameOrIndex": "采购补充"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "采购记录表",
+            "ColumnName": "入库员ID",
+            "GUID": "eb1cea43-f679-4804-a3bd-9c31a72952b2"
+          },
+          "CSVColumnNameOrIndex": "入库员ID"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "采购记录表",
+            "ColumnName": "入库日期",
+            "GUID": "2b904d64-ebf1-44ab-8176-44825298dcb3"
+          },
+          "CSVColumnNameOrIndex": "入库日期"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "采购记录表",
+            "ColumnName": "凭证",
+            "GUID": "e636f8d5-149f-4222-ad0f-218e8da9bf1c"
+          },
+          "CSVColumnNameOrIndex": "凭证"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "采购记录表",
+            "ColumnName": "物流转运进度",
+            "GUID": "343ff287-ec06-40c7-96ec-dc16bda102e0"
+          },
+          "CSVColumnNameOrIndex": "物流转运进度"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "采购记录表",
+            "ColumnName": "支付方式",
+            "GUID": "c3409bb8-9252-4dc3-a0e8-7176dcb137c3"
+          },
+          "CSVColumnNameOrIndex": "支付方式"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "采购记录表",
+            "ColumnName": "支付状态",
+            "GUID": "783d59c5-760c-44ca-be33-adfa8aa9c530"
+          },
+          "CSVColumnNameOrIndex": "支付状态"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "采购记录表",
+            "ColumnName": "采购员",
+            "GUID": "56a28d21-54ee-444c-b535-773959181e22"
+          },
+          "CSVColumnNameOrIndex": "采购员"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "采购记录表",
+            "ColumnName": "发货类型",
+            "GUID": "7f4583a7-6a4c-4f3a-b3f2-a463f980c854"
+          },
+          "CSVColumnNameOrIndex": "发货类型"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "采购记录表",
+            "ColumnName": "付款备注",
+            "GUID": "86741018-8422-460d-84c3-c48b18b84e5f"
+          },
+          "CSVColumnNameOrIndex": "付款备注"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "采购记录表",
+            "ColumnName": "自发备货表ID",
+            "GUID": "ba08669e-7f79-4914-9509-d8b76db42323"
+          },
+          "CSVColumnNameOrIndex": "自发备货表ID"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "采购记录表",
+            "ColumnName": "FGC_State",
+            "GUID": "2d8d3e97-5c72-4f6d-8a3f-2320f30cc7a9"
+          },
+          "CSVColumnNameOrIndex": "状态"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "采购记录表",
+            "ColumnName": "识别码",
+            "GUID": "3aac8468-296a-413b-bea3-8a813c663497"
+          },
+          "CSVColumnNameOrIndex": "识别码"
+        }
+      ],
+      "QueryCondition": {
+        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+        "CompareType": 4,
+        "ColumnBindingInfo": {
+          "TableName": "采购记录表",
+          "ColumnName": "采购日期",
+          "GUID": "8644d905-a475-46bf-a444-bc66799dcf68"
+        },
+        "Value": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=TODAY()-365"
+        }
+      },
+      "BreakpointIdentity": "dfc52684-38bc-4a40-a393-88e7b93259a0"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.ServerImportExportCSVCommand, ServerDesignerCommon",
+      "CSVOperation": 1,
+      "FilePath": "D:\\UPDATA\\hc物料表",
+      "TableName": "物料采购表",
+      "Columns": [
+        {
+          "BindingColumn": {
+            "TableName": "物料采购表",
+            "ColumnName": "ID",
+            "GUID": "0d75f565-7376-4cf7-a94d-7ebd2cca0072"
+          },
+          "CSVColumnNameOrIndex": "ID",
+          "IsPrimaryKey": true
+        },
+        {
+          "BindingColumn": {
+            "TableName": "物料采购表",
+            "ColumnName": "日期",
+            "GUID": "bced327a-426f-4c23-8d80-1766ce330e17"
+          },
+          "CSVColumnNameOrIndex": "日期"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "物料采购表",
+            "ColumnName": "账户",
+            "GUID": "f0a6c806-a382-4607-acf1-21aae7b50ea7"
+          },
+          "CSVColumnNameOrIndex": "账户"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "物料采购表",
+            "ColumnName": "分类",
+            "GUID": "f0dbf9de-d853-44cd-a958-ee2d5b66a60c"
+          },
+          "CSVColumnNameOrIndex": "分类"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "物料采购表",
+            "ColumnName": "名称",
+            "GUID": "34051b2f-6498-460d-91d5-81d7c65aba5b"
+          },
+          "CSVColumnNameOrIndex": "名称"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "物料采购表",
+            "ColumnName": "sku",
+            "GUID": "403653ca-9f69-44e2-ad36-d7b76d672cc4"
+          },
+          "CSVColumnNameOrIndex": "sku"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "物料采购表",
+            "ColumnName": "尺寸",
+            "GUID": "4f232f75-84ea-40f8-8aeb-1e2f5b875dd2"
+          },
+          "CSVColumnNameOrIndex": "尺寸"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "物料采购表",
+            "ColumnName": "数量",
+            "GUID": "b2651346-0d88-4e72-97e9-c3da4635a386"
+          },
+          "CSVColumnNameOrIndex": "数量"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "物料采购表",
+            "ColumnName": "单价",
+            "GUID": "1e53e10d-02f2-490f-b1f8-738bb7192be3"
+          },
+          "CSVColumnNameOrIndex": "单价"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "物料采购表",
+            "ColumnName": "总价",
+            "GUID": "43bc0c94-cc51-41c8-b02c-8ed5a1439f04"
+          },
+          "CSVColumnNameOrIndex": "总价"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "物料采购表",
+            "ColumnName": "加急程度",
+            "GUID": "a6fd322f-0fe3-4f07-9518-8a1e02d7b768"
+          },
+          "CSVColumnNameOrIndex": "加急程度"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "物料采购表",
+            "ColumnName": "采购状态",
+            "GUID": "06bf9da4-1286-45d8-90aa-9eb054a1cb2d"
+          },
+          "CSVColumnNameOrIndex": "采购状态"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "物料采购表",
+            "ColumnName": "采购人_",
+            "GUID": "2f1d9ca2-dbb3-4343-92cc-f7639324ee0b"
+          },
+          "CSVColumnNameOrIndex": "采购人_"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "物料采购表",
+            "ColumnName": "支付日期",
+            "GUID": "aa87602d-3183-438a-b937-008896638473"
+          },
+          "CSVColumnNameOrIndex": "支付日期"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "物料采购表",
+            "ColumnName": "采购订单号",
+            "GUID": "1e33565e-0495-43ec-a426-07f6052b2638"
+          },
+          "CSVColumnNameOrIndex": "采购订单号"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "物料采购表",
+            "ColumnName": "支付方式",
+            "GUID": "37d08b56-2fad-4abb-a224-bf6e6d4c0ec2"
+          },
+          "CSVColumnNameOrIndex": "支付方式"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "物料采购表",
+            "ColumnName": "财务备注",
+            "GUID": "d1c78ef3-c3a2-4623-b13e-dc3368163aae"
+          },
+          "CSVColumnNameOrIndex": "备注"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "物料采购表",
+            "ColumnName": "单号",
+            "GUID": "75223516-6e96-47ed-8a0a-e292f693eb8c"
+          },
+          "CSVColumnNameOrIndex": "单号"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "物料采购表",
+            "ColumnName": "到货状态",
+            "GUID": "cd8ed9cb-df15-4078-8109-408ff148585b"
+          },
+          "CSVColumnNameOrIndex": "到货状态"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "物料采购表",
+            "ColumnName": "入库日期",
+            "GUID": "86350577-ec16-4356-a8b5-0b5633308bca"
+          },
+          "CSVColumnNameOrIndex": "入库日期"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "物料采购表",
+            "ColumnName": "转账凭证",
+            "GUID": "1a358fa9-6a8e-432d-9227-b59f6149e088"
+          },
+          "CSVColumnNameOrIndex": "转账凭证"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "物料采购表",
+            "ColumnName": "合同",
+            "GUID": "c7bf07a0-8449-49a8-9ee9-525d378ef16d"
+          },
+          "CSVColumnNameOrIndex": "合同"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "物料采购表",
+            "ColumnName": "供应商",
+            "GUID": "e38dc757-55c1-4236-9c0f-940d5ed5ee28"
+          },
+          "CSVColumnNameOrIndex": "供应商"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "物料采购表",
+            "ColumnName": "付款备注",
+            "GUID": "43b941b0-9b76-40fb-a08e-db6d9d5eff38"
+          },
+          "CSVColumnNameOrIndex": "付款备注"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "物料采购表",
+            "ColumnName": "状态",
+            "GUID": "286ff0b8-4f14-4cc8-b4e5-9eb0a1b3e115"
+          },
+          "CSVColumnNameOrIndex": "状态"
+        }
+      ],
+      "QueryCondition": {
+        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+        "CompareType": 4,
+        "ColumnBindingInfo": {
+          "TableName": "物料采购表",
+          "ColumnName": "日期",
+          "GUID": "99af8056-0f0b-4540-8bfc-8eac57ee2ebc"
+        },
+        "Value": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=TODAY()-365"
+        }
+      },
+      "BreakpointIdentity": "00841476-4e7d-4696-9835-0aef7702062b"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.ServerImportExportCSVCommand, ServerDesignerCommon",
+      "CSVOperation": 1,
+      "FilePath": "D:\\UPDATA\\hc销量表",
+      "TableName": "销量总表",
+      "Columns": [
+        {
+          "BindingColumn": {
+            "TableName": "销量总表",
+            "ColumnName": "ID",
+            "GUID": "a46d7672-a03f-41ff-b043-50870440c8b7"
+          },
+          "CSVColumnNameOrIndex": "ID",
+          "IsPrimaryKey": true
+        },
+        {
+          "BindingColumn": {
+            "TableName": "销量总表",
+            "ColumnName": "日期",
+            "GUID": "d8470ecf-ff49-40b6-b02f-a6e93e3968c1"
+          },
+          "CSVColumnNameOrIndex": "日期"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "销量总表",
+            "ColumnName": "交易类型",
+            "GUID": "d7bdbac5-b615-46d6-91eb-b5a555324e4f"
+          },
+          "CSVColumnNameOrIndex": "交易类型"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "销量总表",
+            "ColumnName": "账户",
+            "GUID": "e4c775b9-4216-4d9c-adf0-91a0e93c1944"
+          },
+          "CSVColumnNameOrIndex": "账户"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "销量总表",
+            "ColumnName": "订单编号",
+            "GUID": "591559ad-c795-4659-8cce-78bb060bb2f7"
+          },
+          "CSVColumnNameOrIndex": "订单编号"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "销量总表",
+            "ColumnName": "SKU",
+            "GUID": "43e0a4c2-8e41-4d4d-86fc-60ba2a770422"
+          },
+          "CSVColumnNameOrIndex": "SKU"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "销量总表",
+            "ColumnName": "商品名称",
+            "GUID": "3ac79369-4242-4bed-8cd0-99da7400e1ee"
+          },
+          "CSVColumnNameOrIndex": "商品名称"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "销量总表",
+            "ColumnName": "发货类型",
+            "GUID": "12f4e7eb-6be8-4ebd-8f9b-e130f039a68d"
+          },
+          "CSVColumnNameOrIndex": "发货类型"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "销量总表",
+            "ColumnName": "数量",
+            "GUID": "477859e1-065f-4cca-af25-b2caf289b394"
+          },
+          "CSVColumnNameOrIndex": "数量"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "销量总表",
+            "ColumnName": "站点",
+            "GUID": "654ac229-a891-409a-bbba-62d928da5d4e"
+          },
+          "CSVColumnNameOrIndex": "站点"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "销量总表",
+            "ColumnName": "实到外币",
+            "GUID": "83b25787-36a4-44a8-bf14-ddd0e3ffd9b6"
+          },
+          "CSVColumnNameOrIndex": "实到外币"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "销量总表",
+            "ColumnName": "美金",
+            "GUID": "9cf3ce7c-b20f-4010-a446-4c1ca4a35d39"
+          },
+          "CSVColumnNameOrIndex": "美金"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "销量总表",
+            "ColumnName": "人民币",
+            "GUID": "4238f612-7ac4-41ee-8618-7abb26432750"
+          },
+          "CSVColumnNameOrIndex": "人民币"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "销量总表",
+            "ColumnName": "辅助2",
+            "GUID": "61de0087-3d6b-419d-afa3-ab7f0a7cdd97"
+          },
+          "CSVColumnNameOrIndex": "辅助2"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "销量总表",
+            "ColumnName": "备注",
+            "GUID": "7be7cd6a-4700-47a8-9570-3c0ae4cd835d"
+          },
+          "CSVColumnNameOrIndex": "备注"
+        }
+      ],
+      "QueryCondition": {
+        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+        "CompareType": 4,
+        "ColumnBindingInfo": {
+          "TableName": "销量总表",
+          "ColumnName": "日期",
+          "GUID": "6627dc10-cc2a-4d40-9fc4-5428891a7804"
+        },
+        "Value": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=TODAY()-90"
+        }
+      },
+      "BreakpointIdentity": "67c96304-7711-49ae-9156-41b74501cd48"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.ServerImportExportCSVCommand, ServerDesignerCommon",
+      "CSVOperation": 1,
+      "FilePath": "D:\\UPDATA\\hc运营利润提成",
+      "TableName": "运营利润提成表",
+      "Columns": [
+        {
+          "BindingColumn": {
+            "TableName": "运营利润提成表",
+            "ColumnName": "ID",
+            "GUID": "99d9125d-04b3-47a5-a6c0-4c2d55921b9c"
+          },
+          "CSVColumnNameOrIndex": "ID",
+          "IsPrimaryKey": true
+        },
+        {
+          "BindingColumn": {
+            "TableName": "运营利润提成表",
+            "ColumnName": "日期",
+            "GUID": "4327db77-1da2-4c9e-9171-0d34d1c81282"
+          },
+          "CSVColumnNameOrIndex": "日期"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "运营利润提成表",
+            "ColumnName": "交易类型",
+            "GUID": "34140696-aee0-40a7-a3e1-2094d696a19d"
+          },
+          "CSVColumnNameOrIndex": "交易类型"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "运营利润提成表",
+            "ColumnName": "账户",
+            "GUID": "3f70094d-e0ea-44b1-8a4e-c945bd251d0f"
+          },
+          "CSVColumnNameOrIndex": "账户"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "运营利润提成表",
+            "ColumnName": "订单编号",
+            "GUID": "0e593777-663c-4029-a9d5-53dbefd7f24b"
+          },
+          "CSVColumnNameOrIndex": "订单编号"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "运营利润提成表",
+            "ColumnName": "SKU",
+            "GUID": "79228b5f-4e41-4707-a210-64c920873b2f"
+          },
+          "CSVColumnNameOrIndex": "SKU"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "运营利润提成表",
+            "ColumnName": "商品名称",
+            "GUID": "58ca1ccd-73b8-48aa-be72-8e80e7271e06"
+          },
+          "CSVColumnNameOrIndex": "商品名称"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "运营利润提成表",
+            "ColumnName": "发货类型",
+            "GUID": "bb2a83e8-3f50-4c4a-a490-76a68902799c"
+          },
+          "CSVColumnNameOrIndex": "发货类型"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "运营利润提成表",
+            "ColumnName": "数量",
+            "GUID": "08a1edc8-42e1-427d-b518-125bd9474bc5"
+          },
+          "CSVColumnNameOrIndex": "数量"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "运营利润提成表",
+            "ColumnName": "站点",
+            "GUID": "10d772ee-f130-4303-8fba-7e0f64f76dbf"
+          },
+          "CSVColumnNameOrIndex": "站点"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "运营利润提成表",
+            "ColumnName": "实到外币",
+            "GUID": "318c3793-39b8-41c4-8f6c-56309f6b2ad2"
+          },
+          "CSVColumnNameOrIndex": "实到外币"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "运营利润提成表",
+            "ColumnName": "美金",
+            "GUID": "63724501-84ed-4b85-99ab-2e7eeedfd522"
+          },
+          "CSVColumnNameOrIndex": "美金"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "运营利润提成表",
+            "ColumnName": "人民币",
+            "GUID": "c1057f63-c21f-48d6-a5a9-f402e8042f30"
+          },
+          "CSVColumnNameOrIndex": "人民币"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "运营利润提成表",
+            "ColumnName": "中文品名",
+            "GUID": "f6ae419a-744c-4187-adc8-c50526cd6002"
+          },
+          "CSVColumnNameOrIndex": "中文品名"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "运营利润提成表",
+            "ColumnName": "姓名",
+            "GUID": "ffd6aedd-422d-43cb-9d36-37e4094fedbd"
+          },
+          "CSVColumnNameOrIndex": "姓名"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "运营利润提成表",
+            "ColumnName": "采购总价",
+            "GUID": "aec9691e-03b7-498b-941f-64366320f0a2"
+          },
+          "CSVColumnNameOrIndex": "采购总价"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "运营利润提成表",
+            "ColumnName": "提成系数",
+            "GUID": "f70b797d-3e15-44eb-b19b-0d1bdb3f8b20"
+          },
+          "CSVColumnNameOrIndex": "提成系数"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "运营利润提成表",
+            "ColumnName": "ASIN",
+            "GUID": "756cd86e-e7bc-4a3e-af38-2967774e93d2"
+          },
+          "CSVColumnNameOrIndex": "ASIN"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "运营利润提成表",
+            "ColumnName": "发货日期",
+            "GUID": "a6ea574f-08b6-44b7-b96e-4de45ade9477"
+          },
+          "CSVColumnNameOrIndex": "发货日期"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "运营利润提成表",
+            "ColumnName": "快递单号",
+            "GUID": "9874861c-c0a9-4a0e-ae31-ee90e168b505"
+          },
+          "CSVColumnNameOrIndex": "快递单号"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "运营利润提成表",
+            "ColumnName": "运费账单号",
+            "GUID": "5bd79a64-606c-470d-be30-9549ac9bcf79"
+          },
+          "CSVColumnNameOrIndex": "运费账单号"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "运营利润提成表",
+            "ColumnName": "运费",
+            "GUID": "5d69758e-9fd6-4b91-bafb-22f821ef4d4f"
+          },
+          "CSVColumnNameOrIndex": "运费"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "运营利润提成表",
+            "ColumnName": "关税",
+            "GUID": "1c5a196f-b1fc-45a9-846c-de9056b93020"
+          },
+          "CSVColumnNameOrIndex": "关税"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "运营利润提成表",
+            "ColumnName": "其他费用",
+            "GUID": "422f3898-ea99-4860-8c3d-e457d4de7e4b"
+          },
+          "CSVColumnNameOrIndex": "其他费用"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "运营利润提成表",
+            "ColumnName": "类型",
+            "GUID": "39ff331e-c222-482b-a2ef-39681775848e"
+          },
+          "CSVColumnNameOrIndex": "类型"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "运营利润提成表",
+            "ColumnName": "预估毛利",
+            "GUID": "0234c9d6-409b-44dc-b7b6-9d1a96399a2e"
+          },
+          "CSVColumnNameOrIndex": "预估毛利"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "运营利润提成表",
+            "ColumnName": "个人提成",
+            "GUID": "3f24fbee-874b-41b8-891d-d3dcbfbe1f09"
+          },
+          "CSVColumnNameOrIndex": "个人提成"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "运营利润提成表",
+            "ColumnName": "备注",
+            "GUID": "16c9ae7e-679e-468b-8ebc-ba9e027f6715"
+          },
+          "CSVColumnNameOrIndex": "备注"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "运营利润提成表",
+            "ColumnName": "辅助",
+            "GUID": "bc2d066c-5fff-4957-99bc-2a4470a7ae3d"
+          },
+          "CSVColumnNameOrIndex": "辅助"
+        }
+      ],
+      "QueryCondition": {
+        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+        "CompareType": 4,
+        "ColumnBindingInfo": {
+          "TableName": "运营利润提成表",
+          "ColumnName": "日期",
+          "GUID": "b656a23b-e48e-4cdf-ae73-02c740c90061"
+        },
+        "Value": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=TODAY()-90"
+        }
+      },
+      "BreakpointIdentity": "dfa86e7e-9512-4624-9aad-0abfd7db0011"
+    }
+  ],
+  "ReturnProperties": []
+}

@@ -1,0 +1,1091 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 42.0
+        }
+      },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "15": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "16": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "17": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "0": {}
+    },
+    "InVisibleIndexes": [
+      0
+    ],
+    "InLogicalVisibleIndexes": [
+      0,
+      14,
+      15,
+      16,
+      17
+    ],
+    "Count": 18,
+    "DefaultSize": 10.0
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 48.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "17": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "25": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      }
+    },
+    "Count": 26,
+    "DefaultSize": 30.0
+  },
+  "Values": {
+    "2,1": "保存",
+    "2,2": "货代",
+    "4,1": "对公",
+    "4,2": "收款方式",
+    "4,15": "户名",
+    "6,2": "收款账号",
+    "8,1": "对私",
+    "8,2": "收款方式",
+    "8,15": "户名",
+    "10,2": "收款账号",
+    "12,2": "备注"
+  },
+  "Formulas": {
+    "15,25": "TEXTJOIN(\",\",\"\",C16)"
+  },
+  "AttachInfos": {
+    "0,0": {
+      "BindingInfo": {
+        "TableName": "物流付款账户",
+        "ColumnName": "ID",
+        "GUID": "13c91b5c-65c6-4814-81cc-3297f90548ae"
+      }
+    },
+    "2,1": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionTableDataParam, ServerDesignerCommon",
+                    "tableData": {
+                      "TableName": "物流付款账户",
+                      "ColumnName": "货代",
+                      "GUID": "8efd6746-0261-41a7-b333-8123a19ff14b"
+                    }
+                  },
+                  "value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=支付信息!H3"
+                  },
+                  "compareType": 10
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "物流付款账户",
+                    "ShowConfirm": true,
+                    "ConfirmText": "确认保存？",
+                    "UpdateBindingValues": [
+                      {
+                        "BindingInfo": {
+                          "TableName": "物流付款账户",
+                          "ColumnName": "货代",
+                          "GUID": "d53d37c7-5740-4502-8151-2fdf42285135"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=支付信息!H3"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "物流付款账户",
+                          "ColumnName": "对公收款方式",
+                          "GUID": "55408257-a09b-40a7-b547-15a54b976ca8"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=支付信息!H5"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "物流付款账户",
+                          "ColumnName": "对公收款户名",
+                          "GUID": "b83c7cec-51a7-4ddc-982c-7f5a0f6d6510"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=支付信息!S5"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "物流付款账户",
+                          "ColumnName": "对公收款账号",
+                          "GUID": "84d6031a-5b6d-4d9c-802c-667a811ce715"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=支付信息!H7"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "物流付款账户",
+                          "ColumnName": "对私收款方式",
+                          "GUID": "5b013780-7205-4c2c-8337-3ffb10f25da8"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=支付信息!H9"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "物流付款账户",
+                          "ColumnName": "对私收款户名",
+                          "GUID": "25c0d09e-565b-41c4-b6bc-b75ef9aae486"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=支付信息!S9"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "物流付款账户",
+                          "ColumnName": "对私收款账号",
+                          "GUID": "d94e7af2-b458-4f8f-a45d-3539865e1b4c"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=支付信息!H11"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "物流付款账户",
+                          "ColumnName": "备注",
+                          "GUID": "e66e08e3-876a-43cb-b7f4-46df19810d27"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=支付信息!H13"
+                        }
+                      }
+                    ],
+                    "ParamNameToSaveNewRowValue": "NewRow",
+                    "BreakpointIdentity": "f9dec8b9-d93e-4183-8cfe-f0e74ab2eb1c"
+                  }
+                ],
+                "ID": "141b857b-c94b-4b48-b246-38dd719bba1d"
+              },
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=支付信息!H3"
+                      }
+                    ]
+                  },
+                  "value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=支付信息!Z16"
+                  },
+                  "compareType": 13
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "物流付款账户",
+                    "UpdateType": "add",
+                    "ShowConfirm": true,
+                    "ConfirmText": "确认添加?",
+                    "UpdateBindingValues": [
+                      {
+                        "BindingInfo": {
+                          "TableName": "物流付款账户",
+                          "ColumnName": "货代",
+                          "GUID": "2189e372-aab4-4f3e-8222-bf6e435bc310"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=支付信息!H3"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "物流付款账户",
+                          "ColumnName": "对公收款方式",
+                          "GUID": "d49aebd7-eb70-4a19-9243-0fe3784fce5b"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=支付信息!H5"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "物流付款账户",
+                          "ColumnName": "对公收款户名",
+                          "GUID": "d71069fe-69f6-4e70-a873-c7fca0abe0cc"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=支付信息!S5"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "物流付款账户",
+                          "ColumnName": "对公收款账号",
+                          "GUID": "4df03e2b-4739-4132-93f2-b92d8195d9ec"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=支付信息!H7"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "物流付款账户",
+                          "ColumnName": "对私收款方式",
+                          "GUID": "becff6cc-220b-4ee9-be15-cc1416f3bcfe"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=支付信息!H9"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "物流付款账户",
+                          "ColumnName": "对私收款户名",
+                          "GUID": "591bbb12-e5b0-4356-9ae7-38dacac83bc1"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=支付信息!S9"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "物流付款账户",
+                          "ColumnName": "对私收款账号",
+                          "GUID": "ca3aa0e6-0fad-48e2-9bbd-8711d1922dfe"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=支付信息!H11"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "物流付款账户",
+                          "ColumnName": "备注",
+                          "GUID": "15123004-009b-49bd-a231-64eb6df3ddad"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=支付信息!H13"
+                        }
+                      }
+                    ],
+                    "ParamNameToSaveNewRowValue": "NewRow",
+                    "BreakpointIdentity": "25afe786-c04d-4509-a56f-7bdc80bcb037"
+                  }
+                ],
+                "ID": "a5aeb2ec-09b1-4293-96fc-a435d57bb7c8"
+              }
+            ],
+            "BreakpointIdentity": "9fb6a3a1-7894-4c7d-b5f7-36bf23d4f98a"
+          }
+        ],
+        "Text": "保存",
+        "TemplateKey": "透明按钮"
+      }
+    },
+    "2,7": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "样式4"
+      }
+    },
+    "2,15": {
+      "BindingInfo": {
+        "TableName": "物流付款账户",
+        "ColumnName": "FGC_LastModifier",
+        "GUID": "2c624c89-0e78-43c9-98ab-17344e704907"
+      }
+    },
+    "2,19": {
+      "BindingInfo": {
+        "TableName": "物流付款账户",
+        "ColumnName": "FGC_LastModifyDate",
+        "GUID": "3a572e6f-562c-455b-860f-b7a52af711ac"
+      }
+    },
+    "4,7": {
+      "BindingInfo": {
+        "TableName": "物流付款账户",
+        "ColumnName": "对公收款方式",
+        "GUID": "6ef99004-727e-4dd3-9f6b-f01eabca60ac"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "样式4"
+      }
+    },
+    "4,18": {
+      "BindingInfo": {
+        "TableName": "物流付款账户",
+        "ColumnName": "对公收款户名",
+        "GUID": "07e0e328-41f9-481c-b084-8fb5957083de"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "样式4"
+      }
+    },
+    "6,7": {
+      "BindingInfo": {
+        "TableName": "物流付款账户",
+        "ColumnName": "对公收款账号",
+        "GUID": "b45f208d-7594-452b-8a6e-2c2d0bb3ab9f"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "样式4"
+      }
+    },
+    "8,7": {
+      "BindingInfo": {
+        "TableName": "物流付款账户",
+        "ColumnName": "对私收款方式",
+        "GUID": "0f709fb4-b82e-4eb4-b66b-3083c16683f2"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "样式4"
+      }
+    },
+    "8,18": {
+      "BindingInfo": {
+        "TableName": "物流付款账户",
+        "ColumnName": "对私收款户名",
+        "GUID": "9ee02aeb-5560-4fe9-9f50-5fb89feaefca"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "样式4"
+      }
+    },
+    "10,7": {
+      "BindingInfo": {
+        "TableName": "物流付款账户",
+        "ColumnName": "对私收款账号",
+        "GUID": "ce548d76-b78b-47af-8bea-cddb406fcafb"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "样式4"
+      }
+    },
+    "12,7": {
+      "BindingInfo": {
+        "TableName": "物流付款账户",
+        "ColumnName": "备注",
+        "GUID": "be3640a0-d912-467f-9231-ae6a235813c0"
+      },
+      "CellType": {
+        "$type": "Forguncy.MultilineTextBox, ServerDesignerCommon",
+        "TemplateKey": "样式4"
+      }
+    },
+    "14,1": {
+      "ListViewInfo": {
+        "Name": "表格1",
+        "TableName": "物流付款账户",
+        "RowIndex": 14,
+        "ColumnIndex": 1,
+        "RowCount": 4,
+        "ColumnCount": 24,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+          "CompareType": 6,
+          "ColumnBindingInfo": {
+            "TableName": "物流付款账户",
+            "ColumnName": "货代",
+            "GUID": "907f4ea8-6133-4c57-99c4-d398ae1f02a8"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=支付信息!H3"
+          }
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "样式1",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2,
+        "ShowGridLine": true
+      }
+    },
+    "15,1": {
+      "BindingInfo": {
+        "TableName": "物流付款账户",
+        "ColumnName": "ID",
+        "GUID": "5fe1f57b-c1b8-4c48-a257-c7e2f874e3a4"
+      }
+    },
+    "15,2": {
+      "BindingInfo": {
+        "TableName": "物流付款账户",
+        "ColumnName": "货代",
+        "GUID": "d0f1cfb4-a941-4f28-9bfd-f4b0f3abd320"
+      }
+    },
+    "15,5": {
+      "BindingInfo": {
+        "TableName": "物流付款账户",
+        "ColumnName": "对公收款方式",
+        "GUID": "f4858d5a-8f70-4cb8-b6ba-e5395c708720"
+      }
+    },
+    "15,8": {
+      "BindingInfo": {
+        "TableName": "物流付款账户",
+        "ColumnName": "对公收款户名",
+        "GUID": "4de9242c-8160-48eb-beea-86e43f5efec1"
+      }
+    },
+    "15,11": {
+      "BindingInfo": {
+        "TableName": "物流付款账户",
+        "ColumnName": "对公收款账号",
+        "GUID": "48154e93-1da5-4116-825e-0bc3dc8f03b4"
+      }
+    },
+    "15,14": {
+      "BindingInfo": {
+        "TableName": "物流付款账户",
+        "ColumnName": "对私收款方式",
+        "GUID": "e8b93dc7-5bfb-4ef4-a992-e3f940df6a68"
+      }
+    },
+    "15,17": {
+      "BindingInfo": {
+        "TableName": "物流付款账户",
+        "ColumnName": "对私收款户名",
+        "GUID": "dd5fc13b-9182-4471-85eb-207db5a06582"
+      }
+    },
+    "15,21": {
+      "BindingInfo": {
+        "TableName": "物流付款账户",
+        "ColumnName": "对私收款账号",
+        "GUID": "e6e0ed26-05ad-401a-a879-346c53a432e6"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Background": 0,
+        "FontWeight": 1,
+        "Foreground": 2,
+        "HorizontalAlignment": 3,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontSize": 16.0,
+        "FontWeight": 1,
+        "HorizontalAlignment": 4,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontWeight": 1,
+        "HorizontalAlignment": 3,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 5,
+        "Formatter": 6,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 5,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "HorizontalAlignment": 4,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "HorizontalAlignment": 3,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 7,
+        "FontSize": 16.0,
+        "FontWeight": 1,
+        "Foreground": 2,
+        "HorizontalAlignment": 3,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontSize": 14.666666666666666,
+        "FontWeight": 1,
+        "HorizontalAlignment": 3,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Formatter": 6,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontSize": 14.666666666666666,
+        "FontWeight": 1,
+        "HorizontalAlignment": 4,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 5,
+        "FontSize": 16.0,
+        "FontWeight": 1,
+        "Foreground": 8,
+        "HorizontalAlignment": 4,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 5,
+        "FontSize": 14.666666666666666,
+        "FontWeight": 1,
+        "Foreground": 8,
+        "HorizontalAlignment": 3,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 5,
+        "FontSize": 16.0,
+        "FontWeight": 1,
+        "Formatter": 9,
+        "HorizontalAlignment": 4,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 5,
+        "FontWeight": 1,
+        "Formatter": 9,
+        "HorizontalAlignment": 3,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 5,
+        "FontSize": 14.666666666666666,
+        "FontWeight": 1,
+        "Formatter": 9,
+        "HorizontalAlignment": 3,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontSize": 16.0,
+        "FontWeight": 1,
+        "Foreground": 2,
+        "HorizontalAlignment": 3,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 5,
+        "FontSize": 16.0,
+        "FontWeight": 1,
+        "Foreground": 8,
+        "HorizontalAlignment": 3,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 5,
+        "Formatter": 6,
+        "VerticalAlignment": 10,
+        "WordWrap": true,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": 0,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": 0,
+        "BorderLeft": null,
+        "BorderRight": 0
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": 0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "#FF00B050",
+        "Bold",
+        "Background 1 0",
+        "Center",
+        "Right",
+        "Body",
+        "@",
+        "#FF00B0F0",
+        "#FF000000",
+        "[AUTO]General",
+        "Top",
+        "DarkGray"
+      ],
+      "Borders": [
+        {
+          "Color": 11
+        }
+      ]
+    },
+    "CellStyles": {
+      "2,1": 0,
+      "2,2": 1,
+      "2,6": 2,
+      "2,7": 3,
+      "2,19": 4,
+      "3,2": 5,
+      "3,3": 5,
+      "3,4": 5,
+      "3,5": 5,
+      "3,6": 6,
+      "4,1": 7,
+      "4,2": 1,
+      "4,6": 8,
+      "4,7": 9,
+      "4,15": 1,
+      "4,17": 2,
+      "4,18": 9,
+      "5,2": 10,
+      "5,3": 10,
+      "5,4": 10,
+      "5,5": 10,
+      "5,6": 8,
+      "6,2": 1,
+      "6,6": 8,
+      "6,7": 9,
+      "7,2": 10,
+      "7,3": 10,
+      "7,4": 10,
+      "7,5": 10,
+      "7,6": 8,
+      "8,1": 7,
+      "8,2": 11,
+      "8,3": 4,
+      "8,4": 4,
+      "8,5": 4,
+      "8,6": 12,
+      "8,7": 3,
+      "8,14": 4,
+      "8,15": 13,
+      "8,16": 4,
+      "8,17": 14,
+      "8,18": 3,
+      "9,2": 10,
+      "9,3": 10,
+      "9,4": 10,
+      "9,5": 10,
+      "9,6": 8,
+      "10,2": 13,
+      "10,3": 4,
+      "10,4": 4,
+      "10,5": 4,
+      "10,6": 15,
+      "10,7": 3,
+      "11,1": 16,
+      "11,2": 13,
+      "11,3": 13,
+      "11,4": 13,
+      "11,5": 13,
+      "11,6": 15,
+      "11,7": 3,
+      "11,8": 3,
+      "11,9": 3,
+      "11,10": 3,
+      "11,11": 3,
+      "11,12": 3,
+      "11,13": 3,
+      "11,14": 3,
+      "11,15": 3,
+      "11,16": 3,
+      "11,17": 3,
+      "11,18": 3,
+      "11,19": 3,
+      "11,20": 3,
+      "11,21": 3,
+      "11,22": 3,
+      "11,23": 3,
+      "11,24": 3,
+      "12,2": 17,
+      "12,6": 15,
+      "12,7": 18,
+      "14,1": 19,
+      "14,2": 20,
+      "14,3": 20,
+      "14,4": 20,
+      "14,5": 20,
+      "14,6": 20,
+      "14,7": 20,
+      "14,8": 20,
+      "14,9": 20,
+      "14,10": 20,
+      "14,11": 20,
+      "14,12": 20,
+      "14,13": 20,
+      "14,14": 20,
+      "14,15": 20,
+      "14,16": 20,
+      "14,17": 20,
+      "14,18": 20,
+      "14,19": 20,
+      "14,20": 20,
+      "14,21": 20,
+      "14,22": 20,
+      "14,23": 20,
+      "14,24": 21,
+      "14,25": 4,
+      "15,1": 22,
+      "15,24": 23,
+      "16,1": 22,
+      "16,24": 23,
+      "17,1": 24,
+      "17,2": 25,
+      "17,3": 25,
+      "17,4": 25,
+      "17,5": 25,
+      "17,6": 25,
+      "17,7": 25,
+      "17,8": 25,
+      "17,9": 25,
+      "17,10": 25,
+      "17,11": 25,
+      "17,12": 25,
+      "17,13": 25,
+      "17,14": 25,
+      "17,15": 25,
+      "17,16": 25,
+      "17,17": 25,
+      "17,18": 25,
+      "17,19": 25,
+      "17,20": 25,
+      "17,21": 25,
+      "17,22": 25,
+      "17,23": 25,
+      "17,24": 26
+    },
+    "SheetStyle": {
+      "FontFamily": 5,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
+    }
+  },
+  "Spans": [
+    "0,0,1,6",
+    "0,7,1,6",
+    "2,2,1,4",
+    "2,7,1,7",
+    "2,15,1,4",
+    "2,19,1,6",
+    "4,1,3,1",
+    "4,2,1,4",
+    "4,7,1,7",
+    "4,15,1,2",
+    "4,18,1,7",
+    "6,2,1,4",
+    "6,7,1,18",
+    "8,1,3,1",
+    "8,2,1,4",
+    "8,7,1,7",
+    "8,15,1,2",
+    "8,18,1,7",
+    "10,2,1,4",
+    "10,7,1,18",
+    "12,2,1,4",
+    "12,7,1,18",
+    "15,2,1,3",
+    "15,5,1,3",
+    "15,8,1,3",
+    "15,11,1,3",
+    "15,14,1,3",
+    "15,17,1,4",
+    "15,21,1,4",
+    "16,1,2,24",
+    "14,2,1,3",
+    "14,5,1,3",
+    "14,8,1,3",
+    "14,11,1,3",
+    "14,14,1,3",
+    "14,17,1,4",
+    "14,21,1,4"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//Go5HBFIQJvRSb2A5gC8MeagKIQg7jj4kTMS2ecMFaGVh90fZgz3wagSiMDgocNW1sX5JBSwIz9cumtnAhT84o2ffUvBw4TeTvIacrirDowZNeJ1hDQb8kNxajUurna24DAgf5yISHJLqhAwdfTa2d1AjFhxw41QRU+m7FlIlBv1CEc5+7zcO00JM8hFTBUkJ1/H2sQ2oLXJBUW+SPppyROw/zMIqHagX0Vm/6qU3EGza8zR9AcFeoN5Cw/w/rRM+XosSg/XF5erNnvQ4jI6FvJz6uwdA5m3jGXN/L25iuGqiSGC52wGbzZe/DUmtB27jDje7LkFmrRK1YblLzCc0hicNJstx2YhmRM2eipnCuzkgLp8eocQtB6qEIxT/UiKRRKFKc75Pq0K5M64jnEYuz04lLumNL8b54r6qkQkVMlu09V07TKS4FWgJ3N2bnWTvCq3GmINLmuaNDBVlTWMiljaLWV/MZ6eHQ0ea5tvYwLvepScqP27gen7BhkMILkkfkDmMXNsMHSHuRUnpOuLfwiR2jY+Br9c8InFzFIAiIoXVhTm3EJhn3klmTxGIVfaQKQOTS78f1jdWq0WW5LlBegb5lwh/vt6P1UIMTfZFszsrGnyCxnbfewGWEZ3NDI4149/lyA2z9AIcRavo/IS12EvfWnS19Z1S3H4bxRyD2lcghkGmW41718qRW2SAg5tVhsWIsmJhVjUAQv9BtteKCONw2q1BTDGeEtMyWaYPOEEVvp+jc6i78xUxqhhtxXTHYVa6MTS8YX2uyU46eHRBpxqZc9OqmcRx39AHkvnSLPcSbVT6+lm5BBq2z4b1yfOsUoKnB27RCzeGN8NgnzgvrVUZZn/6BA8sujzOYoinUzEYZzxHsno/0RovcSlATD899indU4PbCXJmuKFwnEKAxQ==|920

@@ -1,0 +1,1315 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 32.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 16.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 32.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 16.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 32.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 16.0
+        }
+      },
+      "22": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 32.0
+        }
+      },
+      "23": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 32.0
+        }
+      },
+      "24": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 32.0
+        }
+      },
+      "25": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 32.0
+        }
+      },
+      "26": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 32.0
+        }
+      },
+      "27": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 32.0
+        }
+      }
+    },
+    "Count": 28,
+    "DefaultSize": 40.0
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "98": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 32.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      }
+    },
+    "Count": 100,
+    "DefaultSize": 32.0
+  },
+  "Values": {
+    "0,20": "日期范围报告导入",
+    "2,56": "报告字典维护",
+    "4,2": "导入合并后报告",
+    "4,56": "清空数据",
+    "27,42": "全部加载"
+  },
+  "Formulas": {
+    "2,2": "TODAY()-30",
+    "7,95": "$J$3"
+  },
+  "AttachInfos": {
+    "2,2": {
+      "CellType": {
+        "$type": "ElementUI.DatePickerCellType, ElementUI",
+        "CommandList": [],
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ],
+        "type": "month",
+        "placeholder": "请选择年月",
+        "startPlaceholder": "开始日期",
+        "rangeSeparator": "至",
+        "endPlaceholder": "结束日期",
+        "firstDayOfWeek": 1,
+        "clearable": true,
+        "DefautWeekFormat": "yyyy 第 WW 周"
+      }
+    },
+    "2,9": {
+      "CellType": {
+        "$type": "Forguncy.RadioGroupCellType, ServerDesignerCommon",
+        "Style": 1,
+        "IsBounding": true,
+        "DataSource": "库存表",
+        "ValueColumnBindingInfo": {
+          "TableName": "库存表",
+          "ColumnName": "大账户",
+          "GUID": "ee866882-7df4-4924-9f80-8a0f6b18fbd2"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "库存表",
+          "ColumnName": "大账户",
+          "GUID": "fc2aaf74-5dcb-44b2-ac0e-9844820fc849"
+        },
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=日期范围报告导入!J3"
+                      }
+                    ]
+                  },
+                  "value": "%Null%"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日期范围报告导入!C5"
+                        },
+                        "PropertyType": 0,
+                        "Value": false
+                      }
+                    ],
+                    "BreakpointIdentity": "ddb5a4be-817a-49ee-8172-2d8256120b54"
+                  }
+                ],
+                "ID": "bcbce27f-c5e6-46b3-99a0-f8dda0e7a86b"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日期范围报告导入!C5"
+                        },
+                        "PropertyType": 0,
+                        "Value": true
+                      }
+                    ],
+                    "BreakpointIdentity": "2c471bed-baa9-4bbe-a3da-f43da979a776"
+                  }
+                ],
+                "ID": "007c5682-f200-4f77-8f4d-97251a7cf201"
+              }
+            ],
+            "BreakpointIdentity": "fef32e37-8fa2-4782-8aad-bcac08a4d416"
+          }
+        ]
+      }
+    },
+    "2,56": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PageName": "日期范围交易字典维护",
+            "BreakpointIdentity": "116ed83a-5025-496e-abe9-aa8f6abc78cd"
+          }
+        ],
+        "Text": "报告字典维护",
+        "ClickMode": 1,
+        "TemplateKey": "_RS_Main"
+      }
+    },
+    "4,2": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ImportExcelToListViewCommand, ServerDesignerCommon",
+            "ListViewName": "表格1",
+            "ImportExcelToListViewColumnInfos": [
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日期范围报告导入!C8"
+                },
+                "ColumnName": "日期"
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日期范围报告导入!F8"
+                },
+                "ColumnName": "settlement id"
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日期范围报告导入!I8"
+                },
+                "ColumnName": "type"
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日期范围报告导入!L8"
+                },
+                "ColumnName": "order id"
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日期范围报告导入!O8"
+                },
+                "ColumnName": "sku"
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日期范围报告导入!R8"
+                },
+                "ColumnName": "description"
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日期范围报告导入!U8"
+                },
+                "ColumnName": "quantity"
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日期范围报告导入!X8"
+                },
+                "ColumnName": "marketplace"
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日期范围报告导入!AA8"
+                },
+                "ColumnName": "account type"
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日期范围报告导入!AD8"
+                },
+                "ColumnName": "fulfillment"
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日期范围报告导入!AG8"
+                },
+                "ColumnName": "order city"
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日期范围报告导入!AJ8"
+                },
+                "ColumnName": "order state"
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日期范围报告导入!AM8"
+                },
+                "ColumnName": "order postal"
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日期范围报告导入!AP8"
+                },
+                "ColumnName": "tax collection model"
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日期范围报告导入!AS8"
+                },
+                "ColumnName": "product sales"
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日期范围报告导入!AV8"
+                },
+                "ColumnName": "product sales tax"
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日期范围报告导入!AY8"
+                },
+                "ColumnName": "shipping credits"
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日期范围报告导入!BB8"
+                },
+                "ColumnName": "shipping credits tax"
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日期范围报告导入!BE8"
+                },
+                "ColumnName": "gift wrap credits"
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日期范围报告导入!BH8"
+                },
+                "ColumnName": "giftwrap credits tax"
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日期范围报告导入!BN8"
+                },
+                "ColumnName": "Regulatory Fee"
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日期范围报告导入!BQ8"
+                },
+                "ColumnName": "Tax On Regulatory Fee"
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日期范围报告导入!BT8"
+                },
+                "ColumnName": "promotional rebates"
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日期范围报告导入!BW8"
+                },
+                "ColumnName": "promotional rebates tax"
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日期范围报告导入!BZ8"
+                },
+                "ColumnName": "marketplace withheld tax"
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日期范围报告导入!CC8"
+                },
+                "ColumnName": "selling fees"
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日期范围报告导入!CF8"
+                },
+                "ColumnName": "fba fees"
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日期范围报告导入!CI8"
+                },
+                "ColumnName": "other transaction fees"
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日期范围报告导入!CL8"
+                },
+                "ColumnName": "other"
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日期范围报告导入!CO8"
+                },
+                "ColumnName": "total"
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日期范围报告导入!CT8"
+                },
+                "ColumnName": "站点"
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日期范围报告导入!BK8"
+                },
+                "ColumnName": "Amazon Points fee"
+              }
+            ],
+            "BreakpointIdentity": "cd2b97bd-63f5-4a3c-8256-b5654934ce93"
+          }
+        ],
+        "Text": "导入合并后报告",
+        "TemplateKey": "_RS_Main1"
+      }
+    },
+    "4,56": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+            "ListviewName": "表格1",
+            "UpdateType": 2,
+            "UpdateRowType": 2,
+            "BreakpointIdentity": "4b3fe8c8-7d8d-4ea9-b9ad-d933b69adfdb"
+          },
+          {
+            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+            "ListviewName": "表格1",
+            "UpdateType": 3,
+            "BreakpointIdentity": "e4f269fc-c710-4745-a60e-647b23c5f797"
+          },
+          {
+            "$type": "ElementUI.Commands.ShowMessage, ElementUI",
+            "Message": "已清空",
+            "Type": "success",
+            "Duration": 3000,
+            "BreakpointIdentity": "17b6252a-7314-43c2-905b-73fdd153d516"
+          }
+        ],
+        "Text": "清空数据",
+        "ClickMode": 1,
+        "TemplateKey": "_RS_Main"
+      }
+    },
+    "6,1": {
+      "ListViewInfo": {
+        "Name": "表格1",
+        "TableName": "日期范围报告",
+        "RowIndex": 6,
+        "ColumnIndex": 1,
+        "RowCount": 21,
+        "ColumnCount": 98,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "SubConditions": [
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "日期范围报告",
+                "ColumnName": "日期",
+                "GUID": "110077eb-144c-4441-a32c-8b26f8800146",
+                "AttachType": {
+                  "$type": "ForguncyDataAccess.DateColumnAttachObj, ForguncyDataAccess",
+                  "ColumnAttachType": 1
+                }
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=YEAR(日期范围报告导入!C3)"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "日期范围报告",
+                "ColumnName": "日期",
+                "GUID": "15f36b5e-9e98-4c91-9ac2-28e27951ad55",
+                "AttachType": {
+                  "$type": "ForguncyDataAccess.DateColumnAttachObj, ForguncyDataAccess",
+                  "ColumnAttachType": 4
+                }
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=MONTH(日期范围报告导入!C3)"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "日期范围报告",
+                "ColumnName": "账户",
+                "GUID": "2bff7d9f-84fc-44cc-b379-ad67fe9a463e"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=日期范围报告导入!J3"
+              }
+            }
+          ]
+        },
+        "NullFormulaValueQueryPolicy": 0,
+        "TopCondition": null,
+        "ListViewStyleName": "样式1",
+        "ShowColumnHeaderInDesigner": true,
+        "IsRowHeaderVisible": true,
+        "IsTotalRowVisible": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "7,2": {
+      "BindingInfo": {
+        "TableName": "日期范围报告",
+        "ColumnName": "日期",
+        "GUID": "dc2347b6-d0f1-42f1-9311-0a9c17c1f81a"
+      }
+    },
+    "7,5": {
+      "BindingInfo": {
+        "TableName": "日期范围报告",
+        "ColumnName": "结算id",
+        "GUID": "0770cc57-60a8-41e9-9deb-bea3ae651e19"
+      }
+    },
+    "7,8": {
+      "BindingInfo": {
+        "TableName": "日期范围报告",
+        "ColumnName": "类型",
+        "GUID": "6baeef92-3035-4fa1-8cea-646b8a327f98"
+      }
+    },
+    "7,11": {
+      "BindingInfo": {
+        "TableName": "日期范围报告",
+        "ColumnName": "订单id",
+        "GUID": "53ca7bfb-9983-4924-9918-200c807ddc63"
+      }
+    },
+    "7,14": {
+      "BindingInfo": {
+        "TableName": "日期范围报告",
+        "ColumnName": "sku",
+        "GUID": "7b472750-4b34-40c1-a569-cc7316efc15d"
+      }
+    },
+    "7,17": {
+      "BindingInfo": {
+        "TableName": "日期范围报告",
+        "ColumnName": "描述",
+        "GUID": "fb96ac93-cb4c-49e3-b778-c7003bde27f3"
+      }
+    },
+    "7,20": {
+      "BindingInfo": {
+        "TableName": "日期范围报告",
+        "ColumnName": "数量",
+        "GUID": "4600a1e5-3d64-4a85-875f-cd42b0ea482e"
+      }
+    },
+    "7,23": {
+      "BindingInfo": {
+        "TableName": "日期范围报告",
+        "ColumnName": "市场",
+        "GUID": "faddd35c-98de-4910-9f3b-50fbac6c4cfa"
+      }
+    },
+    "7,26": {
+      "BindingInfo": {
+        "TableName": "日期范围报告",
+        "ColumnName": "账户类型",
+        "GUID": "de737463-7115-4fb2-989c-6d61e11e9b69"
+      }
+    },
+    "7,29": {
+      "BindingInfo": {
+        "TableName": "日期范围报告",
+        "ColumnName": "履行",
+        "GUID": "7079fad2-2bf8-4771-9017-dcaf5208ea32"
+      }
+    },
+    "7,32": {
+      "BindingInfo": {
+        "TableName": "日期范围报告",
+        "ColumnName": "订单城市",
+        "GUID": "d9baf7bc-1b75-495b-a4f4-b5dd21832b23"
+      }
+    },
+    "7,35": {
+      "BindingInfo": {
+        "TableName": "日期范围报告",
+        "ColumnName": "订单州省",
+        "GUID": "2a96095c-f2b7-4d94-bb6c-093908060b81"
+      }
+    },
+    "7,38": {
+      "BindingInfo": {
+        "TableName": "日期范围报告",
+        "ColumnName": "订单邮编",
+        "GUID": "8e834d28-951a-4ccd-b6b9-fbca418c03f3"
+      }
+    },
+    "7,41": {
+      "BindingInfo": {
+        "TableName": "日期范围报告",
+        "ColumnName": "征税模式",
+        "GUID": "148d2938-32f8-434a-816c-5b5b45c3d251"
+      }
+    },
+    "7,44": {
+      "TotalRowSetting": {
+        "FormulaType": 5,
+        "StyleInfo": {
+          "Formatter": "0.00"
+        }
+      },
+      "BindingInfo": {
+        "TableName": "日期范围报告",
+        "ColumnName": "产品销售额",
+        "GUID": "c56e1b39-13c9-4195-ad2a-287d3252ce34"
+      }
+    },
+    "7,47": {
+      "TotalRowSetting": {
+        "FormulaType": 5,
+        "StyleInfo": {
+          "Formatter": "0.00"
+        }
+      },
+      "BindingInfo": {
+        "TableName": "日期范围报告",
+        "ColumnName": "产品销售税",
+        "GUID": "c87950d2-fdc1-4797-a592-6d7ae5cc3f41"
+      }
+    },
+    "7,50": {
+      "TotalRowSetting": {
+        "FormulaType": 5,
+        "StyleInfo": {
+          "Formatter": "0.00"
+        }
+      },
+      "BindingInfo": {
+        "TableName": "日期范围报告",
+        "ColumnName": "运费抵扣",
+        "GUID": "0164aebe-4c0e-43ba-80ae-4d99b0b676fb"
+      }
+    },
+    "7,53": {
+      "TotalRowSetting": {
+        "FormulaType": 5,
+        "StyleInfo": {
+          "Formatter": "0.00"
+        }
+      },
+      "BindingInfo": {
+        "TableName": "日期范围报告",
+        "ColumnName": "运费抵扣税",
+        "GUID": "ed8f7477-babe-44df-bd6b-4a4aeaa9eab9"
+      }
+    },
+    "7,56": {
+      "TotalRowSetting": {
+        "FormulaType": 5,
+        "StyleInfo": {
+          "Formatter": "0.00"
+        }
+      },
+      "BindingInfo": {
+        "TableName": "日期范围报告",
+        "ColumnName": "礼品包装抵用金",
+        "GUID": "1e4658d2-390b-462f-9690-0c19b63c84be"
+      }
+    },
+    "7,59": {
+      "TotalRowSetting": {
+        "FormulaType": 5,
+        "StyleInfo": {
+          "Formatter": "0.00"
+        }
+      },
+      "BindingInfo": {
+        "TableName": "日期范围报告",
+        "ColumnName": "礼品包装抵用金税",
+        "GUID": "f659f539-3563-4b2b-a293-fb6e3bfc473f"
+      }
+    },
+    "7,62": {
+      "TotalRowSetting": {
+        "FormulaType": 5,
+        "StyleInfo": {
+          "Formatter": "0.00"
+        }
+      },
+      "BindingInfo": {
+        "TableName": "日期范围报告",
+        "ColumnName": "amazon积分",
+        "GUID": "47529b70-3f35-4d79-ab5f-08b6e816979e"
+      }
+    },
+    "7,65": {
+      "TotalRowSetting": {
+        "FormulaType": 5,
+        "StyleInfo": {
+          "Formatter": "0.00"
+        }
+      },
+      "BindingInfo": {
+        "TableName": "日期范围报告",
+        "ColumnName": "监管费",
+        "GUID": "276269e2-76ce-473a-9a2a-0e05d0dccf01"
+      }
+    },
+    "7,68": {
+      "TotalRowSetting": {
+        "FormulaType": 5,
+        "StyleInfo": {
+          "Formatter": "0.00"
+        }
+      },
+      "BindingInfo": {
+        "TableName": "日期范围报告",
+        "ColumnName": "监管费税",
+        "GUID": "94d93427-211f-4f0e-ad98-88143f1e2066"
+      }
+    },
+    "7,71": {
+      "TotalRowSetting": {
+        "FormulaType": 5,
+        "StyleInfo": {
+          "Formatter": "0.00"
+        }
+      },
+      "BindingInfo": {
+        "TableName": "日期范围报告",
+        "ColumnName": "促销返利",
+        "GUID": "57cc5bce-4c21-480b-bd49-28e1f01b8ca7"
+      }
+    },
+    "7,74": {
+      "TotalRowSetting": {
+        "FormulaType": 5,
+        "StyleInfo": {
+          "Formatter": "0.00"
+        }
+      },
+      "BindingInfo": {
+        "TableName": "日期范围报告",
+        "ColumnName": "促销返利税",
+        "GUID": "0e0d8575-6147-4fca-8496-7e6e94fcf77d"
+      }
+    },
+    "7,77": {
+      "TotalRowSetting": {
+        "FormulaType": 5,
+        "StyleInfo": {
+          "Formatter": "0.00"
+        }
+      },
+      "BindingInfo": {
+        "TableName": "日期范围报告",
+        "ColumnName": "市场预扣税",
+        "GUID": "cc8ef068-8c54-4724-a305-340fe0cb3ecf"
+      }
+    },
+    "7,80": {
+      "TotalRowSetting": {
+        "FormulaType": 5,
+        "StyleInfo": {
+          "Formatter": "0.00"
+        }
+      },
+      "BindingInfo": {
+        "TableName": "日期范围报告",
+        "ColumnName": "销售费用",
+        "GUID": "12bcecee-5437-4ba4-a8cb-059d97c17736"
+      }
+    },
+    "7,83": {
+      "TotalRowSetting": {
+        "FormulaType": 5,
+        "StyleInfo": {
+          "Formatter": "0.00"
+        }
+      },
+      "BindingInfo": {
+        "TableName": "日期范围报告",
+        "ColumnName": "FBA费用",
+        "GUID": "b7d0bfa0-b702-4de1-89d7-03251969f95a"
+      }
+    },
+    "7,86": {
+      "TotalRowSetting": {
+        "FormulaType": 5,
+        "StyleInfo": {
+          "Formatter": "0.00"
+        }
+      },
+      "BindingInfo": {
+        "TableName": "日期范围报告",
+        "ColumnName": "其他交易费用",
+        "GUID": "934f80d0-680c-4e06-b736-37a9fd936189"
+      }
+    },
+    "7,89": {
+      "TotalRowSetting": {
+        "FormulaType": 5,
+        "StyleInfo": {
+          "Formatter": "0.00"
+        }
+      },
+      "BindingInfo": {
+        "TableName": "日期范围报告",
+        "ColumnName": "其他",
+        "GUID": "3714ae86-69dd-4a09-baab-806d557317b5"
+      }
+    },
+    "7,92": {
+      "TotalRowSetting": {
+        "FormulaType": 5,
+        "StyleInfo": {
+          "Formatter": "0.00"
+        }
+      },
+      "BindingInfo": {
+        "TableName": "日期范围报告",
+        "ColumnName": "总计",
+        "GUID": "d1dcaaa5-add3-436c-afb7-036f3e797057"
+      }
+    },
+    "7,95": {
+      "BindingInfo": {
+        "TableName": "日期范围报告",
+        "ColumnName": "账户",
+        "GUID": "70346b4f-2ddb-4eab-be3b-61fa52e8b956"
+      }
+    },
+    "7,97": {
+      "BindingInfo": {
+        "TableName": "日期范围报告",
+        "ColumnName": "站点",
+        "GUID": "3e2a4d67-d81c-42b2-b960-25643d477b41"
+      }
+    },
+    "27,1": {
+      "CellType": {
+        "$type": "ElementUI.CellTypes.PaginationCellType, ElementUI",
+        "ListviewName": "表格1",
+        "pageSize": 30,
+        "pagerCount": 7,
+        "layout": [
+          {
+            "layoutItem": "prev"
+          },
+          {
+            "layoutItem": "pager"
+          },
+          {
+            "layoutItem": "next"
+          },
+          {
+            "layoutItem": "jumper"
+          },
+          {
+            "layoutItem": "->"
+          },
+          {
+            "layoutItem": "total"
+          }
+        ],
+        "pageSizes": [
+          {},
+          {
+            "value": 20
+          },
+          {
+            "value": 30
+          },
+          {
+            "value": 40
+          },
+          {
+            "value": 50
+          },
+          {
+            "value": 100
+          }
+        ]
+      }
+    },
+    "27,42": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.OperateCellTypeCommand, ServerDesignerCommon",
+            "TargetPageElement": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=日期范围报告导入!B28"
+            },
+            "TargetType": "ElementUI.CellTypes.PaginationCellType, ElementUI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e50995ee76bfe560",
+            "MethodName": "SetPageSize",
+            "ParameterValues": {
+              "pageSize": "9999999"
+            },
+            "BreakpointIdentity": "1057f56d-c6e9-437a-bc14-6de29e3d718d"
+          }
+        ],
+        "Text": "全部加载",
+        "TemplateKey": "样式17"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontSize": 21.333333333333332,
+        "FontWeight": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 16.0,
+        "FontWeight": 0,
+        "HorizontalAlignment": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "WordWrap": true,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Formatter": 3,
+        "Underline": true,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 3,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Foreground": 4,
+        "Underline": true,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "HorizontalAlignment": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Formatter": 5,
+        "HorizontalAlignment": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "HorizontalAlignment": 6,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Bold",
+        "Body",
+        "Center",
+        "[AUTO]General",
+        "#FFFF0000",
+        "yyyy/MM/dd",
+        "Right"
+      ]
+    },
+    "CellStyles": {
+      "0,20": 0,
+      "2,2": 1,
+      "2,3": 2,
+      "2,4": 2,
+      "2,5": 2,
+      "2,6": 2,
+      "2,7": 2,
+      "2,8": 2,
+      "2,9": 3,
+      "2,56": 4,
+      "3,8": 2,
+      "4,2": 5,
+      "4,3": 2,
+      "4,4": 2,
+      "4,5": 2,
+      "4,6": 2,
+      "4,56": 6,
+      "5,2": 5,
+      "5,3": 5,
+      "5,4": 5,
+      "5,5": 5,
+      "5,6": 5,
+      "5,9": 2,
+      "5,10": 2,
+      "5,11": 2,
+      "5,12": 2,
+      "5,13": 2,
+      "5,14": 2,
+      "5,15": 2,
+      "5,16": 2,
+      "5,17": 2,
+      "5,18": 2,
+      "5,19": 2,
+      "5,20": 2,
+      "5,21": 2,
+      "5,22": 2,
+      "5,23": 2,
+      "5,24": 2,
+      "5,25": 2,
+      "5,26": 2,
+      "5,27": 2,
+      "5,28": 2,
+      "5,29": 2,
+      "5,30": 2,
+      "5,31": 2,
+      "5,32": 2,
+      "5,33": 2,
+      "5,34": 2,
+      "5,35": 2,
+      "5,36": 2,
+      "5,37": 2,
+      "5,38": 2,
+      "5,39": 2,
+      "5,40": 2,
+      "5,41": 2,
+      "5,42": 2,
+      "5,43": 2,
+      "5,44": 2,
+      "5,45": 2,
+      "5,46": 2,
+      "5,47": 2,
+      "5,48": 2,
+      "6,1": 7,
+      "6,2": 7,
+      "6,5": 7,
+      "6,8": 7,
+      "6,11": 7,
+      "6,14": 7,
+      "6,17": 7,
+      "6,20": 7,
+      "6,23": 7,
+      "6,26": 7,
+      "6,29": 7,
+      "6,32": 7,
+      "6,35": 7,
+      "6,38": 7,
+      "6,41": 7,
+      "6,44": 7,
+      "6,47": 7,
+      "6,50": 7,
+      "6,53": 7,
+      "6,56": 7,
+      "6,59": 7,
+      "6,62": 7,
+      "6,65": 7,
+      "6,68": 7,
+      "6,71": 7,
+      "6,74": 7,
+      "6,77": 7,
+      "6,80": 7,
+      "6,83": 7,
+      "6,86": 7,
+      "6,89": 7,
+      "6,92": 7,
+      "6,95": 7,
+      "6,97": 7,
+      "7,1": 7,
+      "7,2": 8,
+      "7,5": 7,
+      "7,8": 7,
+      "7,11": 7,
+      "7,14": 7,
+      "7,17": 7,
+      "7,20": 7,
+      "7,23": 7,
+      "7,26": 7,
+      "7,29": 7,
+      "7,32": 7,
+      "7,35": 7,
+      "7,38": 7,
+      "7,41": 7,
+      "7,44": 7,
+      "7,47": 7,
+      "7,50": 7,
+      "7,53": 7,
+      "7,56": 7,
+      "7,59": 7,
+      "7,62": 7,
+      "7,65": 7,
+      "7,68": 7,
+      "7,71": 7,
+      "7,74": 7,
+      "7,77": 7,
+      "7,80": 7,
+      "7,83": 7,
+      "7,86": 7,
+      "7,89": 7,
+      "7,92": 7,
+      "7,95": 7,
+      "7,97": 7,
+      "27,1": 9
+    },
+    "SheetStyle": {
+      "FontFamily": 1,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
+    }
+  },
+  "Spans": [
+    "2,2,1,7",
+    "2,9,3,46",
+    "4,2,1,5",
+    "6,2,1,3",
+    "6,5,1,3",
+    "6,8,1,3",
+    "6,11,1,3",
+    "6,14,1,3",
+    "6,17,1,3",
+    "6,20,1,3",
+    "6,23,1,3",
+    "6,26,1,3",
+    "6,29,1,3",
+    "6,32,1,3",
+    "6,35,1,3",
+    "6,38,1,3",
+    "6,41,1,3",
+    "6,44,1,3",
+    "6,47,1,3",
+    "6,50,1,3",
+    "6,53,1,3",
+    "6,56,1,3",
+    "6,59,1,3",
+    "6,62,1,3",
+    "6,65,1,3",
+    "6,68,1,3",
+    "6,71,1,3",
+    "6,74,1,3",
+    "6,77,1,3",
+    "6,80,1,3",
+    "6,83,1,3",
+    "6,86,1,3",
+    "6,89,1,3",
+    "6,92,1,3",
+    "6,95,1,2",
+    "6,97,1,2",
+    "7,2,1,3",
+    "7,5,1,3",
+    "7,8,1,3",
+    "7,11,1,3",
+    "7,14,1,3",
+    "7,17,1,3",
+    "7,20,1,3",
+    "7,23,1,3",
+    "7,26,1,3",
+    "7,29,1,3",
+    "7,32,1,3",
+    "7,35,1,3",
+    "7,38,1,3",
+    "7,41,1,3",
+    "7,44,1,3",
+    "7,47,1,3",
+    "7,50,1,3",
+    "7,53,1,3",
+    "7,56,1,3",
+    "7,59,1,3",
+    "7,62,1,3",
+    "7,65,1,3",
+    "7,68,1,3",
+    "7,71,1,3",
+    "7,74,1,3",
+    "7,77,1,3",
+    "7,80,1,3",
+    "7,83,1,3",
+    "7,86,1,3",
+    "7,89,1,3",
+    "7,92,1,3",
+    "7,95,1,2",
+    "7,97,1,2",
+    "8,1,19,98",
+    "27,1,1,40",
+    "27,42,1,3"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PageLoadedCommandList": [
+      {
+        "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+        "PropertyItemsList": [
+          {
+            "TargetCells": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=日期范围报告导入!C5"
+            },
+            "PropertyType": 0,
+            "Value": false
+          }
+        ],
+        "BreakpointIdentity": "8a091d14-c31e-43b3-8994-c00d3c704e93"
+      },
+      {
+        "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+        "PageName": "汇率调整hk",
+        "BreakpointIdentity": "1a3c91bf-912c-4199-887f-1a9846d76170"
+      }
+    ],
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//Fu08aCzCj3+5KBoRA+4LsCRMUSY3JtNapJ4xpSw1yQqs8KJuVtu0N59PkGr4N+3ot3LsQyLVPsrdLw2EiYOiz8uHzLSZ3GO/3LDG//foNpNA3kTYDwA72h2BDfPxmWnBfDDBw9qGMESEt0XCo5DpUfrjlyhGueiseiv8aaJo2QNR2tn5CFn0BlkVzwQWPbFcJdGI20gRcngCWuEEfNgxcB/7a461UqmnXrJAvuJGpbNXhu6CEqm1K/iTylIS0qjS7Trzt3u+4nc7x++MvxZ8S9bHnplO/RORuDr29V1kzItk9KYgA56/xkocrEvzhmYXSoYhBQ4EgrzGgk0eHqv4AjFRLkuQMKsBnY7zG7W4Rnt9CFqiEv5kj0lR4BnZ82hTrHG9q7VGZVW7ex9yjfOxoTGBZvhiKmjvr6p2PD4g5qpURamzznnN2Wni9zPNCurTUUIY1Zb7rR4pngXyBGgRSaqxS+hPsdbv30ZgXS/I06O+gX+SdwyJHf3WRFD5p6ZGWWBKbO45rNJwMAmowIash7WyBQT/CiR3T1mbo1AsdeU3pRVl8wBW+9NA1nZMJA7eNN1VKwL7LlZfou3X1jZY9HX3CpAjEYNK9DCPHtlGfMEzvTnokCeC8L8mGvPnsEVNhhT+vQJwfwQSlJe7HS6jnH4Nn8raCAzgu+38dW2bj/UAZlexwrbU+qyth8MmVppDos0WzuDqXlGG0rFtD5fxr8S7A9DeeHPhiAdTZeRByrRrGuDZVjxIGfaxXT7zcj2B+EcMDMuNd1ztucwOyYMGlVBd1t1iYrb8IXeWhF5dPRTn95pgsmaa+g/8nvwELtWNz2fAtZA4uw+OiEnvt3s0LZ5ptdXiN4y519M3W8diRuDdWf81vMHlaOPnxEvSs19VRX+KAt5j3JB+ZauLRIk/NA==|920

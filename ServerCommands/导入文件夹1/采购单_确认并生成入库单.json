@@ -1,0 +1,515 @@
+{
+  "$type": "Forguncy.SaveLoad.ServerCommandSaveData, ServerDesignerCommon",
+  "Name": "采购单_确认并生成入库单",
+  "Enabled": true,
+  "Triggers": {
+    "$type": "System.Collections.Generic.List`1[[Forguncy.SaveLoad.TriggerSaveDataBase, ServerDesignerCommon]], System.Private.CoreLib",
+    "$values": [
+      {
+        "$type": "Forguncy.SaveLoad.PostRequestTriggerSaveData, ServerDesignerCommon",
+        "Permission": {
+          "$type": "Forguncy.SaveLoad.ServerCommandPermissionSaveData, ServerDesignerCommon",
+          "PermissionData": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionData, Forguncy.RbacPermission.Core",
+            "permissionResource": {
+              "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionResource, Forguncy.RbacPermission.Core"
+            },
+            "permissionBindings": {
+              "$type": "System.Collections.Generic.List`1[[Forguncy.RbacPermission.Core.Impl.ServerCommand.IServerCommandPermissionBinding, Forguncy.RbacPermission.Core]], System.Private.CoreLib",
+              "$values": [
+                {
+                  "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionBinding, Forguncy.RbacPermission.Core",
+                  "roleNames": {
+                    "$type": "System.Collections.Generic.List`1[[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+                    "$values": [
+                      "FGC_LoginUser"
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "Parameters": {
+          "$type": "System.Collections.Generic.List`1[[Forguncy.SaveLoad.PostRequestParameterSaveData, ServerDesignerCommon]], System.Private.CoreLib",
+          "$values": [
+            {
+              "$type": "Forguncy.SaveLoad.PostRequestParameterSaveData, ServerDesignerCommon",
+              "Name": "采购单ID",
+              "DataValidationInfo": {
+                "$type": "Forguncy.SaveLoad.DataValidationInfoSaveData, ServerDesignerCommon"
+              },
+              "TestData": "1"
+            }
+          ]
+        },
+        "InvokeTriggerTestData": {
+          "$type": "Forguncy.SaveLoad.InvokeTriggerTestDataSaveData, ServerDesignerCommon",
+          "UserName": "Administrator"
+        }
+      }
+    ]
+  },
+  "Commands": {
+    "$type": "System.Collections.Generic.List`1[[GrapeCity.Forguncy.Commands.Command, Forguncy.Commands]], System.Private.CoreLib",
+    "$values": [
+      {
+        "$type": "Forguncy.Model.ServerTransactionCommand, ServerDesignerCommon",
+        "CommandList": {
+          "$type": "System.Collections.Generic.List`1[[GrapeCity.Forguncy.Commands.Command, Forguncy.Commands]], System.Private.CoreLib",
+          "$values": [
+            {
+              "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+              "ParameterName": "采购单入库条件",
+              "TableValue": {
+                "$type": "Forguncy.Model.Commands.ParameterTableValue, ServerDesignerCommon",
+                "TableName": "采购单",
+                "TableValueType": 1,
+                "BindingInfos": {
+                  "$type": "System.Collections.Generic.List`1[[Forguncy.Model.Commands.ParameterTableValueColumn, ServerDesignerCommon]], System.Private.CoreLib",
+                  "$values": [
+                    {
+                      "$type": "Forguncy.Model.Commands.ParameterTableValueColumn, ServerDesignerCommon",
+                      "GUID": "948749f0-2f02-443a-8f70-821a5cb1a081",
+                      "BindingInfo": {
+                        "$type": "ForguncyDataAccess.BindingInfo, ForguncyDataAccess",
+                        "TableName": "采购单",
+                        "ColumnName": "供应商ID",
+                        "GUID": "794444ec-f71f-4d3f-a3d3-861ee9e8695b"
+                      },
+                      "ColumnName": "供应商ID"
+                    },
+                    {
+                      "$type": "Forguncy.Model.Commands.ParameterTableValueColumn, ServerDesignerCommon",
+                      "GUID": "90024299-3c19-4675-b437-fa4daa2c73c1",
+                      "BindingInfo": {
+                        "$type": "ForguncyDataAccess.BindingInfo, ForguncyDataAccess",
+                        "TableName": "采购单",
+                        "ColumnName": "采购状态",
+                        "GUID": "bb264634-5fa1-4bf4-9873-fa1cb3f8bd01"
+                      },
+                      "ColumnName": "采购状态"
+                    },
+                    {
+                      "$type": "Forguncy.Model.Commands.ParameterTableValueColumn, ServerDesignerCommon",
+                      "GUID": "ac03d9c4-6501-4b3a-a6c4-10192aeb53a9",
+                      "BindingInfo": {
+                        "$type": "ForguncyDataAccess.BindingInfo, ForguncyDataAccess",
+                        "TableName": "采购单",
+                        "ColumnName": "详情条数",
+                        "GUID": "840261fd-29c0-43af-b574-dbbf757ab0bc"
+                      },
+                      "ColumnName": "详情条数"
+                    },
+                    {
+                      "$type": "Forguncy.Model.Commands.ParameterTableValueColumn, ServerDesignerCommon",
+                      "GUID": "b71f7837-8399-4117-89dc-253b4e2a457e",
+                      "BindingInfo": {
+                        "$type": "ForguncyDataAccess.BindingInfo, ForguncyDataAccess",
+                        "TableName": "采购单",
+                        "ColumnName": "默认入库单ID",
+                        "GUID": "eae554e9-4c54-4522-9ce6-81cd63f3a336"
+                      },
+                      "ColumnName": "默认入库单ID"
+                    },
+                    {
+                      "$type": "Forguncy.Model.Commands.ParameterTableValueColumn, ServerDesignerCommon",
+                      "GUID": "596f840e-0be0-4404-9d77-2c39d0b8de8e",
+                      "BindingInfo": {
+                        "$type": "ForguncyDataAccess.BindingInfo, ForguncyDataAccess",
+                        "TableName": "采购单",
+                        "ColumnName": "默认入库仓库ID",
+                        "GUID": "c2a21901-c6c2-4292-8f0b-3023ab251d6c"
+                      },
+                      "ColumnName": "默认入库仓库ID"
+                    },
+                    {
+                      "$type": "Forguncy.Model.Commands.ParameterTableValueColumn, ServerDesignerCommon",
+                      "GUID": "2a4e3b00-18a2-42ed-85b9-6a4a1373d7f7",
+                      "BindingInfo": {
+                        "$type": "ForguncyDataAccess.BindingInfo, ForguncyDataAccess",
+                        "TableName": "采购单",
+                        "ColumnName": "采购单号",
+                        "GUID": "0d3d6b46-b1b4-4c1f-9162-b02a03d8e79e"
+                      },
+                      "ColumnName": "采购单号"
+                    }
+                  ]
+                },
+                "SqlCondition": {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "$type": "ForguncyDataAccess.BindingInfo, ForguncyDataAccess",
+                    "TableName": "采购单",
+                    "ColumnName": "ID",
+                    "GUID": "a575d327-da32-499b-8361-a02997211713"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=采购单ID"
+                  }
+                }
+              },
+              "ID": "2152301814df4ec1b7518ea18ecf0895",
+              "BreakpointIdentity": "549ce9c9-883c-453d-a30f-f2fe116886a9"
+            },
+            {
+              "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+              "ConditionAndCommandPairList": {
+                "$type": "System.Collections.Generic.List`1[[Forguncy.Model.ConditionAndCommandPair, ServerDesignerCommon]], System.Private.CoreLib",
+                "$values": [
+                  {
+                    "$type": "Forguncy.Model.ConditionAndCommandPair, ServerDesignerCommon",
+                    "Condition": {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                        "ParamObject": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=采购单入库条件.默认入库单ID"
+                        }
+                      },
+                      "value": "%Null%"
+                    },
+                    "CommandList": {
+                      "$type": "System.Collections.Generic.List`1[[GrapeCity.Forguncy.Commands.Command, Forguncy.Commands]], System.Private.CoreLib",
+                      "$values": [
+                        {
+                          "$type": "Forguncy.Model.ReturnCommand, ServerDesignerCommon",
+                          "ErrorCode": "1",
+                          "Message": "已生成入库单（ID=xxx），请勿重复确认",
+                          "CustomReturns": {
+                            "$type": "System.Collections.Generic.List`1[[Forguncy.Model.CustomReturns, ServerDesignerCommon]], System.Private.CoreLib",
+                            "$values": [
+                              {
+                                "$type": "Forguncy.Model.CustomReturns, ServerDesignerCommon",
+                                "ReturnPropertyName": "生成的入库单ID"
+                              },
+                              {
+                                "$type": "Forguncy.Model.CustomReturns, ServerDesignerCommon",
+                                "ReturnPropertyName": "提示信息"
+                              }
+                            ]
+                          },
+                          "BreakpointIdentity": "5ed4f1aa-d496-4a58-9f17-701e0663e46a"
+                        }
+                      ]
+                    },
+                    "ID": "b42f559c-8669-4fbf-830a-42e56d6f258b"
+                  },
+                  {
+                    "$type": "Forguncy.Model.ConditionAndCommandPair, ServerDesignerCommon",
+                    "Condition": {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                        "ParamObject": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=采购单入库条件.供应商ID"
+                        }
+                      },
+                      "value": "%Null%"
+                    },
+                    "CommandList": {
+                      "$type": "System.Collections.Generic.List`1[[GrapeCity.Forguncy.Commands.Command, Forguncy.Commands]], System.Private.CoreLib",
+                      "$values": [
+                        {
+                          "$type": "Forguncy.Model.ReturnCommand, ServerDesignerCommon",
+                          "ErrorCode": "1",
+                          "Message": "请先选择供应商",
+                          "CustomReturns": {
+                            "$type": "System.Collections.Generic.List`1[[Forguncy.Model.CustomReturns, ServerDesignerCommon]], System.Private.CoreLib",
+                            "$values": [
+                              {
+                                "$type": "Forguncy.Model.CustomReturns, ServerDesignerCommon",
+                                "ReturnPropertyName": "生成的入库单ID"
+                              },
+                              {
+                                "$type": "Forguncy.Model.CustomReturns, ServerDesignerCommon",
+                                "ReturnPropertyName": "提示信息"
+                              }
+                            ]
+                          },
+                          "BreakpointIdentity": "a38efada-f3b8-4a32-8942-0e45ae807471"
+                        }
+                      ]
+                    },
+                    "ID": "e3f993a7-5bc1-46a3-8c51-bc61300a4b8c"
+                  },
+                  {
+                    "$type": "Forguncy.Model.ConditionAndCommandPair, ServerDesignerCommon",
+                    "Condition": {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                        "ParamObject": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=采购单入库条件.详情条数"
+                        }
+                      },
+                      "value": "0"
+                    },
+                    "CommandList": {
+                      "$type": "System.Collections.Generic.List`1[[GrapeCity.Forguncy.Commands.Command, Forguncy.Commands]], System.Private.CoreLib",
+                      "$values": [
+                        {
+                          "$type": "Forguncy.Model.ReturnCommand, ServerDesignerCommon",
+                          "ErrorCode": "1",
+                          "Message": "请先填写采购明细",
+                          "CustomReturns": {
+                            "$type": "System.Collections.Generic.List`1[[Forguncy.Model.CustomReturns, ServerDesignerCommon]], System.Private.CoreLib",
+                            "$values": [
+                              {
+                                "$type": "Forguncy.Model.CustomReturns, ServerDesignerCommon",
+                                "ReturnPropertyName": "生成的入库单ID"
+                              },
+                              {
+                                "$type": "Forguncy.Model.CustomReturns, ServerDesignerCommon",
+                                "ReturnPropertyName": "提示信息"
+                              }
+                            ]
+                          },
+                          "BreakpointIdentity": "21055119-a1ce-4379-acae-e3c5ef3e4dbf"
+                        }
+                      ]
+                    },
+                    "ID": "b6d76617-c7d5-46d5-8410-a6fb84b71b2f"
+                  },
+                  {
+                    "$type": "Forguncy.Model.ConditionAndCommandPair, ServerDesignerCommon",
+                    "CommandList": {
+                      "$type": "System.Collections.Generic.List`1[[GrapeCity.Forguncy.Commands.Command, Forguncy.Commands]], System.Private.CoreLib",
+                      "$values": [
+                        {
+                          "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                          "TableName": "采购入库单",
+                          "UpdateType": "add",
+                          "ShowConfirm": false,
+                          "UpdateBindingValues": {
+                            "$type": "System.Collections.Generic.List`1[[Forguncy.Model.UpdateBindingValueItem, ServerDesignerCommon]], System.Private.CoreLib",
+                            "$values": [
+                              {
+                                "$type": "Forguncy.Model.UpdateBindingValueItem, ServerDesignerCommon",
+                                "BindingInfo": {
+                                  "$type": "ForguncyDataAccess.BindingInfo, ForguncyDataAccess",
+                                  "TableName": "采购入库单",
+                                  "ColumnName": "采购单ID",
+                                  "GUID": "9957e7f2-05af-453a-9165-5c38a66af572"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=采购单ID"
+                                }
+                              },
+                              {
+                                "$type": "Forguncy.Model.UpdateBindingValueItem, ServerDesignerCommon",
+                                "BindingInfo": {
+                                  "$type": "ForguncyDataAccess.BindingInfo, ForguncyDataAccess",
+                                  "TableName": "采购入库单",
+                                  "ColumnName": "入库日期",
+                                  "GUID": "37e35759-5574-458e-87da-87025b310f37"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=TODAY()"
+                                }
+                              },
+                              {
+                                "$type": "Forguncy.Model.UpdateBindingValueItem, ServerDesignerCommon",
+                                "BindingInfo": {
+                                  "$type": "ForguncyDataAccess.BindingInfo, ForguncyDataAccess",
+                                  "TableName": "采购入库单",
+                                  "ColumnName": "仓库ID",
+                                  "GUID": "d7f4f218-7293-4ce3-b218-26870eb33c39"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=采购单入库条件.默认入库单ID"
+                                }
+                              },
+                              {
+                                "$type": "Forguncy.Model.UpdateBindingValueItem, ServerDesignerCommon",
+                                "BindingInfo": {
+                                  "$type": "ForguncyDataAccess.BindingInfo, ForguncyDataAccess",
+                                  "TableName": "采购入库单",
+                                  "ColumnName": "入库类型",
+                                  "GUID": "ad1d3d6f-25f6-411a-9402-bd13bc8cc65c"
+                                },
+                                "Value": "采购入库"
+                              },
+                              {
+                                "$type": "Forguncy.Model.UpdateBindingValueItem, ServerDesignerCommon",
+                                "BindingInfo": {
+                                  "$type": "ForguncyDataAccess.BindingInfo, ForguncyDataAccess",
+                                  "TableName": "采购入库单",
+                                  "ColumnName": "入库状态",
+                                  "GUID": "bdedcf16-80b2-4f05-b41d-8ba01e0db3e2"
+                                },
+                                "Value": "草稿"
+                              },
+                              {
+                                "$type": "Forguncy.Model.UpdateBindingValueItem, ServerDesignerCommon",
+                                "BindingInfo": {
+                                  "$type": "ForguncyDataAccess.BindingInfo, ForguncyDataAccess",
+                                  "TableName": "采购入库单",
+                                  "ColumnName": "备注",
+                                  "GUID": "629f0d88-03e5-4dd6-8878-53d8f51113d7"
+                                },
+                                "Value": "采购确认自动生成"
+                              }
+                            ]
+                          },
+                          "BreakpointIdentity": "71cc13ea-d24b-4877-a6e9-f18be46dc144"
+                        },
+                        {
+                          "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                          "ParameterName": "新入库单ID",
+                          "TableValue": {
+                            "$type": "Forguncy.Model.Commands.ParameterTableValue, ServerDesignerCommon",
+                            "TableName": "采购入库单",
+                            "TableValueType": 1,
+                            "BindingInfos": {
+                              "$type": "System.Collections.Generic.List`1[[Forguncy.Model.Commands.ParameterTableValueColumn, ServerDesignerCommon]], System.Private.CoreLib",
+                              "$values": [
+                                {
+                                  "$type": "Forguncy.Model.Commands.ParameterTableValueColumn, ServerDesignerCommon",
+                                  "GUID": "2b3616c3-ac4c-47a4-88e4-dc5e0774a992",
+                                  "BindingInfo": {
+                                    "$type": "ForguncyDataAccess.BindingInfo, ForguncyDataAccess",
+                                    "TableName": "采购入库单",
+                                    "ColumnName": "ID",
+                                    "GUID": "c770b6b0-0c09-4666-9ecd-4b8adf8449f2"
+                                  },
+                                  "ColumnName": "新入库单ID"
+                                }
+                              ]
+                            },
+                            "SqlCondition": {
+                              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                              "ColumnBindingInfo": {
+                                "$type": "ForguncyDataAccess.BindingInfo, ForguncyDataAccess",
+                                "TableName": "采购入库单",
+                                "ColumnName": "ID",
+                                "GUID": "2f809bd0-328b-4a5c-a0c8-af1a4af49a16"
+                              },
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=采购单入库条件.默认入库单ID"
+                              }
+                            }
+                          },
+                          "ID": "e1b7e8dd1e0c461494699132c88f9590",
+                          "BreakpointIdentity": "5acab92d-d0c9-48b6-9751-14214afe35db"
+                        },
+                        {
+                          "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                          "TableName": "采购单",
+                          "ShowConfirm": false,
+                          "RowsToUpdate": 1,
+                          "RowsToUpdateCondition": {
+                            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                            "ColumnBindingInfo": {
+                              "$type": "ForguncyDataAccess.BindingInfo, ForguncyDataAccess",
+                              "TableName": "采购单",
+                              "ColumnName": "ID",
+                              "GUID": "434d424a-0d3c-455d-a9c7-3eed7bc6a835"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=采购单ID"
+                            }
+                          },
+                          "UpdateBindingValues": {
+                            "$type": "System.Collections.Generic.List`1[[Forguncy.Model.UpdateBindingValueItem, ServerDesignerCommon]], System.Private.CoreLib",
+                            "$values": [
+                              {
+                                "$type": "Forguncy.Model.UpdateBindingValueItem, ServerDesignerCommon",
+                                "BindingInfo": {
+                                  "$type": "ForguncyDataAccess.BindingInfo, ForguncyDataAccess",
+                                  "TableName": "采购单",
+                                  "ColumnName": "采购状态",
+                                  "GUID": "99738310-fd3c-4a87-bd69-ca32656ef07e"
+                                },
+                                "Value": "已确认"
+                              },
+                              {
+                                "$type": "Forguncy.Model.UpdateBindingValueItem, ServerDesignerCommon",
+                                "BindingInfo": {
+                                  "$type": "ForguncyDataAccess.BindingInfo, ForguncyDataAccess",
+                                  "TableName": "采购单",
+                                  "ColumnName": "默认入库单ID",
+                                  "GUID": "ce825d0d-3da1-4dc8-91ee-6569a7ae4e85"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=新入库单ID"
+                                }
+                              },
+                              {
+                                "$type": "Forguncy.Model.UpdateBindingValueItem, ServerDesignerCommon",
+                                "BindingInfo": {
+                                  "$type": "ForguncyDataAccess.BindingInfo, ForguncyDataAccess",
+                                  "TableName": "采购单",
+                                  "ColumnName": "确认时间",
+                                  "GUID": "52089c6d-db28-4563-835e-c3630ba2ef81"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=NOW()"
+                                }
+                              }
+                            ]
+                          },
+                          "BreakpointIdentity": "3435d862-d2a7-4007-947e-8220b74bed1e"
+                        },
+                        {
+                          "$type": "Forguncy.Model.ReturnCommand, ServerDesignerCommon",
+                          "ErrorCode": "200",
+                          "Message": "已确认采购单，并生成入库单：{入库单号/入库单ID}",
+                          "CustomReturns": {
+                            "$type": "System.Collections.Generic.List`1[[Forguncy.Model.CustomReturns, ServerDesignerCommon]], System.Private.CoreLib",
+                            "$values": [
+                              {
+                                "$type": "Forguncy.Model.CustomReturns, ServerDesignerCommon",
+                                "ReturnPropertyName": "生成的入库单ID",
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=新入库单ID"
+                                }
+                              },
+                              {
+                                "$type": "Forguncy.Model.CustomReturns, ServerDesignerCommon",
+                                "ReturnPropertyName": "提示信息"
+                              }
+                            ]
+                          },
+                          "BreakpointIdentity": "7ae8d396-666c-4c98-84cc-da3777e9c3b3"
+                        }
+                      ]
+                    },
+                    "ID": "007b09bf-a275-4c9d-ad11-38916bd85707"
+                  }
+                ]
+              },
+              "BreakpointIdentity": "9e61cbe2-7a05-4e6e-84c5-957021e9eaaa"
+            }
+          ]
+        },
+        "BreakpointIdentity": "e7977963-f3f5-41b9-879d-81c332c0d881"
+      }
+    ]
+  },
+  "ReturnProperties": {
+    "$type": "System.Collections.Generic.List`1[[Forguncy.SaveLoad.ReturnPropertySaveData, ServerDesignerCommon]], System.Private.CoreLib",
+    "$values": [
+      {
+        "$type": "Forguncy.SaveLoad.ReturnPropertySaveData, ServerDesignerCommon",
+        "Name": "生成的入库单ID"
+      },
+      {
+        "$type": "Forguncy.SaveLoad.ReturnPropertySaveData, ServerDesignerCommon",
+        "Name": "提示信息"
+      }
+    ]
+  }
+}

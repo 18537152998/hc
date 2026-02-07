@@ -1,0 +1,286 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 50.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      3,
+      29,
+      30,
+      31
+    ],
+    "Count": 32
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 48.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 48.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 62.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 62.0
+        }
+      }
+    },
+    "Count": 12,
+    "DefaultSize": 85.0
+  },
+  "Values": {
+    "0,0": "申报要素",
+    "1,0": "单位名称：",
+    "2,0": "贸易方式：",
+    "2,1": "一般贸易",
+    "2,7": "包装方式：",
+    "2,8": "纸箱",
+    "3,0": "申报海关："
+  },
+  "AttachInfos": {
+    "1,1": {
+      "BindingInfo": {
+        "TableName": "FBA发货表3",
+        "ColumnName": "平台",
+        "GUID": "d172c36f-9c94-451a-94cf-f85208c69db0",
+        "RelationBinding": {
+          "RelatedTable": "正报账户信息",
+          "RelatedColumn": "账户",
+          "DisplayColumn": "境内发货人中文"
+        }
+      }
+    },
+    "5,0": {
+      "CellType": {
+        "$type": "Forguncy.RepeaterCellType, ServerDesignerCommon",
+        "TemplatePageName": "ae7fa0d100a4476b82dfa3974cdb6e8",
+        "ListviewName": "表格1",
+        "DisplayMode": 2,
+        "TemplateKey": "_RS_Selectable"
+      }
+    },
+    "29,0": {
+      "ListViewInfo": {
+        "Name": "表格1",
+        "TableName": "FBA发货详情表",
+        "RowIndex": 29,
+        "RowCount": 2,
+        "ColumnCount": 12,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+          "CompareType": 8,
+          "ColumnBindingInfo": {
+            "TableName": "FBA发货详情表",
+            "ColumnName": "FBA发货表ID",
+            "GUID": "854795d7-694e-4be2-879e-19bae737a895"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=申报要素!A32"
+          }
+        },
+        "NullFormulaValueQueryPolicy": 0,
+        "TopCondition": null,
+        "ListViewStyleName": "样式1",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "30,4": {
+      "NameUsedInJavaScript": "申报要素",
+      "BindingInfo": {
+        "TableName": "FBA发货详情表",
+        "ColumnName": "发货识别码",
+        "GUID": "4fae888a-8b57-47a9-9766-9f36edfa2f35",
+        "RelationBinding": {
+          "RelatedTable": "正报信息表",
+          "RelatedColumn": "识别码",
+          "DisplayColumn": "申报要素"
+        }
+      }
+    },
+    "30,5": {
+      "BindingInfo": {
+        "TableName": "FBA发货详情表",
+        "ColumnName": "不重复",
+        "GUID": "d4ff7dff-c9ed-4e49-9e0a-7ad426b34b68"
+      }
+    },
+    "31,0": {
+      "BindingInfo": {
+        "TableName": "FBA发货表3",
+        "ColumnName": "合并报关ID",
+        "GUID": "e564bb04-37a5-4134-89c9-e94124ebd0d6"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Formatter": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "HorizontalAlignment": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Foreground": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 3,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": null,
+        "FontSize": 24.0,
+        "FontWeight": 4,
+        "HorizontalAlignment": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": null,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 2,
+        "Foreground": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "[AUTO]General",
+        "Center",
+        "Background 1 0",
+        "Body",
+        "Bold"
+      ]
+    },
+    "CellStyles": {
+      "0,0": 0,
+      "1,0": 0,
+      "1,1": 0,
+      "2,0": 0,
+      "3,0": 0,
+      "5,0": 1,
+      "30,0": 2,
+      "30,4": 2,
+      "30,10": 3,
+      "31,0": 2
+    },
+    "RowStyles": {
+      "0": 4,
+      "1": 5,
+      "2": 5,
+      "28": 2,
+      "29": 6,
+      "30": 7,
+      "31": 7
+    },
+    "SheetStyle": {
+      "FontFamily": 3,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
+    }
+  },
+  "Spans": [
+    "0,0,1,12",
+    "1,1,1,8",
+    "2,1,1,2",
+    "2,3,1,2",
+    "2,5,1,2",
+    "2,8,1,4",
+    "3,1,1,2",
+    "5,0,23,12"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "Pictures": [
+    {
+      "Name": "b8202d05-bde8-4801-a280-94f9df333fc6",
+      "ForguncyPictureName": "维山章.png",
+      "ForguncyPictureSourceType": 0,
+      "Stretch": 2,
+      "Location": "331,37",
+      "Size": "189.12037658691406,132.4802703857422"
+    }
+  ]
+}//a0rRqFdY95KjQ9gnLc8Bjafia9KWiiVhISuwAISPjSwe9xB1sBEN6FFOYfVaQ8qDtddwaEtWrkJZ0MVl5s6PXV6vLqMGBtF//C/s33Xj11NYa8eEgQSfQsjJK41sAOdVbF/mqHUHZwJGwPPBR/lahYbWX2WmPYo4Xfz3cMl4oDzstzvXYYf1UAGZnVYanHIepK3JlmSfAcf6j4LdJZlCJS4eMD9QBT8HdP2lMdsyW2RZ2RX2f2kRTlh+WnRdeRLXiPGrMsB3n2qBpq49o9X0JYFC82o4sBJwzQ1LcIlw0RiAh8ghgoeL43BA784SC7LYHdUvFihxu0yZDGFEnRwf4ir4ohqnj9ZUryxzAteIcMio+5qWeR/qO6l85rCwfCo4uBsSthoag/UvjEJ3jKnY6DNpeN+JuQa67ofUZTotRYS/rzNljeqxZk+aCjMOS5hBx3BYVQBhFyEy6MzKNe6CMZhkNwNaG6/GKhwQVKwhtU4T9+waaZx+hiujH0pVMPtdoI45e2cLIvy29dY3kY9eq8Z/WRVp306tgLgBgYd8ekM1hPPYANdhRj76SdP1YYKVy9ORiWdWYP/Wn5wWn8331i7lr8v++mLa23+kdrxCPVpsjwq+4uOuFGtblNRgKKQ5saoUTyyVUXUPMZMHPh5iTIomjjv6YENrI7ViXkqqE3QTvzWOkZ7FuzWQ9FID4NCXQkSMLzzzeAm2Zv2Z6Iaciwxs5BVcuWPtZZsy1bjaB/bfbivp6YMnTNom6m4vdAMJ/DEYn6h6P4cySeVXfceF14VOEk1V3hzE6nQnZnUK+ZqJsiKR4kFpB7O9TaCY2oYno1h6CG9Q7w5tXnf3Jww7QAHfNQQj1CODkUhrN32exFOBNXsdHnWu1s326lpy2YV3d/YBqzjalrRm0i591020yA==|920

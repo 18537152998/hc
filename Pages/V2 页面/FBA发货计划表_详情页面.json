@@ -1,0 +1,425 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "17": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 40.0
+        }
+      },
+      "18": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 48.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "30": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 32.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      }
+    },
+    "Count": 33,
+    "DefaultSize": 32.0
+  },
+  "Cols": {
+    "Count": 31,
+    "DefaultSize": 32.0
+  },
+  "Values": {
+    "1,1": "FBA发货计划表信息",
+    "3,1": "计划编号",
+    "3,17": "账户",
+    "6,1": "站点",
+    "6,17": "计划状态",
+    "9,1": "计划类型",
+    "9,17": "预计发货仓库",
+    "12,1": "预计发货日期",
+    "12,17": "备注",
+    "15,1": "FBA发货计划明细表信息",
+    "31,5": "取消"
+  },
+  "AttachInfos": {
+    "4,1": {
+      "BindingInfo": {
+        "TableName": "FBA发货计划表",
+        "ColumnName": "亚马逊货件编号",
+        "GUID": "db3f8600-958c-4b5d-a8ff-bf1da227ebc1"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "4,17": {
+      "BindingInfo": {
+        "TableName": "FBA发货计划表",
+        "ColumnName": "发货地址",
+        "GUID": "6428eb5d-4a58-4172-be28-9f1dc3e367b5"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "7,1": {
+      "BindingInfo": {
+        "TableName": "FBA发货计划表",
+        "ColumnName": "发货数量",
+        "GUID": "0c081b34-05ab-445d-91ee-47e40201199f"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "7,17": {
+      "BindingInfo": {
+        "TableName": "FBA发货计划表",
+        "ColumnName": "计划状态",
+        "GUID": "65d99c1b-156f-4535-bba7-7d5bd4ee773f"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "10,1": {
+      "BindingInfo": {
+        "TableName": "FBA发货计划表",
+        "ColumnName": "计划类型",
+        "GUID": "a08eab06-26c5-4eaa-8ce6-03b431a006f6"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "10,17": {
+      "BindingInfo": {
+        "TableName": "FBA发货计划表",
+        "ColumnName": "预计发货仓库",
+        "GUID": "babf5b48-b6b2-4350-acd4-fab19483841b"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "13,1": {
+      "BindingInfo": {
+        "TableName": "FBA发货计划表",
+        "ColumnName": "发货日期",
+        "GUID": "d84194f8-3e8e-4a83-80f7-1d4452a36fa5"
+      },
+      "CellType": {
+        "$type": "Forguncy.DateCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "13,17": {
+      "BindingInfo": {
+        "TableName": "FBA发货计划表",
+        "ColumnName": "备注",
+        "GUID": "cd26820e-f353-426a-9b0f-d0725b96aaa4"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "17,1": {
+      "ListViewInfo": {
+        "Name": "表格1",
+        "TableName": "FBA发货计划明细表",
+        "RowIndex": 17,
+        "ColumnIndex": 1,
+        "RowCount": 12,
+        "ColumnCount": 13,
+        "DetailListViewInfo": {
+          "ColumnOfDetailTable": "FBA发货计划表_ID",
+          "MasterTable": "FBA发货计划表",
+          "ColumnOfMasterTable": "ID",
+          "DataCommitType": 2
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_NewFashionListStyle2",
+        "ShowColumnHeaderInDesigner": true,
+        "IsRowHeaderVisible": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "AllowEditInListview": true,
+        "AllowAddNewRow": true,
+        "ShowDeleteButton": true,
+        "AllowDragFill": true,
+        "AllowDragMove": true,
+        "ColumnOperation": 2,
+        "CommitType": 1
+      }
+    },
+    "18,2": {
+      "NameUsedInJavaScript": "ID",
+      "BindingInfo": {
+        "TableName": "FBA发货计划明细表",
+        "ColumnName": "ID",
+        "GUID": "66e4891d-d72f-4f24-a8d5-5d095514eea0"
+      }
+    },
+    "18,5": {
+      "NameUsedInJavaScript": "公司产品ID",
+      "BindingInfo": {
+        "TableName": "FBA发货计划明细表",
+        "ColumnName": "公司产品ID",
+        "GUID": "ce218a3c-ce78-442e-8042-4a2c4d87b0d7"
+      }
+    },
+    "18,8": {
+      "NameUsedInJavaScript": "SKU",
+      "BindingInfo": {
+        "TableName": "FBA发货计划明细表",
+        "ColumnName": "SKU",
+        "GUID": "47dca5aa-3b6b-4821-8b21-b8b33703bca8"
+      }
+    },
+    "18,11": {
+      "NameUsedInJavaScript": "计划发货数量",
+      "BindingInfo": {
+        "TableName": "FBA发货计划明细表",
+        "ColumnName": "计划发货数量",
+        "GUID": "a388ffbe-c493-4f97-b823-73f7451d56b0"
+      }
+    },
+    "31,1": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=FBA发货计划表_详情页面!B32"
+                      }
+                    ]
+                  },
+                  "value": "添加"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "FBA发货计划表",
+                    "UpdateType": "add",
+                    "BreakpointIdentity": "d94c11e9-b877-4170-9741-e6bb812ff14c"
+                  }
+                ],
+                "ID": "ebd1df64-51bb-40de-9df3-8e60c1e04290"
+              },
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=FBA发货计划表_详情页面!B32"
+                      }
+                    ]
+                  },
+                  "value": "更改"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "FBA发货计划表",
+                    "BreakpointIdentity": "175064a7-63bd-4419-8ea9-93b3e0b3be01"
+                  }
+                ],
+                "ID": "2289dc91-e390-47d1-9d41-fe45722a1b62"
+              }
+            ],
+            "BreakpointIdentity": "a328dbbf-1fdf-49e7-b941-d3ab0a76c3db"
+          },
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "NavigateType": "back",
+            "BreakpointIdentity": "ec02c415-920a-417a-96fd-e98b7da26754"
+          }
+        ],
+        "TemplateKey": "_RS_Main1"
+      }
+    },
+    "31,5": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "NavigateType": "back",
+            "BreakpointIdentity": "c1dec0a4-0a19-43ab-ab42-f0c375a72497"
+          }
+        ],
+        "Text": "取消",
+        "TemplateKey": "_RS_Minor3"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontSize": 16.0,
+        "FontWeight": 0,
+        "TextIndent": 10,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "Formatter": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Bold",
+        "#1890FF",
+        "@",
+        "Body"
+      ],
+      "Borders": [
+        {
+          "Style": 5,
+          "Color": 1
+        }
+      ]
+    },
+    "CellStyles": {
+      "1,1": 0,
+      "4,1": 1,
+      "4,17": 1,
+      "7,1": 1,
+      "7,17": 1,
+      "10,1": 1,
+      "10,17": 1,
+      "13,17": 1,
+      "15,1": 0
+    },
+    "SheetStyle": {
+      "FontFamily": 3,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
+    }
+  },
+  "Spans": [
+    "1,1,1,6",
+    "3,1,1,6",
+    "3,17,1,6",
+    "4,1,1,13",
+    "4,17,1,13",
+    "6,1,1,6",
+    "6,17,1,6",
+    "7,1,1,13",
+    "7,17,1,13",
+    "9,1,1,6",
+    "9,17,1,6",
+    "10,1,1,13",
+    "10,17,1,13",
+    "12,1,1,6",
+    "12,17,1,6",
+    "13,1,1,13",
+    "13,17,1,13",
+    "15,1,1,6",
+    "17,2,1,3",
+    "17,5,1,3",
+    "17,8,1,3",
+    "17,11,1,3",
+    "18,2,1,3",
+    "18,5,1,3",
+    "18,8,1,3",
+    "18,11,1,3",
+    "19,1,10,13",
+    "31,1,1,3",
+    "31,5,1,3"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "ShouldCheckDirty": true,
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//w0JrJgy3QwoZqK+WZUhqxFGFVdo9cEV2nsoxIJ+K5S4qPHviMNpxr4az0ic8UNjvf+sJ9I8ALDrBP5bBJPIXHDyrpt2WQIQQEKZc05jF2jiqhDdbdw7a0M4pwhmGRclk2NUXHWFw2/jPJs7HtgjNxDCsVOTHKWCTH7mRIL2UQL0OGzPvadgg2T8t5iBfwTBhu+uA8CyNaPQpahwAKiFny2e4/y7W+leuGGe9hIwYDn33eEt6WtlUmQptvkahX9C2JdKJtQ6CYgRSSksTa20VS05/eMz98ZoS5PY/RkRl315G6l1WUg5qg67DJlOfGxNMb0UPLBMzzQTNk+RQCDrZ20r7AqriZvX6wZsklt8BbKF0pnfyMaejZBwo9tJGcNK5WRDlmVaAU+fJyMl0AEd8C27a8J+Q4RjBF/2mIBCbZzC9wsQFw2GBQ0QulrMgB1247cwRKTERE/p+tH3GSqcsCUK3x1FEIqNIx0kG4B4GK4SezLodaXaPVK9IlAPSCkziSkUwQYFiKwM9pOuzE8yiFHnu0s9+GOGKAN7+E9lideDDbc1cBCDbeDa9BIzeAZ7xQpDQ+gUPIyZeBShuWHJFAblGnf54+Rfymq9ZCtk83y0KwKOknBdLrgUfoxCtEwSqNn9jNks9yHYkxeL5aV8Tak62l6QqSotpO7yb8mXPxxfjfSaChr2tulNOF+L3UIkKUh9wpEjbSZfjtduXGHhYgJsEd1bpk0g1VLZebNV4kR+4eTqxVd8HWXK9rw3RVAZNlW6/gOobrG7Pca5mBRbZZa8x3EVDsfjRiYC3XwMQupDDAEaFVj8IO0GETUsgfN8wpXVNNUckOAGQsxLIs/AcmBbdyUQ5s0X81bFn/ljze72KkzBrDcmiHV2m29l2VrSwfmh6sObU726HTMMqsib9fA==|920

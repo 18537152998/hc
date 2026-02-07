@@ -1,0 +1,935 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 34.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 27.0
+        }
+      },
+      "15": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 23.0
+        }
+      },
+      "16": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "19": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "21": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 22.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      0
+    ],
+    "Count": 23
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "37": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      35,
+      36
+    ],
+    "Count": 38,
+    "DefaultSize": 24.0
+  },
+  "Values": {
+    "2,1": "开票通知",
+    "4,1": "    感谢您对我司工作的支持与帮助！以下的开票资料系我司根据您所申报的采购信息所制作，请您结合实际采购情况核实确认相关开票信息后，通知销售单位按照实际采购信息开具发票。",
+    "8,1": "购货单位名称：",
+    "9,1": "纳税人识别号：",
+    "10,1": "开票地址：",
+    "11,1": "请核对开票抬头！",
+    "12,1": "销售方：",
+    "13,1": "合同号码：",
+    "14,1": "请结合您的实际采购情况确认，是否按以下信息开票：",
+    "15,14": "开票数量",
+    "15,22": "税点",
+    "15,26": "价税合计",
+    "15,31": "备注",
+    "18,1": "合计",
+    "19,1": "注意：请在增值税发票的右下角备注栏处备注：",
+    "20,1": "同时备注送货单上的送货时间，如果送货时间不一致，需要分开开具发票"
+  },
+  "Formulas": {
+    "18,26": "SUM(AA17)",
+    "16,22": "IF(AJ17=\"\",AK17,AJ17)"
+  },
+  "AttachInfos": {
+    "0,0": {
+      "BindingInfo": {
+        "TableName": "正报退税汇总表_子表",
+        "ColumnName": "合同号_供应商",
+        "GUID": "53df073a-732c-44ba-b129-d401d6d36ba5"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "0,4": {
+      "BindingInfo": {
+        "TableName": "正报退税汇总表",
+        "ColumnName": "ID",
+        "GUID": "d93af8f4-305f-4b92-9fd7-4891fee28bdd"
+      }
+    },
+    "0,5": {
+      "BindingInfo": {
+        "TableName": "正报退税汇总表_子表",
+        "ColumnName": "ID",
+        "GUID": "4c190d40-a089-4655-b21e-e48b38efe6e4"
+      }
+    },
+    "2,1": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ExportPageToExcelCommand, ServerDesignerCommon",
+            "ExportExcelPageNameMode": 2,
+            "BreakpointIdentity": "51c129cf-ab85-4f10-8431-a85ec3b26fe1",
+            "NewOtherName": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=\"开票通知—\"&开票通知页!H13&开票通知页!H14"
+            },
+            "IsOnlyExportValue": true
+          }
+        ],
+        "Text": "开票通知",
+        "ClickMode": 1,
+        "TemplateKey": "_RS_Main"
+      }
+    },
+    "8,7": {
+      "BindingInfo": {
+        "TableName": "正报退税汇总表_子表",
+        "ColumnName": "正报退税汇总表_ID",
+        "GUID": "c35ac062-b448-40b0-a528-015e47dfcfac",
+        "RelationBinding": {
+          "RelatedTable": "正报退税汇总表",
+          "RelatedColumn": "ID",
+          "DisplayColumn": "报关抬头"
+        }
+      }
+    },
+    "9,7": {
+      "BindingInfo": {
+        "TableName": "正报退税汇总表_子表",
+        "ColumnName": "正报退税汇总表_ID",
+        "GUID": "62866cbb-d37f-4399-9a3c-a5dc54b5a107",
+        "RelationBinding": {
+          "RelatedTable": "正报退税汇总表",
+          "RelatedColumn": "ID",
+          "DisplayColumn": "报关抬头"
+        }
+      }
+    },
+    "10,7": {
+      "BindingInfo": {
+        "TableName": "正报退税汇总表_子表",
+        "ColumnName": "正报退税汇总表_ID",
+        "GUID": "1de0851f-ebba-48b7-b606-1b2b996e4fdc",
+        "RelationBinding": {
+          "RelatedTable": "正报退税汇总表",
+          "RelatedColumn": "ID",
+          "DisplayColumn": "报关抬头"
+        }
+      }
+    },
+    "12,7": {
+      "BindingInfo": {
+        "TableName": "正报退税汇总表_子表",
+        "ColumnName": "供应商",
+        "GUID": "ffdc450f-3969-4f1d-b0bf-8f1c0a0a7883"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewUnderline"
+      }
+    },
+    "13,7": {
+      "BindingInfo": {
+        "TableName": "正报退税汇总表_子表",
+        "ColumnName": "正报退税汇总表_ID",
+        "GUID": "6e2195a8-924f-4c9b-87ca-11109c9bb70f",
+        "RelationBinding": {
+          "RelatedTable": "正报退税汇总表",
+          "RelatedColumn": "ID",
+          "DisplayColumn": "合同号"
+        }
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewUnderline"
+      }
+    },
+    "15,1": {
+      "ListViewInfo": {
+        "Name": "表格1",
+        "TableName": "正报退税汇总表_子表",
+        "RowIndex": 15,
+        "ColumnIndex": 1,
+        "RowCount": 3,
+        "ColumnCount": 36,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "正报退税汇总表_子表",
+            "ColumnName": "合同号_供应商",
+            "GUID": "80195e35-fcce-427a-a1ec-344fe3505378"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=开票通知页!A1"
+          }
+        },
+        "NullFormulaValueQueryPolicy": 0,
+        "TopCondition": null,
+        "ListViewStyleName": "样式9",
+        "ShowColumnHeaderInDesigner": true,
+        "IsRowHeaderVisible": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2,
+        "CommitType": 1
+      }
+    },
+    "16,3": {
+      "BindingInfo": {
+        "TableName": "正报退税汇总表_子表",
+        "ColumnName": "开票品名",
+        "GUID": "c01c56cf-967c-4a66-a28d-d261ae548d8d"
+      }
+    },
+    "16,10": {
+      "BindingInfo": {
+        "TableName": "正报退税汇总表_子表",
+        "ColumnName": "开票型号",
+        "GUID": "7c4e7cb8-f7d1-4276-9e6f-8b6678caf791"
+      }
+    },
+    "16,14": {
+      "BindingInfo": {
+        "TableName": "正报退税汇总表_子表",
+        "ColumnName": "总产品数",
+        "GUID": "3444a39e-67c9-4894-8c0e-6e31a0507375"
+      }
+    },
+    "16,18": {
+      "BindingInfo": {
+        "TableName": "正报退税汇总表_子表",
+        "ColumnName": "成交单位",
+        "GUID": "0ac6675e-0f7c-4e1e-b4a4-bf0339edd786"
+      }
+    },
+    "16,26": {
+      "BindingInfo": {
+        "TableName": "正报退税汇总表_子表",
+        "ColumnName": "汇总采购总价",
+        "GUID": "6189950b-23ac-45d9-948b-bdab5297aeb5"
+      }
+    },
+    "16,31": {
+      "BindingInfo": {
+        "TableName": "正报退税汇总表_子表",
+        "ColumnName": "合并入库码ID",
+        "GUID": "c59bd680-3ed0-4110-bb28-3ed0b608295a"
+      }
+    },
+    "16,35": {
+      "BindingInfo": {
+        "TableName": "正报退税汇总表_子表",
+        "ColumnName": "发货识别码",
+        "GUID": "2cf1e9fc-ff2d-4e7e-9953-1538e63299c7",
+        "RelationBinding": {
+          "RelatedTable": "正报信息表",
+          "RelatedColumn": "识别码",
+          "DisplayColumn": "普票税点"
+        }
+      }
+    },
+    "16,36": {
+      "BindingInfo": {
+        "TableName": "正报退税汇总表_子表",
+        "ColumnName": "发货识别码",
+        "GUID": "cb6967e4-142a-4ee0-a255-ea3964439236",
+        "RelationBinding": {
+          "RelatedTable": "正报信息表",
+          "RelatedColumn": "识别码",
+          "DisplayColumn": "专票税点"
+        }
+      }
+    },
+    "19,16": {
+      "BindingInfo": {
+        "TableName": "正报退税汇总表_子表",
+        "ColumnName": "正报退税汇总表_ID",
+        "GUID": "d26f84ac-0453-4549-b25f-01871c875c90",
+        "RelationBinding": {
+          "RelatedTable": "正报退税汇总表",
+          "RelatedColumn": "ID",
+          "DisplayColumn": "合同号"
+        }
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewUnderline"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Background": 0,
+        "Formatter": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontWeight": 3,
+        "Foreground": 4,
+        "Formatter": 5,
+        "HorizontalAlignment": 6,
+        "Underline": false,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Formatter": 5,
+        "WordWrap": true,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Formatter": 5,
+        "WordWrap": true
+      },
+      {
+        "FontWeight": 3,
+        "Formatter": 5,
+        "HorizontalAlignment": 7,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 8,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 8,
+        "VerticalAlignment": 9,
+        "WordWrap": true,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontSize": 14.666666666666666,
+        "Foreground": 10,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Formatter": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 8,
+        "Formatter": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Formatter": 5,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Formatter": 5,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "Formatter": 5,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": null,
+        "BorderRight": 0
+      },
+      {
+        "Formatter": 5,
+        "BorderBottom": 0,
+        "BorderTop": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": 0
+      },
+      {
+        "Background": 12,
+        "Foreground": 12,
+        "Formatter": 5,
+        "BorderBottom": 0,
+        "BorderTop": 0
+      },
+      {
+        "Background": 12,
+        "Foreground": 12,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderRight": 0
+      },
+      {
+        "Formatter": 5,
+        "HorizontalAlignment": 6,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "HorizontalAlignment": 6,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "Formatter": 13,
+        "HorizontalAlignment": 6,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "Formatter": 14,
+        "HorizontalAlignment": 6,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "Formatter": 15,
+        "HorizontalAlignment": 7,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "Background": 12,
+        "Foreground": 12,
+        "BorderBottom": 0,
+        "BorderTop": 0
+      },
+      {
+        "Background": 12,
+        "FontFamily": 8,
+        "FontSize": 16.0,
+        "Foreground": 12,
+        "BorderBottom": 0,
+        "BorderTop": 0
+      },
+      {
+        "Formatter": 5,
+        "HorizontalAlignment": 6,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Formatter": 16,
+        "HorizontalAlignment": 7,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Foreground": 10,
+        "Formatter": 5,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 8,
+        "FontSize": 16.0,
+        "Foreground": 10,
+        "Formatter": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 8,
+        "FontSize": 16.0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Foreground": 10,
+        "VerticalAlignment": 9,
+        "WordWrap": true,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontWeight": 3,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontSize": 16.0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "#FFFFFF00",
+        "@",
+        "#FF92D050",
+        "Bold",
+        "black",
+        "[AUTO]General",
+        "Center",
+        "Right",
+        "Body",
+        "Top",
+        "#FFFF0000",
+        "Text 1 50",
+        "Background 1 0",
+        "0",
+        "[AUTO]0%",
+        "0.00",
+        " ¥#,##0.00_);[Red] ¥(#,##0.00)"
+      ],
+      "Borders": [
+        {
+          "Color": 11
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,0": 0,
+      "0,3": 1,
+      "2,1": 2,
+      "4,1": 3,
+      "7,1": 3,
+      "7,2": 3,
+      "7,3": 3,
+      "7,4": 3,
+      "7,5": 3,
+      "7,6": 3,
+      "7,7": 3,
+      "7,8": 3,
+      "7,9": 3,
+      "7,10": 3,
+      "7,11": 3,
+      "7,12": 3,
+      "7,13": 3,
+      "7,14": 3,
+      "7,15": 3,
+      "7,16": 3,
+      "7,17": 3,
+      "7,18": 3,
+      "7,19": 3,
+      "7,20": 3,
+      "7,21": 3,
+      "7,22": 3,
+      "7,23": 3,
+      "7,24": 3,
+      "7,25": 3,
+      "7,26": 3,
+      "7,27": 3,
+      "7,28": 3,
+      "7,29": 3,
+      "7,30": 3,
+      "7,31": 3,
+      "7,32": 3,
+      "7,33": 3,
+      "7,34": 4,
+      "7,35": 4,
+      "7,36": 3,
+      "8,1": 5,
+      "9,1": 5,
+      "9,7": 6,
+      "10,1": 5,
+      "10,7": 7,
+      "11,1": 8,
+      "12,1": 5,
+      "12,7": 9,
+      "13,1": 5,
+      "13,7": 10,
+      "14,1": 11,
+      "15,1": 12,
+      "15,2": 13,
+      "15,3": 12,
+      "15,4": 13,
+      "15,5": 13,
+      "15,6": 13,
+      "15,7": 13,
+      "15,8": 13,
+      "15,9": 13,
+      "15,10": 14,
+      "15,11": 15,
+      "15,12": 15,
+      "15,13": 16,
+      "15,14": 12,
+      "15,15": 13,
+      "15,16": 13,
+      "15,17": 13,
+      "15,18": 12,
+      "15,19": 13,
+      "15,20": 13,
+      "15,21": 13,
+      "15,22": 14,
+      "15,23": 15,
+      "15,24": 15,
+      "15,25": 16,
+      "15,26": 14,
+      "15,27": 15,
+      "15,28": 15,
+      "15,29": 15,
+      "15,30": 16,
+      "15,31": 17,
+      "15,32": 18,
+      "15,33": 18,
+      "15,34": 18,
+      "15,35": 19,
+      "15,36": 20,
+      "16,1": 12,
+      "16,2": 13,
+      "16,3": 21,
+      "16,4": 13,
+      "16,5": 13,
+      "16,6": 13,
+      "16,7": 13,
+      "16,8": 13,
+      "16,9": 13,
+      "16,10": 22,
+      "16,11": 15,
+      "16,12": 15,
+      "16,13": 16,
+      "16,14": 23,
+      "16,15": 13,
+      "16,16": 13,
+      "16,17": 13,
+      "16,18": 21,
+      "16,19": 13,
+      "16,20": 13,
+      "16,21": 13,
+      "16,22": 24,
+      "16,23": 15,
+      "16,24": 15,
+      "16,25": 16,
+      "16,26": 25,
+      "16,27": 15,
+      "16,28": 15,
+      "16,29": 15,
+      "16,30": 16,
+      "16,31": 18,
+      "16,32": 18,
+      "16,33": 18,
+      "16,34": 18,
+      "16,35": 26,
+      "16,36": 27,
+      "17,1": 12,
+      "17,2": 12,
+      "17,3": 12,
+      "17,4": 12,
+      "17,5": 12,
+      "17,6": 12,
+      "17,7": 12,
+      "17,8": 13,
+      "17,9": 12,
+      "17,10": 13,
+      "17,11": 13,
+      "17,12": 13,
+      "17,13": 13,
+      "17,14": 12,
+      "17,15": 12,
+      "17,16": 12,
+      "17,17": 12,
+      "17,18": 12,
+      "17,19": 12,
+      "17,20": 12,
+      "17,21": 12,
+      "17,22": 12,
+      "17,23": 12,
+      "17,24": 12,
+      "17,25": 12,
+      "17,26": 12,
+      "17,27": 12,
+      "17,28": 12,
+      "17,29": 12,
+      "17,30": 12,
+      "17,31": 13,
+      "17,32": 13,
+      "17,33": 12,
+      "17,34": 13,
+      "17,35": 13,
+      "17,36": 12,
+      "18,1": 28,
+      "18,26": 29,
+      "19,1": 30,
+      "19,16": 31,
+      "19,37": 32,
+      "20,1": 33,
+      "22,1": 11,
+      "22,14": 11
+    },
+    "RowStyles": {
+      "15": 34
+    },
+    "ColStyles": {
+      "1": 35,
+      "2": 35,
+      "3": 35,
+      "4": 35,
+      "5": 35,
+      "6": 35,
+      "7": 35,
+      "8": 35,
+      "9": 35,
+      "10": 35,
+      "11": 35,
+      "12": 35,
+      "13": 35,
+      "14": 35,
+      "15": 35,
+      "16": 35,
+      "17": 35,
+      "18": 35,
+      "19": 35,
+      "20": 35,
+      "21": 35,
+      "22": 35,
+      "23": 35,
+      "24": 35,
+      "25": 35,
+      "26": 35,
+      "27": 35,
+      "28": 35,
+      "29": 35,
+      "30": 35,
+      "31": 35,
+      "32": 35,
+      "33": 35,
+      "34": 35,
+      "35": 35,
+      "36": 35
+    },
+    "SheetStyle": {
+      "FontFamily": 8,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
+    }
+  },
+  "Spans": [
+    "0,0,1,3",
+    "2,1,1,36",
+    "4,1,3,36",
+    "8,1,1,6",
+    "8,7,1,30",
+    "9,1,1,6",
+    "9,7,1,30",
+    "10,1,1,6",
+    "10,7,2,30",
+    "11,1,1,6",
+    "12,1,1,6",
+    "12,7,1,30",
+    "13,1,1,6",
+    "13,7,1,30",
+    "14,1,1,36",
+    "15,1,1,2",
+    "15,3,1,7",
+    "15,10,1,4",
+    "15,14,1,4",
+    "15,18,1,4",
+    "15,22,1,4",
+    "15,26,1,5",
+    "16,1,1,2",
+    "16,3,1,7",
+    "16,10,1,4",
+    "16,14,1,4",
+    "16,18,1,4",
+    "16,22,1,4",
+    "16,26,1,5",
+    "17,1,1,36",
+    "18,1,1,25",
+    "18,26,1,11",
+    "19,16,1,21",
+    "20,1,2,36",
+    "16,31,1,4",
+    "15,31,1,4"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "正报退税汇总表_子表"
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//4HhbJzI1rRVRKso2NCu2fLVz64GjY/lnmCUIBnNogwNmW/Hod1wZqLEazELAw0WJd5vyDbBgQyM9ncc5xt5s0WM3lM5kkQyb9mKWueE3QsxZD8mvvkjUli1EYZrG5EERZcldUhTi+McJVyP2KV1gWOkN4HdciweKeWITczbrPIo02So5IcmdNopNuYNfvEH/xrONuNGx4pWRvRuhDEhXBTNc8Ala5AjYx3l+TT+1NKAGd9hpB85QbupLNWoBUAwlMe3h5uOhTCaUplD6KISdfoSky5YwEFFiclnxJKKYBiY0iWQzSC6TCKNNOv8rauz86ZN7cHGQXV0D6YycH5yrda1SIE+UUMNyh7ngjk4/fpQwjpxJyJkqYwK8BFLEFF8LtSu/dVPoisAL0BDqACVGWRHdx/JetT3+6INiHZL6vJi3J+wXwK0gv8TNUE9GHRncx1jJ677R6w3e33gf2WYKXUhzgdTGXrJKU8GAVWb5DfU8SyHbkGqno1z79bS4yDnX4j6GcHu92kmHFbo6coMv4x+pmk0LAn0ECB1Tr8h0ueuJlKMjSpGscrSfNjaWNnVDPKqOcUHz7iu0uNPHILewfzMsb5h0exepBELvon+xROXZcYD0wDd2wzi5rEqsiRi7UsV07NOviyOsFiHRqa67UDQPl243kziq25witDsokYEytChKv+rOl1Pqwu8Vt6f5nC0dfY4/aNw9y/5qvEp45F2d7dDxMNVcnUEs+lydC1ESs3aU4b0ZcYRU8q+oLTCYO0MdUxVEmToKLtWaAcvGZuYk9SzM1G+Os+JdX43Ulagq1h0FHQiO6JvFFAYwuAEYjz3D6fxaBdJE0K+p+rNOshgSfYoToQmXbEY9wK6e94t3E7rkLoNVBT6fAFrBK03fYXASYOsL5XhM8NwMzV+onw==|920

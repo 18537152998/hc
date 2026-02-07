@@ -1,0 +1,634 @@
+{
+  "Rows": {
+    "InLogicalVisibleIndexes": [
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21
+    ],
+    "Count": 22
+  },
+  "Cols": {
+    "InLogicalVisibleIndexes": [
+      22,
+      23,
+      24,
+      25,
+      26
+    ],
+    "Count": 45
+  },
+  "Values": {
+    "1,1": "ID",
+    "1,3": "电子合同",
+    "1,7": "物流凭证",
+    "1,11": "电子发票",
+    "1,15": "纸质单据",
+    "1,19": "总记录",
+    "1,27": "开票进度",
+    "12,16": "更新开票进度"
+  },
+  "Formulas": {
+    "2,22": "T3-D3",
+    "2,23": "T3-H3",
+    "2,24": "T3-L3",
+    "2,25": "T3-P3",
+    "2,26": "W3+X3+Y3+Z3",
+    "2,27": "IF(AA3=0,\"票据已齐\",\"电子合同缺\"&W3&\"份；物流凭证缺\"&X3&\"份；电子发票缺\"&Y3&\"份；纸质单据缺\"&Z3&\"份\")"
+  },
+  "AttachInfos": {
+    "1,1": {
+      "ListViewInfo": {
+        "Name": "表格1",
+        "TableName": "正报退税汇总表_子表",
+        "RowIndex": 1,
+        "ColumnIndex": 1,
+        "RowCount": 10,
+        "ColumnCount": 44,
+        "TopCondition": null,
+        "TableLoadOnDemandInfo": {
+          "IsEnabled": true,
+          "DemandedRowCount": 500
+        },
+        "ListViewStyleName": "样式1",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "2,1": {
+      "NameUsedInJavaScript": "正报退税汇总表_ID",
+      "BindingInfo": {
+        "TableName": "正报退税汇总表_子表",
+        "ColumnName": "正报退税汇总表_ID",
+        "GUID": "1aaf5152-b840-489a-8964-db4cbf28cec1"
+      }
+    },
+    "2,3": {
+      "NameUsedInJavaScript": "统计电子合同",
+      "BindingInfo": {
+        "TableName": "正报退税汇总表_子表",
+        "ColumnName": "统计电子发票",
+        "GUID": "cd1c1076-a275-4130-8870-f7cb8bc3931c"
+      }
+    },
+    "2,7": {
+      "NameUsedInJavaScript": "物流凭证",
+      "BindingInfo": {
+        "TableName": "正报退税汇总表_子表",
+        "ColumnName": "统计合同",
+        "GUID": "48ea9ecb-3826-47e5-847e-f387803e0831"
+      }
+    },
+    "2,11": {
+      "NameUsedInJavaScript": "电子发票",
+      "BindingInfo": {
+        "TableName": "正报退税汇总表_子表",
+        "ColumnName": "统计送货单",
+        "GUID": "9053faf6-2270-4d0a-9dcf-976158b7d04f"
+      }
+    },
+    "2,15": {
+      "NameUsedInJavaScript": "纸质单据",
+      "BindingInfo": {
+        "TableName": "正报退税汇总表_子表",
+        "ColumnName": "统计物流面单",
+        "GUID": "ddae819e-b1da-4cb5-b87b-e6d6f5a9e93b"
+      }
+    },
+    "2,19": {
+      "NameUsedInJavaScript": "总记录",
+      "BindingInfo": {
+        "TableName": "正报退税汇总表_子表",
+        "ColumnName": "统计子表记录",
+        "GUID": "4e37710a-7df9-4e61-a68a-39832d0d777c"
+      }
+    },
+    "2,22": {
+      "NameUsedInJavaScript": "COLUMN"
+    },
+    "2,23": {
+      "NameUsedInJavaScript": "_COLUMN"
+    },
+    "2,24": {
+      "NameUsedInJavaScript": "__COLUMN"
+    },
+    "2,25": {
+      "NameUsedInJavaScript": "___COLUMN"
+    },
+    "2,26": {
+      "NameUsedInJavaScript": "____COLUMN"
+    },
+    "2,27": {
+      "NameUsedInJavaScript": "_____COLUMN"
+    },
+    "12,16": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "PassListviewDataCommand.PassListviewDataCommand, PassListviewDataCommand",
+            "ImportMode": 1,
+            "PassValueItems": [
+              {
+                "SourceCell": "正报退税汇总表_ID",
+                "TargetCell": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=更新开票进度!B17"
+                },
+                "IsPrimaryKey": true
+              },
+              {
+                "SourceCell": "_____COLUMN",
+                "TargetCell": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=更新开票进度!K17"
+                }
+              }
+            ],
+            "Source": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=更新开票进度!AB3"
+            },
+            "Target": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=更新开票进度!B17"
+            },
+            "BreakpointIdentity": "b53560c7-f978-4d08-90a2-5c20ba8e3538"
+          },
+          {
+            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+            "ListviewName": "表格2",
+            "UpdateType": 3,
+            "BreakpointIdentity": "5bb34404-8c5a-4311-8002-87dd7005c051"
+          },
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "ReloadData": true,
+            "BreakpointIdentity": "fc0393f9-e5ec-4598-a8ea-b68d698c2dca"
+          }
+        ],
+        "Text": "更新开票进度",
+        "TemplateKey": "_RS_Main1"
+      }
+    },
+    "15,1": {
+      "ListViewInfo": {
+        "Name": "表格2",
+        "TableName": "正报退税汇总表",
+        "RowIndex": 15,
+        "ColumnIndex": 1,
+        "RowCount": 6,
+        "ColumnCount": 44,
+        "TopCondition": null,
+        "TableLoadOnDemandInfo": {
+          "IsEnabled": true,
+          "DemandedRowCount": 500
+        },
+        "ListViewStyleName": "样式1",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "16,1": {
+      "NameUsedInJavaScript": "ID",
+      "BindingInfo": {
+        "TableName": "正报退税汇总表",
+        "ColumnName": "ID",
+        "GUID": "1c6a98c3-f854-4937-9cf6-ece260e31748"
+      }
+    },
+    "16,10": {
+      "NameUsedInJavaScript": "开票进度",
+      "BindingInfo": {
+        "TableName": "正报退税汇总表",
+        "ColumnName": "开票进度",
+        "GUID": "e8209ff5-2a06-4174-ac7d-ab89d7a911fd"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "FontWeight": 1,
+        "HorizontalAlignment": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "FontWeight": 1,
+        "Foreground": 3,
+        "HorizontalAlignment": 4,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "FontWeight": 1,
+        "Foreground": 3,
+        "HorizontalAlignment": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "FontWeight": 1,
+        "Foreground": 3,
+        "HorizontalAlignment": 4,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "FontWeight": 1,
+        "HorizontalAlignment": 4,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "FontWeight": 1,
+        "HorizontalAlignment": 5,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "Foreground": 6,
+        "HorizontalAlignment": 4,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "FontWeight": 1,
+        "Foreground": 7,
+        "HorizontalAlignment": 4,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "Foreground": 6,
+        "HorizontalAlignment": 4,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "HorizontalAlignment": 4,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "HorizontalAlignment": 5,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "FontWeight": 1,
+        "Foreground": 7,
+        "HorizontalAlignment": 4,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 8,
+        "FontSize": 16.0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "FontWeight": 1,
+        "Formatter": 9,
+        "HorizontalAlignment": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontSize": 16.0,
+        "FontWeight": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "Bold",
+        "Right",
+        "Background 1 0",
+        "Center",
+        "Left",
+        "black",
+        "#FFFF0000",
+        "微软雅黑",
+        "[AUTO]General"
+      ]
+    },
+    "CellStyles": {
+      "1,1": 0,
+      "1,3": 1,
+      "1,6": 2,
+      "1,7": 1,
+      "1,11": 3,
+      "1,14": 2,
+      "1,15": 3,
+      "1,18": 2,
+      "1,19": 4,
+      "1,20": 2,
+      "1,21": 2,
+      "1,22": 4,
+      "1,23": 4,
+      "1,24": 4,
+      "1,25": 4,
+      "1,26": 4,
+      "1,27": 5,
+      "2,1": 6,
+      "2,3": 7,
+      "2,4": 8,
+      "2,5": 8,
+      "2,6": 2,
+      "2,7": 9,
+      "2,11": 10,
+      "2,12": 0,
+      "2,13": 0,
+      "2,14": 2,
+      "2,15": 10,
+      "2,16": 0,
+      "2,17": 0,
+      "2,18": 2,
+      "2,19": 9,
+      "2,20": 2,
+      "2,21": 2,
+      "2,22": 2,
+      "2,23": 2,
+      "2,24": 2,
+      "2,25": 2,
+      "2,26": 2,
+      "2,27": 11,
+      "3,1": 0,
+      "3,2": 8,
+      "3,3": 8,
+      "3,6": 0,
+      "3,10": 12,
+      "3,11": 0,
+      "3,14": 0,
+      "3,15": 0,
+      "3,18": 12,
+      "3,19": 12,
+      "3,20": 0,
+      "3,21": 0,
+      "3,27": 0,
+      "3,28": 12,
+      "3,29": 12,
+      "3,30": 0,
+      "3,31": 0,
+      "3,32": 13,
+      "3,33": 13,
+      "3,34": 13,
+      "3,35": 13,
+      "3,36": 13,
+      "3,37": 13,
+      "3,38": 13,
+      "3,39": 13,
+      "3,40": 13,
+      "3,41": 13,
+      "3,42": 13,
+      "3,43": 13,
+      "3,44": 13,
+      "7,1": 0,
+      "7,2": 8,
+      "7,3": 8,
+      "7,6": 0,
+      "7,10": 12,
+      "7,11": 0,
+      "7,14": 0,
+      "7,15": 0,
+      "7,18": 12,
+      "7,19": 12,
+      "7,20": 0,
+      "7,21": 0,
+      "7,27": 0,
+      "7,28": 12,
+      "7,29": 12,
+      "7,30": 0,
+      "7,31": 0,
+      "7,32": 13,
+      "7,33": 13,
+      "7,34": 13,
+      "7,35": 13,
+      "7,36": 13,
+      "7,37": 13,
+      "7,38": 13,
+      "7,39": 13,
+      "7,40": 13,
+      "7,41": 13,
+      "7,42": 13,
+      "7,43": 13,
+      "7,44": 13,
+      "8,1": 0,
+      "8,2": 8,
+      "8,3": 8,
+      "8,6": 0,
+      "8,10": 12,
+      "8,11": 0,
+      "8,14": 0,
+      "8,15": 0,
+      "8,18": 12,
+      "8,19": 12,
+      "8,20": 0,
+      "8,21": 0,
+      "8,27": 0,
+      "8,28": 12,
+      "8,29": 12,
+      "8,30": 0,
+      "8,31": 0,
+      "8,32": 13,
+      "8,33": 13,
+      "8,34": 13,
+      "8,35": 13,
+      "8,36": 13,
+      "8,37": 13,
+      "8,38": 13,
+      "8,39": 13,
+      "8,40": 13,
+      "8,41": 13,
+      "8,42": 13,
+      "8,43": 13,
+      "8,44": 13,
+      "9,1": 0,
+      "9,2": 8,
+      "9,3": 8,
+      "9,6": 0,
+      "9,10": 12,
+      "9,11": 0,
+      "9,14": 0,
+      "9,15": 0,
+      "9,18": 12,
+      "9,19": 12,
+      "9,20": 0,
+      "9,21": 0,
+      "9,27": 0,
+      "9,28": 12,
+      "9,29": 12,
+      "9,30": 0,
+      "9,31": 0,
+      "9,32": 0,
+      "9,33": 12,
+      "9,34": 12,
+      "9,35": 14,
+      "9,36": 14,
+      "9,37": 14,
+      "9,38": 12,
+      "9,39": 12,
+      "9,40": 14,
+      "9,41": 14,
+      "9,42": 14,
+      "9,43": 12,
+      "9,44": 12,
+      "10,1": 0,
+      "10,2": 8,
+      "10,3": 8,
+      "10,6": 0,
+      "10,10": 12,
+      "10,11": 0,
+      "10,14": 0,
+      "10,15": 0,
+      "10,18": 12,
+      "10,19": 12,
+      "10,20": 0,
+      "10,21": 0,
+      "10,27": 0,
+      "10,28": 12,
+      "10,29": 12,
+      "10,30": 0,
+      "10,31": 0,
+      "10,32": 0,
+      "10,33": 12,
+      "10,34": 12,
+      "10,35": 14,
+      "10,36": 14,
+      "10,37": 14,
+      "10,38": 12,
+      "10,39": 12,
+      "10,40": 14,
+      "10,41": 14,
+      "10,42": 14,
+      "10,43": 12,
+      "10,44": 12,
+      "12,16": 15
+    },
+    "SheetStyle": {
+      "FontFamily": 0,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
+    }
+  },
+  "Spans": [
+    "1,1,1,2",
+    "1,3,1,4",
+    "1,7,1,4",
+    "1,11,1,4",
+    "1,15,1,4",
+    "1,19,1,3",
+    "1,27,1,18",
+    "2,1,1,2",
+    "2,3,1,4",
+    "2,7,1,4",
+    "2,11,1,4",
+    "2,15,1,4",
+    "2,19,1,3",
+    "2,27,1,18",
+    "3,1,8,44",
+    "12,16,2,15",
+    "15,1,1,6",
+    "15,10,1,6",
+    "16,1,1,6",
+    "16,10,1,6",
+    "17,1,4,44"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//WmN35nrDfw/cnOkVP5rA7F0Y8t79v1ceznRfKKk/3h2mSbWFTYIkqaTuvn1dtaALZhvM6GFIcL8HLZrLyo4oUC4UQBMHUKygU/U7HBkZgahOXFGhi05XOze4zgNQZGKiPM2nh5p+2m1xf4n/x66DAMmSttG5G5b/vIKerWfbus6j/q+xaqpIuzFjwwVLyxPCIA7nT6zIrmbTjvDtZleuD5sxS3Awi1BRKuimoTECjcrBci0mv/4JXnVYdb9mvQ+WVFjII7K1KsDAUDqZhfC4nMI7n0KQVg9MYr6q9BwrHGLa55dlHrEQSWZdpILRkKpMP5awYJ+kgk8F2t5MLspHf0NbqiAaUpUeQVwzqwbnUoWNoBgq+43Ys2JbvE67cOeab8PXGNM+W4rs3XwxE+xVdYebgja+N6ncY0ei/LXSGqDbndR4gk08mhlcrX2VoXxSqRIBdTTqU/+aeaensZsbBrWQKsmTW050Nth8baaWhJ6WZItddAiGc7+6kX7B62L0smeMRHIsDM9qAeeTufuQ3scNIfdBhMr4FlzRm6JOeF9Rs/rGF3xIf0ALsZUqV2XcX979auUuBeoDaXmDy4rBy2mU4XmMmEuVevFV6amxKyKn5fX4fhWSm9Qyvza0UjJkYrjBoUPmlTXHMqY5kpVRIbXADanikPDgFyqe+P5UM5aQ623QpHyZ78nAsC2Qq3qWQew0LIWy3ReYGm9EI0FS2VPm8ChnKi0laj9voi9nLSQL1LfLSWFUWGWem6nBXR3nkQ6DboJk+pYr2hegcFHzmjAseat2vq0/9UjlV5qWNuxI1sjV9SGL0bEgZtjYJ8R0jPVxVC8D9Y/ZylHxTMPAY66aQvepZoWZhcAyfNKFPVQXQXajp2il3zzv11y8OI7SP0JRQ+JvwVuskiEyc51Pag==|920

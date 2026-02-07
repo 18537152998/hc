@@ -1,0 +1,171 @@
+{
+  "Rows": {
+    "Count": 19
+  },
+  "Cols": {
+    "InLogicalVisibleIndexes": [
+      13
+    ],
+    "Count": 14
+  },
+  "Values": {
+    "1,2": "预估重量",
+    "7,2": "平均重量",
+    "14,2": "更新预估重量",
+    "18,2": "关闭不更新"
+  },
+  "AttachInfos": {
+    "14,2": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+            "TableName": "库存表",
+            "ShowConfirm": false,
+            "RowsToUpdate": 1,
+            "RowsToUpdateCondition": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "库存表",
+                "ColumnName": "ASIN",
+                "GUID": "7612fa7a-cf42-45da-b4cb-daf6d6804f90"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=包装重量弹窗!N2"
+              }
+            },
+            "UpdateBindingValues": [
+              {
+                "BindingInfo": {
+                  "TableName": "库存表",
+                  "ColumnName": "毛重",
+                  "GUID": "94e96b87-a34b-4391-a1af-ca9541f22aac"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=包装重量弹窗!C11"
+                }
+              }
+            ],
+            "BreakpointIdentity": "4182f1a0-1229-4712-a4d8-37b2befc0879"
+          },
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "BreakpointIdentity": "03b90e7b-11d4-4e81-a386-b38d5e0e39a1"
+          }
+        ],
+        "Text": "更新预估重量",
+        "TemplateKey": "样式8"
+      }
+    },
+    "18,2": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "BreakpointIdentity": "392b5aaf-f6f0-4232-87e0-666421ca0fac"
+          }
+        ],
+        "Text": "关闭不更新",
+        "TemplateKey": "样式13"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontSize": 18.666666666666664,
+        "FontWeight": 0,
+        "HorizontalAlignment": 1
+      },
+      {
+        "Background": 2
+      },
+      {
+        "Background": 3,
+        "FontWeight": 0
+      },
+      {
+        "FontFamily": 4,
+        "FontSize": 21.333333333333332,
+        "FontWeight": 0,
+        "Foreground": 5,
+        "Formatter": 6,
+        "HorizontalAlignment": 1
+      },
+      {
+        "FontWeight": 0
+      },
+      {
+        "Background": 7,
+        "FontWeight": 0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Bold",
+        "Center",
+        "#FFFFFF00",
+        "Accent 3 80",
+        "Body",
+        "#FFFF0000",
+        "[AUTO]General",
+        "Accent 2 40"
+      ]
+    },
+    "CellStyles": {
+      "1,2": 0,
+      "1,13": 1,
+      "3,2": 2,
+      "7,2": 3,
+      "9,2": 4,
+      "9,3": 4,
+      "9,4": 4,
+      "9,5": 4,
+      "9,6": 4,
+      "9,7": 4,
+      "9,8": 4,
+      "9,9": 4,
+      "9,10": 4,
+      "10,2": 5
+    },
+    "SheetStyle": {
+      "FontFamily": 4
+    }
+  },
+  "Spans": [
+    "1,2,2,9",
+    "7,2,2,9",
+    "3,2,3,9",
+    "10,2,3,9",
+    "14,2,3,9",
+    "18,2,1,4"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "IsMobilePage": true
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//bskyZGe9ikFssy6HJgWhkkzUwbo3caLeGHSlLoS0aZ2VQqFIV2uJuFSyvHhBJrwbjzWrRsngtE+gDEQhnHTm93divZLhS9IchwZFQiEeBM31UBlGdQs/6LRIqiR12jK9mVxwCCyTQBSo/83737EKh7JuOPhe9bp9KA62719HbpEpQjIP5ewrDD0ClJRryGRuCHUXmZa4MgLc2VBvXZvtFqtxuBHOw90z6BpSre/mE65ite5niP0rVAeAvfJ9dbS6bI4WGDzPNkO5mGNP4P74Mrf6grtuhhpJ3KLv/vWfVnAV3dLO5jO4iMRiKDPSdNEyHY7rGJ2Zuygh/LNJHg3GPmG/LJhorwEBn5Eolw76sC118Sch5kuiM/1CpIPEr6DSEuVGEk5Ms+8+bBxQLd/Y3ej60aF7hywfmpD2iYpCyQY5vwWG34sylwdD+8F3zHtEFUk0CWN9qZpLYLmsRQzYpmmn3d58Td6DpP5ocmkH3udx7CgMpBrIWEzTP7bHY1e2NPzo1Noc1Y3FUCQ1pkE4PsPFhKQcawHlMefOp/ieZGhMtC7skt3jpvyxG5l3OSiqsGZzjjuMT3OqBPXQuuHbSaggbplgZaxXqNS8q7yvcz8bC58VCA19Wg7LB1evDDOz6BGghaDxk5XForapvsU5Dj/Qt9bYxcIdhckDHbCdtoOqHW9q3nhGiq0BpwrpE1P8bwsHTohjeF+MBPuJgEKnPuW8efApVAFIvRLetgSLW53xBDVgHrt64EoBA5RxaShEILaDFBpoKxBhLpH6PwEyD2vWPin6ki1yzmqJClNXBjF+UsGjdX2lSeTuxZBTqYDaahoeNU0gUeSz4F0nK6WEPOBOu84Y0raiMrGsJ9fEB2LD42FYfLHnA+nval/baoDP8Vbm5IYWQrN0r6Etzivn1g==|920

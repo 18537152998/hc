@@ -1,0 +1,1229 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 26.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 26.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "27": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "28": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 19.0
+        }
+      },
+      "29": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 19.0
+        }
+      },
+      "30": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 19.0
+        }
+      },
+      "31": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 19.0
+        }
+      },
+      "32": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 19.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      28,
+      29,
+      30,
+      31,
+      32
+    ],
+    "Count": 33
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "15": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "16": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 17.0
+        }
+      }
+    },
+    "Count": 17
+  },
+  "Values": {
+    "5,12": "更新",
+    "9,0": "长",
+    "9,2": "宽",
+    "9,4": "高",
+    "9,6": "抛重",
+    "9,8": "对应产品",
+    "9,14": "保管人",
+    "28,9": "大",
+    "28,11": "中",
+    "28,14": "小"
+  },
+  "Formulas": {
+    "29,6": "A30*C30*E30/6000",
+    "29,9": "MAX(D5:F5)",
+    "29,11": "MEDIAN(D5:F5)",
+    "29,14": "MIN(D5:F5)"
+  },
+  "AttachInfos": {
+    "1,1": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "样式1",
+        "WaterMark": "输入对应账户/产品"
+      }
+    },
+    "1,11": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=纸箱查询!B4"
+                },
+                "Value": "%Null%"
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=纸箱查询!G4"
+                },
+                "Value": "%Null%"
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=纸箱查询!L4"
+                },
+                "Value": "%Null%"
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=纸箱查询!B2"
+                },
+                "Value": "%Null%"
+              }
+            ],
+            "BreakpointIdentity": "773c3386-2cb0-4b7a-bdaf-44b80d390b65"
+          },
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "纸箱库存表",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 1,
+              "ColumnBindingInfo": {
+                "TableName": "纸箱库存表",
+                "ColumnName": "序号",
+                "GUID": "e4d898b9-f67f-4046-a5bc-8ca01b4f2b86"
+              },
+              "Value": "%Null%"
+            },
+            "ID": "945642a164a44df6a57f61081fadbf50",
+            "BreakpointIdentity": "0d660fc7-3c7d-4bc4-af28-3b9a542fd0e5"
+          }
+        ],
+        "TemplateKey": "透明按钮_无底色_",
+        "Icon": {
+          "Name": "Mobile/456_delete_8.svg",
+          "BuiltIn": true,
+          "Color": "Text 1 0"
+        },
+        "IconSize": 22.0
+      }
+    },
+    "1,13": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "纸箱库存表",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "SubConditions": [
+                {
+                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 6,
+                  "ColumnBindingInfo": {
+                    "TableName": "纸箱库存表",
+                    "ColumnName": "平台",
+                    "GUID": "df130c3b-f2a7-470a-8265-21d285cb2373"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=纸箱查询!B2"
+                  }
+                },
+                {
+                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 6,
+                  "ColumnBindingInfo": {
+                    "TableName": "纸箱库存表",
+                    "ColumnName": "保管人",
+                    "GUID": "3aa5e827-f023-420c-9f4e-ef4937887feb"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=纸箱查询!B2"
+                  }
+                },
+                {
+                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 6,
+                  "ColumnBindingInfo": {
+                    "TableName": "纸箱库存表",
+                    "ColumnName": "材质类型",
+                    "GUID": "c3d14552-d11a-489d-8ee8-725fcbfc113a"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=纸箱查询!B2"
+                  }
+                },
+                {
+                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 6,
+                  "ColumnBindingInfo": {
+                    "TableName": "纸箱库存表",
+                    "ColumnName": "对应产品",
+                    "GUID": "3881f07d-2abe-43f9-92b7-8e1ca5b212cf"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=纸箱查询!B2"
+                  }
+                }
+              ],
+              "RelationType": 1
+            },
+            "ID": "0480088b534c44618dc814e6ed4940ba",
+            "BreakpointIdentity": "e3495d03-39a7-4d80-ba71-866c6eb69d11"
+          },
+          {
+            "$type": "Forguncy.Model.SortCommand, ServerDesignerCommon",
+            "ListViewName": "表格1",
+            "OrderByCondition": {
+              "OrderByColumns": [
+                {
+                  "ColumnBindingInfo": {
+                    "TableName": "纸箱库存表",
+                    "ColumnName": "抛重",
+                    "GUID": "32b2de9d-4616-488f-a514-0007f657cdd8"
+                  },
+                  "Order": 0
+                }
+              ]
+            },
+            "ID": "0651feae40504bb3b700ac105e20cd69",
+            "BreakpointIdentity": "603d021f-0b7a-4d6b-ac71-5d11b0479ece"
+          }
+        ],
+        "TemplateKey": "透明按钮_无底色_",
+        "Icon": {
+          "Name": "Application/047_search_8.svg",
+          "BuiltIn": true,
+          "Color": "Accent 1 0"
+        },
+        "IconSize": 30.0
+      }
+    },
+    "3,1": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "样式1",
+        "WaterMark": "最长边",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "纸箱库存表",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "SubConditions": [
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 3,
+                  "ColumnBindingInfo": {
+                    "TableName": "纸箱库存表",
+                    "ColumnName": "最长边",
+                    "GUID": "e880f107-e2b4-4a6d-9ae1-f2387ab68f1c"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=纸箱查询!B4"
+                  }
+                },
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 3,
+                  "ColumnBindingInfo": {
+                    "TableName": "纸箱库存表",
+                    "ColumnName": "次长边",
+                    "GUID": "28638c96-0523-406e-bbcd-e0d1030ba8d2"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=纸箱查询!G4"
+                  }
+                },
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 3,
+                  "ColumnBindingInfo": {
+                    "TableName": "纸箱库存表",
+                    "ColumnName": "最短边",
+                    "GUID": "dcd330dc-8d43-49a9-a850-37601302094d"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=纸箱查询!L4"
+                  }
+                }
+              ]
+            },
+            "ID": "f54f36f8e9784eb498edd42f1e16853c",
+            "BreakpointIdentity": "1abad2d7-13aa-4b94-8250-95854a9524d6"
+          }
+        ]
+      }
+    },
+    "3,6": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "样式1",
+        "WaterMark": "次长边",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "纸箱库存表",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "SubConditions": [
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 3,
+                  "ColumnBindingInfo": {
+                    "TableName": "纸箱库存表",
+                    "ColumnName": "最长边",
+                    "GUID": "d9c26396-56eb-491a-a14e-c75d3371b740"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=纸箱查询!B4"
+                  }
+                },
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 3,
+                  "ColumnBindingInfo": {
+                    "TableName": "纸箱库存表",
+                    "ColumnName": "次长边",
+                    "GUID": "65983d5b-4971-49c2-964f-bad61c65b0bd"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=纸箱查询!G4"
+                  }
+                },
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 3,
+                  "ColumnBindingInfo": {
+                    "TableName": "纸箱库存表",
+                    "ColumnName": "最短边",
+                    "GUID": "9f4db955-6169-4056-bbdb-c9ee7f301dcc"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=纸箱查询!L4"
+                  }
+                }
+              ]
+            },
+            "ID": "ac66536b4bd34d67a5347135b40c5330",
+            "BreakpointIdentity": "2d004b99-9b7b-4822-9901-f4192bfedb9a"
+          }
+        ]
+      },
+      "DataValidationInfo": {
+        "NumberType": 2,
+        "CompareParamType": 7,
+        "FirstParamValue": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=纸箱查询!B4"
+        },
+        "ErrorMessage": "次长边不得大于最长边"
+      }
+    },
+    "3,11": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "样式1",
+        "WaterMark": "最短边",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "纸箱库存表",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "SubConditions": [
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 3,
+                  "ColumnBindingInfo": {
+                    "TableName": "纸箱库存表",
+                    "ColumnName": "最长边",
+                    "GUID": "28e2e6a8-efc8-49a7-a6a3-cd39bdd46ea9"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=纸箱查询!B4"
+                  }
+                },
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 3,
+                  "ColumnBindingInfo": {
+                    "TableName": "纸箱库存表",
+                    "ColumnName": "次长边",
+                    "GUID": "c5193fc0-1afd-47d1-bc7d-2ce8fdfbcdc8"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=纸箱查询!G4"
+                  }
+                },
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 3,
+                  "ColumnBindingInfo": {
+                    "TableName": "纸箱库存表",
+                    "ColumnName": "最短边",
+                    "GUID": "48753a41-d488-4163-97a1-8be51c7ae043"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=纸箱查询!L4"
+                  }
+                }
+              ]
+            },
+            "ID": "c03c24db0fa14561a3458d69c1c76cac",
+            "BreakpointIdentity": "2522a0eb-e680-4e99-b6d4-7dcbbc0c046d"
+          }
+        ]
+      },
+      "DataValidationInfo": {
+        "NumberType": 2,
+        "CompareParamType": 7,
+        "FirstParamValue": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=纸箱查询!G4"
+        },
+        "ErrorMessage": "最短边不得大于次长边"
+      }
+    },
+    "5,1": {
+      "BindingInfo": {
+        "TableName": "纸箱库存表",
+        "ColumnName": "对应产品",
+        "GUID": "37783752-f2fe-454f-91b3-08aa4d746ba5"
+      },
+      "CellType": {
+        "$type": "Forguncy.MultilineTextBox, ServerDesignerCommon",
+        "TemplateKey": "样式1"
+      }
+    },
+    "5,12": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+            "TableName": "纸箱库存表",
+            "ShowConfirm": true,
+            "ConfirmText": "您确定要更新这行记录吗？",
+            "UpdateBindingValues": [
+              {
+                "BindingInfo": {
+                  "TableName": "纸箱库存表",
+                  "ColumnName": "对应产品",
+                  "GUID": "5fce3974-0deb-42c1-a701-7f587017aea4"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=纸箱查询!B6"
+                }
+              },
+              {
+                "BindingInfo": {
+                  "TableName": "纸箱库存表",
+                  "ColumnName": "保管人",
+                  "GUID": "4ac969fb-b266-4a23-adba-1ee8fbfecf99"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=纸箱查询!M8"
+                }
+              }
+            ],
+            "ParamNameToSaveNewRowValue": "NewRow",
+            "BreakpointIdentity": "415a8a55-c4f0-41a3-8292-e74ade697c08"
+          }
+        ],
+        "Text": "更新",
+        "TemplateKey": "透明按钮_无底色_"
+      }
+    },
+    "6,12": {
+      "BindingInfo": {
+        "TableName": "纸箱库存表",
+        "ColumnName": "平台",
+        "GUID": "3f9b4564-5a44-44f0-92a3-afa909e48c51"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "样式1"
+      }
+    },
+    "7,12": {
+      "BindingInfo": {
+        "TableName": "纸箱库存表",
+        "ColumnName": "保管人",
+        "GUID": "4ec122ce-3a7a-45f7-9b26-ff648ea00326"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "样式1"
+      }
+    },
+    "10,0": {
+      "CellType": {
+        "$type": "Forguncy.RepeaterCellType, ServerDesignerCommon",
+        "TemplatePageName": "8b54d748-5292-4801-880c-f765d40cf4ba",
+        "ListviewName": "表格1",
+        "DisplayMode": 2
+      }
+    },
+    "28,0": {
+      "ListViewInfo": {
+        "Name": "表格1",
+        "TableName": "纸箱库存表",
+        "RowIndex": 28,
+        "RowCount": 4,
+        "ColumnCount": 17,
+        "OrderByCondition": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "纸箱库存表",
+                "ColumnName": "抛重",
+                "GUID": "bacb6634-1d21-4d6a-ad02-56d35749f531"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "TopCondition": {
+          "$type": "ForguncyDataAccess.TopCESqlCondition, ForguncyDataAccess",
+          "TopCount": 20
+        },
+        "TableLoadOnDemandInfo": {
+          "IsEnabled": true,
+          "DemandedRowCount": 20
+        },
+        "ListViewStyleName": "样式4",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2,
+        "DoNotLoadDataWhenLoadPage": true
+      }
+    },
+    "29,0": {
+      "NameUsedInJavaScript": "长",
+      "BindingInfo": {
+        "TableName": "纸箱库存表",
+        "ColumnName": "长",
+        "GUID": "a82fc9b5-cd89-4b60-9421-98ef29e8aa7c"
+      }
+    },
+    "29,2": {
+      "NameUsedInJavaScript": "宽",
+      "BindingInfo": {
+        "TableName": "纸箱库存表",
+        "ColumnName": "宽",
+        "GUID": "5ee35695-912c-4d32-b153-36f0411e71a9"
+      }
+    },
+    "29,4": {
+      "NameUsedInJavaScript": "高",
+      "BindingInfo": {
+        "TableName": "纸箱库存表",
+        "ColumnName": "高",
+        "GUID": "40e2f7a5-9a49-4a9d-839a-332109a52fbc"
+      }
+    },
+    "29,6": {
+      "NameUsedInJavaScript": "抛重",
+      "BindingInfo": {
+        "TableName": "纸箱库存表",
+        "ColumnName": "抛重",
+        "GUID": "8ea55323-4cae-44c7-aa1c-84b68b758de5"
+      }
+    },
+    "29,7": {
+      "NameUsedInJavaScript": "对应产品",
+      "BindingInfo": {
+        "TableName": "纸箱库存表",
+        "ColumnName": "对应产品",
+        "GUID": "9e7cee37-36e4-4ea3-8ca8-17ff111f62e4"
+      },
+      "CellType": {
+        "$type": "Forguncy.MultilineTextBox, ServerDesignerCommon"
+      }
+    },
+    "29,8": {
+      "NameUsedInJavaScript": "保管人",
+      "BindingInfo": {
+        "TableName": "纸箱库存表",
+        "ColumnName": "保管人",
+        "GUID": "320173be-a5bb-4537-8347-bd8be36e7f0f"
+      }
+    },
+    "29,9": {
+      "NameUsedInJavaScript": "大",
+      "BindingInfo": {
+        "TableName": "纸箱库存表",
+        "ColumnName": "最长边",
+        "GUID": "9b49e7ba-cae8-4df5-a067-058da8dc5dfd"
+      }
+    },
+    "29,11": {
+      "NameUsedInJavaScript": "中",
+      "BindingInfo": {
+        "TableName": "纸箱库存表",
+        "ColumnName": "次长边",
+        "GUID": "39b2a684-cb61-494e-ab0b-10845303f97d"
+      }
+    },
+    "29,14": {
+      "NameUsedInJavaScript": "小",
+      "BindingInfo": {
+        "TableName": "纸箱库存表",
+        "ColumnName": "最短边",
+        "GUID": "00cd889f-632a-441a-9c30-eb8cb3189f35"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 1,
+        "HorizontalAlignment": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "HorizontalAlignment": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 1,
+        "VerticalAlignment": 3,
+        "WordWrap": true,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 4,
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "FontWeight": 5,
+        "Foreground": 6,
+        "Formatter": 7,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Formatter": 1,
+        "HorizontalAlignment": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontSize": 16.0,
+        "FontWeight": 5,
+        "HorizontalAlignment": 2,
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontSize": 16.0,
+        "FontWeight": 5,
+        "HorizontalAlignment": 9,
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontSize": 16.0,
+        "FontWeight": 5,
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "HorizontalAlignment": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontSize": 16.0,
+        "FontWeight": 5,
+        "BorderBottom": null,
+        "BorderTop": 1,
+        "BorderLeft": 1,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": 1,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontSize": 16.0,
+        "FontWeight": 5,
+        "BorderBottom": null,
+        "BorderTop": 1,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "FontWeight": 5,
+        "BorderBottom": null,
+        "BorderTop": 1,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": 1,
+        "BorderLeft": null,
+        "BorderRight": 1
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "Formatter": 11,
+        "HorizontalAlignment": 9,
+        "BorderBottom": 1,
+        "BorderTop": null,
+        "BorderLeft": 1,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": 1,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "Formatter": 11,
+        "HorizontalAlignment": 9,
+        "BorderBottom": 1,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "Formatter": 12,
+        "HorizontalAlignment": 9,
+        "BorderBottom": 1,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 1,
+        "VerticalAlignment": 3,
+        "WordWrap": true,
+        "BorderBottom": 1,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": 1,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": 1
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": 1,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": 1,
+        "BorderTop": null,
+        "BorderLeft": 1,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": 1,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": 1
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "@",
+        "Center",
+        "Top",
+        "Accent 1 40",
+        "Bold",
+        "Background 1 0",
+        "[AUTO]General",
+        "black",
+        "Left",
+        "DarkGray",
+        "General",
+        "0.0_);[Red](0.0)"
+      ],
+      "Borders": [
+        {
+          "Style": 5,
+          "Color": 8
+        },
+        {
+          "Color": 10
+        }
+      ]
+    },
+    "CellStyles": {
+      "1,0": 0,
+      "1,1": 1,
+      "1,2": 0,
+      "1,3": 0,
+      "1,4": 0,
+      "1,5": 0,
+      "1,6": 0,
+      "1,7": 0,
+      "1,8": 0,
+      "1,9": 0,
+      "1,10": 0,
+      "1,11": 0,
+      "1,12": 0,
+      "1,13": 0,
+      "2,0": 0,
+      "2,1": 0,
+      "2,2": 0,
+      "2,3": 0,
+      "2,4": 0,
+      "2,5": 0,
+      "2,6": 0,
+      "2,7": 0,
+      "2,8": 0,
+      "2,9": 0,
+      "2,10": 0,
+      "2,11": 0,
+      "2,12": 0,
+      "2,13": 0,
+      "2,14": 0,
+      "2,15": 0,
+      "2,16": 0,
+      "3,0": 0,
+      "3,1": 2,
+      "3,2": 0,
+      "3,3": 0,
+      "3,4": 0,
+      "3,5": 3,
+      "3,6": 2,
+      "3,7": 0,
+      "3,8": 0,
+      "3,9": 0,
+      "3,10": 3,
+      "3,11": 2,
+      "3,12": 0,
+      "3,13": 0,
+      "3,14": 0,
+      "3,16": 0,
+      "4,0": 0,
+      "4,1": 1,
+      "4,2": 1,
+      "4,3": 1,
+      "4,4": 1,
+      "4,5": 0,
+      "4,6": 1,
+      "4,7": 1,
+      "4,8": 1,
+      "4,9": 1,
+      "4,10": 0,
+      "4,11": 1,
+      "4,12": 1,
+      "4,13": 1,
+      "4,14": 1,
+      "4,15": 0,
+      "4,16": 0,
+      "5,0": 0,
+      "5,1": 4,
+      "5,12": 5,
+      "6,0": 0,
+      "6,12": 6,
+      "7,0": 0,
+      "7,12": 2,
+      "9,0": 7,
+      "9,1": 8,
+      "9,2": 7,
+      "9,3": 8,
+      "9,4": 7,
+      "9,5": 8,
+      "9,6": 7,
+      "9,7": 8,
+      "9,8": 9,
+      "9,9": 8,
+      "9,10": 8,
+      "9,11": 8,
+      "9,12": 8,
+      "9,13": 8,
+      "9,14": 10,
+      "9,15": 8,
+      "9,16": 8,
+      "10,0": 11,
+      "27,2": 0,
+      "27,3": 0,
+      "27,4": 0,
+      "27,5": 0,
+      "27,6": 0,
+      "27,7": 0,
+      "28,0": 12,
+      "28,1": 13,
+      "28,2": 14,
+      "28,3": 13,
+      "28,4": 14,
+      "28,5": 13,
+      "28,6": 13,
+      "28,7": 14,
+      "28,8": 13,
+      "28,9": 15,
+      "28,10": 13,
+      "28,11": 15,
+      "28,12": 13,
+      "28,13": 13,
+      "28,14": 13,
+      "28,15": 13,
+      "28,16": 16,
+      "29,0": 17,
+      "29,1": 18,
+      "29,2": 19,
+      "29,3": 18,
+      "29,4": 19,
+      "29,5": 18,
+      "29,6": 20,
+      "29,7": 21,
+      "29,8": 18,
+      "29,9": 0,
+      "29,11": 18,
+      "29,12": 22,
+      "29,13": 22,
+      "29,14": 0,
+      "29,16": 23,
+      "30,0": 24,
+      "30,16": 23,
+      "31,0": 25,
+      "31,1": 22,
+      "31,2": 22,
+      "31,3": 22,
+      "31,4": 22,
+      "31,5": 22,
+      "31,6": 22,
+      "31,7": 22,
+      "31,8": 22,
+      "31,9": 22,
+      "31,10": 22,
+      "31,11": 22,
+      "31,12": 22,
+      "31,13": 22,
+      "31,14": 22,
+      "31,15": 22,
+      "31,16": 26
+    },
+    "RowStyles": {
+      "30": 27,
+      "31": 27
+    },
+    "SheetStyle": {
+      "FontFamily": 0,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
+    }
+  },
+  "Spans": [
+    "1,1,1,10",
+    "1,11,1,2",
+    "1,13,1,4",
+    "3,1,1,4",
+    "3,6,1,4",
+    "3,11,1,4",
+    "5,1,3,11",
+    "5,12,1,5",
+    "6,12,1,5",
+    "7,12,1,5",
+    "9,0,1,2",
+    "9,2,1,2",
+    "9,4,1,2",
+    "9,6,1,2",
+    "9,8,1,6",
+    "9,14,1,3",
+    "10,0,17,17",
+    "29,0,1,2",
+    "29,2,1,2",
+    "29,4,1,2",
+    "29,9,1,2",
+    "29,11,1,3",
+    "29,14,1,3",
+    "30,0,2,17",
+    "28,0,1,2",
+    "28,2,1,2",
+    "28,4,1,2",
+    "28,9,1,2",
+    "28,11,1,3",
+    "28,14,1,3"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "IsMobilePage": true
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//qj7ShkuQ8a0m0fqhTzWIc3R38In99tJPDQIgg2sRuN1MH1lDCWU/YdZYl76nxtK54v3d4g+ICmWOgclCTAoePz95/pbxGWfH0yEnxY4L8ej+G5DQaPi4BXV55HkMy4UzG4mIgtQ5xWIA6A8OYiWXK7cYN8usPRQc0w0Eeh7lpK1PYVUmCzWnRwoSd+iQoG70Zk9JbOm4Or+HNrKOYOUNp8nZL3R+E5KfYXeP/6MGkfobvfXqvm2gW3XfTiRvR9XHAuYmwz7uYwYh5kFBJD9uAFsFCBknbZiQiKSK+erirHjttQhsUTA/Neh5u6ZYOQaLo5T5X3ANg/ba+2awF0jpWtmFn0eu655CQOEdDnIhVIWBlPAL/jbdNH1fcNqhIeI7dE5/6tctbiZlP2yjEnYQfq/jd9DPsHcvmvsrDgirKaz1B7uXkGkvo29244r6PUipIDGMbe/it8Ro4lTsvBx+KKWB0l5bsXgoC3aW/JSs7Rm0B6O5s6OGbzVbeixl5D/p/cD0gtUGg73TKyZWvfXGWhlOEIZ6eZGYSQ82xAINwiCL7g81kR+U3QNoYm9eKh9YgI9gxutxvket1HwDhBKIpbxBzrcrxbYl7lza2xcBJ0TLbx1IJnWhgwCFATtwTJIr6qUWK9ASTLAxiEFHzHSgdkNfbDwJtBId7EMKoyZBybmFCji7KdbBhSluLS51Jnk76a6xYxVVdO8XeC9Fm6igLue26AeD3Vfh79BGHUUjXN4SkER6A8NCelmARSnAV54xmGG7XxTbx92AUl2Yk4V9R+oUTvTvfLuMkHXp1kagFEuaWRa7BGrDWA0Z/ZHZa1VebnWD+t8kTILfyx/wP7qLkwmQsqFJol2/qY9szGo4ymfYi8WpVD4g90dv8eTAkutQosHDPG/+pABNvLl3epEJnQ==|920

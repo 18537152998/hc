@@ -1,0 +1,433 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "17": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 40.0
+        }
+      },
+      "18": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 48.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "30": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 32.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      }
+    },
+    "Count": 33,
+    "DefaultSize": 32.0
+  },
+  "Cols": {
+    "Count": 31,
+    "DefaultSize": 32.0
+  },
+  "Values": {
+    "1,1": "FBA入库单表信息",
+    "3,1": "FBA入库单号",
+    "3,17": "账户",
+    "6,1": "站点",
+    "6,17": "FBA仓库ID",
+    "9,1": "关联FBA发货单ID",
+    "9,17": "入库状态",
+    "12,1": "入库日期",
+    "12,17": "备注",
+    "15,1": "FBA入库明细表信息",
+    "31,5": "取消"
+  },
+  "AttachInfos": {
+    "4,1": {
+      "BindingInfo": {
+        "TableName": "FBA入库单表",
+        "ColumnName": "FBA入库单号",
+        "GUID": "256d2361-edaa-411e-ae98-727db62a56cd"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "4,17": {
+      "BindingInfo": {
+        "TableName": "FBA入库单表",
+        "ColumnName": "账户",
+        "GUID": "24accb6a-788b-4fc4-97d4-df48726e5e5e"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "7,1": {
+      "BindingInfo": {
+        "TableName": "FBA入库单表",
+        "ColumnName": "站点",
+        "GUID": "61440086-844e-4bca-84e4-df00b12c12a4"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "7,17": {
+      "BindingInfo": {
+        "TableName": "FBA入库单表",
+        "ColumnName": "FBA仓库ID",
+        "GUID": "da212410-2931-4bf2-96af-dd0edb331895"
+      },
+      "CellType": {
+        "$type": "Forguncy.NumberCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "10,1": {
+      "BindingInfo": {
+        "TableName": "FBA入库单表",
+        "ColumnName": "关联FBA发货单ID",
+        "GUID": "2e9d7811-984d-456d-ae4b-37b723711d9b"
+      },
+      "CellType": {
+        "$type": "Forguncy.NumberCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "10,17": {
+      "BindingInfo": {
+        "TableName": "FBA入库单表",
+        "ColumnName": "入库状态",
+        "GUID": "5736b6ab-3b91-4142-af30-fd0be7654cd0"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "13,1": {
+      "BindingInfo": {
+        "TableName": "FBA入库单表",
+        "ColumnName": "入库日期",
+        "GUID": "fef3f449-d5bb-4d6e-a9f6-9cc682431b7d"
+      },
+      "CellType": {
+        "$type": "Forguncy.DateCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "13,17": {
+      "BindingInfo": {
+        "TableName": "FBA入库单表",
+        "ColumnName": "备注",
+        "GUID": "22810991-7790-44cc-a3aa-831d9969f4ad"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "17,1": {
+      "ListViewInfo": {
+        "Name": "表格1",
+        "TableName": "FBA入库明细表",
+        "RowIndex": 17,
+        "ColumnIndex": 1,
+        "RowCount": 12,
+        "ColumnCount": 19,
+        "DetailListViewInfo": {
+          "ColumnOfDetailTable": "FBA入库单表_ID",
+          "MasterTable": "FBA入库单表",
+          "ColumnOfMasterTable": "ID",
+          "DataCommitType": 2
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_NewFashionListStyle2",
+        "ShowColumnHeaderInDesigner": true,
+        "IsRowHeaderVisible": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "AllowEditInListview": true,
+        "AllowAddNewRow": true,
+        "ShowDeleteButton": true,
+        "AllowDragFill": true,
+        "AllowDragMove": true,
+        "ColumnOperation": 2,
+        "CommitType": 1
+      }
+    },
+    "18,2": {
+      "NameUsedInJavaScript": "ID",
+      "BindingInfo": {
+        "TableName": "FBA入库明细表",
+        "ColumnName": "ID",
+        "GUID": "59e54d8e-e870-48b9-9ba9-5ef1dc7d0d17"
+      }
+    },
+    "18,5": {
+      "NameUsedInJavaScript": "公司产品ID",
+      "BindingInfo": {
+        "TableName": "FBA入库明细表",
+        "ColumnName": "公司产品ID",
+        "GUID": "559afac0-b663-469d-ba20-4863bb2a636c"
+      }
+    },
+    "18,8": {
+      "NameUsedInJavaScript": "SKU",
+      "BindingInfo": {
+        "TableName": "FBA入库明细表",
+        "ColumnName": "SKU",
+        "GUID": "87b1d86b-3ac0-47e3-9e5a-de403b8f91a5"
+      }
+    },
+    "18,11": {
+      "NameUsedInJavaScript": "计划入库数量",
+      "BindingInfo": {
+        "TableName": "FBA入库明细表",
+        "ColumnName": "计划入库数量",
+        "GUID": "8209693b-dfc3-479a-9052-0786124e3342"
+      }
+    },
+    "18,14": {
+      "NameUsedInJavaScript": "实际入库数量",
+      "BindingInfo": {
+        "TableName": "FBA入库明细表",
+        "ColumnName": "实际入库数量",
+        "GUID": "82958236-bc43-4484-a112-9de6200c2282"
+      }
+    },
+    "18,17": {
+      "NameUsedInJavaScript": "备注",
+      "BindingInfo": {
+        "TableName": "FBA入库明细表",
+        "ColumnName": "备注",
+        "GUID": "435201ce-f925-4736-a958-92896a7bbdf8"
+      }
+    },
+    "31,1": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=FBA入库单表_详情页面!B32"
+                      }
+                    ]
+                  },
+                  "value": "添加"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "FBA入库单表",
+                    "UpdateType": "add",
+                    "BreakpointIdentity": "799ee007-1b45-4612-a542-ff7ecd4042a4"
+                  }
+                ],
+                "ID": "72d7414e-bb4e-41ef-839d-0ff2a855d7d5"
+              },
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=FBA入库单表_详情页面!B32"
+                      }
+                    ]
+                  },
+                  "value": "更改"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "FBA入库单表",
+                    "BreakpointIdentity": "6ca0b5a6-642d-4e18-9f41-b9eff7660e85"
+                  }
+                ],
+                "ID": "2c468f9c-a78f-4101-9c5c-b966569b73b4"
+              }
+            ],
+            "BreakpointIdentity": "076cd385-eba9-4e1c-bdec-cf424ebfb279"
+          },
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "NavigateType": "back",
+            "BreakpointIdentity": "57684d39-e916-4c69-8815-3652ec4becb3"
+          }
+        ],
+        "TemplateKey": "_RS_Main1"
+      }
+    },
+    "31,5": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "NavigateType": "back",
+            "BreakpointIdentity": "d9479ae1-25ee-498c-9a9d-7353a204233d"
+          }
+        ],
+        "Text": "取消",
+        "TemplateKey": "_RS_Minor3"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontSize": 16.0,
+        "FontWeight": 0,
+        "TextIndent": 10,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "Formatter": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Bold",
+        "#1890FF",
+        "@",
+        "Body"
+      ],
+      "Borders": [
+        {
+          "Style": 5,
+          "Color": 1
+        }
+      ]
+    },
+    "CellStyles": {
+      "1,1": 0,
+      "4,1": 1,
+      "4,17": 1,
+      "7,1": 1,
+      "10,17": 1,
+      "13,17": 1,
+      "15,1": 0
+    },
+    "SheetStyle": {
+      "FontFamily": 3,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
+    }
+  },
+  "Spans": [
+    "1,1,1,6",
+    "3,1,1,6",
+    "3,17,1,6",
+    "4,1,1,13",
+    "4,17,1,13",
+    "6,1,1,6",
+    "6,17,1,6",
+    "7,1,1,13",
+    "7,17,1,13",
+    "9,1,1,6",
+    "9,17,1,6",
+    "10,1,1,13",
+    "10,17,1,13",
+    "12,1,1,6",
+    "12,17,1,6",
+    "13,1,1,13",
+    "13,17,1,13",
+    "15,1,1,6",
+    "17,2,1,3",
+    "17,5,1,3",
+    "17,8,1,3",
+    "17,11,1,3",
+    "17,14,1,3",
+    "17,17,1,3",
+    "18,2,1,3",
+    "18,5,1,3",
+    "18,8,1,3",
+    "18,11,1,3",
+    "18,14,1,3",
+    "18,17,1,3",
+    "19,1,10,19",
+    "31,1,1,3",
+    "31,5,1,3"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "ShouldCheckDirty": true,
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//cxTaR18X2u9c1H0nMqeW5mhcdQJDF5obVj2yxzeVvIuF1AMxDO61NCQCvgW0VEzkKTstN+0UPBMSau7wg9H/6KM3bEQn/ooqUSQUsBWQ3n+rLSfrNXhISDXouiPxMYP7rqban9mVaxi3LzN3DyVrFngcoPfj/M8g7KBqXYxxG/xBTHvxlPP0DT8hnGJs5z3u5mXHptN+Pd408GodtwWtidcDttmdRarknApy1KSB/dNa/fWgR3SYwKrcZBK7xWPsiZCC1UCdPWRV2Y2C4i7hHtjk2UecK8ZPsHClC881jP+P61Y78fuSjB2tCuki1gqLHc9C0h1rFwB1ya1bSYXdIlISqhhOhO1iUw0N0wIw7DONrnaPNALkmuM3G/MvtJ0eNa24AjGBq+eh/lyY6fNPCYUDlmaj2jQHrI8jyiWsot24Ab2PXxlG5cPXdH1++Pl7X0Y9Ko8sMoVjDjQ+X9weFBy4LfC2t1udN5rCaPjmSA8T/bzGoZMJFf5KGze1WCz6XUSZOfY8BPUXs+/myemrsENRoW51Dpx09F00A3be2kW8S3k3bEn9JtaIDeLB+1+/BSMYKEw6N/82jTFhceMER6FZqfuiOloEjORJm4Sc6HErn/f+sQhx0t1bz58Q3CBdOKlGEYBNCJrN5Szi/qJ2HkENs5jKttLznaowSDTzSvoZsbAsu3I/0/vNkt7SpBHcANA5+Z140cBNxzJavm0bBSQIIUrZtbTNyzQBRghjsaQvuirkX15QSt45u+RubnTg+PoEFWFDu1xzsGqC49x0XRuGjGWKKUM6v0wwh85a2oAwrQgAcjNA58QuieiluXIitvMFABMXdQ11BZx1GN9cY0q9BDUoC1hOJD7rmA83ku8nZyq6G8rJ5uIRIVuAlV37ywj8A0W2B9levo51Gp7aTA==|920

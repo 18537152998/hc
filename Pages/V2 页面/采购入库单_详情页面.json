@@ -1,0 +1,1275 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "17": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 40.0
+        }
+      },
+      "18": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 48.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "30": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 32.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      }
+    },
+    "Count": 34,
+    "DefaultSize": 32.0
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "26": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 94.0
+        }
+      },
+      "27": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 62.0
+        }
+      },
+      "28": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 61.0
+        }
+      },
+      "29": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 71.0
+        }
+      }
+    },
+    "Count": 34,
+    "DefaultSize": 32.0
+  },
+  "Values": {
+    "1,1": "采购入库单信息",
+    "3,1": "入库单号",
+    "3,17": "采购单ID",
+    "6,1": "入库日期",
+    "6,17": "仓库ID",
+    "9,1": "入库类型",
+    "9,17": "入库状态",
+    "10,1": "采购入库",
+    "10,17": "草稿",
+    "12,1": "物流单号",
+    "12,17": "备注",
+    "15,1": "采购入库明细表信息",
+    "17,27": "新已入库数量",
+    "29,19": "共",
+    "29,22": "条",
+    "31,5": "取消",
+    "31,9": "入库审核按钮",
+    "32,9": "*审核后，增加入库流水，入库单锁定。"
+  },
+  "Formulas": {
+    "18,20": "ROUND(O19*R19,2)",
+    "18,27": "AA19+O19",
+    "18,29": "IF(O19>AC19-AA19,0,1)",
+    "29,20": "COUNTA(C19)",
+    "33,11": "SUM(O19)"
+  },
+  "AttachInfos": {
+    "4,1": {
+      "BindingInfo": {
+        "TableName": "采购入库单",
+        "ColumnName": "入库单号",
+        "GUID": "490d9fad-2894-4eaf-82a0-f737d13fa2b7"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner",
+        "ReadOnly": true
+      }
+    },
+    "4,17": {
+      "BindingInfo": {
+        "TableName": "采购入库单",
+        "ColumnName": "采购单ID",
+        "GUID": "d78fc329-2b3d-478c-8a37-ce9c9456e6ce"
+      },
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "SelectOnly": false,
+        "TemplateKey": "_RS_NewLittleRoundCorner",
+        "IsBounding": true,
+        "DataSource": "采购单",
+        "ValueColumnBindingInfo": {
+          "TableName": "采购单",
+          "ColumnName": "ID",
+          "GUID": "be457528-314e-424a-aa81-1d948f7e1ac7"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "采购单",
+          "ColumnName": "采购单号",
+          "GUID": "d05eeb5c-6691-40bb-a874-314df9e86dd0"
+        },
+        "ItemsQuery": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "采购单",
+            "ColumnName": "采购状态",
+            "GUID": "2d36534b-e080-4038-84bb-82682b0e90be"
+          },
+          "Value": "已确认"
+        },
+        "ReadOnly": true
+      }
+    },
+    "7,1": {
+      "BindingInfo": {
+        "TableName": "采购入库单",
+        "ColumnName": "入库日期",
+        "GUID": "75fc70fb-dc76-45ed-87a0-a5f0d35005b4"
+      },
+      "CellType": {
+        "$type": "Forguncy.DateCellType, ServerDesignerCommon",
+        "CellDefaultValue": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=TODAY()"
+        },
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "7,17": {
+      "BindingInfo": {
+        "TableName": "采购入库单",
+        "ColumnName": "仓库ID",
+        "GUID": "69c567a4-2902-4e08-9549-d8d2cd9495cd"
+      },
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_NewLittleRoundCorner",
+        "IsBounding": true,
+        "DataSource": "仓库表",
+        "ValueColumnBindingInfo": {
+          "TableName": "仓库表",
+          "ColumnName": "ID",
+          "GUID": "1ab95d78-01f9-4f08-9051-71a20eb01f73"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "仓库表",
+          "ColumnName": "仓库名称",
+          "GUID": "4978b448-3d0d-4516-93e6-3b9df86805f6"
+        },
+        "ItemsQuery": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "仓库表",
+            "ColumnName": "是否启用",
+            "GUID": "1cc117d8-e25f-46f5-b7fc-a2a1616ff622"
+          },
+          "Value": "1"
+        }
+      }
+    },
+    "10,1": {
+      "BindingInfo": {
+        "TableName": "采购入库单",
+        "ColumnName": "入库类型",
+        "GUID": "6ad8ded9-e540-4cad-9dd9-e2a4cbefd546"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "CellDefaultValue": "采购入库",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner",
+        "ReadOnly": true
+      }
+    },
+    "10,17": {
+      "BindingInfo": {
+        "TableName": "采购入库单",
+        "ColumnName": "入库状态",
+        "GUID": "da2613f0-9536-426e-b3d8-ac9293d20bab"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "CellDefaultValue": "草稿",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner",
+        "ReadOnly": true
+      }
+    },
+    "13,1": {
+      "BindingInfo": {
+        "TableName": "采购入库单",
+        "ColumnName": "物流单号",
+        "GUID": "4de4ba0c-43db-4a4a-a2ad-fe2ab216e0b9"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "13,17": {
+      "BindingInfo": {
+        "TableName": "采购入库单",
+        "ColumnName": "备注",
+        "GUID": "f4e57b02-b659-4ff1-851b-0c7de898b47a"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner",
+        "ReadOnly": true
+      }
+    },
+    "17,1": {
+      "ListViewInfo": {
+        "Name": "表格1",
+        "TableName": "采购入库明细表",
+        "RowIndex": 17,
+        "ColumnIndex": 1,
+        "RowCount": 12,
+        "ColumnCount": 29,
+        "DetailListViewInfo": {
+          "ColumnOfDetailTable": "采购入库单_ID",
+          "MasterTable": "采购入库单",
+          "ColumnOfMasterTable": "ID",
+          "DataCommitType": 2
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_NewFashionListStyle2",
+        "ShowColumnHeaderInDesigner": true,
+        "IsRowHeaderVisible": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "AllowEditInListview": true,
+        "AllowAddNewRow": true,
+        "ShowDeleteButton": true,
+        "AllowDragFill": true,
+        "AllowDragMove": true,
+        "ColumnOperation": 2,
+        "CommitType": 1
+      }
+    },
+    "17,27": {
+      "CellComment": {
+        "Comments": "新已入库数量"
+      }
+    },
+    "18,2": {
+      "NameUsedInJavaScript": "采购明细ID",
+      "BindingInfo": {
+        "TableName": "采购入库明细表",
+        "ColumnName": "采购明细ID",
+        "GUID": "efb5bce4-1095-4403-806c-04c537a109e0"
+      }
+    },
+    "18,5": {
+      "NameUsedInJavaScript": "公司产品ID",
+      "BindingInfo": {
+        "TableName": "采购入库明细表",
+        "ColumnName": "公司产品ID",
+        "GUID": "2ad8ffaa-3768-4512-98d2-880b2852625c"
+      },
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "IsBounding": true,
+        "DataSource": "公司产品表",
+        "ValueColumnBindingInfo": {
+          "TableName": "公司产品表",
+          "ColumnName": "ID",
+          "GUID": "be802e5f-1e87-473c-8c48-28c9e290e92d"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "公司产品表",
+          "ColumnName": "SPU",
+          "GUID": "bbca0928-9c41-4b46-8db7-4d47803014c1"
+        }
+      }
+    },
+    "18,14": {
+      "NameUsedInJavaScript": "本次入库数量",
+      "BindingInfo": {
+        "TableName": "采购入库明细表",
+        "ColumnName": "本次入库数量",
+        "GUID": "4d416884-775a-4535-be40-20b8b4b7775a"
+      }
+    },
+    "18,17": {
+      "NameUsedInJavaScript": "入库单价",
+      "BindingInfo": {
+        "TableName": "采购入库明细表",
+        "ColumnName": "入库单价",
+        "GUID": "68b34735-8046-447a-8c8d-ce6b1dbed353"
+      }
+    },
+    "18,20": {
+      "NameUsedInJavaScript": "入库金额",
+      "BindingInfo": {
+        "TableName": "采购入库明细表",
+        "ColumnName": "入库金额",
+        "GUID": "f29c4ddc-0f97-47c3-8699-46629aae0b83"
+      }
+    },
+    "18,23": {
+      "NameUsedInJavaScript": "批次号",
+      "BindingInfo": {
+        "TableName": "采购入库明细表",
+        "ColumnName": "批次号",
+        "GUID": "ff91e5f5-3f0e-4834-b2f5-079189a07e6f"
+      }
+    },
+    "18,26": {
+      "BindingInfo": {
+        "TableName": "采购入库明细表",
+        "ColumnName": "采购入库单_ID",
+        "GUID": "f678daf0-4e67-4675-9c8c-82ab592d0758",
+        "RelationBinding": {
+          "RelatedTable": "采购单明细表",
+          "RelatedColumn": "ID",
+          "DisplayColumn": "已入库数量"
+        }
+      }
+    },
+    "18,28": {
+      "BindingInfo": {
+        "TableName": "采购入库明细表",
+        "ColumnName": "采购明细ID",
+        "GUID": "3d1e8b28-fde1-4d37-a8cf-6e640ef0fada",
+        "RelationBinding": {
+          "RelatedTable": "采购单明细表",
+          "RelatedColumn": "ID",
+          "DisplayColumn": "采购数量"
+        }
+      }
+    },
+    "31,1": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=采购入库单_详情页面!B32"
+                      }
+                    ]
+                  },
+                  "value": "添加"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "采购入库单",
+                    "UpdateType": "add",
+                    "BreakpointIdentity": "ccbe0fd5-5d29-4d24-b455-0884aa1c0021"
+                  }
+                ],
+                "ID": "bc7aa9ed-3132-42e7-8d18-600da304f94b"
+              },
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=采购入库单_详情页面!B32"
+                      }
+                    ]
+                  },
+                  "value": "更改"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "采购入库单",
+                    "BreakpointIdentity": "91a92cac-def6-4514-9832-84c38b2176bc"
+                  }
+                ],
+                "ID": "4fc9cdcf-696a-45a1-b553-6d6cb305c36a"
+              }
+            ],
+            "BreakpointIdentity": "42c5ef7b-f5fb-431f-ad21-515cb9085f4f"
+          },
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "NavigateType": "back",
+            "BreakpointIdentity": "b9dbb263-8476-4864-9ee8-bc8c59755701"
+          }
+        ],
+        "TemplateKey": "_RS_Main1"
+      }
+    },
+    "31,5": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "NavigateType": "back",
+            "BreakpointIdentity": "525c5038-64df-432b-adfa-ef5f06bc4f72"
+          }
+        ],
+        "Text": "取消",
+        "TemplateKey": "_RS_Minor3"
+      }
+    },
+    "31,9": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "SubConditions": [
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=采购入库单_详情页面!U30"
+                          }
+                        ]
+                      },
+                      "value": "1",
+                      "compareType": 3
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=采购入库单_详情页面!L34"
+                          }
+                        ]
+                      },
+                      "value": "0",
+                      "compareType": 2
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=采购入库单_详情页面!R8"
+                          }
+                        ]
+                      },
+                      "value": "%Null%",
+                      "compareType": 1
+                    }
+                  ]
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                    "ConditionAndCommandPairList": [
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=采购入库单_详情页面!AD19"
+                              }
+                            ]
+                          },
+                          "value": "0",
+                          "compareType": 1
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.LoopCommand, ServerDesignerCommon",
+                            "LoopInfo": {
+                              "$type": "Forguncy.Model.ListviewKindLoopInfo, ServerDesignerCommon",
+                              "ListviewName": "表格1"
+                            },
+                            "CommandList": [
+                              {
+                                "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                                "TableName": "库存流水表",
+                                "UpdateType": "add",
+                                "ShowConfirm": false,
+                                "UpdateBindingValues": [
+                                  {
+                                    "BindingInfo": {
+                                      "TableName": "库存流水表",
+                                      "ColumnName": "业务类型",
+                                      "GUID": "6ea4d1b2-039e-4b5f-bd7f-cdc3a65072f3"
+                                    },
+                                    "Value": "采购入库"
+                                  },
+                                  {
+                                    "BindingInfo": {
+                                      "TableName": "库存流水表",
+                                      "ColumnName": "业务单号",
+                                      "GUID": "665fbc94-714b-4886-aeed-6e2e726288a4"
+                                    },
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=采购入库单_详情页面!B5"
+                                    }
+                                  },
+                                  {
+                                    "BindingInfo": {
+                                      "TableName": "库存流水表",
+                                      "ColumnName": "业务明细ID",
+                                      "GUID": "4791fd53-ed74-4ff0-bf3c-c53cebf86690"
+                                    },
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=采购入库单_详情页面!C19"
+                                    }
+                                  },
+                                  {
+                                    "BindingInfo": {
+                                      "TableName": "库存流水表",
+                                      "ColumnName": "仓库ID",
+                                      "GUID": "687d26f1-b7bb-46fc-adaa-67e30f65eb6c"
+                                    },
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=采购入库单_详情页面!R8"
+                                    }
+                                  },
+                                  {
+                                    "BindingInfo": {
+                                      "TableName": "库存流水表",
+                                      "ColumnName": "公司产品ID",
+                                      "GUID": "fc5c1c9c-150f-43b9-afcd-6d0f0ab75d43"
+                                    },
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=采购入库单_详情页面!F19"
+                                    }
+                                  },
+                                  {
+                                    "BindingInfo": {
+                                      "TableName": "库存流水表",
+                                      "ColumnName": "库存类型",
+                                      "GUID": "a88a8a95-8e2c-4dc5-98e9-f7b6629f5240"
+                                    },
+                                    "Value": "本地"
+                                  },
+                                  {
+                                    "BindingInfo": {
+                                      "TableName": "库存流水表",
+                                      "ColumnName": "入库数量",
+                                      "GUID": "d19cce7e-2580-4976-8707-fcdca6ed536b"
+                                    },
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=采购入库单_详情页面!O19"
+                                    }
+                                  },
+                                  {
+                                    "BindingInfo": {
+                                      "TableName": "库存流水表",
+                                      "ColumnName": "出库数量",
+                                      "GUID": "632d959f-83d2-483f-bf9d-685c112cecd4"
+                                    },
+                                    "Value": "0"
+                                  },
+                                  {
+                                    "BindingInfo": {
+                                      "TableName": "库存流水表",
+                                      "ColumnName": "发生日期",
+                                      "GUID": "19651961-e90a-4e42-ab3c-9396d04c669b"
+                                    },
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=NOW()"
+                                    }
+                                  },
+                                  {
+                                    "BindingInfo": {
+                                      "TableName": "库存流水表",
+                                      "ColumnName": "单位成本",
+                                      "GUID": "e7fe0b95-b3e2-4509-ba2b-c9ce969ea312"
+                                    },
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=采购入库单_详情页面!R19"
+                                    }
+                                  },
+                                  {
+                                    "BindingInfo": {
+                                      "TableName": "库存流水表",
+                                      "ColumnName": "是否有效",
+                                      "GUID": "716e6953-6674-42dd-927f-add721fb1391"
+                                    },
+                                    "Value": "1"
+                                  }
+                                ],
+                                "BreakpointIdentity": "fd91be73-cc5a-438b-a5cc-7af579525a9d"
+                              },
+                              {
+                                "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                                "TableName": "批次表",
+                                "UpdateType": "add",
+                                "ShowConfirm": false,
+                                "UpdateBindingValues": [
+                                  {
+                                    "BindingInfo": {
+                                      "TableName": "批次表",
+                                      "ColumnName": "批次号",
+                                      "GUID": "75025c04-72c2-485c-9b13-2e73fe6ee2dc"
+                                    },
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=采购入库单_详情页面!B5&\"-\"&采购入库单_详情页面!C19"
+                                    }
+                                  },
+                                  {
+                                    "BindingInfo": {
+                                      "TableName": "批次表",
+                                      "ColumnName": "公司产品ID",
+                                      "GUID": "a2e2faf2-e24b-43fc-b00e-9e0a955dec66"
+                                    },
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=采购入库单_详情页面!F19"
+                                    }
+                                  },
+                                  {
+                                    "BindingInfo": {
+                                      "TableName": "批次表",
+                                      "ColumnName": "采购单ID",
+                                      "GUID": "7cd5b30c-4c97-4a82-b32b-2ab52692fb1b"
+                                    },
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=采购入库单_详情页面!R5"
+                                    }
+                                  },
+                                  {
+                                    "BindingInfo": {
+                                      "TableName": "批次表",
+                                      "ColumnName": "采购入库单ID",
+                                      "GUID": "cb63ec0a-f7a2-4374-a2f4-b9b087c042a7"
+                                    },
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=采购入库单_详情页面!R34"
+                                    }
+                                  },
+                                  {
+                                    "BindingInfo": {
+                                      "TableName": "批次表",
+                                      "ColumnName": "发票ID",
+                                      "GUID": "c9601608-29f2-4c93-bf33-30c8f7988451"
+                                    }
+                                  },
+                                  {
+                                    "BindingInfo": {
+                                      "TableName": "批次表",
+                                      "ColumnName": "初始数量",
+                                      "GUID": "f8b6369f-0bff-4b62-b235-918b29261bf3"
+                                    },
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=采购入库单_详情页面!O19"
+                                    }
+                                  },
+                                  {
+                                    "BindingInfo": {
+                                      "TableName": "批次表",
+                                      "ColumnName": "剩余数量",
+                                      "GUID": "2321399e-83bf-4d0f-b151-4b0b28cd3372"
+                                    },
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=采购入库单_详情页面!O19"
+                                    }
+                                  },
+                                  {
+                                    "BindingInfo": {
+                                      "TableName": "批次表",
+                                      "ColumnName": "单位成本",
+                                      "GUID": "6fbc1192-8f59-4f02-b984-ef337311283e"
+                                    },
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=采购入库单_详情页面!R19"
+                                    }
+                                  },
+                                  {
+                                    "BindingInfo": {
+                                      "TableName": "批次表",
+                                      "ColumnName": "批次状态",
+                                      "GUID": "25405459-04b9-4dd5-9d56-bf5b53bfe3ea"
+                                    },
+                                    "Value": "可用"
+                                  },
+                                  {
+                                    "BindingInfo": {
+                                      "TableName": "批次表",
+                                      "ColumnName": "仓库ID",
+                                      "GUID": "84092e1a-c537-4010-bc6f-53e625f0b5e1"
+                                    },
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=采购入库单_详情页面!R8"
+                                    }
+                                  }
+                                ],
+                                "BreakpointIdentity": "33ad7b27-07ec-4025-83dc-ac32aa346357"
+                              },
+                              {
+                                "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                                "TableName": "采购单明细表",
+                                "ShowConfirm": false,
+                                "RowsToUpdate": 1,
+                                "RowsToUpdateCondition": {
+                                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                  "ColumnBindingInfo": {
+                                    "TableName": "采购单明细表",
+                                    "ColumnName": "ID",
+                                    "GUID": "0d07e14e-8b09-48b9-b03f-bc2a2faef6e1"
+                                  },
+                                  "Value": {
+                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                    "SerializeProperty": "=采购入库单_详情页面!C19"
+                                  }
+                                },
+                                "UpdateBindingValues": [
+                                  {
+                                    "BindingInfo": {
+                                      "TableName": "采购单明细表",
+                                      "ColumnName": "已入库数量",
+                                      "GUID": "bf83079c-b6ed-452b-bf69-46e0bd27cf67"
+                                    },
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=采购入库单_详情页面!AB19"
+                                    }
+                                  }
+                                ],
+                                "BreakpointIdentity": "683e7b39-2efa-4b9b-b1fd-1c96a59cc5f0"
+                              }
+                            ],
+                            "BreakpointIdentity": "74f6c78e-9c4c-4a83-9b42-e8bed2cbd9bc"
+                          },
+                          {
+                            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                            "TableName": "采购入库单",
+                            "ShowConfirm": false,
+                            "ReloadAfterSucceed": false,
+                            "UpdateBindingValues": [
+                              {
+                                "BindingInfo": {
+                                  "TableName": "采购入库单",
+                                  "ColumnName": "入库状态",
+                                  "GUID": "b39433ac-9aba-4cea-9232-850e55ad017b"
+                                },
+                                "Value": "已审核"
+                              }
+                            ],
+                            "BreakpointIdentity": "e879fd93-d852-4971-92b5-4e8b39afd052"
+                          },
+                          {
+                            "$type": "Forguncy.Model.ShareCommand, ServerDesignerCommon",
+                            "ShareCommandContainerRefer": {
+                              "ShareCommandContainerID": "c6826632-3693-4ace-9428-9b55f54d5dfd"
+                            },
+                            "Params": [
+                              {
+                                "ParamReferObject": {
+                                  "ParamID": "eea110f4-3b60-43b6-af4e-c1511ab08aa0",
+                                  "ShareCommandContainerReferObject": {
+                                    "ShareCommandContainerID": "c6826632-3693-4ace-9428-9b55f54d5dfd"
+                                  }
+                                },
+                                "Value": "入库审核完成"
+                              },
+                              {
+                                "ParamReferObject": {
+                                  "ParamID": "3badc0e1-9000-4a1c-8f39-26cb9e897b5c",
+                                  "ShareCommandContainerReferObject": {
+                                    "ShareCommandContainerID": "c6826632-3693-4ace-9428-9b55f54d5dfd"
+                                  }
+                                },
+                                "Value": "成功"
+                              }
+                            ],
+                            "ReturnPropertiesTo": [
+                              {
+                                "ReturnPropertyReferObject": {
+                                  "ParamID": "67060bbc-e869-4e69-adae-87c9e87f672d",
+                                  "ShareCommandContainerReferObject": {
+                                    "ShareCommandContainerID": "c6826632-3693-4ace-9428-9b55f54d5dfd"
+                                  }
+                                }
+                              }
+                            ],
+                            "BreakpointIdentity": "3ca25761-d4fa-43b7-9ba9-fdfdb02d7983"
+                          }
+                        ],
+                        "ID": "935c4bd3-2ed3-4a82-b4c8-9336623cb2e6"
+                      },
+                      {
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.ShareCommand, ServerDesignerCommon",
+                            "ShareCommandContainerRefer": {
+                              "ShareCommandContainerID": "c6826632-3693-4ace-9428-9b55f54d5dfd"
+                            },
+                            "Params": [
+                              {
+                                "ParamReferObject": {
+                                  "ParamID": "eea110f4-3b60-43b6-af4e-c1511ab08aa0",
+                                  "ShareCommandContainerReferObject": {
+                                    "ShareCommandContainerID": "c6826632-3693-4ace-9428-9b55f54d5dfd"
+                                  }
+                                },
+                                "Value": "本次入库数量超过剩余可入数量，不能审核"
+                              },
+                              {
+                                "ParamReferObject": {
+                                  "ParamID": "3badc0e1-9000-4a1c-8f39-26cb9e897b5c",
+                                  "ShareCommandContainerReferObject": {
+                                    "ShareCommandContainerID": "c6826632-3693-4ace-9428-9b55f54d5dfd"
+                                  }
+                                },
+                                "Value": "失败"
+                              }
+                            ],
+                            "ReturnPropertiesTo": [
+                              {
+                                "ReturnPropertyReferObject": {
+                                  "ParamID": "67060bbc-e869-4e69-adae-87c9e87f672d",
+                                  "ShareCommandContainerReferObject": {
+                                    "ShareCommandContainerID": "c6826632-3693-4ace-9428-9b55f54d5dfd"
+                                  }
+                                }
+                              }
+                            ],
+                            "BreakpointIdentity": "db49bfce-6838-423c-8f7f-67b961132a51"
+                          }
+                        ],
+                        "ID": "4ded4088-57a9-4da0-8a3f-4eecfff48361"
+                      }
+                    ],
+                    "BreakpointIdentity": "7b2c1342-1446-4fd2-b543-d8d76dd56e7b"
+                  },
+                  {
+                    "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+                    "ReloadData": true,
+                    "BreakpointIdentity": "ebbc41a7-4bf0-4b26-a692-b77d1447c1a6"
+                  }
+                ],
+                "ID": "f54e4219-12ce-4146-91e4-4bda3df34783"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShareCommand, ServerDesignerCommon",
+                    "ShareCommandContainerRefer": {
+                      "ShareCommandContainerID": "c6826632-3693-4ace-9428-9b55f54d5dfd"
+                    },
+                    "Params": [
+                      {
+                        "ParamReferObject": {
+                          "ParamID": "eea110f4-3b60-43b6-af4e-c1511ab08aa0",
+                          "ShareCommandContainerReferObject": {
+                            "ShareCommandContainerID": "c6826632-3693-4ace-9428-9b55f54d5dfd"
+                          }
+                        },
+                        "Value": "请检查 仓库、入库数量。"
+                      },
+                      {
+                        "ParamReferObject": {
+                          "ParamID": "3badc0e1-9000-4a1c-8f39-26cb9e897b5c",
+                          "ShareCommandContainerReferObject": {
+                            "ShareCommandContainerID": "c6826632-3693-4ace-9428-9b55f54d5dfd"
+                          }
+                        },
+                        "Value": "失败"
+                      }
+                    ],
+                    "ReturnPropertiesTo": [
+                      {
+                        "ReturnPropertyReferObject": {
+                          "ParamID": "67060bbc-e869-4e69-adae-87c9e87f672d",
+                          "ShareCommandContainerReferObject": {
+                            "ShareCommandContainerID": "c6826632-3693-4ace-9428-9b55f54d5dfd"
+                          }
+                        }
+                      }
+                    ],
+                    "BreakpointIdentity": "0083fa36-34b0-419c-91a9-130c4cd5d2f1"
+                  }
+                ],
+                "ID": "da766cbb-de68-4a96-8a7b-0aa12185b1d3"
+              }
+            ],
+            "BreakpointIdentity": "36f34e02-80a3-473f-9f72-7c66557e535e"
+          }
+        ],
+        "Text": "入库审核按钮",
+        "TemplateKey": "_RS_Success1"
+      }
+    },
+    "33,11": {
+      "CellComment": {
+        "Comments": "本次入库数量"
+      }
+    },
+    "33,17": {
+      "CellComment": {
+        "Comments": "入库单ID"
+      },
+      "BindingInfo": {
+        "TableName": "采购入库明细表",
+        "ColumnName": "ID",
+        "GUID": "95457f22-bb4b-4b12-908e-f3fda574a102"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontSize": 16.0,
+        "FontWeight": 0,
+        "TextIndent": 10,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "Formatter": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "HorizontalAlignment": 3,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 4,
+        "HorizontalAlignment": 3,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 4,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Formatter": 5,
+        "HorizontalAlignment": 3,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 4,
+        "Foreground": 6,
+        "Formatter": 7,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Bold",
+        "#1890FF",
+        "@",
+        "Center",
+        "Body",
+        " ¥#,##0.00_);[Red] ¥(#,##0.00)",
+        "#FFFF0000",
+        "[AUTO]General"
+      ],
+      "Borders": [
+        {
+          "Style": 5,
+          "Color": 1
+        }
+      ]
+    },
+    "CellStyles": {
+      "1,1": 0,
+      "4,1": 1,
+      "10,1": 1,
+      "10,17": 1,
+      "13,1": 1,
+      "13,17": 1,
+      "15,1": 0,
+      "17,1": 2,
+      "17,2": 3,
+      "17,14": 2,
+      "17,17": 2,
+      "17,20": 2,
+      "17,23": 3,
+      "17,26": 4,
+      "18,1": 2,
+      "18,2": 3,
+      "18,5": 3,
+      "18,14": 2,
+      "18,17": 2,
+      "18,20": 5,
+      "18,23": 3,
+      "18,26": 4,
+      "29,19": 4,
+      "29,20": 4,
+      "29,21": 4,
+      "29,22": 4,
+      "31,9": 4,
+      "31,10": 4,
+      "31,11": 4,
+      "31,12": 4,
+      "31,13": 4,
+      "31,14": 4,
+      "31,15": 4,
+      "32,9": 6,
+      "32,10": 4,
+      "32,11": 4,
+      "32,12": 4,
+      "32,13": 4,
+      "32,14": 4,
+      "32,15": 4,
+      "33,10": 4,
+      "33,11": 4,
+      "33,12": 4,
+      "33,13": 4,
+      "33,14": 4,
+      "33,15": 4
+    },
+    "SheetStyle": {
+      "FontFamily": 4,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
+    }
+  },
+  "Spans": [
+    "1,1,1,6",
+    "3,1,1,6",
+    "3,17,1,6",
+    "4,1,1,13",
+    "4,17,1,16",
+    "6,1,1,6",
+    "6,17,1,6",
+    "7,1,1,13",
+    "7,17,1,16",
+    "9,1,1,6",
+    "9,17,1,6",
+    "10,1,1,13",
+    "10,17,1,16",
+    "12,1,1,6",
+    "12,17,1,6",
+    "13,1,1,13",
+    "13,17,1,16",
+    "15,1,1,6",
+    "17,2,1,3",
+    "17,5,1,9",
+    "17,14,1,3",
+    "17,17,1,3",
+    "17,20,1,3",
+    "17,23,1,3",
+    "18,2,1,3",
+    "18,5,1,9",
+    "18,14,1,3",
+    "18,17,1,3",
+    "18,20,1,3",
+    "18,23,1,3",
+    "19,1,10,29",
+    "29,20,1,2",
+    "31,1,1,3",
+    "31,5,1,3",
+    "31,9,1,7"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "ShouldCheckDirty": true,
+    "PageLoadedCommandList": [
+      {
+        "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+        "ConditionAndCommandPairList": [
+          {
+            "Condition": {
+              "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+              "param": {
+                "$type": "Forguncy.Model.IfConditionTableDataParam, ServerDesignerCommon",
+                "tableData": {
+                  "TableName": "采购入库单",
+                  "ColumnName": "入库状态",
+                  "GUID": "eff75ce0-a8d9-4109-bbc8-e67d12a4e795"
+                }
+              },
+              "value": "%Null%"
+            },
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                "PropertyItemsList": [
+                  {
+                    "TargetCells": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=采购入库单_详情页面!R11"
+                    },
+                    "Value": "草稿"
+                  }
+                ],
+                "BreakpointIdentity": "d04fdefd-4dce-43f2-9f9e-5712c39d1044"
+              }
+            ],
+            "ID": "376df3aa-aebb-4f1e-92dd-011f71505ed3"
+          },
+          {
+            "Condition": {
+              "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+              "param": {
+                "$type": "Forguncy.Model.IfConditionTableDataParam, ServerDesignerCommon",
+                "tableData": {
+                  "TableName": "采购入库单",
+                  "ColumnName": "入库状态",
+                  "GUID": "d4680cd7-3e65-41a7-acb3-47d89c24e98d"
+                }
+              },
+              "value": "已审核"
+            },
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                "PropertyItemsList": [
+                  {
+                    "TargetCells": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=采购入库单_详情页面!入库单编辑"
+                    },
+                    "PropertyType": 0,
+                    "Value": false
+                  },
+                  {
+                    "TargetCells": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=采购入库单_详情页面!B32"
+                    },
+                    "PropertyType": 0,
+                    "Value": false
+                  },
+                  {
+                    "TargetCells": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=采购入库单_详情页面!J32"
+                    },
+                    "PropertyType": 0,
+                    "Value": false
+                  }
+                ],
+                "BreakpointIdentity": "016097d3-0d7c-423a-beb0-0c300789655d"
+              },
+              {
+                "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+                "ListviewName": "表格1",
+                "UpdateType": 6,
+                "UpdateListviewCommandRunTimeMethodSetting": {
+                  "MethodName": "UpdateEditingSetting",
+                  "ParameterValues": {
+                    "allowEdit": false,
+                    "allowAddNewRow": false,
+                    "displayDeleteButton": false,
+                    "enableDeleteMenuItem": false
+                  }
+                },
+                "BreakpointIdentity": "6b795090-01bb-46d7-aa44-850bf4fa5db0"
+              }
+            ],
+            "ID": "4b8b79d7-485d-4582-afa5-39b9f3d77060"
+          }
+        ],
+        "BreakpointIdentity": "6d96e92f-1f85-415e-a640-2fed6f6742ef"
+      }
+    ],
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "入库单编辑",
+      "Formula": "采购入库单_详情页面!$B$4:$AG$14"
+    }
+  ]
+}//7pBvBlSl8y53T/WJbgYH15woy+dOMgkP90WNiVLIx4v6xj8uIlJ6F/Ycj8CIHcD5nexy6RCEObtQXDm2oVhaNrGGxdJMufcfJOPo13BP5DoS9i0LKXaqCTXY75qomMPghAcdkZqpDx84j+NWSC52k0DcOsE31rV4zvhD0QDCZfE6DMC7nYE6S/sSrtCzs2iIQZjtC+wBnoJcK2Pp2lq+JxtnqrvuxMc8cbm0o1ds/YKjiaVDJp2+cbTv9goXjGUsftd3LE44ewgFHX3h3b5SIKuMaeGlarvww+v8W8oV4BrvVjukRYRMuogQRgASNzuZ5vQ+81dUAFN52Fn4IARiHNG+F09yWsuPhuL5ejufyRtEKAsRe5oAprG1WTG2+cLpKEKAyHwN4UX4MyE+vp9ommRe97RWN+JMFgYAfBoESFWYi8UjXyV87pviyINC9T5eVHOMzvoHYcxZdDxvYeAkPepcHylVQQfDENtFL8d5meOOpCdLHOXeqro5pa5gTM+vqFTxWMf13vfI/23nkfjvZzB6fTTtcllk0C1+tSrqHPZivQCmTshlFswSCyXy6ky/cS05QJvYqRoVar3k2BXZOmrBzf1tHS9qz9loaAlrX7ycYI+lGUEBDnhtmwERK1MRd67nq1m4fDzBQbYzufqK8XgpF0njrT1naQ8MIp0dr8HAY30vqX8C13K4zVSsIfpkcpKN8IoTPX6kMkdrc5Jf8h27pf3EBm9ED70mjR4+FXC/S184yOfJ8EK9SYwtDt2KMmufy7NsLSU5zlcV+QhJxLj355KYa4vug3pnZqnWy+zx7yG+qENuWwEbsaZIRHghojsA0dODoEeDGrcSt240PdP7vVRXlP20j8swyjLpeGWRL+vRtY2X1zXOTCXQKNSilpDJbKPrhIC92yjYZiilow==|920

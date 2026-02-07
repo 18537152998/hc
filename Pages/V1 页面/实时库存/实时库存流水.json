@@ -1,0 +1,300 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 40.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 40.0
+        }
+      }
+    },
+    "Count": 32
+  },
+  "Cols": {
+    "Count": 70
+  },
+  "AttachInfos": {
+    "1,2": {
+      "ListViewInfo": {
+        "Name": "表格2",
+        "TableName": "实时库存表_子表",
+        "RowIndex": 1,
+        "ColumnIndex": 2,
+        "RowCount": 27,
+        "ColumnCount": 64,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "实时库存表_子表",
+            "ColumnName": "库存表_ID",
+            "GUID": "ec4e86b3-8a4c-4cc9-862a-1192aef14a99"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=实时库存流水!C29"
+          }
+        },
+        "NullFormulaValueQueryPolicy": 0,
+        "TopCondition": null,
+        "ListViewStyleName": "样式12",
+        "ShowColumnHeaderInDesigner": true,
+        "IsRowHeaderVisible": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "2,4": {
+      "BindingInfo": {
+        "TableName": "实时库存表_子表",
+        "ColumnName": "操作时间",
+        "GUID": "f5fa9851-abdb-4cd8-a154-157eaa9617d8"
+      }
+    },
+    "2,13": {
+      "BindingInfo": {
+        "TableName": "实时库存表_子表",
+        "ColumnName": "操作内容",
+        "GUID": "99b6c01f-8dd3-49a8-a036-8d43fc00670e"
+      }
+    },
+    "2,18": {
+      "BindingInfo": {
+        "TableName": "实时库存表_子表",
+        "ColumnName": "已采购",
+        "GUID": "e6563691-1f35-4b40-9fc6-1bf613d6ed19"
+      }
+    },
+    "2,22": {
+      "BindingInfo": {
+        "TableName": "实时库存表_子表",
+        "ColumnName": "采购在途",
+        "GUID": "95acf8e4-01c1-4e87-8986-4df3f88bbe49"
+      }
+    },
+    "2,26": {
+      "BindingInfo": {
+        "TableName": "实时库存表_子表",
+        "ColumnName": "已到货",
+        "GUID": "96a5e49c-d3fa-4eb3-94b8-6464c301d682"
+      }
+    },
+    "2,30": {
+      "BindingInfo": {
+        "TableName": "实时库存表_子表",
+        "ColumnName": "在库未包",
+        "GUID": "561536d0-ba7b-42a6-87a2-c7e28eee8026"
+      }
+    },
+    "2,34": {
+      "BindingInfo": {
+        "TableName": "实时库存表_子表",
+        "ColumnName": "在库已包",
+        "GUID": "45f37242-b68c-4d81-a3c3-1a9b3de711ea"
+      }
+    },
+    "2,38": {
+      "BindingInfo": {
+        "TableName": "实时库存表_子表",
+        "ColumnName": "FBA出库",
+        "GUID": "7392a8fa-6628-472c-a52a-c13b2fbb47a6"
+      }
+    },
+    "2,42": {
+      "BindingInfo": {
+        "TableName": "实时库存表_子表",
+        "ColumnName": "自发出库",
+        "GUID": "8dc825e8-8960-4148-bea6-72e92c7b7e7e"
+      }
+    },
+    "2,46": {
+      "BindingInfo": {
+        "TableName": "实时库存表_子表",
+        "ColumnName": "海外在途",
+        "GUID": "64b71c7d-5625-4490-a9c9-32a17068f7b5"
+      }
+    },
+    "2,50": {
+      "BindingInfo": {
+        "TableName": "实时库存表_子表",
+        "ColumnName": "已签收",
+        "GUID": "75523bf1-ec8c-4e9a-af0f-f7355365c555"
+      }
+    },
+    "2,54": {
+      "BindingInfo": {
+        "TableName": "实时库存表_子表",
+        "ColumnName": "采购退货",
+        "GUID": "a00b67fa-9853-4326-911d-d929f2530192"
+      }
+    },
+    "2,58": {
+      "BindingInfo": {
+        "TableName": "实时库存表_子表",
+        "ColumnName": "操作员",
+        "GUID": "e730a284-8636-4b1a-8b15-dc76ab5b2b34"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "HorizontalAlignment": 1
+      },
+      {
+        "FontFamily": 0
+      },
+      {
+        "HorizontalAlignment": 1
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "FontWeight": 2,
+        "HorizontalAlignment": 1
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "FontWeight": 2
+      },
+      {
+        "FontSize": 16.0,
+        "FontWeight": 2
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "Center",
+        "Bold"
+      ]
+    },
+    "CellStyles": {
+      "1,2": 0,
+      "1,4": 0,
+      "1,34": 1,
+      "1,38": 1,
+      "1,50": 1,
+      "1,51": 1,
+      "1,52": 1,
+      "1,53": 1,
+      "1,62": 2,
+      "2,2": 2,
+      "2,4": 2,
+      "2,13": 3,
+      "2,34": 4,
+      "2,50": 4,
+      "2,51": 4,
+      "2,52": 4,
+      "2,53": 4,
+      "2,58": 3,
+      "2,59": 4,
+      "2,60": 4,
+      "2,61": 4,
+      "2,62": 4,
+      "2,63": 4,
+      "2,64": 4,
+      "3,2": 1,
+      "3,3": 1,
+      "3,4": 1,
+      "3,5": 1,
+      "3,6": 1,
+      "3,7": 1,
+      "3,8": 1,
+      "3,9": 1,
+      "3,10": 1,
+      "3,11": 1,
+      "3,12": 1,
+      "3,13": 1,
+      "3,14": 1,
+      "3,15": 1,
+      "3,16": 1,
+      "3,17": 1,
+      "3,18": 1,
+      "4,2": 1,
+      "4,3": 1,
+      "4,4": 1,
+      "4,5": 1,
+      "4,6": 1,
+      "4,7": 1,
+      "4,8": 1,
+      "4,9": 1,
+      "4,10": 1,
+      "4,11": 1,
+      "4,12": 1,
+      "4,13": 1,
+      "4,14": 1,
+      "4,15": 1,
+      "4,16": 1,
+      "4,17": 1,
+      "4,18": 1
+    },
+    "RowStyles": {
+      "2": 5
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "2,2,1,2",
+    "3,2,25,64",
+    "2,4,1,9",
+    "2,13,1,5",
+    "2,58,1,7",
+    "2,18,1,4",
+    "2,22,1,4",
+    "2,26,1,4",
+    "2,30,1,4",
+    "2,34,1,4",
+    "2,38,1,4",
+    "2,42,1,4",
+    "2,46,1,4",
+    "2,50,1,4",
+    "2,54,1,4",
+    "1,2,1,2",
+    "1,4,1,9",
+    "1,13,1,5",
+    "1,18,1,4",
+    "1,22,1,4",
+    "1,26,1,4",
+    "1,30,1,4",
+    "1,34,1,4",
+    "1,38,1,4",
+    "1,42,1,4",
+    "1,46,1,4",
+    "1,50,1,4",
+    "1,54,1,4",
+    "1,58,1,7"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "实时库存表_子表"
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//ZgMYRka3kMtFYR2L467GJTU2JEvnr/bxYdWRb9DDUlBk4ECU2ahifdOgheD6bFWUuJgFm82B6hkPivXauNSxjD27CZCmVOBx4bnX9UK0jhHFJfXCV+rNh9HyC2aDH6tI+sfC18su5V0BPuFlbkDhT6rT8p0dtl4PoiQ/DkE2FSlGs4fk5uuP3LUWGmy26O1V/4nBdGotm1fEJxxNBkJaZLaH4HPcNxT9X4hQ3FI56UuLlXq72f0T5NVJvL8uqu3HgfumgAWC9cTmEH2dtJrpBX5BC7OrVZ3ALKlnNa2KDFaSAaEbpZwTKF9ow0PkFAvffsRQ5XS7zXEXaSxWHwe+QFnhHbKkHhixKR+TVc29GBJeoaG3vwCnDc/7roEmqKRALTulLZg+taiWsTvEy+Oj0LGa7/czFCEUAtusL807uDY2PSJEMi10hMhRKLvXJVYWr1dNZrK62NjnuVtJwC7c1Z42EDndlq/VNV8o2VS8hHBqkHWw4TYgfaMHSvy+Z2qzNW/Q+KeboTIi0+6YyjylUFZUQjz/zEP7mqICqsAuqstgyp/mmIyC7USJbI7oEvVH7SXV9mkH5SkuS2g/MDkKr17+ZhaYH3jhiTCz4hpscdwqCahICPNMAb9VxoznaQRfZUJp0eKSvBxdu3+zgFVkUDda0hA4KYW5/YoAE55S0FKjzlWJmLM+zwiiwqLDS/OR4RC4eT2tXsTQ4RMviqqc/GqzW6uHWLlVNogBFb4HXezUCIjpVrMsEUfprvCmuPAlZiVlCOZbf7as62gMFprm30sB4gjXN1EBP+2BoarsoK+qbFzW1yq2s+Q/OQnFO6yuMdE3AbBcP3VPOtR71ieaJ7rUj5mxCD0BaBuy3iUXtqUJoauH6VHQLNCwBP/okON7ABHAOL3YgNHOhOYr+cQnzQ==|920

@@ -1,0 +1,217 @@
+{
+  "Rows": {
+    "Count": 27
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 77.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 77.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 77.0
+        }
+      },
+      "18": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "19": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "20": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 18.0
+        }
+      },
+      "21": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 18.0
+        }
+      },
+      "22": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      21,
+      22
+    ],
+    "Count": 23,
+    "DefaultSize": 77.0
+  },
+  "Formulas": {
+    "0,0": "ROUND(V1,2)"
+  },
+  "AttachInfos": {
+    "0,0": {
+      "ListViewInfo": {
+        "Name": "表格1",
+        "TableName": "工资条",
+        "RowCount": 19,
+        "ColumnCount": 22,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "SubConditions": [
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "工资条",
+                "ColumnName": "所属公司",
+                "GUID": "f86f5e81-681c-4de0-8b37-4148b76a0b8d"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=平安代发1!W3"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "工资条",
+                "ColumnName": "年月",
+                "GUID": "12b832fa-cc49-4c6f-a258-6a02a804e2f7"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=平安代发1!W1"
+              }
+            }
+          ]
+        },
+        "NullFormulaValueQueryPolicy": 0,
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_NewFashionListStyle1",
+        "ShowColumnHeaderInDesigner": true,
+        "IsColumnHeaderVisible": false,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "0,1": {
+      "BindingInfo": {
+        "TableName": "工资条",
+        "ColumnName": "银行卡",
+        "GUID": "88aa94bf-2017-4f35-b802-54d44bebdd0b"
+      }
+    },
+    "0,2": {
+      "BindingInfo": {
+        "TableName": "工资条",
+        "ColumnName": "姓名",
+        "GUID": "cdcfd848-815c-4dd7-91cc-4efdb62ab03f"
+      }
+    },
+    "0,4": {
+      "BindingInfo": {
+        "TableName": "工资条",
+        "ColumnName": "开户行",
+        "GUID": "ee6678bd-f788-41a6-9127-7aa9bae0dc4b"
+      }
+    },
+    "0,5": {
+      "BindingInfo": {
+        "TableName": "工资条",
+        "ColumnName": "银行代码",
+        "GUID": "5a984ba8-ab13-4031-a8c1-0148f4d8b8b1"
+      }
+    },
+    "0,21": {
+      "BindingInfo": {
+        "TableName": "工资条",
+        "ColumnName": "_10号发",
+        "GUID": "fb8d43b3-2321-420e-af76-e1658146d99e"
+      }
+    },
+    "0,22": {
+      "BindingInfo": {
+        "TableName": "工资条",
+        "ColumnName": "年月",
+        "GUID": "860a9b98-d924-4770-9bdb-1fc69ea01ede"
+      }
+    },
+    "2,22": {
+      "BindingInfo": {
+        "TableName": "工资条",
+        "ColumnName": "所属公司",
+        "GUID": "2275553f-1adc-4232-9e3c-0dceb8ec939e"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Formatter": 0
+      },
+      {
+        "FontFamily": 1
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 0
+      },
+      {
+        "Background": 2,
+        "FontFamily": 1
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "0.00",
+        "Body",
+        "#FFFFFF00"
+      ]
+    },
+    "CellStyles": {
+      "0,0": 0,
+      "0,1": 1,
+      "0,2": 2,
+      "0,22": 3,
+      "1,22": 1,
+      "2,22": 3
+    },
+    "SheetStyle": {
+      "FontFamily": 1
+    }
+  },
+  "Spans": [
+    "1,0,18,22"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "工资条"
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//AJ/Cnr3WKtja8WgvBUJuyZMa0X9ebSBVnytj6EBQJmIYcn6l+9YD2eKap78MNZvSsWOt2tE9yOUnLDRFCavIZR0C3zi6p2zMBjdjYCHB0mIP97/Ap+DNzDNigF4sMD4M82Ea3Uo0Jg7UN4IfFt7Qu91VoH21L0C+TJwTJpDPmTRlDHwu3pa+imvFCtrxH7vE3D0efz4gGAoI3hxYg4wcj3apKkRQsiGomxdzn5sjCZHgUve1u2HIW4dDqcMGCkSymLtOV4ACBT0uX3o2LoBt/YZoTsRGv2q3ZBiPs5sIYtHQlVw3GRll5S32QEyxVeYombMUVmAo5FquE01jQvx0vU6SL4OBSj9RPjpMNPa+Kh8BpuVpVhA3v4wAmdYP+fGdxwAwe0sSSe22f73BZ1lcrizdWAsToFB8JBEZ9RQvjip3GKwAr8FT7zMo5XGVKy4zt0lgKWhiWuoUgWqW5R767wQKD8pKJQz3TpUxDlnQfBX6YPgQkYKy6IOz3uKag2aHHQIneQP1eCq56bma5vVRRfRzft6PTMaZpHeq3j3bLE44gXeel5eSKsfaCoZMkL89WM9QaI4TEWxjh9Ax5dfUxh/BzTr9EQW6/n50dAq58P1jD0qhSDDQxKeiMZ+OBMsz42w+yZTEKI5+bNm4gMB8x6Vt5TSLOuzCyCZXLXQzWvB9BuNJBmkQ/jgQxi+KAKJSo9AZxyHbJ6MM2ed5Fkrv5XkeuzcKGni+7Vjn4BP0Dq3fD16LwIii5V/VUTORmod/MIjGQSsg21t9ZFdi3ZCUlWZUDJZEkRU56LCTM3lRwSeuWwZgarDw3mXkoxU5CF+su+wSHlfCLP6szIM3ZlsyQwwaVBFyHKYAtmADyR7SszuLUy3uhr+U6QzQO1AC6P2Cj6DK4d2Wtbrd5UfzGGaQ2A==|920

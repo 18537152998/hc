@@ -1,0 +1,3357 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 18.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 29.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 40.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "15": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "16": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "17": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "18": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "19": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "20": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "21": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "22": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "23": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "24": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "25": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "26": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "27": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "28": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "29": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      0
+    ],
+    "Count": 30,
+    "DefaultSize": 30.0
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      7
+    ],
+    "Count": 93
+  },
+  "Values": {
+    "0,84": "分配",
+    "2,0": "日期范围",
+    "2,85": "批量审核",
+    "4,0": "月度汇总",
+    "4,5": "月",
+    "7,22": "商品名/摘要",
+    "7,80": "分配",
+    "7,85": "待审核",
+    "7,90": "已审核",
+    "8,76": "订单号调整",
+    "8,80": "分配"
+  },
+  "Formulas": {
+    "4,4": "MONTH(E3)",
+    "4,7": "SUMIFS(AI9,BU9,\"已审核\",H9,E5)",
+    "8,7": "MONTH(C9)"
+  },
+  "AttachInfos": {
+    "0,84": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=余额调节表cw!BK9"
+                      }
+                    ]
+                  },
+                  "value": "日付-银行卡"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "日付银行卡",
+                    "UpdateType": "add",
+                    "ShowConfirm": false,
+                    "UpdateBindingValues": [
+                      {
+                        "BindingInfo": {
+                          "TableName": "日付银行卡",
+                          "ColumnName": "日期",
+                          "GUID": "74a384a9-035c-418e-a7e2-566ba2ba5ca5"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=余额调节表cw!C9"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "日付银行卡",
+                          "ColumnName": "发货方式",
+                          "GUID": "fe466f51-e1e9-49b0-ad5b-0c592a9fc7d1"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=余额调节表cw!I9"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "日付银行卡",
+                          "ColumnName": "平台",
+                          "GUID": "6b99d0a3-e2db-4b1a-9161-4e276e470932"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=余额调节表cw!M9"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "日付银行卡",
+                          "ColumnName": "商品名",
+                          "GUID": "3e4fc1f9-9532-4a69-a918-269311d6e36d"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=余额调节表cw!W9"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "日付银行卡",
+                          "ColumnName": "数量",
+                          "GUID": "44c0ccfb-732e-4941-8069-ac162e65a7e5"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=余额调节表cw!AF9"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "日付银行卡",
+                          "ColumnName": "支出",
+                          "GUID": "287768d0-9031-4865-bf60-11080975a605"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=余额调节表cw!AI9"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "日付银行卡",
+                          "ColumnName": "收入",
+                          "GUID": "5918cc36-24cb-47db-a598-8682b1edbe3d"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=余额调节表cw!AN9"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "日付银行卡",
+                          "ColumnName": "总价",
+                          "GUID": "7f4becb8-794f-440a-ae49-dfef57db431c"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "日付银行卡",
+                          "ColumnName": "付款备注",
+                          "GUID": "0035b7e3-2b21-4dc0-9973-3435cb6c67a8"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=余额调节表cw!AR9"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "日付银行卡",
+                          "ColumnName": "凭证",
+                          "GUID": "6e1e5e36-9712-435a-8715-b2556fd4bc6e"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=余额调节表cw!AZ9"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "日付银行卡",
+                          "ColumnName": "供应商",
+                          "GUID": "d6e769f7-e9c1-460f-b7b3-d92bf9c56b38"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=余额调节表cw!BC9"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "日付银行卡",
+                          "ColumnName": "采购员",
+                          "GUID": "e3afef7e-7dfe-4c72-bd9f-225e48a72f3c"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=余额调节表cw!BG9"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "日付银行卡",
+                          "ColumnName": "审核状态",
+                          "GUID": "61fdb601-243a-4646-88bf-482e87a4a22d"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=余额调节表cw!BK9"
+                        }
+                      }
+                    ],
+                    "ParamNameToSaveNewRowValue": "NewRow",
+                    "BreakpointIdentity": "541620ff-28e3-412e-a24b-8c23bff6c3b9"
+                  },
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "余额调节表",
+                    "ShowConfirm": false,
+                    "RowsToUpdate": 2,
+                    "RowsToUpdateListViewName": "表格1",
+                    "UpdateBindingValues": [
+                      {
+                        "BindingInfo": {
+                          "TableName": "余额调节表",
+                          "ColumnName": "分配状态",
+                          "GUID": "6776bc42-f188-485f-85b5-88cb8f7a746e"
+                        },
+                        "Value": "已分配"
+                      }
+                    ],
+                    "ParamNameToSaveNewRowValue": "NewRow",
+                    "BreakpointIdentity": "ced003b1-4547-4485-99cb-9aac96c3cf7a"
+                  }
+                ],
+                "ID": "9ac04cf2-b8af-4fab-bc6f-051fdc9985cf"
+              }
+            ],
+            "BreakpointIdentity": "48c5d96d-b07f-46f4-afcb-a8170b7fa6f2"
+          }
+        ],
+        "Text": "分配",
+        "TemplateKey": "样式8"
+      }
+    },
+    "2,4": {
+      "CellType": {
+        "$type": "Forguncy.DateCellType, ServerDesignerCommon",
+        "CellDefaultValue": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=TODAY()"
+        },
+        "TemplateKey": "样式1",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=余额调节表cw!E3"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=DATE(YEAR(余额调节表cw!E3),MONTH(余额调节表cw!E3),1)"
+                }
+              }
+            ],
+            "BreakpointIdentity": "ec5e66e3-5f7a-47f7-bd83-a234a451af45"
+          }
+        ]
+      }
+    },
+    "2,13": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "余额调节表",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 3,
+              "ColumnBindingInfo": {
+                "TableName": "余额调节表",
+                "ColumnName": "日期",
+                "GUID": "49603d89-f19c-4068-a09f-c336ed513ed3"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=余额调节表cw!E3"
+              }
+            },
+            "ID": "e3b5e7cb2ff840a886b6a29047c7eb83",
+            "BreakpointIdentity": "480ff7db-23aa-4b8a-9714-938890b6c351"
+          }
+        ],
+        "TemplateKey": "透明按钮_无底色_",
+        "Icon": {
+          "Name": "Application/047_search_8.svg",
+          "BuiltIn": true,
+          "Color": "Accent 1 -25"
+        },
+        "IconSize": 25.0
+      }
+    },
+    "2,85": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+            "TableName": "余额调节表",
+            "ShowConfirm": true,
+            "ConfirmText": "审核确认",
+            "RowsToUpdate": 2,
+            "RowsToUpdateListViewName": "表格1",
+            "UpdateBindingValues": [
+              {
+                "BindingInfo": {
+                  "TableName": "余额调节表",
+                  "ColumnName": "审核状态",
+                  "GUID": "46a9f687-e68a-411f-a537-5ef1701e8ed4"
+                },
+                "Value": "已审核"
+              }
+            ],
+            "ParamNameToSaveNewRowValue": "NewRow",
+            "BreakpointIdentity": "4307ffc2-a14f-46b0-b23c-1499df60e906"
+          }
+        ],
+        "Text": "批量审核",
+        "TemplateKey": "样式8"
+      }
+    },
+    "4,4": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "样式1"
+      }
+    },
+    "4,7": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "样式1"
+      }
+    },
+    "4,13": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "物流渠道表",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "SubConditions": [
+                {
+                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 6,
+                  "ColumnBindingInfo": {
+                    "TableName": "物流渠道表",
+                    "ColumnName": "货代",
+                    "GUID": "9de93427-d8b6-44f5-b890-12fb102a9a33"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=余额调节表cw!O5"
+                  }
+                },
+                {
+                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 6,
+                  "ColumnBindingInfo": {
+                    "TableName": "物流渠道表",
+                    "ColumnName": "渠道",
+                    "GUID": "e1b4b59d-671f-4a34-a2ff-b471ed69823d"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=余额调节表cw!O5"
+                  }
+                },
+                {
+                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 6,
+                  "ColumnBindingInfo": {
+                    "TableName": "物流渠道表",
+                    "ColumnName": "重量限制",
+                    "GUID": "f837aec6-011f-4b39-857b-822787a3b8f6"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=余额调节表cw!O5"
+                  }
+                },
+                {
+                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 6,
+                  "ColumnBindingInfo": {
+                    "TableName": "物流渠道表",
+                    "ColumnName": "尺寸限制",
+                    "GUID": "0958eafd-c474-428b-a739-66abf835504f"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=余额调节表cw!O5"
+                  }
+                },
+                {
+                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 6,
+                  "ColumnBindingInfo": {
+                    "TableName": "物流渠道表",
+                    "ColumnName": "围长限制",
+                    "GUID": "4a46024c-9a70-44b1-9a43-3ee625d36334"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=余额调节表cw!O5"
+                  }
+                },
+                {
+                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 6,
+                  "ColumnBindingInfo": {
+                    "TableName": "物流渠道表",
+                    "ColumnName": "产品限制",
+                    "GUID": "0cc13089-8fda-4f7d-93a0-3f1d3e32f244"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=余额调节表cw!O5"
+                  }
+                },
+                {
+                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 6,
+                  "ColumnBindingInfo": {
+                    "TableName": "物流渠道表",
+                    "ColumnName": "私人地址",
+                    "GUID": "5394d161-b124-4ccc-9a03-d914a54631b0"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=余额调节表cw!O5"
+                  }
+                }
+              ],
+              "RelationType": 1
+            },
+            "ID": "92e7b5b3898343f8a5b375632c6f267e",
+            "BreakpointIdentity": "5b2ec422-6524-4afc-96d5-a0ff7bb01712"
+          }
+        ],
+        "TemplateKey": "透明按钮_无底色_",
+        "Icon": {
+          "Name": "Application/063_refresh_7.svg",
+          "BuiltIn": true,
+          "Color": "Accent 1 -25"
+        },
+        "IconSize": 25.0
+      }
+    },
+    "7,0": {
+      "ListViewInfo": {
+        "Name": "表格1",
+        "TableName": "余额调节表",
+        "RowIndex": 7,
+        "RowCount": 22,
+        "ColumnCount": 84,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "CompareType": 3,
+          "ColumnBindingInfo": {
+            "TableName": "余额调节表",
+            "ColumnName": "日期",
+            "GUID": "d7f268f2-0f41-4d36-bdad-f942bb9ebecc"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=余额调节表cw!E3"
+          }
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "样式1",
+        "ShowColumnHeaderInDesigner": true,
+        "IsRowHeaderVisible": true,
+        "IsRowHeaderCheckBoxVisible": true,
+        "IsTotalRowVisible": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "AllowEditInListview": true,
+        "AllowAddNewRow": true,
+        "ShowDeleteButton": true,
+        "AllowDragFill": true,
+        "RowHeaderContextMenu": {
+          "ContextMenuItems": [
+            {
+              "Text": "插入",
+              "OperationType": 2
+            },
+            {
+              "Text": "删除",
+              "Visible": true,
+              "OperationType": 3
+            },
+            {
+              "Text": "复制并插入",
+              "OperationType": 4
+            }
+          ]
+        },
+        "ColumnOperation": 2,
+        "ShowGridLine": true
+      }
+    },
+    "7,85": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "余额调节表",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 1,
+              "ColumnBindingInfo": {
+                "TableName": "余额调节表",
+                "ColumnName": "审核状态",
+                "GUID": "5b5e3f48-ec41-46cf-b12b-a944bbdb19d8"
+              },
+              "Value": "已审核"
+            },
+            "ID": "6b2a4129b0c64f229e7fa0d3b7fac48c",
+            "BreakpointIdentity": "40cfd309-7c11-4529-a643-46c753a0f1f4"
+          }
+        ],
+        "Text": "待审核",
+        "TemplateKey": "样式8"
+      }
+    },
+    "7,90": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "余额调节表",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "余额调节表",
+                "ColumnName": "审核状态",
+                "GUID": "22e02ea7-9085-40f7-8390-64539c07edf8"
+              },
+              "Value": "已审核"
+            },
+            "ID": "6468dd3c6d264ad59ca922c6cdea712b",
+            "BreakpointIdentity": "ff8a9ed1-495b-4029-9662-5c3d3fdb04a7"
+          }
+        ],
+        "Text": "已审核",
+        "TemplateKey": "样式8"
+      }
+    },
+    "8,2": {
+      "TotalRowSetting": {},
+      "BindingInfo": {
+        "TableName": "余额调节表",
+        "ColumnName": "日期",
+        "GUID": "77e5e8b2-84ab-4604-b8fe-64f719d5e4e3"
+      }
+    },
+    "8,7": {
+      "TotalRowSetting": {}
+    },
+    "8,8": {
+      "TotalRowSetting": {},
+      "BindingInfo": {
+        "TableName": "余额调节表",
+        "ColumnName": "分类",
+        "GUID": "c02cef8d-1df0-485f-a61d-d37e64042caf"
+      },
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "DropdownButtonModeInListview": 3,
+        "WaterMark": "",
+        "Items": [
+          {
+            "Value": "订金",
+            "DisplayValue": "订金"
+          },
+          {
+            "Value": "尾款",
+            "DisplayValue": "尾款"
+          },
+          {
+            "Value": "退款收入",
+            "DisplayValue": "退款收入"
+          },
+          {
+            "Value": "订单补录",
+            "DisplayValue": "订单补录"
+          },
+          {
+            "Value": "*订单重拍",
+            "DisplayValue": "*订单重拍"
+          },
+          {
+            "Value": "配件/差价",
+            "DisplayValue": "配件/差价"
+          },
+          {
+            "Value": "运费",
+            "DisplayValue": "运费"
+          },
+          {
+            "Value": "物料",
+            "DisplayValue": "物料"
+          },
+          {
+            "Value": "退款抵扣",
+            "DisplayValue": "退款抵扣"
+          },
+          {
+            "Value": "定制费",
+            "DisplayValue": "定制费"
+          },
+          {
+            "Value": "话费",
+            "DisplayValue": "话费"
+          },
+          {
+            "Value": "其他",
+            "DisplayValue": "其他"
+          }
+        ]
+      }
+    },
+    "8,12": {
+      "TotalRowSetting": {},
+      "BindingInfo": {
+        "TableName": "余额调节表",
+        "ColumnName": "平台",
+        "GUID": "3ceed6c6-8c15-416b-bb0f-25fd47ad08ab"
+      },
+      "RulesGuidList": [
+        "9cde50ff-918b-49d4-99be-734279fc6ea5"
+      ]
+    },
+    "8,16": {
+      "TotalRowSetting": {},
+      "BindingInfo": {
+        "TableName": "余额调节表",
+        "ColumnName": "订单号",
+        "GUID": "142dc0cf-f67c-499f-921a-d848aa761f64"
+      }
+    },
+    "8,22": {
+      "TotalRowSetting": {},
+      "BindingInfo": {
+        "TableName": "余额调节表",
+        "ColumnName": "商品名",
+        "GUID": "946dda9d-5436-4fd2-a0e6-e6e2a79170a0"
+      },
+      "RulesGuidList": [
+        "1da9a942-b2b6-49b1-a1bc-ff342372fd3d"
+      ]
+    },
+    "8,31": {
+      "TotalRowSetting": {
+        "StaticText": "合计",
+        "StyleInfo": {
+          "HorizontalAlignment": 1
+        }
+      },
+      "BindingInfo": {
+        "TableName": "余额调节表",
+        "ColumnName": "数量",
+        "GUID": "c446f728-4928-4193-9ffa-78ab38965acb"
+      }
+    },
+    "8,34": {
+      "TotalRowSetting": {
+        "FormulaType": 5,
+        "StyleInfo": {
+          "HorizontalAlignment": 1,
+          "Formatter": "0.00"
+        }
+      },
+      "BindingInfo": {
+        "TableName": "余额调节表",
+        "ColumnName": "支出",
+        "GUID": "9d4014d3-a5a7-43fa-893e-03313d83f611"
+      }
+    },
+    "8,39": {
+      "TotalRowSetting": {},
+      "BindingInfo": {
+        "TableName": "余额调节表",
+        "ColumnName": "收入",
+        "GUID": "62087df4-8ec1-4fc0-a527-97022e3133f0"
+      }
+    },
+    "8,43": {
+      "TotalRowSetting": {},
+      "BindingInfo": {
+        "TableName": "余额调节表",
+        "ColumnName": "付款备注",
+        "GUID": "63ee2ac8-8166-4cd3-bfb1-11447c2cee13"
+      }
+    },
+    "8,47": {
+      "TotalRowSetting": {}
+    },
+    "8,51": {
+      "TotalRowSetting": {},
+      "BindingInfo": {
+        "TableName": "余额调节表",
+        "ColumnName": "凭证",
+        "GUID": "30afafba-42b6-4c34-b6bb-ee0fbaf7bbd0",
+        "IsImagePath": true
+      },
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PageName": "图片详情页sj",
+            "PassValues": [
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=余额调节表cw!AZ9"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=图片详情页sj!B1"
+                }
+              }
+            ],
+            "IgnoreTargetPageCachedCurrentRowInfo": false,
+            "BreakpointIdentity": "46823704-eaa1-4d7c-9995-bdc87d1a574c"
+          }
+        ]
+      }
+    },
+    "8,54": {
+      "TotalRowSetting": {},
+      "BindingInfo": {
+        "TableName": "余额调节表",
+        "ColumnName": "供应商",
+        "GUID": "82d102b0-787e-4069-aa12-69aad0fb795c"
+      }
+    },
+    "8,58": {
+      "TotalRowSetting": {},
+      "BindingInfo": {
+        "TableName": "余额调节表",
+        "ColumnName": "采购员",
+        "GUID": "92beb216-e4a8-402b-bc71-88f03e5256d6"
+      }
+    },
+    "8,62": {
+      "TotalRowSetting": {},
+      "BindingInfo": {
+        "TableName": "余额调节表",
+        "ColumnName": "归属表格",
+        "GUID": "0c51dccc-9a98-4a68-857d-f9bfb390196f"
+      },
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "DropdownButtonModeInListview": 3,
+        "Items": [
+          {
+            "Value": "日付-银行卡",
+            "DisplayValue": "日付-银行卡"
+          },
+          {
+            "Value": "日付-支付宝",
+            "DisplayValue": "日付-支付宝"
+          },
+          {
+            "Value": "日付-pingpong",
+            "DisplayValue": "日付-pingpong"
+          },
+          {
+            "Value": "账期-支付宝",
+            "DisplayValue": "账期-支付宝"
+          },
+          {
+            "Value": "账期-pingpong",
+            "DisplayValue": "账期-pingpong"
+          }
+        ]
+      }
+    },
+    "8,67": {
+      "TotalRowSetting": {},
+      "BindingInfo": {
+        "TableName": "余额调节表",
+        "ColumnName": "付款编号",
+        "GUID": "119cf5cd-3d20-4d53-802a-96b34373932e"
+      }
+    },
+    "8,72": {
+      "TotalRowSetting": {},
+      "BindingInfo": {
+        "TableName": "余额调节表",
+        "ColumnName": "审核状态",
+        "GUID": "f090f8aa-7c47-4474-8f47-524eeb8974bf"
+      }
+    },
+    "8,76": {
+      "TotalRowSetting": {},
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+            "TableName": "余额调节表",
+            "ShowConfirm": false,
+            "UpdateBindingValues": [
+              {
+                "BindingInfo": {
+                  "TableName": "余额调节表",
+                  "ColumnName": "订单号",
+                  "GUID": "715dde6f-102d-4a87-ba4a-ecb0aff8f42a"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=余额调节表cw!Q9&\"/\"&余额调节表cw!I9"
+                }
+              }
+            ],
+            "BreakpointIdentity": "2b86853f-3f54-4ec4-ae7a-e83774254b18"
+          },
+          {
+            "$type": "Forguncy.Model.ShareCommand, ServerDesignerCommon",
+            "ShareCommandContainerRefer": {
+              "ShareCommandContainerID": "c6826632-3693-4ace-9428-9b55f54d5dfd"
+            },
+            "Params": [
+              {
+                "ParamReferObject": {
+                  "ParamID": "eea110f4-3b60-43b6-af4e-c1511ab08aa0",
+                  "ShareCommandContainerReferObject": {
+                    "ShareCommandContainerID": "c6826632-3693-4ace-9428-9b55f54d5dfd"
+                  }
+                },
+                "Value": "调整成功！"
+              },
+              {
+                "ParamReferObject": {
+                  "ParamID": "3badc0e1-9000-4a1c-8f39-26cb9e897b5c",
+                  "ShareCommandContainerReferObject": {
+                    "ShareCommandContainerID": "c6826632-3693-4ace-9428-9b55f54d5dfd"
+                  }
+                },
+                "Value": "成功"
+              }
+            ],
+            "ReturnPropertiesTo": [
+              {
+                "ReturnPropertyReferObject": {
+                  "ParamID": "67060bbc-e869-4e69-adae-87c9e87f672d",
+                  "ShareCommandContainerReferObject": {
+                    "ShareCommandContainerID": "c6826632-3693-4ace-9428-9b55f54d5dfd"
+                  }
+                }
+              }
+            ],
+            "BreakpointIdentity": "b81750ac-0f6c-4937-a7a3-ed2205a1d88a"
+          }
+        ],
+        "Text": "订单号调整",
+        "ClickMode": 1
+      }
+    },
+    "8,80": {
+      "NameUsedInJavaScript": "分批额",
+      "TotalRowSetting": {},
+      "BindingInfo": {
+        "TableName": "余额调节表",
+        "ColumnName": "分配状态",
+        "GUID": "6843c64d-7f1d-4140-bb6b-524bcb5457b6"
+      },
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=余额调节表cw!CC9"
+                      }
+                    ]
+                  },
+                  "value": "已分配"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "该记录已分配，请勿重复提交！",
+                    "BreakpointIdentity": "4d3ae3ad-434e-4f57-ba8f-ac58a22c55d2"
+                  }
+                ],
+                "ID": "2edac593-3499-43a0-ab53-931c23dc98cd"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "余额调节表",
+                    "ShowConfirm": false,
+                    "CheckDataValidation": false,
+                    "UpdateBindingValues": [
+                      {
+                        "BindingInfo": {
+                          "TableName": "余额调节表",
+                          "ColumnName": "分配状态",
+                          "GUID": "d082487e-6b37-45be-81cd-929035383134"
+                        },
+                        "Value": "已分配"
+                      }
+                    ],
+                    "ParamNameToSaveNewRowValue": "NewRow",
+                    "BreakpointIdentity": "84786beb-cabc-4f5c-ae93-c0c006e78504"
+                  },
+                  {
+                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                    "ConditionAndCommandPairList": [
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=余额调节表cw!BK9"
+                              }
+                            ]
+                          },
+                          "value": "日付-银行卡"
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                            "TableName": "日付银行卡",
+                            "UpdateType": "add",
+                            "ShowConfirm": false,
+                            "CheckDataValidation": false,
+                            "UpdateBindingValues": [
+                              {
+                                "BindingInfo": {
+                                  "TableName": "日付银行卡",
+                                  "ColumnName": "日期",
+                                  "GUID": "4e0f742c-8845-4436-8473-71370acd67b4"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=余额调节表cw!C9"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "日付银行卡",
+                                  "ColumnName": "发货方式",
+                                  "GUID": "895463f4-4209-4b8d-aeb5-2ecafeeef982"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=余额调节表cw!I9"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "日付银行卡",
+                                  "ColumnName": "平台",
+                                  "GUID": "94d79c0d-f59f-44e8-8d43-136468b492c4"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=余额调节表cw!M9"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "日付银行卡",
+                                  "ColumnName": "商品名",
+                                  "GUID": "4c8eacf6-84f7-4bc6-8e95-0b72ee42dcb3"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=余额调节表cw!W9"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "日付银行卡",
+                                  "ColumnName": "支出",
+                                  "GUID": "fcbcf6eb-f3bb-4369-8661-4c0b99f0ba4c"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=余额调节表cw!AI9"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "日付银行卡",
+                                  "ColumnName": "收入",
+                                  "GUID": "3b34a9f0-7190-4596-8435-75ff0faf6828"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=余额调节表cw!AN9"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "日付银行卡",
+                                  "ColumnName": "付款备注",
+                                  "GUID": "ca08ed18-54da-47e9-a910-52fecfce425a"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=余额调节表cw!AR9"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "日付银行卡",
+                                  "ColumnName": "供应商",
+                                  "GUID": "a60e580a-0d74-4d3a-8410-a86a106689ae"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=余额调节表cw!BC9"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "日付银行卡",
+                                  "ColumnName": "凭证",
+                                  "GUID": "98a1e09c-5bec-43ed-b396-f2e9e0732aac"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=余额调节表cw!AZ9"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "日付银行卡",
+                                  "ColumnName": "采购员",
+                                  "GUID": "5204f291-e3fd-4516-9c17-934b035f0ed0"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=余额调节表cw!BG9"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "日付银行卡",
+                                  "ColumnName": "审核状态",
+                                  "GUID": "3330c3a5-9125-4592-a351-ff048412a71c"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=余额调节表cw!BU9"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "日付银行卡",
+                                  "ColumnName": "付款编号",
+                                  "GUID": "dfc61097-c296-42b7-bec2-4d0507ccea3b"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=余额调节表cw!BP9"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "日付银行卡",
+                                  "ColumnName": "总价",
+                                  "GUID": "510ac18f-aca0-4d0b-95bb-4dec66674c4c"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=余额调节表cw!AI9"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "日付银行卡",
+                                  "ColumnName": "数量",
+                                  "GUID": "2860e6d1-bc7e-49c6-bc8a-f1bf8c6c4c0e"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=余额调节表cw!AF9"
+                                }
+                              }
+                            ],
+                            "ParamNameToSaveNewRowValue": "NewRow",
+                            "BreakpointIdentity": "946d0ec7-0333-42b8-b075-ae3b2c504d4c"
+                          }
+                        ],
+                        "ID": "f79594aa-7821-45c9-b87b-fc0abd25c6ae"
+                      },
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=余额调节表cw!BK9"
+                              }
+                            ]
+                          },
+                          "value": "日付-支付宝"
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                            "TableName": "日付支付宝",
+                            "UpdateType": "add",
+                            "ShowConfirm": false,
+                            "CheckDataValidation": false,
+                            "UpdateBindingValues": [
+                              {
+                                "BindingInfo": {
+                                  "TableName": "日付支付宝",
+                                  "ColumnName": "日期",
+                                  "GUID": "e61ffcad-5d14-4541-9a8e-701ea99bc3d5"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=余额调节表cw!C9"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "日付支付宝",
+                                  "ColumnName": "发货方式",
+                                  "GUID": "21db851e-ee8c-4207-bc09-49aadeed8ef1"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=余额调节表cw!I9"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "日付支付宝",
+                                  "ColumnName": "平台",
+                                  "GUID": "5142b226-f04e-4cee-8d3e-d222aac85531"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=余额调节表cw!M9"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "日付支付宝",
+                                  "ColumnName": "商品名",
+                                  "GUID": "a8aa5599-3fe6-433e-9667-5d272f149275"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=余额调节表cw!W9"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "日付支付宝",
+                                  "ColumnName": "数量",
+                                  "GUID": "45cafb5c-4bd5-423f-a0bc-62e7dfe60ecb"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=余额调节表cw!AF9"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "日付支付宝",
+                                  "ColumnName": "支出",
+                                  "GUID": "b6f8c48c-5c86-4ddc-ae2e-f15f8c70bfca"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=余额调节表cw!AI9"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "日付支付宝",
+                                  "ColumnName": "收入",
+                                  "GUID": "12127f81-ea18-421e-aa48-c50438281728"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=余额调节表cw!AN9"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "日付支付宝",
+                                  "ColumnName": "付款备注",
+                                  "GUID": "e50f5372-2640-4442-ba07-a4bc9cae27a9"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=余额调节表cw!AR9"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "日付支付宝",
+                                  "ColumnName": "供应商",
+                                  "GUID": "d8a1b6b2-f7fd-4f74-a937-cad2c03ba28d"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=余额调节表cw!BC9"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "日付支付宝",
+                                  "ColumnName": "采购员",
+                                  "GUID": "7b328f3f-bd79-485a-b36e-01169b7d9fda"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=余额调节表cw!BG9"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "日付支付宝",
+                                  "ColumnName": "审核状态",
+                                  "GUID": "80b8148e-62a7-4548-925b-75c56edba318"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=余额调节表cw!BU9"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "日付支付宝",
+                                  "ColumnName": "付款编号",
+                                  "GUID": "32c00af4-25cb-47af-aba0-b112701d8318"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=余额调节表cw!BP9"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "日付支付宝",
+                                  "ColumnName": "总价",
+                                  "GUID": "06c6191f-7c74-4686-aed3-ce394c3e96ba"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=余额调节表cw!AI9"
+                                }
+                              }
+                            ],
+                            "ParamNameToSaveNewRowValue": "NewRow",
+                            "BreakpointIdentity": "7e91f246-3f68-44a9-b000-f68655ab6274"
+                          }
+                        ],
+                        "ID": "e27063ae-2dbc-49a1-9de7-4a7b62074ecb"
+                      },
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=余额调节表cw!BK9"
+                              }
+                            ]
+                          },
+                          "value": "日付-pingpong"
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                            "TableName": "出纳pingpong",
+                            "UpdateType": "add",
+                            "ShowConfirm": false,
+                            "CheckDataValidation": false,
+                            "UpdateBindingValues": [
+                              {
+                                "BindingInfo": {
+                                  "TableName": "出纳pingpong",
+                                  "ColumnName": "提交日期",
+                                  "GUID": "7b8b5a2a-317f-493e-9554-eed4121d9537"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=余额调节表cw!C9"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "出纳pingpong",
+                                  "ColumnName": "发货方式",
+                                  "GUID": "7acecf83-c26d-4651-bf1a-d59e11fc98cf"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=余额调节表cw!I9"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "出纳pingpong",
+                                  "ColumnName": "平台",
+                                  "GUID": "b84435fe-4893-4a3f-ba93-ffa62186c27f"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=余额调节表cw!M9"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "出纳pingpong",
+                                  "ColumnName": "数量",
+                                  "GUID": "9ad10c00-adcb-4550-abdf-ac4acc83dd46"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=余额调节表cw!AF9"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "出纳pingpong",
+                                  "ColumnName": "申请部门",
+                                  "GUID": "40a852e5-6f4e-4237-8464-4ab5000f7f4c"
+                                },
+                                "Value": "采购部"
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "出纳pingpong",
+                                  "ColumnName": "付款备注",
+                                  "GUID": "d429866d-b77b-4db5-a9b2-0ba537c25c5f"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=余额调节表cw!AR9"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "出纳pingpong",
+                                  "ColumnName": "合同附件",
+                                  "GUID": "78940177-eebd-424c-aea6-01c0bc17d6d2"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=余额调节表cw!AZ9"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "出纳pingpong",
+                                  "ColumnName": "用途",
+                                  "GUID": "dca77987-52a5-4dcb-81be-aa1016a8aad9"
+                                },
+                                "Value": "供应商付款-日付"
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "出纳pingpong",
+                                  "ColumnName": "收款人",
+                                  "GUID": "944fccae-4de4-4a79-be41-87541089c14b"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=余额调节表cw!BC9"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "出纳pingpong",
+                                  "ColumnName": "摘要",
+                                  "GUID": "da801e2f-8845-4c31-b6b9-8b57fa1f0e1a"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=余额调节表cw!W9"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "出纳pingpong",
+                                  "ColumnName": "付款总额",
+                                  "GUID": "106c12b6-ebdd-4a98-865a-aa3643225e0b"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=余额调节表cw!AI9"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "出纳pingpong",
+                                  "ColumnName": "申请人",
+                                  "GUID": "3ec24771-c2ff-43d5-a9f2-7ef4bf6bb7e1"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=余额调节表cw!BG9"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "出纳pingpong",
+                                  "ColumnName": "审核状态",
+                                  "GUID": "8e94a2d1-28d6-4339-87ed-d0ce23bf1a50"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=余额调节表cw!BU9"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "出纳pingpong",
+                                  "ColumnName": "付款编号",
+                                  "GUID": "3053784f-1030-4ae5-a8f1-987302c800ff"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=余额调节表cw!BP9"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "出纳pingpong",
+                                  "ColumnName": "付款状态",
+                                  "GUID": "74b1bb9b-ddb8-48b9-9c9a-319ab13a6acf"
+                                },
+                                "Value": "待付款"
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "出纳pingpong",
+                                  "ColumnName": "总价",
+                                  "GUID": "eda2caa7-6871-4d53-b1f8-745af9900ca5"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=余额调节表cw!AI9"
+                                }
+                              }
+                            ],
+                            "ParamNameToSaveNewRowValue": "NewRow",
+                            "BreakpointIdentity": "d87273ad-c83d-4a4e-9ff0-682e4b1f6df1"
+                          }
+                        ],
+                        "ID": "cfecb6d1-f71e-4e7a-9f5a-233444a03442"
+                      },
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=余额调节表cw!BK9"
+                              }
+                            ]
+                          },
+                          "value": "账期-支付宝"
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                            "TableName": "账期支付宝",
+                            "UpdateType": "add",
+                            "ShowConfirm": false,
+                            "CheckDataValidation": false,
+                            "UpdateBindingValues": [
+                              {
+                                "BindingInfo": {
+                                  "TableName": "账期支付宝",
+                                  "ColumnName": "日期",
+                                  "GUID": "c541b3b5-531b-4bf6-8de8-bb031598d8d5"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=余额调节表cw!C9"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "账期支付宝",
+                                  "ColumnName": "发货方式",
+                                  "GUID": "a385868f-ebee-4b98-8acf-0cc9b736ace5"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=余额调节表cw!I9"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "账期支付宝",
+                                  "ColumnName": "平台",
+                                  "GUID": "09d7d430-ffea-41c0-ac6b-ec012d055d68"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=余额调节表cw!M9"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "账期支付宝",
+                                  "ColumnName": "商品名",
+                                  "GUID": "f3b719fd-ad9d-4255-8095-4b733a52a042"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=余额调节表cw!W9"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "账期支付宝",
+                                  "ColumnName": "数量",
+                                  "GUID": "03a94660-778a-4a2c-a6ac-164826d22ac6"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=余额调节表cw!AF9"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "账期支付宝",
+                                  "ColumnName": "支出",
+                                  "GUID": "77b94b16-222a-4898-a46f-9fa2a98c4deb"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=余额调节表cw!AI9"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "账期支付宝",
+                                  "ColumnName": "付款备注",
+                                  "GUID": "2121ee0e-6178-478c-9898-b14503243c9a"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=余额调节表cw!AR9"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "账期支付宝",
+                                  "ColumnName": "供应商",
+                                  "GUID": "c5aa19d3-9d80-4670-98c9-5440d2741ba1"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=余额调节表cw!BC9"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "账期支付宝",
+                                  "ColumnName": "采购员",
+                                  "GUID": "effa6f7d-61ee-4d52-89f4-be8f9395d69f"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=余额调节表cw!BG9"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "账期支付宝",
+                                  "ColumnName": "收入",
+                                  "GUID": "3ed9b23b-2b4c-4d02-945a-b106332e356d"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=余额调节表cw!AN9"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "账期支付宝",
+                                  "ColumnName": "总价",
+                                  "GUID": "637ab4fe-4095-4f5e-b148-4423bb7bda24"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=余额调节表cw!AI9"
+                                }
+                              }
+                            ],
+                            "ParamNameToSaveNewRowValue": "NewRow",
+                            "BreakpointIdentity": "08fa2b2e-6f9a-4627-8637-490121accd51"
+                          }
+                        ],
+                        "ID": "c4c05a6a-0c92-4b07-bb6c-a381e351843e"
+                      },
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=余额调节表cw!BK9"
+                              }
+                            ]
+                          },
+                          "value": "账期-pingpong"
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                            "TableName": "账期pingpong主_子表",
+                            "UpdateType": "add",
+                            "ShowConfirm": false,
+                            "CheckDataValidation": false,
+                            "UpdateBindingValues": [
+                              {
+                                "BindingInfo": {
+                                  "TableName": "账期pingpong主_子表",
+                                  "ColumnName": "下单日期",
+                                  "GUID": "afba8264-c9e9-43c9-8e41-408e3db31528"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=余额调节表cw!C9"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "账期pingpong主_子表",
+                                  "ColumnName": "发货方式",
+                                  "GUID": "4d17de8c-8190-477c-8808-4e2ab2374819"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=余额调节表cw!I9"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "账期pingpong主_子表",
+                                  "ColumnName": "平台",
+                                  "GUID": "d4fa4b8d-ed21-4b6e-888b-a05f2c0cc5ae"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=余额调节表cw!M9"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "账期pingpong主_子表",
+                                  "ColumnName": "商品名",
+                                  "GUID": "fe1a7587-972a-4196-a928-0286e95131af"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=余额调节表cw!W9"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "账期pingpong主_子表",
+                                  "ColumnName": "下单数量",
+                                  "GUID": "987351aa-335c-425e-b6f1-0c22d2dd9bff"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=余额调节表cw!AF9"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "账期pingpong主_子表",
+                                  "ColumnName": "支出",
+                                  "GUID": "05aa4bb1-2cba-4e8e-8fcf-e28fe158573a"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=余额调节表cw!AI9"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "账期pingpong主_子表",
+                                  "ColumnName": "收入",
+                                  "GUID": "00672f3c-9b12-4abe-b6f7-2c93a9b4a023"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=余额调节表cw!AN9"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "账期pingpong主_子表",
+                                  "ColumnName": "供应商",
+                                  "GUID": "ca15c694-1a35-4f3d-a4da-dc4649d7f766"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=余额调节表cw!BC9"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "账期pingpong主_子表",
+                                  "ColumnName": "采购员",
+                                  "GUID": "9eabe542-20eb-4840-b99c-61ce5dff3761"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=余额调节表cw!BG9"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "账期pingpong主_子表",
+                                  "ColumnName": "付款备注",
+                                  "GUID": "e0ff73b9-ebca-4c8e-91aa-425c6acd0930"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=余额调节表cw!AR9"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "账期pingpong主_子表",
+                                  "ColumnName": "入库数量",
+                                  "GUID": "e22577c3-73e1-4e4c-a632-38c694c2d3ef"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=余额调节表cw!AF9"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "账期pingpong主_子表",
+                                  "ColumnName": "总价",
+                                  "GUID": "efc1ebb1-8adf-4c12-9c87-53170027994e"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=余额调节表cw!AI9"
+                                }
+                              }
+                            ],
+                            "ParamNameToSaveNewRowValue": "NewRow",
+                            "BreakpointIdentity": "a729ddf4-3d62-47f4-b21e-95a52a9417d6"
+                          }
+                        ],
+                        "ID": "32e4ffbf-4178-4d10-ac60-7d4c99a4be9e"
+                      }
+                    ],
+                    "BreakpointIdentity": "aefba21f-773a-4164-a06b-f3e89f7dc2b0"
+                  }
+                ],
+                "ID": "8261e87b-04b6-401f-a288-a620e71b8b8b"
+              }
+            ],
+            "BreakpointIdentity": "2caf0d8e-30aa-408c-a793-e07e3095498e"
+          }
+        ],
+        "Text": "分配"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 21.333333333333332,
+        "FontWeight": 1,
+        "Formatter": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 14.67,
+        "Foreground": 3,
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 14.67,
+        "HorizontalAlignment": 5,
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 14.67,
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "Foreground": 3,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 6,
+        "HorizontalAlignment": 7,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 6,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 8,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": 1,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 6,
+        "BorderBottom": 1,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 8,
+        "BorderBottom": 1,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": 1
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 2,
+        "BorderBottom": 1,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 9,
+        "BorderBottom": 1,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": 1,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 2,
+        "BorderBottom": 1
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 18.666666666666664,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "HorizontalAlignment": 7,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": 2,
+        "BorderLeft": 2,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": 2,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontSize": 16.0,
+        "FontWeight": 1,
+        "BorderBottom": null,
+        "BorderTop": 2,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontSize": 16.0,
+        "FontWeight": 1,
+        "BorderTop": 2
+      },
+      {
+        "BorderTop": 2
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "FontWeight": 1,
+        "BorderBottom": null,
+        "BorderTop": 2,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": 2,
+        "BorderLeft": null,
+        "BorderRight": 2
+      },
+      {
+        "FontFamily": 0,
+        "FontWeight": 1,
+        "Formatter": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "FontWeight": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": 2,
+        "BorderRight": null
+      },
+      {
+        "Formatter": 11,
+        "HorizontalAlignment": 5,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "HorizontalAlignment": 7
+      },
+      {
+        "FontFamily": 0,
+        "HorizontalAlignment": 5,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 8,
+        "HorizontalAlignment": 12,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Foreground": 13,
+        "Underline": true
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": 2
+      },
+      {
+        "BorderBottom": 2,
+        "BorderTop": null,
+        "BorderLeft": 2,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": 2,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": 2
+      },
+      {
+        "BorderBottom": 2,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": 2
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "Bold",
+        "[AUTO]General",
+        "#FF0070C0",
+        "black",
+        "Left",
+        "@",
+        "Center",
+        "0.00",
+        "0.00_);[Red](0.00)",
+        "DarkGray",
+        "yyyy/MM/dd",
+        "Right",
+        "Blue"
+      ],
+      "Borders": [
+        {
+          "Color": 4
+        },
+        {
+          "Style": 6,
+          "Color": 4
+        },
+        {
+          "Color": 10
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,0": 0,
+      "0,1": 0,
+      "0,2": 0,
+      "0,3": 0,
+      "0,4": 0,
+      "0,5": 0,
+      "0,6": 0,
+      "0,7": 0,
+      "0,8": 0,
+      "0,9": 0,
+      "0,10": 0,
+      "0,11": 0,
+      "0,12": 0,
+      "0,13": 0,
+      "0,14": 0,
+      "0,15": 0,
+      "0,16": 1,
+      "0,17": 1,
+      "0,18": 1,
+      "0,19": 1,
+      "0,20": 1,
+      "0,21": 1,
+      "0,22": 0,
+      "0,23": 0,
+      "0,24": 0,
+      "0,25": 0,
+      "0,26": 0,
+      "0,27": 0,
+      "0,28": 0,
+      "0,29": 0,
+      "0,30": 0,
+      "0,31": 0,
+      "0,32": 0,
+      "0,33": 0,
+      "0,34": 0,
+      "0,35": 0,
+      "0,36": 0,
+      "0,37": 0,
+      "0,38": 0,
+      "0,39": 0,
+      "0,40": 0,
+      "0,41": 0,
+      "0,42": 0,
+      "0,43": 0,
+      "0,44": 0,
+      "0,45": 0,
+      "0,46": 0,
+      "0,47": 0,
+      "0,48": 0,
+      "0,49": 0,
+      "0,50": 0,
+      "0,51": 0,
+      "0,52": 0,
+      "0,53": 0,
+      "0,54": 0,
+      "0,55": 0,
+      "0,56": 0,
+      "0,57": 0,
+      "0,58": 0,
+      "0,59": 0,
+      "0,60": 0,
+      "0,61": 0,
+      "0,62": 0,
+      "0,63": 0,
+      "0,64": 0,
+      "0,65": 0,
+      "0,66": 0,
+      "0,67": 0,
+      "0,68": 0,
+      "0,69": 0,
+      "0,70": 0,
+      "0,71": 0,
+      "0,72": 0,
+      "0,73": 0,
+      "0,74": 0,
+      "0,75": 0,
+      "0,76": 1,
+      "0,77": 1,
+      "0,78": 1,
+      "0,79": 1,
+      "0,80": 0,
+      "0,81": 0,
+      "0,82": 0,
+      "0,83": 0,
+      "0,84": 2,
+      "0,85": 0,
+      "0,86": 0,
+      "0,87": 0,
+      "0,88": 0,
+      "0,89": 0,
+      "0,90": 0,
+      "0,91": 0,
+      "0,92": 0,
+      "1,0": 0,
+      "1,1": 0,
+      "1,2": 0,
+      "1,3": 0,
+      "1,4": 0,
+      "1,5": 0,
+      "1,6": 0,
+      "1,7": 0,
+      "1,8": 0,
+      "1,9": 0,
+      "1,10": 0,
+      "1,11": 0,
+      "1,12": 0,
+      "1,13": 0,
+      "1,14": 0,
+      "1,15": 0,
+      "1,16": 1,
+      "1,17": 1,
+      "1,18": 1,
+      "1,19": 1,
+      "1,20": 1,
+      "1,21": 1,
+      "1,22": 0,
+      "1,23": 0,
+      "1,24": 0,
+      "1,25": 0,
+      "1,26": 0,
+      "1,27": 0,
+      "1,28": 0,
+      "1,29": 0,
+      "1,30": 0,
+      "1,31": 0,
+      "1,32": 0,
+      "1,33": 0,
+      "1,34": 0,
+      "1,35": 0,
+      "1,36": 0,
+      "1,37": 0,
+      "1,38": 0,
+      "1,39": 0,
+      "1,40": 0,
+      "1,41": 0,
+      "1,42": 0,
+      "1,43": 0,
+      "1,44": 0,
+      "1,45": 0,
+      "1,46": 0,
+      "1,47": 0,
+      "1,48": 0,
+      "1,49": 0,
+      "1,50": 0,
+      "1,51": 0,
+      "1,52": 0,
+      "1,53": 0,
+      "1,54": 0,
+      "1,55": 0,
+      "1,56": 0,
+      "1,57": 0,
+      "1,58": 0,
+      "1,59": 0,
+      "1,60": 0,
+      "1,61": 0,
+      "1,62": 0,
+      "1,63": 0,
+      "1,64": 0,
+      "1,65": 0,
+      "1,66": 0,
+      "1,67": 0,
+      "1,68": 0,
+      "1,69": 0,
+      "1,70": 0,
+      "1,71": 0,
+      "1,72": 0,
+      "1,73": 0,
+      "1,74": 0,
+      "1,75": 0,
+      "1,76": 1,
+      "1,77": 1,
+      "1,78": 1,
+      "1,79": 1,
+      "1,80": 0,
+      "1,81": 0,
+      "1,82": 0,
+      "1,83": 0,
+      "1,84": 0,
+      "1,85": 0,
+      "1,86": 0,
+      "1,87": 0,
+      "1,88": 0,
+      "1,89": 0,
+      "1,90": 0,
+      "1,91": 0,
+      "1,92": 0,
+      "2,0": 0,
+      "2,1": 0,
+      "2,2": 0,
+      "2,3": 3,
+      "2,4": 4,
+      "2,5": 5,
+      "2,6": 5,
+      "2,7": 5,
+      "2,8": 5,
+      "2,9": 5,
+      "2,10": 5,
+      "2,11": 5,
+      "2,12": 6,
+      "2,13": 3,
+      "2,14": 5,
+      "2,15": 0,
+      "2,16": 1,
+      "2,17": 1,
+      "2,18": 1,
+      "2,19": 1,
+      "2,20": 1,
+      "2,21": 1,
+      "2,22": 7,
+      "2,23": 7,
+      "2,24": 7,
+      "2,25": 7,
+      "2,26": 7,
+      "2,27": 7,
+      "2,28": 7,
+      "2,29": 7,
+      "2,30": 7,
+      "2,31": 7,
+      "2,32": 7,
+      "2,33": 7,
+      "2,34": 7,
+      "2,35": 7,
+      "2,37": 7,
+      "2,38": 7,
+      "2,39": 7,
+      "2,40": 7,
+      "2,41": 7,
+      "2,42": 7,
+      "2,43": 7,
+      "2,44": 7,
+      "2,45": 7,
+      "2,46": 7,
+      "2,47": 7,
+      "2,48": 7,
+      "2,49": 7,
+      "2,50": 7,
+      "2,51": 7,
+      "2,52": 7,
+      "2,53": 7,
+      "2,54": 7,
+      "2,55": 0,
+      "2,56": 0,
+      "2,57": 0,
+      "2,58": 0,
+      "2,59": 0,
+      "2,60": 0,
+      "2,61": 0,
+      "2,65": 0,
+      "2,66": 0,
+      "2,67": 0,
+      "2,68": 0,
+      "2,69": 0,
+      "2,70": 0,
+      "2,71": 0,
+      "2,72": 0,
+      "2,80": 8,
+      "2,81": 8,
+      "2,85": 2,
+      "3,0": 9,
+      "3,1": 10,
+      "3,2": 10,
+      "3,3": 10,
+      "3,4": 10,
+      "3,5": 10,
+      "3,6": 10,
+      "3,7": 10,
+      "3,8": 10,
+      "3,9": 0,
+      "3,10": 0,
+      "3,11": 0,
+      "3,12": 0,
+      "3,13": 0,
+      "3,14": 0,
+      "3,15": 0,
+      "3,16": 1,
+      "3,17": 1,
+      "3,18": 1,
+      "3,19": 1,
+      "3,20": 1,
+      "3,21": 1,
+      "3,22": 7,
+      "3,23": 7,
+      "3,24": 7,
+      "3,25": 7,
+      "3,26": 7,
+      "3,27": 7,
+      "3,28": 7,
+      "3,29": 7,
+      "3,30": 7,
+      "3,31": 7,
+      "3,32": 7,
+      "3,33": 7,
+      "3,34": 7,
+      "3,35": 7,
+      "3,37": 7,
+      "3,38": 7,
+      "3,39": 7,
+      "3,40": 7,
+      "3,41": 7,
+      "3,42": 7,
+      "3,43": 7,
+      "3,44": 7,
+      "3,45": 7,
+      "3,46": 7,
+      "3,47": 7,
+      "3,48": 7,
+      "3,49": 7,
+      "3,50": 7,
+      "3,51": 7,
+      "3,52": 7,
+      "3,53": 7,
+      "3,54": 7,
+      "3,55": 0,
+      "3,56": 0,
+      "3,57": 0,
+      "3,58": 0,
+      "3,59": 0,
+      "3,60": 0,
+      "3,61": 0,
+      "3,65": 0,
+      "3,66": 0,
+      "3,67": 0,
+      "3,68": 0,
+      "3,69": 0,
+      "3,70": 0,
+      "3,71": 0,
+      "3,72": 0,
+      "3,80": 8,
+      "3,81": 8,
+      "4,0": 0,
+      "4,1": 0,
+      "4,2": 0,
+      "4,3": 0,
+      "4,4": 11,
+      "4,5": 0,
+      "4,6": 0,
+      "4,7": 12,
+      "4,8": 0,
+      "4,9": 0,
+      "4,10": 0,
+      "4,11": 0,
+      "4,12": 0,
+      "4,13": 0,
+      "4,14": 0,
+      "4,15": 0,
+      "4,16": 1,
+      "4,17": 1,
+      "4,18": 1,
+      "4,19": 1,
+      "4,20": 1,
+      "4,21": 1,
+      "4,22": 7,
+      "4,23": 7,
+      "4,24": 7,
+      "4,25": 7,
+      "4,26": 7,
+      "4,27": 7,
+      "4,28": 7,
+      "4,29": 7,
+      "4,30": 7,
+      "4,31": 7,
+      "4,32": 7,
+      "4,33": 7,
+      "4,34": 7,
+      "4,35": 7,
+      "4,37": 7,
+      "4,38": 7,
+      "4,39": 7,
+      "4,40": 7,
+      "4,41": 7,
+      "4,42": 7,
+      "4,43": 7,
+      "4,44": 7,
+      "4,45": 7,
+      "4,46": 7,
+      "4,47": 7,
+      "4,48": 7,
+      "4,49": 7,
+      "4,50": 7,
+      "4,51": 7,
+      "4,52": 7,
+      "4,53": 7,
+      "4,54": 7,
+      "4,55": 0,
+      "4,56": 0,
+      "4,57": 0,
+      "4,58": 0,
+      "4,59": 0,
+      "4,60": 0,
+      "4,61": 0,
+      "4,65": 0,
+      "4,66": 0,
+      "4,67": 0,
+      "4,68": 0,
+      "4,69": 0,
+      "4,70": 0,
+      "4,71": 0,
+      "4,72": 0,
+      "4,80": 8,
+      "4,81": 8,
+      "5,0": 13,
+      "5,1": 13,
+      "5,2": 13,
+      "5,3": 13,
+      "5,4": 14,
+      "5,5": 13,
+      "5,6": 13,
+      "5,7": 15,
+      "5,8": 15,
+      "5,9": 15,
+      "5,10": 15,
+      "5,11": 15,
+      "5,12": 13,
+      "5,13": 13,
+      "5,14": 13,
+      "5,15": 13,
+      "5,16": 16,
+      "5,17": 16,
+      "5,18": 16,
+      "5,19": 16,
+      "5,20": 16,
+      "5,21": 16,
+      "5,22": 13,
+      "5,23": 17,
+      "5,24": 13,
+      "5,25": 18,
+      "5,26": 13,
+      "5,27": 13,
+      "5,28": 13,
+      "5,29": 13,
+      "5,30": 17,
+      "5,31": 13,
+      "5,32": 18,
+      "5,33": 13,
+      "5,34": 13,
+      "5,35": 13,
+      "5,36": 13,
+      "5,37": 17,
+      "5,38": 17,
+      "5,39": 17,
+      "5,40": 18,
+      "5,41": 18,
+      "5,42": 18,
+      "5,43": 18,
+      "5,44": 13,
+      "5,45": 13,
+      "5,46": 17,
+      "5,47": 17,
+      "5,48": 17,
+      "5,49": 17,
+      "5,50": 17,
+      "5,51": 18,
+      "5,52": 18,
+      "5,53": 18,
+      "5,54": 18,
+      "5,55": 13,
+      "5,56": 13,
+      "5,57": 13,
+      "5,58": 13,
+      "5,59": 13,
+      "5,60": 13,
+      "5,61": 13,
+      "5,62": 19,
+      "5,63": 19,
+      "5,64": 19,
+      "5,65": 13,
+      "5,66": 13,
+      "5,67": 13,
+      "5,68": 13,
+      "5,69": 13,
+      "5,70": 13,
+      "5,71": 13,
+      "5,72": 13,
+      "5,73": 17,
+      "5,74": 17,
+      "5,75": 17,
+      "5,76": 20,
+      "5,77": 20,
+      "5,78": 20,
+      "5,79": 20,
+      "5,80": 17,
+      "5,81": 17,
+      "5,82": 17,
+      "5,83": 17,
+      "5,84": 8,
+      "5,85": 8,
+      "5,86": 8,
+      "5,87": 8,
+      "5,88": 0,
+      "5,89": 8,
+      "5,90": 8,
+      "5,91": 8,
+      "5,92": 8,
+      "6,0": 21,
+      "6,1": 0,
+      "6,2": 0,
+      "6,3": 0,
+      "6,4": 0,
+      "6,5": 0,
+      "6,6": 0,
+      "6,7": 0,
+      "6,8": 0,
+      "6,9": 0,
+      "6,10": 0,
+      "6,11": 22,
+      "6,12": 0,
+      "6,13": 0,
+      "6,14": 0,
+      "6,15": 0,
+      "6,16": 1,
+      "6,17": 1,
+      "6,18": 1,
+      "6,19": 1,
+      "6,20": 1,
+      "6,21": 1,
+      "6,22": 0,
+      "6,23": 0,
+      "6,24": 0,
+      "6,25": 0,
+      "6,26": 0,
+      "6,27": 0,
+      "6,28": 0,
+      "6,29": 0,
+      "6,30": 0,
+      "6,31": 0,
+      "6,32": 0,
+      "6,33": 0,
+      "6,34": 0,
+      "6,35": 0,
+      "6,36": 0,
+      "6,37": 0,
+      "6,38": 0,
+      "6,39": 0,
+      "6,40": 0,
+      "6,41": 0,
+      "6,42": 0,
+      "6,43": 0,
+      "6,44": 0,
+      "6,45": 0,
+      "6,46": 0,
+      "6,47": 0,
+      "6,48": 0,
+      "6,49": 0,
+      "6,50": 0,
+      "6,51": 0,
+      "6,52": 0,
+      "6,53": 0,
+      "6,54": 0,
+      "6,55": 0,
+      "6,56": 0,
+      "6,57": 0,
+      "6,58": 0,
+      "6,59": 0,
+      "6,60": 0,
+      "6,61": 0,
+      "6,62": 0,
+      "6,63": 0,
+      "6,64": 0,
+      "6,65": 0,
+      "6,66": 0,
+      "6,67": 0,
+      "6,68": 0,
+      "6,69": 0,
+      "6,70": 0,
+      "6,71": 0,
+      "6,72": 0,
+      "6,73": 0,
+      "6,74": 0,
+      "6,75": 0,
+      "6,76": 1,
+      "6,77": 1,
+      "6,78": 1,
+      "6,79": 1,
+      "6,80": 0,
+      "6,81": 0,
+      "6,82": 0,
+      "6,83": 0,
+      "6,84": 0,
+      "6,88": 0,
+      "6,89": 0,
+      "6,90": 0,
+      "6,91": 0,
+      "6,92": 0,
+      "7,0": 23,
+      "7,1": 24,
+      "7,2": 25,
+      "7,3": 24,
+      "7,4": 24,
+      "7,5": 24,
+      "7,6": 24,
+      "7,7": 25,
+      "7,8": 25,
+      "7,9": 24,
+      "7,10": 24,
+      "7,11": 24,
+      "7,12": 25,
+      "7,13": 24,
+      "7,14": 25,
+      "7,15": 24,
+      "7,16": 26,
+      "7,17": 27,
+      "7,18": 27,
+      "7,19": 27,
+      "7,20": 27,
+      "7,21": 27,
+      "7,22": 28,
+      "7,23": 24,
+      "7,24": 24,
+      "7,25": 24,
+      "7,26": 24,
+      "7,27": 24,
+      "7,28": 24,
+      "7,29": 24,
+      "7,30": 24,
+      "7,31": 25,
+      "7,32": 24,
+      "7,33": 24,
+      "7,34": 25,
+      "7,35": 24,
+      "7,36": 24,
+      "7,37": 25,
+      "7,38": 24,
+      "7,39": 25,
+      "7,40": 25,
+      "7,41": 24,
+      "7,42": 24,
+      "7,43": 25,
+      "7,44": 25,
+      "7,45": 24,
+      "7,46": 24,
+      "7,47": 24,
+      "7,48": 25,
+      "7,49": 24,
+      "7,50": 24,
+      "7,51": 25,
+      "7,52": 24,
+      "7,53": 24,
+      "7,54": 25,
+      "7,55": 24,
+      "7,56": 24,
+      "7,57": 24,
+      "7,58": 25,
+      "7,59": 24,
+      "7,60": 24,
+      "7,61": 25,
+      "7,62": 28,
+      "7,63": 24,
+      "7,64": 24,
+      "7,65": 24,
+      "7,66": 24,
+      "7,67": 28,
+      "7,68": 24,
+      "7,69": 24,
+      "7,70": 24,
+      "7,71": 24,
+      "7,72": 25,
+      "7,73": 24,
+      "7,74": 24,
+      "7,75": 24,
+      "7,76": 26,
+      "7,77": 27,
+      "7,78": 27,
+      "7,79": 27,
+      "7,80": 25,
+      "7,81": 24,
+      "7,82": 24,
+      "7,83": 29,
+      "7,85": 30,
+      "7,86": 0,
+      "7,87": 0,
+      "7,88": 31,
+      "7,89": 31,
+      "7,90": 30,
+      "7,91": 0,
+      "7,92": 0,
+      "8,0": 32,
+      "8,2": 33,
+      "8,8": 22,
+      "8,9": 0,
+      "8,10": 0,
+      "8,11": 0,
+      "8,12": 22,
+      "8,13": 0,
+      "8,14": 0,
+      "8,15": 0,
+      "8,16": 34,
+      "8,22": 35,
+      "8,31": 22,
+      "8,32": 0,
+      "8,33": 0,
+      "8,34": 36,
+      "8,35": 0,
+      "8,36": 0,
+      "8,37": 0,
+      "8,38": 0,
+      "8,39": 36,
+      "8,40": 0,
+      "8,41": 0,
+      "8,42": 0,
+      "8,43": 35,
+      "8,44": 0,
+      "8,45": 0,
+      "8,46": 0,
+      "8,47": 0,
+      "8,48": 0,
+      "8,49": 0,
+      "8,50": 0,
+      "8,51": 22,
+      "8,54": 22,
+      "8,55": 0,
+      "8,56": 0,
+      "8,57": 0,
+      "8,58": 22,
+      "8,59": 0,
+      "8,60": 0,
+      "8,61": 0,
+      "8,62": 35,
+      "8,72": 22,
+      "8,76": 37,
+      "8,80": 22,
+      "8,83": 38,
+      "9,0": 32,
+      "9,83": 38,
+      "10,0": 32,
+      "10,83": 38,
+      "11,0": 32,
+      "11,83": 38,
+      "11,85": 0,
+      "11,86": 0,
+      "11,87": 0,
+      "12,0": 32,
+      "12,83": 38,
+      "13,0": 32,
+      "13,83": 38,
+      "14,0": 32,
+      "14,83": 38,
+      "15,0": 32,
+      "15,83": 38,
+      "16,0": 32,
+      "16,83": 38,
+      "17,0": 32,
+      "17,83": 38,
+      "18,0": 32,
+      "18,83": 38,
+      "19,0": 32,
+      "19,83": 38,
+      "20,0": 32,
+      "20,83": 38,
+      "21,0": 32,
+      "21,83": 38,
+      "22,0": 32,
+      "22,83": 38,
+      "23,0": 32,
+      "23,83": 38,
+      "24,0": 32,
+      "24,83": 38,
+      "25,0": 32,
+      "25,83": 38,
+      "26,0": 32,
+      "26,83": 38,
+      "27,0": 32,
+      "27,83": 38,
+      "28,0": 39,
+      "28,1": 40,
+      "28,2": 40,
+      "28,3": 40,
+      "28,4": 40,
+      "28,5": 40,
+      "28,6": 40,
+      "28,7": 40,
+      "28,8": 40,
+      "28,9": 40,
+      "28,10": 40,
+      "28,11": 40,
+      "28,12": 40,
+      "28,13": 40,
+      "28,14": 40,
+      "28,15": 40,
+      "28,16": 40,
+      "28,17": 40,
+      "28,18": 40,
+      "28,19": 40,
+      "28,20": 40,
+      "28,21": 40,
+      "28,22": 40,
+      "28,23": 40,
+      "28,24": 40,
+      "28,25": 40,
+      "28,26": 40,
+      "28,27": 40,
+      "28,28": 40,
+      "28,29": 40,
+      "28,30": 40,
+      "28,31": 40,
+      "28,32": 40,
+      "28,33": 40,
+      "28,34": 40,
+      "28,35": 40,
+      "28,36": 40,
+      "28,37": 40,
+      "28,38": 40,
+      "28,39": 40,
+      "28,40": 40,
+      "28,41": 40,
+      "28,42": 40,
+      "28,43": 40,
+      "28,44": 40,
+      "28,45": 40,
+      "28,46": 40,
+      "28,47": 40,
+      "28,48": 40,
+      "28,49": 40,
+      "28,50": 40,
+      "28,51": 40,
+      "28,52": 40,
+      "28,53": 40,
+      "28,54": 40,
+      "28,55": 40,
+      "28,56": 40,
+      "28,57": 40,
+      "28,58": 40,
+      "28,59": 40,
+      "28,60": 40,
+      "28,61": 40,
+      "28,62": 40,
+      "28,63": 40,
+      "28,64": 40,
+      "28,65": 40,
+      "28,66": 40,
+      "28,67": 40,
+      "28,68": 40,
+      "28,69": 40,
+      "28,70": 40,
+      "28,71": 40,
+      "28,72": 40,
+      "28,73": 40,
+      "28,74": 40,
+      "28,75": 40,
+      "28,76": 41,
+      "28,77": 41,
+      "28,78": 41,
+      "28,79": 41,
+      "28,80": 40,
+      "28,81": 40,
+      "28,82": 40,
+      "28,83": 42,
+      "29,0": 21,
+      "29,1": 21,
+      "29,2": 21,
+      "29,3": 21,
+      "29,4": 21,
+      "29,5": 21,
+      "29,6": 21,
+      "29,7": 21,
+      "29,8": 21,
+      "29,9": 21,
+      "29,10": 0,
+      "29,11": 22,
+      "29,12": 22,
+      "29,13": 22,
+      "29,14": 22,
+      "29,15": 22,
+      "29,16": 34,
+      "29,17": 34,
+      "29,18": 34,
+      "29,19": 34,
+      "29,20": 34,
+      "29,21": 34,
+      "29,22": 22,
+      "29,23": 22,
+      "29,24": 22,
+      "29,25": 22,
+      "29,26": 22,
+      "29,27": 22,
+      "29,28": 22,
+      "29,29": 22,
+      "29,30": 22,
+      "29,31": 22,
+      "29,32": 22,
+      "29,33": 22,
+      "29,34": 22,
+      "29,35": 22,
+      "29,36": 22,
+      "29,37": 22,
+      "29,38": 22,
+      "29,39": 22,
+      "29,40": 22,
+      "29,41": 22,
+      "29,42": 22,
+      "29,43": 22,
+      "29,44": 22,
+      "29,45": 22,
+      "29,46": 22,
+      "29,47": 22,
+      "29,48": 22,
+      "29,49": 22,
+      "29,50": 22,
+      "29,51": 0,
+      "29,52": 0,
+      "29,53": 0,
+      "29,54": 0,
+      "29,55": 0,
+      "29,56": 0,
+      "29,57": 0,
+      "29,58": 0,
+      "29,59": 0,
+      "29,60": 0,
+      "29,61": 0,
+      "29,62": 0,
+      "29,63": 22,
+      "29,64": 22,
+      "29,65": 22,
+      "29,66": 22,
+      "29,67": 22,
+      "29,68": 22,
+      "29,69": 22,
+      "29,70": 22,
+      "29,71": 22,
+      "29,72": 22,
+      "29,73": 22,
+      "29,74": 22,
+      "29,75": 22,
+      "29,76": 34,
+      "29,77": 34,
+      "29,78": 34,
+      "29,79": 34,
+      "29,80": 22,
+      "29,81": 22,
+      "29,82": 22,
+      "29,83": 22,
+      "29,84": 22,
+      "29,85": 22,
+      "29,86": 22,
+      "29,87": 22,
+      "29,88": 22,
+      "29,89": 22,
+      "29,90": 22,
+      "29,91": 22,
+      "29,92": 22
+    },
+    "SheetStyle": {
+      "FontFamily": 0,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
+    }
+  },
+  "Spans": [
+    "2,13,1,2",
+    "2,85,3,8",
+    "4,7,1,5",
+    "4,13,1,2",
+    "7,85,1,3",
+    "7,90,1,3",
+    "8,2,1,5",
+    "8,8,1,4",
+    "8,12,1,4",
+    "8,22,1,9",
+    "8,31,1,3",
+    "8,34,1,5",
+    "8,39,1,4",
+    "8,43,1,8",
+    "8,51,1,3",
+    "8,54,1,4",
+    "8,58,1,4",
+    "8,62,1,5",
+    "8,67,1,5",
+    "8,72,1,4",
+    "8,80,1,4",
+    "9,0,20,84",
+    "8,16,1,6",
+    "2,4,1,8",
+    "8,76,1,4",
+    "7,2,1,5",
+    "7,8,1,4",
+    "7,12,1,4",
+    "7,16,1,6",
+    "7,22,1,9",
+    "7,31,1,3",
+    "7,34,1,5",
+    "7,39,1,4",
+    "7,43,1,8",
+    "7,51,1,3",
+    "7,54,1,4",
+    "7,58,1,4",
+    "7,62,1,5",
+    "7,67,1,5",
+    "7,72,1,4",
+    "7,76,1,4",
+    "7,80,1,4"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "余额调节表",
+    "PageResponsiveMode": 5,
+    "ConditionFormatRulesCollection": {
+      "Rules": [
+        {
+          "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+          "Formula": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=OR(余额调节表cw!M9=\"KellyUS\",余额调节表cw!M9=\"FionaUS\",余额调节表cw!M9=\"MeggieUS\",余额调节表cw!M9=\"EmmaUS\",余额调节表cw!M9=\"HelenUS\",余额调节表cw!M9=\"DennyUS\",余额调节表cw!M9=\"LilyUS\")"
+          },
+          "GUID": "9cde50ff-918b-49d4-99be-734279fc6ea5",
+          "StyleInfo": {
+            "Background": "#FFFF0000",
+            "Foreground": "#FFFFFF00",
+            "Underline": null,
+            "Strikethrough": null
+          }
+        },
+        {
+          "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+          "Formula": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=OR(余额调节表cw!M9=\"KellyUS\",余额调节表cw!M9=\"FionaUS\",余额调节表cw!M9=\"MeggieUS\",余额调节表cw!M9=\"EmmaUS\",余额调节表cw!M9=\"HelenUS\",余额调节表cw!M9=\"DennyUS\",余额调节表cw!M9=\"LilyUS\")"
+          },
+          "Priority": 1,
+          "GUID": "1da9a942-b2b6-49b1-a1bc-ff342372fd3d",
+          "StyleInfo": {
+            "Background": "#FFFF0000",
+            "Foreground": "#FFFFFF00",
+            "Underline": null,
+            "Strikethrough": null
+          }
+        }
+      ]
+    }
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//ITDlWicW0yhtU4T4wMwvueCNa6k/vbWgwOdceiTH0GJXDUPJj7tGrRqJOECkuAHQfNkJlHagz5n5tjY7ualtA4GHNOR9jhjTEcChhkWezRLg02P0sQca1Fx04ca/88RN07S3VKB4YY+1SV/jJ3rLW9kxjO+Meyq+ItPdA+AEQKLWDvcGyTnVhKlIhOr2YMwtClB1xTfZ8b6VKpxoC/rnhzgaM0K2tjyqCr2qjBIH4QYzhH9fvMfScxbjR/9DSPOexteBeDk4VoKqdwygGqGtn29sydQWCHFrKc1heIe/7V6Em2ewHfrIHrQYA2LpI4MZvSR3dA6wSMiFKNGbw/W0xvQlv9wDRQ0oiNNIDkOh5KzMxMRfYFjjQd5zHDCd8z6LPPmVRY2X5zRMiLXPj3BBN1EDeyVPOH5Rv4XSzvAS6iR2zMQ5v/vYUA+TPrzaXUKSiVofnSmA4DPZdLoZMGoLtf7nihpLEeNOQDlJ0Epiru+A0g4zKYZD32K52WRvJORajuNtgI24KKTxBnk124sMKHMJ/WAj/uCkBvipZ5KX5rfA0ahULm/f/bFw1o5Ji4dhbbkZbVlF4Hd/s63G3Gn4TscrEhjfAra7cHDro09Qq49DxR5Jtmp5AQeFJSBKou8J+IBX9wGRqFvzbaltPnlUpNZdxDbluvyTGzYOUl2yo+I/alG3upmuAQ6i7EZQNNmWBxnoMfdL/jrw8Z6gyLiEA1ey7lI91ssaox88x/3aLp/k9lWLaUQSDX0fQv+qx95FU2yMhNgTLXPtAQfUgi4jk5n9mFWAI05bRVAOfwRocg1rCXiV0AOUYSH3S0QqRP+tHLCw7hbDldUjyiX5Z8+OmCmo4M82mHvvsL82MVB6KyELmDfVUsuSqhljfVjW3dh1+r1uZ6Hs/NIy9s4Eg7lPWg==|920

@@ -1,0 +1,426 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 55.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      }
+    },
+    "Count": 45
+  },
+  "Cols": {
+    "Count": 60
+  },
+  "Values": {
+    "3,9": "交易类型字典",
+    "9,35": "更改",
+    "9,38": "删除"
+  },
+  "AttachInfos": {
+    "5,15": {
+      "CellType": {
+        "$type": "Forguncy.CurrentUserCellType, ServerDesignerCommon",
+        "CellCustomValue": "%CurrentUser%",
+        "NavigateSettingWhenLogout": {
+          "NavigateWhenLogoutMode": 1
+        }
+      }
+    },
+    "8,6": {
+      "ListViewInfo": {
+        "Name": "表格1",
+        "TableName": "交易类型字典",
+        "RowIndex": 8,
+        "ColumnIndex": 6,
+        "RowCount": 23,
+        "ColumnCount": 36,
+        "TopCondition": null,
+        "ListViewStyleName": "样式1",
+        "ShowColumnHeaderInDesigner": true,
+        "IsRowHeaderVisible": true,
+        "AllowEditInListview": true,
+        "AllowAddNewRow": true,
+        "ShowDeleteButton": true,
+        "AllowDragFill": true,
+        "RowHeaderContextMenu": {
+          "ContextMenuItems": [
+            {
+              "Text": "插入",
+              "Visible": true,
+              "OperationType": 2
+            },
+            {
+              "Text": "删除",
+              "Visible": true,
+              "OperationType": 3
+            },
+            {
+              "Text": "复制并插入",
+              "OperationType": 4
+            }
+          ]
+        },
+        "ColumnOperation": 2,
+        "ShowGridLine": true
+      }
+    },
+    "9,8": {
+      "BindingInfo": {
+        "TableName": "交易类型字典",
+        "ColumnName": "jy类型",
+        "GUID": "f3742522-fafb-46d7-87c4-1c57fb565887"
+      }
+    },
+    "9,23": {
+      "BindingInfo": {
+        "TableName": "交易类型字典",
+        "ColumnName": "交易类型",
+        "GUID": "6a52127e-454b-4530-a140-02f2dba30e6b"
+      }
+    },
+    "9,35": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "NavigateType": "back",
+            "IgnoreTargetPageCachedCurrentRowInfo": false,
+            "LoadBindingDataOption": 1,
+            "BreakpointIdentity": "b89a0d5a-9804-4afa-a264-2ff940827a30"
+          }
+        ],
+        "Text": "更改",
+        "ClickMode": 1
+      }
+    },
+    "9,38": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.DeleteRecordCommand, ServerDesignerCommon",
+            "ConfirmText": "您确定要删除吗？",
+            "BreakpointIdentity": "bb1a0416-45ed-48bb-a5ff-bec9ac5664d7"
+          }
+        ],
+        "Text": "删除",
+        "ClickMode": 1
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "FontSize": 30.0,
+        "Formatter": 1,
+        "HorizontalAlignment": 2,
+        "VerticalAlignment": 2
+      },
+      {
+        "FontSize": 15.0,
+        "HorizontalAlignment": 3,
+        "VerticalAlignment": 2
+      },
+      {
+        "Foreground": 4,
+        "Underline": true
+      },
+      {
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderTop": 0
+      },
+      {
+        "BorderTop": 0,
+        "BorderRight": 0
+      },
+      {
+        "BorderBottom": 1,
+        "BorderLeft": 0,
+        "BorderRight": 1
+      },
+      {
+        "BorderBottom": 1,
+        "BorderLeft": 1,
+        "BorderRight": 1
+      },
+      {
+        "BorderLeft": 1
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 14.67
+      },
+      {
+        "FontFamily": 0,
+        "Foreground": 4,
+        "Underline": true,
+        "BorderBottom": 1,
+        "BorderLeft": 1,
+        "BorderRight": 1
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 14.67,
+        "BorderBottom": 1,
+        "BorderLeft": 1,
+        "BorderRight": 1
+      },
+      {
+        "BorderRight": 0
+      },
+      {
+        "BorderLeft": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderBottom": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderRight": 0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "[AUTO]General",
+        "Center",
+        "Right",
+        "Blue",
+        "DarkGray",
+        "#D8D8D8"
+      ],
+      "Borders": [
+        {
+          "Color": 5
+        },
+        {
+          "Color": 6
+        }
+      ]
+    },
+    "CellStyles": {
+      "3,9": 0,
+      "5,15": 1,
+      "7,6": 2,
+      "8,6": 3,
+      "8,7": 4,
+      "8,8": 4,
+      "8,9": 4,
+      "8,10": 4,
+      "8,11": 4,
+      "8,12": 4,
+      "8,13": 4,
+      "8,14": 4,
+      "8,15": 4,
+      "8,16": 4,
+      "8,17": 4,
+      "8,18": 4,
+      "8,19": 4,
+      "8,20": 4,
+      "8,21": 4,
+      "8,22": 4,
+      "8,23": 4,
+      "8,24": 4,
+      "8,25": 4,
+      "8,26": 4,
+      "8,27": 4,
+      "8,28": 4,
+      "8,29": 4,
+      "8,30": 4,
+      "8,31": 4,
+      "8,32": 4,
+      "8,33": 4,
+      "8,34": 4,
+      "8,35": 4,
+      "8,36": 4,
+      "8,37": 4,
+      "8,38": 4,
+      "8,39": 4,
+      "8,40": 4,
+      "8,41": 5,
+      "9,6": 6,
+      "9,7": 7,
+      "9,8": 8,
+      "9,23": 9,
+      "9,35": 10,
+      "9,36": 11,
+      "9,37": 11,
+      "9,38": 10,
+      "9,39": 11,
+      "9,40": 11,
+      "9,41": 12,
+      "10,6": 13,
+      "10,21": 12,
+      "10,41": 12,
+      "11,6": 13,
+      "11,21": 12,
+      "11,41": 12,
+      "12,6": 13,
+      "12,21": 12,
+      "12,41": 12,
+      "13,6": 13,
+      "13,21": 12,
+      "13,41": 12,
+      "14,6": 13,
+      "14,21": 12,
+      "14,41": 12,
+      "15,6": 13,
+      "15,21": 12,
+      "15,41": 12,
+      "16,6": 13,
+      "16,21": 12,
+      "16,41": 12,
+      "17,6": 13,
+      "17,21": 12,
+      "17,41": 12,
+      "18,6": 13,
+      "18,21": 12,
+      "18,41": 12,
+      "19,6": 14,
+      "19,7": 15,
+      "19,8": 15,
+      "19,9": 15,
+      "19,10": 15,
+      "19,11": 15,
+      "19,12": 15,
+      "19,13": 15,
+      "19,14": 15,
+      "19,15": 15,
+      "19,16": 15,
+      "19,17": 15,
+      "19,18": 15,
+      "19,19": 15,
+      "19,20": 15,
+      "19,21": 16,
+      "19,41": 12,
+      "20,6": 13,
+      "20,41": 12,
+      "21,6": 13,
+      "21,41": 12,
+      "22,6": 13,
+      "22,41": 12,
+      "23,6": 13,
+      "23,41": 12,
+      "24,6": 13,
+      "24,41": 12,
+      "25,6": 13,
+      "25,41": 12,
+      "26,6": 13,
+      "26,41": 12,
+      "27,6": 13,
+      "27,41": 12,
+      "28,6": 13,
+      "28,41": 12,
+      "29,6": 13,
+      "29,41": 12,
+      "30,6": 14,
+      "30,7": 15,
+      "30,8": 15,
+      "30,9": 15,
+      "30,10": 15,
+      "30,11": 15,
+      "30,12": 15,
+      "30,13": 15,
+      "30,14": 15,
+      "30,15": 15,
+      "30,16": 15,
+      "30,17": 15,
+      "30,18": 15,
+      "30,19": 15,
+      "30,20": 15,
+      "30,21": 15,
+      "30,22": 15,
+      "30,23": 15,
+      "30,24": 15,
+      "30,25": 15,
+      "30,26": 15,
+      "30,27": 15,
+      "30,28": 15,
+      "30,29": 15,
+      "30,30": 15,
+      "30,31": 15,
+      "30,32": 15,
+      "30,33": 15,
+      "30,34": 15,
+      "30,35": 15,
+      "30,36": 15,
+      "30,37": 15,
+      "30,38": 15,
+      "30,39": 15,
+      "30,40": 15,
+      "30,41": 16
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "5,15,1,7",
+    "9,6,1,2",
+    "10,6,21,36",
+    "3,9,1,27",
+    "9,35,1,3",
+    "9,38,1,3",
+    "9,8,1,15",
+    "9,23,1,11",
+    "8,6,1,2",
+    "8,8,1,15",
+    "8,23,1,11",
+    "8,35,1,3",
+    "8,38,1,3"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "财务",
+            "财务主管"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//tLvKphPGJwwMesogPQE05FEVaM8GnXqJ1tU2Q1MX8o+X2kecdmYQR5vp6UAMv2k1J1epgKpFJCl85EZolleaStKGFrBX/3BAH60I83qZaRWTgtWqkCfDK33pyGW1TtQaTiuzaP6gxV6wHMDKJsYI6MBnAjTHpcQM+RrRBcvrsSItazkhdGsa9dTEvbTbzIdab1sbjdHShZ2kkfb7jCMXzsI4UPrX7u0UNEAV1XboqJaLqyKKJcdSO1C1gV3p+DOKTTXZyJ77wninPw2ZOYLFz6T292FUA1GpAZXsxnYhAbt36Honwkvb07bV+uLbAecfQjxZLfOCuP198SqHOncypdE92TBL/+NU+2BPwR9XG/zlun6qz6UlPrFfXOuefBk1Q8wBEVQl/MgFEjTANeTuj/TylZrpwW+TAUQd1YN30xkQ75xyflUeqzgzPgErMEU1iUtHq0yaqlgsCjhceyLFArPSdjWAyCreU5Bw61PGoy5jM8CDHHjRSUiPYyMLuS3LW+z5A/HUT9NM9OFz/ZeU3La85lWiTUbl4Yc88tNxiKqVfDCIMwkjtthrhavIcVN6N/9B8mQGxJqeH7rcWhpCIsjfNKAbfOUwKKRFF6cOhXtyRye2F/Se7TQKnBzLBGijRn9w5eYMzyivMF3Gbl6WOiZCUkrXFQK0Rbu80LOVQeYk3O82I3mvi+3mIFlHZrTav0UqHFEDjihtCbJfS4FI98t4co1KVdPeJmOI6jYaQ3ft7YTlWy/+xbkYeOjvxZaXmcFippTmPybcrXJPtJsLo7V3qZ7uFIfdNoTkcuCAxgdVAQNDSC4nAxf/1jPcM35UxpYA97y34hr0YsPlfOPuvcOHx1vsEnIosbv4MP31r85zG7qeYnsWmOvh+8TnkQR9lGRh2wipFiSFWLT5ij/Phg==|920

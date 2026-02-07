@@ -1,0 +1,489 @@
+{
+  "Rows": {
+    "Count": 2,
+    "DefaultSize": 22.0
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 28.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 34.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0
+        }
+      },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0
+        }
+      },
+      "16": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 18.0
+        }
+      },
+      "17": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 52.0
+        }
+      },
+      "19": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 35.0
+        }
+      },
+      "20": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 27.0
+        }
+      },
+      "21": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 24.0
+        }
+      },
+      "22": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 63.0
+        }
+      },
+      "23": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 51.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      22
+    ],
+    "Count": 24
+  },
+  "Values": {
+    "0,21": "/h"
+  },
+  "AttachInfos": {
+    "0,0": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PageName": "包装速填（尺寸）",
+            "IgnoreTargetPageCachedCurrentRowInfo": false,
+            "LoadBindingDataOption": 1,
+            "BreakpointIdentity": "a0a70a08-9a2c-491e-9327-4bce1f31586b"
+          }
+        ],
+        "ClickMode": 1
+      },
+      "TemplateCellSource": "FNSKU"
+    },
+    "0,2": {
+      "TemplateCellSource": "产品名称",
+      "RulesGuidList": [
+        "130c81af-8bd3-4372-8509-baa884d6be6b"
+      ]
+    },
+    "0,8": {
+      "TemplateCellSource": "需包"
+    },
+    "0,10": {
+      "TemplateCellSource": "完成"
+    },
+    "0,12": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=c1574458cb3b4f64ac8b4431f6a9282!S1"
+                      }
+                    ]
+                  },
+                  "value": "取消"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=c1574458cb3b4f64ac8b4431f6a9282!C1&\"已取消包装！\""
+                    },
+                    "BreakpointIdentity": "d185a710-2082-488e-ae01-afeb005411a8"
+                  }
+                ],
+                "ID": "4fb0595b-6776-46d7-a224-576e475de583"
+              },
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=c1574458cb3b4f64ac8b4431f6a9282!W1"
+                      }
+                    ]
+                  },
+                  "value": "完成"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+                    "PopupDisplayMode": 1,
+                    "Placement": {
+                      "SerializeProperty": "包装详情"
+                    },
+                    "PageName": "产品包装详修改",
+                    "IgnoreTargetPageCachedCurrentRowInfo": false,
+                    "BreakpointIdentity": "aae36794-ba51-489f-b8c4-4a27aaf7acb6"
+                  }
+                ],
+                "ID": "3568d2f2-266b-434d-9748-9c866ce925dd"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+                    "PopupDisplayMode": 1,
+                    "Placement": {
+                      "SerializeProperty": "包装详情"
+                    },
+                    "PageName": "产品包装详情",
+                    "IgnoreTargetPageCachedCurrentRowInfo": false,
+                    "BreakpointIdentity": "8e5eab8a-6c3b-4cb2-b329-90a5f4d429b4"
+                  }
+                ],
+                "ID": "3b6cf9dc-68dd-4914-8ca6-676477739f53"
+              }
+            ],
+            "BreakpointIdentity": "a8e56ec8-3e39-4f18-abdb-4da55174d078"
+          }
+        ],
+        "TemplateKey": "透明按钮_无底色_",
+        "Icon": {
+          "Name": "Application/144_check_1.svg",
+          "BuiltIn": true,
+          "Color": "Accent 1 0"
+        },
+        "IconSize": 35.0
+      }
+    },
+    "0,14": {
+      "TemplateCellSource": "平台"
+    },
+    "0,17": {
+      "TemplateCellSource": "站点"
+    },
+    "0,18": {
+      "TemplateCellSource": "包装指令",
+      "RulesGuidList": [
+        "cc32a3ff-b7af-4725-a74a-234c439b547b",
+        "9e2d9182-4a14-4ebf-bc11-87b4f7858ac6"
+      ]
+    },
+    "0,20": {
+      "TemplateCellSource": "识别码"
+    },
+    "0,22": {
+      "TemplateCellSource": "包装状态"
+    },
+    "0,23": {
+      "TemplateCellSource": "包装账户"
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Foreground": 0,
+        "BorderBottom": null,
+        "BorderTop": 0,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": 0,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 2,
+        "HorizontalAlignment": 3,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 2,
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 2,
+        "HorizontalAlignment": 3,
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "HorizontalAlignment": 4,
+        "Underline": false,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "HorizontalAlignment": 3,
+        "WordWrap": true,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Foreground": 5,
+        "HorizontalAlignment": 4,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "HorizontalAlignment": 4,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "HorizontalAlignment": 3,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Foreground": 5,
+        "HorizontalAlignment": 6,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Foreground": 5,
+        "HorizontalAlignment": 3,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Blue",
+        "Text 1 50",
+        "Body",
+        "Left",
+        "Center",
+        "#FFFF0000",
+        "Right"
+      ],
+      "Borders": [
+        {
+          "Color": 1
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,0": 0,
+      "0,1": 1,
+      "0,2": 1,
+      "0,3": 1,
+      "0,4": 1,
+      "0,5": 1,
+      "0,6": 1,
+      "0,7": 1,
+      "0,8": 1,
+      "0,9": 1,
+      "0,10": 1,
+      "0,11": 1,
+      "0,12": 1,
+      "0,13": 1,
+      "0,14": 1,
+      "0,15": 1,
+      "0,16": 1,
+      "0,17": 1,
+      "0,18": 1,
+      "0,19": 1,
+      "0,20": 2,
+      "0,21": 3,
+      "0,22": 3,
+      "0,23": 3,
+      "1,0": 4,
+      "1,1": 4,
+      "1,2": 4,
+      "1,3": 4,
+      "1,4": 4,
+      "1,5": 4,
+      "1,6": 4,
+      "1,7": 4,
+      "1,8": 4,
+      "1,9": 4,
+      "1,10": 4,
+      "1,11": 4,
+      "1,12": 4,
+      "1,13": 4,
+      "1,14": 4,
+      "1,15": 4,
+      "1,16": 4,
+      "1,17": 4,
+      "1,18": 4,
+      "1,19": 4,
+      "1,20": 5,
+      "1,21": 4,
+      "1,22": 6,
+      "1,23": 6
+    },
+    "ColStyles": {
+      "0": 7,
+      "1": 7,
+      "2": 8,
+      "3": 8,
+      "4": 8,
+      "5": 8,
+      "6": 8,
+      "7": 8,
+      "8": 9,
+      "9": 9,
+      "10": 10,
+      "11": 10,
+      "14": 11,
+      "15": 11,
+      "16": 11,
+      "17": 11,
+      "18": 11,
+      "19": 11,
+      "20": 12,
+      "21": 13,
+      "22": 11,
+      "23": 11
+    },
+    "SheetStyle": {
+      "FontFamily": 2,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
+    }
+  },
+  "Spans": [
+    "0,0,2,2",
+    "0,2,2,6",
+    "0,8,2,2",
+    "0,10,2,2",
+    "0,12,2,2",
+    "0,14,2,3",
+    "0,17,2,1",
+    "0,18,2,2",
+    "0,20,2,1",
+    "0,21,2,1",
+    "0,22,2,1",
+    "0,23,2,1"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.TemplatePage, ServerDesignerCommon",
+    "ParentPageName": "包装任务",
+    "IsMobilePage": true,
+    "ConditionFormatRulesCollection": {
+      "Rules": [
+        {
+          "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+          "Formula": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=c1574458cb3b4f64ac8b4431f6a9282!W1=\"完成\""
+          },
+          "GUID": "130c81af-8bd3-4372-8509-baa884d6be6b",
+          "StyleInfo": {
+            "Background": "Accent 2 40",
+            "Underline": null,
+            "Strikethrough": null
+          }
+        },
+        {
+          "$type": "Forguncy.ConditionFormat.CellValueRule, ServerDesignerCommon",
+          "Operator": 3,
+          "Value1": "=\"加急\"",
+          "Priority": 1,
+          "GUID": "cc32a3ff-b7af-4725-a74a-234c439b547b",
+          "StyleInfo": {
+            "Background": "#FFFF0000",
+            "Underline": null,
+            "Strikethrough": null
+          }
+        },
+        {
+          "$type": "Forguncy.ConditionFormat.CellValueRule, ServerDesignerCommon",
+          "Operator": 3,
+          "Value1": "=\"取消\"",
+          "Priority": 2,
+          "GUID": "9e2d9182-4a14-4ebf-bc11-87b4f7858ac6",
+          "StyleInfo": {
+            "Foreground": "#FFFF0000",
+            "Underline": null,
+            "Strikethrough": true
+          }
+        }
+      ]
+    }
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//TdL+NkDdOupeXFNx7Gur7O7+4fdFbWZWp0lDDPFiggDCSKYT9waK+Mtsfnosus/cBv/QIeLc5/zCekON3E+sApGF31AhlQObEU11dFLLgjHsMq3ZlNyBPdUcL6UX7HVWIPifLMVs1VRQIAgUzOFXbT37VeT8ht6NUkIppUVIcUdUR0/O4yMxMXZ37N+0ajQWtdnZagoZVLU0K9GNxnHC9bUw7ziO3626meh5kwTPcWifF86s8A2AAF5QjD13nux5eWJLzeOzoh2g3bc1TecEJDazWjCCQmYFYRgBnE9mBjzFvgC1RqQWmygDqF/09FApAzgO4ofmNnjAfp4KGI0iA7PCKZMXqMPS0PzhyJ8qsjhPRuPoEGCWL3Cs4R0lln12TNKdW5G0Ftkz9M3yxbGj233h4aolVW0XhbpZxsNr7Hf1wRPZO4xK33DaryDoICX1qAu8NOgKiCzHoZRquEK1GAeqTW1aH1qUuJ/c9TQmr3yFWvTwM1fqAnj1ySrkUrQQGaQ8iV6XAxiLXYNwDgLZeaKDRg7oyjW/3mP27CdMAiK9/mpPTCSE3eEmiqIgsgCMAj5lB2m8oieCswZ+ZMY2RZJ8Pppf2U21i0wcEZoK2VWvGYu6lqvrn2YaDrXhNBAyTm5N0/MMGlyodIn2/n4qwvbVfxtlRLFpXUQ4rdOj48QGlPH2rkcZRzZLlvswH4s2aiughNMzsTJBy1AyRPcZWfSbHy+Z32iMX56Ng2+2HikAWWd7EQ7xZI41qbBG3BRBQQ3s2MxHAiSJo6WxbFfcs8tAKXrvOHTX7ovMeHN4RdWBe+c7+y57gPADiyfNHrJ/Q0GYRTOwBQucKpF17DKsdeVAbIfuobuCTDF1KiM0brAA2ktkzrqgZU9h9WJ3mku97ZOvQeCthxvEUfUHMbRBRg==|920

@@ -1,0 +1,33 @@
+{
+  "PageType": 0,
+  "ColumnCount": 112,
+  "RowCount": 48,
+  "Formulas": {
+    "5,4": "TODAY()",
+    "5,25": "IF(RIGHT(I6,2)=\"US\",\"美国\",IF(RIGHT(I6,2)=\"EU\",\"英国\",\"日本\"))",
+    "5,37": "AN6",
+    "5,49": "AU6*AO6",
+    "40,35": "SUM(AX6)",
+    "40,42": "COUNTA(E6)",
+    "43,10": "$BJ$46",
+    "43,17": "U44",
+    "43,33": "AP44",
+    "43,41": "TODAY()",
+    "47,49": "COUNTA(J44)",
+    "5,109": "IFERROR((DB6+AO6)/CV6,\"\")",
+    "5,107": "IFERROR((DB6+AO6)/CX6,\"\")",
+    "43,35": "$BM$43",
+    "43,36": "$BM$44",
+    "43,37": "$BM$45",
+    "43,39": "$BM$47",
+    "43,38": "$BM$46",
+    "42,64": "IF(ODATA(\"正报信息表?$select=供应商全称&$filter=识别码 eq \"&IF(ISBLANK(BK43),\"null\",\"'\"&BK43&\"'\"))=0,\"\",ODATA(\"正报信息表?$select=供应商全称&$filter=识别码 eq \"&IF(ISBLANK(BK43),\"null\",\"'\"&BK43&\"'\")))",
+    "43,64": "IF(ODATA(\"正报信息表?$select=订货票型&$filter=识别码 eq \"&IF(ISBLANK(BK43),\"null\",\"'\"&BK43&\"'\"))=0,\"\",ODATA(\"正报信息表?$select=订货票型&$filter=识别码 eq \"&IF(ISBLANK(BK43),\"null\",\"'\"&BK43&\"'\")))",
+    "44,64": "IF(ODATA(\"正报信息表?$select=开票品名&$filter=识别码 eq \"&IF(ISBLANK(BK43),\"null\",\"'\"&BK43&\"'\"))=0,\"\",ODATA(\"正报信息表?$select=开票品名&$filter=识别码 eq \"&IF(ISBLANK(BK43),\"null\",\"'\"&BK43&\"'\")))",
+    "45,64": "IF(ODATA(\"正报信息表?$select=开票大类&$filter=识别码 eq \"&IF(ISBLANK(BK43),\"null\",\"'\"&BK43&\"'\"))=0,\"\",ODATA(\"正报信息表?$select=开票大类&$filter=识别码 eq \"&IF(ISBLANK(BK43),\"null\",\"'\"&BK43&\"'\")))",
+    "46,64": "IF(ODATA(\"正报信息表?$select=发票单位&$filter=识别码 eq \"&IF(ISBLANK(BK43),\"null\",\"'\"&BK43&\"'\"))=0,\"\",ODATA(\"正报信息表?$select=发票单位&$filter=识别码 eq \"&IF(ISBLANK(BK43),\"null\",\"'\"&BK43&\"'\")))",
+    "47,64": "IF(ODATA(\"正报信息表?$select=型号&$filter=识别码 eq \"&IF(ISBLANK(BK43),\"null\",\"'\"&BK43&\"'\"))=0,\"\",ODATA(\"正报信息表?$select=型号&$filter=识别码 eq \"&IF(ISBLANK(BK43),\"null\",\"'\"&BK43&\"'\")))",
+    "5,111": "ODATA(\"正报信息表?$select=订货票型&$filter=识别码 eq \"&IF(ISBLANK(CU6),\"null\",\"'\"&CU6&\"'\"))",
+    "43,40": "$BM$48"
+  }
+}

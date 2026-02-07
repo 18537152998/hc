@@ -1,0 +1,257 @@
+{
+  "Rows": {
+    "Count": 14
+  },
+  "Cols": {
+    "Count": 28
+  },
+  "Values": {
+    "0,0": "修改字典",
+    "9,8": "确定"
+  },
+  "AttachInfos": {
+    "0,0": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "境内货源地修改",
+            "BreakpointIdentity": "40464580-836f-4db0-894a-0f8ad839a0a0"
+          }
+        ],
+        "Text": "修改字典",
+        "ClickMode": 1,
+        "TemplateKey": "_RS_Main"
+      }
+    },
+    "1,2": {
+      "CellType": {
+        "$type": "ElementUI.SelectCellType, ElementUI",
+        "CommandList": [],
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ],
+        "useBinding": true,
+        "options": [
+          {
+            "value": "黄金糕",
+            "label": "黄金糕"
+          },
+          {
+            "value": "双皮奶",
+            "label": "双皮奶"
+          },
+          {
+            "value": "蚵仔煎",
+            "label": "蚵仔煎"
+          },
+          {
+            "value": "龙须面",
+            "label": "龙须面"
+          },
+          {
+            "value": "北京烤鸭",
+            "label": "北京烤鸭"
+          }
+        ],
+        "bindingOptions": {
+          "$type": "ServerDesignerCommon.Model.BindingDataSourceModel, ServerDesignerCommon",
+          "TableName": "境内货源地字典",
+          "BindingInfos": [
+            {
+              "GUID": "e191202a-b4fe-4981-933d-398525c46d51",
+              "BindingInfo": {
+                "TableName": "境内货源地字典",
+                "ColumnName": "境内货源地",
+                "GUID": "c04309f9-5262-4a12-9c39-2deea2ec2859"
+              },
+              "ColumnName": "value",
+              "Alias": "值"
+            },
+            {
+              "GUID": "ae90ed32-7a10-4072-8e1a-43a27d0b85f9",
+              "BindingInfo": {
+                "TableName": "境内货源地字典",
+                "ColumnName": "境内货源地",
+                "GUID": "d157d343-f917-4981-96d8-d9e0a9b911fa"
+              },
+              "ColumnName": "label",
+              "Alias": "显示文本"
+            }
+          ],
+          "CacheSetting": {
+            "AllowCache": true
+          },
+          "CustomColumns": []
+        },
+        "placeholder": "请输入代码或关键词检索",
+        "filterable": true,
+        "filterInServerOptions": {
+          "matchMethod": "contains",
+          "loadingText": "加载中"
+        },
+        "noMatchText": "无匹配数据",
+        "clearable": true
+      }
+    },
+    "9,8": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+            "TableName": "正报信息表",
+            "ShowConfirm": false,
+            "RowsToUpdate": 1,
+            "RowsToUpdateCondition": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "正报信息表",
+                "ColumnName": "ID",
+                "GUID": "66a1557d-b78d-43bd-be30-c26f22d85eeb"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=货源地弹窗!A14"
+              }
+            },
+            "UpdateBindingValues": [
+              {
+                "BindingInfo": {
+                  "TableName": "正报信息表",
+                  "ColumnName": "境内货源地",
+                  "GUID": "a2e58551-d1ad-45d6-b0c1-b55a3c0e1b14"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=货源地弹窗!C2"
+                }
+              }
+            ],
+            "BreakpointIdentity": "55bd7cf8-e639-4524-82af-a8202d64a7e3"
+          },
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "PassValueBack": true,
+            "ReloadData": true,
+            "BreakpointIdentity": "05c402f5-30e2-486f-90de-ae0a6219915b"
+          }
+        ],
+        "Text": "确定",
+        "TemplateKey": "_RS_Main1"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Underline": true
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 1
+      },
+      {
+        "FontFamily": 0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "[AUTO]General"
+      ]
+    },
+    "CellStyles": {
+      "0,0": 0,
+      "9,8": 1,
+      "9,9": 2,
+      "9,10": 2,
+      "9,11": 2,
+      "9,12": 2,
+      "9,13": 2,
+      "9,14": 2,
+      "9,15": 2,
+      "9,16": 2,
+      "9,17": 2,
+      "9,18": 2,
+      "9,19": 2,
+      "10,8": 2,
+      "10,9": 2,
+      "10,10": 2,
+      "10,11": 2,
+      "10,12": 2,
+      "10,13": 2,
+      "10,14": 2,
+      "10,15": 2,
+      "10,16": 2,
+      "10,17": 2,
+      "10,18": 2,
+      "10,19": 2,
+      "11,8": 2,
+      "11,9": 2,
+      "11,10": 2,
+      "11,11": 2,
+      "11,12": 2,
+      "11,13": 2,
+      "11,14": 2,
+      "11,15": 2,
+      "11,16": 2,
+      "11,17": 2,
+      "11,18": 2,
+      "11,19": 2
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "9,8,3,12",
+    "1,2,2,24",
+    "0,0,1,4"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PageLoadedCommandList": [
+      {
+        "$type": "SetFocusCommand.SetFocusCommand, SetFocusCommand",
+        "TargetCell": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=货源地弹窗!C2"
+        },
+        "BreakpointIdentity": "8c8aa308-bea8-4a9f-8da0-ba895fe57122"
+      }
+    ],
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//Wqx/hAtZBDv1qTvz6wtU5T/qyJ/NKMisIsM+riQ50WaAvLkT4n23JWE+gfka+g8BhYd5C7jv6olz5Acx5oI8GM+4I9lXRrNfRl6Z+INx8Emttxsf6dUBI1QR6sv/fP5kZ9Qv0fUtxvc6QCNPYBHRghk2hSmicJXIfNucN6s3DTV2Jzbc3F8C9J+iOGahMzFWNLlQXYV1RevP4/Iw1Ge4lwfo7Fa8Tr65cn/tOxq+/TI0hY8rqDFf9dHzmOriSS7FsoPFK9HHqR6IP52YCw/wMR31gFHHbbDU3hWco6yvTHi0VNouKpBYbpbbK+WizR9MI8STgn6dkcSxBJwa79haftNekzY3a0vspRN5DebRrmvIqztf+BsKoudov/cMFqnXno+b5z3rBLCr3UsArCJD53fq/iu3nsyr4KdcTrPVIHDqoWYZjhtC+8PrqGsC6y9CjmEzVDR3Ut1yPx5MIV2xQCNQ6MJRX+jrrqD2Bz97j7iG9DzNg3hY2kPDK4b//IaIPjz9gfUhIskbOWlZYAOR5xzVFIjQ6Pkx22oZ7G7rLXPHcx2G9Typf3xF8rEeYeCYoVjH2bf3eqeqNahBKRtYC/3AqFP14BG9r0v2OxO/grlWWeHWju/VxeI9rVj7WPIaQMmH5kG8cQlV7RawcyVaYr5PVse5D5UY7ao0X6bW6XgeOdwTYWSqhZtcHmXrDeBFKq0pZaZXaPio3e02v+rzTGf6U54K3zCIHBy7GTap/hWCtB+SxYh0K9D2zvXFFXcat8zShDxwJ5mwV0hwsKtPHRJEbOD9gQJ2vgijrDl/WWZOlMTvJXsntMbPWxCOMcYFD8Wts4JRotQHlER/iuxeFbHj5ECZdVG0Gq7KWEm2UFvaY2DU84e1xx09ZPzeQ2BLAyzt7b3oriUMXAfxZYgfIQ==|920

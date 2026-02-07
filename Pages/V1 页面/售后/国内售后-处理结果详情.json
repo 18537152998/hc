@@ -1,0 +1,316 @@
+{
+  "Rows": {
+    "InLogicalVisibleIndexes": [
+      29
+    ],
+    "Count": 30
+  },
+  "Cols": {
+    "Count": 20
+  },
+  "Values": {
+    "0,0": "处理结果详情",
+    "26,1": "确定",
+    "26,13": "取消"
+  },
+  "AttachInfos": {
+    "5,1": {
+      "BindingInfo": {
+        "TableName": "国内售后",
+        "ColumnName": "处理结果",
+        "GUID": "3e13fac5-2fc4-4c08-ac5e-19a6d9025c30"
+      },
+      "CellType": {
+        "$type": "Forguncy.MultilineTextBox, ServerDesignerCommon",
+        "TemplateKey": "样式1"
+      }
+    },
+    "26,1": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+            "TableName": "国内售后",
+            "ShowConfirm": false,
+            "UpdateBindingValues": [
+              {
+                "BindingInfo": {
+                  "TableName": "国内售后",
+                  "ColumnName": "处理结果",
+                  "GUID": "fce6d6c9-5c3a-47c0-87a7-fa52c7b77871"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='国内售后-处理结果详情'!B6"
+                }
+              }
+            ],
+            "BreakpointIdentity": "20cd738c-4ccd-40b4-b95b-005508627782"
+          },
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "ReloadData": true,
+            "BreakpointIdentity": "0afc4c29-916e-4ef9-a77d-4a1c2a07b428"
+          }
+        ],
+        "Text": "确定",
+        "TemplateKey": "样式30"
+      }
+    },
+    "26,13": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "BreakpointIdentity": "d2faacdf-76ef-4a8e-9003-6d98ee0633b8"
+          }
+        ],
+        "Text": "取消",
+        "TemplateKey": "样式30"
+      }
+    },
+    "29,0": {
+      "BindingInfo": {
+        "TableName": "国内售后",
+        "ColumnName": "ID",
+        "GUID": "455c7bca-4bee-4681-9858-b304a4c86940"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Formatter": 0,
+        "HorizontalAlignment": 1,
+        "VerticalAlignment": 2,
+        "WordWrap": true,
+        "BorderBottom": null,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": 0,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": 0,
+        "BorderLeft": null,
+        "BorderRight": 0
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": 0
+      },
+      {
+        "FontWeight": 4,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 5,
+        "FontWeight": 4,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 5,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 6,
+        "FontSize": 26.666666666666664,
+        "FontWeight": 4,
+        "Foreground": 7,
+        "HorizontalAlignment": 8,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "@",
+        "Left",
+        "Top",
+        "Text 1 50",
+        "Bold",
+        "Body",
+        "Accent 2 -25",
+        "Background 1 0",
+        "Center"
+      ],
+      "Borders": [
+        {
+          "Color": 3
+        }
+      ]
+    },
+    "CellStyles": {
+      "5,1": 0,
+      "5,2": 1,
+      "5,3": 1,
+      "5,4": 1,
+      "5,5": 1,
+      "5,6": 1,
+      "5,7": 1,
+      "5,8": 1,
+      "5,9": 1,
+      "5,10": 1,
+      "5,11": 1,
+      "5,12": 1,
+      "5,13": 1,
+      "5,14": 1,
+      "5,15": 1,
+      "5,16": 1,
+      "5,17": 1,
+      "5,18": 2,
+      "6,1": 3,
+      "6,18": 4,
+      "7,1": 3,
+      "7,18": 4,
+      "8,1": 3,
+      "8,18": 4,
+      "9,1": 3,
+      "9,18": 4,
+      "10,1": 3,
+      "10,18": 4,
+      "11,1": 3,
+      "11,18": 4,
+      "12,1": 3,
+      "12,18": 4,
+      "13,1": 3,
+      "13,18": 4,
+      "14,1": 3,
+      "14,18": 4,
+      "15,1": 3,
+      "15,18": 4,
+      "16,1": 3,
+      "16,18": 4,
+      "17,1": 3,
+      "17,18": 4,
+      "18,1": 3,
+      "18,18": 4,
+      "19,1": 3,
+      "19,18": 4,
+      "20,1": 3,
+      "20,18": 4,
+      "21,1": 3,
+      "21,18": 4,
+      "22,1": 3,
+      "22,18": 4,
+      "23,1": 5,
+      "23,2": 6,
+      "23,3": 6,
+      "23,4": 6,
+      "23,5": 6,
+      "23,6": 6,
+      "23,7": 6,
+      "23,8": 6,
+      "23,9": 6,
+      "23,10": 6,
+      "23,11": 6,
+      "23,12": 6,
+      "23,13": 6,
+      "23,14": 6,
+      "23,15": 6,
+      "23,16": 6,
+      "23,17": 6,
+      "23,18": 7,
+      "26,1": 8,
+      "26,13": 9,
+      "26,14": 10,
+      "26,15": 10,
+      "26,16": 10,
+      "26,17": 10,
+      "26,18": 10,
+      "27,13": 10,
+      "27,14": 10,
+      "27,15": 10,
+      "27,16": 10,
+      "27,17": 10,
+      "27,18": 10
+    },
+    "RowStyles": {
+      "0": 11,
+      "1": 11,
+      "2": 11,
+      "3": 11
+    },
+    "SheetStyle": {
+      "FontFamily": 5,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
+    }
+  },
+  "Spans": [
+    "0,0,4,20",
+    "5,1,19,18",
+    "26,1,2,6",
+    "26,13,2,6"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//OatrPjKsCf0otgGwhqfp+3Bu+m9NKMpt0BkVlKPyrho1fFPKIjRMvIKg5c5msoVKeiqupw5/KwAkU5T6tcZ1DJCIYNt+QiMI/yws/MpDdyaz9Ezjf8PPVKIonWF9HY1gLS+cVCzNNlMEOAuhbs3gEBPjASpqJxQLLZ395jjxPF8PplPrQvkb3J5OxGhpFanX0AkNcYaFnytRErHsNfAyh4sWfzIfy7q3ZiMRJ20nweuvcTwDzBVAAzxJ1sFNznCGAOTBYeRTydpd0GifyrJj8wSeIwnDOAJ6NIsaVCdwSlZj92gvvkadvolW5Gg7+5uXViBNUv4IfoDti1MrG2eX4nFThQm3Hi7Nf2CatWOjXrxZicWB85slUSac1250eU0bPBgQoB8lwd7q+f4nAOOec7lH+GffxVEIvKaf2RC6nm2oIYetjnuEKsQV8z6tNjsBgoAUCz7c0P0eqEY5SREQHrMHPW983Is65/dYWzIFOr6u9jwvd6OAv4pK8iStCZsRqvWg1DoftHc8jGJc/xmdYAMbOvqHrprXtLcb+uUg3qaC1+yZuxkScyWgtbzMfnGIjg2bXtU76Yz27h4H8c6RhcHMzhoCBYTgNhP9hyE2tO1ZQF4LpFY6DLGKCM2Rm6pALN7qUoh26vTETS11ixBROfnq3o/QgnUXQ3fT1ufXi1TdOj4Rgpz/MyvQteUxdDJCTxgTcrikHi0MlaL09+OE5OdHOd1afufbHZzqes/8AxP9KDdnh1geeLWMEY8fPp18pWyjpCcLpU+qcLPomAA9ax35UEBa70Ma8m6A09XRwXYaHK2o7/Vi+jSVComFdodxMnax/Dzbu2fKs5UMlLxNBlyXQMSAos3uAr/HNXlESMPaAZKR0Ry/isuIgKkX9kO4/izGxtSAKYXnNVbtIQxg0w==|920

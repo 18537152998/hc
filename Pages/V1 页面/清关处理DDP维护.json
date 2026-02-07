@@ -1,0 +1,232 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 16.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 16.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 40.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 44.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      }
+    },
+    "Count": 21,
+    "DefaultSize": 32.0
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "19": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 32.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      }
+    },
+    "Count": 21,
+    "DefaultSize": 32.0
+  },
+  "Values": {
+    "1,1": "清关处理费+DDP维护",
+    "4,18": "删除"
+  },
+  "AttachInfos": {
+    "3,1": {
+      "ListViewInfo": {
+        "Name": "表格1",
+        "TableName": "清关处理DDP",
+        "RowIndex": 3,
+        "ColumnIndex": 1,
+        "RowCount": 16,
+        "ColumnCount": 19,
+        "TopCondition": null,
+        "ListViewStyleName": "样式1",
+        "ShowColumnHeaderInDesigner": true,
+        "IsRowHeaderVisible": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "AllowEditInListview": true,
+        "AllowAddNewRow": true,
+        "AllowDragFill": true,
+        "ColumnOperation": 2
+      }
+    },
+    "4,2": {
+      "NameUsedInJavaScript": "账号",
+      "BindingInfo": {
+        "TableName": "清关处理DDP",
+        "ColumnName": "账号",
+        "GUID": "f8456aec-ce8c-400f-8c20-ab3850c3bbc3"
+      }
+    },
+    "4,6": {
+      "NameUsedInJavaScript": "分区",
+      "BindingInfo": {
+        "TableName": "清关处理DDP",
+        "ColumnName": "分区",
+        "GUID": "13c9fa9b-8b7b-4af2-90b5-6fed3dbcf623"
+      }
+    },
+    "4,9": {
+      "NameUsedInJavaScript": "清关处理费",
+      "BindingInfo": {
+        "TableName": "清关处理DDP",
+        "ColumnName": "清关处理费",
+        "GUID": "431eca24-8267-47bb-843c-1fcc5dfa88c6"
+      }
+    },
+    "4,12": {
+      "NameUsedInJavaScript": "DDP费用",
+      "BindingInfo": {
+        "TableName": "清关处理DDP",
+        "ColumnName": "DDP费用",
+        "GUID": "ed989048-4b80-46af-83b0-37e69f7bae03"
+      }
+    },
+    "4,15": {
+      "BindingInfo": {
+        "TableName": "清关处理DDP",
+        "ColumnName": "总计",
+        "GUID": "4b938799-54b0-4e4c-b0e1-98c7d0a20870"
+      }
+    },
+    "4,18": {
+      "NameUsedInJavaScript": "删除",
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.DeleteRecordCommand, ServerDesignerCommon",
+            "ConfirmText": "您确定要删除吗？",
+            "BreakpointIdentity": "03512194-b652-4bd6-92a2-3b26d835fcb3"
+          }
+        ],
+        "Text": "删除"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontWeight": 0,
+        "BorderLeft": 0
+      },
+      {
+        "HorizontalAlignment": 2
+      },
+      {
+        "Formatter": 3,
+        "HorizontalAlignment": 2
+      },
+      {
+        "FontWeight": 0,
+        "Foreground": 4,
+        "Formatter": 3,
+        "HorizontalAlignment": 2,
+        "Underline": false
+      },
+      {
+        "Foreground": 4,
+        "Underline": true
+      },
+      {
+        "HorizontalAlignment": 5
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Bold",
+        "Accent 1 0",
+        "Center",
+        "0.00",
+        "Accent 1",
+        "Right",
+        "Body"
+      ],
+      "Borders": [
+        {
+          "Style": 5,
+          "Color": 1
+        }
+      ]
+    },
+    "CellStyles": {
+      "1,1": 0,
+      "4,2": 1,
+      "4,6": 1,
+      "4,9": 2,
+      "4,12": 2,
+      "4,15": 3,
+      "4,16": 4,
+      "4,18": 4,
+      "19,1": 5
+    },
+    "SheetStyle": {
+      "FontFamily": 6
+    }
+  },
+  "Spans": [
+    "4,2,1,4",
+    "3,2,1,4",
+    "4,6,1,3",
+    "3,6,1,3",
+    "4,9,1,3",
+    "3,9,1,3",
+    "4,12,1,3",
+    "3,12,1,3",
+    "4,18,1,2",
+    "3,18,1,2",
+    "19,1,1,19",
+    "5,1,14,19",
+    "4,15,1,3",
+    "3,15,1,3"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "清关处理DDP"
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//MZBjecW/DoUhJ+kCj+eLJS0nFdR27YvA60bTpkfII2gg/fli1aLiN9ymUMsrWM5ifoZzBPs7aLvoziEZcF0T3vzjbT+RToRICEssw0893oq4/JK+3R4L9rr9CA1Gn6UMwHY29VIk6tFNomsGPihJeYUDknNslzMULHhXGWvoColua9TG9kwXiQFfS/notREClItPmgTnbHbjmbfCpn37Jblk1hubpL7FKpd352B1wCWku9xgwEuwebfBwuu67ERcP4JfeFb38dJBiqNUVFN2csTCwSQx6w/lGyrpDsJJUWO1P5R0XupqxKMJRhooXCYbM7xlfe16VckozXWXFfssDTp0dtD8HG9/dpc0MNa7JdsbvfLwDVxaUsK9L6854LX5Kpn2ExYnTG9MDiTCMTYw4YlNf2OgyMQrdIGevVcC43s44QvxeCo3dJs3R6OV8UrUTKhpHNjdlAG+f7TdVipUBDGM0/fNPkZXST3bbJ1RT+3AQCF4LAOoCfeP2Ae66PdeWRJ3R6YFKbLCZPEMrm+h0WIOx8X2CZF9d8eW5Y06DBV0IEh1KHv4jF3bim38IzrZZWb9YKW6qOfEBZ1oO3xSgbLA+oB5AgA6UIh3fAldq562EwmvSt3AV+JfyG8LNIkptFd0U2RXp0xMlgkISrOWWfnu8EosTIPsnHXDC7WRnpIarRcB/tsSQ4Ot8HMWtL2AQxAkTWC4TbVmNgppTCuIFaPpYxtYTPV+K078a2ZNYi6AYGYbvPMXPM5+gVZhDYl2aD/iPYlEx+VofPTD9jZDxhhKHkDrH07vmj6XCc3vXbURXH0eaPxv+oCQPA++5fJUS96QmodZjJnKVflXm8A0D8zwOj7S9nUHciMMo2yfqlME75MajYvEsMHCT9Ve4wya20d9e+a++G/RsW4bju2AdA==|920

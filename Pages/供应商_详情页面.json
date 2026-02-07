@@ -1,0 +1,349 @@
+{
+  "Rows": {
+    "Count": 33,
+    "DefaultSize": 32.0
+  },
+  "Cols": {
+    "Count": 31,
+    "DefaultSize": 32.0
+  },
+  "Values": {
+    "1,1": "供应商信息",
+    "3,1": "供应商代码 *",
+    "3,17": "供应商全称 *",
+    "6,1": "是否启用",
+    "6,17": "审核状态",
+    "9,1": "风险等级",
+    "9,17": "税号",
+    "12,1": "地址"
+  },
+  "AttachInfos": {
+    "4,1": {
+      "BindingInfo": {
+        "TableName": "供应商",
+        "ColumnName": "供应商代码",
+        "GUID": "dfea85c2-6d02-4b81-b8d9-e845685757c3"
+      },
+      "CellType": {
+        "$type": "ElementUI.InputCellType, ElementUI",
+        "CommandList": [],
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ],
+        "type": "text",
+        "resize": "none"
+      }
+    },
+    "4,17": {
+      "BindingInfo": {
+        "TableName": "供应商",
+        "ColumnName": "供应商全称",
+        "GUID": "c17e5e3f-642c-4fe4-825f-766a9461a1e7"
+      },
+      "CellType": {
+        "$type": "ElementUI.InputCellType, ElementUI",
+        "CommandList": [],
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ],
+        "type": "text",
+        "resize": "none"
+      }
+    },
+    "7,1": {
+      "BindingInfo": {
+        "TableName": "供应商",
+        "ColumnName": "是否启用",
+        "GUID": "d4716b7b-0724-4621-8ece-f8d3ecdd07d2"
+      },
+      "CellType": {
+        "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
+        "Style": 1
+      }
+    },
+    "7,17": {
+      "BindingInfo": {
+        "TableName": "供应商",
+        "ColumnName": "审核状态",
+        "GUID": "0739fa23-5549-48fb-bd2d-d98d34151cb5"
+      },
+      "CellType": {
+        "$type": "Forguncy.NumberCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "10,1": {
+      "BindingInfo": {
+        "TableName": "供应商",
+        "ColumnName": "风险等级",
+        "GUID": "4780d028-1790-40cd-923c-b09d497bc5a1"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "10,17": {
+      "BindingInfo": {
+        "TableName": "供应商",
+        "ColumnName": "税号",
+        "GUID": "af2e0ffa-be2d-4d16-a2b1-5accd89964cb"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "13,1": {
+      "BindingInfo": {
+        "TableName": "供应商",
+        "ColumnName": "地址",
+        "GUID": "3d98553e-6841-4726-9872-b76334626e29"
+      },
+      "CellType": {
+        "$type": "ElementUI.InputCellType, ElementUI",
+        "CommandList": [],
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ],
+        "type": "textarea",
+        "resize": "none"
+      }
+    },
+    "17,1": {
+      "CellType": {
+        "$type": "Forguncy.TabControlCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_NewFashionStyle1",
+        "LazyLoading": true
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontSize": 16.0,
+        "FontWeight": 0,
+        "TextIndent": 10,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 2
+      },
+      {
+        "FontFamily": 2,
+        "Formatter": 3
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Bold",
+        "#1890FF",
+        "Body",
+        "@"
+      ],
+      "Borders": [
+        {
+          "Style": 5,
+          "Color": 1
+        }
+      ]
+    },
+    "CellStyles": {
+      "1,1": 0,
+      "4,17": 1,
+      "6,17": 1,
+      "6,18": 1,
+      "6,19": 1,
+      "6,20": 1,
+      "6,21": 1,
+      "6,22": 1,
+      "6,23": 1,
+      "6,24": 1,
+      "6,25": 1,
+      "6,26": 1,
+      "6,27": 1,
+      "6,28": 1,
+      "6,29": 1,
+      "7,17": 1,
+      "7,18": 1,
+      "7,19": 1,
+      "7,20": 1,
+      "7,21": 1,
+      "7,22": 1,
+      "7,23": 1,
+      "7,24": 1,
+      "7,25": 1,
+      "7,26": 1,
+      "7,27": 1,
+      "7,28": 1,
+      "7,29": 1,
+      "9,1": 1,
+      "9,2": 1,
+      "9,3": 1,
+      "9,4": 1,
+      "9,5": 1,
+      "9,6": 1,
+      "9,7": 1,
+      "9,8": 1,
+      "9,9": 1,
+      "9,10": 1,
+      "9,11": 1,
+      "9,12": 1,
+      "9,13": 1,
+      "9,14": 1,
+      "9,15": 1,
+      "9,16": 1,
+      "9,17": 1,
+      "9,18": 1,
+      "9,19": 1,
+      "9,20": 1,
+      "9,21": 1,
+      "9,22": 1,
+      "9,23": 1,
+      "9,24": 1,
+      "9,25": 1,
+      "9,26": 1,
+      "9,27": 1,
+      "9,28": 1,
+      "9,29": 1,
+      "10,1": 2,
+      "10,2": 1,
+      "10,3": 1,
+      "10,4": 1,
+      "10,5": 1,
+      "10,6": 1,
+      "10,7": 1,
+      "10,8": 1,
+      "10,9": 1,
+      "10,10": 1,
+      "10,11": 1,
+      "10,12": 1,
+      "10,13": 1,
+      "10,14": 1,
+      "10,15": 1,
+      "10,16": 1,
+      "10,17": 2,
+      "12,1": 1,
+      "12,2": 1,
+      "12,3": 1,
+      "12,4": 1,
+      "12,5": 1,
+      "12,6": 1,
+      "12,7": 1,
+      "12,8": 1,
+      "12,9": 1,
+      "12,10": 1,
+      "12,11": 1,
+      "12,12": 1,
+      "12,13": 1,
+      "13,1": 1
+    },
+    "SheetStyle": {
+      "FontFamily": 2
+    }
+  },
+  "Spans": [
+    "1,1,1,6",
+    "3,1,1,6",
+    "3,17,1,6",
+    "6,1,1,6",
+    "7,1,1,13",
+    "6,17,1,6",
+    "7,17,1,13",
+    "9,1,1,6",
+    "10,1,1,13",
+    "9,17,1,6",
+    "10,17,1,13",
+    "12,1,1,6",
+    "4,1,1,13",
+    "4,17,1,13",
+    "13,1,3,13",
+    "17,1,14,29"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "ShouldCheckDirty": true,
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "供应商"
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//IhwM3nYnoinJ4GQQbkXh976+2x07rw5JNO8Go6IZv3Fcd4ACj72hzB+ZAJqKsowfh1Y8NmrKrnF8rJhnPhBR0V546Isi3QlSaaTw5EZ4uiTQj2zb3+jVPYhoiM0SedGtk7dA+CeRrBVIzf5BAlYRewcTaA5Ik1pZy69ebjG631Uwb9nlCuCEjLNhedxlp5ADfD78WTkxx7v/1SLWtQW/VICSTvUspZ5fJBBhwlAAD77bE5z0f9GWiceVryugzohRsZVUoyehjp5/DkwlzPiYeBIxGvnpa09ujkyi5XQMfU6ieMFfBzWtM2QjIyZmCYLMAXcReudEAA7aGo8Bjmr4yGGWQA4ayJ/0Eojhs08lSwVFct61DQ8Wyd1hUWOBS2DRkLBv1HMfNTDeMDai7tjM7NT8VC+475OwGa2oFhGz8Q/PqELHgXCvGdWdz6tVUUOPwyY1JNfj8W0127Ch5s75Jrn3YDqLCmmYlqyGIURElLt7TGptd1lNHpPT2dijx6lYKfR+2JE8YBqLGDP+xdM9XEnOZra1n5CvFDNw2fnGBVXxQEu7OTn8Cuj9duVsRMnD4zlkUqRrtwmUiHmCDrzhyYEvhLQZ0R83VT0HST3DhMxm715L/1m42l7NOAMU/DoJtPlk8RkmNU71CCxz6UbFZ5xJsREYwFcjohwFFkEQiTvcSoVVCknSkiUhNyvvLknxGI5goqII+/zA72HCO9hqb2zaQBYGUC00/bLz03nq26gp+W8M04O/rNIlIibhugQ171qsvCDXBBxKwGRpHZ8Y/yuuPs/cBdQk/7colG1lRZUILGtvnXFJgBnT9k+shSD4uShLG0mCDOkOpCF/E7m8/N1G44mpb6XsyE6xYVsUT7kAgJHMOIgt0IJDZmbCDPCoqvFB//dcTOchhGvkPHBT7g==|920

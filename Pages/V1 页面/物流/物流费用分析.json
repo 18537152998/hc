@@ -1,0 +1,1020 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "16": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      }
+    },
+    "Count": 50
+  },
+  "Cols": {
+    "Count": 79
+  },
+  "Values": {
+    "1,1": "自发/FBA运费支出占比",
+    "1,20": "物流运费数据分析表",
+    "40,38": "体积"
+  },
+  "Formulas": {
+    "41,38": "N42/6000"
+  },
+  "AttachInfos": {
+    "2,20": {
+      "CellType": {
+        "$type": "Forguncy.PivotTableCellType, ServerDesignerCommon",
+        "PivotTableSetting": {
+          "SelectedListViewName": "表格1",
+          "Rows": [
+            {
+              "DatabaseColumnName": "货代",
+              "DisplayName": "货代",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=物流费用分析!AI42"
+              },
+              "BackgroundValue": {}
+            },
+            {
+              "DatabaseColumnName": "费用类型",
+              "DisplayName": "费用类型",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=物流费用分析!X42"
+              },
+              "BackgroundValue": {}
+            }
+          ],
+          "Cols": [
+            {
+              "DatabaseColumnName": "来源",
+              "DisplayName": "来源",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=物流费用分析!C42"
+              }
+            }
+          ],
+          "Values": [
+            {
+              "DatabaseColumnName": "件数",
+              "DisplayName": "件数",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=物流费用分析!L42"
+              },
+              "Aggregator": 0,
+              "TotalAggregator": 0,
+              "BackgroundValue": {}
+            },
+            {
+              "DatabaseColumnName": "体积",
+              "DisplayName": "体积",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=物流费用分析!AM42"
+              },
+              "Aggregator": 0,
+              "TotalAggregator": 0,
+              "BackgroundValue": {}
+            },
+            {
+              "DatabaseColumnName": "计费重",
+              "DisplayName": "计费重",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=物流费用分析!R42"
+              },
+              "Aggregator": 0,
+              "TotalAggregator": 0,
+              "BackgroundValue": {}
+            },
+            {
+              "DatabaseColumnName": "计费误差",
+              "DisplayName": "计费误差",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=物流费用分析!U42"
+              },
+              "Aggregator": 0,
+              "TotalAggregator": 0,
+              "BackgroundValue": {}
+            },
+            {
+              "DatabaseColumnName": "结算金额",
+              "DisplayName": "结算金额",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=物流费用分析!AE42"
+              },
+              "Aggregator": 0,
+              "TotalAggregator": 0,
+              "BackgroundValue": {}
+            }
+          ],
+          "DatabaseColumns": [
+            {
+              "DatabaseColumnName": "ID",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=物流费用分析!B42"
+              }
+            },
+            {
+              "DatabaseColumnName": "来源",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=物流费用分析!C42"
+              }
+            },
+            {
+              "DatabaseColumnName": "归属地",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=物流费用分析!E42"
+              }
+            },
+            {
+              "DatabaseColumnName": "平台",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=物流费用分析!G42"
+              }
+            },
+            {
+              "DatabaseColumnName": "站点",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=物流费用分析!J42"
+              }
+            },
+            {
+              "DatabaseColumnName": "件数",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=物流费用分析!L42"
+              }
+            },
+            {
+              "DatabaseColumnName": "抛",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=物流费用分析!N42"
+              }
+            },
+            {
+              "DatabaseColumnName": "实",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=物流费用分析!P42"
+              }
+            },
+            {
+              "DatabaseColumnName": "计费重",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=物流费用分析!R42"
+              }
+            },
+            {
+              "DatabaseColumnName": "计费误差",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=物流费用分析!U42"
+              }
+            },
+            {
+              "DatabaseColumnName": "费用类型",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=物流费用分析!X42"
+              }
+            },
+            {
+              "DatabaseColumnName": "发货日期",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=物流费用分析!AA42"
+              }
+            },
+            {
+              "DatabaseColumnName": "结算金额",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=物流费用分析!AE42"
+              }
+            },
+            {
+              "DatabaseColumnName": "货代",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=物流费用分析!AI42"
+              }
+            },
+            {
+              "DatabaseColumnName": "体积",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=物流费用分析!AM42"
+              }
+            }
+          ],
+          "ForceFrozenRowHeader": true
+        },
+        "PivotTableStyle": {
+          "UseSimpleBar": true
+        },
+        "PivotTableID": "1d04501e-447d-4380-958d-fa1ec07cfb7a",
+        "TemplateKey": "样式2"
+      }
+    },
+    "17,1": {
+      "CellType": {
+        "$type": "Forguncy.PivotTableCellType, ServerDesignerCommon",
+        "PivotTableSetting": {
+          "SelectedListViewName": "表格1",
+          "Rows": [
+            {
+              "DatabaseColumnName": "来源",
+              "DisplayName": "来源",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=物流费用分析!C42"
+              },
+              "BackgroundValue": {}
+            },
+            {
+              "DatabaseColumnName": "货代",
+              "DisplayName": "货代",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=物流费用分析!AI42"
+              },
+              "BackgroundValue": {}
+            }
+          ],
+          "Values": [
+            {
+              "DatabaseColumnName": "结算金额",
+              "DisplayName": "结算金额",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=物流费用分析!AE42"
+              },
+              "Aggregator": 0,
+              "TotalAggregator": 0,
+              "BackgroundValue": {}
+            }
+          ],
+          "DatabaseColumns": [
+            {
+              "DatabaseColumnName": "ID",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=物流费用分析!B42"
+              }
+            },
+            {
+              "DatabaseColumnName": "来源",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=物流费用分析!C42"
+              }
+            },
+            {
+              "DatabaseColumnName": "归属地",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=物流费用分析!E42"
+              }
+            },
+            {
+              "DatabaseColumnName": "平台",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=物流费用分析!G42"
+              }
+            },
+            {
+              "DatabaseColumnName": "站点",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=物流费用分析!J42"
+              }
+            },
+            {
+              "DatabaseColumnName": "件数",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=物流费用分析!L42"
+              }
+            },
+            {
+              "DatabaseColumnName": "抛",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=物流费用分析!N42"
+              }
+            },
+            {
+              "DatabaseColumnName": "实",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=物流费用分析!P42"
+              }
+            },
+            {
+              "DatabaseColumnName": "计费重",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=物流费用分析!R42"
+              }
+            },
+            {
+              "DatabaseColumnName": "计费误差",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=物流费用分析!U42"
+              }
+            },
+            {
+              "DatabaseColumnName": "费用类型",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=物流费用分析!X42"
+              }
+            },
+            {
+              "DatabaseColumnName": "发货日期",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=物流费用分析!AA42"
+              }
+            },
+            {
+              "DatabaseColumnName": "结算金额",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=物流费用分析!AE42"
+              }
+            },
+            {
+              "DatabaseColumnName": "货代",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=物流费用分析!AI42"
+              }
+            },
+            {
+              "DatabaseColumnName": "体积",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=物流费用分析!AM42"
+              }
+            }
+          ],
+          "ForceFrozenRowHeader": true
+        },
+        "PivotTableStyle": {
+          "UseSimpleBar": true
+        },
+        "PivotTableID": "14c08d08-d5fa-4464-b413-51c50e30eaa3",
+        "TemplateKey": "样式2"
+      }
+    },
+    "40,1": {
+      "ListViewInfo": {
+        "Name": "表格1",
+        "TableName": "对账详情表",
+        "RowIndex": 40,
+        "ColumnIndex": 1,
+        "RowCount": 10,
+        "ColumnCount": 78,
+        "TopCondition": null,
+        "ListViewStyleName": "样式1",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2,
+        "ShowGridLine": true
+      }
+    },
+    "41,1": {
+      "NameUsedInJavaScript": "ID",
+      "BindingInfo": {
+        "TableName": "对账详情表",
+        "ColumnName": "ID",
+        "GUID": "15bff4c1-47ed-4893-ba42-a3a61036260c"
+      }
+    },
+    "41,2": {
+      "NameUsedInJavaScript": "来源",
+      "BindingInfo": {
+        "TableName": "对账详情表",
+        "ColumnName": "来源",
+        "GUID": "8313f879-9220-4d69-8f67-c8bb18657f36"
+      }
+    },
+    "41,4": {
+      "NameUsedInJavaScript": "归属地",
+      "BindingInfo": {
+        "TableName": "对账详情表",
+        "ColumnName": "归属地",
+        "GUID": "fe605f92-13f2-4787-b070-9a189f3634f6"
+      }
+    },
+    "41,6": {
+      "NameUsedInJavaScript": "平台",
+      "BindingInfo": {
+        "TableName": "对账详情表",
+        "ColumnName": "平台",
+        "GUID": "1b77fb41-59c1-4a68-8b78-267af82bb561"
+      }
+    },
+    "41,9": {
+      "NameUsedInJavaScript": "站点",
+      "BindingInfo": {
+        "TableName": "对账详情表",
+        "ColumnName": "站点",
+        "GUID": "b8a67daa-9a9d-4434-84c7-8fe1b0b42ab9"
+      }
+    },
+    "41,11": {
+      "NameUsedInJavaScript": "件数",
+      "BindingInfo": {
+        "TableName": "对账详情表",
+        "ColumnName": "件数",
+        "GUID": "0b9c9698-19e9-43bd-ad83-9d3041886e24"
+      }
+    },
+    "41,13": {
+      "NameUsedInJavaScript": "抛",
+      "BindingInfo": {
+        "TableName": "对账详情表",
+        "ColumnName": "抛",
+        "GUID": "81ec6c5f-f3bf-4a23-87c7-7f99866005aa"
+      }
+    },
+    "41,15": {
+      "NameUsedInJavaScript": "实",
+      "BindingInfo": {
+        "TableName": "对账详情表",
+        "ColumnName": "实",
+        "GUID": "6be9d8de-5014-4cde-8a0e-80d81e737e3f"
+      }
+    },
+    "41,17": {
+      "NameUsedInJavaScript": "计费重",
+      "BindingInfo": {
+        "TableName": "对账详情表",
+        "ColumnName": "计费重",
+        "GUID": "b971d635-1234-47a3-8ebe-7fe8c7b700ef"
+      }
+    },
+    "41,20": {
+      "NameUsedInJavaScript": "计费误差",
+      "BindingInfo": {
+        "TableName": "对账详情表",
+        "ColumnName": "计费误差",
+        "GUID": "7f419cc4-0e33-4d05-8323-67191b37a2e7"
+      }
+    },
+    "41,23": {
+      "NameUsedInJavaScript": "费用类型",
+      "BindingInfo": {
+        "TableName": "对账详情表",
+        "ColumnName": "费用类型",
+        "GUID": "2ce62023-0a2b-4e8c-8c45-550a66ae793e"
+      }
+    },
+    "41,26": {
+      "NameUsedInJavaScript": "发货日期",
+      "BindingInfo": {
+        "TableName": "对账详情表",
+        "ColumnName": "发货日期",
+        "GUID": "776c3536-9082-460f-9bcd-313bc7e82694"
+      }
+    },
+    "41,30": {
+      "NameUsedInJavaScript": "结算金额",
+      "BindingInfo": {
+        "TableName": "对账详情表",
+        "ColumnName": "结算金额",
+        "GUID": "aac29906-f696-43dd-817d-dca126164803"
+      }
+    },
+    "41,34": {
+      "NameUsedInJavaScript": "货代",
+      "BindingInfo": {
+        "TableName": "对账详情表",
+        "ColumnName": "货代账单表_ID",
+        "GUID": "b542c90d-db23-4262-9534-2f1b17a4f0da",
+        "RelationBinding": {
+          "RelatedTable": "货代账单表",
+          "RelatedColumn": "货代账单编号",
+          "DisplayColumn": "货代"
+        }
+      }
+    },
+    "41,38": {
+      "NameUsedInJavaScript": "体积"
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "FontWeight": 1,
+        "Foreground": 2,
+        "HorizontalAlignment": 3,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontSize": 16.0,
+        "FontWeight": 1,
+        "Foreground": 2,
+        "HorizontalAlignment": 3,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": 0,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": 0,
+        "BorderLeft": null,
+        "BorderRight": 0
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": 0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "Bold",
+        "#FFFF0000",
+        "Center",
+        "DarkGray"
+      ],
+      "Borders": [
+        {
+          "Color": 4
+        }
+      ]
+    },
+    "CellStyles": {
+      "1,1": 0,
+      "1,2": 1,
+      "1,3": 1,
+      "1,4": 1,
+      "1,5": 1,
+      "1,6": 1,
+      "1,7": 1,
+      "1,8": 1,
+      "1,9": 1,
+      "1,10": 1,
+      "1,11": 1,
+      "1,12": 1,
+      "1,13": 1,
+      "1,14": 1,
+      "1,15": 1,
+      "1,16": 1,
+      "1,17": 1,
+      "1,20": 2,
+      "2,20": 1,
+      "40,1": 3,
+      "40,2": 4,
+      "40,3": 4,
+      "40,4": 4,
+      "40,5": 4,
+      "40,6": 4,
+      "40,7": 4,
+      "40,8": 4,
+      "40,9": 4,
+      "40,10": 4,
+      "40,11": 4,
+      "40,12": 4,
+      "40,13": 4,
+      "40,14": 4,
+      "40,15": 4,
+      "40,16": 4,
+      "40,17": 4,
+      "40,18": 4,
+      "40,19": 4,
+      "40,20": 4,
+      "40,21": 4,
+      "40,22": 4,
+      "40,23": 4,
+      "40,24": 4,
+      "40,25": 4,
+      "40,26": 4,
+      "40,27": 4,
+      "40,28": 4,
+      "40,29": 4,
+      "40,30": 4,
+      "40,31": 4,
+      "40,32": 4,
+      "40,33": 4,
+      "40,34": 4,
+      "40,35": 4,
+      "40,36": 4,
+      "40,37": 4,
+      "40,38": 4,
+      "40,39": 4,
+      "40,40": 4,
+      "40,41": 4,
+      "40,42": 4,
+      "40,43": 4,
+      "40,44": 4,
+      "40,45": 4,
+      "40,46": 4,
+      "40,47": 4,
+      "40,48": 4,
+      "40,49": 4,
+      "40,50": 4,
+      "40,51": 4,
+      "40,52": 4,
+      "40,53": 4,
+      "40,54": 4,
+      "40,55": 4,
+      "40,56": 4,
+      "40,57": 4,
+      "40,58": 4,
+      "40,59": 4,
+      "40,60": 4,
+      "40,61": 4,
+      "40,62": 4,
+      "40,63": 4,
+      "40,64": 4,
+      "40,65": 4,
+      "40,66": 4,
+      "40,67": 4,
+      "40,68": 4,
+      "40,69": 4,
+      "40,70": 4,
+      "40,71": 4,
+      "40,72": 4,
+      "40,73": 4,
+      "40,74": 4,
+      "40,75": 4,
+      "40,76": 4,
+      "40,77": 4,
+      "40,78": 5,
+      "41,1": 6,
+      "41,78": 7,
+      "42,1": 6,
+      "42,78": 7,
+      "43,1": 6,
+      "43,78": 7,
+      "44,1": 6,
+      "44,78": 7,
+      "45,1": 6,
+      "45,78": 7,
+      "46,1": 6,
+      "46,78": 7,
+      "47,1": 6,
+      "47,78": 7,
+      "48,1": 6,
+      "48,78": 7,
+      "49,1": 8,
+      "49,2": 9,
+      "49,3": 9,
+      "49,4": 9,
+      "49,5": 9,
+      "49,6": 9,
+      "49,7": 9,
+      "49,8": 9,
+      "49,9": 9,
+      "49,10": 9,
+      "49,11": 9,
+      "49,12": 9,
+      "49,13": 9,
+      "49,14": 9,
+      "49,15": 9,
+      "49,16": 9,
+      "49,17": 9,
+      "49,18": 9,
+      "49,19": 9,
+      "49,20": 9,
+      "49,21": 9,
+      "49,22": 9,
+      "49,23": 9,
+      "49,24": 9,
+      "49,25": 9,
+      "49,26": 9,
+      "49,27": 9,
+      "49,28": 9,
+      "49,29": 9,
+      "49,30": 9,
+      "49,31": 9,
+      "49,32": 9,
+      "49,33": 9,
+      "49,34": 9,
+      "49,35": 9,
+      "49,36": 9,
+      "49,37": 9,
+      "49,38": 9,
+      "49,39": 9,
+      "49,40": 9,
+      "49,41": 9,
+      "49,42": 9,
+      "49,43": 9,
+      "49,44": 9,
+      "49,45": 9,
+      "49,46": 9,
+      "49,47": 9,
+      "49,48": 9,
+      "49,49": 9,
+      "49,50": 9,
+      "49,51": 9,
+      "49,52": 9,
+      "49,53": 9,
+      "49,54": 9,
+      "49,55": 9,
+      "49,56": 9,
+      "49,57": 9,
+      "49,58": 9,
+      "49,59": 9,
+      "49,60": 9,
+      "49,61": 9,
+      "49,62": 9,
+      "49,63": 9,
+      "49,64": 9,
+      "49,65": 9,
+      "49,66": 9,
+      "49,67": 9,
+      "49,68": 9,
+      "49,69": 9,
+      "49,70": 9,
+      "49,71": 9,
+      "49,72": 9,
+      "49,73": 9,
+      "49,74": 9,
+      "49,75": 9,
+      "49,76": 9,
+      "49,77": 9,
+      "49,78": 10
+    },
+    "SheetStyle": {
+      "FontFamily": 0,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
+    }
+  },
+  "Spans": [
+    "1,1,1,17",
+    "1,20,1,41",
+    "2,20,35,41",
+    "17,1,20,17",
+    "41,2,1,2",
+    "41,4,1,2",
+    "41,6,1,3",
+    "41,9,1,2",
+    "41,11,1,2",
+    "41,13,1,2",
+    "41,15,1,2",
+    "41,17,1,3",
+    "41,20,1,3",
+    "41,23,1,3",
+    "41,26,1,4",
+    "41,30,1,4",
+    "41,34,1,4",
+    "41,38,1,3",
+    "42,1,8,78",
+    "40,2,1,2",
+    "40,4,1,2",
+    "40,6,1,3",
+    "40,9,1,2",
+    "40,11,1,2",
+    "40,13,1,2",
+    "40,15,1,2",
+    "40,17,1,3",
+    "40,20,1,3",
+    "40,23,1,3",
+    "40,26,1,4",
+    "40,30,1,4",
+    "40,34,1,4",
+    "40,38,1,3"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "Charts": [
+    {
+      "ChartType": 22,
+      "Tag": {
+        "$type": "Forguncy.Model.ChartDataMapping, ServerDesignerCommon",
+        "SourcePivotTableID": "14c08d08-d5fa-4464-b413-51c50e30eaa3",
+        "ChartName": "Chart1",
+        "DataSeriesMapping": [],
+        "DataSourceListviewName": "26d56b83-10da-492c-bd4c-bbc81ad0864d"
+      },
+      "DisplayHidden": true,
+      "ChartColorPalette": {
+        "RepeatAlgorithmTint": [
+          0.0,
+          -40.0,
+          20.0,
+          -20.0,
+          40.0,
+          -50.0,
+          30.0,
+          -30.0,
+          50.0
+        ],
+        "ColorList": [
+          "Accent 1",
+          "Accent 2",
+          "Accent 3",
+          "Accent 4",
+          "Accent 5",
+          "Accent 6"
+        ]
+      },
+      "XAxises": [
+        {
+          "Items": [
+            "FBA-鑫鲲鹏",
+            "FBA-凯西",
+            "-凯西"
+          ],
+          "UseCustomItems": true,
+          "LabelFormatter": "General",
+          "ShowMajorGridlines": false
+        }
+      ],
+      "YAxises": [
+        {
+          "Orientation": 1,
+          "Items": [
+            0.0,
+            "NaN"
+          ],
+          "LabelFormatter": "General"
+        },
+        {
+          "Visible": false,
+          "Orientation": 1,
+          "AxisPosition": 1,
+          "LabelFormatter": "General",
+          "ShowMajorGridlines": false
+        }
+      ],
+      "Legend": {},
+      "DataSeries": [
+        {
+          "Values": [
+            "NaN",
+            2000.0,
+            1000.0
+          ],
+          "Name": "结算金额",
+          "DataLabelSettings": {
+            "ShowBubbleSize": false,
+            "ShowCategoryName": false,
+            "ShowPercent": false,
+            "ShowSeriesName": false,
+            "ShowValue": false
+          },
+          "DataLabelStyle": {
+            "IsAutomaticStroke": false,
+            "StyleInfo": {
+              "FontWeight": "Normal",
+              "Stroke": null,
+              "StrokeThickness": 1.0
+            }
+          },
+          "MarkerSize": "7,7",
+          "DataPoints": [
+            {
+              "IsAutomaticStroke": false,
+              "IsAutomaticFill": false,
+              "StyleInfo": {
+                "Fill": "Accent 1",
+                "StrokeDashType": 8,
+                "Stroke": "Background 1",
+                "StrokeThickness": 2.0
+              }
+            },
+            {
+              "PointIndex": 1,
+              "IsAutomaticStroke": false,
+              "IsAutomaticFill": false,
+              "StyleInfo": {
+                "Fill": "Accent 2",
+                "StrokeDashType": 8,
+                "Stroke": "Background 1",
+                "StrokeThickness": 2.0
+              }
+            },
+            {
+              "PointIndex": 2,
+              "IsAutomaticStroke": false,
+              "IsAutomaticFill": false,
+              "StyleInfo": {
+                "Fill": "Accent 3",
+                "StrokeDashType": 8,
+                "Stroke": "Background 1",
+                "StrokeThickness": 2.0
+              }
+            }
+          ],
+          "IsAutomaticStroke": false,
+          "StyleInfo": {
+            "StrokeDashType": 8,
+            "Stroke": "Background 1",
+            "StrokeThickness": 2.0
+          }
+        }
+      ],
+      "PlotArea": {},
+      "Name": "Chart1",
+      "Location": "23,42",
+      "Size": "340,278"
+    }
+  ]
+}//++45MSz/ez5eVdRswc2LRpoQ4of/DPj4uTmt4KlSRDXLbqAnTz6QHksSHBafPhMHoplmCSONY6TxY279iEv7ym49LAnAUYbFdS0wyOn4pFbE+bgS//dJCEI/agr0LGGe6OTJ46ADxjL6XAgCFujk6z9HoJkT7OQwU498htEzT1HYA9XuNqOjK4Thc+CgCc+q1m/tQ3LJ8Sz5W6YdP59xzvwga3afyz7tdNp8f0INhK8+VRyICD3O9xflTwKWZrNGDpSZplhuhYVLwkCTGN5cuTFPKD3Y7BJZAfwH8sj4aQzkgBL086Ak5Ob7+z8cp3S+cXjDrhzKoMcnGU98ghqvIPBPry3H+3f4DcicLZFYPQ6EjPDEvL0dWgiYn291Z5uwt/9ntL00ibfYQn5wIjx/daOSPzRBsiRrZTyc/cnY7JaQvZkRmWL47lDP07f7V/VJkp7LJ8GRTaWveXhrY6kcWzG2SezZG5b+B05ARW7PJTN5Fji/XsVMbayFEaPPJS1mGRDYTPCTCakAhww7kgzvkgLSRgX1oRG0D1OPnoG8lXjQSs31lN0qJd0FKCGLp8eP4U3iqiLtxxoXHZU02wV/alp+9xc85Mp2TphhQdHw1SVIp3/JQt5NgPTkd2wUkHWP9Eyf9n4vzLuba8OKUbdtuzEL+h6PxSA1ztTlUsaXygszSFvaJf8a3mq47FW/UBK+CFFKadPQrNP5pw+I4/Jt0m/ZzJAblCpXhUu/C1lAKM17H1pAMBm2jfl7gP8HLHhB6nUwVemdqe994WAl0uu0/rLW/1PSLAivwpLJJerKgrkeS+DMLnGFB8PtmhgjS5ZDJzG3ZxwYDyr05h3h7e5pjP3AkVKX0pXDBj7HAyrbrE/y8kyMXs/O0lTVok15sM8tsCzi/nLUPTxZbuMLsBd1sQ==|920

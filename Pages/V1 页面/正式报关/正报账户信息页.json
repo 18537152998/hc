@@ -1,0 +1,274 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "17": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      }
+    },
+    "Count": 18,
+    "DefaultSize": 32.0
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 133.0
+        }
+      },
+      "25": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 54.0
+        }
+      },
+      "27": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 65.0
+        }
+      },
+      "43": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 102.0
+        }
+      },
+      "44": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      }
+    },
+    "Count": 45,
+    "DefaultSize": 32.0
+  },
+  "Formulas": {
+    "2,43": "C3&I3"
+  },
+  "AttachInfos": {
+    "1,1": {
+      "ListViewInfo": {
+        "Name": "表格1",
+        "TableName": "正报账户信息",
+        "RowIndex": 1,
+        "ColumnIndex": 1,
+        "RowCount": 16,
+        "ColumnCount": 43,
+        "TopCondition": null,
+        "ListViewStyleName": "样式1",
+        "ShowColumnHeaderInDesigner": true,
+        "IsRowHeaderVisible": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "AllowEditInListview": true,
+        "AllowAddNewRow": true,
+        "ShowDeleteButton": true,
+        "ColumnOperation": 2
+      }
+    },
+    "2,2": {
+      "NameUsedInJavaScript": "账户",
+      "BindingInfo": {
+        "TableName": "正报账户信息",
+        "ColumnName": "账户",
+        "GUID": "6b8c551e-5161-415a-9fee-7e5d9d2bc911"
+      }
+    },
+    "2,5": {
+      "NameUsedInJavaScript": "简称",
+      "BindingInfo": {
+        "TableName": "正报账户信息",
+        "ColumnName": "账户简称",
+        "GUID": "2f8bcca6-8758-40c5-bfb7-7924903428bb"
+      }
+    },
+    "2,8": {
+      "BindingInfo": {
+        "TableName": "正报账户信息",
+        "ColumnName": "报关方式",
+        "GUID": "562f8a65-2a64-474f-b26e-2f9e4f6a97c3"
+      }
+    },
+    "2,12": {
+      "BindingInfo": {
+        "TableName": "正报账户信息",
+        "ColumnName": "出货抬头",
+        "GUID": "e8800329-4497-4701-bcbf-75ab7a834908"
+      }
+    },
+    "2,13": {
+      "NameUsedInJavaScript": "境内发货人",
+      "BindingInfo": {
+        "TableName": "正报账户信息",
+        "ColumnName": "境内发货人",
+        "GUID": "16af7482-65ae-4c2d-9ac6-2be96bcc4792"
+      }
+    },
+    "2,18": {
+      "NameUsedInJavaScript": "境内发货人中文",
+      "BindingInfo": {
+        "TableName": "正报账户信息",
+        "ColumnName": "境内发货人中文",
+        "GUID": "0ac86b76-97bf-4bd2-8b07-01b3a45055da"
+      }
+    },
+    "2,23": {
+      "BindingInfo": {
+        "TableName": "正报账户信息",
+        "ColumnName": "社会信用代码",
+        "GUID": "2f76cb8a-a753-4ecc-aab0-827f4f658728"
+      }
+    },
+    "2,26": {
+      "BindingInfo": {
+        "TableName": "正报账户信息",
+        "ColumnName": "海关代码",
+        "GUID": "3dc4aaf7-4602-443e-9b35-9fd30141c579"
+      }
+    },
+    "2,28": {
+      "NameUsedInJavaScript": "境外收货人",
+      "BindingInfo": {
+        "TableName": "正报账户信息",
+        "ColumnName": "境外收货人",
+        "GUID": "18b713de-7ed7-4349-bae7-d2c1c87e17ba"
+      }
+    },
+    "2,33": {
+      "NameUsedInJavaScript": "发货人地址",
+      "BindingInfo": {
+        "TableName": "正报账户信息",
+        "ColumnName": "发货人地址",
+        "GUID": "a55690b9-146d-414a-9b05-80063a8bf1aa"
+      }
+    },
+    "2,38": {
+      "NameUsedInJavaScript": "收货人地址",
+      "BindingInfo": {
+        "TableName": "正报账户信息",
+        "ColumnName": "收货人地址",
+        "GUID": "d502378b-2ccb-42be-a7ce-52da5b2c8c76"
+      }
+    },
+    "2,43": {
+      "BindingInfo": {
+        "TableName": "正报账户信息",
+        "ColumnName": "账户_报关方式",
+        "GUID": "c9f7d8e5-f05c-4b4f-95b0-9cdb221c7c45"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontWeight": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "Bold"
+      ]
+    },
+    "CellStyles": {
+      "2,28": 0,
+      "2,29": 0,
+      "2,30": 0,
+      "2,31": 0,
+      "2,32": 0
+    },
+    "RowStyles": {
+      "1": 1
+    },
+    "SheetStyle": {
+      "FontFamily": 0,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
+    }
+  },
+  "Spans": [
+    "1,2,1,3",
+    "1,5,1,3",
+    "1,8,1,4",
+    "1,13,1,5",
+    "1,18,1,5",
+    "1,23,1,3",
+    "1,26,1,2",
+    "1,28,1,5",
+    "1,33,1,5",
+    "1,38,1,5",
+    "2,2,1,3",
+    "2,5,1,3",
+    "2,8,1,4",
+    "2,13,1,5",
+    "2,18,1,5",
+    "2,23,1,3",
+    "2,26,1,2",
+    "2,28,1,5",
+    "2,33,1,5",
+    "2,38,1,5",
+    "3,1,14,43"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//xaxw+CLUkE9t0V9RHvLhHIIYHB3AGgxmYukYFZoP6O+oSMrSuTMRsiYYK/pEAheuqplAg/Y9fASpFKF6LrIYFH9V6W3R0s9WyZztNHE8AlHUh9ooDLCQuhroGaf4Fn49Ap2ScMrv5OcMmlpty/mGnpdpk+iV9LVJLeI76u0vF6zrXHig1Mi8IjNpWOF0NDwleVg+4DKBnjwYc6isWxv71jPD/lyLqfz46eZtMuuNSI8+1Tl0NCBSe0xwpjGyRTXGvNoz9GvT3zLYqhP2PFlx4NoEaGwEaNTVcco4g4nDTpLnhrCclmT9rhhrZdwjqveHPbHeDIVW2sFQeltM4LiEOjMq0C7lrUj/5NKGauuBxJ8yZQhnbAhig1VlUvI20kUmWbrGYe4SL8iqip8wyXFMvPn+yMyq2kA1yEDEKlhKPRjm6wDx8HJ3nGc7dE+yJp/pxhIQ1WOkC2utPUnNRe+DWUmbjT7WYJYc+PWDv2qoLQpGfbXcoYYdlPMzy0Pe7nnvhWfY8IYrxaM4wKOKwqYFvwZUbM6QYNNltOnSF3kfSKbI5jH6AYU5g1ppRUp5cefVY7g7q7LXxPMB52JgMhdQ5eFLYR6xrA63LCNam5PZL4b5CX6KgCFND0GlhS7tG6gR2XJayETZqDR7K6Qg8HPs6qZC9nEPGVvm3YvaedPoML785JNyngOM405qC8csL3f5lAtANAp5UL8/fJ01MAsE/RcZ7g+x5CPb5wNLfBLwkRJikYcZIDfBJ4KL6kapUMUnsWJmBhhNOSUUUXeZJ775ZBtzS5mRT6ayJOa/d0WUMPhJCUX3KK/Y5zY5bMDycboaoHf9uYwPPeVK6Cz4LrxdChPr/A41XgQDHzP7ZcdfKx/vQsSPvxKC6P8fTQJwWbNwJl1NIF4D7uFdJT01RGgDvw==|920

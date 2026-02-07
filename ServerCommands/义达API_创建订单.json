@@ -1,0 +1,541 @@
+{
+  "$type": "Forguncy.SaveLoad.ServerCommandSaveData, ServerDesignerCommon",
+  "Name": "义达API_创建订单",
+  "Enabled": true,
+  "Triggers": {
+    "$type": "System.Collections.Generic.List`1[[Forguncy.SaveLoad.TriggerSaveDataBase, ServerDesignerCommon]], System.Private.CoreLib",
+    "$values": [
+      {
+        "$type": "Forguncy.SaveLoad.PostRequestTriggerSaveData, ServerDesignerCommon",
+        "Permission": {
+          "$type": "Forguncy.SaveLoad.ServerCommandPermissionSaveData, ServerDesignerCommon",
+          "PermissionData": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionData, Forguncy.RbacPermission.Core",
+            "permissionResource": {
+              "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionResource, Forguncy.RbacPermission.Core"
+            },
+            "permissionBindings": {
+              "$type": "System.Collections.Generic.List`1[[Forguncy.RbacPermission.Core.Impl.ServerCommand.IServerCommandPermissionBinding, Forguncy.RbacPermission.Core]], System.Private.CoreLib",
+              "$values": [
+                {
+                  "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionBinding, Forguncy.RbacPermission.Core",
+                  "roleNames": {
+                    "$type": "System.Collections.Generic.List`1[[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+                    "$values": [
+                      "FGC_LoginUser"
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "Parameters": {
+          "$type": "System.Collections.Generic.List`1[[Forguncy.SaveLoad.PostRequestParameterSaveData, ServerDesignerCommon]], System.Private.CoreLib",
+          "$values": [
+            {
+              "$type": "Forguncy.SaveLoad.PostRequestParameterSaveData, ServerDesignerCommon",
+              "Name": "自发订单号",
+              "DataValidationInfo": {
+                "$type": "Forguncy.SaveLoad.DataValidationInfoSaveData, ServerDesignerCommon"
+              },
+              "TestData": "249-8872501-8791835"
+            },
+            {
+              "$type": "Forguncy.SaveLoad.PostRequestParameterSaveData, ServerDesignerCommon",
+              "Name": "运输方式",
+              "DataValidationInfo": {
+                "$type": "Forguncy.SaveLoad.DataValidationInfoSaveData, ServerDesignerCommon"
+              },
+              "TestData": "JPSADD"
+            }
+          ]
+        },
+        "InvokeTriggerTestData": {
+          "$type": "Forguncy.SaveLoad.InvokeTriggerTestDataSaveData, ServerDesignerCommon",
+          "UserName": "Administrator"
+        }
+      }
+    ]
+  },
+  "Commands": {
+    "$type": "System.Collections.Generic.List`1[[GrapeCity.Forguncy.Commands.Command, Forguncy.Commands]], System.Private.CoreLib",
+    "$values": [
+      {
+        "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+        "ParameterName": "自发订单表",
+        "TableValue": {
+          "$type": "Forguncy.Model.Commands.ParameterTableValue, ServerDesignerCommon",
+          "TableName": "订单信息表__2_",
+          "TableValueType": 1,
+          "BindingInfos": {
+            "$type": "System.Collections.Generic.List`1[[Forguncy.Model.Commands.ParameterTableValueColumn, ServerDesignerCommon]], System.Private.CoreLib",
+            "$values": [
+              {
+                "$type": "Forguncy.Model.Commands.ParameterTableValueColumn, ServerDesignerCommon",
+                "GUID": "c0ab023a-2a87-4838-b857-1c6d2ff024e3",
+                "BindingInfo": {
+                  "$type": "ForguncyDataAccess.BindingInfo, ForguncyDataAccess",
+                  "TableName": "订单信息表__2_",
+                  "ColumnName": "数量",
+                  "GUID": "7d3f6a7c-8797-458c-90fa-0bc3c3eca5bd"
+                },
+                "ColumnName": "数量"
+              }
+            ]
+          },
+          "SqlCondition": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "$type": "ForguncyDataAccess.BindingInfo, ForguncyDataAccess",
+              "TableName": "订单信息表__2_",
+              "ColumnName": "订单编号",
+              "GUID": "052dd909-0704-4581-83d1-033c1e80f2c0"
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=自发订单号"
+            }
+          }
+        },
+        "ID": "ca1ac097d9bc4d239191e5701d2f1e8e",
+        "BreakpointIdentity": "fc9330a8-2519-4157-ad61-b5057c1368c6"
+      },
+      {
+        "$type": "PostDataToWebApi.PostDataCommand, PostDataToWebApi",
+        "PostData": {
+          "$type": "PostDataToWebApi.DataItem, PostDataToWebApi",
+          "DataItemType": 1,
+          "Data": {
+            "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+            "Data": {
+              "$type": "System.Collections.Generic.List`1[[PostDataToWebApi.DataItem, PostDataToWebApi]], System.Private.CoreLib",
+              "$values": [
+                {
+                  "$type": "PostDataToWebApi.DataItem, PostDataToWebApi",
+                  "Name": "appToken",
+                  "DataItemType": 0,
+                  "Data": "90cacaacaeef1a971869d2643c0714703"
+                },
+                {
+                  "$type": "PostDataToWebApi.DataItem, PostDataToWebApi",
+                  "Name": "appKey",
+                  "DataItemType": 0,
+                  "Data": "0d7e6e0444d8dd91c18d6a2264afcb220d7e6e0444d8dd91c18d6a2264afcb14703"
+                },
+                {
+                  "$type": "PostDataToWebApi.DataItem, PostDataToWebApi",
+                  "Name": "serviceMethod",
+                  "DataItemType": 0,
+                  "Data": "createorder"
+                },
+                {
+                  "$type": "PostDataToWebApi.DataItem, PostDataToWebApi",
+                  "Name": "paramsJson",
+                  "DataItemType": 1,
+                  "Data": {
+                    "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                    "IsStringify": true,
+                    "Data": {
+                      "$type": "System.Collections.Generic.List`1[[PostDataToWebApi.DataItem, PostDataToWebApi]], System.Private.CoreLib",
+                      "$values": [
+                        {
+                          "$type": "PostDataToWebApi.DataItem, PostDataToWebApi",
+                          "Name": "reference_no",
+                          "DataItemType": 0,
+                          "Data": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=自发订单号"
+                          }
+                        },
+                        {
+                          "$type": "PostDataToWebApi.DataItem, PostDataToWebApi",
+                          "Name": "shipping_method",
+                          "DataItemType": 0,
+                          "Data": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=运输方式"
+                          }
+                        },
+                        {
+                          "$type": "PostDataToWebApi.DataItem, PostDataToWebApi",
+                          "Name": "order_weight",
+                          "DataItemType": 0,
+                          "Data": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=自发订单表.预估重量"
+                          }
+                        },
+                        {
+                          "$type": "PostDataToWebApi.DataItem, PostDataToWebApi",
+                          "Name": "order_pieces",
+                          "DataItemType": 0,
+                          "Data": "1"
+                        },
+                        {
+                          "$type": "PostDataToWebApi.DataItem, PostDataToWebApi",
+                          "Name": "insurance_value",
+                          "DataItemType": 0,
+                          "Data": 0.0
+                        },
+                        {
+                          "$type": "PostDataToWebApi.DataItem, PostDataToWebApi",
+                          "Name": "mail_cargo_type",
+                          "DataItemType": 0,
+                          "Data": "4"
+                        },
+                        {
+                          "$type": "PostDataToWebApi.DataItem, PostDataToWebApi",
+                          "Name": "consignee",
+                          "DataItemType": 1,
+                          "Data": {
+                            "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                            "Data": {
+                              "$type": "System.Collections.Generic.List`1[[PostDataToWebApi.DataItem, PostDataToWebApi]], System.Private.CoreLib",
+                              "$values": [
+                                {
+                                  "$type": "PostDataToWebApi.DataItem, PostDataToWebApi",
+                                  "Name": "consignee_company",
+                                  "DataItemType": 0,
+                                  "Data": {
+                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                    "SerializeProperty": "=自发订单表.收件人公司名"
+                                  }
+                                },
+                                {
+                                  "$type": "PostDataToWebApi.DataItem, PostDataToWebApi",
+                                  "Name": "consignee_street",
+                                  "DataItemType": 0,
+                                  "Data": {
+                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                    "SerializeProperty": "=自发订单表.收件人地址"
+                                  }
+                                },
+                                {
+                                  "$type": "PostDataToWebApi.DataItem, PostDataToWebApi",
+                                  "Name": "consignee_postcode",
+                                  "DataItemType": 0,
+                                  "Data": {
+                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                    "SerializeProperty": "=自发订单表.邮编"
+                                  }
+                                },
+                                {
+                                  "$type": "PostDataToWebApi.DataItem, PostDataToWebApi",
+                                  "Name": "consignee_name",
+                                  "DataItemType": 0,
+                                  "Data": {
+                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                    "SerializeProperty": "=自发订单表.收件人名"
+                                  }
+                                },
+                                {
+                                  "$type": "PostDataToWebApi.DataItem, PostDataToWebApi",
+                                  "Name": "consignee_telephone",
+                                  "DataItemType": 0,
+                                  "Data": {
+                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                    "SerializeProperty": "=自发订单表.电话"
+                                  }
+                                },
+                                {
+                                  "$type": "PostDataToWebApi.DataItem, PostDataToWebApi",
+                                  "Name": "consignee_mobile",
+                                  "DataItemType": 0,
+                                  "Data": ""
+                                },
+                                {
+                                  "$type": "PostDataToWebApi.DataItem, PostDataToWebApi",
+                                  "Name": "consignee_countrycode",
+                                  "DataItemType": 0,
+                                  "Data": "JP"
+                                }
+                              ]
+                            }
+                          }
+                        },
+                        {
+                          "$type": "PostDataToWebApi.DataItem, PostDataToWebApi",
+                          "Name": "shipper",
+                          "DataItemType": 1,
+                          "Data": {
+                            "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                            "Data": {
+                              "$type": "System.Collections.Generic.List`1[[PostDataToWebApi.DataItem, PostDataToWebApi]], System.Private.CoreLib",
+                              "$values": [
+                                {
+                                  "$type": "PostDataToWebApi.DataItem, PostDataToWebApi",
+                                  "Name": "shipper_countrycode",
+                                  "DataItemType": 0,
+                                  "Data": "CN"
+                                },
+                                {
+                                  "$type": "PostDataToWebApi.DataItem, PostDataToWebApi",
+                                  "Name": "shipper_city",
+                                  "DataItemType": 0,
+                                  "Data": "."
+                                },
+                                {
+                                  "$type": "PostDataToWebApi.DataItem, PostDataToWebApi",
+                                  "Name": "shipper_street",
+                                  "DataItemType": 0,
+                                  "Data": {
+                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                    "SerializeProperty": "=自发订单表.账户公司地址"
+                                  }
+                                },
+                                {
+                                  "$type": "PostDataToWebApi.DataItem, PostDataToWebApi",
+                                  "Name": "shipper_areacode",
+                                  "DataItemType": 0,
+                                  "Data": ""
+                                },
+                                {
+                                  "$type": "PostDataToWebApi.DataItem, PostDataToWebApi",
+                                  "Name": "shipper_name",
+                                  "DataItemType": 0,
+                                  "Data": {
+                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                    "SerializeProperty": "=自发订单表.发件人"
+                                  }
+                                },
+                                {
+                                  "$type": "PostDataToWebApi.DataItem, PostDataToWebApi",
+                                  "Name": "shipper_telephone",
+                                  "DataItemType": 0,
+                                  "Data": {
+                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                    "SerializeProperty": "=自发订单表.公司经理电话"
+                                  }
+                                },
+                                {
+                                  "$type": "PostDataToWebApi.DataItem, PostDataToWebApi",
+                                  "Name": "shipper_mobile",
+                                  "DataItemType": 0,
+                                  "Data": ".."
+                                }
+                              ]
+                            }
+                          }
+                        },
+                        {
+                          "$type": "PostDataToWebApi.DataItem, PostDataToWebApi",
+                          "Name": "invoice",
+                          "DataItemType": 4,
+                          "Data": {
+                            "$type": "PostDataToWebApi.ArrayData, PostDataToWebApi",
+                            "Data": {
+                              "$type": "System.Collections.Generic.List`1[[PostDataToWebApi.DataItem, PostDataToWebApi]], System.Private.CoreLib",
+                              "$values": [
+                                {
+                                  "$type": "PostDataToWebApi.DataItem, PostDataToWebApi",
+                                  "DataItemType": 1,
+                                  "Data": {
+                                    "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                                    "Data": {
+                                      "$type": "System.Collections.Generic.List`1[[PostDataToWebApi.DataItem, PostDataToWebApi]], System.Private.CoreLib",
+                                      "$values": [
+                                        {
+                                          "$type": "PostDataToWebApi.DataItem, PostDataToWebApi",
+                                          "Name": "invoice_enname",
+                                          "DataItemType": 0,
+                                          "Data": {
+                                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                            "SerializeProperty": "=自发订单表.申报名EN"
+                                          }
+                                        },
+                                        {
+                                          "$type": "PostDataToWebApi.DataItem, PostDataToWebApi",
+                                          "Name": "invoice.hs_code",
+                                          "DataItemType": 0,
+                                          "Data": {
+                                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                            "SerializeProperty": "=自发订单表.HS编码"
+                                          }
+                                        },
+                                        {
+                                          "$type": "PostDataToWebApi.DataItem, PostDataToWebApi",
+                                          "Name": "invoice_cnname",
+                                          "DataItemType": 0,
+                                          "Data": {
+                                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                            "SerializeProperty": "=自发订单表.申报名CN"
+                                          }
+                                        },
+                                        {
+                                          "$type": "PostDataToWebApi.DataItem, PostDataToWebApi",
+                                          "Name": "invoice_quantity",
+                                          "DataItemType": 0,
+                                          "Data": {
+                                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                            "SerializeProperty": "=自发订单表.数量"
+                                          }
+                                        },
+                                        {
+                                          "$type": "PostDataToWebApi.DataItem, PostDataToWebApi",
+                                          "Name": "unit_code",
+                                          "DataItemType": 0,
+                                          "Data": "PCE"
+                                        },
+                                        {
+                                          "$type": "PostDataToWebApi.DataItem, PostDataToWebApi",
+                                          "Name": "invoice_unitcharge",
+                                          "DataItemType": 0,
+                                          "Data": {
+                                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                            "SerializeProperty": "=自发订单表.申报单价"
+                                          }
+                                        },
+                                        {
+                                          "$type": "PostDataToWebApi.DataItem, PostDataToWebApi",
+                                          "Name": "invoice_note",
+                                          "DataItemType": 0
+                                        }
+                                      ]
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "WebUrl": "http://customer2.ydhex.com/webservice/PublicService.asmx/ServiceInterfaceUTF8",
+        "Method": "POST",
+        "SuccessCallback": "// 请求成功返回的数据存储在“result”变量中\r\n// 请使用“result”变量来完成请求成功的回调 \r\n//console.log(result);",
+        "ErrorCallback": "// 请求中发生的错误存储在“error”变量中\r\n// 请使用“error”变量来处理异常情况 \r\nconsole.error(error);",
+        "NewParameter": "result",
+        "Header": {
+          "$type": "System.Collections.Generic.List`1[[PostDataToWebApi.RequestHeaderSaveAndLoad, PostDataToWebApi]], System.Private.CoreLib",
+          "$values": [
+            {
+              "$type": "PostDataToWebApi.RequestHeaderSaveAndLoad, PostDataToWebApi",
+              "Type": "Content-Type",
+              "Value": "application/x-www-form-urlencoded"
+            }
+          ]
+        },
+        "Timeout": 100.0,
+        "BreakpointIdentity": "820e9ce4-f91f-4ec2-b9a0-888fa3fb16f5"
+      },
+      {
+        "$type": "PostDataToWebApi.PostDataCommand, PostDataToWebApi",
+        "PostData": {
+          "$type": "PostDataToWebApi.DataItem, PostDataToWebApi",
+          "DataItemType": 1,
+          "Data": {
+            "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+            "Data": {
+              "$type": "System.Collections.Generic.List`1[[PostDataToWebApi.DataItem, PostDataToWebApi]], System.Private.CoreLib",
+              "$values": [
+                {
+                  "$type": "PostDataToWebApi.DataItem, PostDataToWebApi",
+                  "Name": "appToken",
+                  "DataItemType": 0,
+                  "Data": "90cacaacaeef1a971869d2643c0714703"
+                },
+                {
+                  "$type": "PostDataToWebApi.DataItem, PostDataToWebApi",
+                  "Name": "appKey",
+                  "DataItemType": 0,
+                  "Data": "0d7e6e0444d8dd91c18d6a2264afcb220d7e6e0444d8dd91c18d6a2264afcb14703"
+                },
+                {
+                  "$type": "PostDataToWebApi.DataItem, PostDataToWebApi",
+                  "Name": "serviceMethod",
+                  "DataItemType": 0,
+                  "Data": "gettrackingnumber"
+                },
+                {
+                  "$type": "PostDataToWebApi.DataItem, PostDataToWebApi",
+                  "Name": "paramsJson",
+                  "DataItemType": 1,
+                  "Data": {
+                    "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                    "IsStringify": true,
+                    "Data": {
+                      "$type": "System.Collections.Generic.List`1[[PostDataToWebApi.DataItem, PostDataToWebApi]], System.Private.CoreLib",
+                      "$values": [
+                        {
+                          "$type": "PostDataToWebApi.DataItem, PostDataToWebApi",
+                          "Name": "reference_no",
+                          "DataItemType": 0,
+                          "Data": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=自发订单号"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "WebUrl": "http://customer2.ydhex.com/webservice/PublicService.asmx/ServiceInterfaceUTF8",
+        "Method": "POST",
+        "SuccessCallback": "// 请求成功返回的数据存储在“result”变量中\r\n// 请使用“result”变量来完成请求成功的回调 \r\n//console.log(result);",
+        "ErrorCallback": "// 请求中发生的错误存储在“error”变量中\r\n// 请使用“error”变量来处理异常情况 \r\nconsole.error(error);",
+        "NewParameter": "result1",
+        "Header": {
+          "$type": "System.Collections.Generic.List`1[[PostDataToWebApi.RequestHeaderSaveAndLoad, PostDataToWebApi]], System.Private.CoreLib",
+          "$values": [
+            {
+              "$type": "PostDataToWebApi.RequestHeaderSaveAndLoad, PostDataToWebApi",
+              "Type": "Content-Type",
+              "Value": "application/x-www-form-urlencoded"
+            }
+          ]
+        },
+        "Timeout": 100.0,
+        "BreakpointIdentity": "28c79a47-a3a3-4557-8c33-5a51a3e15c11"
+      },
+      {
+        "$type": "Forguncy.Model.ReturnCommand, ServerDesignerCommon",
+        "CustomReturns": {
+          "$type": "System.Collections.Generic.List`1[[Forguncy.Model.CustomReturns, ServerDesignerCommon]], System.Private.CoreLib",
+          "$values": [
+            {
+              "$type": "Forguncy.Model.CustomReturns, ServerDesignerCommon",
+              "ReturnPropertyName": "result",
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=result"
+              }
+            },
+            {
+              "$type": "Forguncy.Model.CustomReturns, ServerDesignerCommon",
+              "ReturnPropertyName": "result1",
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=result1"
+              }
+            }
+          ]
+        },
+        "BreakpointIdentity": "1f1af292-e653-42ce-9232-939729d20620"
+      }
+    ]
+  },
+  "ReturnProperties": {
+    "$type": "System.Collections.Generic.List`1[[Forguncy.SaveLoad.ReturnPropertySaveData, ServerDesignerCommon]], System.Private.CoreLib",
+    "$values": [
+      {
+        "$type": "Forguncy.SaveLoad.ReturnPropertySaveData, ServerDesignerCommon",
+        "Name": "result"
+      },
+      {
+        "$type": "Forguncy.SaveLoad.ReturnPropertySaveData, ServerDesignerCommon",
+        "Name": "result1"
+      }
+    ]
+  }
+}

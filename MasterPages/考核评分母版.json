@@ -1,0 +1,744 @@
+{
+  "Rows": {
+    "Count": 49
+  },
+  "Cols": {
+    "Count": 64
+  },
+  "AttachInfos": {
+    "0,0": {
+      "CellType": {
+        "$type": "Forguncy.CustomMenu.ForguncyMenuCellType, Forguncy.CustomMenu",
+        "TemplateKey": "样式4",
+        "Items": [
+          {
+            "Value": "执行组",
+            "Text": "执行组",
+            "IconPath": "Navigation/241_user_group_3.svg",
+            "SelectedIconColor": "Background 1",
+            "SelectedIconColorUseItemColor": true,
+            "IsOldMenuPath": false,
+            "CanVisitRoleList": [
+              "销售",
+              "财务",
+              "销售主管",
+              "财务主管",
+              "总经理",
+              "欧洲主管",
+              "人事"
+            ],
+            "SubItems": [
+              {
+                "Value": "执行人员",
+                "Text": "执行人员",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                    "ConditionAndCommandPairList": [
+                      {
+                        "Condition": {
+                          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                          "SubConditions": [
+                            {
+                              "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                              "param": {
+                                "$type": "Forguncy.Model.IfConditionCurrentUserInfoParam, ServerDesignerCommon",
+                                "currentUserProperty": {
+                                  "UserProperty": "角色",
+                                  "PropertyType": 3
+                                }
+                              },
+                              "value": "财务",
+                              "compareType": 10
+                            },
+                            {
+                              "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                              "param": {
+                                "$type": "Forguncy.Model.IfConditionCurrentUserInfoParam, ServerDesignerCommon",
+                                "currentUserProperty": {
+                                  "UserProperty": "用户名"
+                                }
+                              },
+                              "value": "霍倩倩"
+                            },
+                            {
+                              "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                              "param": {
+                                "$type": "Forguncy.Model.IfConditionCurrentUserInfoParam, ServerDesignerCommon",
+                                "currentUserProperty": {
+                                  "UserProperty": "用户名"
+                                }
+                              },
+                              "value": "王宁宁"
+                            },
+                            {
+                              "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                              "param": {
+                                "$type": "Forguncy.Model.IfConditionCurrentUserInfoParam, ServerDesignerCommon",
+                                "currentUserProperty": {
+                                  "UserProperty": "用户名"
+                                }
+                              },
+                              "value": "罗丽"
+                            },
+                            {
+                              "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                              "param": {
+                                "$type": "Forguncy.Model.IfConditionCurrentUserInfoParam, ServerDesignerCommon",
+                                "currentUserProperty": {
+                                  "UserProperty": "用户名"
+                                }
+                              },
+                              "value": "刘倩",
+                              "compareType": 10
+                            },
+                            {
+                              "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                              "param": {
+                                "$type": "Forguncy.Model.IfConditionCurrentUserInfoParam, ServerDesignerCommon",
+                                "currentUserProperty": {
+                                  "UserProperty": "用户名"
+                                }
+                              },
+                              "value": "陈欣欣",
+                              "compareType": 10
+                            }
+                          ],
+                          "RelationType": 1
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                            "PageName": "执行",
+                            "IgnoreTargetPageCachedCurrentRowInfo": false,
+                            "BreakpointIdentity": "e5517804-2a78-4bcb-a26f-d59d0061a223"
+                          }
+                        ],
+                        "ID": "5fd2cc9a-8ecd-4760-9463-39743a8d88d7"
+                      },
+                      {
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                            "PageName": "FGC_401页面",
+                            "IgnoreTargetPageCachedCurrentRowInfo": false,
+                            "BreakpointIdentity": "9063c046-99db-46af-9bb8-a736be0ac44e"
+                          }
+                        ],
+                        "ID": "fa0f509c-3c86-442e-9552-c1d9bacdc050"
+                      }
+                    ],
+                    "BreakpointIdentity": "c0a053e1-1f38-4d78-95e2-87b0339757e0"
+                  }
+                ],
+                "CanVisitRoleList": [
+                  "销售",
+                  "财务",
+                  "销售主管",
+                  "财务主管",
+                  "总经理",
+                  "人事"
+                ]
+              },
+              {
+                "Value": "执行人员汇总",
+                "Text": "执行人员汇总",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "PageName": "执行组汇总",
+                    "IgnoreTargetPageCachedCurrentRowInfo": false,
+                    "BreakpointIdentity": "02882e9f-8d19-4083-b127-8b2dbdb22be8"
+                  }
+                ],
+                "CanVisitRoleList": [
+                  "财务",
+                  "销售主管",
+                  "财务主管",
+                  "总经理",
+                  "人事"
+                ]
+              }
+            ]
+          },
+          {
+            "Value": "运营部",
+            "Text": "运营部",
+            "SelectedIconColor": "Background 1",
+            "SelectedIconColorUseItemColor": true,
+            "IconColorUseItemColor": true,
+            "IsOldMenuPath": false,
+            "CanVisitRoleList": [
+              "财务",
+              "财务主管",
+              "总经理",
+              "执行",
+              "执行助理",
+              "人事"
+            ],
+            "SubItems": [
+              {
+                "Value": "运营评分",
+                "Text": "运营评分",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "PageName": "运营",
+                    "BreakpointIdentity": "599f0c3d-280b-4a03-83f4-ea9304ed9f0e"
+                  }
+                ],
+                "CanVisitRoleList": [
+                  "财务",
+                  "财务主管",
+                  "总经理",
+                  "执行",
+                  "执行助理",
+                  "人事"
+                ]
+              },
+              {
+                "Value": "运营评分汇总",
+                "Text": "运营评分汇总",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "PageName": "运营-汇总",
+                    "BreakpointIdentity": "c3282887-2952-4702-bfdb-2dcb4057e016"
+                  }
+                ],
+                "CanVisitRoleList": [
+                  "财务",
+                  "财务主管",
+                  "总经理",
+                  "人事"
+                ]
+              }
+            ]
+          },
+          {
+            "Text": "采购部",
+            "IconPath": "Navigation/165_home_3.svg",
+            "SelectedIconColor": "Background 1",
+            "SelectedIconColorUseItemColor": true,
+            "IsOldMenuPath": false,
+            "CanVisitRoleList": [
+              "FGC_LoginUser",
+              "人事"
+            ],
+            "SubItems": [
+              {
+                "Value": "采购人员",
+                "Text": "采购人员",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "PageName": "采购部-cg",
+                    "IgnoreTargetPageCachedCurrentRowInfo": false,
+                    "BreakpointIdentity": "05954255-ea81-4c6e-b8de-38766a9bcbfb"
+                  }
+                ],
+                "CanVisitRoleList": [
+                  "FGC_LoginUser",
+                  "人事"
+                ]
+              },
+              {
+                "Value": "采购人员汇总",
+                "Text": "采购人员汇总",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "PageName": "采购部汇总-cg",
+                    "IgnoreTargetPageCachedCurrentRowInfo": false,
+                    "BreakpointIdentity": "3ff696f3-8219-4011-86fc-d6f50ec3ffce"
+                  }
+                ],
+                "CanVisitRoleList": [
+                  "财务",
+                  "财务主管",
+                  "总经理",
+                  "人事"
+                ]
+              }
+            ]
+          },
+          {
+            "Text": "包装部",
+            "IconPath": "Navigation/183_table_2.svg",
+            "SelectedIconColor": "Background 1",
+            "SelectedIconColorUseItemColor": true,
+            "IsOldMenuPath": false,
+            "CanVisitRoleList": [
+              "FGC_LoginUser",
+              "人事"
+            ],
+            "SubItems": [
+              {
+                "Value": "包装人员",
+                "Text": "包装人员",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "PageName": "包装-bz",
+                    "IgnoreTargetPageCachedCurrentRowInfo": false,
+                    "BreakpointIdentity": "278c6fab-7607-48a2-978d-6faaea43ff21"
+                  }
+                ],
+                "CanVisitRoleList": [
+                  "FGC_LoginUser",
+                  "人事"
+                ]
+              },
+              {
+                "Value": "理货人员",
+                "Text": "理货人员",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "PageName": "包装-lh",
+                    "IgnoreTargetPageCachedCurrentRowInfo": false,
+                    "BreakpointIdentity": "dfe129e6-de9a-48d6-a6dc-73fb33aafb0f"
+                  }
+                ],
+                "CanVisitRoleList": [
+                  "FGC_LoginUser",
+                  "人事"
+                ]
+              },
+              {
+                "Value": "包装人员汇总",
+                "Text": "包装人员汇总",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "PageName": "包装部汇总-bz",
+                    "IgnoreTargetPageCachedCurrentRowInfo": false,
+                    "BreakpointIdentity": "5c3245c8-f5ee-4c9a-90c3-b684d346cdac"
+                  }
+                ],
+                "CanVisitRoleList": [
+                  "财务",
+                  "财务主管",
+                  "总经理",
+                  "人事"
+                ]
+              },
+              {
+                "Value": "理货人员汇总",
+                "Text": "理货人员汇总",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "PageName": "包装部汇总-lh",
+                    "IgnoreTargetPageCachedCurrentRowInfo": false,
+                    "BreakpointIdentity": "286f64a1-ed6a-457a-b09e-dc203650ce19"
+                  }
+                ],
+                "CanVisitRoleList": [
+                  "财务",
+                  "财务主管",
+                  "总经理",
+                  "人事"
+                ]
+              }
+            ]
+          },
+          {
+            "Text": "设计部",
+            "IconPath": "Chart/363_column_chart_2.svg",
+            "SelectedIconColor": "Background 1",
+            "SelectedIconColorUseItemColor": true,
+            "IsOldMenuPath": false,
+            "CanVisitRoleList": [
+              "FGC_LoginUser",
+              "人事"
+            ],
+            "SubItems": [
+              {
+                "Value": "设计人员",
+                "Text": "设计人员",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "PageName": "设计-sjs",
+                    "IgnoreTargetPageCachedCurrentRowInfo": false,
+                    "BreakpointIdentity": "7ec1e368-c856-4b3b-b429-32ed12d4dd24"
+                  }
+                ],
+                "CanVisitRoleList": [
+                  "FGC_LoginUser",
+                  "人事"
+                ]
+              },
+              {
+                "Value": "摄影人员",
+                "Text": "摄影人员",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "PageName": "设计-sy",
+                    "IgnoreTargetPageCachedCurrentRowInfo": false,
+                    "BreakpointIdentity": "6f81b909-d869-4e97-b1d3-463d7d89840a"
+                  }
+                ],
+                "CanVisitRoleList": [
+                  "FGC_LoginUser",
+                  "人事"
+                ]
+              },
+              {
+                "Value": "设计人员汇总",
+                "Text": "设计人员汇总",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "PageName": "设计部汇总-sjs",
+                    "IgnoreTargetPageCachedCurrentRowInfo": false,
+                    "BreakpointIdentity": "89ca5f8c-743d-4846-877e-8a519760e304"
+                  }
+                ],
+                "CanVisitRoleList": [
+                  "财务",
+                  "财务主管",
+                  "总经理",
+                  "人事"
+                ]
+              },
+              {
+                "Value": "摄影人员汇总",
+                "Text": "摄影人员汇总",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "PageName": "设计部汇总-sy",
+                    "IgnoreTargetPageCachedCurrentRowInfo": false,
+                    "BreakpointIdentity": "3210f1c4-0468-486f-9873-2987cb3817ac"
+                  }
+                ],
+                "CanVisitRoleList": [
+                  "财务",
+                  "财务主管",
+                  "总经理",
+                  "人事"
+                ]
+              }
+            ]
+          },
+          {
+            "Value": "物流组",
+            "Text": "物流组",
+            "SelectedIconColor": "Background 1",
+            "SelectedIconColorUseItemColor": true,
+            "IconColorUseItemColor": true,
+            "IsOldMenuPath": false,
+            "CanVisitRoleList": [
+              "FGC_Anonymous"
+            ],
+            "SubItems": [
+              {
+                "Value": "物流专员",
+                "Text": "物流专员",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "PageName": "物流专员",
+                    "BreakpointIdentity": "fb2df64c-5de2-4550-8717-09356c39e9ef"
+                  }
+                ],
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ]
+              },
+              {
+                "Value": "物流助理",
+                "Text": "物流助理",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "PageName": "物流助理",
+                    "BreakpointIdentity": "60fdf42b-227e-4676-a325-108cb5e41f9d"
+                  }
+                ],
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ]
+              },
+              {
+                "Value": "物流负责人",
+                "Text": "物流负责人",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "PageName": "物流负责人",
+                    "BreakpointIdentity": "02366fa1-e78d-4177-9ae5-2fba966988a1"
+                  }
+                ],
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ]
+              },
+              {
+                "Value": "物流专员汇总",
+                "Text": "物流专员汇总",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "PageName": "物流专员-汇总",
+                    "BreakpointIdentity": "0c62b904-4288-4a43-9a9e-458c295f71c7"
+                  }
+                ],
+                "CanVisitRoleList": [
+                  "财务",
+                  "财务主管",
+                  "总经理",
+                  "人事"
+                ]
+              },
+              {
+                "Value": "物流助理汇总",
+                "Text": "物流助理汇总",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "PageName": "物流助理-汇总",
+                    "BreakpointIdentity": "51f83d06-540b-44f3-aaf0-3f70192f9ebe"
+                  }
+                ],
+                "CanVisitRoleList": [
+                  "财务",
+                  "财务主管",
+                  "总经理",
+                  "人事"
+                ]
+              },
+              {
+                "Value": "物流负责人汇总",
+                "Text": "物流负责人汇总",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "PageName": "物流负责人-汇总",
+                    "BreakpointIdentity": "ca171b39-1b58-470e-89aa-a2c84e4a0268"
+                  }
+                ],
+                "CanVisitRoleList": [
+                  "财务",
+                  "财务主管",
+                  "总经理",
+                  "人事"
+                ]
+              }
+            ]
+          },
+          {
+            "Value": "考核人员维护",
+            "Text": "考核人员维护",
+            "SelectedIconColor": "Background 1",
+            "SelectedIconColorUseItemColor": true,
+            "IconColorUseItemColor": true,
+            "IsOldMenuPath": false,
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                "PageName": "考核人员部门维护",
+                "IgnoreTargetPageCachedCurrentRowInfo": false,
+                "BreakpointIdentity": "93ed1568-0ced-4d3e-bb58-98fe655d6489"
+              }
+            ],
+            "CanVisitRoleList": [
+              "财务",
+              "销售主管",
+              "总经理",
+              "人事"
+            ]
+          },
+          {
+            "Value": "费用报销",
+            "Text": "费用报销",
+            "SelectedIconColor": "Background 1",
+            "SelectedIconColorUseItemColor": true,
+            "IconColorUseItemColor": true,
+            "IsOldMenuPath": false,
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                "PageName": "费用审批表yg",
+                "IsOpenInNewTab": true,
+                "BreakpointIdentity": "6f09e924-c3d0-461c-8d12-bc51ea995786"
+              }
+            ],
+            "CanVisitRoleList": [
+              "人事"
+            ]
+          },
+          {
+            "Value": "包装计划",
+            "Text": "包装计划",
+            "SelectedIconColor": "Background 1",
+            "SelectedIconColorUseItemColor": true,
+            "IconColorUseItemColor": true,
+            "IsOldMenuPath": false,
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                "PageName": "包装计划rs",
+                "IsOpenInNewTab": true,
+                "BreakpointIdentity": "5f0f31b1-6e85-4daa-93ed-6a070be5805d"
+              }
+            ],
+            "CanVisitRoleList": [
+              "人事"
+            ]
+          }
+        ],
+        "Orientation": 0,
+        "MenuLevelsStyle": [
+          {
+            "FontSize": 17.333333333333332,
+            "Height": 45.0,
+            "Width": 150.0,
+            "IconHeight": 24.0,
+            "IconWidth": 24.0
+          },
+          {
+            "FontSize": 16.0,
+            "Height": 32.0,
+            "Width": 150.0,
+            "IconHeight": 24.0,
+            "IconWidth": 24.0
+          }
+        ]
+      }
+    },
+    "2,0": {
+      "IsPlaceHolderCell": true
+    }
+  },
+  "StyleDatas": {
+    "Types": {
+      "Strs": [
+        "Body"
+      ]
+    },
+    "SheetStyle": {
+      "FontFamily": 0,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
+    }
+  },
+  "Spans": [
+    "0,0,2,64",
+    "2,0,46,64"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.MasterPage, ServerDesignerCommon",
+    "PageLoadedCommandList": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "BackgroundPictures": [
+    {
+      "FitToBrowserWidth": true,
+      "FitToBrowserHeight": true,
+      "Repeat": true,
+      "Name": "57dda71b-5a39-4ec3-a505-74264eb99df8",
+      "DisplayName": "背景图1",
+      "ForguncyPictureName": "PCMasterBackground",
+      "ForguncyPictureSourceType": 2,
+      "Stretch": 2,
+      "Size": "200,110"
+    },
+    {
+      "Name": "a26e2575-9fab-4903-895b-127d370d077f",
+      "DisplayName": "背景图2",
+      "ForguncyPictureName": "PCMasterBanner",
+      "ForguncyPictureSourceType": 2,
+      "Stretch": 3,
+      "Size": "1280,0"
+    }
+  ]
+}//+TzSz/P+whkpoW8Tbp8/UqLXdPgK5ZlXGuhjepxN5GXaBy6lxPSZefgqpo6EcVPnOC75lxIH9huBMExS02bVdg/RCutR8vWSP738T+kv3eMJd6oVR8MfSnxruKRKQRvKVpGNiJxu+LKMnFNrykXg59Gc9Mm3HGpdmtLyshxgl2F+BDDBf65akDutPplmUflxBc0dxsUSm5EDFeMihcdd5twNZOr9R+jU4J6Ndr1WxigBxE3cIgLDQk0aGMIE02oLseO/U+1I37vvMbf6YdktR0lZDxk1NhPdwtEG9I7duWtE/CLrGSZyuZWvydMMgYkstPcN2JUbGj8LfZI7JNSQaKLpoGxMH5DVkMMSwzT+fvSi4YgN7ieYwvrTOxPWYPzS63gsZOACdj4zD/AWa8JFOWWeuYNx9qzsHj7/uyV0SnxSxRot94e1INdt36T+3eEXBAdXXxHTn92903udc0xXrOkP2CnH0TQZIJLHXYJIAgHPBoDSdFAgDI3S3EiD3BPYlQ8C/GZb3Z7E58tZeptSVwSE73LOGk4Vgto0bL1BI8xj9oUmpfZg9Wj9FHck7ectlZ1pg2kF3BIZ/tg/rEFUnD5N7hPmzFtXRU8sxN6K8FeZhDmxKZBUjasxQZlVgvg3z2KQfRJ9pIyNhG9hzxf+gYmTMGdH4+pOn/Y3AIXXMTm/Z7Ya4tqajFJKclB3/1rgB+hS0yqKzMK8l03x3t+alNV1L4Qn8eF0DZWRa89yPlAuQAzkF5RDcOdU8bJT8GofcAGE9Ly5cGT5fYzvpWdN9/Y9JGiVSg3S94g0S6aosImuaD8qDeJUg/+/HBIU+jB3NCwN3h7eE+xH0bWs+lDHhYePpqsw49Gd3QQtBa1spvt7QFwjtaXp35GATdB2M/GoT6NBuGqN0y2ywqzrwM+3mw==|920

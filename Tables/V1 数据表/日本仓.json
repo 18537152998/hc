@@ -1,0 +1,798 @@
+{
+  "Name": "日本仓",
+  "PermissionData": {
+    "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionData, Forguncy.RbacPermission.Core",
+    "permissionResource": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionResource, Forguncy.RbacPermission.Core",
+      "enabledTypes": 4,
+      "detailTables": []
+    },
+    "permissionBindings": [
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "FBA仓库地址": 5,
+            "FBA到货时间": 5,
+            "FBA编号": 5,
+            "ID": 5,
+            "业务类别": 5,
+            "佣金费用": 5,
+            "免费保管截止日期": 5,
+            "到日本日期": 5,
+            "发货日期": 5,
+            "国际物流单号": 5,
+            "国际运费": 5,
+            "尺寸": 5,
+            "帐户": 5,
+            "库存保管费": 5,
+            "日本代发运单号": 5,
+            "日本转运运费": 5,
+            "是否处理完成": 5,
+            "税金": 5,
+            "结算与否": 5,
+            "结算总金额": 5,
+            "维修费用": 5,
+            "转运人员": 5,
+            "数量": 5,
+            "商品编码": 5,
+            "商品名": 5,
+            "重量": 5
+          },
+          "subTableOperations": {},
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core"
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "Administrator"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "FBA仓库地址": 5,
+            "FBA到货时间": 5,
+            "FBA编号": 5,
+            "ID": 5,
+            "业务类别": 5,
+            "佣金费用": 1,
+            "免费保管截止日期": 5,
+            "到日本日期": 5,
+            "发货日期": 5,
+            "国际物流单号": 5,
+            "国际运费": 5,
+            "尺寸": 5,
+            "帐户": 5,
+            "库存保管费": 5,
+            "日本代发运单号": 5,
+            "日本转运运费": 5,
+            "是否处理完成": 5,
+            "税金": 5,
+            "结算与否": 1,
+            "结算总金额": 1,
+            "维修费用": 5,
+            "转运人员": 5,
+            "数量": 5,
+            "商品编码": 5,
+            "商品名": 5,
+            "重量": 5
+          },
+          "subTableOperations": {},
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core"
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "销售"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "FBA仓库地址": 5,
+            "FBA到货时间": 5,
+            "FBA编号": 5,
+            "ID": 5,
+            "业务类别": 5,
+            "佣金费用": 1,
+            "免费保管截止日期": 5,
+            "到日本日期": 5,
+            "发货日期": 5,
+            "国际物流单号": 5,
+            "国际运费": 5,
+            "尺寸": 5,
+            "帐户": 5,
+            "库存保管费": 5,
+            "日本代发运单号": 5,
+            "日本转运运费": 5,
+            "是否处理完成": 5,
+            "税金": 5,
+            "结算与否": 1,
+            "结算总金额": 1,
+            "维修费用": 5,
+            "转运人员": 5,
+            "数量": 5,
+            "商品编码": 5,
+            "商品名": 5,
+            "重量": 5
+          },
+          "subTableOperations": {},
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core"
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "执行"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "FBA仓库地址": 1,
+            "FBA到货时间": 5,
+            "FBA编号": 1,
+            "ID": 5,
+            "业务类别": 5,
+            "佣金费用": 1,
+            "免费保管截止日期": 5,
+            "到日本日期": 5,
+            "发货日期": 1,
+            "国际物流单号": 1,
+            "国际运费": 1,
+            "尺寸": 1,
+            "帐户": 1,
+            "库存保管费": 5,
+            "日本代发运单号": 5,
+            "日本转运运费": 5,
+            "是否处理完成": 5,
+            "税金": 5,
+            "结算与否": 1,
+            "结算总金额": 1,
+            "维修费用": 5,
+            "转运人员": 1,
+            "数量": 5,
+            "商品编码": 5,
+            "商品名": 5,
+            "重量": 5
+          },
+          "subTableOperations": {},
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core"
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "日本仓"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "FBA仓库地址": 5,
+            "FBA到货时间": 5,
+            "FBA编号": 5,
+            "ID": 5,
+            "业务类别": 5,
+            "佣金费用": 5,
+            "免费保管截止日期": 5,
+            "到日本日期": 5,
+            "发货日期": 5,
+            "国际物流单号": 5,
+            "国际运费": 5,
+            "尺寸": 5,
+            "帐户": 5,
+            "库存保管费": 5,
+            "日本代发运单号": 5,
+            "日本转运运费": 5,
+            "是否处理完成": 5,
+            "税金": 5,
+            "结算与否": 5,
+            "结算总金额": 5,
+            "维修费用": 5,
+            "转运人员": 5,
+            "数量": 5,
+            "商品编码": 5,
+            "商品名": 5,
+            "重量": 5
+          },
+          "subTableOperations": {},
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core"
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "财务"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "FBA仓库地址": 5,
+            "FBA到货时间": 5,
+            "FBA编号": 5,
+            "ID": 5,
+            "业务类别": 5,
+            "佣金费用": 5,
+            "免费保管截止日期": 5,
+            "到日本日期": 5,
+            "发货日期": 5,
+            "国际物流单号": 5,
+            "国际运费": 5,
+            "尺寸": 5,
+            "帐户": 5,
+            "库存保管费": 5,
+            "日本代发运单号": 5,
+            "日本转运运费": 5,
+            "是否处理完成": 5,
+            "税金": 5,
+            "结算与否": 5,
+            "结算总金额": 5,
+            "维修费用": 5,
+            "转运人员": 5,
+            "数量": 5,
+            "商品编码": 5,
+            "商品名": 5,
+            "重量": 5
+          },
+          "subTableOperations": {},
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core"
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "财务主管"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "FBA仓库地址": 1,
+            "FBA到货时间": 1,
+            "FBA编号": 1,
+            "ID": 5,
+            "业务类别": 5,
+            "佣金费用": 1,
+            "免费保管截止日期": 5,
+            "到日本日期": 1,
+            "发货日期": 1,
+            "国际物流单号": 1,
+            "国际运费": 1,
+            "尺寸": 1,
+            "帐户": 1,
+            "库存保管费": 5,
+            "日本代发运单号": 1,
+            "日本转运运费": 1,
+            "是否处理完成": 5,
+            "税金": 1,
+            "结算与否": 1,
+            "结算总金额": 1,
+            "维修费用": 5,
+            "转运人员": 1,
+            "数量": 5,
+            "商品编码": 5,
+            "商品名": 5,
+            "重量": 5
+          },
+          "subTableOperations": {},
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core"
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "h运营"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "FBA仓库地址": 1,
+            "FBA到货时间": 1,
+            "FBA编号": 1,
+            "ID": 5,
+            "业务类别": 5,
+            "佣金费用": 1,
+            "免费保管截止日期": 5,
+            "到日本日期": 1,
+            "发货日期": 1,
+            "国际物流单号": 1,
+            "国际运费": 1,
+            "尺寸": 1,
+            "帐户": 1,
+            "库存保管费": 5,
+            "日本代发运单号": 1,
+            "日本转运运费": 1,
+            "是否处理完成": 5,
+            "税金": 1,
+            "结算与否": 1,
+            "结算总金额": 1,
+            "维修费用": 5,
+            "转运人员": 1,
+            "数量": 5,
+            "商品编码": 5,
+            "商品名": 5,
+            "重量": 5
+          },
+          "subTableOperations": {},
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core"
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "h运营助理"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "FBA仓库地址": 1,
+            "FBA到货时间": 1,
+            "FBA编号": 1,
+            "ID": 5,
+            "业务类别": 5,
+            "佣金费用": 5,
+            "免费保管截止日期": 5,
+            "到日本日期": 1,
+            "发货日期": 1,
+            "国际物流单号": 1,
+            "国际运费": 1,
+            "尺寸": 1,
+            "帐户": 1,
+            "库存保管费": 5,
+            "日本代发运单号": 1,
+            "日本转运运费": 5,
+            "是否处理完成": 5,
+            "税金": 1,
+            "结算与否": 5,
+            "结算总金额": 5,
+            "维修费用": 5,
+            "转运人员": 1,
+            "数量": 5,
+            "商品编码": 5,
+            "商品名": 5,
+            "重量": 5
+          },
+          "subTableOperations": {},
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core"
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "制单"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "FBA仓库地址": 5,
+            "FBA到货时间": 5,
+            "FBA编号": 5,
+            "ID": 5,
+            "业务类别": 5,
+            "佣金费用": 5,
+            "免费保管截止日期": 5,
+            "到日本日期": 5,
+            "发货日期": 5,
+            "国际物流单号": 5,
+            "国际运费": 5,
+            "尺寸": 5,
+            "帐户": 5,
+            "库存保管费": 5,
+            "日本代发运单号": 5,
+            "日本转运运费": 5,
+            "是否处理完成": 5,
+            "税金": 5,
+            "结算与否": 1,
+            "结算总金额": 5,
+            "维修费用": 5,
+            "转运人员": 5,
+            "数量": 5,
+            "商品编码": 5,
+            "商品名": 5,
+            "重量": 5
+          },
+          "subTableOperations": {},
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core"
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "审计"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "FBA仓库地址": 5,
+            "FBA到货时间": 5,
+            "FBA编号": 5,
+            "ID": 5,
+            "业务类别": 5,
+            "佣金费用": 1,
+            "免费保管截止日期": 5,
+            "到日本日期": 5,
+            "发货日期": 5,
+            "国际物流单号": 5,
+            "国际运费": 5,
+            "尺寸": 5,
+            "帐户": 5,
+            "库存保管费": 5,
+            "日本代发运单号": 5,
+            "日本转运运费": 5,
+            "是否处理完成": 5,
+            "税金": 1,
+            "结算与否": 1,
+            "结算总金额": 5,
+            "维修费用": 5,
+            "转运人员": 5,
+            "数量": 5,
+            "商品编码": 5,
+            "商品名": 5,
+            "重量": 5
+          },
+          "subTableOperations": {},
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core"
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "销售助理"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "FBA仓库地址": 5,
+            "FBA到货时间": 5,
+            "FBA编号": 5,
+            "ID": 5,
+            "业务类别": 5,
+            "佣金费用": 1,
+            "免费保管截止日期": 5,
+            "到日本日期": 5,
+            "发货日期": 5,
+            "国际物流单号": 5,
+            "国际运费": 5,
+            "尺寸": 5,
+            "帐户": 5,
+            "库存保管费": 5,
+            "日本代发运单号": 5,
+            "日本转运运费": 5,
+            "是否处理完成": 5,
+            "税金": 5,
+            "结算与否": 1,
+            "结算总金额": 1,
+            "维修费用": 5,
+            "转运人员": 5,
+            "数量": 5,
+            "商品编码": 5,
+            "商品名": 5,
+            "重量": 5
+          },
+          "subTableOperations": {},
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core"
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "执行助理"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "FBA仓库地址": 5,
+            "FBA到货时间": 5,
+            "FBA编号": 5,
+            "ID": 1,
+            "业务类别": 5,
+            "佣金费用": 5,
+            "免费保管截止日期": 5,
+            "到日本日期": 5,
+            "发货日期": 5,
+            "国际物流单号": 5,
+            "国际运费": 5,
+            "尺寸": 5,
+            "帐户": 5,
+            "库存保管费": 5,
+            "日本代发运单号": 5,
+            "日本转运运费": 5,
+            "是否处理完成": 5,
+            "税金": 5,
+            "结算与否": 5,
+            "结算总金额": 5,
+            "维修费用": 5,
+            "转运人员": 5,
+            "数量": 5,
+            "商品编码": 5,
+            "商品名": 5,
+            "重量": 5
+          },
+          "subTableOperations": {},
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core"
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "会计"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.CreateRecordBindingConfig, Forguncy.RbacPermission.Core",
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.CreateRecordFilter, Forguncy.RbacPermission.Core"
+          }
+        },
+        "dataPermissionType": 1,
+        "roleNames": [
+          "FGC_LoginUser"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.RowBindingConfig, Forguncy.RbacPermission.Core",
+          "operationTypes": 13,
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.RowFilter, Forguncy.RbacPermission.Core"
+          }
+        },
+        "dataPermissionType": 2,
+        "roleNames": [
+          "Administrator"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.RowBindingConfig, Forguncy.RbacPermission.Core",
+          "operationTypes": 5,
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.RowFilter, Forguncy.RbacPermission.Core",
+            "filterType": 1
+          }
+        },
+        "dataPermissionType": 2,
+        "roleNames": [
+          "FGC_LoginUser"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.RowBindingConfig, Forguncy.RbacPermission.Core",
+          "operationTypes": 1,
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.RowFilter, Forguncy.RbacPermission.Core",
+            "filterType": 2
+          }
+        },
+        "dataPermissionType": 2,
+        "roleNames": [
+          "FGC_LoginUser"
+        ]
+      }
+    ]
+  },
+  "Columns": [
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
+      "Unique": true,
+      "AutoIncrement": true,
+      "DatabaseColumnType": "System.Int64",
+      "MaxLength": -1,
+      "Name": "ID",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Double",
+      "Name": "发货日期",
+      "ColumnType": "System.DateTime, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "Name": "帐户",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "Name": "商品名",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "Name": "数量",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "Name": "商品编码",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "Name": "国际物流单号",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Double",
+      "Name": "国际运费",
+      "ColumnType": "System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "Name": "FBA编号",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "Name": "FBA仓库地址",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Double",
+      "Name": "重量",
+      "ColumnType": "System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "Name": "尺寸",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Double",
+      "Name": "到日本日期",
+      "ColumnType": "System.DateTime, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "Name": "日本代发运单号",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Double",
+      "Name": "日本转运运费",
+      "ColumnType": "System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Double",
+      "Name": "FBA到货时间",
+      "ColumnType": "System.DateTime, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Double",
+      "Name": "佣金费用",
+      "ColumnType": "System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "Name": "结算与否",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "Name": "转运人员",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Double",
+      "Name": "结算总金额",
+      "ColumnType": "System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Double",
+      "Name": "税金",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Name": "维修费用",
+      "ColumnType": "System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Name": "业务类别",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Name": "免费保管截止日期",
+      "ColumnType": "System.DateTime, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Name": "是否处理完成",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Name": "库存保管费",
+      "ColumnType": "System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.UserExtraBingingColumnSaveData, ServerDesignerCommon",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+      "Name": "FGC_Creator"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.DateExtraBingingColumnSaveData, ServerDesignerCommon",
+      "ColumnType": "System.DateTime, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+      "Name": "FGC_CreateDate"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.UserExtraBingingColumnSaveData, ServerDesignerCommon",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+      "Name": "FGC_LastModifier"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.DateExtraBingingColumnSaveData, ServerDesignerCommon",
+      "ColumnType": "System.DateTime, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+      "Name": "FGC_LastModifyDate"
+    }
+  ],
+  "PrimaryKey": [
+    "ID"
+  ],
+  "Relations": [],
+  "Indexes": []
+}

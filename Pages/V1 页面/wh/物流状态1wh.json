@@ -1,0 +1,173 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 55.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      }
+    },
+    "Count": 42
+  },
+  "Cols": {
+    "Count": 60
+  },
+  "Values": {
+    "0,13": "物流状态1 列表"
+  },
+  "AttachInfos": {
+    "2,13": {
+      "CellType": {
+        "$type": "Forguncy.CurrentUserCellType, ServerDesignerCommon",
+        "CellCustomValue": "%CurrentUser%",
+        "ShowCircleUserPicture": true,
+        "NavigateSettingWhenLogout": {
+          "NavigateWhenLogoutMode": 1
+        }
+      }
+    },
+    "5,6": {
+      "ListViewInfo": {
+        "Name": "表格1",
+        "TableName": "物流状态1",
+        "RowIndex": 5,
+        "ColumnIndex": 6,
+        "RowCount": 32,
+        "ColumnCount": 30,
+        "TopCondition": null,
+        "ListViewStyleName": "样式1",
+        "ShowColumnHeaderInDesigner": true,
+        "IsRowHeaderVisible": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "AllowEditInListview": true,
+        "AllowAddNewRow": true,
+        "ShowDeleteButton": true,
+        "AllowDragFill": true,
+        "RowHeaderContextMenu": {
+          "ContextMenuItems": [
+            {
+              "Text": "插入",
+              "OperationType": 2
+            },
+            {
+              "Text": "删除",
+              "Visible": true,
+              "OperationType": 3
+            },
+            {
+              "Text": "复制并插入",
+              "OperationType": 4
+            }
+          ]
+        },
+        "ColumnOperation": 2
+      }
+    },
+    "6,8": {
+      "BindingInfo": {
+        "TableName": "物流状态1",
+        "ColumnName": "状态码",
+        "GUID": "3b6bc627-0ce5-4911-a1b9-a0502906952f"
+      }
+    },
+    "6,17": {
+      "BindingInfo": {
+        "TableName": "物流状态1",
+        "ColumnName": "物流状态",
+        "GUID": "7d973b82-a2e8-481c-9c50-26686a196e38"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontSize": 30.0,
+        "HorizontalAlignment": 0,
+        "VerticalAlignment": 0
+      },
+      {
+        "FontSize": 15.0,
+        "HorizontalAlignment": 1,
+        "VerticalAlignment": 0
+      },
+      {
+        "Foreground": 2,
+        "Underline": true
+      },
+      {
+        "FontFamily": 3
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Center",
+        "Right",
+        "Blue",
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "0,13": 0,
+      "2,13": 1,
+      "4,6": 2,
+      "6,17": 3
+    },
+    "SheetStyle": {
+      "FontFamily": 3
+    }
+  },
+  "Spans": [
+    "2,13,1,7",
+    "6,6,1,2",
+    "7,6,30,30",
+    "6,8,1,9",
+    "6,17,1,12",
+    "5,6,1,2",
+    "5,8,1,9",
+    "5,17,1,12"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//ZkTxzq9t01ojJt8DS0AGFl9efwqvhpBwa/aKx/osxh/mMoTSUT2OsvTcDcIyaqimJ1vksNzfjrh+l9lX3rqdkfC8LLkCYbmh1T2a1EnfkMEB/EAnscaWHlx6GaRIomuMgRHR1qiMS0+rICaRbHCbEQtR39UlD/ZX3TnlfnZ56QMUwKrgbzuErgoiueBp4z/1WFjrJaQqaKD5Btn0SiYRiysKyPBxIHVnkfjcVwt+bL3IfAxibJ6YB+joqkAqikAE9jwGIWW8W24QC3ExPh++b8kgOt+AyxOj1JGBOeojvvXiWi62FyF40kv57Z8IT4GzpCngCuJFkFn8d3l3jViFjY33PIeT/+Fd1sVrFXsxQ7LOV46ZceNslEwyEh/R2XTh4EELssxzB/S9VnlYoBWD4Zzvx+BJvkhoRMCT1KEqT50PSyJjrUIiiFeEYf25kkTFw9jpMXvqetxiaF7sWvU8Sv311UNblhZl7Bgc31kaLcpFiJNe75AgVjDOFmDnxfHysehCLZDz62xGwz12tN3xvAyZgpbInaYYlCOiFGwdVWesWWqNulCqQkzDXOFpjiTmeSEpAN9YgCFuZetNjVjyNp6g6DeZwW9hyW07LquOAW+ngTVKw9tjNa8ez7UyzhttFg3wvz2fMM8JqkXO+0hx4QAajRRhgphSNMwJEB8+gEvQCZfsvWygAzK+mMHRSnpSvRjYyitbohTSc9BavVaWQWiU2gfUXn8jJfJhwJxViEcEQ/Mqr5ThhGDL5VmfRfL55nNLAi+q3yknzQfopcFxAeQZ9rAtfBPjqRlcmorQ9fHtqEFSy59+nqSL6/EuNbWaSPWIoXtAoBknhqRkfKnx1kJKqQaYUVMYFE5CUr1nopI82buD7Y95g7zzW2MwrjYiRv4aG3t3jV0YL1CThN9big==|920

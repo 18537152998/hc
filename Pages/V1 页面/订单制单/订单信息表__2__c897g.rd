@@ -1,0 +1,30 @@
+{
+  "PageType": 0,
+  "ColumnCount": 97,
+  "RowCount": 38,
+  "Formulas": {
+    "5,80": "IF(BX6=\"\",CA6*0.85-BN6,CB6-BN6)",
+    "31,41": "AU32",
+    "31,23": "BB32",
+    "5,84": "IF(BX6=\"\",\"\",CC6/(CA6*0.85))",
+    "31,46": "TODAY()",
+    "5,65": "AM6*BQ6",
+    "5,72": "AM6*CR6",
+    "31,51": "BA32",
+    "36,48": "COUNTA(K32)",
+    "5,91": "IF(RIGHT(AR6,1)=\"Z\",RIGHT(AR6,2),\"\")",
+    "30,64": "IF(ODATA(\"正报信息表?$select=供应商全称&$filter=识别码 eq \"&IF(ISBLANK(BK31),\"null\",\"'\"&BK31&\"'\"))=0,\"\",ODATA(\"正报信息表?$select=供应商全称&$filter=识别码 eq \"&IF(ISBLANK(BK31),\"null\",\"'\"&BK31&\"'\")))",
+    "31,64": "IF(ODATA(\"正报信息表?$select=订货票型&$filter=识别码 eq \"&IF(ISBLANK(BK31),\"null\",\"'\"&BK31&\"'\"))=0,\"\",ODATA(\"正报信息表?$select=订货票型&$filter=识别码 eq \"&IF(ISBLANK(BK31),\"null\",\"'\"&BK31&\"'\")))",
+    "32,64": "IF(ODATA(\"正报信息表?$select=开票品名&$filter=识别码 eq \"&IF(ISBLANK(BK31),\"null\",\"'\"&BK31&\"'\"))=0,\"\",ODATA(\"正报信息表?$select=开票品名&$filter=识别码 eq \"&IF(ISBLANK(BK31),\"null\",\"'\"&BK31&\"'\")))",
+    "33,64": "IF(ODATA(\"正报信息表?$select=开票大类&$filter=识别码 eq \"&IF(ISBLANK(BK31),\"null\",\"'\"&BK31&\"'\"))=0,\"\",ODATA(\"正报信息表?$select=开票大类&$filter=识别码 eq \"&IF(ISBLANK(BK31),\"null\",\"'\"&BK31&\"'\")))",
+    "34,64": "IF(ODATA(\"正报信息表?$select=发票单位&$filter=识别码 eq \"&IF(ISBLANK(BK31),\"null\",\"'\"&BK31&\"'\"))=0,\"\",ODATA(\"正报信息表?$select=发票单位&$filter=识别码 eq \"&IF(ISBLANK(BK31),\"null\",\"'\"&BK31&\"'\")))",
+    "35,64": "IF(ODATA(\"正报信息表?$select=型号&$filter=识别码 eq \"&IF(ISBLANK(BK31),\"null\",\"'\"&BK31&\"'\"))=0,\"\",ODATA(\"正报信息表?$select=型号&$filter=识别码 eq \"&IF(ISBLANK(BK31),\"null\",\"'\"&BK31&\"'\")))",
+    "31,13": "IFERROR($BM$31,\"\")",
+    "31,14": "IFERROR($BM$32,\"\")",
+    "31,15": "IFERROR($BM$33,\"\")",
+    "31,16": "IFERROR($BM$34,\"\")",
+    "31,17": "IFERROR($BM$35,\"\")",
+    "31,21": "IFERROR($BM$36,\"\")",
+    "31,22": "BD32"
+  }
+}

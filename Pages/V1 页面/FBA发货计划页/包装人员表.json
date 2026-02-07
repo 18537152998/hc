@@ -1,0 +1,745 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 40.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "22": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      }
+    },
+    "Count": 23
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 3.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 62.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 2.0
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 36.0
+        }
+      },
+      "15": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 82.0
+        }
+      },
+      "16": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 75.0
+        }
+      },
+      "17": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 84.0
+        }
+      },
+      "18": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 71.0
+        }
+      },
+      "19": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 71.0
+        }
+      },
+      "20": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 89.0
+        }
+      },
+      "21": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      }
+    },
+    "Count": 22
+  },
+  "Values": {
+    "1,12": "负责人"
+  },
+  "AttachInfos": {
+    "1,1": {
+      "ListViewInfo": {
+        "Name": "表格1",
+        "TableName": "包装账户对应表",
+        "RowIndex": 1,
+        "ColumnIndex": 1,
+        "RowCount": 21,
+        "ColumnCount": 21,
+        "TopCondition": null,
+        "ListViewStyleName": "样式4",
+        "ShowColumnHeaderInDesigner": true,
+        "IsRowHeaderVisible": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "AllowEditInListview": true,
+        "AllowAddNewRow": true,
+        "RowHeaderContextMenu": {
+          "ContextMenuItems": [
+            {
+              "Text": "插入",
+              "Visible": true,
+              "OperationType": 2
+            },
+            {
+              "Text": "删除",
+              "Visible": true,
+              "OperationType": 3
+            },
+            {
+              "Text": "复制并插入",
+              "OperationType": 4
+            }
+          ]
+        },
+        "ColumnOperation": 2
+      }
+    },
+    "2,1": {
+      "NameUsedInJavaScript": "ID"
+    },
+    "2,2": {
+      "NameUsedInJavaScript": "平台",
+      "BindingInfo": {
+        "TableName": "包装账户对应表",
+        "ColumnName": "平台",
+        "GUID": "38858d36-fa48-4644-8a07-d9fd5a40c413"
+      }
+    },
+    "2,6": {
+      "NameUsedInJavaScript": "包装账户",
+      "BindingInfo": {
+        "TableName": "包装账户对应表",
+        "ColumnName": "包装账户",
+        "GUID": "90ebad0e-6e58-44f3-a35d-79b0a13ba14a"
+      }
+    },
+    "2,10": {
+      "NameUsedInJavaScript": "类别",
+      "BindingInfo": {
+        "TableName": "包装账户对应表",
+        "ColumnName": "类别",
+        "GUID": "ec9e2c7f-5cdf-44a9-b26a-803d6fc540b7"
+      }
+    },
+    "2,11": {
+      "BindingInfo": {
+        "TableName": "包装账户对应表",
+        "ColumnName": "包装账户识别码",
+        "GUID": "f16d292d-dcbb-4aeb-b545-85e21306fda9"
+      }
+    },
+    "2,12": {
+      "NameUsedInJavaScript": "负责人",
+      "BindingInfo": {
+        "TableName": "包装账户对应表",
+        "ColumnName": "包装负责人",
+        "GUID": "8423134f-647a-458e-be2f-bc4371afae50"
+      }
+    },
+    "2,15": {
+      "NameUsedInJavaScript": "包装人员",
+      "BindingInfo": {
+        "TableName": "包装账户对应表",
+        "ColumnName": "包装1号",
+        "GUID": "5fc5bab1-24d1-48a5-a7af-f3a8e91a676f"
+      }
+    },
+    "2,16": {
+      "NameUsedInJavaScript": "包装2号",
+      "BindingInfo": {
+        "TableName": "包装账户对应表",
+        "ColumnName": "包装2号",
+        "GUID": "cfd00d12-3fa8-42ed-b6da-86754bc7bf6a"
+      }
+    },
+    "2,17": {
+      "NameUsedInJavaScript": "包装3号",
+      "BindingInfo": {
+        "TableName": "包装账户对应表",
+        "ColumnName": "包装3号",
+        "GUID": "fe488fe6-1929-4832-99dc-e45b8a2fe8b8"
+      }
+    },
+    "2,18": {
+      "NameUsedInJavaScript": "包装4号",
+      "BindingInfo": {
+        "TableName": "包装账户对应表",
+        "ColumnName": "包装4号",
+        "GUID": "4e71f08e-0bb9-42aa-9ffc-c61f9c55b36f"
+      }
+    },
+    "2,19": {
+      "NameUsedInJavaScript": "包装5号",
+      "BindingInfo": {
+        "TableName": "包装账户对应表",
+        "ColumnName": "包装5号",
+        "GUID": "d32a0487-e959-4fca-9102-ed1a3df4a23e"
+      }
+    },
+    "2,20": {
+      "NameUsedInJavaScript": "包装签名表",
+      "BindingInfo": {
+        "TableName": "包装账户对应表",
+        "ColumnName": "包装签名表",
+        "GUID": "d80732af-ad8e-4f29-8cac-6489243b6081"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "BorderBottom": null,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "BorderTop": 0
+      },
+      {
+        "BorderTop": 0
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "FontWeight": 2,
+        "BorderTop": 0
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "FontWeight": 2,
+        "BorderBottom": null,
+        "BorderTop": 0,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 16.0
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": 0
+      },
+      {
+        "BorderBottom": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": 0
+      },
+      {
+        "FontSize": 16.0,
+        "FontWeight": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontSize": 16.0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "DarkGray",
+        "Bold"
+      ],
+      "Borders": [
+        {
+          "Color": 1
+        }
+      ]
+    },
+    "CellStyles": {
+      "1,1": 0,
+      "1,2": 1,
+      "1,3": 2,
+      "1,4": 2,
+      "1,5": 2,
+      "1,6": 3,
+      "1,7": 2,
+      "1,8": 2,
+      "1,9": 2,
+      "1,10": 4,
+      "1,11": 4,
+      "1,12": 3,
+      "1,13": 2,
+      "1,14": 2,
+      "1,15": 4,
+      "1,16": 4,
+      "1,17": 4,
+      "1,18": 4,
+      "1,19": 4,
+      "1,20": 4,
+      "2,1": 5,
+      "2,2": 6,
+      "2,3": 7,
+      "2,4": 7,
+      "2,5": 7,
+      "2,6": 8,
+      "2,7": 7,
+      "2,8": 7,
+      "2,9": 7,
+      "2,10": 9,
+      "2,11": 9,
+      "2,12": 10,
+      "2,15": 9,
+      "2,16": 9,
+      "2,17": 9,
+      "2,18": 9,
+      "2,19": 9,
+      "2,20": 9,
+      "3,1": 5,
+      "3,2": 11,
+      "3,3": 11,
+      "3,4": 11,
+      "3,5": 11,
+      "3,6": 11,
+      "3,7": 11,
+      "3,8": 11,
+      "3,9": 11,
+      "3,10": 11,
+      "3,11": 11,
+      "3,12": 11,
+      "3,13": 11,
+      "3,14": 11,
+      "3,15": 11,
+      "3,16": 11,
+      "3,17": 11,
+      "3,18": 11,
+      "3,19": 11,
+      "3,20": 12,
+      "3,21": 13,
+      "4,1": 5,
+      "4,2": 11,
+      "4,3": 11,
+      "4,4": 11,
+      "4,5": 11,
+      "4,6": 11,
+      "4,7": 11,
+      "4,8": 11,
+      "4,9": 11,
+      "4,10": 11,
+      "4,11": 11,
+      "4,12": 11,
+      "4,13": 11,
+      "4,14": 11,
+      "4,15": 11,
+      "4,16": 11,
+      "4,17": 11,
+      "4,18": 11,
+      "4,19": 11,
+      "4,20": 12,
+      "4,21": 14,
+      "5,1": 5,
+      "5,2": 11,
+      "5,3": 11,
+      "5,4": 11,
+      "5,5": 11,
+      "5,6": 11,
+      "5,7": 11,
+      "5,8": 11,
+      "5,9": 11,
+      "5,10": 11,
+      "5,11": 11,
+      "5,12": 11,
+      "5,13": 11,
+      "5,14": 11,
+      "5,15": 11,
+      "5,16": 11,
+      "5,17": 11,
+      "5,18": 11,
+      "5,19": 11,
+      "5,20": 12,
+      "5,21": 14,
+      "6,1": 5,
+      "6,2": 11,
+      "6,3": 11,
+      "6,4": 11,
+      "6,5": 11,
+      "6,6": 11,
+      "6,7": 11,
+      "6,8": 11,
+      "6,9": 11,
+      "6,10": 11,
+      "6,11": 11,
+      "6,12": 11,
+      "6,13": 11,
+      "6,14": 11,
+      "6,15": 11,
+      "6,16": 11,
+      "6,17": 11,
+      "6,18": 11,
+      "6,19": 11,
+      "6,20": 12,
+      "6,21": 14,
+      "7,1": 5,
+      "7,2": 11,
+      "7,3": 11,
+      "7,4": 11,
+      "7,5": 11,
+      "7,6": 11,
+      "7,7": 11,
+      "7,8": 11,
+      "7,9": 11,
+      "7,10": 11,
+      "7,11": 11,
+      "7,12": 11,
+      "7,13": 11,
+      "7,14": 11,
+      "7,15": 11,
+      "7,16": 11,
+      "7,17": 11,
+      "7,18": 11,
+      "7,19": 11,
+      "7,20": 12,
+      "7,21": 14,
+      "8,1": 5,
+      "8,2": 11,
+      "8,3": 11,
+      "8,4": 11,
+      "8,5": 11,
+      "8,6": 11,
+      "8,7": 11,
+      "8,8": 11,
+      "8,9": 11,
+      "8,10": 11,
+      "8,11": 11,
+      "8,12": 11,
+      "8,13": 11,
+      "8,14": 11,
+      "8,15": 11,
+      "8,16": 11,
+      "8,17": 11,
+      "8,18": 11,
+      "8,19": 11,
+      "8,20": 12,
+      "8,21": 14,
+      "9,1": 15,
+      "9,20": 16,
+      "9,21": 14,
+      "10,1": 15,
+      "10,20": 16,
+      "10,21": 14,
+      "11,1": 15,
+      "11,20": 16,
+      "11,21": 14,
+      "12,1": 15,
+      "12,20": 16,
+      "12,21": 14,
+      "13,1": 15,
+      "13,20": 16,
+      "13,21": 14,
+      "14,1": 15,
+      "14,20": 16,
+      "14,21": 14,
+      "15,1": 15,
+      "15,20": 16,
+      "15,21": 14,
+      "16,1": 5,
+      "16,2": 11,
+      "16,3": 11,
+      "16,4": 11,
+      "16,5": 11,
+      "16,6": 11,
+      "16,7": 11,
+      "16,8": 11,
+      "16,9": 11,
+      "16,10": 11,
+      "16,11": 11,
+      "16,12": 11,
+      "16,13": 11,
+      "16,14": 11,
+      "16,15": 11,
+      "16,16": 11,
+      "16,17": 11,
+      "16,18": 11,
+      "16,19": 11,
+      "16,20": 12,
+      "16,21": 14,
+      "17,1": 5,
+      "17,2": 11,
+      "17,3": 11,
+      "17,4": 11,
+      "17,5": 11,
+      "17,6": 11,
+      "17,7": 11,
+      "17,8": 11,
+      "17,9": 11,
+      "17,10": 11,
+      "17,11": 11,
+      "17,12": 11,
+      "17,13": 11,
+      "17,14": 11,
+      "17,15": 11,
+      "17,16": 11,
+      "17,17": 11,
+      "17,18": 11,
+      "17,19": 11,
+      "17,20": 12,
+      "17,21": 14,
+      "18,1": 5,
+      "18,2": 11,
+      "18,3": 11,
+      "18,4": 11,
+      "18,5": 11,
+      "18,6": 11,
+      "18,7": 11,
+      "18,8": 11,
+      "18,9": 11,
+      "18,10": 11,
+      "18,11": 11,
+      "18,12": 11,
+      "18,13": 11,
+      "18,14": 11,
+      "18,15": 11,
+      "18,16": 11,
+      "18,17": 11,
+      "18,18": 11,
+      "18,19": 11,
+      "18,20": 12,
+      "18,21": 14,
+      "19,1": 5,
+      "19,2": 11,
+      "19,3": 11,
+      "19,4": 11,
+      "19,5": 11,
+      "19,6": 11,
+      "19,7": 11,
+      "19,8": 11,
+      "19,9": 11,
+      "19,10": 11,
+      "19,11": 11,
+      "19,12": 11,
+      "19,13": 11,
+      "19,14": 11,
+      "19,15": 11,
+      "19,16": 11,
+      "19,17": 11,
+      "19,18": 11,
+      "19,19": 11,
+      "19,20": 12,
+      "19,21": 14,
+      "20,1": 5,
+      "20,2": 11,
+      "20,3": 11,
+      "20,4": 11,
+      "20,5": 11,
+      "20,6": 11,
+      "20,7": 11,
+      "20,8": 11,
+      "20,9": 11,
+      "20,10": 11,
+      "20,11": 11,
+      "20,12": 11,
+      "20,13": 11,
+      "20,14": 11,
+      "20,15": 11,
+      "20,16": 11,
+      "20,17": 11,
+      "20,18": 11,
+      "20,19": 11,
+      "20,20": 12,
+      "20,21": 14,
+      "21,1": 17,
+      "21,2": 18,
+      "21,3": 18,
+      "21,4": 18,
+      "21,5": 18,
+      "21,6": 18,
+      "21,7": 18,
+      "21,8": 18,
+      "21,9": 18,
+      "21,10": 18,
+      "21,11": 18,
+      "21,12": 18,
+      "21,13": 18,
+      "21,14": 18,
+      "21,15": 18,
+      "21,16": 18,
+      "21,17": 18,
+      "21,18": 18,
+      "21,19": 18,
+      "21,20": 19,
+      "21,21": 14
+    },
+    "RowStyles": {
+      "1": 20,
+      "2": 21
+    },
+    "SheetStyle": {
+      "FontFamily": 0,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
+    }
+  },
+  "Spans": [
+    "3,1,19,21",
+    "2,2,1,4",
+    "2,6,1,4",
+    "2,12,1,3",
+    "1,2,1,4",
+    "1,6,1,4",
+    "1,12,1,3"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//lgw3vXy9SRoWSpnW+m7LJqHZMjECMRCMEpBvLIHOXwevNYYQGG/COVDp6V9JgKmQPrX95pejEyquVu9ZdnUwUR90xZPsvQKDzJS1hXV6efhKpyui5RLG5g9KPw3TmRCABoorVNsJ/dCLva1J6Gr5wXwXGyXtJwSEmFQewpyRVz27hPWHZepgKdhc7AIWCU/1gsCz/X4gBUyIjhalEGd/xOcCrkYagEYsE4CuUYt5rFFPiRAtamd4roMfd9FgRdaxwrEOOR548aOVZZnjQmWlsyywD/vzZp3ILZHKYnYW5VLtBxCsn2jD9E3YoCae9mNvU3MW33AXCAckZcEAlryz3qtvU0ynZN5HRHHVLKEmouhclpHA0RBRgPEZ7WyrlXJ6j8XQTbD0F7m8F8ZQpE6B7Y8OWmPr6PYemVk9C8Tl7QEtwpFn1glTTGtU/3JTItDMZLD3hGVRyjNnc3JYsFXTuIIehYjPPzisjdRcbPvEk24st9ILEu2D8NlWdRHBTyq+m4q5xELeI5bUnvK6ezhxR7UiQxjHBSRbwbTAC1Ro/gome0b/qTmDXsVitDsZG/0t0bQOFHb6EMciHa+fHqGI6DVahOAa+g2zb1baq5PcXHoAMQwjM2Rw0PSal8E0USKGrresyt1jnru5i3G326qsQGgEsMO7UPp36Ztzrbidzn/kz27uR9eNbNh7E0GLLXb4xoCd9wZq0iU96WwMGq951YX+WuT70EgSeTL6boJNU8hnIxM8NG/HU/hBiCcT4fBsKSjsm5eT6kPjnd8/6TT2PipuCxKPN0rZBaxby4hd0ENvYQ5TfGyV1JfNamKuRQVgGb9Y79PQRMALwBQRZGlyWNqoRhelodNGsLeFKzpmQ++TDJV49fWxzq+8Tgvwx5DM7pSovojqUMsvAeiVJ4Volw==|920

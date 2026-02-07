@@ -1,0 +1,251 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 40.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 48.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      }
+    },
+    "Count": 22,
+    "DefaultSize": 32.0
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "21": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 32.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      }
+    },
+    "Count": 23,
+    "DefaultSize": 32.0
+  },
+  "Values": {
+    "2,20": "删除"
+  },
+  "AttachInfos": {
+    "1,1": {
+      "ListViewInfo": {
+        "Name": "表格1",
+        "TableName": "日期范围交易字典",
+        "RowIndex": 1,
+        "ColumnIndex": 1,
+        "RowCount": 20,
+        "ColumnCount": 21,
+        "TopCondition": null,
+        "ListViewStyleName": "样式1",
+        "ShowColumnHeaderInDesigner": true,
+        "IsRowHeaderVisible": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "AllowEditInListview": true,
+        "AllowAddNewRow": true,
+        "ShowDeleteButton": true,
+        "ColumnOperation": 2
+      }
+    },
+    "2,2": {
+      "NameUsedInJavaScript": "type",
+      "BindingInfo": {
+        "TableName": "日期范围交易字典",
+        "ColumnName": "type",
+        "GUID": "149bb554-b46c-472e-8345-b2ac1681f15a"
+      }
+    },
+    "2,7": {
+      "NameUsedInJavaScript": "交易类型",
+      "BindingInfo": {
+        "TableName": "日期范围交易字典",
+        "ColumnName": "交易类型",
+        "GUID": "82e83d39-8b2d-41d7-bb52-dee6dd131f3d"
+      }
+    },
+    "2,11": {
+      "NameUsedInJavaScript": "description",
+      "BindingInfo": {
+        "TableName": "日期范围交易字典",
+        "ColumnName": "description",
+        "GUID": "59f293b9-687f-4830-918f-a2dac2dcea04"
+      }
+    },
+    "2,16": {
+      "NameUsedInJavaScript": "描述",
+      "BindingInfo": {
+        "TableName": "日期范围交易字典",
+        "ColumnName": "描述",
+        "GUID": "9843525f-869f-4319-90a9-b68fcf7adca1"
+      }
+    },
+    "2,20": {
+      "NameUsedInJavaScript": "删除",
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.DeleteRecordCommand, ServerDesignerCommon",
+            "ConfirmText": "您确定要删除吗？",
+            "BreakpointIdentity": "65e2f0b2-f0f8-4f52-ae7f-189b59bb7533"
+          }
+        ],
+        "Text": "删除"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Background": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 0,
+        "FontFamily": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "HorizontalAlignment": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "HorizontalAlignment": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Foreground": 3,
+        "Underline": true,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "HorizontalAlignment": 4,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Accent 4 0",
+        "Body",
+        "Center",
+        "Accent 1",
+        "Right"
+      ]
+    },
+    "CellStyles": {
+      "1,2": 0,
+      "1,7": 1,
+      "1,8": 2,
+      "1,10": 2,
+      "1,11": 2,
+      "1,14": 2,
+      "1,15": 2,
+      "1,16": 2,
+      "1,18": 2,
+      "1,19": 2,
+      "2,2": 3,
+      "2,7": 4,
+      "2,8": 2,
+      "2,9": 2,
+      "2,10": 2,
+      "2,11": 4,
+      "2,12": 2,
+      "2,13": 2,
+      "2,14": 2,
+      "2,15": 2,
+      "2,16": 4,
+      "2,17": 2,
+      "2,18": 2,
+      "2,19": 2,
+      "2,20": 5,
+      "21,1": 6
+    },
+    "SheetStyle": {
+      "FontFamily": 1,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
+    }
+  },
+  "Spans": [
+    "1,2,1,5",
+    "1,7,1,4",
+    "1,11,1,5",
+    "1,16,1,4",
+    "1,20,1,2",
+    "2,2,1,5",
+    "2,7,1,4",
+    "2,11,1,5",
+    "2,16,1,4",
+    "2,20,1,2",
+    "3,1,18,21",
+    "21,1,1,21"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//ERzjfNPhY1OJfaafx7N5BKBHgC586nFiX0q3/v5iLI0bEpU4zErNocFXifKB8MaISZzNZ0+ZWunWfzAnKOEqJ7VXcuPnz5ZlBe5JsSim2ZZfHBquaKKmb8oMZGbDiyjVbbDL6IzgUx3w88FbQ1b86NVPxt14agBgGnUlzAuuqduWGNmQKGde4GQcfoMn6U8BlRicmxdc6FyMGCBFVwagVEIlNJ4dNUVTXf6PrwwwKI5bu/YQRvvAeJwUg1mpC8MJywLBY09oBqiDVrvVf6o8oz+PNrtJMwxK6cIWulh4+PopF0v31P7vTY98tn6KokmhfwtbuAFyFR6V+5zugkC0tHxtwF2vnv4prSJCAqVk1APYO8IsYzMS4XC+0hn315mofwMSN3TT40tBDzTapn4BpLlZygDKz3wI6fbj8EIR6yov7kNCLWFcUF9sz2nV/9h2vTm7xzEGNj8rDsn2OX5lCBcFAW9H9JAYmo7MDmYow9rvnwX4cBkeFU+WVZBA1P2gcoM02X9PdfXxMrPDzMdUGrS6ScdFluCLNEjJqgByAVOI/i0/48UMQvYKoQo+pQci3goArf32EdKDjAeUbjHqO+LX5p5YqdgpOAzAhde+ffC/K1eE6jXfPMw3pq3k6x3BORWjOXjNBBMyfnOf+jhfHUTW9nMzt22xPpP3is70WRKp51aayifdW8c/VQnzY4ktjtc5dacdJOatGmG+o6h9a4P+TVs+PgwJZ0hrwmsdFkEhmxd5Y5ZtoTmwzolpeALhgXjszSyByfi81qmXti3QIbRIs4CNNOsCzTzxuGDzcuAU3ItQ2HREa0GAEKEy5rjTNr+c1DJYd7QZ+7BhK5zAYP92x1BFCS9gUsq68DWntZjRfCdiUljPfyByQBIWjnVwTGDDaRlzgBQYJPwWBgZf0w==|920

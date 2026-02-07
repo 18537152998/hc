@@ -1,0 +1,53 @@
+{
+  "PageType": 0,
+  "ColumnCount": 106,
+  "RowCount": 42,
+  "Formulas": {
+    "7,4": "IF(X8=\"\",\"\",IFERROR(ODATA(\"库存表?$select=商品名&$filter=账户 eq \"&IF(ISBLANK($CW$7),\"null\",\"'\"&$CW$7&\"'\")&\" and 站点 eq \"&IF(ISBLANK($CW$8),\"null\",\"'\"&$CW$8&\"'\")&\" and SKU eq \"&IF(ISBLANK(M8),\"null\",\"'\"&M8&\"'\")),\"\"))",
+    "7,19": "$CW$7",
+    "7,20": "$CW$8",
+    "7,21": "T8&U8&M8",
+    "7,23": "ODATA(\"库存表?$select=ASIN&$filter=账户 eq \"&IF(ISBLANK($CW$7),\"null\",\"'\"&$CW$7&\"'\")&\" and 站点 eq \"&IF(ISBLANK($CW$8),\"null\",\"'\"&$CW$8&\"'\")&\" and SKU eq \"&IF(ISBLANK(M8),\"null\",\"'\"&M8&\"'\"))",
+    "7,39": "AM8",
+    "7,58": "IFERROR(MAX(AU8:AZ8)+(MEDIAN(AU8:AZ8)+MIN(AU8:AZ8))*2,\"\")",
+    "30,100": "SUM(BS8)",
+    "7,89": "IF(CK8=1,\"已出库\",\"未出库\")",
+    "0,97": "IFERROR(ODATA(\"库存表?$select=库存&$filter=ASIN eq \"&IF(ISBLANK(CP1),\"null\",\"'\"&CP1&\"'\")),\"\")",
+    "7,78": "IF(AF8=\"\",BJ8,BJ8*AF8)",
+    "18,100": "SUM(CA8)",
+    "7,77": "$CW$15",
+    "7,70": "AU8*AW8*AY8/1000000*AF8",
+    "28,100": "SUM(BY8)",
+    "11,100": "SUM(AS8)",
+    "7,54": "AW8*0.3937",
+    "7,67": "BM8*2.20462",
+    "7,52": "AU8*0.3937",
+    "7,76": "AL8*AQ8",
+    "7,80": "IF(AF8=\"\",BP8,BP8*AF8)",
+    "22,100": "SUM(CC8)",
+    "5,100": "TEXTJOIN(\",\",TRUE,CE8)",
+    "7,82": "IFERROR(IF(CG8=\"\",CF8,CG8),\"\")",
+    "7,61": "AU8*AW8*AY8/$CW$16",
+    "8,100": "SUM(AF8)",
+    "33,11": "B34-SUMIF(X8,\"=\"&F34,AQ8)",
+    "15,100": "IF(CW15=\"\",\"\",IFERROR(ODATA(\"货代?$select=泡重系数&$filter=货代 eq \"&IF(ISBLANK(CW15),\"null\",\"'\"&CW15&\"'\")),\"\"))",
+    "7,56": "AY8*0.3937",
+    "7,83": "IFERROR(ODATA(\"采购记录表?$select=采购时票型&$filter=采购编号 eq \"&IF(ISBLANK(AH8),\"null\",\"'\"&AH8&\"'\")),\"\")",
+    "32,63": "TEXTJOIN(\",\",TRUE,X8)",
+    "7,37": "IFERROR(ODATA(\"采购记录表?$select=单价成本&$filter=采购编号 eq \"&IF(ISBLANK(AH8),\"null\",\"'\"&AH8&\"'\")&\"&$orderby=单价成本 desc\"),\"\")",
+    "7,79": "IF(AF8=\"\",BM8,BM8*AF8)",
+    "20,100": "SUM(CB8)",
+    "17,100": "IF(CW15=\"\",\"\",IFERROR(ODATA(\"货代?$select=围长上限cm&$filter=货代 eq \"&IF(ISBLANK(CW15),\"null\",\"'\"&CW15&\"'\")),\"\"))",
+    "7,24": "IF(AU8=\"\",\"\",IF(AW8=\"\",\"\",IF(AY8=\"\",\"\",AU8&\"*\"&AW8&\"*\"&AY8)))",
+    "9,100": "SUM(AQ8)",
+    "7,38": "AL8",
+    "37,63": "TEXTJOIN(\",\",TRUE,V8)",
+    "7,34": "AH8"
+  },
+  "CustomNames": [
+    {
+      "Name": "zd",
+      "Formula": "FBA发货表详情表!$Y$8"
+    }
+  ]
+}

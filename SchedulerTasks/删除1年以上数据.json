@@ -1,0 +1,185 @@
+{
+  "Name": "删除1年以上数据",
+  "Description": "删除1年以上数据",
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.SaveLoad.MonthlyAndDaysOfMonthScheduleTriggerSaveData, ServerDesignerCommon",
+      "DaysOfMonth": [
+        5
+      ],
+      "Months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "StartDateTime": 45161.125,
+      "ScheduleRunInDebugServer": false
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+      "TableName": "订单信息表__2_",
+      "UpdateType": "delete",
+      "ShowConfirm": true,
+      "ConfirmText": "您确定要删除吗？",
+      "RowsToUpdate": 1,
+      "RowsToUpdateCondition": {
+        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+        "CompareType": 4,
+        "ColumnBindingInfo": {
+          "TableName": "订单信息表__2_",
+          "ColumnName": "订单日期",
+          "GUID": "bbbcb6f3-b184-4f04-9934-0edc2ab3a623"
+        },
+        "Value": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=TODAY()-365"
+        }
+      },
+      "BreakpointIdentity": "44a2c425-ff11-40a7-a391-728a463f2548"
+    },
+    {
+      "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+      "TableName": "FBA备货表",
+      "UpdateType": "delete",
+      "ShowConfirm": true,
+      "ConfirmText": "您确定要删除吗？",
+      "RowsToUpdate": 1,
+      "RowsToUpdateCondition": {
+        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+        "CompareType": 4,
+        "ColumnBindingInfo": {
+          "TableName": "FBA备货表",
+          "ColumnName": "日期",
+          "GUID": "f19d221f-4f76-41a0-866d-ce60cbf438d2"
+        },
+        "Value": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=TODAY()-365"
+        }
+      },
+      "BreakpointIdentity": "551888e8-c77d-47b1-b3a2-6ee1b46bd323"
+    },
+    {
+      "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+      "TableName": "FBA发货表3",
+      "UpdateType": "delete",
+      "ShowConfirm": true,
+      "ConfirmText": "您确定要删除吗？",
+      "RowsToUpdate": 1,
+      "RowsToUpdateCondition": {
+        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+        "CompareType": 4,
+        "ColumnBindingInfo": {
+          "TableName": "FBA发货表3",
+          "ColumnName": "日期",
+          "GUID": "95f09f5a-cebc-49e7-806f-1288818c5ecd"
+        },
+        "Value": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=TODAY()-365"
+        }
+      },
+      "BreakpointIdentity": "acffbb62-8bfb-43bc-b15f-90e648d267a3"
+    },
+    {
+      "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+      "TableName": "采购记录表",
+      "UpdateType": "delete",
+      "ShowConfirm": true,
+      "ConfirmText": "您确定要删除吗？",
+      "RowsToUpdate": 1,
+      "RowsToUpdateCondition": {
+        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+        "CompareType": 4,
+        "ColumnBindingInfo": {
+          "TableName": "采购记录表",
+          "ColumnName": "采购日期",
+          "GUID": "4e3c3422-aeba-43c1-95da-56b2379c79a9"
+        },
+        "Value": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=TODAY()-365"
+        }
+      },
+      "BreakpointIdentity": "e0d353b6-264f-40a5-9988-63a7f69d88b2"
+    },
+    {
+      "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+      "TableName": "物料采购表",
+      "UpdateType": "delete",
+      "ShowConfirm": true,
+      "ConfirmText": "您确定要删除吗？",
+      "RowsToUpdate": 1,
+      "RowsToUpdateCondition": {
+        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+        "CompareType": 4,
+        "ColumnBindingInfo": {
+          "TableName": "物料采购表",
+          "ColumnName": "日期",
+          "GUID": "8efaf867-d2cb-4412-8de2-73a8128e21d0"
+        },
+        "Value": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=TODAY()-365"
+        }
+      },
+      "BreakpointIdentity": "19836c4f-38e2-4dee-b7d8-f209055832db"
+    },
+    {
+      "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+      "TableName": "销量总表",
+      "UpdateType": "delete",
+      "ShowConfirm": true,
+      "ConfirmText": "您确定要删除吗？",
+      "RowsToUpdate": 1,
+      "RowsToUpdateCondition": {
+        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+        "CompareType": 4,
+        "ColumnBindingInfo": {
+          "TableName": "销量总表",
+          "ColumnName": "日期",
+          "GUID": "983a6c8b-7eac-41d9-a329-79e8eea17549"
+        },
+        "Value": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=TODAY()-90"
+        }
+      },
+      "BreakpointIdentity": "51d0790c-e448-47a7-aa56-b5b584a5b325"
+    },
+    {
+      "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+      "TableName": "运营利润提成表",
+      "UpdateType": "delete",
+      "ShowConfirm": true,
+      "ConfirmText": "您确定要删除吗？",
+      "RowsToUpdate": 1,
+      "RowsToUpdateCondition": {
+        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+        "CompareType": 4,
+        "ColumnBindingInfo": {
+          "TableName": "运营利润提成表",
+          "ColumnName": "日期",
+          "GUID": "5fe9d958-73c5-43e5-9ee4-09f41cc473c2"
+        },
+        "Value": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=TODAY()-90"
+        }
+      },
+      "BreakpointIdentity": "6e5f80f3-a45a-4a51-83a0-70cf9a642fc1"
+    }
+  ]
+}

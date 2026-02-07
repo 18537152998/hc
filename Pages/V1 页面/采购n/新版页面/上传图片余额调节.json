@@ -1,0 +1,224 @@
+{
+  "Rows": {
+    "Count": 27,
+    "DefaultSize": 10.0
+  },
+  "Cols": {
+    "Count": 30,
+    "DefaultSize": 10.0
+  },
+  "Values": {
+    "22,8": "确定"
+  },
+  "AttachInfos": {
+    "2,2": {
+      "BindingInfo": {
+        "TableName": "余额调节表",
+        "ColumnName": "凭证",
+        "GUID": "05087f98-3b3c-43e6-a89e-cf4fb668fb18",
+        "IsImagePath": true
+      },
+      "CellType": {
+        "$type": "Forguncy.UploadImageCellType, ServerDesignerCommon",
+        "UploadImageLimit": {
+          "IsCompressImage": true,
+          "MaxWidth": 1000.0,
+          "MaxHeight": 1000.0,
+          "AllowExtensions": ".art, .bmp, .cmx, .cod, .dib, .gif, .ico, .ief, .jfif, .jpe, .jpeg, .jpg, .pbm, .pgm, .png, .pnm, .pnz, .ppm, .ras, .rf, .rgb, .svg, .tif, .tiff, .wbmp, .xbm, .xpm, .xwd"
+        }
+      }
+    },
+    "22,8": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+            "TableName": "余额调节表",
+            "ShowConfirm": false,
+            "RowsToUpdate": 1,
+            "RowsToUpdateCondition": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "余额调节表",
+                "ColumnName": "ID",
+                "GUID": "cea8ce57-38a2-404a-80ef-90b41ee43d18"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=上传图片余额调节!A1"
+              }
+            },
+            "UpdateBindingValues": [
+              {
+                "BindingInfo": {
+                  "TableName": "余额调节表",
+                  "ColumnName": "凭证",
+                  "GUID": "ec2bf7b0-2cfa-4d9e-8abf-d8b9a3ba7446"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=上传图片余额调节!C3"
+                }
+              }
+            ],
+            "BreakpointIdentity": "e03e228a-c6df-4449-818b-a2cce087eaee"
+          },
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "PassValueBack": true,
+            "ReloadData": true,
+            "BreakpointIdentity": "bd5d0924-6475-465d-8d64-630019eac2b3"
+          }
+        ],
+        "Text": "确定",
+        "TemplateKey": "样式8"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Foreground": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Background 1 0",
+        "宋体",
+        "[AUTO]General"
+      ]
+    },
+    "CellStyles": {
+      "0,0": 0,
+      "0,1": 1,
+      "1,1": 1,
+      "2,1": 1,
+      "3,1": 1,
+      "4,1": 1,
+      "5,1": 1,
+      "6,1": 1,
+      "7,1": 1,
+      "8,1": 1,
+      "9,1": 1,
+      "10,1": 1,
+      "11,1": 1,
+      "12,1": 1,
+      "13,1": 1,
+      "14,1": 1,
+      "15,1": 1,
+      "16,1": 1,
+      "17,1": 1,
+      "18,1": 1,
+      "19,1": 1,
+      "20,1": 1,
+      "21,1": 1,
+      "22,1": 1,
+      "22,8": 2,
+      "22,9": 3,
+      "22,10": 3,
+      "22,11": 3,
+      "22,12": 3,
+      "22,13": 3,
+      "22,14": 3,
+      "22,15": 3,
+      "22,16": 3,
+      "22,17": 3,
+      "22,18": 3,
+      "22,19": 3,
+      "22,20": 3,
+      "22,21": 3,
+      "23,1": 1,
+      "23,8": 3,
+      "23,9": 3,
+      "23,10": 3,
+      "23,11": 3,
+      "23,12": 3,
+      "23,13": 3,
+      "23,14": 3,
+      "23,15": 3,
+      "23,16": 3,
+      "23,17": 3,
+      "23,18": 3,
+      "23,19": 3,
+      "23,20": 3,
+      "23,21": 3,
+      "24,1": 1,
+      "24,8": 3,
+      "24,9": 3,
+      "24,10": 3,
+      "24,11": 3,
+      "24,12": 3,
+      "24,13": 3,
+      "24,14": 3,
+      "24,15": 3,
+      "24,16": 3,
+      "24,17": 3,
+      "24,18": 3,
+      "24,19": 3,
+      "24,20": 3,
+      "24,21": 3,
+      "25,1": 1,
+      "26,1": 1
+    },
+    "SheetStyle": {
+      "FontFamily": 1,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
+    }
+  },
+  "Spans": [
+    "2,2,18,26",
+    "22,8,3,14"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//51F0jEZko+1SuqYVSSXz/2DOy7uESno21ebQ0rvkRS6SJO6cb/QrlLmYw9gPvp1uKoDgd9TnLt/Z9Pm27l8iIGS7nFBRRpEFceIbY244NpNib03kZ23oLgI8/cr8McHLt3dGD/PitPQCSpVCdZN5B6VJuPaVTm5z+7g5LZqQsAcmzmKcLCe17SF0jBLwbG+MiTKJs/iDilneIqzc/Znrp1BtKvqEJ7IE8oYIBY+zLUmBDjMPqRgBDixyXMegP5G2BPr8ZuIM28loARqRVWs2A78O0PE7ufSbZM9wjFhheQt6YeY2ks6fTZjXEfXbWyDfIYLNbCIbtWalg1f9cyxtWradaMCJnlW14ogvj0JKU+298FeeDjwfvMBtR//D+L4ExaQBNmMr10kzESEuUHSffp4s+075YmGLPfgC6S36QnXy006N55M5IkytGWja8lYcULyJ93KQ/dhU+7z7S9vZ1Tj1f6f3bHLk6/4LivFpmMBUoO6FSnAyULXLUIphHSN3Wws66GbOzAdP2WAmC3sXnApi5+qhkl90lF3tVdzsgubpw0Dx93hO2bKYmD+MggQUtF40ImgQVE7D1aGWMh8zgwYsSv/PBjrOQ9TxQaQIEMyG1lMtVlGMOC3su9n6WCJHxCOJ7504hlVg++tQLJvG6/qetRlKAbkBb1MbVQCLTmEo/j6bnRgtOjyyPLsrC5boyvVklgrTc2BLbjJgdvqxpeC4LoKHpjG7nYOI50TWRdfyO494zDI5vNVdCSDdKrzcfHPtESUJbLGaxWQbn4Jl1ST0BSnW6AnqryvG2jvf5rty+y+gHWV/woUSz/wHGFKltHwoDzAGAksap+yfjEM3HqCsIgLTvNndAwA8ApbRNAdyGByM6YlyKO7cl4WlqYy2pJE7ywlt2uvj38FB389BjA==|920

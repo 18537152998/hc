@@ -1,0 +1,118 @@
+{
+  "Rows": {
+    "Count": 10
+  },
+  "Cols": {
+    "Count": 10
+  },
+  "Values": {
+    "1,1": "请填写开票指令",
+    "7,1": "确定"
+  },
+  "AttachInfos": {
+    "3,1": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "7,1": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+            "TableName": "采购记录表",
+            "ShowConfirm": false,
+            "RowsToUpdate": 1,
+            "RowsToUpdateCondition": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "采购记录表",
+                "ColumnName": "ID",
+                "GUID": "8d42a436-0161-4bca-9f1a-38f9f0834109"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=开票指令录入!J10"
+              }
+            },
+            "UpdateBindingValues": [
+              {
+                "BindingInfo": {
+                  "TableName": "采购记录表",
+                  "ColumnName": "开票指令",
+                  "GUID": "ae4f4750-da88-4567-b561-aeebdc1274c2"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=开票指令录入!B4"
+                }
+              }
+            ],
+            "BreakpointIdentity": "96b832fd-ddd8-4171-bf4a-59d5709b300a"
+          },
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "ReloadData": true,
+            "BreakpointIdentity": "7d1efb8d-cdbc-4de9-9744-eed92945b223"
+          }
+        ],
+        "Text": "确定",
+        "TemplateKey": "_RS_Main1"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Formatter": 0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "@",
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "3,1": 0
+    },
+    "SheetStyle": {
+      "FontFamily": 1
+    }
+  },
+  "Spans": [
+    "7,1,2,7",
+    "3,1,3,7"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "采购记录表"
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//0GqPkkkPzsB+9dCajnfYLxsEz2aWUdHC+j7wEyy3opEx5mZTcn7xxxRQF7RW3B3Ab6Cl6+MiYbAAmWg5HLBYRAdqyAtRHp/8ZCJSMtmAoXVGJxBL4xKCMSU5dwDN9V8rYIw+USVSKJ4QC4/zblPNLnUZmaB8dBnCs01cuLa9Dp24sj8UMFjpHPDCFQ7OLpkGYK2dqyv1vu8TuMst046N7Bzjoq2HN18EVM5nz+awg1nCs/Sa3+9KYThcnx+x5H3jR5e50GCtcU7AZ/05T9M4NSkzQiQcR8XK2zh3K9o+3wW3fMETO9lz2NdK7oDSUcE3AjsZyj3pplL3gZbNWW0b/tPUV5eglG7HAEfvKPbMpJxC94cvL/ysJ8j9RyJV06qPUUAxdvqsz7o//WRqOZF1ylfWHV2s6hlosKoRVM3AJ4bq66Q5JmJEsK56DispfHsQ2qLwdygrMtx5cDExh6sHArbOQcPuwdYOYtSQD94H0sCVTjKG9A9DoVVETHX/+p0gXht3XuThlDtCXHhlJR3c6ahlFxbgWSWQqpOvp254wP9B/6ksgQZijW/KjNf92Y/dYALLYRgIfBWYOeIfRPg7k1/QK9QlbL7UgItP3QknKzm0LafYziBnRqka/qbvgPpte0FOvZL7lQ/1XR085kMCZ+Sy5oFyEaBz6WG5ZEBFDUZZ3tk3Thg2HmLPcSDLud4uInFRxB5FEpDnLOA05vVELGLHPROuMGRtrtoyfIdFRLUaOyykmOqhdj/p4VK3YgzGR4ltk3v58MY2nWOOcykM+E/LvNnEQb37H3CzjbcYcyuQwFcsqLE67k2uWlxWSF/mYxHksRjp5EdoRnvXssehxic0WWAhLDlRNkeiNx6BXJiU542tcquN/Q7VqEGLsp9j19p+KVX71BlYHGMNDyJ6Qw==|920

@@ -1,0 +1,233 @@
+{
+  "Name": "费用报销表",
+  "FlowProcess": {
+    "FlowStates": [
+      {
+        "Id": "b12bc123-a329-4f93-ba21-7cbf1bb9e3e8",
+        "StateName": "未审核"
+      },
+      {
+        "Id": "116f05c9-c876-453a-bab0-8bb443919aba",
+        "StateName": "审核中"
+      },
+      {
+        "Id": "f0da3eef-2d71-4941-b4db-229e28390688",
+        "StateName": "已审核"
+      },
+      {
+        "Id": "5a8262f5-cfc8-449f-b78f-a44021a344a5",
+        "StateName": "反审核"
+      }
+    ],
+    "FlowPaths": [
+      {
+        "StartState": {
+          "Id": "b12bc123-a329-4f93-ba21-7cbf1bb9e3e8",
+          "StateName": "未审核"
+        },
+        "Action": {
+          "ActionName": "提交",
+          "GUID": "c94b1dd0-798f-4d09-bc56-4e8d574ec817"
+        },
+        "ToState": {
+          "Id": "116f05c9-c876-453a-bab0-8bb443919aba",
+          "StateName": "审核中"
+        },
+        "Assignees": [
+          {
+            "FlowProcessRoleType": 6,
+            "Name": "(None)"
+          }
+        ],
+        "Errors": []
+      },
+      {
+        "$type": "Forguncy.SaveLoad.ApprovalProcessPathSaveData, ServerDesignerCommon",
+        "StartState": {
+          "Id": "116f05c9-c876-453a-bab0-8bb443919aba",
+          "StateName": "审核中"
+        },
+        "ToState": {
+          "Id": "f0da3eef-2d71-4941-b4db-229e28390688",
+          "StateName": "已审核"
+        },
+        "Assignees": [
+          {
+            "FlowProcessRoleType": 1,
+            "Name": "财务主管",
+            "FilterBy": {}
+          }
+        ],
+        "Errors": [],
+        "Items": [
+          {
+            "GUID": "ea1ba34d-e36f-4553-a374-cba284a0d8ff",
+            "Role": {
+              "FlowProcessRoleType": 1,
+              "Name": "财务主管",
+              "FilterBy": {
+                "FilterByType": 2
+              }
+            }
+          }
+        ]
+      },
+      {
+        "StartState": {
+          "Id": "f0da3eef-2d71-4941-b4db-229e28390688",
+          "StateName": "已审核"
+        },
+        "Action": {
+          "ActionName": "反审核",
+          "GUID": "af012c45-0b92-47ea-84cd-8320da9936f8"
+        },
+        "ToState": {
+          "Id": "5a8262f5-cfc8-449f-b78f-a44021a344a5",
+          "StateName": "反审核"
+        },
+        "Assignees": [
+          {
+            "FlowProcessRoleType": 3,
+            "Name": "Creator"
+          }
+        ],
+        "Errors": []
+      },
+      {
+        "StartState": {
+          "Id": "5a8262f5-cfc8-449f-b78f-a44021a344a5",
+          "StateName": "反审核"
+        },
+        "Action": {
+          "ActionName": "提交",
+          "GUID": "7e49668a-d372-47cf-8cb5-60e599a639ab"
+        },
+        "ToState": {
+          "Id": "116f05c9-c876-453a-bab0-8bb443919aba",
+          "StateName": "审核中"
+        },
+        "Assignees": [
+          {
+            "FlowProcessRoleType": 6,
+            "Name": "(None)"
+          }
+        ],
+        "Errors": []
+      }
+    ]
+  },
+  "Columns": [
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
+      "Unique": true,
+      "AutoIncrement": true,
+      "DatabaseColumnType": "System.Int64",
+      "MaxLength": -1,
+      "Name": "ID",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Double",
+      "Name": "报销日期",
+      "ColumnType": "System.DateTime, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "Name": "报销人",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Double",
+      "Name": "发生日期",
+      "ColumnType": "System.DateTime, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "Name": "交易编号",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "Name": "付款内容",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "Name": "数量",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Double",
+      "Name": "单价",
+      "ColumnType": "System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Double",
+      "Name": "运费",
+      "ColumnType": "System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Double",
+      "Name": "合计金额",
+      "ColumnType": "System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.ImageBindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "Name": "合同截图",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.ImageBindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "Name": "付款凭证",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Name": "付款方式",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "Name": "审核人",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.UserExtraBingingColumnSaveData, ServerDesignerCommon",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+      "Name": "FGC_Creator"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.DateExtraBingingColumnSaveData, ServerDesignerCommon",
+      "ColumnType": "System.DateTime, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+      "Name": "FGC_CreateDate"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.UserExtraBingingColumnSaveData, ServerDesignerCommon",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+      "Name": "FGC_LastModifier"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.DateExtraBingingColumnSaveData, ServerDesignerCommon",
+      "ColumnType": "System.DateTime, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+      "Name": "FGC_LastModifyDate"
+    }
+  ],
+  "PrimaryKey": [
+    "ID"
+  ],
+  "Relations": [],
+  "Indexes": []
+}

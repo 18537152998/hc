@@ -1,0 +1,540 @@
+{
+  "Rows": {
+    "Count": 25
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 70.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      20
+    ],
+    "Count": 21
+  },
+  "Values": {
+    "7,20": "%CurrentUser.查询密码%",
+    "8,20": 14,
+    "9,20": 30,
+    "10,1": "*查看工资需要二次密码，请找管理员索要二次密码",
+    "11,3": "请输入查询密码",
+    "13,20": "%CurrentUser.Role%",
+    "19,5": "GO",
+    "22,5": "*工资条---注意保密，请勿泄露"
+  },
+  "AttachInfos": {
+    "14,3": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "ShowPassword": true,
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "Icon": {
+          "Name": "Application/078_lock_1.svg",
+          "BuiltIn": true,
+          "Color": "Background 1 0"
+        },
+        "TemplateKey": "样式7",
+        "ForguncyAttribute": ""
+      },
+      "DataValidationInfo": {
+        "IgnoreBlank": false
+      }
+    },
+    "19,5": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionCurrentUserInfoParam, ServerDesignerCommon",
+                    "currentUserProperty": {
+                      "UserProperty": "查询密码",
+                      "PropertyType": 4
+                    }
+                  },
+                  "value": "%Null%"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "请通过管理员设置查询密码！",
+                    "BreakpointIdentity": "c6dec737-546f-4cff-8ee7-9c2f9ead78e3"
+                  }
+                ],
+                "ID": "96b2afff-e661-43f6-82e6-9ca9604b146d"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                    "ConditionAndCommandPairList": [
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=工资明细二次!D15"
+                              }
+                            ]
+                          },
+                          "value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=工资明细二次!U8"
+                          }
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                            "PageName": "工资条详情个人",
+                            "PassValues": [
+                              {
+                                "Source": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=工资明细二次!U8"
+                                },
+                                "TargetCell": {
+                                  "SerializeProperty": "=工资条详情个人!DN2"
+                                }
+                              }
+                            ],
+                            "BreakpointIdentity": "ed73b680-418c-4224-80b2-287f24cea7b1"
+                          }
+                        ],
+                        "ID": "f3e0387f-4717-40b1-af52-db2f98059748"
+                      },
+                      {
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                            "MessageFormula": "密码错误，请重试！",
+                            "BreakpointIdentity": "5c6be6f2-2061-4542-a7ce-31da1e0fc250"
+                          }
+                        ],
+                        "ID": "9eeb3e5d-dd2e-4300-9f2c-be7a0042f360"
+                      }
+                    ],
+                    "BreakpointIdentity": "34c711d6-3b21-4b6c-86c9-8af5021ef366"
+                  }
+                ],
+                "ID": "05cf13e5-e6ba-49c6-b1ad-16249b5ba9ef"
+              }
+            ],
+            "BreakpointIdentity": "2ff57312-b39e-4bc7-a5c7-00d46f1b8b64"
+          }
+        ],
+        "Text": "GO",
+        "TemplateKey": "_RS_Success1"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Background": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Foreground": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "Foreground": 0,
+        "Formatter": 2,
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontFamily": 1,
+        "Foreground": 4,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 5,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": null,
+        "FontFamily": 1,
+        "FontSize": 16.0,
+        "Foreground": null,
+        "Formatter": 6,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "Foreground": 0,
+        "Formatter": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "#FFFFFF00",
+        "Body",
+        "[AUTO]General",
+        "Center",
+        "Background 1 0",
+        "Accent 3 40",
+        "@"
+      ]
+    },
+    "CellStyles": {
+      "7,20": 0,
+      "8,20": 1,
+      "9,20": 1,
+      "10,1": 2,
+      "10,20": 0,
+      "11,3": 3,
+      "11,4": 4,
+      "11,5": 4,
+      "11,6": 4,
+      "11,7": 4,
+      "11,8": 4,
+      "11,9": 4,
+      "11,10": 4,
+      "11,11": 4,
+      "11,12": 4,
+      "11,13": 4,
+      "11,14": 4,
+      "11,15": 4,
+      "11,16": 4,
+      "12,3": 4,
+      "12,4": 4,
+      "12,5": 4,
+      "12,6": 4,
+      "12,7": 4,
+      "12,8": 4,
+      "12,9": 4,
+      "12,10": 4,
+      "12,11": 4,
+      "12,12": 4,
+      "12,13": 4,
+      "12,14": 4,
+      "12,15": 4,
+      "12,16": 4,
+      "13,3": 4,
+      "13,4": 4,
+      "13,5": 4,
+      "13,6": 4,
+      "13,7": 4,
+      "13,8": 4,
+      "13,9": 4,
+      "13,10": 4,
+      "13,11": 4,
+      "13,12": 4,
+      "13,13": 4,
+      "13,14": 4,
+      "13,15": 4,
+      "13,16": 4,
+      "13,20": 5,
+      "14,3": 6,
+      "14,4": 4,
+      "14,5": 4,
+      "14,6": 4,
+      "14,7": 4,
+      "14,8": 4,
+      "14,9": 4,
+      "14,10": 4,
+      "14,11": 4,
+      "14,12": 4,
+      "14,13": 4,
+      "14,14": 4,
+      "14,15": 4,
+      "14,16": 4,
+      "15,3": 4,
+      "15,4": 4,
+      "15,5": 4,
+      "15,6": 4,
+      "15,7": 4,
+      "15,8": 4,
+      "15,9": 4,
+      "15,10": 4,
+      "15,11": 4,
+      "15,12": 4,
+      "15,13": 4,
+      "15,14": 4,
+      "15,15": 4,
+      "15,16": 4,
+      "16,3": 4,
+      "16,4": 4,
+      "16,5": 4,
+      "16,6": 4,
+      "16,7": 4,
+      "16,8": 4,
+      "16,9": 4,
+      "16,10": 4,
+      "16,11": 4,
+      "16,12": 4,
+      "16,13": 4,
+      "16,14": 4,
+      "16,15": 4,
+      "16,16": 4,
+      "17,3": 4,
+      "17,4": 4,
+      "17,5": 4,
+      "17,6": 4,
+      "17,7": 4,
+      "17,8": 4,
+      "17,9": 4,
+      "17,10": 4,
+      "17,11": 4,
+      "17,12": 4,
+      "17,13": 4,
+      "17,14": 4,
+      "17,15": 4,
+      "17,16": 4,
+      "22,5": 7,
+      "22,6": 8,
+      "22,7": 8,
+      "22,8": 8,
+      "22,9": 8,
+      "22,10": 8,
+      "22,11": 8,
+      "22,12": 8,
+      "22,13": 8,
+      "22,14": 8,
+      "23,6": 8,
+      "23,7": 8,
+      "23,8": 8,
+      "23,9": 8,
+      "23,10": 8,
+      "23,11": 8,
+      "23,12": 8,
+      "23,13": 8,
+      "23,14": 8
+    },
+    "SheetStyle": {
+      "FontFamily": 1,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
+    }
+  },
+  "Spans": [
+    "19,5,2,10",
+    "11,3,2,8",
+    "14,3,4,14",
+    "10,1,1,18"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PageLoadedCommandList": [
+      {
+        "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+        "ConditionAndCommandPairList": [
+          {
+            "Condition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "SubConditions": [
+                {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=工资明细二次!U9"
+                      }
+                    ]
+                  },
+                  "value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=DAY(TODAY())"
+                  },
+                  "compareType": 5
+                },
+                {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=工资明细二次!U10"
+                      }
+                    ]
+                  },
+                  "value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=DAY(TODAY())"
+                  },
+                  "compareType": 3
+                }
+              ]
+            },
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                "PropertyItemsList": [
+                  {
+                    "TargetCells": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=工资明细二次!F20"
+                    },
+                    "PropertyType": 1,
+                    "Value": true
+                  }
+                ],
+                "BreakpointIdentity": "d2547941-f99c-4588-856a-66ee3ebf00cd"
+              },
+              {
+                "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                "ConditionAndCommandPairList": [
+                  {
+                    "Condition": {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=工资明细二次!U8"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    "CommandList": [
+                      {
+                        "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                        "PropertyItemsList": [
+                          {
+                            "TargetCells": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=工资明细二次!D12"
+                            },
+                            "Value": "请通过管理员设置查询密码"
+                          }
+                        ],
+                        "BreakpointIdentity": "773aad31-8726-405a-9410-b38356134498"
+                      }
+                    ],
+                    "ID": "9b8f5c0e-7e19-4f98-9bac-607c73a80123"
+                  },
+                  {
+                    "CommandList": [
+                      {
+                        "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                        "PropertyItemsList": [
+                          {
+                            "TargetCells": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=工资明细二次!D12"
+                            },
+                            "Value": "请输入查询密码"
+                          }
+                        ],
+                        "BreakpointIdentity": "1139c1b5-3f19-4d8b-a7c1-cf38547efef7"
+                      }
+                    ],
+                    "ID": "650f7298-d8e4-422c-a7fb-2cb90a5bf6d7"
+                  }
+                ],
+                "BreakpointIdentity": "ec35229a-83dd-437c-a8aa-d8e33811cfbd"
+              }
+            ],
+            "ID": "4bf77044-aa57-435a-9e41-81192cc8cac9"
+          },
+          {
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                "PropertyItemsList": [
+                  {
+                    "TargetCells": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=工资明细二次!F20"
+                    },
+                    "PropertyType": 1,
+                    "Value": false
+                  }
+                ],
+                "BreakpointIdentity": "60c22cd3-62c2-49e8-b570-1ea85670139a"
+              }
+            ],
+            "ID": "d0078178-7bc9-4ead-bcd9-1888f91d9783"
+          }
+        ],
+        "BreakpointIdentity": "6f3e8d44-fd0e-4667-9c73-808e1612343c"
+      }
+    ],
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "BackgroundPictures": [
+    {
+      "FitToBrowserWidth": true,
+      "FitToBrowserHeight": true,
+      "Name": "3c765840-b8f8-4026-9f31-c90ba943f1c8.png",
+      "DisplayName": "背景图1",
+      "ForguncyPictureName": "Background/Sources/04.png",
+      "ForguncyPictureSourceType": 3,
+      "StyleInfo": {
+        "Fill": null
+      },
+      "IsAutomaticFill": false,
+      "Size": "470,500"
+    }
+  ]
+}//TkWh7woDt8ywF98kHx0oqIUlmMSXBiLKGMbJO3IGL3AQ+FtB/cDDGwZN26XP5n+y+Kr63MIfIvKZaazyB8+7Q3OjC7UYfIcxpXhQPiLgCpAmjn+uIAJFoAuYcIOszCWndp0TOhc89LaoHLTLoDSRDkc2e4b5Zp7wsT/XpNVAaSwPwDp6EvtM6PXcJlCn1BAOYzLCQV79BsiseLNm2c9DvDEMtJITkSddZ7TdSLHs8O+BZlLrAtFKga0hkg5iezBZGsHwINaRNMHllCGi2jUYfAgSLhqEwG/hJFVaDtq3Pj/scndw+nkt3FHISiRrLDoz9WuH9uyJeJQbtiwbLHCI+uJsFQ9tw462yJ88lgz6Aa5bXrEQemsQP5wyB18FO+88a+G5YXRjulONJtIFNPAL3u0Q7z6tvd2mBG42g9qg50XIqnvjWxW68PI95lHIlF+Y3iOIeJiC4d47pgdvvbqYEpk6fj8KYq8kc8ivh9SWxSOaPC8TTccQK4uhXfEF8g5lnADGaZk3IYPG3TmcLfCgb4ecbBbbW7mowyvFuSbb3PmJPaGevTgPZMIEykaya8qndbAW35MNiRQ0ARuRc2YlHLHUWq30f8s4mds5RW86v7D8cB9EgF2Lu0WHwbB9/oGjyVbSCVwiGqmQwDGf8pSqf8pC7QG3tmKt4osvPhCrgpsAkegnNPBydoZbGUXL5Ijm/cKJ8uGSUckPw8JM0RrDLjCsa08dABACxf9KtnI0zTFXTkmb1ZJxdIU/v2cCXwR1Au/+1KBnmcJAzCPdj5yqfeeSxcn66a/2i4yEE3OOxR0eQD2wd6Udo5nwimkEVHxYn7q+2tp7gupDQykpDx/8peRJ/ssxo9539SYBKZqv/07eeIsXRCRH4PkBcAY8nIhje/Zx08b7MAmJGTSAk1IuqQ==|920

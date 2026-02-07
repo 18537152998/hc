@@ -1,0 +1,374 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      }
+    },
+    "Count": 34
+  },
+  "Cols": {
+    "Count": 92
+  },
+  "Values": {
+    "0,1": "结算系统"
+  },
+  "AttachInfos": {
+    "1,79": {
+      "CellType": {
+        "$type": "Forguncy.CurrentUserCellType, ServerDesignerCommon",
+        "CellCustomValue": "%CurrentUser%",
+        "NavigateSettingWhenLogout": {
+          "NavigateWhenLogoutMode": 1
+        }
+      }
+    },
+    "5,0": {
+      "CellType": {
+        "$type": "Forguncy.CustomMenu.ForguncyMenuCellType, Forguncy.CustomMenu",
+        "TemplateKey": "样式3",
+        "Items": [
+          {
+            "Text": "选择账户---",
+            "IconPath": "Navigation/183_table_2.svg",
+            "SelectedIconColor": "Background 1",
+            "IsOldMenuPath": false,
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                "PageName": "选择账户",
+                "IgnoreTargetPageCachedCurrentRowInfo": false,
+                "BreakpointIdentity": "1587afa9-5f47-4e09-84a7-b2a3cec2d249"
+              }
+            ],
+            "CanVisitRoleList": [
+              "FGC_LoginUser"
+            ]
+          },
+          {
+            "Text": "SKU维护---",
+            "IconPath": "Chart/363_column_chart_2.svg",
+            "SelectedIconColor": "Background 1",
+            "IsOldMenuPath": false,
+            "CanVisitRoleList": [
+              "FGC_LoginUser"
+            ]
+          },
+          {
+            "Value": "销量导入---",
+            "Text": "销量导入---",
+            "SelectedIconColor": "Background 1",
+            "IsOldMenuPath": false,
+            "CanVisitRoleList": [
+              "FGC_LoginUser"
+            ]
+          },
+          {
+            "Value": "FBA关税运费录入---",
+            "Text": "FBA关税运费录入---",
+            "SelectedIconColor": "Background 1",
+            "IsOldMenuPath": false,
+            "CanVisitRoleList": [
+              "FGC_LoginUser"
+            ]
+          },
+          {
+            "Value": "销量调整---",
+            "Text": "销量调整---",
+            "SelectedIconColor": "Background 1",
+            "IsOldMenuPath": false,
+            "CanVisitRoleList": [
+              "FGC_LoginUser"
+            ]
+          },
+          {
+            "Value": "报表生成---",
+            "Text": "报表生成---",
+            "SelectedIconColor": "Background 1",
+            "IsOldMenuPath": false,
+            "CanVisitRoleList": [
+              "FGC_LoginUser"
+            ]
+          },
+          {
+            "Value": "类型统计---",
+            "Text": "类型统计---",
+            "SelectedIconColor": "Background 1",
+            "IsOldMenuPath": false,
+            "CanVisitRoleList": [
+              "FGC_LoginUser"
+            ]
+          },
+          {
+            "Value": "提成展示",
+            "Text": "提成展示",
+            "SelectedIconColor": "Background 1",
+            "IsOldMenuPath": false,
+            "CanVisitRoleList": [
+              "FGC_LoginUser"
+            ]
+          }
+        ],
+        "Orientation": 0,
+        "MenuLevelsStyle": [
+          {
+            "FontSize": 17.3333333333333,
+            "Height": 45.0,
+            "Width": 200.0,
+            "IconHeight": 24.0,
+            "IconWidth": 24.0
+          },
+          {
+            "FontSize": 16.0,
+            "Height": 32.0,
+            "Width": 200.0,
+            "IconHeight": 24.0,
+            "IconWidth": 24.0
+          }
+        ]
+      }
+    },
+    "7,0": {
+      "IsPlaceHolderCell": true
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Foreground": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 1,
+        "FontFamily": 2,
+        "FontSize": 26.666666666666664,
+        "FontWeight": 3,
+        "Foreground": 0,
+        "HorizontalAlignment": 4,
+        "BorderBottom": null,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": 0,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": 0,
+        "BorderLeft": null,
+        "BorderRight": 0
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 6,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": 0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "#FFFFFF00",
+        "Accent 4 40",
+        "宋体",
+        "Bold",
+        "Center",
+        "#FFFF0000",
+        "Body"
+      ],
+      "Borders": [
+        {
+          "Style": 4,
+          "Color": 5
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,0": 0,
+      "0,1": 1,
+      "0,2": 2,
+      "0,3": 2,
+      "0,4": 2,
+      "0,5": 2,
+      "0,6": 2,
+      "0,7": 2,
+      "0,8": 2,
+      "0,9": 2,
+      "0,10": 3,
+      "1,0": 0,
+      "1,1": 4,
+      "1,2": 5,
+      "1,3": 5,
+      "1,4": 5,
+      "1,5": 5,
+      "1,6": 5,
+      "1,7": 5,
+      "1,8": 5,
+      "1,9": 5,
+      "1,10": 6,
+      "1,79": 7,
+      "1,80": 7,
+      "1,81": 7,
+      "1,82": 7,
+      "1,83": 7,
+      "1,84": 7,
+      "1,85": 7,
+      "1,86": 7,
+      "1,87": 7,
+      "1,88": 7,
+      "2,0": 0,
+      "2,1": 4,
+      "2,2": 5,
+      "2,3": 5,
+      "2,4": 5,
+      "2,5": 5,
+      "2,6": 5,
+      "2,7": 5,
+      "2,8": 5,
+      "2,9": 5,
+      "2,10": 6,
+      "2,79": 7,
+      "2,80": 7,
+      "2,81": 7,
+      "2,82": 7,
+      "2,83": 7,
+      "2,84": 7,
+      "2,85": 7,
+      "2,86": 7,
+      "2,87": 7,
+      "2,88": 7,
+      "3,1": 4,
+      "3,2": 5,
+      "3,3": 5,
+      "3,4": 5,
+      "3,5": 5,
+      "3,6": 5,
+      "3,7": 5,
+      "3,8": 5,
+      "3,9": 5,
+      "3,10": 6,
+      "3,79": 7,
+      "3,80": 7,
+      "3,81": 7,
+      "3,82": 7,
+      "3,83": 7,
+      "3,84": 7,
+      "3,85": 7,
+      "3,86": 7,
+      "3,87": 7,
+      "3,88": 7,
+      "4,1": 8,
+      "4,2": 9,
+      "4,3": 9,
+      "4,4": 9,
+      "4,5": 9,
+      "4,6": 9,
+      "4,7": 9,
+      "4,8": 9,
+      "4,9": 9,
+      "4,10": 10
+    },
+    "SheetStyle": {
+      "FontFamily": 6,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
+    }
+  },
+  "Spans": [
+    "0,1,5,10",
+    "1,79,3,10",
+    "5,0,2,92",
+    "7,0,27,92"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.MasterPage, ServerDesignerCommon",
+    "PageLoadedCommandList": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "BackgroundPictures": [
+    {
+      "FitToBrowserWidth": true,
+      "FitToBrowserHeight": true,
+      "Repeat": true,
+      "Name": "44876878-acdf-44a4-aba7-3bbbe635dd26",
+      "DisplayName": "背景图1",
+      "ForguncyPictureName": "PCMasterBackground",
+      "ForguncyPictureSourceType": 2,
+      "Stretch": 2,
+      "Size": "200,170"
+    },
+    {
+      "Name": "46108bf9-59be-498e-b13a-684469f5f7c6",
+      "DisplayName": "背景图2",
+      "ForguncyPictureName": "PCMasterBanner",
+      "ForguncyPictureSourceType": 2,
+      "Stretch": 3,
+      "Size": "1839,60"
+    }
+  ]
+}//888nKu4mDpWegCyxU24xwyv2KU3TzAkEryu5Ha93Eqr4NiCZpYljKySCQI570eKMAvm1BGWethjyxuM1BNf7BlAdPgG9LI2sN3nEObEZjAGc1FSZeveUGgbz3CIHoWzQnH94SwJ3LdbUmBM1JmPcu2BW5/QpqY2UufWJrl5f0TJwsTVRrEcQuvEB209ZbiCi7jpWXU4UO3WYG9Ey2CKp0Zp14M/3lNfmmPdhtDAbDcXn6FJ1kIva6ZMtSbEcfkhj/+fIKMhLe+nLMFZhuR93psopB40Q0sIbTXDe0IloT0rXF47UDtF3D6YCrzHr+cjYlPX3CsB9UJNr6+6Qu63PefLENfXwHQP0v4OchrslT8ieN+T1sNPuruz8Zz84lRwFwOp8R6dsTiw5uUYnZEw7QGUfxIaR+y/NjgmM+OEQheLtrIlSQm4QcS4dt4kzMn5YGkEnjjObJQUMJk2gjYzkDfZxxhZOC0YNjiuO6yV8dQ/QzHGFGuT7mxX5jJbyzjHCycw/v5iz73z88lVcdxCWtXd89kNr7j5Xpj7CGz97e54/9hSFV7vfmKBEw4xNyvXnKs5dkSbpso2HxwCpD5fhORTe7jKgrEfcSi2JCe2HBwpD8meGO+A6LiEKBMpp0t3BOgR+9xALHIDwoSs74mLNVWDo8YJgxZvzSaIkD9fYq+R8xmRHdPuPgN1q44RLe1rm93rGpApXGzOJQAAqPSFsdS0jrndoE8rOhak2WAR/T1BD7jAvKmdjGxWGxOmoTwj2TPn+qTeXsOGuqEgkXJh1g/tL9Pr4fcWSc3GzdYsK9rAKSH9H0Ftec67Ga46UKNIIi9UEaMn/2QO26KuCDguGytrmAh6CpNRyhXwYHU9TBy+6NTdGiKSBpGtju4mZaIl+Zs1kqofBOwpljMnZuqscMQ==|920

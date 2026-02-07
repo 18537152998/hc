@@ -1,0 +1,1830 @@
+{
+  "Name": "库存表",
+  "PermissionData": {
+    "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionData, Forguncy.RbacPermission.Core",
+    "permissionResource": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionResource, Forguncy.RbacPermission.Core",
+      "enabledTypes": 4,
+      "detailTables": []
+    },
+    "permissionBindings": [
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "ASIN": 5,
+            "FBA出库": 5,
+            "FNSKU": 5,
+            "ID": 5,
+            "一级类目": 5,
+            "三级类目": 5,
+            "不重复": 5,
+            "二级类目": 5,
+            "净重": 5,
+            "包装量": 5,
+            "发货类型": 5,
+            "杭州库存2026_02_09": 5,
+            "国内库存合计25_09": 5,
+            "杭州库存25_12_29": 5,
+            "国内总库存": 5,
+            "图片": 5,
+            "在库已包": 5,
+            "在库未包": 5,
+            "备注": 5,
+            "大账户": 5,
+            "姓名": 5,
+            "高": 5,
+            "已到货": 5,
+            "已签收": 5,
+            "已采购": 5,
+            "库位": 5,
+            "库存": 5,
+            "总成本": 5,
+            "总成本美金": 5,
+            "拿货价": 5,
+            "提成系数": 5,
+            "国内库存合计25_12": 5,
+            "国内库存合计2026_02": 5,
+            "杭州库存25_09_27": 5,
+            "杭州总库存": 5,
+            "毛重": 5,
+            "海外在途": 5,
+            "滞销成本结算": 5,
+            "滞销状态": 5,
+            "申报值": 5,
+            "电压插头": 5,
+            "站fn识别码": 5,
+            "站点": 5,
+            "类型": 5,
+            "自发出库": 5,
+            "规格参数": 5,
+            "识别码": 5,
+            "账户": 5,
+            "进价": 5,
+            "郑州库存25_09_29": 5,
+            "郑州总库存": 5,
+            "配件成本": 5,
+            "采购在途": 5,
+            "采购退货": 5,
+            "宽": 5,
+            "颜色": 5,
+            "郑州库存25_12_30": 5,
+            "公司产品ID": 5,
+            "商品名": 5,
+            "郑州库存2026_02_10": 5,
+            "SKU": 5,
+            "长": 5
+          },
+          "subTableOperations": {
+            "产品供应商关联": 5
+          },
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core"
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "财务"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "ASIN": 5,
+            "FBA出库": 5,
+            "FNSKU": 5,
+            "ID": 5,
+            "一级类目": 5,
+            "三级类目": 5,
+            "不重复": 5,
+            "二级类目": 5,
+            "净重": 5,
+            "包装量": 5,
+            "发货类型": 5,
+            "杭州库存2026_02_09": 5,
+            "国内库存合计25_09": 5,
+            "杭州库存25_12_29": 5,
+            "国内总库存": 5,
+            "图片": 5,
+            "在库已包": 5,
+            "在库未包": 5,
+            "备注": 5,
+            "大账户": 5,
+            "姓名": 1,
+            "高": 5,
+            "已到货": 5,
+            "已签收": 5,
+            "已采购": 5,
+            "库位": 5,
+            "库存": 5,
+            "总成本": 5,
+            "总成本美金": 5,
+            "拿货价": 5,
+            "提成系数": 0,
+            "国内库存合计25_12": 5,
+            "国内库存合计2026_02": 5,
+            "杭州库存25_09_27": 5,
+            "杭州总库存": 5,
+            "毛重": 5,
+            "海外在途": 5,
+            "滞销成本结算": 1,
+            "滞销状态": 5,
+            "申报值": 5,
+            "电压插头": 5,
+            "站fn识别码": 5,
+            "站点": 5,
+            "类型": 1,
+            "自发出库": 5,
+            "规格参数": 5,
+            "识别码": 5,
+            "账户": 5,
+            "进价": 5,
+            "郑州库存25_09_29": 5,
+            "郑州总库存": 5,
+            "配件成本": 5,
+            "采购在途": 5,
+            "采购退货": 5,
+            "宽": 5,
+            "颜色": 5,
+            "郑州库存25_12_30": 5,
+            "公司产品ID": 5,
+            "商品名": 5,
+            "郑州库存2026_02_10": 5,
+            "SKU": 5,
+            "长": 5
+          },
+          "subTableOperations": {
+            "产品供应商关联": 5
+          },
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core"
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "采购",
+          "采购助理",
+          "采购兼职"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "ASIN": 5,
+            "FBA出库": 5,
+            "FNSKU": 5,
+            "ID": 5,
+            "一级类目": 5,
+            "三级类目": 5,
+            "不重复": 5,
+            "二级类目": 5,
+            "净重": 5,
+            "包装量": 5,
+            "发货类型": 5,
+            "杭州库存2026_02_09": 5,
+            "国内库存合计25_09": 5,
+            "杭州库存25_12_29": 5,
+            "国内总库存": 5,
+            "图片": 5,
+            "在库已包": 5,
+            "在库未包": 5,
+            "备注": 5,
+            "大账户": 5,
+            "姓名": 1,
+            "高": 5,
+            "已到货": 5,
+            "已签收": 5,
+            "已采购": 5,
+            "库位": 5,
+            "库存": 5,
+            "总成本": 5,
+            "总成本美金": 5,
+            "拿货价": 5,
+            "提成系数": 1,
+            "国内库存合计25_12": 5,
+            "国内库存合计2026_02": 5,
+            "杭州库存25_09_27": 5,
+            "杭州总库存": 5,
+            "毛重": 5,
+            "海外在途": 5,
+            "滞销成本结算": 1,
+            "滞销状态": 1,
+            "申报值": 5,
+            "电压插头": 5,
+            "站fn识别码": 5,
+            "站点": 5,
+            "类型": 1,
+            "自发出库": 5,
+            "规格参数": 5,
+            "识别码": 5,
+            "账户": 5,
+            "进价": 1,
+            "郑州库存25_09_29": 5,
+            "郑州总库存": 5,
+            "配件成本": 5,
+            "采购在途": 5,
+            "采购退货": 5,
+            "宽": 5,
+            "颜色": 5,
+            "郑州库存25_12_30": 5,
+            "公司产品ID": 5,
+            "商品名": 5,
+            "郑州库存2026_02_10": 5,
+            "SKU": 5,
+            "长": 5
+          },
+          "subTableOperations": {
+            "产品供应商关联": 5
+          },
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core"
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "销售"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "ASIN": 5,
+            "FBA出库": 5,
+            "FNSKU": 5,
+            "ID": 5,
+            "一级类目": 5,
+            "三级类目": 5,
+            "不重复": 5,
+            "二级类目": 5,
+            "净重": 5,
+            "包装量": 5,
+            "发货类型": 5,
+            "杭州库存2026_02_09": 5,
+            "国内库存合计25_09": 5,
+            "杭州库存25_12_29": 5,
+            "国内总库存": 5,
+            "图片": 5,
+            "在库已包": 5,
+            "在库未包": 5,
+            "备注": 5,
+            "大账户": 5,
+            "姓名": 5,
+            "高": 5,
+            "已到货": 5,
+            "已签收": 5,
+            "已采购": 5,
+            "库位": 5,
+            "库存": 5,
+            "总成本": 5,
+            "总成本美金": 5,
+            "拿货价": 5,
+            "提成系数": 5,
+            "国内库存合计25_12": 5,
+            "国内库存合计2026_02": 5,
+            "杭州库存25_09_27": 5,
+            "杭州总库存": 5,
+            "毛重": 5,
+            "海外在途": 5,
+            "滞销成本结算": 5,
+            "滞销状态": 5,
+            "申报值": 5,
+            "电压插头": 5,
+            "站fn识别码": 5,
+            "站点": 5,
+            "类型": 5,
+            "自发出库": 5,
+            "规格参数": 5,
+            "识别码": 5,
+            "账户": 5,
+            "进价": 5,
+            "郑州库存25_09_29": 5,
+            "郑州总库存": 5,
+            "配件成本": 5,
+            "采购在途": 5,
+            "采购退货": 5,
+            "宽": 5,
+            "颜色": 5,
+            "郑州库存25_12_30": 5,
+            "公司产品ID": 5,
+            "商品名": 5,
+            "郑州库存2026_02_10": 5,
+            "SKU": 5,
+            "长": 5
+          },
+          "subTableOperations": {
+            "产品供应商关联": 5
+          },
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core"
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "财务主管"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "ASIN": 5,
+            "FBA出库": 5,
+            "FNSKU": 5,
+            "ID": 5,
+            "一级类目": 5,
+            "三级类目": 5,
+            "不重复": 5,
+            "二级类目": 5,
+            "净重": 5,
+            "包装量": 5,
+            "发货类型": 5,
+            "杭州库存2026_02_09": 5,
+            "国内库存合计25_09": 5,
+            "杭州库存25_12_29": 5,
+            "国内总库存": 5,
+            "图片": 5,
+            "在库已包": 5,
+            "在库未包": 5,
+            "备注": 5,
+            "大账户": 5,
+            "姓名": 0,
+            "高": 5,
+            "已到货": 5,
+            "已签收": 5,
+            "已采购": 5,
+            "库位": 5,
+            "库存": 5,
+            "总成本": 5,
+            "总成本美金": 5,
+            "拿货价": 5,
+            "提成系数": 0,
+            "国内库存合计25_12": 5,
+            "国内库存合计2026_02": 5,
+            "杭州库存25_09_27": 5,
+            "杭州总库存": 5,
+            "毛重": 5,
+            "海外在途": 5,
+            "滞销成本结算": 1,
+            "滞销状态": 5,
+            "申报值": 5,
+            "电压插头": 5,
+            "站fn识别码": 5,
+            "站点": 5,
+            "类型": 0,
+            "自发出库": 5,
+            "规格参数": 5,
+            "识别码": 5,
+            "账户": 5,
+            "进价": 5,
+            "郑州库存25_09_29": 5,
+            "郑州总库存": 5,
+            "配件成本": 5,
+            "采购在途": 5,
+            "采购退货": 5,
+            "宽": 5,
+            "颜色": 5,
+            "郑州库存25_12_30": 5,
+            "公司产品ID": 5,
+            "商品名": 5,
+            "郑州库存2026_02_10": 5,
+            "SKU": 5,
+            "长": 5
+          },
+          "subTableOperations": {
+            "产品供应商关联": 5
+          },
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core"
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "dp"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "ASIN": 5,
+            "FBA出库": 5,
+            "FNSKU": 5,
+            "ID": 5,
+            "一级类目": 5,
+            "三级类目": 5,
+            "不重复": 5,
+            "二级类目": 5,
+            "净重": 5,
+            "包装量": 5,
+            "发货类型": 5,
+            "杭州库存2026_02_09": 5,
+            "国内库存合计25_09": 5,
+            "杭州库存25_12_29": 5,
+            "国内总库存": 5,
+            "图片": 5,
+            "在库已包": 5,
+            "在库未包": 5,
+            "备注": 5,
+            "大账户": 5,
+            "姓名": 0,
+            "高": 5,
+            "已到货": 5,
+            "已签收": 5,
+            "已采购": 5,
+            "库位": 5,
+            "库存": 5,
+            "总成本": 5,
+            "总成本美金": 5,
+            "拿货价": 5,
+            "提成系数": 0,
+            "国内库存合计25_12": 5,
+            "国内库存合计2026_02": 5,
+            "杭州库存25_09_27": 5,
+            "杭州总库存": 5,
+            "毛重": 5,
+            "海外在途": 5,
+            "滞销成本结算": 1,
+            "滞销状态": 1,
+            "申报值": 5,
+            "电压插头": 5,
+            "站fn识别码": 5,
+            "站点": 5,
+            "类型": 1,
+            "自发出库": 5,
+            "规格参数": 5,
+            "识别码": 5,
+            "账户": 5,
+            "进价": 1,
+            "郑州库存25_09_29": 5,
+            "郑州总库存": 5,
+            "配件成本": 5,
+            "采购在途": 5,
+            "采购退货": 5,
+            "宽": 5,
+            "颜色": 5,
+            "郑州库存25_12_30": 5,
+            "公司产品ID": 5,
+            "商品名": 5,
+            "郑州库存2026_02_10": 5,
+            "SKU": 5,
+            "长": 5
+          },
+          "subTableOperations": {
+            "产品供应商关联": 5
+          },
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core"
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "执行"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "ASIN": 1,
+            "FBA出库": 5,
+            "FNSKU": 1,
+            "ID": 5,
+            "一级类目": 5,
+            "三级类目": 5,
+            "不重复": 5,
+            "二级类目": 5,
+            "净重": 5,
+            "包装量": 1,
+            "发货类型": 1,
+            "杭州库存2026_02_09": 5,
+            "国内库存合计25_09": 1,
+            "杭州库存25_12_29": 5,
+            "国内总库存": 5,
+            "图片": 5,
+            "在库已包": 5,
+            "在库未包": 5,
+            "备注": 5,
+            "大账户": 1,
+            "姓名": 1,
+            "高": 5,
+            "已到货": 5,
+            "已签收": 5,
+            "已采购": 5,
+            "库位": 5,
+            "库存": 5,
+            "总成本": 1,
+            "总成本美金": 5,
+            "拿货价": 5,
+            "提成系数": 1,
+            "国内库存合计25_12": 5,
+            "国内库存合计2026_02": 5,
+            "杭州库存25_09_27": 1,
+            "杭州总库存": 5,
+            "毛重": 5,
+            "海外在途": 5,
+            "滞销成本结算": 1,
+            "滞销状态": 1,
+            "申报值": 1,
+            "电压插头": 5,
+            "站fn识别码": 5,
+            "站点": 1,
+            "类型": 1,
+            "自发出库": 5,
+            "规格参数": 5,
+            "识别码": 5,
+            "账户": 1,
+            "进价": 1,
+            "郑州库存25_09_29": 1,
+            "郑州总库存": 5,
+            "配件成本": 1,
+            "采购在途": 5,
+            "采购退货": 5,
+            "宽": 5,
+            "颜色": 1,
+            "郑州库存25_12_30": 5,
+            "公司产品ID": 5,
+            "商品名": 5,
+            "郑州库存2026_02_10": 5,
+            "SKU": 5,
+            "长": 5
+          },
+          "subTableOperations": {
+            "产品供应商关联": 5
+          },
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core"
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "包装"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "ASIN": 1,
+            "FBA出库": 5,
+            "FNSKU": 1,
+            "ID": 1,
+            "一级类目": 1,
+            "三级类目": 1,
+            "不重复": 5,
+            "二级类目": 1,
+            "净重": 1,
+            "包装量": 1,
+            "发货类型": 1,
+            "杭州库存2026_02_09": 5,
+            "国内库存合计25_09": 1,
+            "杭州库存25_12_29": 1,
+            "国内总库存": 5,
+            "图片": 1,
+            "在库已包": 5,
+            "在库未包": 5,
+            "备注": 1,
+            "大账户": 1,
+            "姓名": 1,
+            "高": 5,
+            "已到货": 5,
+            "已签收": 5,
+            "已采购": 5,
+            "库位": 1,
+            "库存": 1,
+            "总成本": 1,
+            "总成本美金": 1,
+            "拿货价": 1,
+            "提成系数": 0,
+            "国内库存合计25_12": 1,
+            "国内库存合计2026_02": 1,
+            "杭州库存25_09_27": 1,
+            "杭州总库存": 5,
+            "毛重": 1,
+            "海外在途": 5,
+            "滞销成本结算": 1,
+            "滞销状态": 1,
+            "申报值": 1,
+            "电压插头": 1,
+            "站fn识别码": 1,
+            "站点": 1,
+            "类型": 1,
+            "自发出库": 5,
+            "规格参数": 1,
+            "识别码": 5,
+            "账户": 1,
+            "进价": 1,
+            "郑州库存25_09_29": 1,
+            "郑州总库存": 5,
+            "配件成本": 1,
+            "采购在途": 5,
+            "采购退货": 5,
+            "宽": 5,
+            "颜色": 1,
+            "郑州库存25_12_30": 1,
+            "公司产品ID": 5,
+            "商品名": 5,
+            "郑州库存2026_02_10": 1,
+            "SKU": 5,
+            "长": 5
+          },
+          "subTableOperations": {
+            "产品供应商关联": 5
+          },
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core"
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "制单"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "ASIN": 1,
+            "FBA出库": 5,
+            "FNSKU": 1,
+            "ID": 5,
+            "一级类目": 1,
+            "三级类目": 1,
+            "不重复": 5,
+            "二级类目": 1,
+            "净重": 1,
+            "包装量": 1,
+            "发货类型": 1,
+            "杭州库存2026_02_09": 5,
+            "国内库存合计25_09": 1,
+            "杭州库存25_12_29": 1,
+            "国内总库存": 5,
+            "图片": 1,
+            "在库已包": 5,
+            "在库未包": 5,
+            "备注": 1,
+            "大账户": 1,
+            "姓名": 1,
+            "高": 5,
+            "已到货": 5,
+            "已签收": 5,
+            "已采购": 5,
+            "库位": 1,
+            "库存": 1,
+            "总成本": 1,
+            "总成本美金": 5,
+            "拿货价": 5,
+            "提成系数": 1,
+            "国内库存合计25_12": 1,
+            "国内库存合计2026_02": 1,
+            "杭州库存25_09_27": 1,
+            "杭州总库存": 5,
+            "毛重": 1,
+            "海外在途": 5,
+            "滞销成本结算": 1,
+            "滞销状态": 1,
+            "申报值": 1,
+            "电压插头": 1,
+            "站fn识别码": 1,
+            "站点": 1,
+            "类型": 1,
+            "自发出库": 5,
+            "规格参数": 1,
+            "识别码": 5,
+            "账户": 1,
+            "进价": 1,
+            "郑州库存25_09_29": 1,
+            "郑州总库存": 5,
+            "配件成本": 1,
+            "采购在途": 5,
+            "采购退货": 5,
+            "宽": 5,
+            "颜色": 1,
+            "郑州库存25_12_30": 1,
+            "公司产品ID": 5,
+            "商品名": 5,
+            "郑州库存2026_02_10": 1,
+            "SKU": 5,
+            "长": 5
+          },
+          "subTableOperations": {
+            "产品供应商关联": 5
+          },
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core"
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "海外仓"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "ASIN": 1,
+            "FBA出库": 5,
+            "FNSKU": 1,
+            "ID": 5,
+            "一级类目": 5,
+            "三级类目": 5,
+            "不重复": 5,
+            "二级类目": 5,
+            "净重": 5,
+            "包装量": 5,
+            "发货类型": 1,
+            "杭州库存2026_02_09": 5,
+            "国内库存合计25_09": 5,
+            "杭州库存25_12_29": 5,
+            "国内总库存": 5,
+            "图片": 5,
+            "在库已包": 5,
+            "在库未包": 5,
+            "备注": 5,
+            "大账户": 1,
+            "姓名": 1,
+            "高": 5,
+            "已到货": 5,
+            "已签收": 5,
+            "已采购": 5,
+            "库位": 5,
+            "库存": 1,
+            "总成本": 1,
+            "总成本美金": 5,
+            "拿货价": 5,
+            "提成系数": 1,
+            "国内库存合计25_12": 5,
+            "国内库存合计2026_02": 5,
+            "杭州库存25_09_27": 5,
+            "杭州总库存": 5,
+            "毛重": 5,
+            "海外在途": 5,
+            "滞销成本结算": 1,
+            "滞销状态": 1,
+            "申报值": 1,
+            "电压插头": 1,
+            "站fn识别码": 5,
+            "站点": 1,
+            "类型": 1,
+            "自发出库": 5,
+            "规格参数": 1,
+            "识别码": 5,
+            "账户": 1,
+            "进价": 1,
+            "郑州库存25_09_29": 5,
+            "郑州总库存": 5,
+            "配件成本": 1,
+            "采购在途": 5,
+            "采购退货": 5,
+            "宽": 5,
+            "颜色": 1,
+            "郑州库存25_12_30": 5,
+            "公司产品ID": 5,
+            "商品名": 5,
+            "郑州库存2026_02_10": 5,
+            "SKU": 5,
+            "长": 5
+          },
+          "subTableOperations": {
+            "产品供应商关联": 5
+          },
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core"
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "h包装"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "ASIN": 5,
+            "FBA出库": 5,
+            "FNSKU": 5,
+            "ID": 5,
+            "一级类目": 5,
+            "三级类目": 5,
+            "不重复": 5,
+            "二级类目": 5,
+            "净重": 5,
+            "包装量": 5,
+            "发货类型": 1,
+            "杭州库存2026_02_09": 5,
+            "国内库存合计25_09": 5,
+            "杭州库存25_12_29": 1,
+            "国内总库存": 5,
+            "图片": 5,
+            "在库已包": 5,
+            "在库未包": 5,
+            "备注": 5,
+            "大账户": 5,
+            "姓名": 5,
+            "高": 5,
+            "已到货": 5,
+            "已签收": 5,
+            "已采购": 5,
+            "库位": 5,
+            "库存": 5,
+            "总成本": 1,
+            "总成本美金": 5,
+            "拿货价": 5,
+            "提成系数": 0,
+            "国内库存合计25_12": 1,
+            "国内库存合计2026_02": 5,
+            "杭州库存25_09_27": 5,
+            "杭州总库存": 5,
+            "毛重": 5,
+            "海外在途": 5,
+            "滞销成本结算": 1,
+            "滞销状态": 1,
+            "申报值": 5,
+            "电压插头": 5,
+            "站fn识别码": 5,
+            "站点": 5,
+            "类型": 5,
+            "自发出库": 5,
+            "规格参数": 5,
+            "识别码": 5,
+            "账户": 5,
+            "进价": 1,
+            "郑州库存25_09_29": 5,
+            "郑州总库存": 5,
+            "配件成本": 1,
+            "采购在途": 5,
+            "采购退货": 5,
+            "宽": 5,
+            "颜色": 5,
+            "郑州库存25_12_30": 1,
+            "公司产品ID": 5,
+            "商品名": 5,
+            "郑州库存2026_02_10": 5,
+            "SKU": 5,
+            "长": 5
+          },
+          "subTableOperations": {
+            "产品供应商关联": 5
+          },
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core"
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "欧洲主管"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "ASIN": 5,
+            "FBA出库": 5,
+            "FNSKU": 5,
+            "ID": 5,
+            "一级类目": 5,
+            "三级类目": 5,
+            "不重复": 5,
+            "二级类目": 5,
+            "净重": 5,
+            "包装量": 5,
+            "发货类型": 1,
+            "杭州库存2026_02_09": 5,
+            "国内库存合计25_09": 5,
+            "杭州库存25_12_29": 5,
+            "国内总库存": 5,
+            "图片": 5,
+            "在库已包": 5,
+            "在库未包": 5,
+            "备注": 5,
+            "大账户": 5,
+            "姓名": 5,
+            "高": 5,
+            "已到货": 5,
+            "已签收": 5,
+            "已采购": 5,
+            "库位": 5,
+            "库存": 5,
+            "总成本": 1,
+            "总成本美金": 5,
+            "拿货价": 5,
+            "提成系数": 1,
+            "国内库存合计25_12": 5,
+            "国内库存合计2026_02": 5,
+            "杭州库存25_09_27": 5,
+            "杭州总库存": 5,
+            "毛重": 5,
+            "海外在途": 5,
+            "滞销成本结算": 5,
+            "滞销状态": 5,
+            "申报值": 5,
+            "电压插头": 5,
+            "站fn识别码": 5,
+            "站点": 5,
+            "类型": 5,
+            "自发出库": 5,
+            "规格参数": 5,
+            "识别码": 5,
+            "账户": 5,
+            "进价": 1,
+            "郑州库存25_09_29": 5,
+            "郑州总库存": 5,
+            "配件成本": 5,
+            "采购在途": 5,
+            "采购退货": 5,
+            "宽": 5,
+            "颜色": 5,
+            "郑州库存25_12_30": 5,
+            "公司产品ID": 5,
+            "商品名": 5,
+            "郑州库存2026_02_10": 5,
+            "SKU": 5,
+            "长": 5
+          },
+          "subTableOperations": {
+            "产品供应商关联": 5
+          },
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core"
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "采购助理"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "ASIN": 1,
+            "FBA出库": 5,
+            "FNSKU": 1,
+            "ID": 5,
+            "一级类目": 1,
+            "三级类目": 1,
+            "不重复": 5,
+            "二级类目": 1,
+            "净重": 1,
+            "包装量": 1,
+            "发货类型": 1,
+            "杭州库存2026_02_09": 5,
+            "国内库存合计25_09": 1,
+            "杭州库存25_12_29": 1,
+            "国内总库存": 5,
+            "图片": 1,
+            "在库已包": 5,
+            "在库未包": 5,
+            "备注": 1,
+            "大账户": 1,
+            "姓名": 1,
+            "高": 5,
+            "已到货": 5,
+            "已签收": 5,
+            "已采购": 5,
+            "库位": 1,
+            "库存": 1,
+            "总成本": 1,
+            "总成本美金": 5,
+            "拿货价": 5,
+            "提成系数": 1,
+            "国内库存合计25_12": 1,
+            "国内库存合计2026_02": 1,
+            "杭州库存25_09_27": 1,
+            "杭州总库存": 5,
+            "毛重": 1,
+            "海外在途": 5,
+            "滞销成本结算": 1,
+            "滞销状态": 1,
+            "申报值": 1,
+            "电压插头": 1,
+            "站fn识别码": 1,
+            "站点": 1,
+            "类型": 1,
+            "自发出库": 5,
+            "规格参数": 1,
+            "识别码": 5,
+            "账户": 1,
+            "进价": 1,
+            "郑州库存25_09_29": 1,
+            "郑州总库存": 5,
+            "配件成本": 1,
+            "采购在途": 5,
+            "采购退货": 5,
+            "宽": 5,
+            "颜色": 1,
+            "郑州库存25_12_30": 1,
+            "公司产品ID": 5,
+            "商品名": 5,
+            "郑州库存2026_02_10": 1,
+            "SKU": 5,
+            "长": 5
+          },
+          "subTableOperations": {
+            "产品供应商关联": 5
+          },
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core"
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "会计"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "ASIN": 5,
+            "FBA出库": 5,
+            "FNSKU": 5,
+            "ID": 5,
+            "一级类目": 5,
+            "三级类目": 5,
+            "不重复": 5,
+            "二级类目": 5,
+            "净重": 5,
+            "包装量": 5,
+            "发货类型": 5,
+            "杭州库存2026_02_09": 5,
+            "国内库存合计25_09": 5,
+            "杭州库存25_12_29": 5,
+            "国内总库存": 5,
+            "图片": 5,
+            "在库已包": 5,
+            "在库未包": 5,
+            "备注": 5,
+            "大账户": 5,
+            "姓名": 1,
+            "高": 5,
+            "已到货": 5,
+            "已签收": 5,
+            "已采购": 5,
+            "库位": 5,
+            "库存": 5,
+            "总成本": 1,
+            "总成本美金": 5,
+            "拿货价": 5,
+            "提成系数": 1,
+            "国内库存合计25_12": 5,
+            "国内库存合计2026_02": 5,
+            "杭州库存25_09_27": 5,
+            "杭州总库存": 5,
+            "毛重": 5,
+            "海外在途": 5,
+            "滞销成本结算": 1,
+            "滞销状态": 1,
+            "申报值": 5,
+            "电压插头": 5,
+            "站fn识别码": 5,
+            "站点": 5,
+            "类型": 1,
+            "自发出库": 5,
+            "规格参数": 5,
+            "识别码": 5,
+            "账户": 5,
+            "进价": 1,
+            "郑州库存25_09_29": 5,
+            "郑州总库存": 5,
+            "配件成本": 5,
+            "采购在途": 5,
+            "采购退货": 5,
+            "宽": 5,
+            "颜色": 5,
+            "郑州库存25_12_30": 5,
+            "公司产品ID": 5,
+            "商品名": 5,
+            "郑州库存2026_02_10": 5,
+            "SKU": 5,
+            "长": 5
+          },
+          "subTableOperations": {
+            "产品供应商关联": 5
+          },
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core"
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "执行助理"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "ASIN": 5,
+            "FBA出库": 5,
+            "FNSKU": 5,
+            "ID": 5,
+            "一级类目": 5,
+            "三级类目": 5,
+            "不重复": 5,
+            "二级类目": 5,
+            "净重": 5,
+            "包装量": 5,
+            "发货类型": 5,
+            "杭州库存2026_02_09": 5,
+            "国内库存合计25_09": 5,
+            "杭州库存25_12_29": 5,
+            "国内总库存": 5,
+            "图片": 5,
+            "在库已包": 5,
+            "在库未包": 5,
+            "备注": 5,
+            "大账户": 5,
+            "姓名": 1,
+            "高": 5,
+            "已到货": 5,
+            "已签收": 5,
+            "已采购": 5,
+            "库位": 5,
+            "库存": 5,
+            "总成本": 1,
+            "总成本美金": 5,
+            "拿货价": 5,
+            "提成系数": 1,
+            "国内库存合计25_12": 5,
+            "国内库存合计2026_02": 5,
+            "杭州库存25_09_27": 5,
+            "杭州总库存": 5,
+            "毛重": 5,
+            "海外在途": 5,
+            "滞销成本结算": 1,
+            "滞销状态": 1,
+            "申报值": 5,
+            "电压插头": 5,
+            "站fn识别码": 5,
+            "站点": 5,
+            "类型": 1,
+            "自发出库": 5,
+            "规格参数": 5,
+            "识别码": 5,
+            "账户": 5,
+            "进价": 1,
+            "郑州库存25_09_29": 5,
+            "郑州总库存": 5,
+            "配件成本": 5,
+            "采购在途": 5,
+            "采购退货": 5,
+            "宽": 5,
+            "颜色": 5,
+            "郑州库存25_12_30": 5,
+            "公司产品ID": 5,
+            "商品名": 5,
+            "郑州库存2026_02_10": 5,
+            "SKU": 5,
+            "长": 5
+          },
+          "subTableOperations": {
+            "产品供应商关联": 5
+          },
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core"
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "销售助理"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "ASIN": 1,
+            "FBA出库": 5,
+            "FNSKU": 1,
+            "ID": 1,
+            "一级类目": 5,
+            "三级类目": 5,
+            "不重复": 5,
+            "二级类目": 5,
+            "净重": 5,
+            "包装量": 1,
+            "发货类型": 1,
+            "杭州库存2026_02_09": 5,
+            "国内库存合计25_09": 1,
+            "杭州库存25_12_29": 1,
+            "国内总库存": 5,
+            "图片": 1,
+            "在库已包": 5,
+            "在库未包": 5,
+            "备注": 5,
+            "大账户": 1,
+            "姓名": 1,
+            "高": 5,
+            "已到货": 5,
+            "已签收": 5,
+            "已采购": 5,
+            "库位": 1,
+            "库存": 5,
+            "总成本": 1,
+            "总成本美金": 5,
+            "拿货价": 5,
+            "提成系数": 1,
+            "国内库存合计25_12": 1,
+            "国内库存合计2026_02": 1,
+            "杭州库存25_09_27": 1,
+            "杭州总库存": 5,
+            "毛重": 1,
+            "海外在途": 5,
+            "滞销成本结算": 1,
+            "滞销状态": 1,
+            "申报值": 1,
+            "电压插头": 1,
+            "站fn识别码": 5,
+            "站点": 1,
+            "类型": 1,
+            "自发出库": 5,
+            "规格参数": 1,
+            "识别码": 5,
+            "账户": 1,
+            "进价": 1,
+            "郑州库存25_09_29": 1,
+            "郑州总库存": 5,
+            "配件成本": 1,
+            "采购在途": 5,
+            "采购退货": 5,
+            "宽": 5,
+            "颜色": 5,
+            "郑州库存25_12_30": 1,
+            "公司产品ID": 5,
+            "商品名": 5,
+            "郑州库存2026_02_10": 1,
+            "SKU": 5,
+            "长": 5
+          },
+          "subTableOperations": {
+            "产品供应商关联": 5
+          },
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core"
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "物流会计"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.CreateRecordBindingConfig, Forguncy.RbacPermission.Core",
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.CreateRecordFilter, Forguncy.RbacPermission.Core"
+          }
+        },
+        "dataPermissionType": 1,
+        "roleNames": [
+          "FGC_LoginUser"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.RowBindingConfig, Forguncy.RbacPermission.Core",
+          "operationTypes": 13,
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.RowFilter, Forguncy.RbacPermission.Core"
+          }
+        },
+        "dataPermissionType": 2,
+        "roleNames": [
+          "Administrator"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.RowBindingConfig, Forguncy.RbacPermission.Core",
+          "operationTypes": 5,
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.RowFilter, Forguncy.RbacPermission.Core",
+            "filterType": 1
+          }
+        },
+        "dataPermissionType": 2,
+        "roleNames": [
+          "FGC_LoginUser"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.RowBindingConfig, Forguncy.RbacPermission.Core",
+          "operationTypes": 1,
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.RowFilter, Forguncy.RbacPermission.Core",
+            "filterType": 2
+          }
+        },
+        "dataPermissionType": 2,
+        "roleNames": [
+          "FGC_LoginUser"
+        ]
+      }
+    ]
+  },
+  "Columns": [
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
+      "Unique": true,
+      "AutoIncrement": true,
+      "DatabaseColumnType": "System.Int64",
+      "MaxLength": -1,
+      "Name": "ID",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "Name": "公司产品ID",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.ImageBindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "图片",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "商品名",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "规格参数",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "电压插头",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "颜色",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "SKU",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "ASIN",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "大账户",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "MaxLength": -1,
+      "Name": "库存",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Double",
+      "MaxLength": -1,
+      "Name": "进价",
+      "ColumnType": "System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Double",
+      "Name": "拿货价",
+      "ColumnType": "System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "库位",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "备注",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "账户",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "姓名",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "站点",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "类型",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Double",
+      "MaxLength": -1,
+      "Name": "提成系数",
+      "ColumnType": "System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "发货类型",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Unique": true,
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "识别码",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "滞销状态",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "MaxLength": -1,
+      "Name": "国内库存合计25_09",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "MaxLength": -1,
+      "Name": "郑州库存25_09_29",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "MaxLength": -1,
+      "Name": "杭州库存25_09_27",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Double",
+      "MaxLength": -1,
+      "Name": "毛重",
+      "ColumnType": "System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Double",
+      "Name": "净重",
+      "ColumnType": "System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Double",
+      "MaxLength": -1,
+      "Name": "申报值",
+      "ColumnType": "System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "滞销成本结算",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "FNSKU",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Double",
+      "MaxLength": -1,
+      "Name": "包装量",
+      "ColumnType": "System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "MaxLength": -1,
+      "Name": "郑州库存25_12_30",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "MaxLength": -1,
+      "Name": "杭州库存25_12_29",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "MaxLength": -1,
+      "Name": "国内库存合计25_12",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "MaxLength": -1,
+      "Name": "郑州库存2026_02_10",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "MaxLength": -1,
+      "Name": "杭州库存2026_02_09",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "MaxLength": -1,
+      "Name": "国内库存合计2026_02",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "MaxLength": -1,
+      "Name": "长",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "MaxLength": -1,
+      "Name": "宽",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "MaxLength": -1,
+      "Name": "高",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DefaultValue": 0.0,
+      "DatabaseColumnType": "System.Double",
+      "MaxLength": -1,
+      "Name": "配件成本",
+      "ColumnType": "System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.FormulaColumnSaveData, ServerDesignerCommon",
+      "Formula": "[进价]+[配件成本]",
+      "Name": "总成本",
+      "ColumnType": "System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "站fn识别码",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "一级类目",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "二级类目",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "三级类目",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.StatisticColumnSaveData, ServerDesignerCommon",
+      "AggregateFunction": 1,
+      "DataColumnName": "2E642EE9-F6EF-4275-8952-5C6BF1AD41DC",
+      "Name": "不重复",
+      "ColumnType": "System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.StatisticColumnSaveData, ServerDesignerCommon",
+      "AggregateFunction": 4,
+      "DataColumnName": "国内库存合计25_09",
+      "Name": "国内总库存",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.StatisticColumnSaveData, ServerDesignerCommon",
+      "AggregateFunction": 4,
+      "DataColumnName": "郑州库存25_09_29",
+      "Name": "郑州总库存",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.StatisticColumnSaveData, ServerDesignerCommon",
+      "AggregateFunction": 4,
+      "DataColumnName": "杭州库存25_09_27",
+      "Name": "杭州总库存",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.StatisticColumnSaveData, ServerDesignerCommon",
+      "AggregateFunction": 4,
+      "DataColumnName": "已采购",
+      "DetailTableName": "实时库存表_子表",
+      "Name": "已采购",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.StatisticColumnSaveData, ServerDesignerCommon",
+      "AggregateFunction": 4,
+      "DataColumnName": "采购在途",
+      "DetailTableName": "实时库存表_子表",
+      "Name": "采购在途",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.StatisticColumnSaveData, ServerDesignerCommon",
+      "AggregateFunction": 4,
+      "DataColumnName": "已到货",
+      "DetailTableName": "实时库存表_子表",
+      "Name": "已到货",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.StatisticColumnSaveData, ServerDesignerCommon",
+      "AggregateFunction": 4,
+      "DataColumnName": "在库未包",
+      "DetailTableName": "实时库存表_子表",
+      "Name": "在库未包",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.StatisticColumnSaveData, ServerDesignerCommon",
+      "AggregateFunction": 4,
+      "DataColumnName": "在库已包",
+      "DetailTableName": "实时库存表_子表",
+      "Name": "在库已包",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.StatisticColumnSaveData, ServerDesignerCommon",
+      "AggregateFunction": 4,
+      "DataColumnName": "FBA出库",
+      "DetailTableName": "实时库存表_子表",
+      "Name": "FBA出库",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.StatisticColumnSaveData, ServerDesignerCommon",
+      "AggregateFunction": 4,
+      "DataColumnName": "海外在途",
+      "DetailTableName": "实时库存表_子表",
+      "Name": "海外在途",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.StatisticColumnSaveData, ServerDesignerCommon",
+      "AggregateFunction": 4,
+      "DataColumnName": "自发出库",
+      "DetailTableName": "实时库存表_子表",
+      "Name": "自发出库",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.StatisticColumnSaveData, ServerDesignerCommon",
+      "AggregateFunction": 4,
+      "DataColumnName": "已签收",
+      "DetailTableName": "实时库存表_子表",
+      "Name": "已签收",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.StatisticColumnSaveData, ServerDesignerCommon",
+      "AggregateFunction": 4,
+      "DataColumnName": "采购退货",
+      "DetailTableName": "实时库存表_子表",
+      "Name": "采购退货",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.FormulaColumnSaveData, ServerDesignerCommon",
+      "Formula": "=round(([进价]+[配件成本])/6.0,2)",
+      "Name": "总成本美金",
+      "ColumnType": "System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.UserExtraBingingColumnSaveData, ServerDesignerCommon",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+      "Name": "FGC_Creator"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.DateExtraBingingColumnSaveData, ServerDesignerCommon",
+      "ColumnType": "System.DateTime, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+      "Name": "FGC_CreateDate"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.UserExtraBingingColumnSaveData, ServerDesignerCommon",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+      "Name": "FGC_LastModifier"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.DateExtraBingingColumnSaveData, ServerDesignerCommon",
+      "ColumnType": "System.DateTime, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+      "Name": "FGC_LastModifyDate"
+    }
+  ],
+  "PrimaryKey": [
+    "ID"
+  ],
+  "Relations": [
+    {
+      "PrimaryTable": "正报信息表",
+      "PrimaryColumn": "识别码",
+      "ForeignTable": "库存表",
+      "ForeignColumn": "识别码"
+    }
+  ],
+  "Indexes": []
+}

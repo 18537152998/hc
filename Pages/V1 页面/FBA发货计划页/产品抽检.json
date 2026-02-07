@@ -1,0 +1,2864 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 40.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 40.0
+        }
+      },
+      "42": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      }
+    },
+    "Count": 43
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 33.0
+        }
+      },
+      "17": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0
+        }
+      },
+      "88": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "89": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 21.0
+        }
+      },
+      "90": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 21.0
+        }
+      },
+      "91": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 21.0
+        }
+      },
+      "92": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 21.0
+        }
+      },
+      "93": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 21.0
+        }
+      },
+      "94": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 21.0
+        }
+      },
+      "95": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 21.0
+        }
+      },
+      "96": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 21.0
+        }
+      },
+      "97": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 21.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      84,
+      85,
+      86,
+      87
+    ],
+    "Count": 98
+  },
+  "Values": {
+    "1,7": "—",
+    "1,76": "抽检记录",
+    "3,89": "抽检附件"
+  },
+  "Formulas": {
+    "1,80": "COUNTA(I5)&\" 条\""
+  },
+  "AttachInfos": {
+    "1,1": {
+      "CellType": {
+        "$type": "Forguncy.DateCellType, ServerDesignerCommon",
+        "CellDefaultValue": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=EOMONTH(TODAY(),-1)+1"
+        },
+        "TemplateKey": "样式1"
+      }
+    },
+    "1,8": {
+      "CellType": {
+        "$type": "Forguncy.DateCellType, ServerDesignerCommon",
+        "CellDefaultValue": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=TODAY()"
+        },
+        "TemplateKey": "样式1"
+      }
+    },
+    "1,14": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=产品抽检!B2"
+                },
+                "Value": "%Null%"
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=产品抽检!I2"
+                },
+                "Value": "%Null%"
+              }
+            ],
+            "BreakpointIdentity": "4a9214c9-b72a-4774-8209-dc1ea04929ac"
+          }
+        ],
+        "TemplateKey": "透明按钮_无底色_",
+        "Icon": {
+          "Name": "Application/062_refresh_6.svg",
+          "BuiltIn": true,
+          "Color": "Accent 1 -25"
+        },
+        "IconSize": 20.0
+      }
+    },
+    "1,16": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "样式3",
+        "WaterMark": "输入查询信息"
+      }
+    },
+    "1,27": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=产品抽检!Q2"
+                },
+                "Value": "%Null%"
+              }
+            ],
+            "BreakpointIdentity": "a40c83e1-ef18-46b1-ab82-faf7bf8d2fb5"
+          },
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "产品抽检表",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 1,
+              "ColumnBindingInfo": {
+                "TableName": "产品抽检表",
+                "ColumnName": "ID",
+                "GUID": "7615b31c-6ea1-45f4-994a-fd2b3f61a7d8"
+              },
+              "Value": "%Null%"
+            },
+            "ID": "cc11a7d3aa2a4d2a8be9657d3a8d4f8e",
+            "BreakpointIdentity": "19515d18-3f01-4cfa-9aa4-40af6255c065"
+          }
+        ],
+        "TemplateKey": "透明按钮_无底色_",
+        "Icon": {
+          "Name": "Mobile/456_delete_8.svg",
+          "BuiltIn": true,
+          "Color": "Text 1 35"
+        },
+        "IconSize": 20.0
+      }
+    },
+    "1,29": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "产品抽检表",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "SubConditions": [
+                {
+                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 6,
+                  "ColumnBindingInfo": {
+                    "TableName": "产品抽检表",
+                    "ColumnName": "FNSKU",
+                    "GUID": "97870a80-ce1b-4e40-ac53-e13b4f7a2532"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=产品抽检!Q2"
+                  }
+                },
+                {
+                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 6,
+                  "ColumnBindingInfo": {
+                    "TableName": "产品抽检表",
+                    "ColumnName": "产品名称",
+                    "GUID": "61cbb463-d4f1-4a8b-8cf7-f2ef1fb77b7e"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=产品抽检!Q2"
+                  }
+                },
+                {
+                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 6,
+                  "ColumnBindingInfo": {
+                    "TableName": "产品抽检表",
+                    "ColumnName": "标签检查",
+                    "GUID": "8b10993a-38ba-4143-be29-70046be1c74e"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=产品抽检!Q2"
+                  }
+                },
+                {
+                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 6,
+                  "ColumnBindingInfo": {
+                    "TableName": "产品抽检表",
+                    "ColumnName": "资料检查",
+                    "GUID": "b44b07c5-5bb9-4108-8e1d-f51e3ce97854"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=产品抽检!Q2"
+                  }
+                },
+                {
+                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 6,
+                  "ColumnBindingInfo": {
+                    "TableName": "产品抽检表",
+                    "ColumnName": "包装检查",
+                    "GUID": "9147010f-b8a1-45ee-9906-c584c7b32b38"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=产品抽检!Q2"
+                  }
+                },
+                {
+                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 6,
+                  "ColumnBindingInfo": {
+                    "TableName": "产品抽检表",
+                    "ColumnName": "改进情况",
+                    "GUID": "ff63f95e-5dfe-47c0-b4ed-b7e9439fcf80"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=产品抽检!Q2"
+                  }
+                }
+              ],
+              "RelationType": 1
+            },
+            "ID": "393efc6bf26c4ef48f5664d45a5979b6",
+            "BreakpointIdentity": "db35827d-5032-4c2f-8a6b-490264572ec5"
+          }
+        ],
+        "TemplateKey": "透明按钮_无底色_",
+        "Icon": {
+          "Name": "Application/047_search_8.svg",
+          "BuiltIn": true,
+          "Color": "Text 1 0"
+        },
+        "IconSize": 30.0
+      }
+    },
+    "3,1": {
+      "ListViewInfo": {
+        "Name": "表格1",
+        "TableName": "产品抽检表",
+        "RowIndex": 3,
+        "ColumnIndex": 1,
+        "RowCount": 39,
+        "ColumnCount": 87,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "SubConditions": [
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 3,
+              "ColumnBindingInfo": {
+                "TableName": "产品抽检表",
+                "ColumnName": "抽检日期",
+                "GUID": "a4791473-d1c7-48f3-9a40-cdba69473023"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=产品抽检!B2"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 5,
+              "ColumnBindingInfo": {
+                "TableName": "产品抽检表",
+                "ColumnName": "抽检日期",
+                "GUID": "923182cb-b05f-4312-ae67-da1b4e36d8c0"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=产品抽检!I2"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "产品抽检表",
+                "ColumnName": "抽检账户",
+                "GUID": "ffaddb7e-f2ea-4c3e-8227-c4e0a214c01a"
+              },
+              "Value": "%CurrentUser.账户%"
+            }
+          ]
+        },
+        "OrderByCondition": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "产品抽检表",
+                "ColumnName": "抽检日期",
+                "GUID": "01d37520-842b-4da2-9809-e8e508f6ceb0"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "样式4",
+        "ShowColumnHeaderInDesigner": true,
+        "IsRowHeaderVisible": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "AllowEditInListview": true,
+        "AllowAddNewRow": true,
+        "ShowDeleteButton": true,
+        "ColumnOperation": 2
+      }
+    },
+    "4,3": {
+      "BindingInfo": {
+        "TableName": "产品抽检表",
+        "ColumnName": "抽检日期",
+        "GUID": "d3be444c-1c71-44a8-ad64-eff5afbc87f4"
+      },
+      "CellType": {
+        "$type": "Forguncy.DateCellType, ServerDesignerCommon",
+        "DropdownButtonModeInListview": 3
+      }
+    },
+    "4,8": {
+      "BindingInfo": {
+        "TableName": "产品抽检表",
+        "ColumnName": "抽检账户",
+        "GUID": "2b4a4c21-1d12-497a-936c-f82c22003e5d"
+      }
+    },
+    "4,13": {
+      "BindingInfo": {
+        "TableName": "产品抽检表",
+        "ColumnName": "抽检人员",
+        "GUID": "2997299c-ce83-4b00-85ea-919df2eb4018"
+      }
+    },
+    "4,18": {
+      "BindingInfo": {
+        "TableName": "产品抽检表",
+        "ColumnName": "包装人员",
+        "GUID": "9268251a-3306-401e-bc1b-2d66282a3d69"
+      }
+    },
+    "4,22": {
+      "BindingInfo": {
+        "TableName": "产品抽检表",
+        "ColumnName": "FNSKU",
+        "GUID": "0349c8b1-0e2b-4ab5-a9f9-63536a8f867f"
+      }
+    },
+    "4,27": {
+      "BindingInfo": {
+        "TableName": "产品抽检表",
+        "ColumnName": "产品名称",
+        "GUID": "f15331a7-2d20-4b57-b3d0-7acd5cd0ce97"
+      }
+    },
+    "4,37": {
+      "BindingInfo": {
+        "TableName": "产品抽检表",
+        "ColumnName": "标签检查",
+        "GUID": "5b702eec-aa34-48f2-b127-30958dc274d8"
+      }
+    },
+    "4,44": {
+      "BindingInfo": {
+        "TableName": "产品抽检表",
+        "ColumnName": "资料检查",
+        "GUID": "f3d4d26c-fae7-4db2-b6b1-987fe1476f69"
+      }
+    },
+    "4,55": {
+      "BindingInfo": {
+        "TableName": "产品抽检表",
+        "ColumnName": "包装检查",
+        "GUID": "f91d3769-ca39-4f5c-b70a-9e17de637016"
+      }
+    },
+    "4,67": {
+      "BindingInfo": {
+        "TableName": "产品抽检表",
+        "ColumnName": "落实责任人",
+        "GUID": "e7816410-246f-4c8f-ac10-2dd3d1d7ce4f"
+      }
+    },
+    "4,72": {
+      "BindingInfo": {
+        "TableName": "产品抽检表",
+        "ColumnName": "改进情况",
+        "GUID": "12192746-b045-4847-b3eb-b5b6fb724a00"
+      }
+    },
+    "4,84": {
+      "BindingInfo": {
+        "TableName": "产品抽检表",
+        "ColumnName": "抽检账户",
+        "GUID": "95f98801-4b3f-4812-af30-c57d3f7f3ad4",
+        "RelationBinding": {
+          "RelatedTable": "包装账户对应表",
+          "RelatedColumn": "平台",
+          "DisplayColumn": "包装账户"
+        }
+      }
+    },
+    "4,89": {
+      "BindingInfo": {
+        "TableName": "产品抽检表",
+        "ColumnName": "抽检附件",
+        "GUID": "8d655cdc-9eda-4857-a971-d1907dddcd4b"
+      },
+      "CellType": {
+        "$type": "FilePreviewer.FilePreviewer, FilePreviewer",
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ],
+        "UploadLimit": {},
+        "Folder": "%CurrentUser%",
+        "KKFileViewExtensions": "(doc|docx|xls|xlsx|ppt|pptx)",
+        "LayoutMode": 2,
+        "IsHiddenToolbar": true,
+        "IsSmallButtonMode": true,
+        "Readonly": true
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 8.0,
+        "HorizontalAlignment": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": null,
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "HorizontalAlignment": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "Formatter": 2,
+        "Underline": false,
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "Underline": false,
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontSize": 16.0,
+        "HorizontalAlignment": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontSize": 16.0,
+        "HorizontalAlignment": 4,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": 1,
+        "BorderLeft": 1,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": 1,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": 1,
+        "BorderLeft": null,
+        "BorderRight": 1
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "FontWeight": 6,
+        "HorizontalAlignment": 1,
+        "BorderBottom": 2,
+        "BorderTop": 2,
+        "BorderLeft": 2,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "FontWeight": 6,
+        "BorderBottom": 2,
+        "BorderTop": 2,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "FontWeight": 6,
+        "BorderBottom": 2,
+        "BorderTop": 2,
+        "BorderLeft": null,
+        "BorderRight": 2
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": 1,
+        "BorderRight": null
+      },
+      {
+        "HorizontalAlignment": 4,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "HorizontalAlignment": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "HorizontalAlignment": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "WordWrap": true,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "WordWrap": true,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "WordWrap": true,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "HorizontalAlignment": 1,
+        "WordWrap": true,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": 1
+      },
+      {
+        "BorderBottom": 1,
+        "BorderTop": null,
+        "BorderLeft": 1,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": 1,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": 1,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": 1
+      },
+      {
+        "FontSize": 16.0,
+        "FontWeight": 6,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontSize": 16.0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "Center",
+        "@",
+        "black",
+        "Left",
+        "DarkGray",
+        "Bold",
+        "Text 1 50"
+      ],
+      "Borders": [
+        {
+          "Style": 2,
+          "Color": 3
+        },
+        {
+          "Color": 5
+        },
+        {
+          "Color": 7
+        }
+      ]
+    },
+    "CellStyles": {
+      "1,1": 0,
+      "1,2": 0,
+      "1,3": 0,
+      "1,4": 0,
+      "1,5": 0,
+      "1,6": 0,
+      "1,7": 0,
+      "1,8": 0,
+      "1,9": 0,
+      "1,10": 0,
+      "1,11": 0,
+      "1,12": 0,
+      "1,13": 0,
+      "1,14": 1,
+      "1,15": 2,
+      "1,16": 3,
+      "1,17": 4,
+      "1,18": 4,
+      "1,19": 4,
+      "1,20": 4,
+      "1,21": 4,
+      "1,22": 4,
+      "1,23": 4,
+      "1,24": 4,
+      "1,25": 4,
+      "1,26": 4,
+      "1,27": 5,
+      "1,28": 4,
+      "1,29": 0,
+      "1,32": 0,
+      "1,76": 6,
+      "1,80": 7,
+      "3,1": 8,
+      "3,2": 9,
+      "3,3": 9,
+      "3,4": 9,
+      "3,5": 9,
+      "3,6": 9,
+      "3,7": 9,
+      "3,8": 9,
+      "3,9": 9,
+      "3,10": 9,
+      "3,11": 9,
+      "3,12": 9,
+      "3,13": 9,
+      "3,14": 9,
+      "3,15": 9,
+      "3,16": 9,
+      "3,17": 9,
+      "3,18": 9,
+      "3,19": 9,
+      "3,20": 9,
+      "3,21": 9,
+      "3,22": 9,
+      "3,23": 9,
+      "3,24": 9,
+      "3,25": 9,
+      "3,26": 9,
+      "3,27": 9,
+      "3,28": 9,
+      "3,29": 9,
+      "3,30": 9,
+      "3,31": 9,
+      "3,32": 9,
+      "3,33": 9,
+      "3,34": 9,
+      "3,35": 9,
+      "3,36": 9,
+      "3,37": 9,
+      "3,38": 9,
+      "3,39": 9,
+      "3,40": 9,
+      "3,41": 9,
+      "3,42": 9,
+      "3,43": 9,
+      "3,44": 9,
+      "3,45": 9,
+      "3,46": 9,
+      "3,47": 9,
+      "3,48": 9,
+      "3,49": 9,
+      "3,50": 9,
+      "3,51": 9,
+      "3,52": 9,
+      "3,53": 9,
+      "3,54": 9,
+      "3,55": 9,
+      "3,56": 9,
+      "3,57": 9,
+      "3,58": 9,
+      "3,59": 9,
+      "3,60": 9,
+      "3,61": 9,
+      "3,62": 9,
+      "3,63": 9,
+      "3,64": 9,
+      "3,65": 9,
+      "3,66": 9,
+      "3,67": 9,
+      "3,68": 9,
+      "3,69": 9,
+      "3,70": 9,
+      "3,71": 9,
+      "3,72": 9,
+      "3,73": 9,
+      "3,74": 9,
+      "3,75": 9,
+      "3,76": 9,
+      "3,77": 9,
+      "3,78": 9,
+      "3,79": 9,
+      "3,80": 9,
+      "3,81": 9,
+      "3,82": 9,
+      "3,83": 9,
+      "3,84": 9,
+      "3,85": 9,
+      "3,86": 9,
+      "3,87": 10,
+      "3,89": 11,
+      "3,90": 12,
+      "3,91": 12,
+      "3,92": 12,
+      "3,93": 12,
+      "3,94": 12,
+      "3,95": 12,
+      "3,96": 12,
+      "3,97": 13,
+      "4,1": 14,
+      "4,3": 15,
+      "4,8": 16,
+      "4,13": 17,
+      "4,14": 18,
+      "4,15": 18,
+      "4,16": 18,
+      "4,17": 18,
+      "4,18": 17,
+      "4,19": 18,
+      "4,20": 18,
+      "4,21": 18,
+      "4,22": 18,
+      "4,23": 18,
+      "4,24": 18,
+      "4,25": 18,
+      "4,26": 18,
+      "4,27": 18,
+      "4,28": 18,
+      "4,29": 18,
+      "4,30": 18,
+      "4,31": 18,
+      "4,32": 18,
+      "4,33": 18,
+      "4,34": 18,
+      "4,35": 18,
+      "4,36": 18,
+      "4,37": 19,
+      "4,44": 20,
+      "4,55": 21,
+      "4,67": 22,
+      "4,68": 0,
+      "4,69": 0,
+      "4,70": 0,
+      "4,71": 0,
+      "4,72": 21,
+      "4,87": 23,
+      "4,89": 17,
+      "4,90": 18,
+      "4,91": 18,
+      "4,92": 18,
+      "4,93": 18,
+      "4,94": 18,
+      "4,95": 18,
+      "4,96": 18,
+      "4,97": 18,
+      "5,1": 14,
+      "5,87": 23,
+      "5,89": 0,
+      "5,90": 0,
+      "5,91": 0,
+      "5,92": 0,
+      "5,93": 0,
+      "5,94": 0,
+      "5,95": 0,
+      "5,96": 0,
+      "5,97": 0,
+      "6,1": 14,
+      "6,87": 23,
+      "6,89": 0,
+      "6,90": 0,
+      "6,91": 0,
+      "6,92": 0,
+      "6,93": 0,
+      "6,94": 0,
+      "6,95": 0,
+      "6,96": 0,
+      "6,97": 0,
+      "7,1": 14,
+      "7,87": 23,
+      "7,89": 0,
+      "7,90": 0,
+      "7,91": 0,
+      "7,92": 0,
+      "7,93": 0,
+      "7,94": 0,
+      "7,95": 0,
+      "7,96": 0,
+      "7,97": 0,
+      "8,1": 14,
+      "8,87": 23,
+      "8,89": 0,
+      "8,90": 0,
+      "8,91": 0,
+      "8,92": 0,
+      "8,93": 0,
+      "8,94": 0,
+      "8,95": 0,
+      "8,96": 0,
+      "8,97": 0,
+      "9,1": 14,
+      "9,87": 23,
+      "9,89": 0,
+      "9,90": 0,
+      "9,91": 0,
+      "9,92": 0,
+      "9,93": 0,
+      "9,94": 0,
+      "9,95": 0,
+      "9,96": 0,
+      "9,97": 0,
+      "10,1": 14,
+      "10,87": 23,
+      "10,89": 0,
+      "10,90": 0,
+      "10,91": 0,
+      "10,92": 0,
+      "10,93": 0,
+      "10,94": 0,
+      "10,95": 0,
+      "10,96": 0,
+      "10,97": 0,
+      "11,1": 14,
+      "11,87": 23,
+      "11,89": 0,
+      "11,90": 0,
+      "11,91": 0,
+      "11,92": 0,
+      "11,93": 0,
+      "11,94": 0,
+      "11,95": 0,
+      "11,96": 0,
+      "11,97": 0,
+      "12,1": 14,
+      "12,87": 23,
+      "12,89": 0,
+      "12,90": 0,
+      "12,91": 0,
+      "12,92": 0,
+      "12,93": 0,
+      "12,94": 0,
+      "12,95": 0,
+      "12,96": 0,
+      "12,97": 0,
+      "13,1": 14,
+      "13,87": 23,
+      "13,89": 0,
+      "13,90": 0,
+      "13,91": 0,
+      "13,92": 0,
+      "13,93": 0,
+      "13,94": 0,
+      "13,95": 0,
+      "13,96": 0,
+      "13,97": 0,
+      "14,1": 14,
+      "14,87": 23,
+      "14,89": 0,
+      "14,90": 0,
+      "14,91": 0,
+      "14,92": 0,
+      "14,93": 0,
+      "14,94": 0,
+      "14,95": 0,
+      "14,96": 0,
+      "14,97": 0,
+      "15,1": 14,
+      "15,87": 23,
+      "15,89": 0,
+      "15,90": 0,
+      "15,91": 0,
+      "15,92": 0,
+      "15,93": 0,
+      "15,94": 0,
+      "15,95": 0,
+      "15,96": 0,
+      "15,97": 0,
+      "16,1": 14,
+      "16,87": 23,
+      "16,89": 0,
+      "16,90": 0,
+      "16,91": 0,
+      "16,92": 0,
+      "16,93": 0,
+      "16,94": 0,
+      "16,95": 0,
+      "16,96": 0,
+      "16,97": 0,
+      "17,1": 14,
+      "17,87": 23,
+      "17,89": 0,
+      "17,90": 0,
+      "17,91": 0,
+      "17,92": 0,
+      "17,93": 0,
+      "17,94": 0,
+      "17,95": 0,
+      "17,96": 0,
+      "17,97": 0,
+      "18,1": 14,
+      "18,87": 23,
+      "18,89": 0,
+      "18,90": 0,
+      "18,91": 0,
+      "18,92": 0,
+      "18,93": 0,
+      "18,94": 0,
+      "18,95": 0,
+      "18,96": 0,
+      "18,97": 0,
+      "19,1": 14,
+      "19,87": 23,
+      "19,89": 0,
+      "19,90": 0,
+      "19,91": 0,
+      "19,92": 0,
+      "19,93": 0,
+      "19,94": 0,
+      "19,95": 0,
+      "19,96": 0,
+      "19,97": 0,
+      "20,1": 14,
+      "20,87": 23,
+      "20,89": 0,
+      "20,90": 0,
+      "20,91": 0,
+      "20,92": 0,
+      "20,93": 0,
+      "20,94": 0,
+      "20,95": 0,
+      "20,96": 0,
+      "20,97": 0,
+      "21,1": 14,
+      "21,87": 23,
+      "21,89": 0,
+      "21,90": 0,
+      "21,91": 0,
+      "21,92": 0,
+      "21,93": 0,
+      "21,94": 0,
+      "21,95": 0,
+      "21,96": 0,
+      "21,97": 0,
+      "22,1": 14,
+      "22,87": 23,
+      "22,89": 0,
+      "22,90": 0,
+      "22,91": 0,
+      "22,92": 0,
+      "22,93": 0,
+      "22,94": 0,
+      "22,95": 0,
+      "22,96": 0,
+      "22,97": 0,
+      "23,1": 14,
+      "23,87": 23,
+      "23,89": 0,
+      "23,90": 0,
+      "23,91": 0,
+      "23,92": 0,
+      "23,93": 0,
+      "23,94": 0,
+      "23,95": 0,
+      "23,96": 0,
+      "23,97": 0,
+      "24,1": 14,
+      "24,87": 23,
+      "24,89": 0,
+      "24,90": 0,
+      "24,91": 0,
+      "24,92": 0,
+      "24,93": 0,
+      "24,94": 0,
+      "24,95": 0,
+      "24,96": 0,
+      "24,97": 0,
+      "25,1": 14,
+      "25,87": 23,
+      "25,89": 0,
+      "25,90": 0,
+      "25,91": 0,
+      "25,92": 0,
+      "25,93": 0,
+      "25,94": 0,
+      "25,95": 0,
+      "25,96": 0,
+      "25,97": 0,
+      "26,1": 14,
+      "26,87": 23,
+      "26,89": 0,
+      "26,90": 0,
+      "26,91": 0,
+      "26,92": 0,
+      "26,93": 0,
+      "26,94": 0,
+      "26,95": 0,
+      "26,96": 0,
+      "26,97": 0,
+      "27,1": 14,
+      "27,87": 23,
+      "27,89": 0,
+      "27,90": 0,
+      "27,91": 0,
+      "27,92": 0,
+      "27,93": 0,
+      "27,94": 0,
+      "27,95": 0,
+      "27,96": 0,
+      "27,97": 0,
+      "28,1": 14,
+      "28,87": 23,
+      "28,89": 0,
+      "28,90": 0,
+      "28,91": 0,
+      "28,92": 0,
+      "28,93": 0,
+      "28,94": 0,
+      "28,95": 0,
+      "28,96": 0,
+      "28,97": 0,
+      "29,1": 14,
+      "29,87": 23,
+      "30,1": 14,
+      "30,87": 23,
+      "31,1": 14,
+      "31,87": 23,
+      "32,1": 14,
+      "32,87": 23,
+      "33,1": 14,
+      "33,87": 23,
+      "34,1": 14,
+      "34,87": 23,
+      "35,1": 14,
+      "35,87": 23,
+      "36,1": 14,
+      "36,87": 23,
+      "36,89": 0,
+      "36,90": 0,
+      "36,91": 0,
+      "36,92": 0,
+      "36,93": 0,
+      "36,94": 0,
+      "36,95": 0,
+      "36,96": 0,
+      "36,97": 0,
+      "37,1": 14,
+      "37,87": 23,
+      "37,89": 0,
+      "37,90": 0,
+      "37,91": 0,
+      "37,92": 0,
+      "37,93": 0,
+      "37,94": 0,
+      "37,95": 0,
+      "37,96": 0,
+      "37,97": 0,
+      "38,1": 14,
+      "38,87": 23,
+      "38,89": 0,
+      "38,90": 0,
+      "38,91": 0,
+      "38,92": 0,
+      "38,93": 0,
+      "38,94": 0,
+      "38,95": 0,
+      "38,96": 0,
+      "38,97": 0,
+      "39,1": 14,
+      "39,87": 23,
+      "39,89": 0,
+      "39,90": 0,
+      "39,91": 0,
+      "39,92": 0,
+      "39,93": 0,
+      "39,94": 0,
+      "39,95": 0,
+      "39,96": 0,
+      "39,97": 0,
+      "40,1": 14,
+      "40,87": 23,
+      "40,89": 0,
+      "40,90": 0,
+      "40,91": 0,
+      "40,92": 0,
+      "40,93": 0,
+      "40,94": 0,
+      "40,95": 0,
+      "40,96": 0,
+      "40,97": 0,
+      "41,1": 24,
+      "41,2": 25,
+      "41,3": 25,
+      "41,4": 25,
+      "41,5": 25,
+      "41,6": 25,
+      "41,7": 25,
+      "41,8": 25,
+      "41,9": 25,
+      "41,10": 25,
+      "41,11": 25,
+      "41,12": 25,
+      "41,13": 25,
+      "41,14": 25,
+      "41,15": 25,
+      "41,16": 25,
+      "41,17": 25,
+      "41,18": 25,
+      "41,19": 25,
+      "41,20": 25,
+      "41,21": 25,
+      "41,22": 25,
+      "41,23": 25,
+      "41,24": 25,
+      "41,25": 25,
+      "41,26": 25,
+      "41,27": 25,
+      "41,28": 25,
+      "41,29": 25,
+      "41,30": 25,
+      "41,31": 25,
+      "41,32": 25,
+      "41,33": 25,
+      "41,34": 25,
+      "41,35": 25,
+      "41,36": 25,
+      "41,37": 25,
+      "41,38": 25,
+      "41,39": 25,
+      "41,40": 25,
+      "41,41": 25,
+      "41,42": 25,
+      "41,43": 25,
+      "41,44": 25,
+      "41,45": 25,
+      "41,46": 25,
+      "41,47": 25,
+      "41,48": 25,
+      "41,49": 25,
+      "41,50": 25,
+      "41,51": 25,
+      "41,52": 25,
+      "41,53": 25,
+      "41,54": 25,
+      "41,55": 25,
+      "41,56": 25,
+      "41,57": 25,
+      "41,58": 25,
+      "41,59": 25,
+      "41,60": 25,
+      "41,61": 25,
+      "41,62": 25,
+      "41,63": 25,
+      "41,64": 25,
+      "41,65": 25,
+      "41,66": 25,
+      "41,67": 25,
+      "41,68": 25,
+      "41,69": 25,
+      "41,70": 25,
+      "41,71": 25,
+      "41,72": 25,
+      "41,73": 25,
+      "41,74": 25,
+      "41,75": 25,
+      "41,76": 25,
+      "41,77": 25,
+      "41,78": 25,
+      "41,79": 25,
+      "41,80": 25,
+      "41,81": 25,
+      "41,82": 25,
+      "41,83": 25,
+      "41,84": 25,
+      "41,85": 25,
+      "41,86": 25,
+      "41,87": 26,
+      "41,89": 0,
+      "41,90": 0,
+      "41,91": 0,
+      "41,92": 0,
+      "41,93": 0,
+      "41,94": 0,
+      "41,95": 0,
+      "41,96": 0,
+      "41,97": 0
+    },
+    "RowStyles": {
+      "3": 27,
+      "4": 28
+    },
+    "SheetStyle": {
+      "FontFamily": 0,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
+    }
+  },
+  "Spans": [
+    "1,1,1,6",
+    "1,8,1,6",
+    "1,16,1,11",
+    "1,27,1,2",
+    "1,29,1,3",
+    "1,76,1,4",
+    "1,80,1,4",
+    "1,89,1,9",
+    "3,89,1,9",
+    "4,1,1,2",
+    "4,3,1,5",
+    "4,8,1,5",
+    "4,13,1,5",
+    "4,18,1,4",
+    "4,22,1,5",
+    "4,27,1,10",
+    "4,37,1,7",
+    "4,44,1,11",
+    "4,55,1,12",
+    "4,67,1,5",
+    "4,72,1,12",
+    "4,84,1,4",
+    "4,89,38,9",
+    "5,1,37,87",
+    "3,1,1,2",
+    "3,3,1,5",
+    "3,8,1,5",
+    "3,13,1,5",
+    "3,18,1,4",
+    "3,22,1,5",
+    "3,27,1,10",
+    "3,37,1,7",
+    "3,44,1,11",
+    "3,55,1,12",
+    "3,67,1,5",
+    "3,72,1,12",
+    "3,84,1,4"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//Ebv46aKF2+YRro/kE2FgX+GmY9Y8i9MHiqerX/Vs8Pbb3XKb5FWZxtM+kXGG+NvbFB5lueIiKL2X+br79i3qrta71uIutfmIsUEbi52WfsFVprSn1oCPWMlV3T+Z3gDeUwL81h96cYufOHHDRAzS1ORtLwsb97O8kVujXrNgBeC1gfSqXXdPp2IrvY9VHD6C81WNlkQ/1R6qLoMTwWyhwj6jjIo0Ck8RTLu5qtwd8YAqU2lLl7S5zHixhHj3Qisu57TDJwB51ikWPQOyY2zmHIbOnKM0DeYeL2keFR74fg3PO5DgJksuIHNAc3ZK+HGSWYOlPC07gQ70U5QlhuunfOs8UvzU0cImr9H2M7hiukRC+mlWboCK78Lq0HULyenx6IKLQjGqLT1cZfKnIMvbMyEHuDBFNFMd5FDH/0BK3rodiL4wO1+Qlz9kdUoliJ54cPAjBIRkemoG09NvCKhC4Pa8DdvnPMutVEeHeiV+fshX4fHNorS08+M5upG2YTJmQSF/2dmbEtMIx/589Mv+jpvOLtYrmCynvT/uvShqvTWSz2fdc0b0ROYcXe0W+pPeJmnBlrs5g0OF6KGKvxpyqxSItNnQp35aKhi+Ivp6kqRW9KBBfOlNtqV7yDM8kZtM3bX4T8dyXaBd0zxw9OLm/OzOXdMUYNkqfOZeOskn5917TYsg0ELD+lIHrztXYEgAxTH9Mfpd3u3WnbOgIqCc4tUgl5AkfdLvRoR/lYDqRnU4Q7zgaj2L1NBAFSHpEsyeyANo3+YSWKE6Xc50W8CDC1XXRBjb0+PKx6HV3dhFe4wrvRdTFa7VrgithkaxY74al3k2qMpGT933p+uqTMSnc+y8DA+PlccucstEvKolOG/cS88SpTaPgEX3a0yYj1alUD1OPKfCv/O36gSgcAeM8A==|920

@@ -1,0 +1,184 @@
+{
+  "Rows": {
+    "Count": 12
+  },
+  "Cols": {
+    "Count": 12
+  },
+  "Values": {
+    "9,4": "确定上传"
+  },
+  "AttachInfos": {
+    "2,2": {
+      "BindingInfo": {
+        "TableName": "美国仓",
+        "ColumnName": "退货图片",
+        "GUID": "3e38c332-576b-4897-96ca-a58957b186a4",
+        "IsImagePath": true
+      },
+      "CellType": {
+        "$type": "Forguncy.UploadImageCellType, ServerDesignerCommon",
+        "UploadImageLimit": {
+          "IsCompressImage": true,
+          "MaxWidth": 1000.0,
+          "MaxHeight": 1000.0,
+          "AllowExtensions": ".art, .bmp, .cmx, .cod, .dib, .gif, .ico, .ief, .jfif, .jpe, .jpeg, .jpg, .pbm, .pgm, .png, .pnm, .pnz, .ppm, .ras, .rf, .rgb, .svg, .tif, .tiff, .wbmp, .xbm, .xpm, .xwd"
+        }
+      }
+    },
+    "9,4": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+            "TableName": "美国仓",
+            "ShowConfirm": false,
+            "RowsToUpdate": 1,
+            "RowsToUpdateCondition": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "美国仓",
+                "ColumnName": "ID",
+                "GUID": "173d9920-6bf9-4cbd-93e7-ee2daccba5dd"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=hwc图片上传!A1"
+              }
+            },
+            "UpdateBindingValues": [
+              {
+                "BindingInfo": {
+                  "TableName": "美国仓",
+                  "ColumnName": "退货图片",
+                  "GUID": "9c47a556-8ee5-4476-b2a3-5e51aff8ec77"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=hwc图片上传!C3"
+                }
+              }
+            ],
+            "BreakpointIdentity": "b8fc6604-9bcc-4213-a199-87e551c69023"
+          },
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "PassValueBack": true,
+            "ReloadData": true,
+            "BreakpointIdentity": "460bc4f0-1945-4156-be53-d4755fe0f6fd"
+          }
+        ],
+        "Text": "确定上传",
+        "TemplateKey": "样式13"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Foreground": 0
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 14.666666666666666,
+        "FontWeight": 2,
+        "Formatter": 3
+      },
+      {
+        "FontFamily": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 32.0,
+        "FontWeight": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Background 1 0",
+        "宋体",
+        "Bold",
+        "[AUTO]General"
+      ]
+    },
+    "CellStyles": {
+      "0,0": 0,
+      "0,1": 1,
+      "1,1": 1,
+      "1,2": 1,
+      "1,3": 1,
+      "2,1": 1,
+      "3,1": 1,
+      "4,1": 1,
+      "5,1": 1,
+      "6,1": 1,
+      "7,1": 1,
+      "8,1": 1,
+      "9,1": 1,
+      "9,4": 2,
+      "9,8": 3,
+      "10,8": 3,
+      "10,9": 4,
+      "10,10": 4,
+      "10,11": 4,
+      "11,5": 4,
+      "11,6": 4,
+      "11,7": 4,
+      "11,8": 4,
+      "11,9": 4,
+      "11,10": 4,
+      "11,11": 4
+    },
+    "SheetStyle": {
+      "FontFamily": 1,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
+    }
+  },
+  "Spans": [
+    "1,2,1,2",
+    "2,2,6,8",
+    "9,4,2,4"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "美国仓"
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//Dx9yAiMQwjHFSeLd4ZaKnGPOw/z8UQ93SaYulfqK7HSdNthqICNPuW96QJMtDsLJUpDqK7FiOOHpYk5dGmX6+fFXncNq+AXIB2fbSz0iRJZSrwin7qUxP6Q2eSfnytMDuXjC2PmFMwl1LxscjNFx7Ieqcs9t9vyESxK4joi6O3RPDSc0hxivabA8pwvm84MS2QFT2fUWtQSX8hAMcNUdz9SnEfuv9J5cxmcVNJnRlB+5r1zR5tUcR+or+0Ctytm9ZMbtw3v5H1GH3wf0ukM3gw0gWMGHq3HiMeG9HJdvrDNUC/q3NioTH7vgwan4+hltBYLtKFl/684MhHsdqCVtXeea1E70Dh3akGQU4YRd+td6uveO+59Z/lMH5PHd9EQZDxTzxNwxCQ47j0i19dyFjwyDJEXGr6GLLIFQ8xJ5qayreq/xphzRfaTnm+3ql7t8VS6qZqlkoinRbOkqs8hZuyHUNpzgxDWGuFXB7JycdwSu2YYe8ZCXIBLRdk0Z7cRJSvriu+DpxNXCldiHxSuoEpzRIolMHi2FAf5n40VaYaHHQ1BxPiz7zw5o4trZHz0d3fdWe1e0gI3LzGcSxEw+tJQJxOJcaG0Koc43tL3SynbxqoGefFnazsE2LaxlUg2Mu6SaOtoqe9MYeXeUGl/myZodXanWrvwU9ukAWj0yA4euTVi+yTWRrJbVgSjqHTjyXgS2FJZG535vxkME6bpbQBKhEEdIjXJOXwjXbP2Ivu0fJ5GXJ+zPqH9OFZXxXmJXr17oI2ckLFd9785EQ1Q3uV5Emp20+Pnk2IOBbgHzz4vcV4A+ZkKAByWakAB8oUdmR3yQDTvzb2txbEeQI5EPsxPtrtl12KHDVoQz9fthxp0j+ZveXs7fwBbopcDxnsf2xv3YEmJxNnPu11pX3g4zBw==|920

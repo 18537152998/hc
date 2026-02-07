@@ -1,0 +1,683 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      }
+    },
+    "Count": 39
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "18": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 40.0
+        }
+      },
+      "19": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 40.0
+        }
+      },
+      "20": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 40.0
+        }
+      },
+      "21": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 40.0
+        }
+      },
+      "22": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 40.0
+        }
+      },
+      "23": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 40.0
+        }
+      },
+      "24": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 40.0
+        }
+      },
+      "25": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 40.0
+        }
+      },
+      "26": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 40.0
+        }
+      },
+      "27": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 40.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27
+    ],
+    "Count": 28
+  },
+  "Values": {
+    "0,4": "LEO出售",
+    "2,2": "特拉华"
+  },
+  "AttachInfos": {
+    "2,2": {
+      "CellType": {
+        "$type": "Forguncy.RadioGroupCellType, ServerDesignerCommon",
+        "Style": 3,
+        "PrimaryColor": "Accent 5 0",
+        "CellDefaultValue": "特拉华",
+        "Items": [
+          {
+            "Value": "特拉华",
+            "DisplayValue": "特拉华"
+          },
+          {
+            "Value": "滨州大货",
+            "DisplayValue": "滨州大货"
+          }
+        ]
+      }
+    },
+    "4,1": {
+      "CellType": {
+        "$type": "Forguncy.RepeaterCellType, ServerDesignerCommon",
+        "TemplatePageName": "4d464424-de16-4fc1-9f7b-90572bd87aea",
+        "ListviewName": "表格1"
+      }
+    },
+    "5,18": {
+      "ListViewInfo": {
+        "Name": "表格1",
+        "TableName": "美国仓",
+        "RowIndex": 5,
+        "ColumnIndex": 18,
+        "RowCount": 9,
+        "ColumnCount": 10,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "SubConditions": [
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "美国仓",
+                "ColumnName": "入库状态",
+                "GUID": "a40bf03a-0c57-40ed-8409-772228ec200c"
+              },
+              "Value": "1"
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "美国仓",
+                "ColumnName": "退货指令",
+                "GUID": "11c4b73b-b8b3-452a-b023-661f6d822af7"
+              },
+              "Value": "需退货"
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "美国仓",
+                "ColumnName": "出库状态",
+                "GUID": "af3d9a64-5a49-4ae3-b725-94730ac4eddd"
+              },
+              "Value": "%Null%"
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "美国仓",
+                "ColumnName": "退货仓库",
+                "GUID": "e92ffff3-f03d-4f73-b6a4-1157e34ea94a"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=海外仓出售sj!C3"
+              }
+            }
+          ]
+        },
+        "TopCondition": {
+          "$type": "ForguncyDataAccess.TopCESqlCondition, ForguncyDataAccess",
+          "TopCount": 15
+        },
+        "TableLoadOnDemandInfo": {
+          "IsEnabled": true,
+          "DemandedRowCount": 15
+        },
+        "ListViewStyleName": "样式1",
+        "ShowColumnHeaderInDesigner": true,
+        "ColumnOperation": 2,
+        "ShowGridLine": true
+      }
+    },
+    "6,18": {
+      "NameUsedInJavaScript": "库存编号",
+      "BindingInfo": {
+        "TableName": "美国仓",
+        "ColumnName": "库存编号",
+        "GUID": "124edfc4-6915-4e3f-8f9b-8285f781fb50"
+      }
+    },
+    "6,19": {
+      "NameUsedInJavaScript": "入库时间",
+      "BindingInfo": {
+        "TableName": "美国仓",
+        "ColumnName": "入库时间",
+        "GUID": "245db317-a743-477c-b2fc-6c610de3cfd0"
+      }
+    },
+    "6,20": {
+      "NameUsedInJavaScript": "平台",
+      "BindingInfo": {
+        "TableName": "美国仓",
+        "ColumnName": "平台",
+        "GUID": "374297ce-9cf4-4d03-86ef-0dc8843a41fd"
+      }
+    },
+    "6,21": {
+      "NameUsedInJavaScript": "商品名",
+      "BindingInfo": {
+        "TableName": "美国仓",
+        "ColumnName": "识别码",
+        "GUID": "b35b9a73-98b1-4c7f-b462-1346458cb703",
+        "RelationBinding": {
+          "RelatedTable": "库存表",
+          "RelatedColumn": "识别码",
+          "DisplayColumn": "商品名"
+        }
+      }
+    },
+    "6,22": {
+      "NameUsedInJavaScript": "图片",
+      "BindingInfo": {
+        "TableName": "美国仓",
+        "ColumnName": "识别码",
+        "GUID": "15bcf4ee-6db4-49b8-9080-49bd6d34b5fa",
+        "RelationBinding": {
+          "RelatedTable": "库存表",
+          "RelatedColumn": "识别码",
+          "DisplayColumn": "图片"
+        }
+      }
+    },
+    "6,23": {
+      "NameUsedInJavaScript": "出库数量",
+      "BindingInfo": {
+        "TableName": "美国仓",
+        "ColumnName": "出库数量",
+        "GUID": "5c767cd6-ac95-401f-b9c8-c789c9cdc9a0"
+      }
+    },
+    "6,24": {
+      "NameUsedInJavaScript": "价格",
+      "BindingInfo": {
+        "TableName": "美国仓",
+        "ColumnName": "价格",
+        "GUID": "b66af93a-d91f-46a2-8510-85d56b9ec293"
+      }
+    },
+    "6,25": {
+      "NameUsedInJavaScript": "出库日期",
+      "BindingInfo": {
+        "TableName": "美国仓",
+        "ColumnName": "出库日期",
+        "GUID": "a02f9f85-f7c9-45a5-a060-0963d2a1e148"
+      }
+    },
+    "6,26": {
+      "NameUsedInJavaScript": "结算状态",
+      "BindingInfo": {
+        "TableName": "美国仓",
+        "ColumnName": "结算状态",
+        "GUID": "095cc4e7-a021-409a-b1da-a1c455d99bb9"
+      }
+    },
+    "35,0": {
+      "CellType": {
+        "$type": "Forguncy.CustomMenu.ForguncyIconMenuCellType, Forguncy.CustomMenu",
+        "Items": [
+          {
+            "Text": "首页",
+            "IconPath": "Mobile\\381_home_3.svg",
+            "IconColor": "Text 1 50",
+            "SelectedIconPath": "Mobile\\381_home_3.svg",
+            "IsDefaultItem": true,
+            "IsOldMenuPath": false,
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                "PageName": "us首页sj",
+                "IgnoreTargetPageCachedCurrentRowInfo": false,
+                "BreakpointIdentity": "783af646-57cf-4151-8e71-05b88091d95b"
+              }
+            ],
+            "CanVisitRoleList": [
+              "FGC_LoginUser"
+            ]
+          },
+          {
+            "Text": "待退货",
+            "IconPath": "Mobile\\383_file_3.svg",
+            "IconColor": "Text 1 50",
+            "SelectedIconPath": "Mobile\\383_file_3.svg",
+            "IsOldMenuPath": false,
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                "PageName": "待退货sj",
+                "IgnoreTargetPageCachedCurrentRowInfo": false,
+                "BreakpointIdentity": "ea847195-00f1-432e-bbf6-7fc8fa95b667"
+              }
+            ],
+            "CanVisitRoleList": [
+              "FGC_LoginUser"
+            ]
+          },
+          {
+            "Text": "扫码",
+            "IconPath": "Mobile\\442_search_8.svg",
+            "IconColor": "Text 1 50",
+            "SelectedIconPath": "Mobile\\442_search_8.svg",
+            "IsOldMenuPath": false,
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                "PageName": "扫码入库sj",
+                "IgnoreTargetPageCachedCurrentRowInfo": false,
+                "BreakpointIdentity": "45b44f92-1edd-4290-a4be-9976522be4af"
+              }
+            ],
+            "CanVisitRoleList": [
+              "FGC_LoginUser"
+            ]
+          },
+          {
+            "Text": "库存表",
+            "IconPath": "Chart\\363_column_chart_2.svg",
+            "IconColor": "Text 1 50",
+            "SelectedIconPath": "Chart\\363_column_chart_2.svg",
+            "IsOldMenuPath": false,
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                "PageName": "库存表sj",
+                "IgnoreTargetPageCachedCurrentRowInfo": false,
+                "BreakpointIdentity": "bcedeb12-8ffd-4d2e-b3f3-42f3b729f075"
+              }
+            ],
+            "CanVisitRoleList": [
+              "FGC_LoginUser"
+            ]
+          }
+        ],
+        "Orientation": 0,
+        "MenuLevelsStyle": [
+          {
+            "BackColor": "#fcfcfc",
+            "ForeColor": "#9e9e9e",
+            "SelectedBackColor": "#fcfcfc",
+            "SelectedForeColor": "#00a1e9"
+          }
+        ]
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontWeight": 0,
+        "HorizontalAlignment": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "HorizontalAlignment": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": 0,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderTop": 0
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": 0,
+        "BorderLeft": null,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 3,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 3,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 3
+      },
+      {
+        "FontFamily": 3,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": 0
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": 0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Bold",
+        "Center",
+        "DarkGray",
+        "Body"
+      ],
+      "Borders": [
+        {
+          "Color": 2
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,4": 0,
+      "1,4": 0,
+      "1,5": 0,
+      "1,6": 0,
+      "1,7": 0,
+      "1,8": 0,
+      "1,9": 0,
+      "1,10": 0,
+      "1,11": 0,
+      "1,12": 0,
+      "1,13": 0,
+      "4,1": 1,
+      "5,18": 2,
+      "5,19": 3,
+      "5,20": 3,
+      "5,21": 4,
+      "5,22": 4,
+      "5,23": 3,
+      "5,24": 3,
+      "5,25": 3,
+      "5,26": 3,
+      "5,27": 5,
+      "6,18": 6,
+      "6,19": 7,
+      "6,20": 7,
+      "6,21": 8,
+      "6,22": 8,
+      "6,23": 7,
+      "6,24": 7,
+      "6,25": 7,
+      "6,26": 9,
+      "7,18": 10,
+      "7,19": 11,
+      "7,20": 11,
+      "7,21": 11,
+      "7,22": 11,
+      "7,23": 11,
+      "7,24": 11,
+      "7,25": 11,
+      "7,26": 11,
+      "7,27": 12,
+      "8,18": 10,
+      "8,19": 11,
+      "8,20": 11,
+      "8,21": 11,
+      "8,22": 11,
+      "8,23": 11,
+      "8,24": 11,
+      "8,25": 11,
+      "8,26": 11,
+      "8,27": 12,
+      "9,18": 10,
+      "9,19": 11,
+      "9,20": 11,
+      "9,21": 11,
+      "9,22": 11,
+      "9,23": 11,
+      "9,24": 11,
+      "9,25": 11,
+      "9,26": 11,
+      "9,27": 12,
+      "10,18": 10,
+      "10,19": 11,
+      "10,20": 11,
+      "10,21": 11,
+      "10,22": 11,
+      "10,23": 11,
+      "10,24": 11,
+      "10,25": 11,
+      "10,26": 11,
+      "10,27": 12,
+      "11,18": 10,
+      "11,19": 11,
+      "11,20": 11,
+      "11,21": 11,
+      "11,22": 11,
+      "11,23": 11,
+      "11,24": 11,
+      "11,25": 11,
+      "11,26": 11,
+      "11,27": 12,
+      "12,18": 10,
+      "12,19": 11,
+      "12,20": 11,
+      "12,21": 11,
+      "12,22": 11,
+      "12,23": 11,
+      "12,24": 11,
+      "12,25": 11,
+      "12,26": 11,
+      "12,27": 12,
+      "13,18": 13,
+      "13,19": 14,
+      "13,20": 14,
+      "13,21": 14,
+      "13,22": 14,
+      "13,23": 14,
+      "13,24": 14,
+      "13,25": 14,
+      "13,26": 14,
+      "13,27": 15,
+      "35,0": 7,
+      "35,1": 7,
+      "35,2": 7,
+      "35,3": 7,
+      "35,4": 7,
+      "35,5": 7,
+      "35,6": 7,
+      "35,7": 7,
+      "35,8": 7,
+      "35,9": 7,
+      "35,10": 7,
+      "35,11": 7,
+      "35,12": 7,
+      "35,13": 7,
+      "35,14": 7,
+      "35,15": 7,
+      "35,16": 7,
+      "35,17": 7,
+      "36,0": 7,
+      "36,1": 7,
+      "36,2": 7,
+      "36,3": 7,
+      "36,4": 7,
+      "36,5": 7,
+      "36,6": 7,
+      "36,7": 7,
+      "36,8": 7,
+      "36,9": 7,
+      "36,10": 7,
+      "36,11": 7,
+      "36,12": 7,
+      "36,13": 7,
+      "36,14": 7,
+      "36,15": 7,
+      "36,16": 7,
+      "36,17": 7,
+      "37,0": 7,
+      "37,1": 7,
+      "37,2": 7,
+      "37,3": 7,
+      "37,4": 7,
+      "37,5": 7,
+      "37,6": 7,
+      "37,7": 7,
+      "37,8": 7,
+      "37,9": 7,
+      "37,10": 7,
+      "37,11": 7,
+      "37,12": 7,
+      "37,13": 7,
+      "37,14": 7,
+      "37,15": 7,
+      "37,16": 7,
+      "37,17": 7
+    },
+    "SheetStyle": {
+      "FontFamily": 3,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
+    }
+  },
+  "Spans": [
+    "0,4,1,10",
+    "2,2,1,13",
+    "4,1,30,16",
+    "7,18,7,10",
+    "35,0,3,18"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "IsMobilePage": true,
+    "RelatedDataTableName": "美国仓"
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "BackgroundPictures": [
+    {
+      "FitToBrowserWidth": true,
+      "FitToBrowserHeight": true,
+      "Repeat": true,
+      "Name": "5967ff36-39be-464d-9e06-4c3031ce8880",
+      "ForguncyPictureName": "图片资源8",
+      "ForguncyPictureSourceType": 0,
+      "Stretch": 0,
+      "StyleInfo": {
+        "Fill": null
+      },
+      "IsAutomaticFill": false,
+      "Location": "155,77",
+      "Size": "60,50"
+    }
+  ]
+}//9zzAdX43bBM12/qgZ5ZvMZYSxWZ6CtoYdFzLuEAnb9x/QucWWuG9hVuk1QvbGS0EQxYzV2NCxZQEax7IIcVugoDC+GES1Ge3Vk0gCNytKyB4shJuiHnaHPXdRv1cDffJ54NV2bpV5jGfz5KTJLplELQC/0bzLcDHgU8nrPHx601Qx6WcqXmifyK4FchR+lptJ58pRzYcK11Sp1VHIYakaDOKyTMFh7jkBHtaY36sZC3WHDEIY+rMJKRrtPJIAkCDqrPjjXHrXHBxEkouHzWrsz2UUSYRqOvCTps9pbqjuRQWW2G9707artQeJV/mYqH3do6Ro0H9mvVRf2VsG8Y4H6qKlyAUx6guqj5ZsxGr+pfL/J0duZmK27dyv9y8+3AK7XIfXXXBk+gF0mw2soEn2GqNfU20wWlGS8XCuA6RsqAwed/rQMsTVsepqjPfoX6ek+BhLN1OpSg/CwFgzVJQlRYvrezcpJYcBoxFdPugjkpaZT7t6YLTc1l43PVJUqLZvJBv/3iJtU/ZDB7MOJ46IpARkqQfbDreXEyppjZoInI39rs3bO5DMM/kpQeeoHMei9j+3OIPdXKojWbLt8UcoFcmIUvCPnpwOPqXVQh5kqEzTBmWzJu+HYVNd6nq66JRE6F/LNv6bBKeBIjDD+9SHdEqvsAe+Xw5F0SVYEWZvjkLtt7vW7PCTcFDERY4U2nSAXDm1KMvBdfsZOA+65h0mVVpo2K+4qIU5lHEjVzPnqvR4rB6QJht7E1YHBFm7RHjMPn6pqDxZ+txlfMgONJuHswfdZtNPm/PzV2DuU/xVchGvMkS5VOyYm3JM9tE/ojV+baxNITVcPX+LcRUZ54HKqOSH25FRxdtSksY05aNEU7M67tiBu2aA8Lo09okMTqNHtp7NbTspH2aRB+LO/pozw==|920

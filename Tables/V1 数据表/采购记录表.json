@@ -1,0 +1,1750 @@
+{
+  "Name": "采购记录表",
+  "FlowProcess": {
+    "FlowStates": [
+      {
+        "Id": "4a8f59cf-e6a2-48a3-9492-5311a88dbf44",
+        "StateName": "未审核"
+      },
+      {
+        "Id": "dcea518b-fd4a-4b98-8f50-8715b82d044a",
+        "StateName": "审核中"
+      },
+      {
+        "Id": "c5255b3d-0ce4-43f5-8cbc-7585b90321d0",
+        "StateName": "已审核"
+      },
+      {
+        "Id": "37cd66ec-77e4-489c-84b4-f90366cdd12d",
+        "StateName": "反审核"
+      }
+    ],
+    "FlowPaths": [
+      {
+        "StartState": {
+          "Id": "4a8f59cf-e6a2-48a3-9492-5311a88dbf44",
+          "StateName": "未审核"
+        },
+        "Action": {
+          "ActionName": "提交",
+          "GUID": "5e28286d-c2e4-4cf8-b09d-0760c6b6afa3"
+        },
+        "ToState": {
+          "Id": "dcea518b-fd4a-4b98-8f50-8715b82d044a",
+          "StateName": "审核中"
+        },
+        "Assignees": [
+          {
+            "FlowProcessRoleType": 6,
+            "Name": "(None)"
+          }
+        ],
+        "Errors": []
+      },
+      {
+        "$type": "Forguncy.SaveLoad.ApprovalProcessPathSaveData, ServerDesignerCommon",
+        "StartState": {
+          "Id": "dcea518b-fd4a-4b98-8f50-8715b82d044a",
+          "StateName": "审核中"
+        },
+        "ToState": {
+          "Id": "c5255b3d-0ce4-43f5-8cbc-7585b90321d0",
+          "StateName": "已审核"
+        },
+        "Assignees": [
+          {
+            "FlowProcessRoleType": 1,
+            "Name": "财务主管",
+            "FilterBy": {}
+          }
+        ],
+        "Errors": [],
+        "Items": [
+          {
+            "GUID": "3e13a3ca-6c4a-49fc-87bb-14db7f194361",
+            "Role": {
+              "FlowProcessRoleType": 1,
+              "Name": "财务主管",
+              "FilterBy": {
+                "FilterByType": 2
+              }
+            }
+          }
+        ]
+      },
+      {
+        "StartState": {
+          "Id": "c5255b3d-0ce4-43f5-8cbc-7585b90321d0",
+          "StateName": "已审核"
+        },
+        "Action": {
+          "ActionName": "反审核",
+          "GUID": "bef59360-7df4-4b8e-9a9b-a84bc9d0f7df"
+        },
+        "ToState": {
+          "Id": "37cd66ec-77e4-489c-84b4-f90366cdd12d",
+          "StateName": "反审核"
+        },
+        "Assignees": [
+          {
+            "FlowProcessRoleType": 3,
+            "Name": "Creator"
+          }
+        ],
+        "Errors": []
+      },
+      {
+        "StartState": {
+          "Id": "37cd66ec-77e4-489c-84b4-f90366cdd12d",
+          "StateName": "反审核"
+        },
+        "Action": {
+          "ActionName": "提交",
+          "GUID": "f36768a1-8598-4fb5-8a02-7721c5d7b309"
+        },
+        "ToState": {
+          "Id": "dcea518b-fd4a-4b98-8f50-8715b82d044a",
+          "StateName": "审核中"
+        },
+        "Assignees": [
+          {
+            "FlowProcessRoleType": 6,
+            "Name": "(None)"
+          }
+        ],
+        "Errors": []
+      }
+    ]
+  },
+  "PermissionData": {
+    "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionData, Forguncy.RbacPermission.Core",
+    "permissionResource": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionResource, Forguncy.RbacPermission.Core",
+      "enabledTypes": 4,
+      "detailTables": []
+    },
+    "permissionBindings": [
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "ASIN": 5,
+            "ID": 5,
+            "SKU": 5,
+            "产品图片": 5,
+            "付款备注": 5,
+            "供应商": 5,
+            "入库员ID": 5,
+            "入库备注": 5,
+            "入库数量": 5,
+            "入库日期": 5,
+            "入库状态": 5,
+            "凭证": 5,
+            "单价": 5,
+            "单价成本": 5,
+            "单据链接": 5,
+            "历史到货数量": 5,
+            "历史采购": 5,
+            "发票单位": 5,
+            "发票号码": 5,
+            "发票备注": 5,
+            "发票日期": 5,
+            "发货类型": 5,
+            "合同纸质版原件": 5,
+            "商品名称": 5,
+            "库存子表ID": 5,
+            "开票名称": 5,
+            "开票大类": 5,
+            "开票指令": 5,
+            "快递公司": 5,
+            "快递单号": 5,
+            "扫码数量": 5,
+            "支付方式": 5,
+            "支付状态": 5,
+            "收货地点": 5,
+            "数量": 5,
+            "整体图片": 5,
+            "未税单价": 5,
+            "物流轨迹": 5,
+            "物流转运进度": 5,
+            "物流面单": 5,
+            "站点": 5,
+            "自发备货表ID": 5,
+            "识别码": 5,
+            "运费": 5,
+            "退款货抵扣数量": 5,
+            "送货单原件": 5,
+            "采购员": 5,
+            "采购子表ID": 5,
+            "采购平台": 5,
+            "采购日期": 5,
+            "采购时票型": 5,
+            "采购编号": 5,
+            "采购补充": 5,
+            "采购订单编号": 5,
+            "金额": 5,
+            "销售订单编号": 5,
+            "销售账户": 5,
+            "项目名称": 5,
+            "状态": 5,
+            "已到票金额": 5,
+            "型号": 5
+          },
+          "subTableOperations": {},
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core"
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "财务主管"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "ASIN": 1,
+            "ID": 5,
+            "SKU": 5,
+            "产品图片": 5,
+            "付款备注": 5,
+            "供应商": 5,
+            "入库员ID": 5,
+            "入库备注": 5,
+            "入库数量": 5,
+            "入库日期": 5,
+            "入库状态": 5,
+            "凭证": 5,
+            "单价": 1,
+            "单价成本": 5,
+            "单据链接": 5,
+            "历史到货数量": 5,
+            "历史采购": 5,
+            "发票单位": 5,
+            "发票号码": 5,
+            "发票备注": 5,
+            "发票日期": 5,
+            "发货类型": 5,
+            "合同纸质版原件": 5,
+            "商品名称": 1,
+            "库存子表ID": 5,
+            "开票名称": 5,
+            "开票大类": 5,
+            "开票指令": 5,
+            "快递公司": 0,
+            "快递单号": 1,
+            "扫码数量": 5,
+            "支付方式": 1,
+            "支付状态": 5,
+            "收货地点": 5,
+            "数量": 5,
+            "整体图片": 5,
+            "未税单价": 5,
+            "物流轨迹": 5,
+            "物流转运进度": 5,
+            "物流面单": 5,
+            "站点": 5,
+            "自发备货表ID": 5,
+            "识别码": 5,
+            "运费": 1,
+            "退款货抵扣数量": 5,
+            "送货单原件": 5,
+            "采购员": 5,
+            "采购子表ID": 5,
+            "采购平台": 0,
+            "采购日期": 1,
+            "采购时票型": 5,
+            "采购编号": 5,
+            "采购补充": 1,
+            "采购订单编号": 1,
+            "金额": 1,
+            "销售订单编号": 1,
+            "销售账户": 1,
+            "项目名称": 5,
+            "状态": 5,
+            "已到票金额": 5,
+            "型号": 5
+          },
+          "subTableOperations": {},
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core"
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "销售"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "ASIN": 1,
+            "ID": 5,
+            "SKU": 5,
+            "产品图片": 5,
+            "付款备注": 5,
+            "供应商": 5,
+            "入库员ID": 5,
+            "入库备注": 5,
+            "入库数量": 5,
+            "入库日期": 5,
+            "入库状态": 5,
+            "凭证": 5,
+            "单价": 0,
+            "单价成本": 5,
+            "单据链接": 5,
+            "历史到货数量": 5,
+            "历史采购": 5,
+            "发票单位": 5,
+            "发票号码": 5,
+            "发票备注": 5,
+            "发票日期": 5,
+            "发货类型": 5,
+            "合同纸质版原件": 5,
+            "商品名称": 1,
+            "库存子表ID": 5,
+            "开票名称": 5,
+            "开票大类": 5,
+            "开票指令": 5,
+            "快递公司": 0,
+            "快递单号": 1,
+            "扫码数量": 5,
+            "支付方式": 0,
+            "支付状态": 5,
+            "收货地点": 5,
+            "数量": 5,
+            "整体图片": 5,
+            "未税单价": 5,
+            "物流轨迹": 5,
+            "物流转运进度": 5,
+            "物流面单": 5,
+            "站点": 5,
+            "自发备货表ID": 5,
+            "识别码": 5,
+            "运费": 0,
+            "退款货抵扣数量": 5,
+            "送货单原件": 5,
+            "采购员": 5,
+            "采购子表ID": 5,
+            "采购平台": 0,
+            "采购日期": 0,
+            "采购时票型": 5,
+            "采购编号": 5,
+            "采购补充": 0,
+            "采购订单编号": 0,
+            "金额": 0,
+            "销售订单编号": 1,
+            "销售账户": 1,
+            "项目名称": 5,
+            "状态": 5,
+            "已到票金额": 5,
+            "型号": 5
+          },
+          "subTableOperations": {},
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core"
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "包装"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "ASIN": 5,
+            "ID": 5,
+            "SKU": 5,
+            "产品图片": 5,
+            "付款备注": 5,
+            "供应商": 5,
+            "入库员ID": 5,
+            "入库备注": 5,
+            "入库数量": 5,
+            "入库日期": 5,
+            "入库状态": 5,
+            "凭证": 5,
+            "单价": 5,
+            "单价成本": 5,
+            "单据链接": 5,
+            "历史到货数量": 5,
+            "历史采购": 5,
+            "发票单位": 5,
+            "发票号码": 5,
+            "发票备注": 5,
+            "发票日期": 5,
+            "发货类型": 5,
+            "合同纸质版原件": 5,
+            "商品名称": 5,
+            "库存子表ID": 5,
+            "开票名称": 5,
+            "开票大类": 5,
+            "开票指令": 5,
+            "快递公司": 5,
+            "快递单号": 5,
+            "扫码数量": 5,
+            "支付方式": 5,
+            "支付状态": 5,
+            "收货地点": 5,
+            "数量": 5,
+            "整体图片": 5,
+            "未税单价": 5,
+            "物流轨迹": 5,
+            "物流转运进度": 5,
+            "物流面单": 5,
+            "站点": 5,
+            "自发备货表ID": 5,
+            "识别码": 5,
+            "运费": 5,
+            "退款货抵扣数量": 5,
+            "送货单原件": 5,
+            "采购员": 5,
+            "采购子表ID": 5,
+            "采购平台": 5,
+            "采购日期": 5,
+            "采购时票型": 5,
+            "采购编号": 5,
+            "采购补充": 5,
+            "采购订单编号": 5,
+            "金额": 5,
+            "销售订单编号": 5,
+            "销售账户": 5,
+            "项目名称": 5,
+            "状态": 5,
+            "已到票金额": 5,
+            "型号": 5
+          },
+          "subTableOperations": {},
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core"
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "财务"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "ASIN": 5,
+            "ID": 5,
+            "SKU": 5,
+            "产品图片": 5,
+            "付款备注": 5,
+            "供应商": 5,
+            "入库员ID": 5,
+            "入库备注": 5,
+            "入库数量": 1,
+            "入库日期": 5,
+            "入库状态": 5,
+            "凭证": 5,
+            "单价": 5,
+            "单价成本": 5,
+            "单据链接": 5,
+            "历史到货数量": 5,
+            "历史采购": 5,
+            "发票单位": 5,
+            "发票号码": 5,
+            "发票备注": 5,
+            "发票日期": 5,
+            "发货类型": 5,
+            "合同纸质版原件": 5,
+            "商品名称": 5,
+            "库存子表ID": 5,
+            "开票名称": 5,
+            "开票大类": 5,
+            "开票指令": 5,
+            "快递公司": 5,
+            "快递单号": 5,
+            "扫码数量": 5,
+            "支付方式": 5,
+            "支付状态": 5,
+            "收货地点": 5,
+            "数量": 5,
+            "整体图片": 5,
+            "未税单价": 5,
+            "物流轨迹": 5,
+            "物流转运进度": 5,
+            "物流面单": 5,
+            "站点": 5,
+            "自发备货表ID": 5,
+            "识别码": 5,
+            "运费": 5,
+            "退款货抵扣数量": 5,
+            "送货单原件": 5,
+            "采购员": 5,
+            "采购子表ID": 5,
+            "采购平台": 5,
+            "采购日期": 5,
+            "采购时票型": 5,
+            "采购编号": 5,
+            "采购补充": 5,
+            "采购订单编号": 5,
+            "金额": 5,
+            "销售订单编号": 5,
+            "销售账户": 5,
+            "项目名称": 5,
+            "状态": 5,
+            "已到票金额": 5,
+            "型号": 5
+          },
+          "subTableOperations": {},
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core"
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "采购",
+          "采购助理",
+          "制单"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "ASIN": 5,
+            "ID": 5,
+            "SKU": 5,
+            "产品图片": 5,
+            "付款备注": 5,
+            "供应商": 5,
+            "入库员ID": 5,
+            "入库备注": 5,
+            "入库数量": 5,
+            "入库日期": 5,
+            "入库状态": 5,
+            "凭证": 5,
+            "单价": 5,
+            "单价成本": 5,
+            "单据链接": 5,
+            "历史到货数量": 5,
+            "历史采购": 5,
+            "发票单位": 5,
+            "发票号码": 5,
+            "发票备注": 5,
+            "发票日期": 5,
+            "发货类型": 5,
+            "合同纸质版原件": 5,
+            "商品名称": 5,
+            "库存子表ID": 5,
+            "开票名称": 5,
+            "开票大类": 5,
+            "开票指令": 5,
+            "快递公司": 5,
+            "快递单号": 5,
+            "扫码数量": 5,
+            "支付方式": 5,
+            "支付状态": 5,
+            "收货地点": 5,
+            "数量": 5,
+            "整体图片": 5,
+            "未税单价": 5,
+            "物流轨迹": 5,
+            "物流转运进度": 5,
+            "物流面单": 5,
+            "站点": 5,
+            "自发备货表ID": 5,
+            "识别码": 5,
+            "运费": 5,
+            "退款货抵扣数量": 5,
+            "送货单原件": 5,
+            "采购员": 5,
+            "采购子表ID": 5,
+            "采购平台": 5,
+            "采购日期": 5,
+            "采购时票型": 5,
+            "采购编号": 5,
+            "采购补充": 5,
+            "采购订单编号": 5,
+            "金额": 5,
+            "销售订单编号": 5,
+            "销售账户": 5,
+            "项目名称": 5,
+            "状态": 5,
+            "已到票金额": 5,
+            "型号": 5
+          },
+          "subTableOperations": {},
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core"
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "dp"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "ASIN": 1,
+            "ID": 5,
+            "SKU": 5,
+            "产品图片": 5,
+            "付款备注": 5,
+            "供应商": 5,
+            "入库员ID": 5,
+            "入库备注": 5,
+            "入库数量": 5,
+            "入库日期": 5,
+            "入库状态": 5,
+            "凭证": 5,
+            "单价": 1,
+            "单价成本": 5,
+            "单据链接": 5,
+            "历史到货数量": 5,
+            "历史采购": 5,
+            "发票单位": 5,
+            "发票号码": 5,
+            "发票备注": 5,
+            "发票日期": 5,
+            "发货类型": 5,
+            "合同纸质版原件": 5,
+            "商品名称": 1,
+            "库存子表ID": 5,
+            "开票名称": 5,
+            "开票大类": 5,
+            "开票指令": 5,
+            "快递公司": 0,
+            "快递单号": 1,
+            "扫码数量": 5,
+            "支付方式": 1,
+            "支付状态": 5,
+            "收货地点": 5,
+            "数量": 5,
+            "整体图片": 5,
+            "未税单价": 5,
+            "物流轨迹": 5,
+            "物流转运进度": 5,
+            "物流面单": 5,
+            "站点": 5,
+            "自发备货表ID": 5,
+            "识别码": 5,
+            "运费": 1,
+            "退款货抵扣数量": 5,
+            "送货单原件": 5,
+            "采购员": 5,
+            "采购子表ID": 5,
+            "采购平台": 0,
+            "采购日期": 1,
+            "采购时票型": 5,
+            "采购编号": 5,
+            "采购补充": 1,
+            "采购订单编号": 1,
+            "金额": 1,
+            "销售订单编号": 5,
+            "销售账户": 1,
+            "项目名称": 5,
+            "状态": 5,
+            "已到票金额": 5,
+            "型号": 5
+          },
+          "subTableOperations": {},
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core"
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "执行"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "ASIN": 5,
+            "ID": 5,
+            "SKU": 5,
+            "产品图片": 5,
+            "付款备注": 5,
+            "供应商": 5,
+            "入库员ID": 1,
+            "入库备注": 5,
+            "入库数量": 5,
+            "入库日期": 1,
+            "入库状态": 1,
+            "凭证": 1,
+            "单价": 1,
+            "单价成本": 5,
+            "单据链接": 5,
+            "历史到货数量": 5,
+            "历史采购": 5,
+            "发票单位": 5,
+            "发票号码": 5,
+            "发票备注": 5,
+            "发票日期": 5,
+            "发货类型": 1,
+            "合同纸质版原件": 5,
+            "商品名称": 1,
+            "库存子表ID": 5,
+            "开票名称": 5,
+            "开票大类": 5,
+            "开票指令": 5,
+            "快递公司": 0,
+            "快递单号": 1,
+            "扫码数量": 5,
+            "支付方式": 5,
+            "支付状态": 1,
+            "收货地点": 5,
+            "数量": 5,
+            "整体图片": 5,
+            "未税单价": 5,
+            "物流轨迹": 5,
+            "物流转运进度": 1,
+            "物流面单": 5,
+            "站点": 5,
+            "自发备货表ID": 5,
+            "识别码": 5,
+            "运费": 1,
+            "退款货抵扣数量": 5,
+            "送货单原件": 5,
+            "采购员": 1,
+            "采购子表ID": 5,
+            "采购平台": 0,
+            "采购日期": 1,
+            "采购时票型": 5,
+            "采购编号": 5,
+            "采购补充": 5,
+            "采购订单编号": 0,
+            "金额": 1,
+            "销售订单编号": 5,
+            "销售账户": 5,
+            "项目名称": 5,
+            "状态": 5,
+            "已到票金额": 5,
+            "型号": 5
+          },
+          "subTableOperations": {},
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core"
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "欧洲主管"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "ASIN": 1,
+            "ID": 5,
+            "SKU": 5,
+            "产品图片": 5,
+            "付款备注": 1,
+            "供应商": 1,
+            "入库员ID": 1,
+            "入库备注": 5,
+            "入库数量": 1,
+            "入库日期": 1,
+            "入库状态": 1,
+            "凭证": 1,
+            "单价": 1,
+            "单价成本": 5,
+            "单据链接": 5,
+            "历史到货数量": 1,
+            "历史采购": 1,
+            "发票单位": 1,
+            "发票号码": 1,
+            "发票备注": 5,
+            "发票日期": 1,
+            "发货类型": 1,
+            "合同纸质版原件": 5,
+            "商品名称": 1,
+            "库存子表ID": 1,
+            "开票名称": 1,
+            "开票大类": 1,
+            "开票指令": 1,
+            "快递公司": 1,
+            "快递单号": 5,
+            "扫码数量": 5,
+            "支付方式": 1,
+            "支付状态": 1,
+            "收货地点": 1,
+            "数量": 1,
+            "整体图片": 5,
+            "未税单价": 5,
+            "物流轨迹": 5,
+            "物流转运进度": 1,
+            "物流面单": 5,
+            "站点": 1,
+            "自发备货表ID": 1,
+            "识别码": 1,
+            "运费": 1,
+            "退款货抵扣数量": 5,
+            "送货单原件": 5,
+            "采购员": 1,
+            "采购子表ID": 1,
+            "采购平台": 1,
+            "采购日期": 1,
+            "采购时票型": 1,
+            "采购编号": 5,
+            "采购补充": 1,
+            "采购订单编号": 5,
+            "金额": 1,
+            "销售订单编号": 1,
+            "销售账户": 1,
+            "项目名称": 5,
+            "状态": 5,
+            "已到票金额": 5,
+            "型号": 5
+          },
+          "subTableOperations": {},
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core"
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "采购兼职"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "ASIN": 5,
+            "ID": 5,
+            "SKU": 5,
+            "产品图片": 5,
+            "付款备注": 5,
+            "供应商": 5,
+            "入库员ID": 5,
+            "入库备注": 5,
+            "入库数量": 1,
+            "入库日期": 5,
+            "入库状态": 5,
+            "凭证": 5,
+            "单价": 5,
+            "单价成本": 5,
+            "单据链接": 5,
+            "历史到货数量": 5,
+            "历史采购": 5,
+            "发票单位": 5,
+            "发票号码": 5,
+            "发票备注": 5,
+            "发票日期": 5,
+            "发货类型": 5,
+            "合同纸质版原件": 5,
+            "商品名称": 5,
+            "库存子表ID": 5,
+            "开票名称": 5,
+            "开票大类": 5,
+            "开票指令": 5,
+            "快递公司": 5,
+            "快递单号": 5,
+            "扫码数量": 5,
+            "支付方式": 5,
+            "支付状态": 5,
+            "收货地点": 5,
+            "数量": 1,
+            "整体图片": 5,
+            "未税单价": 5,
+            "物流轨迹": 5,
+            "物流转运进度": 5,
+            "物流面单": 5,
+            "站点": 5,
+            "自发备货表ID": 5,
+            "识别码": 5,
+            "运费": 5,
+            "退款货抵扣数量": 5,
+            "送货单原件": 5,
+            "采购员": 5,
+            "采购子表ID": 5,
+            "采购平台": 5,
+            "采购日期": 5,
+            "采购时票型": 5,
+            "采购编号": 5,
+            "采购补充": 5,
+            "采购订单编号": 5,
+            "金额": 5,
+            "销售订单编号": 5,
+            "销售账户": 5,
+            "项目名称": 5,
+            "状态": 5,
+            "已到票金额": 5,
+            "型号": 5
+          },
+          "subTableOperations": {},
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core"
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "会计",
+          "物流会计"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "ASIN": 5,
+            "ID": 5,
+            "SKU": 5,
+            "产品图片": 5,
+            "付款备注": 5,
+            "供应商": 5,
+            "入库员ID": 5,
+            "入库备注": 5,
+            "入库数量": 5,
+            "入库日期": 5,
+            "入库状态": 5,
+            "凭证": 5,
+            "单价": 5,
+            "单价成本": 5,
+            "单据链接": 5,
+            "历史到货数量": 5,
+            "历史采购": 5,
+            "发票单位": 5,
+            "发票号码": 5,
+            "发票备注": 5,
+            "发票日期": 5,
+            "发货类型": 5,
+            "合同纸质版原件": 5,
+            "商品名称": 5,
+            "库存子表ID": 5,
+            "开票名称": 5,
+            "开票大类": 5,
+            "开票指令": 5,
+            "快递公司": 5,
+            "快递单号": 5,
+            "扫码数量": 5,
+            "支付方式": 5,
+            "支付状态": 5,
+            "收货地点": 5,
+            "数量": 5,
+            "整体图片": 5,
+            "未税单价": 5,
+            "物流轨迹": 5,
+            "物流转运进度": 5,
+            "物流面单": 5,
+            "站点": 5,
+            "自发备货表ID": 5,
+            "识别码": 5,
+            "运费": 5,
+            "退款货抵扣数量": 5,
+            "送货单原件": 5,
+            "采购员": 5,
+            "采购子表ID": 5,
+            "采购平台": 5,
+            "采购日期": 5,
+            "采购时票型": 5,
+            "采购编号": 5,
+            "采购补充": 5,
+            "采购订单编号": 5,
+            "金额": 5,
+            "销售订单编号": 5,
+            "销售账户": 5,
+            "项目名称": 5,
+            "状态": 5,
+            "已到票金额": 5,
+            "型号": 5
+          },
+          "subTableOperations": {},
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core"
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "审计"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "ASIN": 1,
+            "ID": 5,
+            "SKU": 5,
+            "产品图片": 5,
+            "付款备注": 1,
+            "供应商": 5,
+            "入库员ID": 5,
+            "入库备注": 5,
+            "入库数量": 5,
+            "入库日期": 5,
+            "入库状态": 5,
+            "凭证": 5,
+            "单价": 1,
+            "单价成本": 5,
+            "单据链接": 5,
+            "历史到货数量": 5,
+            "历史采购": 5,
+            "发票单位": 5,
+            "发票号码": 5,
+            "发票备注": 5,
+            "发票日期": 5,
+            "发货类型": 1,
+            "合同纸质版原件": 5,
+            "商品名称": 1,
+            "库存子表ID": 5,
+            "开票名称": 5,
+            "开票大类": 5,
+            "开票指令": 5,
+            "快递公司": 1,
+            "快递单号": 1,
+            "扫码数量": 5,
+            "支付方式": 1,
+            "支付状态": 1,
+            "收货地点": 5,
+            "数量": 5,
+            "整体图片": 5,
+            "未税单价": 5,
+            "物流轨迹": 5,
+            "物流转运进度": 5,
+            "物流面单": 5,
+            "站点": 5,
+            "自发备货表ID": 1,
+            "识别码": 5,
+            "运费": 1,
+            "退款货抵扣数量": 5,
+            "送货单原件": 5,
+            "采购员": 1,
+            "采购子表ID": 5,
+            "采购平台": 1,
+            "采购日期": 1,
+            "采购时票型": 5,
+            "采购编号": 5,
+            "采购补充": 1,
+            "采购订单编号": 1,
+            "金额": 1,
+            "销售订单编号": 1,
+            "销售账户": 1,
+            "项目名称": 5,
+            "状态": 5,
+            "已到票金额": 5,
+            "型号": 5
+          },
+          "subTableOperations": {},
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core"
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "执行助理"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "ASIN": 1,
+            "ID": 5,
+            "SKU": 5,
+            "产品图片": 5,
+            "付款备注": 5,
+            "供应商": 5,
+            "入库员ID": 1,
+            "入库备注": 5,
+            "入库数量": 5,
+            "入库日期": 1,
+            "入库状态": 1,
+            "凭证": 1,
+            "单价": 1,
+            "单价成本": 5,
+            "单据链接": 5,
+            "历史到货数量": 5,
+            "历史采购": 5,
+            "发票单位": 5,
+            "发票号码": 5,
+            "发票备注": 5,
+            "发票日期": 5,
+            "发货类型": 5,
+            "合同纸质版原件": 5,
+            "商品名称": 1,
+            "库存子表ID": 5,
+            "开票名称": 5,
+            "开票大类": 5,
+            "开票指令": 5,
+            "快递公司": 1,
+            "快递单号": 1,
+            "扫码数量": 5,
+            "支付方式": 1,
+            "支付状态": 1,
+            "收货地点": 5,
+            "数量": 5,
+            "整体图片": 5,
+            "未税单价": 5,
+            "物流轨迹": 5,
+            "物流转运进度": 1,
+            "物流面单": 5,
+            "站点": 5,
+            "自发备货表ID": 5,
+            "识别码": 5,
+            "运费": 1,
+            "退款货抵扣数量": 5,
+            "送货单原件": 5,
+            "采购员": 5,
+            "采购子表ID": 5,
+            "采购平台": 1,
+            "采购日期": 1,
+            "采购时票型": 5,
+            "采购编号": 5,
+            "采购补充": 1,
+            "采购订单编号": 1,
+            "金额": 1,
+            "销售订单编号": 1,
+            "销售账户": 1,
+            "项目名称": 5,
+            "状态": 5,
+            "已到票金额": 5,
+            "型号": 5
+          },
+          "subTableOperations": {},
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core"
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "销售助理"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "ASIN": 5,
+            "ID": 1,
+            "SKU": 5,
+            "产品图片": 5,
+            "付款备注": 5,
+            "供应商": 5,
+            "入库员ID": 5,
+            "入库备注": 5,
+            "入库数量": 1,
+            "入库日期": 5,
+            "入库状态": 5,
+            "凭证": 5,
+            "单价": 1,
+            "单价成本": 5,
+            "单据链接": 5,
+            "历史到货数量": 5,
+            "历史采购": 5,
+            "发票单位": 5,
+            "发票号码": 5,
+            "发票备注": 5,
+            "发票日期": 5,
+            "发货类型": 5,
+            "合同纸质版原件": 5,
+            "商品名称": 5,
+            "库存子表ID": 5,
+            "开票名称": 5,
+            "开票大类": 5,
+            "开票指令": 5,
+            "快递公司": 5,
+            "快递单号": 5,
+            "扫码数量": 5,
+            "支付方式": 5,
+            "支付状态": 1,
+            "收货地点": 5,
+            "数量": 5,
+            "整体图片": 5,
+            "未税单价": 5,
+            "物流轨迹": 5,
+            "物流转运进度": 5,
+            "物流面单": 5,
+            "站点": 5,
+            "自发备货表ID": 5,
+            "识别码": 5,
+            "运费": 5,
+            "退款货抵扣数量": 5,
+            "送货单原件": 5,
+            "采购员": 5,
+            "采购子表ID": 5,
+            "采购平台": 5,
+            "采购日期": 5,
+            "采购时票型": 5,
+            "采购编号": 5,
+            "采购补充": 5,
+            "采购订单编号": 5,
+            "金额": 5,
+            "销售订单编号": 5,
+            "销售账户": 5,
+            "项目名称": 5,
+            "状态": 5,
+            "已到票金额": 5,
+            "型号": 5
+          },
+          "subTableOperations": {},
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core"
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "物流会计"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.CreateRecordBindingConfig, Forguncy.RbacPermission.Core",
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.CreateRecordFilter, Forguncy.RbacPermission.Core"
+          }
+        },
+        "dataPermissionType": 1,
+        "roleNames": [
+          "FGC_LoginUser"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.RowBindingConfig, Forguncy.RbacPermission.Core",
+          "operationTypes": 13,
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.RowFilter, Forguncy.RbacPermission.Core"
+          }
+        },
+        "dataPermissionType": 2,
+        "roleNames": [
+          "Administrator"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.RowBindingConfig, Forguncy.RbacPermission.Core",
+          "operationTypes": 5,
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.RowFilter, Forguncy.RbacPermission.Core",
+            "filterType": 1
+          }
+        },
+        "dataPermissionType": 2,
+        "roleNames": [
+          "FGC_LoginUser"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.RowBindingConfig, Forguncy.RbacPermission.Core",
+          "operationTypes": 1,
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.RowFilter, Forguncy.RbacPermission.Core",
+            "filterType": 2
+          }
+        },
+        "dataPermissionType": 2,
+        "roleNames": [
+          "FGC_LoginUser"
+        ]
+      }
+    ]
+  },
+  "Columns": [
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
+      "Unique": true,
+      "AutoIncrement": true,
+      "DatabaseColumnType": "System.Int64",
+      "MaxLength": -1,
+      "Name": "ID",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
+      "Unique": true,
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "IsAutoGenreatedIDSettingEnable": true,
+      "AutoGenreatedIDSetting": {
+        "Composition": [
+          {
+            "ComponentType": 1,
+            "Content": 1
+          },
+          {
+            "ComponentType": 2,
+            "Content": "mmdd"
+          },
+          {
+            "Content": "-"
+          },
+          {
+            "ComponentType": 3,
+            "Content": 3
+          }
+        ]
+      },
+      "Name": "采购编号",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Double",
+      "MaxLength": -1,
+      "Name": "采购日期",
+      "ColumnType": "System.DateTime, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "商品名称",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "销售账户",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "站点",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "销售订单编号",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "SKU",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "ASIN",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "MaxLength": -1,
+      "Name": "数量",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Double",
+      "MaxLength": -1,
+      "Name": "单价",
+      "ColumnType": "System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Double",
+      "MaxLength": -1,
+      "Name": "运费",
+      "ColumnType": "System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Double",
+      "MaxLength": -1,
+      "Name": "金额",
+      "ColumnType": "System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "收货地点",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "采购平台",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "供应商",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "快递公司",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "采购订单编号",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "快递单号",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "MaxLength": -1,
+      "Name": "入库状态",
+      "ColumnType": "System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "采购补充",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "MaxLength": -1,
+      "Name": "入库员ID",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Double",
+      "MaxLength": -1,
+      "Name": "入库日期",
+      "ColumnType": "System.DateTime, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "Name": "扫码数量",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "Name": "入库备注",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "Name": "入库数量",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "Name": "退款货抵扣数量",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.AttachmentBindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "凭证",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "物流转运进度",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "支付方式",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "MaxLength": -1,
+      "Name": "支付状态",
+      "ColumnType": "System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "采购员",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "发货类型",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "付款备注",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "MaxLength": -1,
+      "Name": "自发备货表ID",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.FormulaColumnSaveData, ServerDesignerCommon",
+      "Formula": "=[销售账户]&[站点]&[SKU]",
+      "Name": "识别码",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "MaxLength": -1,
+      "Name": "历史采购",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "MaxLength": -1,
+      "Name": "采购子表ID",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "MaxLength": -1,
+      "Name": "历史到货数量",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "MaxLength": -1,
+      "Name": "库存子表ID",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "开票指令",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "发票号码",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Double",
+      "MaxLength": -1,
+      "Name": "发票日期",
+      "ColumnType": "System.DateTime, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "单据链接",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "采购时票型",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "Name": "开票名称",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "Name": "开票大类",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "Name": "发票单位",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "Name": "型号",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.FormulaColumnSaveData, ServerDesignerCommon",
+      "Formula": "=[金额]/[数量]",
+      "Name": "单价成本",
+      "ColumnType": "System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "Name": "合同纸质版原件",
+      "ColumnType": "System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "Name": "送货单原件",
+      "ColumnType": "System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "Name": "产品图片",
+      "ColumnType": "System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "Name": "整体图片",
+      "ColumnType": "System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "Name": "物流面单",
+      "ColumnType": "System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "Name": "物流轨迹",
+      "ColumnType": "System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.FormulaColumnSaveData, ServerDesignerCommon",
+      "Formula": "=[开票大类]&\"*\"&[开票名称]",
+      "Name": "项目名称",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Double",
+      "Name": "未税单价",
+      "ColumnType": "System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "Name": "发票备注",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "Name": "状态",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Double",
+      "Name": "已到票金额",
+      "ColumnType": "System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.UserExtraBingingColumnSaveData, ServerDesignerCommon",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+      "Name": "FGC_Creator"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.DateExtraBingingColumnSaveData, ServerDesignerCommon",
+      "ColumnType": "System.DateTime, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+      "Name": "FGC_CreateDate"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.UserExtraBingingColumnSaveData, ServerDesignerCommon",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+      "Name": "FGC_LastModifier"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.DateExtraBingingColumnSaveData, ServerDesignerCommon",
+      "ColumnType": "System.DateTime, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+      "Name": "FGC_LastModifyDate"
+    }
+  ],
+  "PrimaryKey": [
+    "ID"
+  ],
+  "Relations": [
+    {
+      "PrimaryTable": "正报信息表",
+      "PrimaryColumn": "识别码",
+      "ForeignTable": "采购记录表",
+      "ForeignColumn": "识别码"
+    },
+    {
+      "PrimaryTable": "正报退税汇总表_子表",
+      "PrimaryColumn": "采购入库码",
+      "ForeignTable": "采购记录表",
+      "ForeignColumn": "采购编号"
+    },
+    {
+      "PrimaryTable": "账期pingpong主_子表",
+      "PrimaryColumn": "订单号",
+      "ForeignTable": "采购记录表",
+      "ForeignColumn": "销售订单编号"
+    },
+    {
+      "PrimaryTable": "采购合同_子表",
+      "PrimaryColumn": "来源表ID",
+      "ForeignTable": "采购记录表",
+      "ForeignColumn": "ID"
+    }
+  ],
+  "Indexes": []
+}

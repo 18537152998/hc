@@ -1,0 +1,4391 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 16.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 27.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 16.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 16.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 40.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 16.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 40.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 16.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 40.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 16.0
+        }
+      },
+      "17": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 32.0
+        }
+      },
+      "18": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 32.0
+        }
+      },
+      "19": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 32.0
+        }
+      },
+      "20": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 32.0
+        }
+      },
+      "21": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 32.0
+        }
+      },
+      "22": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 32.0
+        }
+      }
+    },
+    "Count": 26,
+    "DefaultSize": 40.0
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "124": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 32.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      }
+    },
+    "Count": 126,
+    "DefaultSize": 32.0
+  },
+  "Values": {
+    "1,17": "利润表",
+    "5,1": "主营业务收入",
+    "5,11": "清算收入",
+    "5,21": "库存赔偿收入",
+    "5,31": "平台成交费",
+    "5,42": "报告字典维护",
+    "5,46": "清空报告数据",
+    "7,1": "平台配送费",
+    "7,11": "平台货件标签费",
+    "7,21": "平台仓储费",
+    "7,31": "早期评论和优惠券",
+    "7,42": "导出日期报告",
+    "9,1": "平台库存赔偿调整",
+    "9,11": "平台广告费",
+    "9,21": "平台清算处置费",
+    "9,31": "平台店铺服务费",
+    "9,42": "导出利润表",
+    "9,46": "清空利润表数据",
+    "11,47": "人民币",
+    "11,86": "人民币",
+    "11,92": "人民币",
+    "11,98": "人民币",
+    "11,104": "人民币",
+    "11,110": "人民币",
+    "11,116": "人民币",
+    "11,119": "汇率"
+  },
+  "Formulas": {
+    "3,2": "TODAY()-30",
+    "12,47": "AS13*DP13",
+    "12,98": "CR13*DP13",
+    "12,104": "CX13*DP13",
+    "24,81": "COUNTA(B24)",
+    "12,110": "DD13*DP13",
+    "12,121": "$J$9",
+    "22,86": "SUM(CI13)",
+    "22,92": "SUM(CO13)",
+    "22,110": "SUM(DG13)",
+    "22,104": "SUM(DA13)",
+    "12,119": "VLOOKUP(DT13,DP25:DS25,3,0)",
+    "22,77": "SUM(AV13)",
+    "22,98": "SUM(CU13)",
+    "12,92": "CL13*DP13",
+    "12,116": "DJ13*DP13",
+    "22,116": "SUM(DM13)",
+    "12,86": "CF13*DP13",
+    "22,113": "SUM(DJ13)",
+    "22,107": "SUM(DD13)",
+    "22,101": "SUM(CX13)",
+    "22,95": "SUM(CR13)",
+    "22,89": "SUM(CL13)",
+    "22,83": "SUM(CF13)",
+    "22,74": "SUM(AS13)"
+  },
+  "AttachInfos": {
+    "3,2": {
+      "CellType": {
+        "$type": "ElementUI.DatePickerCellType, ElementUI",
+        "CommandList": [],
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ],
+        "type": "month",
+        "placeholder": "请选择年月",
+        "startPlaceholder": "开始日期",
+        "rangeSeparator": "至",
+        "endPlaceholder": "结束日期",
+        "firstDayOfWeek": 1,
+        "clearable": true,
+        "DefautWeekFormat": "yyyy 第 WW 周"
+      }
+    },
+    "3,10": {
+      "CellType": {
+        "$type": "Forguncy.RadioGroupCellType, ServerDesignerCommon",
+        "Style": 1,
+        "IsBounding": true,
+        "DataSource": "库存表",
+        "ValueColumnBindingInfo": {
+          "TableName": "库存表",
+          "ColumnName": "大账户",
+          "GUID": "0e3e75dc-19ee-4021-9cfa-48cc32754fa1"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "库存表",
+          "ColumnName": "大账户",
+          "GUID": "6ba2adf0-d48d-4724-8712-5f5d406d7df9"
+        },
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=日期范围报告提炼!K4"
+                      }
+                    ]
+                  },
+                  "value": "%Null%"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日期范围报告提炼!tilian"
+                        },
+                        "PropertyType": 0,
+                        "Value": false
+                      }
+                    ],
+                    "BreakpointIdentity": "19c73998-3439-4008-ba8c-9c299f5e2919"
+                  }
+                ],
+                "ID": "40e485d3-a46e-495e-a76a-2a959cebb12b"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日期范围报告提炼!tilian"
+                        },
+                        "PropertyType": 0,
+                        "Value": true
+                      }
+                    ],
+                    "BreakpointIdentity": "fd0c41b9-494f-4d77-a49a-e28d56df9782"
+                  }
+                ],
+                "ID": "bae620d4-6d73-484b-9fe9-34c0c0df3010"
+              }
+            ],
+            "BreakpointIdentity": "57771327-795f-4010-974b-a622181824c2"
+          }
+        ]
+      }
+    },
+    "5,1": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "日期范围报告",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "SubConditions": [
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "日期范围报告",
+                    "ColumnName": "类型",
+                    "GUID": "e2c244ec-28ef-4b3d-a7b5-3afb278c7ac1",
+                    "RelationBinding": {
+                      "RelatedTable": "日期范围交易字典",
+                      "RelatedColumn": "type",
+                      "DisplayColumn": "交易类型"
+                    }
+                  },
+                  "Value": "订单"
+                },
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "日期范围报告",
+                    "ColumnName": "类型",
+                    "GUID": "bd3c8a49-2f48-4682-8616-abe1ff1dc35d",
+                    "RelationBinding": {
+                      "RelatedTable": "日期范围交易字典",
+                      "RelatedColumn": "type",
+                      "DisplayColumn": "交易类型"
+                    }
+                  },
+                  "Value": "退款"
+                }
+              ],
+              "RelationType": 1
+            },
+            "NullFormulaValueQueryPolicy": 0,
+            "ID": "07fca83a5da84cc68ca9dccdd3dcc80d",
+            "BreakpointIdentity": "8de1de66-42f6-4b72-9416-acfc36fb84c7"
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=日期范围报告提炼!CD25"
+                      }
+                    ]
+                  },
+                  "value": "0"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "报告利润表",
+                    "UpdateType": "add",
+                    "ShowConfirm": false,
+                    "UpdateBindingValues": [
+                      {
+                        "BindingInfo": {
+                          "TableName": "报告利润表",
+                          "ColumnName": "日期",
+                          "GUID": "b20fd048-df0c-459e-8d4f-3fb4a0c5f7ae"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日期范围报告提炼!C4"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "报告利润表",
+                          "ColumnName": "账户",
+                          "GUID": "68f9af30-5609-47ee-bcf7-5ff4e32b21da"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日期范围报告提炼!K4"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "报告利润表",
+                          "ColumnName": "主营业务收入",
+                          "GUID": "2ca9f9a8-2262-49cb-aa7a-85930e06cb51"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日期范围报告提炼!DM23"
+                        }
+                      }
+                    ],
+                    "BreakpointIdentity": "9844a010-8786-4a04-998e-b80594c7c1c6"
+                  }
+                ],
+                "ID": "dbeac308-f70c-4ff4-83a1-3649ee718aae"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "报告利润表",
+                    "ShowConfirm": false,
+                    "UpdateBindingValues": [
+                      {
+                        "BindingInfo": {
+                          "TableName": "报告利润表",
+                          "ColumnName": "日期",
+                          "GUID": "f702ee7a-dc37-47a9-a70f-00cd91a0e34e"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日期范围报告提炼!C4"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "报告利润表",
+                          "ColumnName": "账户",
+                          "GUID": "97a0686d-16ef-4f95-aee0-ff87e9483aca"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日期范围报告提炼!K4"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "报告利润表",
+                          "ColumnName": "主营业务收入",
+                          "GUID": "e38cc715-3d95-4627-afb4-0d253a9e72ed"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日期范围报告提炼!DM23"
+                        }
+                      }
+                    ],
+                    "BreakpointIdentity": "313d6d69-c487-4061-898d-5d93289340b0"
+                  }
+                ],
+                "ID": "1e9d8efd-397f-41ee-b945-21223be3ccaf"
+              }
+            ],
+            "BreakpointIdentity": "f39343f2-6103-48e8-a39b-75d09b027b5c"
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日期范围报告提炼!B6"
+                },
+                "PropertyType": 0,
+                "Value": false
+              }
+            ],
+            "BreakpointIdentity": "630d5b25-03a5-4804-8fa6-d1730907fab4"
+          },
+          {
+            "$type": "ElementUI.Commands.ShowMessage, ElementUI",
+            "Message": "统计完成！",
+            "Type": "success",
+            "Duration": 3000,
+            "BreakpointIdentity": "c3c18356-aa34-4157-9bf9-13d3380cbf7f"
+          }
+        ],
+        "Text": "主营业务收入",
+        "TemplateKey": "样式6"
+      }
+    },
+    "5,6": {
+      "BindingInfo": {
+        "TableName": "报告利润表",
+        "ColumnName": "主营业务收入",
+        "GUID": "b531ab2d-142a-4f43-ab46-69d4a3d91648"
+      }
+    },
+    "5,11": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "日期范围报告",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "日期范围报告",
+                "ColumnName": "类型",
+                "GUID": "bf60fee0-562d-44c1-ae6f-a94db1766916",
+                "RelationBinding": {
+                  "RelatedTable": "日期范围交易字典",
+                  "RelatedColumn": "type",
+                  "DisplayColumn": "交易类型"
+                }
+              },
+              "Value": "清算"
+            },
+            "NullFormulaValueQueryPolicy": 0,
+            "ID": "3a03d4cf56d449b18ad90910795a84f7",
+            "BreakpointIdentity": "c003c376-ea84-4c19-a6a9-875d93dc09ae"
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=日期范围报告提炼!CD25"
+                      }
+                    ]
+                  },
+                  "value": "0"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "报告利润表",
+                    "UpdateType": "add",
+                    "ShowConfirm": false,
+                    "UpdateBindingValues": [
+                      {
+                        "BindingInfo": {
+                          "TableName": "报告利润表",
+                          "ColumnName": "日期",
+                          "GUID": "15648a93-3c00-4b06-807b-dbb572434b37"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日期范围报告提炼!C4"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "报告利润表",
+                          "ColumnName": "账户",
+                          "GUID": "846e509c-2b47-45d2-9e4e-b449dfd6a761"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日期范围报告提炼!K4"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "报告利润表",
+                          "ColumnName": "清算收入",
+                          "GUID": "7784b94c-8048-490c-bb8b-a06102415793"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日期范围报告提炼!BZ23"
+                        }
+                      }
+                    ],
+                    "BreakpointIdentity": "c654b94b-e2ed-4d62-8377-9f06ee2d13f7"
+                  }
+                ],
+                "ID": "7accd222-19a9-4900-96b1-79643392dfc3"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "报告利润表",
+                    "ShowConfirm": false,
+                    "UpdateBindingValues": [
+                      {
+                        "BindingInfo": {
+                          "TableName": "报告利润表",
+                          "ColumnName": "日期",
+                          "GUID": "73130a07-ca44-4abd-a202-e1191030b62c"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日期范围报告提炼!C4"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "报告利润表",
+                          "ColumnName": "账户",
+                          "GUID": "a36d4602-798d-4b9c-9d5d-e1f1d3e59f91"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日期范围报告提炼!K4"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "报告利润表",
+                          "ColumnName": "清算收入",
+                          "GUID": "c11707e1-d072-449d-8076-402a4f0adc33"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日期范围报告提炼!BZ23"
+                        }
+                      }
+                    ],
+                    "BreakpointIdentity": "827cdf69-045f-4480-a5d9-77d9a38b5a3b"
+                  }
+                ],
+                "ID": "47307467-0742-496d-8409-b2c5e08d986e"
+              }
+            ],
+            "BreakpointIdentity": "77ae6fc3-5b90-47a3-beda-d959a0469329"
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日期范围报告提炼!L6"
+                },
+                "PropertyType": 0,
+                "Value": false
+              }
+            ],
+            "BreakpointIdentity": "4f8ba815-0c5c-4e72-aff3-ed2a6e74c0f4"
+          },
+          {
+            "$type": "ElementUI.Commands.ShowMessage, ElementUI",
+            "Message": "统计完成！",
+            "Type": "success",
+            "Duration": 3000,
+            "BreakpointIdentity": "c984bfab-31b7-4cdd-a514-7c3be6058d13"
+          }
+        ],
+        "Text": "清算收入",
+        "TemplateKey": "样式6"
+      }
+    },
+    "5,16": {
+      "BindingInfo": {
+        "TableName": "报告利润表",
+        "ColumnName": "清算收入",
+        "GUID": "6b8b645a-9347-4397-84b3-21a655bda545"
+      }
+    },
+    "5,21": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "日期范围报告",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "SubConditions": [
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "日期范围报告",
+                    "ColumnName": "类型",
+                    "GUID": "a26b0faf-85a7-4912-9959-d05fb74b3dda",
+                    "RelationBinding": {
+                      "RelatedTable": "日期范围交易字典",
+                      "RelatedColumn": "type",
+                      "DisplayColumn": "交易类型"
+                    }
+                  },
+                  "Value": "调整"
+                },
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 2,
+                  "ColumnBindingInfo": {
+                    "TableName": "日期范围报告",
+                    "ColumnName": "其他",
+                    "GUID": "7c1e360b-1856-474b-82a6-e54c1b961cad"
+                  },
+                  "Value": "0"
+                }
+              ]
+            },
+            "NullFormulaValueQueryPolicy": 0,
+            "ID": "01ecdc0b45104c699598ed5934416129",
+            "BreakpointIdentity": "d1fd65f5-eda2-4c01-8df3-338edc06774a"
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=日期范围报告提炼!CD25"
+                      }
+                    ]
+                  },
+                  "value": "0"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "报告利润表",
+                    "UpdateType": "add",
+                    "ShowConfirm": false,
+                    "UpdateBindingValues": [
+                      {
+                        "BindingInfo": {
+                          "TableName": "报告利润表",
+                          "ColumnName": "日期",
+                          "GUID": "63c96d0e-2fb2-4575-8795-0fa39f25b896"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日期范围报告提炼!C4"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "报告利润表",
+                          "ColumnName": "账户",
+                          "GUID": "6167009b-55cd-4327-a096-2280babee898"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日期范围报告提炼!K4"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "报告利润表",
+                          "ColumnName": "库存赔偿收入",
+                          "GUID": "7aa3aea2-0795-4267-bee0-82c384038405"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日期范围报告提炼!DA23"
+                        }
+                      }
+                    ],
+                    "BreakpointIdentity": "465cae0b-b660-45bb-acf6-8d65d866f985"
+                  }
+                ],
+                "ID": "90495702-f135-4baa-95ca-66521e4a31ac"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "报告利润表",
+                    "ShowConfirm": false,
+                    "UpdateBindingValues": [
+                      {
+                        "BindingInfo": {
+                          "TableName": "报告利润表",
+                          "ColumnName": "日期",
+                          "GUID": "94d3b650-b66c-4c17-aabc-ef3b28388f46"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日期范围报告提炼!C4"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "报告利润表",
+                          "ColumnName": "账户",
+                          "GUID": "792111af-9f7a-454c-b782-9f34678ab753"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日期范围报告提炼!K4"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "报告利润表",
+                          "ColumnName": "库存赔偿收入",
+                          "GUID": "19c4ec0c-86b4-4e55-825c-d6130ec858c8"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日期范围报告提炼!DA23"
+                        }
+                      }
+                    ],
+                    "BreakpointIdentity": "a39a3237-50ef-40e3-be66-32d9b7a4a994"
+                  }
+                ],
+                "ID": "eb8bb3da-07b5-4692-a3cf-fe5ab65fe77d"
+              }
+            ],
+            "BreakpointIdentity": "8072c6a0-970f-4f14-85bc-eef0357a8e24"
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日期范围报告提炼!V6"
+                },
+                "PropertyType": 0,
+                "Value": false
+              }
+            ],
+            "BreakpointIdentity": "2a753db7-b2bf-4a67-86a1-6a243d395df0"
+          },
+          {
+            "$type": "ElementUI.Commands.ShowMessage, ElementUI",
+            "Message": "统计完成！",
+            "Type": "success",
+            "Duration": 3000,
+            "BreakpointIdentity": "5740150b-70c8-4d4c-87db-700f875d22a5"
+          }
+        ],
+        "Text": "库存赔偿收入",
+        "TemplateKey": "样式6"
+      }
+    },
+    "5,26": {
+      "BindingInfo": {
+        "TableName": "报告利润表",
+        "ColumnName": "库存赔偿收入",
+        "GUID": "f3f59644-4cad-478e-90a2-0980c2de790a"
+      }
+    },
+    "5,31": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "日期范围报告",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "SubConditions": [
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 1,
+                  "ColumnBindingInfo": {
+                    "TableName": "日期范围报告",
+                    "ColumnName": "类型",
+                    "GUID": "a2aa82d1-5f41-4176-ab25-cb81fef14ad7",
+                    "RelationBinding": {
+                      "RelatedTable": "日期范围交易字典",
+                      "RelatedColumn": "type",
+                      "DisplayColumn": "交易类型"
+                    }
+                  },
+                  "Value": "亚马逊费用"
+                },
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 1,
+                  "ColumnBindingInfo": {
+                    "TableName": "日期范围报告",
+                    "ColumnName": "类型",
+                    "GUID": "2c0090ea-5c9e-4d36-ae7f-ce963bbbba06",
+                    "RelationBinding": {
+                      "RelatedTable": "日期范围交易字典",
+                      "RelatedColumn": "type",
+                      "DisplayColumn": "交易类型"
+                    }
+                  },
+                  "Value": "服务费"
+                }
+              ]
+            },
+            "NullFormulaValueQueryPolicy": 0,
+            "ID": "a96f9c8089b64c5eacea28f7aaab2df6",
+            "BreakpointIdentity": "98e0cdfa-e33a-496e-bdfd-71de02904556"
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=日期范围报告提炼!CD25"
+                      }
+                    ]
+                  },
+                  "value": "0"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "报告利润表",
+                    "UpdateType": "add",
+                    "ShowConfirm": false,
+                    "UpdateBindingValues": [
+                      {
+                        "BindingInfo": {
+                          "TableName": "报告利润表",
+                          "ColumnName": "日期",
+                          "GUID": "7f22933b-7fac-452d-b395-edabb8f42861"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日期范围报告提炼!C4"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "报告利润表",
+                          "ColumnName": "账户",
+                          "GUID": "73387cbb-1991-4148-8352-509278c7eb36"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日期范围报告提炼!K4"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "报告利润表",
+                          "ColumnName": "平台成交费",
+                          "GUID": "82acabc8-2c48-4202-9073-6509faf44584"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日期范围报告提炼!CI23"
+                        }
+                      }
+                    ],
+                    "BreakpointIdentity": "1b622ed2-c5ec-4517-9526-23c03e62ce75"
+                  }
+                ],
+                "ID": "d747bb28-2e74-4b96-9455-e4cfaf3d13a3"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "报告利润表",
+                    "ShowConfirm": false,
+                    "UpdateBindingValues": [
+                      {
+                        "BindingInfo": {
+                          "TableName": "报告利润表",
+                          "ColumnName": "日期",
+                          "GUID": "e3520e13-15ff-4d60-8637-20f6e4238cff"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日期范围报告提炼!C4"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "报告利润表",
+                          "ColumnName": "账户",
+                          "GUID": "16abe282-988f-4071-980c-e851c5ee6962"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日期范围报告提炼!K4"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "报告利润表",
+                          "ColumnName": "平台成交费",
+                          "GUID": "5dcf1d24-b141-4585-9b02-cd6e5fcf8325"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日期范围报告提炼!CI23"
+                        }
+                      }
+                    ],
+                    "BreakpointIdentity": "e3ebd869-c6a3-471e-aa57-c50afca462f1"
+                  }
+                ],
+                "ID": "88f5e739-31f6-41c9-bfa0-ad1085c0120a"
+              }
+            ],
+            "BreakpointIdentity": "6964cdb2-95a0-4d4f-a366-4e88fb55cbdc"
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日期范围报告提炼!AF6"
+                },
+                "PropertyType": 0,
+                "Value": false
+              }
+            ],
+            "BreakpointIdentity": "7b041c75-6de2-4d50-a4bf-27a775ed7ecc"
+          },
+          {
+            "$type": "ElementUI.Commands.ShowMessage, ElementUI",
+            "Message": "统计完成！",
+            "Type": "success",
+            "Duration": 3000,
+            "BreakpointIdentity": "e0071064-0a48-436f-805d-935a0fc76fb1"
+          }
+        ],
+        "Text": "平台成交费",
+        "TemplateKey": "样式6"
+      }
+    },
+    "5,36": {
+      "BindingInfo": {
+        "TableName": "报告利润表",
+        "ColumnName": "平台成交费",
+        "GUID": "1aa4df00-da33-417e-a233-019da94e5746"
+      }
+    },
+    "5,42": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PageName": "日期范围交易字典维护",
+            "BreakpointIdentity": "dfb4e7a9-642f-4cca-8ae0-66c8671b5292"
+          }
+        ],
+        "Text": "报告字典维护",
+        "ClickMode": 1,
+        "TemplateKey": "_RS_Main"
+      }
+    },
+    "5,46": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+            "ListviewName": "表格1",
+            "UpdateType": 2,
+            "UpdateRowType": 2,
+            "BreakpointIdentity": "9dceef5b-a7db-4916-93bf-dcd60e97c193"
+          },
+          {
+            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+            "ListviewName": "表格1",
+            "UpdateType": 3,
+            "BreakpointIdentity": "81b2a241-726c-410e-8a9e-69eb65a9b4b6"
+          },
+          {
+            "$type": "ElementUI.Commands.ShowMessage, ElementUI",
+            "Message": "已清空",
+            "Type": "success",
+            "Duration": 3000,
+            "BreakpointIdentity": "8cd7fd76-15b7-4551-b4fd-a0ccb5a60c68"
+          }
+        ],
+        "Text": "清空报告数据",
+        "ClickMode": 1,
+        "TemplateKey": "_RS_Main"
+      }
+    },
+    "7,1": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "日期范围报告",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "SubConditions": [
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "日期范围报告",
+                    "ColumnName": "类型",
+                    "GUID": "60ab2643-6ef7-457c-9b15-45e6def26a06",
+                    "RelationBinding": {
+                      "RelatedTable": "日期范围交易字典",
+                      "RelatedColumn": "type",
+                      "DisplayColumn": "交易类型"
+                    }
+                  },
+                  "Value": "FBA交易费用"
+                },
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "日期范围报告",
+                    "ColumnName": "类型",
+                    "GUID": "eb578e7a-b531-4d07-be0d-98da38b5a618",
+                    "RelationBinding": {
+                      "RelatedTable": "日期范围交易字典",
+                      "RelatedColumn": "type",
+                      "DisplayColumn": "交易类型"
+                    }
+                  },
+                  "Value": "订单"
+                },
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "日期范围报告",
+                    "ColumnName": "类型",
+                    "GUID": "98f210e2-3d63-4225-a299-5d8311681b51",
+                    "RelationBinding": {
+                      "RelatedTable": "日期范围交易字典",
+                      "RelatedColumn": "type",
+                      "DisplayColumn": "交易类型"
+                    }
+                  },
+                  "Value": "退款"
+                }
+              ],
+              "RelationType": 1
+            },
+            "NullFormulaValueQueryPolicy": 0,
+            "ID": "d4aa6eeda1d64b64b0012b62b6eed33d",
+            "BreakpointIdentity": "aa07a14f-caa7-4a86-85e3-537d16f8dd0d"
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=日期范围报告提炼!CD25"
+                      }
+                    ]
+                  },
+                  "value": "0"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "报告利润表",
+                    "UpdateType": "add",
+                    "ShowConfirm": false,
+                    "UpdateBindingValues": [
+                      {
+                        "BindingInfo": {
+                          "TableName": "报告利润表",
+                          "ColumnName": "日期",
+                          "GUID": "832b6653-95d8-48e8-8445-c39380200879"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日期范围报告提炼!C4"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "报告利润表",
+                          "ColumnName": "账户",
+                          "GUID": "43ee7597-3bfa-4c23-a4f4-fc65e69a282e"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日期范围报告提炼!K4"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "报告利润表",
+                          "ColumnName": "平台配送费",
+                          "GUID": "048cbf1a-74e7-4513-ba5d-257bb84966d0"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日期范围报告提炼!CO23+日期范围报告提炼!CU23"
+                        }
+                      }
+                    ],
+                    "BreakpointIdentity": "96d5f933-1b3f-4cd2-8a04-2a7d0a511f62"
+                  }
+                ],
+                "ID": "4417fa36-a0a6-48bb-9000-cd71d5723b8c"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "报告利润表",
+                    "ShowConfirm": false,
+                    "UpdateBindingValues": [
+                      {
+                        "BindingInfo": {
+                          "TableName": "报告利润表",
+                          "ColumnName": "日期",
+                          "GUID": "84c2e80b-d808-47e2-ab4f-72efd82e4750"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日期范围报告提炼!C4"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "报告利润表",
+                          "ColumnName": "账户",
+                          "GUID": "f2a3c06e-dffe-466d-a2e6-07c77d53ede9"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日期范围报告提炼!K4"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "报告利润表",
+                          "ColumnName": "平台配送费",
+                          "GUID": "8ec29071-0605-475d-916e-66b310ab414d"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日期范围报告提炼!CO23+日期范围报告提炼!CU23"
+                        }
+                      }
+                    ],
+                    "BreakpointIdentity": "d9ed3ad2-749c-4f7c-959b-9a3e045ef0b0"
+                  }
+                ],
+                "ID": "1d825282-28a3-420b-9d06-35820dd770ee"
+              }
+            ],
+            "BreakpointIdentity": "44541c3e-fa99-467f-9dcd-05c84677cf31"
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日期范围报告提炼!B8"
+                },
+                "PropertyType": 0,
+                "Value": false
+              }
+            ],
+            "BreakpointIdentity": "49639981-b6b2-4a63-ab17-de9c9549357d"
+          },
+          {
+            "$type": "ElementUI.Commands.ShowMessage, ElementUI",
+            "Message": "统计完成！",
+            "Type": "success",
+            "Duration": 3000,
+            "BreakpointIdentity": "32d53a6f-07b6-4a82-b5e1-52ec820b8d5f"
+          }
+        ],
+        "Text": "平台配送费",
+        "TemplateKey": "样式6"
+      }
+    },
+    "7,6": {
+      "BindingInfo": {
+        "TableName": "报告利润表",
+        "ColumnName": "平台配送费",
+        "GUID": "c7912770-ad4d-4ff4-bfcd-a829b5aa5009"
+      }
+    },
+    "7,11": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "日期范围报告",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "日期范围报告",
+                "ColumnName": "类型",
+                "GUID": "579be532-8ed8-4bd7-9e66-ae7db60fe543",
+                "RelationBinding": {
+                  "RelatedTable": "日期范围交易字典",
+                  "RelatedColumn": "type",
+                  "DisplayColumn": "交易类型"
+                }
+              },
+              "Value": "货件标签费"
+            },
+            "NullFormulaValueQueryPolicy": 0,
+            "ID": "fc2a50e0fe99488dac797bf6b158f147",
+            "BreakpointIdentity": "12b214d6-fda2-49de-b526-cd0b9bbfef04"
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=日期范围报告提炼!CD25"
+                      }
+                    ]
+                  },
+                  "value": "0"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "报告利润表",
+                    "UpdateType": "add",
+                    "ShowConfirm": false,
+                    "UpdateBindingValues": [
+                      {
+                        "BindingInfo": {
+                          "TableName": "报告利润表",
+                          "ColumnName": "日期",
+                          "GUID": "932329d8-6e7d-4698-959c-0831180ea3e6"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日期范围报告提炼!C4"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "报告利润表",
+                          "ColumnName": "账户",
+                          "GUID": "3c982a48-5208-4281-8429-1a8a2f34b5b7"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日期范围报告提炼!K4"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "报告利润表",
+                          "ColumnName": "平台货件标签费",
+                          "GUID": "6dc87558-4b9e-48ee-bafe-25b5c562148d"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日期范围报告提炼!DG23"
+                        }
+                      }
+                    ],
+                    "BreakpointIdentity": "4911d6ac-38ec-41ab-8275-87ba7ff5c4b4"
+                  }
+                ],
+                "ID": "8aa31e37-ccc9-4f0b-8528-f2764d403f5b"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "报告利润表",
+                    "ShowConfirm": false,
+                    "UpdateBindingValues": [
+                      {
+                        "BindingInfo": {
+                          "TableName": "报告利润表",
+                          "ColumnName": "日期",
+                          "GUID": "1aafc259-d395-469b-9661-a5d3f7dfa662"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日期范围报告提炼!C4"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "报告利润表",
+                          "ColumnName": "账户",
+                          "GUID": "826a9d21-8925-42d8-9b2e-8bf1740ef3af"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日期范围报告提炼!K4"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "报告利润表",
+                          "ColumnName": "平台货件标签费",
+                          "GUID": "d47c4415-7741-46f0-8377-63d7fe55cd00"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日期范围报告提炼!DG23"
+                        }
+                      }
+                    ],
+                    "BreakpointIdentity": "65a657ac-3785-48a1-9468-0acb5102282d"
+                  }
+                ],
+                "ID": "889f941b-e0c8-4bf4-9db1-454858cda256"
+              }
+            ],
+            "BreakpointIdentity": "567a94e3-f14b-4f77-aea4-59ae9e776e1e"
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日期范围报告提炼!L8"
+                },
+                "PropertyType": 0,
+                "Value": false
+              }
+            ],
+            "BreakpointIdentity": "10b62ab8-7639-4ebb-bfec-a0ccbc0bd90d"
+          },
+          {
+            "$type": "ElementUI.Commands.ShowMessage, ElementUI",
+            "Message": "统计完成！",
+            "Type": "success",
+            "Duration": 3000,
+            "BreakpointIdentity": "ac815d9a-4e76-4138-9e95-b2b0cd9d2ea4"
+          }
+        ],
+        "Text": "平台货件标签费",
+        "TemplateKey": "样式6"
+      }
+    },
+    "7,16": {
+      "BindingInfo": {
+        "TableName": "报告利润表",
+        "ColumnName": "平台货件标签费",
+        "GUID": "3938afa0-f828-48ec-99a6-d95c77951d4e"
+      }
+    },
+    "7,21": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "日期范围报告",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "日期范围报告",
+                "ColumnName": "类型",
+                "GUID": "8d104770-299f-45cf-ab63-3f6b8a7004c4",
+                "RelationBinding": {
+                  "RelatedTable": "日期范围交易字典",
+                  "RelatedColumn": "type",
+                  "DisplayColumn": "交易类型"
+                }
+              },
+              "Value": "FBA存储费"
+            },
+            "NullFormulaValueQueryPolicy": 0,
+            "ID": "3769540f80784e9d9f43d251ccbf3267",
+            "BreakpointIdentity": "8a04235b-53af-4506-9dc1-c890652c8650"
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=日期范围报告提炼!CD25"
+                      }
+                    ]
+                  },
+                  "value": "0"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "报告利润表",
+                    "UpdateType": "add",
+                    "ShowConfirm": false,
+                    "UpdateBindingValues": [
+                      {
+                        "BindingInfo": {
+                          "TableName": "报告利润表",
+                          "ColumnName": "日期",
+                          "GUID": "2f64fe72-976a-4181-9f98-5c4e0020a4ee"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日期范围报告提炼!C4"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "报告利润表",
+                          "ColumnName": "账户",
+                          "GUID": "4890bf6f-4367-48a8-85ca-8f98b76044fc"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日期范围报告提炼!K4"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "报告利润表",
+                          "ColumnName": "平台仓储费",
+                          "GUID": "e9a44984-1925-420b-a089-b2c49f469d7f"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日期范围报告提炼!DG23"
+                        }
+                      }
+                    ],
+                    "BreakpointIdentity": "6e0e8cd8-f72e-4106-ad5f-3f397bf7518f"
+                  }
+                ],
+                "ID": "4cb28ea9-b219-4a4e-bea3-00389c662fdb"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "报告利润表",
+                    "ShowConfirm": false,
+                    "UpdateBindingValues": [
+                      {
+                        "BindingInfo": {
+                          "TableName": "报告利润表",
+                          "ColumnName": "日期",
+                          "GUID": "0773b6de-11c8-4176-a0a8-de12c744e26f"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日期范围报告提炼!C4"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "报告利润表",
+                          "ColumnName": "账户",
+                          "GUID": "473a7275-4cda-491b-9890-7aa227f2e9a6"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日期范围报告提炼!K4"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "报告利润表",
+                          "ColumnName": "平台仓储费",
+                          "GUID": "d36503b9-c845-4d3b-b6d8-76ed62c2bafb"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日期范围报告提炼!DG23"
+                        }
+                      }
+                    ],
+                    "BreakpointIdentity": "b3dea8f9-8b28-44b2-b3c0-08a635822428"
+                  }
+                ],
+                "ID": "66f93442-c0cf-4a54-9415-7edf193666a3"
+              }
+            ],
+            "BreakpointIdentity": "3dcb2883-1f1d-417f-b640-e7f3b4febf9d"
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日期范围报告提炼!V8"
+                },
+                "PropertyType": 0,
+                "Value": false
+              }
+            ],
+            "BreakpointIdentity": "87bffab0-7d58-418f-b675-d74a562953c0"
+          },
+          {
+            "$type": "ElementUI.Commands.ShowMessage, ElementUI",
+            "Message": "统计完成！",
+            "Type": "success",
+            "Duration": 3000,
+            "BreakpointIdentity": "776d8168-3e19-4e41-93f4-bb497dcad516"
+          }
+        ],
+        "Text": "平台仓储费",
+        "TemplateKey": "样式6"
+      }
+    },
+    "7,26": {
+      "BindingInfo": {
+        "TableName": "报告利润表",
+        "ColumnName": "平台仓储费",
+        "GUID": "8dda5a87-cfc5-42fe-9eb5-5b4336817076"
+      }
+    },
+    "7,31": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "日期范围报告",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "日期范围报告",
+                "ColumnName": "类型",
+                "GUID": "92018a35-fd07-481f-838f-8d09d3be01e8"
+              },
+              "Value": "%Null%"
+            },
+            "NullFormulaValueQueryPolicy": 0,
+            "ID": "077ba3a3706043188f4be49155317477",
+            "BreakpointIdentity": "65279e57-5d52-4de0-b31f-5c22aa750244"
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=日期范围报告提炼!CD25"
+                      }
+                    ]
+                  },
+                  "value": "0"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "报告利润表",
+                    "UpdateType": "add",
+                    "ShowConfirm": false,
+                    "UpdateBindingValues": [
+                      {
+                        "BindingInfo": {
+                          "TableName": "报告利润表",
+                          "ColumnName": "日期",
+                          "GUID": "32c8e4b4-5cc5-4d2f-960b-9566d307f93b"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日期范围报告提炼!C4"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "报告利润表",
+                          "ColumnName": "账户",
+                          "GUID": "9134ec0a-60b3-4b7b-a5f1-c48793f14be8"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日期范围报告提炼!K4"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "报告利润表",
+                          "ColumnName": "早期评论和优惠券",
+                          "GUID": "7a9f632d-5cb0-4290-b04a-4c46a5d1cf52"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日期范围报告提炼!DG23"
+                        }
+                      }
+                    ],
+                    "BreakpointIdentity": "9fa49f27-6048-4271-bf90-f691ef4ae8d8"
+                  }
+                ],
+                "ID": "7a272923-6e03-42dd-980e-c659c9c268b9"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "报告利润表",
+                    "ShowConfirm": false,
+                    "UpdateBindingValues": [
+                      {
+                        "BindingInfo": {
+                          "TableName": "报告利润表",
+                          "ColumnName": "日期",
+                          "GUID": "4581a2fd-f300-4847-b335-a7bcd17e6c62"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日期范围报告提炼!C4"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "报告利润表",
+                          "ColumnName": "账户",
+                          "GUID": "6b7b1c3e-4459-40d4-ab1a-2cf1307c6363"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日期范围报告提炼!K4"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "报告利润表",
+                          "ColumnName": "早期评论和优惠券",
+                          "GUID": "7450d43f-e1cc-47f8-b143-5b2cc9fff7fd"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日期范围报告提炼!DG23"
+                        }
+                      }
+                    ],
+                    "BreakpointIdentity": "f3b42155-b26e-4a2d-a4bc-a72ac15e15f4"
+                  }
+                ],
+                "ID": "15bc230d-bc55-42f8-adb1-ed1a04a95e67"
+              }
+            ],
+            "BreakpointIdentity": "8ad9359a-f72e-417c-b8e1-4c63e72c9437"
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日期范围报告提炼!AF8"
+                },
+                "PropertyType": 0,
+                "Value": false
+              }
+            ],
+            "BreakpointIdentity": "790f4500-3823-4a93-b452-9fdd904fce59"
+          },
+          {
+            "$type": "ElementUI.Commands.ShowMessage, ElementUI",
+            "Message": "统计完成！",
+            "Type": "success",
+            "Duration": 3000,
+            "BreakpointIdentity": "7db5d343-4c3f-4fcb-8867-4668b50e893f"
+          }
+        ],
+        "Text": "早期评论和优惠券",
+        "TemplateKey": "样式6"
+      }
+    },
+    "7,36": {
+      "BindingInfo": {
+        "TableName": "报告利润表",
+        "ColumnName": "早期评论和优惠券",
+        "GUID": "add8be52-3be0-4fb7-b214-76486273aa5d"
+      }
+    },
+    "7,42": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "报告利润表",
+            "ID": "98bb77abb6b2418186e3be00dc43b70c",
+            "BreakpointIdentity": "8592d846-39fa-420a-a188-4c897c566b20"
+          },
+          {
+            "$type": "Forguncy.Model.ExportListViewToExcelCommand, ServerDesignerCommon",
+            "ExportExcelListviewNameMode": 1,
+            "BreakpointIdentity": "f3e2359e-8ba5-4a58-852b-1aa37332aef9",
+            "ListViewName": "表格1",
+            "NewOtherName": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=TEXT(TODAY(),\"yyyy-mm-dd\")&\"日期范围报告\""
+            }
+          }
+        ],
+        "Text": "导出日期报告",
+        "TemplateKey": "样式11"
+      }
+    },
+    "9,1": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "日期范围报告",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "SubConditions": [
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "日期范围报告",
+                    "ColumnName": "类型",
+                    "GUID": "fa228e1c-5c9d-4762-9f27-3e8221172a77",
+                    "RelationBinding": {
+                      "RelatedTable": "日期范围交易字典",
+                      "RelatedColumn": "type",
+                      "DisplayColumn": "交易类型"
+                    }
+                  },
+                  "Value": "调整"
+                },
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 4,
+                  "ColumnBindingInfo": {
+                    "TableName": "日期范围报告",
+                    "ColumnName": "其他",
+                    "GUID": "831b2caf-5208-44a1-a356-5c1f1fdd2db3"
+                  },
+                  "Value": "0"
+                }
+              ]
+            },
+            "NullFormulaValueQueryPolicy": 0,
+            "ID": "ab01a1d50b4d482bbb4417d368b6506f",
+            "BreakpointIdentity": "355f8921-1bef-4b07-8055-8d84a27bae3d"
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=日期范围报告提炼!CD25"
+                      }
+                    ]
+                  },
+                  "value": "0"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "报告利润表",
+                    "UpdateType": "add",
+                    "ShowConfirm": false,
+                    "UpdateBindingValues": [
+                      {
+                        "BindingInfo": {
+                          "TableName": "报告利润表",
+                          "ColumnName": "日期",
+                          "GUID": "4b749614-3439-4afd-a4ee-66391d255dec"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日期范围报告提炼!C4"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "报告利润表",
+                          "ColumnName": "账户",
+                          "GUID": "5e0b5c91-7702-4bd0-97af-e22c170ed583"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日期范围报告提炼!K4"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "报告利润表",
+                          "ColumnName": "平台库存赔偿调整",
+                          "GUID": "e0bad016-4288-4238-9f38-67738b592228"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日期范围报告提炼!DA23"
+                        }
+                      }
+                    ],
+                    "BreakpointIdentity": "b7332b8e-9851-4cc5-9fbe-ef15f98b1fcf"
+                  }
+                ],
+                "ID": "8ef7b7b1-6e5d-4081-a6d6-13338ac10f3f"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "报告利润表",
+                    "ShowConfirm": false,
+                    "UpdateBindingValues": [
+                      {
+                        "BindingInfo": {
+                          "TableName": "报告利润表",
+                          "ColumnName": "日期",
+                          "GUID": "ba8a251c-3ce3-4208-a377-d9755e2d9248"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日期范围报告提炼!C4"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "报告利润表",
+                          "ColumnName": "账户",
+                          "GUID": "7bcd7ef4-856b-46c9-bc6b-9b56a552a051"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日期范围报告提炼!K4"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "报告利润表",
+                          "ColumnName": "平台库存赔偿调整",
+                          "GUID": "bc696242-2237-4eb0-a281-0a451408ab47"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日期范围报告提炼!DA23"
+                        }
+                      }
+                    ],
+                    "BreakpointIdentity": "6cd921b4-c34f-415c-b902-aeba3b2e11d9"
+                  }
+                ],
+                "ID": "3a776474-1d1a-41f6-9014-7782abce74b0"
+              }
+            ],
+            "BreakpointIdentity": "60d1e41d-adaa-4dd1-a77a-cdba995d8327"
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日期范围报告提炼!B10"
+                },
+                "PropertyType": 0,
+                "Value": false
+              }
+            ],
+            "BreakpointIdentity": "1ee5253a-fb09-4918-8b9a-d5e68212d1db"
+          },
+          {
+            "$type": "ElementUI.Commands.ShowMessage, ElementUI",
+            "Message": "统计完成！",
+            "Type": "success",
+            "Duration": 3000,
+            "BreakpointIdentity": "108e20d9-57f5-4ad9-a665-bb5826da3ade"
+          }
+        ],
+        "Text": "平台库存赔偿调整",
+        "TemplateKey": "样式6"
+      }
+    },
+    "9,6": {
+      "BindingInfo": {
+        "TableName": "报告利润表",
+        "ColumnName": "平台库存赔偿调整",
+        "GUID": "e00b4715-27cf-4520-8aca-3d0fc195255a"
+      }
+    },
+    "9,11": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "日期范围报告",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "日期范围报告",
+                "ColumnName": "描述",
+                "GUID": "b5546043-8316-41ba-9d0c-636eb2e11ca5",
+                "RelationBinding": {
+                  "RelatedTable": "日期范围交易字典",
+                  "RelatedColumn": "description",
+                  "DisplayColumn": "描述"
+                }
+              },
+              "Value": "广告成本"
+            },
+            "NullFormulaValueQueryPolicy": 0,
+            "ID": "a76543fa8e514fb396c0a24cf682be28",
+            "BreakpointIdentity": "830d2a58-d5a4-4f7a-a0d3-319637ae4a59"
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=日期范围报告提炼!CD25"
+                      }
+                    ]
+                  },
+                  "value": "0"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "报告利润表",
+                    "UpdateType": "add",
+                    "ShowConfirm": false,
+                    "UpdateBindingValues": [
+                      {
+                        "BindingInfo": {
+                          "TableName": "报告利润表",
+                          "ColumnName": "日期",
+                          "GUID": "70fc577a-0e80-461d-9213-f56339d4267d"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日期范围报告提炼!C4"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "报告利润表",
+                          "ColumnName": "账户",
+                          "GUID": "b752a6d9-8785-4c97-a2d3-b4c8d83096f5"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日期范围报告提炼!K4"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "报告利润表",
+                          "ColumnName": "平台广告费",
+                          "GUID": "b53ba156-b376-4c2d-8ff0-dc62cdc82caf"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日期范围报告提炼!DG23"
+                        }
+                      }
+                    ],
+                    "BreakpointIdentity": "c8217ec2-8805-4d16-ab47-835c1de83ecb"
+                  }
+                ],
+                "ID": "67df8ff3-a27c-43b0-a1c1-5bb0549ce4e5"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "报告利润表",
+                    "ShowConfirm": false,
+                    "UpdateBindingValues": [
+                      {
+                        "BindingInfo": {
+                          "TableName": "报告利润表",
+                          "ColumnName": "日期",
+                          "GUID": "1bf6d2c0-c31f-4382-96e3-4e21016eb683"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日期范围报告提炼!C4"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "报告利润表",
+                          "ColumnName": "账户",
+                          "GUID": "e1d51944-acd2-4c01-8537-b12f2347373c"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日期范围报告提炼!K4"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "报告利润表",
+                          "ColumnName": "平台广告费",
+                          "GUID": "4d9a2369-1c2f-42e9-bb46-7637575f2f46"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日期范围报告提炼!DG23"
+                        }
+                      }
+                    ],
+                    "BreakpointIdentity": "51144717-832b-4f4f-a2ad-b0632444f0ab"
+                  }
+                ],
+                "ID": "3404f36b-0d5c-4290-bbc9-7cd719049a52"
+              }
+            ],
+            "BreakpointIdentity": "564c6660-b90f-41d3-b285-0366fabb7b2d"
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日期范围报告提炼!L10"
+                },
+                "PropertyType": 0,
+                "Value": false
+              }
+            ],
+            "BreakpointIdentity": "781aa7b0-d04c-46d3-a9bf-732e0d1c90d0"
+          },
+          {
+            "$type": "ElementUI.Commands.ShowMessage, ElementUI",
+            "Message": "统计完成！",
+            "Type": "success",
+            "Duration": 3000,
+            "BreakpointIdentity": "f7e32529-aa55-40ec-9df7-f07469cc8798"
+          }
+        ],
+        "Text": "平台广告费",
+        "TemplateKey": "样式6"
+      }
+    },
+    "9,16": {
+      "BindingInfo": {
+        "TableName": "报告利润表",
+        "ColumnName": "平台广告费",
+        "GUID": "d287bd27-6d15-4345-bcbf-95a1a1ebf3bc"
+      }
+    },
+    "9,21": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "日期范围报告",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "日期范围报告",
+                "ColumnName": "类型",
+                "GUID": "b1d510b9-4b8e-4d9a-94f0-1a7729b26e51",
+                "RelationBinding": {
+                  "RelatedTable": "日期范围交易字典",
+                  "RelatedColumn": "type",
+                  "DisplayColumn": "交易类型"
+                }
+              },
+              "Value": "清算"
+            },
+            "NullFormulaValueQueryPolicy": 0,
+            "ID": "6aa7281f49cb48e29bf29ec969cd5f39",
+            "BreakpointIdentity": "99dad485-1823-4187-a750-fb686f69a5e6"
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=日期范围报告提炼!CD25"
+                      }
+                    ]
+                  },
+                  "value": "0"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "报告利润表",
+                    "UpdateType": "add",
+                    "ShowConfirm": false,
+                    "UpdateBindingValues": [
+                      {
+                        "BindingInfo": {
+                          "TableName": "报告利润表",
+                          "ColumnName": "日期",
+                          "GUID": "3879a02b-56b3-4162-8bde-315f59e55874"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日期范围报告提炼!C4"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "报告利润表",
+                          "ColumnName": "账户",
+                          "GUID": "5f6dba57-647b-43e1-96f0-2785dcf30c9d"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日期范围报告提炼!K4"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "报告利润表",
+                          "ColumnName": "平台清算处置费",
+                          "GUID": "49ed2fd4-4357-41b9-bbfa-bc2874578202"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日期范围报告提炼!CU23"
+                        }
+                      }
+                    ],
+                    "BreakpointIdentity": "1f1efec7-84eb-443c-b3fb-8c0d6b5eddf4"
+                  }
+                ],
+                "ID": "6adf2533-330d-4bbd-92bc-38466157ee31"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "报告利润表",
+                    "ShowConfirm": false,
+                    "UpdateBindingValues": [
+                      {
+                        "BindingInfo": {
+                          "TableName": "报告利润表",
+                          "ColumnName": "日期",
+                          "GUID": "b9df067a-1ce8-40fb-8314-140172e44119"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日期范围报告提炼!C4"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "报告利润表",
+                          "ColumnName": "账户",
+                          "GUID": "40f3f8b2-6ea0-4617-ae64-c7ab5ace806c"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日期范围报告提炼!K4"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "报告利润表",
+                          "ColumnName": "平台清算处置费",
+                          "GUID": "aa2567f6-11f2-4d0e-b2f2-fce42010cc8b"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日期范围报告提炼!CU23"
+                        }
+                      }
+                    ],
+                    "BreakpointIdentity": "06a5adb7-7b2d-4b13-8870-665750c90479"
+                  }
+                ],
+                "ID": "3df057a5-f3a3-42c5-8886-27096f99c432"
+              }
+            ],
+            "BreakpointIdentity": "6678f60a-8d9e-4638-a892-eb60d454ea84"
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日期范围报告提炼!V10"
+                },
+                "PropertyType": 0,
+                "Value": false
+              }
+            ],
+            "BreakpointIdentity": "218e273a-5b04-4188-8721-3c7a49960386"
+          },
+          {
+            "$type": "ElementUI.Commands.ShowMessage, ElementUI",
+            "Message": "统计完成！",
+            "Type": "success",
+            "Duration": 3000,
+            "BreakpointIdentity": "c085b703-a37f-4533-91fb-257dca94b126"
+          }
+        ],
+        "Text": "平台清算处置费",
+        "TemplateKey": "样式6"
+      }
+    },
+    "9,26": {
+      "BindingInfo": {
+        "TableName": "报告利润表",
+        "ColumnName": "平台清算处置费",
+        "GUID": "58b01494-170d-45f5-8db3-fe6cf7ba4515"
+      }
+    },
+    "9,31": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "日期范围报告",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "SubConditions": [
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "日期范围报告",
+                    "ColumnName": "类型",
+                    "GUID": "7930dd97-91d2-4ca9-b001-ab784eff1fc8",
+                    "RelationBinding": {
+                      "RelatedTable": "日期范围交易字典",
+                      "RelatedColumn": "type",
+                      "DisplayColumn": "交易类型"
+                    }
+                  },
+                  "Value": "服务费"
+                },
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 1,
+                  "ColumnBindingInfo": {
+                    "TableName": "日期范围报告",
+                    "ColumnName": "描述",
+                    "GUID": "c519688e-4413-469a-8e5a-bb8b8983e5e1",
+                    "RelationBinding": {
+                      "RelatedTable": "日期范围交易字典",
+                      "RelatedColumn": "description",
+                      "DisplayColumn": "描述"
+                    }
+                  },
+                  "Value": "广告成本"
+                }
+              ]
+            },
+            "NullFormulaValueQueryPolicy": 0,
+            "ID": "28f15faaaf5b4d7e86a3497e00101e68",
+            "BreakpointIdentity": "ae3730af-8649-4222-ac33-263e178da0de"
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=日期范围报告提炼!CD25"
+                      }
+                    ]
+                  },
+                  "value": "0"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "报告利润表",
+                    "UpdateType": "add",
+                    "ShowConfirm": false,
+                    "UpdateBindingValues": [
+                      {
+                        "BindingInfo": {
+                          "TableName": "报告利润表",
+                          "ColumnName": "日期",
+                          "GUID": "5b402c42-7b43-4bb8-861b-40f9f9673bc6"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日期范围报告提炼!C4"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "报告利润表",
+                          "ColumnName": "账户",
+                          "GUID": "e3477094-114d-431f-999b-ecc7db408b77"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日期范围报告提炼!K4"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "报告利润表",
+                          "ColumnName": "平台店铺服务费",
+                          "GUID": "0c7f96d6-043c-44b9-bef0-3294866f1191"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日期范围报告提炼!DG23"
+                        }
+                      }
+                    ],
+                    "BreakpointIdentity": "0e8d6da4-ce89-4b08-b1c5-716c7d274d7c"
+                  }
+                ],
+                "ID": "84721f94-5228-47aa-af65-5d5fc3048e7a"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "报告利润表",
+                    "ShowConfirm": false,
+                    "UpdateBindingValues": [
+                      {
+                        "BindingInfo": {
+                          "TableName": "报告利润表",
+                          "ColumnName": "日期",
+                          "GUID": "fc40dbaf-c70f-4ef4-b29e-a9d6714a9b9e"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日期范围报告提炼!C4"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "报告利润表",
+                          "ColumnName": "账户",
+                          "GUID": "fdc7a787-8dda-4f51-9fe9-ab8a03f003c4"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日期范围报告提炼!K4"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "报告利润表",
+                          "ColumnName": "平台店铺服务费",
+                          "GUID": "a06b99e0-ccf3-4085-96c5-8b4e13d3e27d"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日期范围报告提炼!DG23"
+                        }
+                      }
+                    ],
+                    "BreakpointIdentity": "cd310fbb-57f3-4c19-9707-b3110c019e8a"
+                  }
+                ],
+                "ID": "b47d3f0f-b7a7-4d4d-bcd2-6a2dd18a7b80"
+              }
+            ],
+            "BreakpointIdentity": "d077c371-c4be-4645-aa5b-2f09022d5a9b"
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日期范围报告提炼!AF10"
+                },
+                "PropertyType": 0,
+                "Value": false
+              }
+            ],
+            "BreakpointIdentity": "4c3a3049-2ea1-44ef-b4d5-f956e04078a8"
+          },
+          {
+            "$type": "ElementUI.Commands.ShowMessage, ElementUI",
+            "Message": "统计完成！",
+            "Type": "success",
+            "Duration": 3000,
+            "BreakpointIdentity": "953c97b3-52fe-499a-9468-29c54f3459c5"
+          }
+        ],
+        "Text": "平台店铺服务费",
+        "TemplateKey": "样式6"
+      }
+    },
+    "9,36": {
+      "BindingInfo": {
+        "TableName": "报告利润表",
+        "ColumnName": "平台店铺服务费",
+        "GUID": "6a54b540-220f-41aa-8951-2aa8ff275fe0"
+      }
+    },
+    "9,42": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ExportListViewToExcelCommand, ServerDesignerCommon",
+            "ExportExcelListviewNameMode": 1,
+            "BreakpointIdentity": "ed73b952-3980-4644-8465-176e3ad3097c",
+            "ListViewName": "表格2",
+            "NewOtherName": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=TEXT(TODAY(),\"yyyy-mm-dd\")&\"利润表\""
+            },
+            "IsOnlyExportValue": false
+          }
+        ],
+        "Text": "导出利润表",
+        "TemplateKey": "_RS_Main1"
+      }
+    },
+    "9,46": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+            "ListviewName": "表格2",
+            "UpdateType": 2,
+            "UpdateRowType": 2,
+            "BreakpointIdentity": "ad23c7dd-01d7-4957-abe1-54574de0ce43"
+          },
+          {
+            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+            "ListviewName": "表格2",
+            "UpdateType": 3,
+            "BreakpointIdentity": "b53f099f-c910-4d40-8f2d-06d9e6395703"
+          },
+          {
+            "$type": "ElementUI.Commands.ShowMessage, ElementUI",
+            "Message": "已清空",
+            "Type": "success",
+            "Duration": 3000,
+            "BreakpointIdentity": "4b1e6889-bb93-46f2-a85f-ac41416665bf"
+          }
+        ],
+        "Text": "清空利润表数据",
+        "ClickMode": 1,
+        "TemplateKey": "_RS_Main"
+      }
+    },
+    "11,1": {
+      "ListViewInfo": {
+        "Name": "表格1",
+        "TableName": "日期范围报告",
+        "RowIndex": 11,
+        "ColumnIndex": 1,
+        "RowCount": 11,
+        "ColumnCount": 124,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "SubConditions": [
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "日期范围报告",
+                "ColumnName": "日期",
+                "GUID": "1d77863e-3499-4312-9134-40f31a4d8839",
+                "AttachType": {
+                  "$type": "ForguncyDataAccess.DateColumnAttachObj, ForguncyDataAccess",
+                  "ColumnAttachType": 1
+                }
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=YEAR(日期范围报告提炼!C4)"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "日期范围报告",
+                "ColumnName": "日期",
+                "GUID": "9889efaa-7813-4dea-9793-99f327e1333e",
+                "AttachType": {
+                  "$type": "ForguncyDataAccess.DateColumnAttachObj, ForguncyDataAccess",
+                  "ColumnAttachType": 4
+                }
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=MONTH(日期范围报告提炼!C4)"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "日期范围报告",
+                "ColumnName": "账户",
+                "GUID": "3743c987-d01b-465d-b90d-1842adc4091b"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=日期范围报告提炼!K4"
+              }
+            }
+          ]
+        },
+        "NullFormulaValueQueryPolicy": 0,
+        "TopCondition": null,
+        "ListViewStyleName": "样式1",
+        "ShowColumnHeaderInDesigner": true,
+        "IsRowHeaderVisible": true,
+        "IsTotalRowVisible": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "12,2": {
+      "BindingInfo": {
+        "TableName": "日期范围报告",
+        "ColumnName": "日期",
+        "GUID": "84db932e-ba43-498b-bbb3-b037c44a3527"
+      }
+    },
+    "12,5": {
+      "BindingInfo": {
+        "TableName": "日期范围报告",
+        "ColumnName": "结算id",
+        "GUID": "deb159d5-fea3-4cd1-8120-e33a065098b5"
+      }
+    },
+    "12,8": {
+      "BindingInfo": {
+        "TableName": "日期范围报告",
+        "ColumnName": "类型",
+        "GUID": "2b3896bf-5509-4162-8f19-7edebc781496"
+      }
+    },
+    "12,11": {
+      "BindingInfo": {
+        "TableName": "日期范围报告",
+        "ColumnName": "订单id",
+        "GUID": "d032c324-a38f-41b3-b5f4-7d3b87057301"
+      }
+    },
+    "12,14": {
+      "BindingInfo": {
+        "TableName": "日期范围报告",
+        "ColumnName": "sku",
+        "GUID": "393fad21-34f6-42c3-8d2f-9ad45667850c"
+      }
+    },
+    "12,17": {
+      "BindingInfo": {
+        "TableName": "日期范围报告",
+        "ColumnName": "描述",
+        "GUID": "af931b7f-04b0-4981-9a0e-e23c2c991727"
+      }
+    },
+    "12,20": {
+      "BindingInfo": {
+        "TableName": "日期范围报告",
+        "ColumnName": "数量",
+        "GUID": "4f0d0fb0-8431-411f-95f4-67d9d070fd8d"
+      }
+    },
+    "12,23": {
+      "BindingInfo": {
+        "TableName": "日期范围报告",
+        "ColumnName": "市场",
+        "GUID": "1a7b6e06-43ff-43d0-a0e7-b516170a3952"
+      }
+    },
+    "12,26": {
+      "BindingInfo": {
+        "TableName": "日期范围报告",
+        "ColumnName": "账户类型",
+        "GUID": "5ed0dec4-e2f9-4dba-acbe-26809da92a66"
+      }
+    },
+    "12,29": {
+      "BindingInfo": {
+        "TableName": "日期范围报告",
+        "ColumnName": "履行",
+        "GUID": "8c479dd4-ba36-423a-8b45-65d854aa7cde"
+      }
+    },
+    "12,32": {
+      "BindingInfo": {
+        "TableName": "日期范围报告",
+        "ColumnName": "订单城市",
+        "GUID": "10b153db-2e5a-41e6-b5b9-37e9e64a80da"
+      }
+    },
+    "12,35": {
+      "BindingInfo": {
+        "TableName": "日期范围报告",
+        "ColumnName": "订单州省",
+        "GUID": "389311c4-8ec9-436f-99c2-bee3d6b107ce"
+      }
+    },
+    "12,38": {
+      "BindingInfo": {
+        "TableName": "日期范围报告",
+        "ColumnName": "订单邮编",
+        "GUID": "0b496641-8ff3-425b-b044-e9491bfa2e72"
+      }
+    },
+    "12,41": {
+      "TotalRowSetting": {},
+      "BindingInfo": {
+        "TableName": "日期范围报告",
+        "ColumnName": "征税模式",
+        "GUID": "7b51d387-c9c9-4842-86ef-a63ef71094f2"
+      }
+    },
+    "12,44": {
+      "TotalRowSetting": {
+        "FormulaType": 5,
+        "StyleInfo": {
+          "Formatter": "0.00"
+        }
+      },
+      "BindingInfo": {
+        "TableName": "日期范围报告",
+        "ColumnName": "产品销售额",
+        "GUID": "47e8bc83-7517-4188-be8c-d7ee350dcd8d"
+      }
+    },
+    "12,47": {
+      "TotalRowSetting": {}
+    },
+    "12,50": {
+      "TotalRowSetting": {
+        "FormulaType": 5,
+        "StyleInfo": {
+          "Formatter": "0.00"
+        }
+      },
+      "BindingInfo": {
+        "TableName": "日期范围报告",
+        "ColumnName": "产品销售税",
+        "GUID": "8b6f068e-2f50-408c-beba-a10f107d7d13"
+      }
+    },
+    "12,53": {
+      "TotalRowSetting": {
+        "FormulaType": 5,
+        "StyleInfo": {
+          "Formatter": "0.00"
+        }
+      },
+      "BindingInfo": {
+        "TableName": "日期范围报告",
+        "ColumnName": "运费抵扣",
+        "GUID": "0d7ca40a-3cdb-492e-bc7b-15e31cf51d1c"
+      }
+    },
+    "12,56": {
+      "TotalRowSetting": {
+        "FormulaType": 5,
+        "StyleInfo": {
+          "Formatter": "0.00"
+        }
+      },
+      "BindingInfo": {
+        "TableName": "日期范围报告",
+        "ColumnName": "运费抵扣税",
+        "GUID": "1674812a-74bf-47cc-8e50-42a7d3706b96"
+      }
+    },
+    "12,59": {
+      "TotalRowSetting": {
+        "FormulaType": 5,
+        "StyleInfo": {
+          "Formatter": "0.00"
+        }
+      },
+      "BindingInfo": {
+        "TableName": "日期范围报告",
+        "ColumnName": "礼品包装抵用金",
+        "GUID": "cc4bc5a1-4444-43fe-a486-bc2164eab9ca"
+      }
+    },
+    "12,62": {
+      "TotalRowSetting": {
+        "FormulaType": 5,
+        "StyleInfo": {
+          "Formatter": "0.00"
+        }
+      },
+      "BindingInfo": {
+        "TableName": "日期范围报告",
+        "ColumnName": "礼品包装抵用金税",
+        "GUID": "9ada980f-baec-4d2b-958e-74e41734ec9e"
+      }
+    },
+    "12,65": {
+      "TotalRowSetting": {
+        "FormulaType": 5,
+        "StyleInfo": {
+          "Formatter": "0.00"
+        }
+      },
+      "BindingInfo": {
+        "TableName": "日期范围报告",
+        "ColumnName": "amazon积分",
+        "GUID": "bd0f92b3-4615-4995-8f28-d4a01467aec1"
+      }
+    },
+    "12,68": {
+      "TotalRowSetting": {
+        "FormulaType": 5,
+        "StyleInfo": {
+          "Formatter": "0.00"
+        }
+      },
+      "BindingInfo": {
+        "TableName": "日期范围报告",
+        "ColumnName": "监管费",
+        "GUID": "f3d427b6-ab71-4466-8d42-0f0c3654f9ae"
+      }
+    },
+    "12,71": {
+      "TotalRowSetting": {
+        "FormulaType": 5,
+        "StyleInfo": {
+          "Formatter": "0.00"
+        }
+      },
+      "BindingInfo": {
+        "TableName": "日期范围报告",
+        "ColumnName": "监管费税",
+        "GUID": "5160f4d2-f49f-40a9-a37b-d15fc57fef16"
+      }
+    },
+    "12,74": {
+      "TotalRowSetting": {
+        "FormulaType": 5,
+        "StyleInfo": {
+          "Formatter": "0.00"
+        }
+      },
+      "BindingInfo": {
+        "TableName": "日期范围报告",
+        "ColumnName": "促销返利",
+        "GUID": "5aafdd89-2c1d-488d-bfd0-39b7cd0026e3"
+      }
+    },
+    "12,77": {
+      "TotalRowSetting": {
+        "FormulaType": 5,
+        "StyleInfo": {
+          "Formatter": "0.00"
+        }
+      },
+      "BindingInfo": {
+        "TableName": "日期范围报告",
+        "ColumnName": "促销返利税",
+        "GUID": "5e0d2fe2-45f5-46ee-abec-24acc11bbfe7"
+      }
+    },
+    "12,80": {
+      "TotalRowSetting": {
+        "FormulaType": 5,
+        "StyleInfo": {
+          "Formatter": "0.00"
+        }
+      },
+      "BindingInfo": {
+        "TableName": "日期范围报告",
+        "ColumnName": "市场预扣税",
+        "GUID": "ddc83f2b-5481-445e-b246-beb2cf7793e8"
+      }
+    },
+    "12,83": {
+      "TotalRowSetting": {
+        "FormulaType": 5,
+        "StyleInfo": {
+          "Formatter": "0.00"
+        }
+      },
+      "BindingInfo": {
+        "TableName": "日期范围报告",
+        "ColumnName": "销售费用",
+        "GUID": "017c3f72-f4c6-439f-92cd-2a0f93bf5dba"
+      }
+    },
+    "12,86": {
+      "TotalRowSetting": {}
+    },
+    "12,89": {
+      "TotalRowSetting": {
+        "FormulaType": 5,
+        "StyleInfo": {
+          "Formatter": "0.00"
+        }
+      },
+      "BindingInfo": {
+        "TableName": "日期范围报告",
+        "ColumnName": "FBA费用",
+        "GUID": "74411c8f-2dea-4bca-8238-8db2e748be89"
+      }
+    },
+    "12,92": {
+      "TotalRowSetting": {}
+    },
+    "12,95": {
+      "TotalRowSetting": {
+        "FormulaType": 5,
+        "StyleInfo": {
+          "Formatter": "0.00"
+        }
+      },
+      "BindingInfo": {
+        "TableName": "日期范围报告",
+        "ColumnName": "其他交易费用",
+        "GUID": "c1c507c9-bb95-46ec-ac7f-b78ff0df9b0c"
+      }
+    },
+    "12,98": {
+      "TotalRowSetting": {}
+    },
+    "12,101": {
+      "TotalRowSetting": {
+        "FormulaType": 5,
+        "StyleInfo": {
+          "Formatter": "0.00"
+        }
+      },
+      "BindingInfo": {
+        "TableName": "日期范围报告",
+        "ColumnName": "其他",
+        "GUID": "69a367d7-f0bc-49de-b4d0-3e542a6e5d82"
+      }
+    },
+    "12,104": {
+      "TotalRowSetting": {}
+    },
+    "12,107": {
+      "TotalRowSetting": {
+        "FormulaType": 5,
+        "StyleInfo": {
+          "Formatter": "0.00"
+        }
+      },
+      "BindingInfo": {
+        "TableName": "日期范围报告",
+        "ColumnName": "总计",
+        "GUID": "89abed54-2295-4d42-b188-c6513b01c454"
+      }
+    },
+    "12,110": {
+      "TotalRowSetting": {}
+    },
+    "12,113": {
+      "TotalRowSetting": {
+        "FormulaType": 5,
+        "StyleInfo": {
+          "Formatter": "0.00"
+        }
+      },
+      "BindingInfo": {
+        "TableName": "日期范围报告",
+        "ColumnName": "主营收入",
+        "GUID": "39c8849a-401d-4321-b433-7bb65a5db95b"
+      }
+    },
+    "12,116": {
+      "TotalRowSetting": {}
+    },
+    "12,119": {
+      "TotalRowSetting": {}
+    },
+    "12,121": {
+      "TotalRowSetting": {},
+      "BindingInfo": {
+        "TableName": "日期范围报告",
+        "ColumnName": "账户",
+        "GUID": "ef86fb6c-85ee-4695-b573-594d09e57dbe"
+      }
+    },
+    "12,123": {
+      "BindingInfo": {
+        "TableName": "日期范围报告",
+        "ColumnName": "站点",
+        "GUID": "87da1944-0724-4b8a-af8a-7a7b8e208394"
+      }
+    },
+    "22,1": {
+      "ListViewInfo": {
+        "Name": "表格2",
+        "TableName": "报告利润表",
+        "RowIndex": 22,
+        "ColumnIndex": 1,
+        "RowCount": 4,
+        "ColumnCount": 70,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "SubConditions": [
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "报告利润表",
+                "ColumnName": "日期",
+                "GUID": "6304f74c-214c-4806-b421-169fac22fdbd",
+                "AttachType": {
+                  "$type": "ForguncyDataAccess.DateColumnAttachObj, ForguncyDataAccess",
+                  "ColumnAttachType": 1
+                }
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=YEAR(日期范围报告提炼!C4)"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "报告利润表",
+                "ColumnName": "日期",
+                "GUID": "85217c3e-234e-4e5a-8da4-a87b2bea9f75",
+                "AttachType": {
+                  "$type": "ForguncyDataAccess.DateColumnAttachObj, ForguncyDataAccess",
+                  "ColumnAttachType": 4
+                }
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=MONTH(日期范围报告提炼!C4)"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "报告利润表",
+                "ColumnName": "账户",
+                "GUID": "c7711a8f-b3d5-43d1-b499-4f31c3604a49"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=日期范围报告提炼!K4"
+              }
+            }
+          ]
+        },
+        "NullFormulaValueQueryPolicy": 0,
+        "TopCondition": null,
+        "ListViewStyleName": "样式1",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "23,1": {
+      "NameUsedInJavaScript": "日期",
+      "BindingInfo": {
+        "TableName": "报告利润表",
+        "ColumnName": "日期",
+        "GUID": "5effe928-463f-4884-9231-73f102c2fa72"
+      }
+    },
+    "23,4": {
+      "NameUsedInJavaScript": "账户",
+      "BindingInfo": {
+        "TableName": "报告利润表",
+        "ColumnName": "账户",
+        "GUID": "1e37b278-7f5c-470e-80b2-1de5f12f05bb"
+      }
+    },
+    "23,9": {
+      "NameUsedInJavaScript": "收入",
+      "BindingInfo": {
+        "TableName": "报告利润表",
+        "ColumnName": "主营业务收入",
+        "GUID": "7fcb4a6b-b15a-4df2-9309-0a6581cbe228"
+      }
+    },
+    "23,14": {
+      "NameUsedInJavaScript": "清算收入",
+      "BindingInfo": {
+        "TableName": "报告利润表",
+        "ColumnName": "清算收入",
+        "GUID": "05df4ee9-c291-4202-a8b2-6ae49cdba91b"
+      }
+    },
+    "23,19": {
+      "NameUsedInJavaScript": "库存赔偿收入",
+      "BindingInfo": {
+        "TableName": "报告利润表",
+        "ColumnName": "库存赔偿收入",
+        "GUID": "a55cb6e7-cc2f-4181-ae03-77dd43959cef"
+      }
+    },
+    "23,24": {
+      "NameUsedInJavaScript": "平台成交费",
+      "BindingInfo": {
+        "TableName": "报告利润表",
+        "ColumnName": "平台成交费",
+        "GUID": "00d18bf6-e648-4dea-b762-6175caf91cf8"
+      }
+    },
+    "23,29": {
+      "NameUsedInJavaScript": "平台配送费",
+      "BindingInfo": {
+        "TableName": "报告利润表",
+        "ColumnName": "平台配送费",
+        "GUID": "0071e53b-e231-4105-8692-de5f0faeca58"
+      }
+    },
+    "23,34": {
+      "NameUsedInJavaScript": "平台货件标签费",
+      "BindingInfo": {
+        "TableName": "报告利润表",
+        "ColumnName": "平台货件标签费",
+        "GUID": "24b6ab01-34cd-4e84-bb0b-d2c4ff0bdacb"
+      }
+    },
+    "23,39": {
+      "NameUsedInJavaScript": "平台仓储费",
+      "BindingInfo": {
+        "TableName": "报告利润表",
+        "ColumnName": "平台仓储费",
+        "GUID": "a4f91e16-8269-4ad9-80a9-bd5d92d5f5e9"
+      }
+    },
+    "23,44": {
+      "NameUsedInJavaScript": "平台店铺服务费",
+      "BindingInfo": {
+        "TableName": "报告利润表",
+        "ColumnName": "平台店铺服务费",
+        "GUID": "0af40b88-9b82-4eb5-91a0-971710ed9d06"
+      }
+    },
+    "23,49": {
+      "NameUsedInJavaScript": "平台库存赔偿调整",
+      "BindingInfo": {
+        "TableName": "报告利润表",
+        "ColumnName": "平台库存赔偿调整",
+        "GUID": "5d784d79-54c4-49e1-8e81-503ad6d93c6c"
+      }
+    },
+    "23,54": {
+      "NameUsedInJavaScript": "平台广告费",
+      "BindingInfo": {
+        "TableName": "报告利润表",
+        "ColumnName": "平台广告费",
+        "GUID": "96f94952-0511-4949-ae9f-3258f380d610"
+      }
+    },
+    "23,59": {
+      "NameUsedInJavaScript": "平台清算处置费",
+      "BindingInfo": {
+        "TableName": "报告利润表",
+        "ColumnName": "平台清算处置费",
+        "GUID": "f08bb25b-0a17-4034-a6de-439c5411232c"
+      }
+    },
+    "23,64": {
+      "NameUsedInJavaScript": "早期评论和优惠券",
+      "BindingInfo": {
+        "TableName": "报告利润表",
+        "ColumnName": "早期评论和优惠券",
+        "GUID": "f2a73498-1241-48d9-ae0a-94c8d810495c"
+      }
+    },
+    "23,119": {
+      "ListViewInfo": {
+        "Name": "表格3",
+        "TableName": "币种汇率h1k",
+        "RowIndex": 23,
+        "ColumnIndex": 119,
+        "RowCount": 3,
+        "ColumnCount": 4,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "SubConditions": [
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "币种汇率h1k",
+                "ColumnName": "记账日期",
+                "GUID": "3f0e61f7-c61d-48e4-8fd6-f0dfb769c657",
+                "AttachType": {
+                  "$type": "ForguncyDataAccess.DateColumnAttachObj, ForguncyDataAccess",
+                  "ColumnAttachType": 1
+                }
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=YEAR(日期范围报告提炼!C4)"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "币种汇率h1k",
+                "ColumnName": "记账日期",
+                "GUID": "4d3256d6-e590-4f6d-90c8-7bbf782ee24f",
+                "AttachType": {
+                  "$type": "ForguncyDataAccess.DateColumnAttachObj, ForguncyDataAccess",
+                  "ColumnAttachType": 4
+                }
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=MONTH(日期范围报告提炼!C4)"
+              }
+            }
+          ]
+        },
+        "NullFormulaValueQueryPolicy": 0,
+        "TopCondition": null,
+        "ListViewStyleName": "样式1",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "24,119": {
+      "NameUsedInJavaScript": "站点",
+      "BindingInfo": {
+        "TableName": "币种汇率h1k",
+        "ColumnName": "站点",
+        "GUID": "a3038f3d-7721-4ecc-9825-2f763173c7e7"
+      }
+    },
+    "24,121": {
+      "NameUsedInJavaScript": "汇率",
+      "BindingInfo": {
+        "TableName": "币种汇率h1k",
+        "ColumnName": "汇率",
+        "GUID": "bd82a43a-ca55-4a52-878b-9336dc7e0f55"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 21.333333333333332,
+        "FontWeight": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "FontWeight": 1,
+        "HorizontalAlignment": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0
+      },
+      {
+        "FontFamily": 0,
+        "FontWeight": 1,
+        "Formatter": 3,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 4,
+        "HorizontalAlignment": 2,
+        "Underline": false,
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 3,
+        "Underline": true,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "Foreground": 6,
+        "Underline": true,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "WordWrap": true
+      },
+      {
+        "HorizontalAlignment": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 4,
+        "HorizontalAlignment": 2,
+        "Underline": false,
+        "BorderBottom": 0
+      },
+      {
+        "BorderBottom": 0
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 3,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "HorizontalAlignment": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Foreground": 6,
+        "HorizontalAlignment": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "Foreground": 6,
+        "Formatter": 3,
+        "HorizontalAlignment": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "Foreground": 7,
+        "Formatter": 3,
+        "HorizontalAlignment": 2
+      },
+      {
+        "FontFamily": 0,
+        "Foreground": 6,
+        "Formatter": 3,
+        "HorizontalAlignment": 2
+      },
+      {
+        "Formatter": 8,
+        "HorizontalAlignment": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 4,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 4,
+        "HorizontalAlignment": 2
+      },
+      {
+        "FontFamily": 0,
+        "Foreground": 6
+      },
+      {
+        "Background": 9,
+        "Foreground": 6
+      },
+      {
+        "Background": 9,
+        "FontFamily": 0,
+        "Foreground": 6,
+        "Formatter": 4,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 4
+      },
+      {
+        "Formatter": 4
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 4,
+        "HorizontalAlignment": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 9,
+        "FontFamily": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "Bold",
+        "Center",
+        "[AUTO]General",
+        "0.00",
+        "black",
+        "#FFFF0000",
+        "Background 1 0",
+        "yyyy/MM/dd",
+        "#FFFFFF00"
+      ],
+      "Borders": [
+        {
+          "Color": 5
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,22": 0,
+      "0,23": 0,
+      "0,24": 0,
+      "0,25": 0,
+      "0,26": 0,
+      "0,27": 0,
+      "0,28": 0,
+      "0,29": 0,
+      "0,30": 0,
+      "0,31": 0,
+      "0,32": 0,
+      "0,33": 0,
+      "0,34": 0,
+      "0,35": 0,
+      "0,36": 0,
+      "0,37": 0,
+      "0,38": 0,
+      "0,39": 0,
+      "0,40": 0,
+      "0,41": 0,
+      "0,42": 0,
+      "0,43": 0,
+      "0,44": 0,
+      "0,45": 0,
+      "0,46": 0,
+      "0,47": 0,
+      "0,48": 0,
+      "0,49": 0,
+      "0,50": 0,
+      "0,51": 0,
+      "0,52": 0,
+      "0,53": 0,
+      "0,54": 0,
+      "0,55": 0,
+      "0,56": 0,
+      "0,57": 0,
+      "0,58": 0,
+      "0,59": 0,
+      "0,60": 0,
+      "0,61": 0,
+      "0,62": 0,
+      "0,63": 0,
+      "1,17": 1,
+      "1,21": 0,
+      "1,22": 0,
+      "1,23": 0,
+      "1,24": 0,
+      "1,25": 0,
+      "1,26": 0,
+      "1,27": 0,
+      "1,28": 0,
+      "1,29": 0,
+      "1,30": 0,
+      "1,31": 0,
+      "1,32": 0,
+      "1,33": 0,
+      "1,34": 0,
+      "1,35": 0,
+      "1,36": 0,
+      "1,37": 0,
+      "1,38": 0,
+      "1,39": 0,
+      "1,40": 0,
+      "1,41": 0,
+      "1,42": 0,
+      "1,43": 0,
+      "1,44": 0,
+      "1,45": 0,
+      "1,46": 0,
+      "1,47": 0,
+      "1,48": 0,
+      "1,49": 0,
+      "1,50": 0,
+      "1,51": 0,
+      "1,52": 0,
+      "1,53": 0,
+      "1,54": 0,
+      "1,55": 0,
+      "1,56": 0,
+      "1,57": 0,
+      "1,58": 0,
+      "1,59": 0,
+      "1,60": 0,
+      "1,61": 0,
+      "1,62": 0,
+      "1,63": 0,
+      "2,21": 0,
+      "2,22": 0,
+      "2,23": 0,
+      "2,24": 0,
+      "2,25": 0,
+      "2,26": 0,
+      "2,27": 0,
+      "2,28": 0,
+      "2,29": 0,
+      "2,30": 0,
+      "2,31": 0,
+      "2,32": 0,
+      "2,33": 0,
+      "2,34": 0,
+      "2,35": 0,
+      "2,36": 0,
+      "2,37": 0,
+      "2,38": 0,
+      "2,39": 0,
+      "2,40": 0,
+      "2,41": 0,
+      "2,42": 0,
+      "2,43": 0,
+      "2,44": 0,
+      "2,45": 0,
+      "2,46": 0,
+      "2,47": 0,
+      "2,48": 0,
+      "2,49": 0,
+      "2,50": 0,
+      "2,51": 0,
+      "2,52": 0,
+      "2,53": 0,
+      "2,54": 0,
+      "2,55": 0,
+      "2,56": 0,
+      "2,57": 0,
+      "2,58": 0,
+      "2,59": 0,
+      "2,60": 0,
+      "2,61": 0,
+      "2,62": 0,
+      "2,63": 0,
+      "3,2": 2,
+      "3,10": 3,
+      "5,1": 4,
+      "5,2": 0,
+      "5,3": 0,
+      "5,4": 0,
+      "5,5": 0,
+      "5,6": 5,
+      "5,7": 6,
+      "5,8": 6,
+      "5,9": 6,
+      "5,10": 6,
+      "5,11": 4,
+      "5,12": 0,
+      "5,13": 0,
+      "5,14": 0,
+      "5,15": 0,
+      "5,16": 5,
+      "5,17": 6,
+      "5,18": 6,
+      "5,19": 6,
+      "5,20": 6,
+      "5,21": 4,
+      "5,26": 5,
+      "5,27": 6,
+      "5,28": 6,
+      "5,29": 6,
+      "5,30": 6,
+      "5,31": 4,
+      "5,32": 0,
+      "5,33": 0,
+      "5,34": 0,
+      "5,35": 0,
+      "5,36": 5,
+      "5,37": 7,
+      "5,38": 7,
+      "5,39": 7,
+      "5,40": 7,
+      "5,42": 8,
+      "5,46": 9,
+      "5,51": 10,
+      "6,6": 11,
+      "6,7": 11,
+      "6,8": 11,
+      "6,9": 11,
+      "6,10": 11,
+      "6,16": 11,
+      "6,17": 11,
+      "6,18": 11,
+      "6,19": 11,
+      "6,20": 11,
+      "6,26": 11,
+      "6,27": 11,
+      "6,28": 11,
+      "6,29": 11,
+      "6,30": 11,
+      "6,36": 11,
+      "6,37": 11,
+      "6,38": 11,
+      "6,39": 11,
+      "6,40": 11,
+      "7,1": 4,
+      "7,2": 0,
+      "7,3": 0,
+      "7,4": 0,
+      "7,5": 0,
+      "7,6": 5,
+      "7,7": 7,
+      "7,8": 7,
+      "7,9": 7,
+      "7,10": 7,
+      "7,11": 4,
+      "7,12": 0,
+      "7,13": 0,
+      "7,14": 0,
+      "7,15": 0,
+      "7,16": 5,
+      "7,17": 7,
+      "7,18": 7,
+      "7,19": 7,
+      "7,20": 7,
+      "7,21": 4,
+      "7,22": 0,
+      "7,23": 0,
+      "7,24": 0,
+      "7,25": 0,
+      "7,26": 5,
+      "7,27": 7,
+      "7,28": 7,
+      "7,29": 7,
+      "7,30": 7,
+      "7,31": 4,
+      "7,32": 0,
+      "7,33": 0,
+      "7,34": 0,
+      "7,35": 0,
+      "7,36": 12,
+      "7,37": 13,
+      "7,38": 13,
+      "7,39": 13,
+      "7,40": 13,
+      "7,42": 14,
+      "7,43": 0,
+      "7,44": 0,
+      "8,1": 0,
+      "8,2": 0,
+      "8,3": 0,
+      "8,4": 0,
+      "8,5": 0,
+      "8,6": 15,
+      "8,7": 15,
+      "8,8": 15,
+      "8,9": 15,
+      "8,10": 15,
+      "8,11": 0,
+      "8,12": 0,
+      "8,13": 0,
+      "8,14": 0,
+      "8,15": 0,
+      "8,16": 0,
+      "8,17": 0,
+      "8,18": 0,
+      "8,19": 0,
+      "8,20": 0,
+      "8,21": 0,
+      "8,22": 0,
+      "8,23": 0,
+      "8,24": 0,
+      "8,25": 0,
+      "8,26": 0,
+      "8,27": 0,
+      "8,28": 0,
+      "8,29": 0,
+      "8,30": 0,
+      "8,31": 0,
+      "8,32": 0,
+      "8,33": 0,
+      "8,34": 0,
+      "8,35": 0,
+      "8,36": 0,
+      "8,37": 0,
+      "8,38": 0,
+      "8,39": 0,
+      "8,40": 0,
+      "8,41": 0,
+      "8,42": 0,
+      "8,43": 0,
+      "8,44": 0,
+      "8,45": 0,
+      "8,46": 0,
+      "8,47": 0,
+      "8,48": 0,
+      "8,49": 0,
+      "8,50": 0,
+      "9,1": 4,
+      "9,2": 0,
+      "9,3": 0,
+      "9,4": 0,
+      "9,5": 0,
+      "9,6": 5,
+      "9,7": 7,
+      "9,8": 7,
+      "9,9": 7,
+      "9,10": 7,
+      "9,11": 4,
+      "9,12": 0,
+      "9,13": 0,
+      "9,14": 0,
+      "9,15": 0,
+      "9,16": 5,
+      "9,17": 7,
+      "9,18": 7,
+      "9,19": 7,
+      "9,20": 7,
+      "9,21": 4,
+      "9,22": 0,
+      "9,23": 0,
+      "9,24": 0,
+      "9,25": 0,
+      "9,26": 5,
+      "9,27": 7,
+      "9,28": 7,
+      "9,29": 7,
+      "9,30": 7,
+      "9,31": 4,
+      "9,32": 0,
+      "9,33": 0,
+      "9,34": 0,
+      "9,35": 0,
+      "9,36": 5,
+      "9,37": 7,
+      "9,38": 7,
+      "9,39": 7,
+      "9,40": 7,
+      "9,41": 0,
+      "9,42": 14,
+      "9,43": 0,
+      "9,44": 0,
+      "9,45": 0,
+      "9,46": 9,
+      "9,47": 0,
+      "9,48": 0,
+      "9,49": 0,
+      "9,50": 0,
+      "10,9": 0,
+      "10,10": 0,
+      "10,11": 0,
+      "10,12": 0,
+      "10,13": 0,
+      "10,14": 0,
+      "10,15": 0,
+      "10,16": 0,
+      "10,17": 0,
+      "10,18": 0,
+      "10,19": 0,
+      "10,20": 0,
+      "10,21": 0,
+      "10,22": 0,
+      "10,23": 0,
+      "10,24": 0,
+      "10,25": 0,
+      "10,26": 0,
+      "10,27": 0,
+      "10,28": 0,
+      "10,29": 0,
+      "10,30": 0,
+      "10,31": 0,
+      "10,32": 0,
+      "10,33": 0,
+      "10,34": 0,
+      "10,35": 0,
+      "10,36": 0,
+      "10,37": 0,
+      "10,38": 0,
+      "10,39": 0,
+      "10,40": 0,
+      "10,41": 0,
+      "10,42": 0,
+      "10,43": 0,
+      "10,44": 0,
+      "10,45": 0,
+      "10,46": 0,
+      "10,47": 0,
+      "10,48": 0,
+      "10,49": 0,
+      "10,50": 0,
+      "10,51": 0,
+      "11,1": 11,
+      "11,2": 11,
+      "11,5": 11,
+      "11,8": 11,
+      "11,11": 11,
+      "11,14": 11,
+      "11,17": 11,
+      "11,20": 11,
+      "11,23": 11,
+      "11,26": 11,
+      "11,29": 11,
+      "11,32": 11,
+      "11,35": 11,
+      "11,38": 11,
+      "11,41": 11,
+      "11,44": 11,
+      "11,47": 16,
+      "11,50": 11,
+      "11,53": 11,
+      "11,56": 11,
+      "11,59": 11,
+      "11,62": 11,
+      "11,65": 11,
+      "11,68": 11,
+      "11,71": 11,
+      "11,74": 11,
+      "11,77": 11,
+      "11,80": 11,
+      "11,83": 11,
+      "11,86": 16,
+      "11,89": 11,
+      "11,92": 17,
+      "11,93": 0,
+      "11,94": 0,
+      "11,95": 11,
+      "11,98": 17,
+      "11,99": 0,
+      "11,100": 0,
+      "11,101": 11,
+      "11,104": 17,
+      "11,105": 0,
+      "11,106": 0,
+      "11,107": 11,
+      "11,110": 17,
+      "11,111": 0,
+      "11,112": 0,
+      "11,113": 18,
+      "11,116": 17,
+      "11,117": 0,
+      "11,118": 0,
+      "11,119": 19,
+      "11,121": 11,
+      "11,123": 11,
+      "12,1": 11,
+      "12,2": 20,
+      "12,5": 11,
+      "12,8": 11,
+      "12,11": 11,
+      "12,14": 11,
+      "12,17": 11,
+      "12,20": 11,
+      "12,23": 11,
+      "12,26": 11,
+      "12,29": 11,
+      "12,32": 11,
+      "12,35": 11,
+      "12,38": 11,
+      "12,41": 11,
+      "12,44": 11,
+      "12,50": 11,
+      "12,53": 11,
+      "12,56": 11,
+      "12,59": 11,
+      "12,62": 11,
+      "12,65": 11,
+      "12,68": 11,
+      "12,71": 11,
+      "12,74": 11,
+      "12,77": 11,
+      "12,80": 11,
+      "12,83": 11,
+      "12,86": 21,
+      "12,87": 0,
+      "12,88": 0,
+      "12,89": 11,
+      "12,92": 21,
+      "12,93": 0,
+      "12,94": 0,
+      "12,95": 11,
+      "12,98": 21,
+      "12,99": 0,
+      "12,100": 0,
+      "12,101": 11,
+      "12,104": 21,
+      "12,105": 0,
+      "12,106": 0,
+      "12,107": 11,
+      "12,110": 21,
+      "12,111": 0,
+      "12,112": 0,
+      "12,113": 22,
+      "12,116": 21,
+      "12,117": 0,
+      "12,118": 0,
+      "12,119": 23,
+      "12,121": 11,
+      "12,123": 11,
+      "22,1": 11,
+      "22,4": 11,
+      "22,7": 24,
+      "22,9": 15,
+      "22,10": 0,
+      "22,11": 0,
+      "22,12": 24,
+      "22,14": 0,
+      "22,15": 0,
+      "22,16": 0,
+      "22,17": 24,
+      "22,19": 0,
+      "22,20": 0,
+      "22,21": 0,
+      "22,22": 24,
+      "22,24": 15,
+      "22,25": 0,
+      "22,26": 0,
+      "22,27": 24,
+      "22,29": 15,
+      "22,30": 0,
+      "22,31": 0,
+      "22,32": 24,
+      "22,34": 15,
+      "22,35": 0,
+      "22,36": 0,
+      "22,37": 24,
+      "22,39": 15,
+      "22,40": 0,
+      "22,41": 0,
+      "22,42": 24,
+      "22,44": 15,
+      "22,45": 0,
+      "22,46": 0,
+      "22,47": 24,
+      "22,49": 15,
+      "22,50": 0,
+      "22,51": 0,
+      "22,52": 24,
+      "22,54": 15,
+      "22,55": 0,
+      "22,56": 0,
+      "22,57": 24,
+      "22,59": 15,
+      "22,60": 0,
+      "22,61": 0,
+      "22,62": 24,
+      "22,64": 0,
+      "22,65": 0,
+      "22,66": 0,
+      "22,67": 0,
+      "22,68": 0,
+      "22,74": 25,
+      "22,75": 0,
+      "22,76": 0,
+      "22,77": 21,
+      "22,78": 0,
+      "22,79": 0,
+      "22,80": 0,
+      "22,81": 0,
+      "22,83": 25,
+      "22,84": 0,
+      "22,85": 0,
+      "22,86": 21,
+      "22,87": 0,
+      "22,88": 0,
+      "22,89": 25,
+      "22,90": 0,
+      "22,91": 0,
+      "22,92": 21,
+      "22,93": 0,
+      "22,94": 0,
+      "22,95": 25,
+      "22,96": 0,
+      "22,97": 0,
+      "22,98": 21,
+      "22,99": 0,
+      "22,100": 0,
+      "22,101": 25,
+      "22,102": 0,
+      "22,103": 0,
+      "22,104": 21,
+      "22,105": 0,
+      "22,106": 0,
+      "22,107": 25,
+      "22,108": 0,
+      "22,109": 0,
+      "22,110": 21,
+      "22,111": 0,
+      "22,112": 0,
+      "22,113": 25,
+      "22,114": 0,
+      "22,115": 0,
+      "22,116": 21,
+      "22,117": 0,
+      "22,118": 0,
+      "22,119": 26,
+      "22,120": 26,
+      "23,1": 11,
+      "23,4": 11,
+      "23,7": 27,
+      "23,9": 28,
+      "23,10": 0,
+      "23,11": 0,
+      "23,12": 27,
+      "23,14": 21,
+      "23,15": 0,
+      "23,16": 0,
+      "23,17": 27,
+      "23,19": 21,
+      "23,20": 0,
+      "23,21": 0,
+      "23,22": 27,
+      "23,24": 28,
+      "23,25": 0,
+      "23,26": 0,
+      "23,27": 27,
+      "23,29": 28,
+      "23,30": 0,
+      "23,31": 0,
+      "23,32": 27,
+      "23,34": 28,
+      "23,35": 0,
+      "23,36": 0,
+      "23,37": 27,
+      "23,39": 28,
+      "23,40": 0,
+      "23,41": 0,
+      "23,42": 27,
+      "23,44": 28,
+      "23,45": 0,
+      "23,46": 0,
+      "23,47": 27,
+      "23,49": 28,
+      "23,50": 0,
+      "23,51": 0,
+      "23,52": 27,
+      "23,54": 28,
+      "23,55": 0,
+      "23,56": 0,
+      "23,57": 27,
+      "23,59": 28,
+      "23,60": 0,
+      "23,61": 0,
+      "23,62": 27,
+      "23,64": 21,
+      "23,65": 0,
+      "23,66": 0,
+      "23,67": 0,
+      "23,68": 0,
+      "23,77": 0,
+      "23,78": 0,
+      "23,79": 0,
+      "23,80": 0,
+      "23,81": 0,
+      "23,82": 29,
+      "23,83": 29,
+      "23,84": 29,
+      "23,85": 29,
+      "23,86": 29,
+      "23,87": 29,
+      "23,88": 29,
+      "23,89": 29,
+      "23,90": 29,
+      "23,91": 29,
+      "23,92": 29,
+      "23,93": 29,
+      "23,94": 29,
+      "23,95": 29,
+      "23,96": 29,
+      "23,97": 29,
+      "23,98": 29,
+      "23,99": 29,
+      "23,100": 29,
+      "23,101": 29,
+      "23,102": 29,
+      "23,103": 29,
+      "23,104": 29,
+      "23,105": 29,
+      "23,106": 29,
+      "23,107": 29,
+      "23,108": 0,
+      "24,77": 0,
+      "24,78": 0,
+      "24,79": 0,
+      "24,80": 0,
+      "24,81": 30,
+      "24,82": 29,
+      "24,83": 29,
+      "24,84": 29,
+      "24,85": 29,
+      "24,86": 29,
+      "24,87": 29,
+      "24,88": 29,
+      "24,89": 29,
+      "24,90": 29,
+      "24,91": 29,
+      "24,92": 29,
+      "24,93": 29,
+      "24,94": 29,
+      "24,95": 29,
+      "24,96": 29,
+      "24,97": 29,
+      "24,98": 29,
+      "24,99": 29,
+      "24,100": 29,
+      "24,101": 29,
+      "24,102": 29,
+      "24,103": 29,
+      "24,104": 29,
+      "24,105": 29,
+      "24,106": 29,
+      "24,107": 29,
+      "24,121": 3
+    },
+    "SheetStyle": {
+      "FontFamily": 0,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
+    }
+  },
+  "Spans": [
+    "3,2,1,7",
+    "5,1,1,5",
+    "5,6,1,5",
+    "5,11,1,5",
+    "5,16,1,5",
+    "5,21,1,5",
+    "5,26,1,5",
+    "5,31,1,5",
+    "5,36,1,5",
+    "7,1,1,5",
+    "7,6,1,5",
+    "7,16,1,5",
+    "7,21,1,5",
+    "7,26,1,5",
+    "9,1,1,5",
+    "9,6,1,5",
+    "9,11,1,5",
+    "9,16,1,5",
+    "9,21,1,5",
+    "9,26,1,5",
+    "11,2,1,3",
+    "11,5,1,3",
+    "11,8,1,3",
+    "11,11,1,3",
+    "11,14,1,3",
+    "11,17,1,3",
+    "11,20,1,3",
+    "11,23,1,3",
+    "11,26,1,3",
+    "11,29,1,3",
+    "11,32,1,3",
+    "11,35,1,3",
+    "11,38,1,3",
+    "11,41,1,3",
+    "11,44,1,3",
+    "11,47,1,3",
+    "11,50,1,3",
+    "11,53,1,3",
+    "11,56,1,3",
+    "11,59,1,3",
+    "11,62,1,3",
+    "11,65,1,3",
+    "11,68,1,3",
+    "11,71,1,3",
+    "11,74,1,3",
+    "11,77,1,3",
+    "11,80,1,3",
+    "11,83,1,3",
+    "11,86,1,3",
+    "11,89,1,3",
+    "11,92,1,3",
+    "11,95,1,3",
+    "11,98,1,3",
+    "11,101,1,3",
+    "11,104,1,3",
+    "11,107,1,3",
+    "11,110,1,3",
+    "11,121,1,2",
+    "11,123,1,2",
+    "12,2,1,3",
+    "12,5,1,3",
+    "12,8,1,3",
+    "12,11,1,3",
+    "12,14,1,3",
+    "12,17,1,3",
+    "12,20,1,3",
+    "12,23,1,3",
+    "12,26,1,3",
+    "12,29,1,3",
+    "12,32,1,3",
+    "12,35,1,3",
+    "12,38,1,3",
+    "12,41,1,3",
+    "12,44,1,3",
+    "12,47,1,3",
+    "12,50,1,3",
+    "12,53,1,3",
+    "12,56,1,3",
+    "12,59,1,3",
+    "12,62,1,3",
+    "12,65,1,3",
+    "12,68,1,3",
+    "12,71,1,3",
+    "12,74,1,3",
+    "12,77,1,3",
+    "12,80,1,3",
+    "12,83,1,3",
+    "12,89,1,3",
+    "12,92,1,3",
+    "12,95,1,3",
+    "12,98,1,3",
+    "12,101,1,3",
+    "12,104,1,3",
+    "12,107,1,3",
+    "12,110,1,3",
+    "12,121,1,2",
+    "12,123,1,2",
+    "13,1,9,124",
+    "22,1,1,3",
+    "22,4,1,3",
+    "22,86,1,3",
+    "22,92,1,3",
+    "22,98,1,3",
+    "22,104,1,3",
+    "22,110,1,3",
+    "23,1,1,3",
+    "23,4,1,3",
+    "3,10,1,54",
+    "12,113,1,3",
+    "11,113,1,3",
+    "11,116,1,3",
+    "12,116,1,3",
+    "22,116,1,3",
+    "9,42,1,3",
+    "7,42,1,3",
+    "12,86,1,3",
+    "9,31,1,5",
+    "9,36,1,5",
+    "7,31,1,5",
+    "7,36,1,5",
+    "12,119,1,2",
+    "11,119,1,2",
+    "25,119,1,4",
+    "24,119,1,2",
+    "23,119,1,2",
+    "24,121,1,2",
+    "23,121,1,2",
+    "22,77,1,3",
+    "22,9,1,3",
+    "23,9,1,3",
+    "22,113,1,3",
+    "22,107,1,3",
+    "22,101,1,3",
+    "22,95,1,3",
+    "22,89,1,3",
+    "22,83,1,3",
+    "22,74,1,3",
+    "22,14,1,3",
+    "23,14,1,3",
+    "22,19,1,3",
+    "23,19,1,3",
+    "22,24,1,3",
+    "23,24,1,3",
+    "22,29,1,3",
+    "23,29,1,3",
+    "22,34,1,3",
+    "23,34,1,3",
+    "22,39,1,3",
+    "23,39,1,3",
+    "22,44,1,3",
+    "23,44,1,3",
+    "22,49,1,3",
+    "23,49,1,3",
+    "22,54,1,3",
+    "23,54,1,3",
+    "22,59,1,3",
+    "23,59,1,3",
+    "24,1,2,70",
+    "23,64,1,3",
+    "22,64,1,3",
+    "23,67,1,2",
+    "22,67,1,2",
+    "23,7,1,2",
+    "22,7,1,2",
+    "23,12,1,2",
+    "22,12,1,2",
+    "23,17,1,2",
+    "22,17,1,2",
+    "23,22,1,2",
+    "22,22,1,2",
+    "23,27,1,2",
+    "22,27,1,2",
+    "23,32,1,2",
+    "22,32,1,2",
+    "23,37,1,2",
+    "22,37,1,2",
+    "23,42,1,2",
+    "22,42,1,2",
+    "23,47,1,2",
+    "22,47,1,2",
+    "23,52,1,2",
+    "22,52,1,2",
+    "23,57,1,2",
+    "22,57,1,2",
+    "23,62,1,2",
+    "22,62,1,2",
+    "7,11,1,5"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "报告利润表"
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "tilian",
+      "Formula": "日期范围报告提炼!$B$6:$AO$10"
+    }
+  ]
+}//V13GGfhU7VoXyv0xg+LfaUaaWLW4MttxMjbgxCIQEUGaWHNgrQ+MomkYF3Zlc3AGwqyydgDD5z9Xg/TNGpLZ0AG6/7Yeh6a8D4GQiKIeQDAIyxgKOHvLOZPwdBkt2cNoGDtS9iXyPvs17yCkDoEOgIFNucqv0u04x+uShRhEVHPE3fe3QXuBeAyxJY7D3hBD4l3c/AskCF4EBwlp+jB9UbxUuy577r3bP/Z6MfG4EYgIJz/DV0oaHcMF0kC+oDl2/rNpyuYLX4bxwJc2M6/JEkA6tTg/UJZ9Gt2X1/vHaq88/qSi4JpsjM/GPjWLDWDxLoh22+kvWJpnhPnTJVvZhQJc1pPCYUVl+7A7emRw/TSHVUh66rfZ0vQTFh+8KwiFkZM1ooHTkms46GA5dY0+sVQxyUAnMXA0r5caS6WPckgtZIVJKvNcBx0vXeGQptL/UQrk7Pp7QFqCvHymDD+pQvQwwtb4mG8rMmydZPrOdqbFN/v1I3mA4NmfRorvt/4PzfITy0T7/3xhriFtXHPPHHh4ZYRy6EYlheSmObrJaKZlQO+nMMmnta6a5etOYvQcwx9fruaMHemlY/n+NfZmf6WAMuD44u7JB/bxSUsMyPMq0z5vRL3vkHFFTAkDRNVudHOCy+gAbTZBRTMtTk6M2+36fSBPaeI83FHvVt4ZKk9DR/eoROy2f37wqIjCzDRA6rIQ600bBp2UgO6pPQ1fG0yLUCnH39S4HvdOwLjX/eThEDJLusQgMXIqjctwYzkc9o+yYY+KuWaZOc7JI4o3BkU0+TmwQLqwznchVglkzQgjbiyTeSqKGveHonjnoeCYP8iN03lTVuVGy4F66GSZUAyadx+baDRrl8CT7pAoGt0xZZMqHaVU/zsGugKIPx8cPqnl0QFCk0NxZ9Qpq0NOpA==|920

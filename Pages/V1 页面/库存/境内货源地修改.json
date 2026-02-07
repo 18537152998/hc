@@ -1,0 +1,223 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 40.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 40.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 40.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 40.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 40.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 40.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 40.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 40.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 48.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      }
+    },
+    "Count": 22,
+    "DefaultSize": 32.0
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 32.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      }
+    },
+    "Count": 15,
+    "DefaultSize": 32.0
+  },
+  "Values": {
+    "2,12": "删除"
+  },
+  "AttachInfos": {
+    "1,1": {
+      "ListViewInfo": {
+        "Name": "表格1",
+        "TableName": "境内货源地字典",
+        "RowIndex": 1,
+        "ColumnIndex": 1,
+        "RowCount": 19,
+        "ColumnCount": 13,
+        "TopCondition": null,
+        "ListViewStyleName": "样式1",
+        "ShowColumnHeaderInDesigner": true,
+        "IsRowHeaderVisible": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "AllowEditInListview": true,
+        "AllowAddNewRow": true,
+        "IsSingleSelection": true,
+        "ColumnOperation": 2
+      }
+    },
+    "2,2": {
+      "NameUsedInJavaScript": "境内货源地1",
+      "BindingInfo": {
+        "TableName": "境内货源地字典",
+        "ColumnName": "境内货源地1",
+        "GUID": "09cf27b7-f8fe-41f4-a33f-acc28f489d93"
+      }
+    },
+    "2,9": {
+      "NameUsedInJavaScript": "代码",
+      "BindingInfo": {
+        "TableName": "境内货源地字典",
+        "ColumnName": "代码",
+        "GUID": "33a2a537-3972-4629-88a0-5c9d18be7fb4"
+      }
+    },
+    "2,12": {
+      "NameUsedInJavaScript": "删除",
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.DeleteRecordCommand, ServerDesignerCommon",
+            "ConfirmText": "您确定要删除吗？",
+            "BreakpointIdentity": "eb80a1b7-7a0f-4c31-9261-33b003154b26"
+          }
+        ],
+        "Text": "删除"
+      }
+    },
+    "20,1": {
+      "CellType": {
+        "$type": "Forguncy.PageNavigateCellType, ServerDesignerCommon",
+        "PageingListviewName": "表格1",
+        "FirstImage": {
+          "Name": "Arrow/277_move_first_3.svg",
+          "BuiltIn": true,
+          "Color": "Text 1 50"
+        },
+        "PreviousImage": {
+          "Name": "Arrow/291_left_arrow_2.svg",
+          "BuiltIn": true,
+          "Color": "Text 1 50"
+        },
+        "NextImage": {
+          "Name": "Arrow/292_move_next_3.svg",
+          "BuiltIn": true,
+          "Color": "Text 1 50"
+        },
+        "LastImage": {
+          "Name": "Arrow/278_move_last_3.svg",
+          "BuiltIn": true,
+          "Color": "Text 1 50"
+        }
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0
+      },
+      {
+        "Foreground": 1,
+        "Underline": true
+      },
+      {
+        "HorizontalAlignment": 2
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "Accent 1",
+        "Right"
+      ]
+    },
+    "CellStyles": {
+      "2,9": 0,
+      "2,10": 0,
+      "2,11": 0,
+      "2,12": 1,
+      "20,1": 2
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "1,12,1,2",
+    "1,9,1,3",
+    "1,2,1,7",
+    "20,1,1,13",
+    "2,2,1,7",
+    "2,9,1,3",
+    "2,12,1,2",
+    "3,1,17,13"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//YFSWxSGFkiC6PJIPA0JUFJRQd3bxGXbQLTmDW7cqrUTAl5xcmBg/Epu2DHxlXMlDSNhj3L80Le67rQLk14YUvD2rvOl8oTEucqM8+P5NFwsdey8No1eg4pZzR0MrzUI4rOMAcxUqc79I/thiZ+wRLG5R3tZxmdy9xyqa4EFNNFlwV0j6r7U+FfBdttrCTMTaB866FSXE14EvthIr3a6LrXH9a3djeqLHuDs1tOeIJF+Nsyz4QPixHgaZ/mBOs8aN4TUMjvnJy8iBy8KLrFN0+6fWs0SQ24cIbpjq++MbwnfA3mnyU7+ssBywAn/vWAViuYBt+rFvRut8KIOx73nupStHSak0xy88GRGSUQx5vFhKd7bplZ6Ujj6r42OiwE2wZcDqmaxkwi+N8En6c+GQTjQIA2GSy+DBAhy9XXtBl0h6iPde7GoYIWERcrZs/gNGB+xmuJlNsot9Db7jPTcVtaWMZgFIA5l0VTUY37KOq9W4IDGn0Rkr7nc0BZxmna21f7C+N0ikfceaxFFB/1a36i8pkhe6288lZ0t9D20R59v8sxccGJhKDbRzyfsUJUAbV3xcd9zp5WEjIo48I4E5r2aBZi//pjqAqaKwzee6hwP0iwOPV89bpQsD2E0ckIHkag1FIqCvev/tHi+1yF872r8NxeHb8zLbjZYsrKJ1NqgW6JDOxwx2PRDoHumDOo5J0PkZOGHQWmqbnJUWSEQZFxGQxMG/Jmv4rL8584UYg83Fdkhdh6nW9PD68P+1rAeb2l+vTVWZ8bCPHuV2PMHaUHZdYrHR45BP23FpJFdze9lE1SDPxTTITV9gFYlf012g1321tRKPXeMUw7TOfS0cq5dF18qujAa33IFNhJi9YDKnLe/UgM+dciHB0tr+yKuBS5T4+Yq8CVsoY8tIZCcKWQ==|920

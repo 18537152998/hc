@@ -1,0 +1,249 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "15": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 32.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      }
+    },
+    "Count": 18,
+    "DefaultSize": 32.0
+  },
+  "Cols": {
+    "Count": 15,
+    "DefaultSize": 32.0
+  },
+  "Values": {
+    "1,1": "产品类目信息",
+    "3,1": "名称",
+    "6,1": "级别",
+    "9,1": "上级类目",
+    "12,1": "类目路径",
+    "16,5": "取消"
+  },
+  "AttachInfos": {
+    "4,1": {
+      "BindingInfo": {
+        "TableName": "产品类目",
+        "ColumnName": "名称",
+        "GUID": "36904df1-510b-4171-af57-f201c0c458e3"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "7,1": {
+      "BindingInfo": {
+        "TableName": "产品类目",
+        "ColumnName": "级别",
+        "GUID": "6ee1c5a7-e3cd-4acf-a597-9cbee80c1917"
+      },
+      "CellType": {
+        "$type": "Forguncy.NumberCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "10,1": {
+      "BindingInfo": {
+        "TableName": "产品类目",
+        "ColumnName": "上级类目",
+        "GUID": "0a61d515-5146-470b-8462-b530c6fa3699"
+      },
+      "CellType": {
+        "$type": "Forguncy.NumberCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "13,1": {
+      "BindingInfo": {
+        "TableName": "产品类目",
+        "ColumnName": "类目路径",
+        "GUID": "277b96b4-73f4-477b-90d2-27d4e1bae0ad"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "16,1": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=产品类目_详情页面!B17"
+                      }
+                    ]
+                  },
+                  "value": "添加"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "产品类目",
+                    "UpdateType": "add",
+                    "BreakpointIdentity": "d4f64c64-63e8-449e-983c-69d27c92c9bb"
+                  }
+                ],
+                "ID": "d0821682-355b-4305-abbe-6239e550a159"
+              },
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=产品类目_详情页面!B17"
+                      }
+                    ]
+                  },
+                  "value": "更改"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "产品类目",
+                    "BreakpointIdentity": "c3f31c7d-5633-459c-8ed5-6e8241d6cb06"
+                  }
+                ],
+                "ID": "a6251e9d-1af6-4640-82e8-2c13b255033a"
+              }
+            ],
+            "BreakpointIdentity": "42a73f9e-3953-477a-a1cd-2044adedd144"
+          },
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "NavigateType": "back",
+            "BreakpointIdentity": "0d1c80c6-4844-4c62-a20a-17c92fbd368c"
+          }
+        ],
+        "TemplateKey": "_RS_Main1"
+      }
+    },
+    "16,5": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "NavigateType": "back",
+            "BreakpointIdentity": "8f7ab2c4-f774-46eb-890d-71c32b5a95fc"
+          }
+        ],
+        "Text": "取消",
+        "TemplateKey": "_RS_Minor3"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontSize": 16.0,
+        "FontWeight": 0,
+        "TextIndent": 10,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "Formatter": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Bold",
+        "#1890FF",
+        "@",
+        "Body"
+      ],
+      "Borders": [
+        {
+          "Style": 5,
+          "Color": 1
+        }
+      ]
+    },
+    "CellStyles": {
+      "1,1": 0,
+      "4,1": 1,
+      "13,1": 1
+    },
+    "SheetStyle": {
+      "FontFamily": 3,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
+    }
+  },
+  "Spans": [
+    "1,1,1,6",
+    "3,1,1,6",
+    "4,1,1,13",
+    "6,1,1,6",
+    "7,1,1,13",
+    "9,1,1,6",
+    "10,1,1,13",
+    "12,1,1,6",
+    "13,1,1,13",
+    "16,1,1,3",
+    "16,5,1,3"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "ShouldCheckDirty": true,
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//dS5CytXHOxJbtsIZp7+n7dEE3Vs/QCFhxGs2clpC6MGoUW9vHlsJ1AhJVWDR1lBZ3tzagx1xCYqyKoj11eNArFK9KbHKxcuVuoO8L+O0EfW4McQZK1W+OX6vDHH4X1y1QYIo8ibmoiiWOXjePOlktngsArs7R3GDHFeLD/udjagA49CzBH5gulp6HBuhOFS1+yUtUsN51TGmXWcUVm+lMYrJhEQJVV6dBqCaGu6E1iZ1x+LC6HipTG2dDd6W90taZI5fORBSUqYmy6Pxce1Lo8T7/E3SETGGLsQCk/9k11edlfsjpFPrI7Q1Iqg8pL2AElB0kRvZx75X253PFXp1dWXQ05ErYhyz64hUdKI8Gnh6y+DXzIR8Pmd7qTX9kFd/ZYBhZJ/DeIZ67bGxysHRk75arFsKNzPjnN8Zz/Xd4Zi+3FGPRpHPN4NHp2uj3MPUtHnvMeJSR1hxl87TKI/6O37YjmR19KAjBIlRDZ4BYtO1o8Zs0rt1ThWQupYQfQtFUAkR8Bfodj0xUzGZuFQfWcGPlzfpBRvCcAubOOxxlqUuhGyEw2QbIqVZMB0Poi/LzshRWF+bv3me5ovFbMofP/eN6RipZ1WS2XcSe9Sn4x1a/0bMYpxAwLMWcbsEnUc9nRbC8CbO4ELqFaWSZ8pM0snf2ET50aF0RiYdD1c/SEpbxf3OBXD2QkzsUgb1L7TevP2c7wx36npreg4lCBbXTuRm7ZS//cv0dcK1J+vuYFVZvTsQ9Ll6+5H/B+tJaOmaXZ1a0CNoD8GTbDjXdFkrCQAf0qHNLcTLxYf6CdgfURMJOWVbXC0D7nb2xxKx4Ioy8JHVXiffHveid6LXylNg/s3HDxW/70KTUFJnSR1+dGJZS6n9FPksJnb4zT0tr6wt/DlDspMDDJ8qUURm77B30g==|920

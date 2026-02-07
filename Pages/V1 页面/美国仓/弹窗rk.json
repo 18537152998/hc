@@ -1,0 +1,220 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      }
+    },
+    "Count": 11,
+    "DefaultSize": 15.0
+  },
+  "Cols": {
+    "Count": 18,
+    "DefaultSize": 15.0
+  },
+  "Values": {
+    "1,1": "*",
+    "1,2": "请选择处理情况",
+    "2,1": "处理情况",
+    "7,1": "确定"
+  },
+  "AttachInfos": {
+    "2,1": {
+      "BindingInfo": {
+        "TableName": "美国仓",
+        "ColumnName": "处理情况",
+        "GUID": "9a282619-24c1-41cd-b9b7-aedce5a5947e"
+      },
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "TemplateKey": "样式1",
+        "Items": [
+          {
+            "Value": "未做处理",
+            "DisplayValue": "未做处理"
+          },
+          {
+            "Value": "已检查",
+            "DisplayValue": "已检查"
+          },
+          {
+            "Value": "已修好保存",
+            "DisplayValue": "已修好保存"
+          },
+          {
+            "Value": "已修好寄出",
+            "DisplayValue": "已修好寄出"
+          },
+          {
+            "Value": "重新卖出",
+            "DisplayValue": "重新卖出"
+          },
+          {
+            "Value": "退回fba仓",
+            "DisplayValue": "退回fba仓"
+          },
+          {
+            "Value": "LEO出售",
+            "DisplayValue": "LEO出售"
+          },
+          {
+            "Value": "已报废",
+            "DisplayValue": "已报废"
+          }
+        ],
+        "CellDefaultValue": "处理情况"
+      }
+    },
+    "7,1": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+            "TableName": "美国仓",
+            "ShowConfirm": false,
+            "UpdateBindingValues": [
+              {
+                "BindingInfo": {
+                  "TableName": "美国仓",
+                  "ColumnName": "处理情况",
+                  "GUID": "906fb77a-e3b3-440f-8467-1a2b5e751fa8"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=弹窗rk!B3"
+                }
+              }
+            ],
+            "BreakpointIdentity": "8ad5f548-0ea9-4f3e-9082-1b8373334966"
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionTableDataParam, ServerDesignerCommon",
+                    "tableData": {
+                      "TableName": "美国仓",
+                      "ColumnName": "入库状态",
+                      "GUID": "859f8865-fd36-424f-9e76-3c87bc940fda"
+                    }
+                  },
+                  "value": "%Null%"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "美国仓",
+                    "ShowConfirm": false,
+                    "UpdateBindingValues": [
+                      {
+                        "BindingInfo": {
+                          "TableName": "美国仓",
+                          "ColumnName": "入库状态",
+                          "GUID": "3763b48c-2fb1-44ce-89c2-723d4293774e"
+                        },
+                        "Value": "1"
+                      }
+                    ],
+                    "BreakpointIdentity": "682f445a-61bc-4e8a-a049-6ae55ec5b5ac"
+                  },
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "入库成功！",
+                    "BreakpointIdentity": "12ad156e-45f3-4939-af26-1780045442c8"
+                  }
+                ],
+                "ID": "fc943184-d838-40b9-81f1-eaa41f73ad26"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "该产品已入库！",
+                    "BreakpointIdentity": "c7100ca8-a11d-46e5-8717-f49174e41485"
+                  }
+                ],
+                "ID": "ce0c2594-9c01-4e94-b00c-e736b2272713"
+              }
+            ],
+            "BreakpointIdentity": "d916daaf-a2e3-4edd-9e17-e63d3c7100a1"
+          },
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "ReloadData": true,
+            "BreakpointIdentity": "7a7e907f-e2b8-44b8-aa3d-a5f9a5491e80"
+          }
+        ],
+        "Text": "确定",
+        "TemplateKey": "样式8"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Foreground": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "#FFFF0000",
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "1,1": 0,
+      "1,2": 0,
+      "1,3": 0,
+      "1,4": 0,
+      "1,5": 0,
+      "1,6": 0,
+      "1,7": 0,
+      "1,8": 0
+    },
+    "SheetStyle": {
+      "FontFamily": 1,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
+    }
+  },
+  "Spans": [
+    "2,1,4,16",
+    "7,1,3,16"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "IsMobilePage": true
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//TyiHu/yHvMtx8IeGO42oc9PAM9fyJrh4LYA2VW5RutSilHj2kSaXTnBr6Bh0i/8cCP4VRpNmshlNr1QhAf/kbL7bRPc0hvcOAqjPCiyUINRU2L5aCiNljspiIZFHn6bYb1H6X+NTtDYjj9pF0PR3McEYn0TWZeOSh8PsQc6Hq67C8aWpEwmZc8Xnq4/DEb9Ipl6WIYzhn9mv10f0fk92dy/x12TYLMUwN41MMHCSwTh1FjUwfhvPmOExpReDs63mcYAr9SWfbR9kzrFIEYWEJ6QXijicb4jR/aXt/em2NHpL/7kJc47AqMTb8w3CNiP0asP/AVI88NyqRbiqdRePpvDdboH2510Z9bBpOir99StjGeR1Cnx6bmtBCpRzFDtaeO4fMTfndBb2P8FYJGIJE0GPvYA9/bZmskv1N80Dz45lFLJpptB2tj84DdyV89JuCBmhtwd1pUDGbgRcHI8WR1AgXVQfuP/I2P4qdXvalzW0QZPR8c8HVGd1T0/gFgEbt9Z+MRfQrMJMLQiRnq7Q/ISChYGg8bshBoQRRz0p8+/Ga0SyBS5tBwQHTJgf5Jgo2HhkH4co6JeEXxlXZ1+quM8saXSiyXwfZBpnhg7F51OsDzMBBq5J1XVL0nrxptRypN4NtVlvKSieMRXh19iZrdWlBL2BYIbjMfTzKpYt25P+D0r8ypsz3av19rX8B3sUkywE0PF346VmxxzNbwgRoxwGOYDFz654u5qHCyBe4Aj61iZCLc159R1GwcCc92fSLaIohMcGWYtkcZjo5I2wM+4A186nk+UknZRmtfxOln9HXgRDqSg8taqO5mwgG3VTS+8W3fhrlK+Xmjjb4mesE/DVYL5fUvPvwuuGIo+Rm3dJ6svYcWH/9K5gsLUUhJHJHHPRU0GTnxqfc6TFmArdQA==|920

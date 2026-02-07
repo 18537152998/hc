@@ -1,0 +1,292 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 40.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 48.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      }
+    },
+    "Count": 17,
+    "DefaultSize": 32.0
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "20": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 32.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      }
+    },
+    "Count": 22,
+    "DefaultSize": 32.0
+  },
+  "Values": {
+    "1,1": "添加记录",
+    "4,17": "更改",
+    "4,19": "删除"
+  },
+  "AttachInfos": {
+    "1,1": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "产品类目_详情页面",
+            "PassValues": [
+              {
+                "Source": "添加",
+                "TargetCell": {
+                  "SerializeProperty": "=产品类目_详情页面!B17"
+                }
+              }
+            ],
+            "LoadBindingDataOption": 2,
+            "BreakpointIdentity": "c60b1fd4-ccbd-456a-b55c-e2a3fa17171e"
+          }
+        ],
+        "Text": "添加记录",
+        "TemplateKey": "_RS_Main1"
+      }
+    },
+    "3,1": {
+      "ListViewInfo": {
+        "Name": "表格1",
+        "TableName": "产品类目",
+        "RowIndex": 3,
+        "ColumnIndex": 1,
+        "RowCount": 12,
+        "ColumnCount": 20,
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_NewFashionListStyle2",
+        "ShowColumnHeaderInDesigner": true,
+        "IsRowHeaderVisible": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "4,2": {
+      "NameUsedInJavaScript": "名称",
+      "BindingInfo": {
+        "TableName": "产品类目",
+        "ColumnName": "名称",
+        "GUID": "8a4ecf1d-c290-442f-99a6-2f870c8376e7"
+      }
+    },
+    "4,5": {
+      "NameUsedInJavaScript": "级别",
+      "BindingInfo": {
+        "TableName": "产品类目",
+        "ColumnName": "级别",
+        "GUID": "2863050e-6d87-453a-81eb-3a2237a10671"
+      }
+    },
+    "4,8": {
+      "NameUsedInJavaScript": "上级类目",
+      "BindingInfo": {
+        "TableName": "产品类目",
+        "ColumnName": "上级类目",
+        "GUID": "974c708f-0879-4113-b5da-9094c92f8a3c",
+        "RelationBinding": {
+          "RelatedTable": "产品类目",
+          "RelatedColumn": "ID",
+          "DisplayColumn": "名称"
+        }
+      }
+    },
+    "4,11": {
+      "NameUsedInJavaScript": "类目路径",
+      "BindingInfo": {
+        "TableName": "产品类目",
+        "ColumnName": "类目路径",
+        "GUID": "16f11a1f-6d0b-472c-8891-cb9616bdf94c"
+      }
+    },
+    "4,17": {
+      "NameUsedInJavaScript": "更改",
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "产品类目_详情页面",
+            "PassValues": [
+              {
+                "Source": "更改",
+                "TargetCell": {
+                  "SerializeProperty": "=产品类目_详情页面!B17"
+                }
+              }
+            ],
+            "LoadBindingDataOption": 1,
+            "BreakpointIdentity": "8dda4b25-ee19-417a-9f58-9369e7c22bdf"
+          }
+        ],
+        "Text": "更改"
+      }
+    },
+    "4,19": {
+      "NameUsedInJavaScript": "删除",
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.DeleteRecordCommand, ServerDesignerCommon",
+            "ConfirmText": "您确定要删除吗？",
+            "BreakpointIdentity": "efbf6ccd-e1a7-4f36-b701-078548fc0d0a"
+          }
+        ],
+        "Text": "删除"
+      }
+    },
+    "15,1": {
+      "CellType": {
+        "$type": "Forguncy.PageNavigateCellType, ServerDesignerCommon",
+        "PageingListviewName": "表格1",
+        "FirstImage": {
+          "Name": "Arrow/277_move_first_3.svg",
+          "BuiltIn": true,
+          "Color": "Text 1 50"
+        },
+        "PreviousImage": {
+          "Name": "Arrow/291_left_arrow_2.svg",
+          "BuiltIn": true,
+          "Color": "Text 1 50"
+        },
+        "NextImage": {
+          "Name": "Arrow/292_move_next_3.svg",
+          "BuiltIn": true,
+          "Color": "Text 1 50"
+        },
+        "LastImage": {
+          "Name": "Arrow/278_move_last_3.svg",
+          "BuiltIn": true,
+          "Color": "Text 1 50"
+        }
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "HorizontalAlignment": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Foreground": 1,
+        "HorizontalAlignment": 0,
+        "Underline": true,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "HorizontalAlignment": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Center",
+        "Accent 1",
+        "Right",
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "3,1": 0,
+      "3,2": 0,
+      "3,5": 0,
+      "3,8": 0,
+      "3,11": 0,
+      "3,17": 0,
+      "3,19": 0,
+      "4,1": 0,
+      "4,2": 0,
+      "4,5": 0,
+      "4,8": 0,
+      "4,11": 0,
+      "4,12": 0,
+      "4,13": 0,
+      "4,14": 0,
+      "4,17": 1,
+      "4,19": 1,
+      "15,1": 2
+    },
+    "SheetStyle": {
+      "FontFamily": 3,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
+    }
+  },
+  "Spans": [
+    "1,1,1,3",
+    "3,2,1,3",
+    "3,5,1,3",
+    "3,8,1,3",
+    "3,11,1,6",
+    "3,17,1,2",
+    "3,19,1,2",
+    "4,2,1,3",
+    "4,5,1,3",
+    "4,8,1,3",
+    "4,11,1,6",
+    "4,17,1,2",
+    "4,19,1,2",
+    "5,1,10,20",
+    "15,1,1,20"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//Mz0KD+pfPYLedc8aNshycECZqor+LO6LWa/JhUH0dDa0MEzjv8DpyXBQHj3JN1sYQ9nqbxS6XwrG9G6ua5J6b7hQMHSXbG3gDlRrw10mbbGk5nyjUo4w0bA3JulhU7fr68fTowRG4UPg0DexzlVUjNVOKTi065vBrsRqqwflM+uOd/g0Kt0zqUTqskDng8smldA3kwp+pOrOj/eEUGX4+4Lh1gJARu4t9pxAeogViCaWZwMBmMGPman8wyGP2VUd2cPv1Q0ufAw2psJ0A17jPDnj850J+FqCKfc5T/PoL1HHrc42olnco78ymTyWPYSgx2wjgzgCvHqkpDg6QPbN600N5EYjQOw/a0C8TxYT5SF2jnkGsOPrs5OeJtB84Rb/QISR+a3cKsQAvG6lOVkozgVnzKLHR/2gedNzqtGldXrq/qtJ1AMltyIj+HlaBPmGdwx8ieiLB98m/qKsqM5vFOl4ajqPmwNWIOeX4x+ITOVEpNRg+8CrTyiDQJUGi4jTQH6LICvy43gtP5pE42i9Iho/zQU8FIoQkmxTH8VPaTloiCoLoiFNQ3HgS/21ArAfwtu/NyTUCrqsEkMT4h/U2rFuH22+mNKQBxKbjTBglJ+l1KVO8BOwGVd3nrZWzKmEYO198oUGT1tFENjUU5Ii3IlPSwhoTvyiGotX+D5GyoPSNB72aNE2yB7dJSu84ZNbN/NHXtrUqQYngEwM0TfQNJ0JVaGisLA5w8YbW6W1jAdgARLdoDbSu09mkE6sLxoDhrobqU6NeWj9SD97CprqAJ9qsViD0TtI3DmrmiMlsDFs74NwuqdkvqHwfoCT4n6NHis5QZrNPQrtFL6NdVzGGCWHXeDoUWUHQ1++xRK5naEiSdw9gQ4JuA0KbFu+T87zNs7yu/D72uRLfTxGloLrWQ==|920

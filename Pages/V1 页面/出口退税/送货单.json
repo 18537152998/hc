@@ -1,0 +1,564 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 62.800000000000004
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 132.0
+        }
+      }
+    },
+    "Count": 8,
+    "DefaultSize": 48.0
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 28.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 73.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 93.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 84.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 80.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 203.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 37.0
+        }
+      }
+    },
+    "InVisibleIndexes": [
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ],
+    "Count": 19,
+    "DefaultSize": 63.0
+  },
+  "Values": {
+    "0,0": "送货单",
+    "1,0": "送货单位：",
+    "1,5": "编号：",
+    "2,0": "收货单位：",
+    "2,5": "送货日期：",
+    "3,0": "收货地址：",
+    "4,0": "送货单号：",
+    "5,0": "序号",
+    "5,2": "货物名称",
+    "5,4": "型号",
+    "5,5": "单位",
+    "5,6": "数量",
+    "5,7": "备注",
+    "7,0": "送货单位盖章",
+    "7,6": "收货单位签章："
+  },
+  "AttachInfos": {
+    "0,10": {
+      "BindingInfo": {
+        "TableName": "正报退税汇总表_子表",
+        "ColumnName": "合并合同id",
+        "GUID": "ebdd88df-f7c5-4197-95c6-f05cae78a8d7"
+      }
+    },
+    "1,2": {
+      "BindingInfo": {
+        "TableName": "正报退税汇总表_子表",
+        "ColumnName": "供应商",
+        "GUID": "2d4c4123-a57b-4eba-ba5d-e22a4ec485c0",
+        "RelationBinding": {
+          "RelatedTable": "供应商信息表",
+          "RelatedColumn": "品牌",
+          "DisplayColumn": "公司全称"
+        }
+      }
+    },
+    "1,6": {
+      "BindingInfo": {
+        "TableName": "正报退税汇总表_子表",
+        "ColumnName": "合同号",
+        "GUID": "98aa7030-5339-4aee-9751-44e107414150"
+      }
+    },
+    "4,2": {
+      "BindingInfo": {
+        "TableName": "正报退税汇总表_子表",
+        "ColumnName": "采购入库码",
+        "GUID": "3e6c9029-3ce9-4209-ac11-eecc41579427",
+        "RelationBinding": {
+          "RelatedTable": "fh_FBA备货记录",
+          "RelatedColumn": "ID",
+          "DisplayColumn": "运单号"
+        }
+      }
+    },
+    "5,0": {
+      "ListViewInfo": {
+        "Name": "表格1",
+        "TableName": "正报退税汇总表_子表",
+        "RowIndex": 5,
+        "RowCount": 2,
+        "ColumnCount": 8,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "正报退税汇总表_子表",
+            "ColumnName": "合同号_供应商",
+            "GUID": "85f41090-83ad-43c2-9102-1c74246f9c99"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=送货单!K1"
+          }
+        },
+        "NullFormulaValueQueryPolicy": 0,
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_NewFashionGridStyle",
+        "ShowColumnHeaderInDesigner": true,
+        "IsRowHeaderVisible": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "6,2": {
+      "BindingInfo": {
+        "TableName": "正报退税汇总表_子表",
+        "ColumnName": "开票品名",
+        "GUID": "8d6f9d7b-4d46-4619-aa45-0a495fca2f64"
+      }
+    },
+    "6,4": {
+      "BindingInfo": {
+        "TableName": "正报退税汇总表_子表",
+        "ColumnName": "开票型号",
+        "GUID": "898f593a-6a00-4f53-9ded-e1623a18ae7b"
+      }
+    },
+    "6,5": {
+      "BindingInfo": {
+        "TableName": "正报退税汇总表_子表",
+        "ColumnName": "成交单位",
+        "GUID": "4165c6fa-9e3e-4dae-91bb-f792cce1e1ca"
+      }
+    },
+    "6,6": {
+      "BindingInfo": {
+        "TableName": "正报退税汇总表_子表",
+        "ColumnName": "总产品数",
+        "GUID": "1bd251fc-2334-4875-bbb2-8d989743b55a"
+      }
+    },
+    "6,7": {
+      "BindingInfo": {
+        "TableName": "正报退税汇总表_子表",
+        "ColumnName": "合并入库码ID",
+        "GUID": "3fc8db10-bec2-4e82-926b-804ee7b1c639"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "FontSize": 21.33333396911621,
+        "FontStyle": 1,
+        "FontWeight": 2,
+        "Formatter": 3,
+        "TextIndent": 0,
+        "HorizontalAlignment": 4,
+        "VerticalAlignment": 4,
+        "WordWrap": true,
+        "Strikethrough": false,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Foreground": 5,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "FontStyle": 1,
+        "FontWeight": 1,
+        "Formatter": 3,
+        "TextIndent": 0,
+        "HorizontalAlignment": 6,
+        "VerticalAlignment": 4,
+        "WordWrap": false,
+        "Strikethrough": false,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "FontStyle": 1,
+        "FontWeight": 1,
+        "Foreground": 7,
+        "Formatter": 3,
+        "TextIndent": 0,
+        "HorizontalAlignment": 8,
+        "VerticalAlignment": 4,
+        "WordWrap": false,
+        "Strikethrough": false,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "FontStyle": 1,
+        "FontWeight": 1,
+        "Foreground": 7,
+        "Formatter": 3,
+        "TextIndent": 0,
+        "HorizontalAlignment": 6,
+        "VerticalAlignment": 4,
+        "WordWrap": false,
+        "Strikethrough": false,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 5,
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "FontStyle": 1,
+        "FontWeight": 2,
+        "Foreground": 7,
+        "Formatter": 3,
+        "TextIndent": 0,
+        "HorizontalAlignment": 4,
+        "VerticalAlignment": 4,
+        "WordWrap": false,
+        "Strikethrough": false,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "FontStyle": 1,
+        "FontWeight": 1,
+        "Foreground": 7,
+        "Formatter": 3,
+        "TextIndent": 0,
+        "HorizontalAlignment": 4,
+        "VerticalAlignment": 4,
+        "WordWrap": false,
+        "Strikethrough": false,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "Background": 5,
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "FontStyle": 1,
+        "FontWeight": 1,
+        "Formatter": 3,
+        "TextIndent": 0,
+        "HorizontalAlignment": 4,
+        "VerticalAlignment": 4,
+        "WordWrap": false,
+        "Strikethrough": false,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "Background": 5,
+        "FontFamily": 0,
+        "FontSize": 14.666666984558105,
+        "FontStyle": 1,
+        "FontWeight": 1,
+        "Foreground": 7,
+        "Formatter": 3,
+        "TextIndent": 0,
+        "HorizontalAlignment": 4,
+        "VerticalAlignment": 4,
+        "WordWrap": true,
+        "Strikethrough": false,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "Background": 5,
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "FontStyle": 1,
+        "FontWeight": 1,
+        "Foreground": 7,
+        "Formatter": 3,
+        "TextIndent": 0,
+        "HorizontalAlignment": 4,
+        "VerticalAlignment": 4,
+        "WordWrap": false,
+        "Strikethrough": false,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "FontStyle": 1,
+        "FontWeight": 1,
+        "Formatter": 3,
+        "TextIndent": 0,
+        "HorizontalAlignment": 8,
+        "VerticalAlignment": 9,
+        "WordWrap": false,
+        "Strikethrough": false,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "VerticalAlignment": 9,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "FontStyle": 1,
+        "FontWeight": 1,
+        "Formatter": 3,
+        "TextIndent": 0,
+        "HorizontalAlignment": 8,
+        "VerticalAlignment": 4,
+        "WordWrap": false,
+        "Strikethrough": false,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "宋体",
+        "Normal",
+        "Bold",
+        "[AUTO]General",
+        "Center",
+        "Background 1 0",
+        "Left",
+        "#FF000000",
+        "General",
+        "Top",
+        "Body"
+      ],
+      "Borders": [
+        {
+          "Color": 7
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,0": 0,
+      "0,1": 0,
+      "0,2": 0,
+      "0,3": 0,
+      "0,4": 0,
+      "0,5": 0,
+      "0,6": 0,
+      "0,7": 0,
+      "0,10": 1,
+      "1,0": 2,
+      "1,2": 2,
+      "1,5": 2,
+      "1,6": 2,
+      "2,0": 3,
+      "2,1": 3,
+      "2,2": 3,
+      "2,5": 4,
+      "2,6": 4,
+      "3,0": 3,
+      "3,1": 3,
+      "3,2": 3,
+      "4,0": 3,
+      "4,1": 3,
+      "4,2": 3,
+      "5,0": 5,
+      "5,1": 6,
+      "5,2": 5,
+      "5,3": 6,
+      "5,4": 5,
+      "5,5": 5,
+      "5,6": 5,
+      "5,7": 5,
+      "6,0": 7,
+      "6,1": 8,
+      "6,2": 9,
+      "6,3": 8,
+      "6,4": 7,
+      "6,5": 10,
+      "6,6": 7,
+      "6,7": 7,
+      "7,0": 11,
+      "7,1": 11,
+      "7,2": 11,
+      "7,3": 11,
+      "7,4": 11,
+      "7,5": 11,
+      "7,6": 11,
+      "7,7": 12
+    },
+    "RowStyles": {
+      "0": 13,
+      "1": 13,
+      "2": 13,
+      "3": 13,
+      "4": 13,
+      "5": 13,
+      "6": 13,
+      "7": 13
+    },
+    "ColStyles": {
+      "0": 13,
+      "1": 13,
+      "2": 13,
+      "3": 13,
+      "4": 13,
+      "5": 13,
+      "6": 13,
+      "7": 13,
+      "8": 13,
+      "9": 13,
+      "10": 13,
+      "11": 13,
+      "12": 13,
+      "13": 13,
+      "14": 13,
+      "15": 13,
+      "16": 13,
+      "17": 13,
+      "18": 13
+    },
+    "SheetStyle": {
+      "FontFamily": 10,
+      "FontSize": 14.666666984558105,
+      "FontStyle": 1,
+      "FontWeight": 1,
+      "Foreground": 7,
+      "Formatter": 3,
+      "TextIndent": 0,
+      "HorizontalAlignment": 8,
+      "VerticalAlignment": 4,
+      "WordWrap": false,
+      "Strikethrough": false,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
+    }
+  },
+  "Spans": [
+    "0,0,1,8",
+    "1,0,1,2",
+    "1,2,1,3",
+    "1,6,1,2",
+    "2,2,1,3",
+    "2,6,1,2",
+    "3,2,1,6",
+    "4,2,1,6",
+    "5,0,1,2",
+    "5,2,1,2",
+    "6,0,1,2",
+    "6,2,1,2"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Orientation": 2,
+    "Margin": {
+      "Top": 100,
+      "Bottom": 100,
+      "Left": 75,
+      "Right": 75,
+      "Header": 50,
+      "Footer": 50
+    },
+    "PageOrder": 1
+  }
+}//Gqi2xLjiNrH4Hn4HnSPDcFJ32Ugpq5UVb+qJravUSkLeZdCvKs3KJcx6gJxL/O1v8yn+5mPGIfnuHekP8M1s+4gNF2UGvp0DjC0shf2tPBzPAY76Wt4qYZgVbpXYupgDanRjvbDL3RD+IykN1Vay/M7J1yEerVCg3srrPrON+85eybPknvhoKkoKYOV2JOhTxdMHhkYb+geXbYKtF5BR7qJXETBJlg6PYWfXrvo1hF/Xyn6HBFwrVtKpQmlKAXMt4S9virn9H31u6AOlJZhJllB1CYyx5Qd+cDeaec4A7DXXoT0xDKY26gQtiCBHSpH5azGFh1dyv5elyh5k7evOpFqJHod5Sl/FxiwR/r9J8+Zq8chUMI1YTJ240HRCKhV5e3oCjzaH4hLmaMtov6Aa83eNChuBTbhxlPlX2BMVgtuM9SqiDi9uwoXhZjZFTRo6kyTMllxWSKDwI+t5bviv8B6KiBSlvQluw2hPTSvM+T6jilFZK74SgSSsLgo5vpoQ1oksNuk5aBCfXcwQAH1LZHgIvRM1xAQgm26sBLW89hAqXmEpdcNqJ1kli77bgu/7iG9KfPwFzzQ5eXShimX1if9WEM0pAAouV5tmPYDHKvxKIhJnjuVnu+EwP/pz4piIUK87SmKgFAEuwmNQzu9YiUnISMaVsNER6v26Rgl5IuuhWBMAMMSfIrtpo7VDNO8mavTIp7C6HonlCtDB7OV8pkdVl5fSME5Jk22lauxfFSdAJUG76lftwz1Mzxg+dJqbPTbiGhlcFtK1cALH1gy2vVwUTo3M0hOjVJc+rnyi7fX7cJNnm6ypeBF1jo3QduxVi5YHYHVyuKlR/O0GnhqtDJJTIvZFsb0ByAt8CAWxRDM+Fn+9gqKFUttM7D4yTFuJgxZjtehC1aNVdJmP84xAJw==|920

@@ -1,0 +1,334 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 8.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 40.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 8.0
+        }
+      }
+    },
+    "Count": 11
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 8.0
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "15": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "16": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "17": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "18": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "19": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 8.0
+        }
+      }
+    },
+    "Count": 20
+  },
+  "Values": {
+    "1,10": "入库日期",
+    "3,10": "商品名",
+    "5,10": "数量",
+    "7,10": "ASIN",
+    "9,10": "包装人员"
+  },
+  "AttachInfos": {
+    "1,1": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "ImageViewerCommand.ImageViewerCommand, ImageViewerCommand",
+            "TargetCell": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "='05b853ccc5b249aabfe9ab43eb48f69'!B2"
+            },
+            "BreakpointIdentity": "14a68baa-dc0a-46a2-a803-034922845caa"
+          }
+        ]
+      },
+      "TemplateCellSource": "图片"
+    },
+    "1,14": {
+      "TemplateCellSource": "入库日期"
+    },
+    "3,14": {
+      "TemplateCellSource": "商品名"
+    },
+    "5,14": {
+      "TemplateCellSource": "数量"
+    },
+    "7,14": {
+      "TemplateCellSource": "ASIN"
+    },
+    "9,14": {
+      "TemplateCellSource": "包装人员"
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Background": 0
+      },
+      {
+        "FontSize": 13.333333333333332,
+        "HorizontalAlignment": 1
+      },
+      {
+        "FontFamily": 2,
+        "FontWeight": 3,
+        "Foreground": 4,
+        "Formatter": 5,
+        "HorizontalAlignment": 1
+      },
+      {
+        "Background": 0,
+        "FontFamily": 2,
+        "Foreground": 4,
+        "Formatter": 6,
+        "HorizontalAlignment": 1
+      },
+      {
+        "HorizontalAlignment": 1
+      },
+      {
+        "Background": 0,
+        "HorizontalAlignment": 1
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 13.333333333333332,
+        "HorizontalAlignment": 1
+      },
+      {
+        "FontFamily": 2
+      },
+      {
+        "FontFamily": 2,
+        "FontWeight": 3,
+        "Foreground": 4,
+        "HorizontalAlignment": 1,
+        "WordWrap": true
+      },
+      {
+        "FontFamily": 2,
+        "FontWeight": 3,
+        "Foreground": 4,
+        "HorizontalAlignment": 1
+      },
+      {
+        "BorderBottom": 0
+      },
+      {
+        "Background": 0,
+        "BorderBottom": 0
+      },
+      {
+        "Background": 8
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Background 1 -5",
+        "Center",
+        "Body",
+        "Bold",
+        "#FFFF0000",
+        "yyyy/MM/dd",
+        "@",
+        "black",
+        "#FFF2F2F2"
+      ],
+      "Borders": [
+        {
+          "Style": 6,
+          "Color": 7
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,19": 0,
+      "1,10": 1,
+      "1,14": 2,
+      "1,19": 3,
+      "2,10": 4,
+      "2,11": 4,
+      "2,12": 4,
+      "2,13": 4,
+      "2,14": 4,
+      "2,15": 4,
+      "2,16": 4,
+      "2,17": 4,
+      "2,18": 4,
+      "2,19": 5,
+      "3,10": 6,
+      "3,11": 7,
+      "3,12": 7,
+      "3,13": 7,
+      "3,14": 8,
+      "3,19": 3,
+      "4,10": 4,
+      "4,11": 4,
+      "4,12": 4,
+      "4,13": 4,
+      "4,14": 4,
+      "4,15": 4,
+      "4,16": 4,
+      "4,17": 4,
+      "4,18": 4,
+      "4,19": 5,
+      "5,10": 6,
+      "5,11": 7,
+      "5,12": 7,
+      "5,13": 7,
+      "5,14": 9,
+      "5,19": 3,
+      "6,10": 4,
+      "6,11": 4,
+      "6,12": 4,
+      "6,13": 4,
+      "6,14": 4,
+      "6,15": 4,
+      "6,16": 4,
+      "6,17": 4,
+      "6,18": 4,
+      "6,19": 5,
+      "7,10": 6,
+      "7,11": 7,
+      "7,12": 7,
+      "7,13": 7,
+      "7,14": 9,
+      "7,19": 3,
+      "8,10": 4,
+      "8,11": 4,
+      "8,12": 4,
+      "8,13": 4,
+      "8,14": 4,
+      "8,15": 4,
+      "8,16": 4,
+      "8,17": 4,
+      "8,18": 4,
+      "8,19": 5,
+      "9,10": 6,
+      "9,11": 7,
+      "9,12": 7,
+      "9,13": 7,
+      "9,14": 9,
+      "9,19": 3,
+      "10,0": 10,
+      "10,1": 10,
+      "10,2": 10,
+      "10,3": 10,
+      "10,4": 10,
+      "10,5": 10,
+      "10,6": 10,
+      "10,7": 10,
+      "10,8": 10,
+      "10,9": 10,
+      "10,10": 10,
+      "10,11": 10,
+      "10,12": 10,
+      "10,13": 10,
+      "10,14": 10,
+      "10,15": 10,
+      "10,16": 10,
+      "10,17": 10,
+      "10,18": 10,
+      "10,19": 11
+    },
+    "RowStyles": {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 12
+    },
+    "ColStyles": {
+      "19": 0
+    },
+    "SheetStyle": {
+      "FontFamily": 2
+    }
+  },
+  "Spans": [
+    "1,10,1,4",
+    "3,10,1,4",
+    "5,10,1,4",
+    "7,10,1,4",
+    "9,10,1,4",
+    "1,14,1,5",
+    "3,14,1,5",
+    "5,14,1,5",
+    "7,14,1,5",
+    "9,14,1,5",
+    "1,1,9,9"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.TemplatePage, ServerDesignerCommon",
+    "ParentPageName": "到货提醒"
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//vdXWIC/VOOww9tVfUd053ktXpWbdus0WiB3Q0G++gJPwBi4wGmHGQmDbfDrAYlAVDVxPi8mhR3l97m7ZZ4H/TUKBChIG7F2jeAmQOPU/sDnuxsX7csTf7ZZJqcQaJMd1P37XcJcbebxj+mPetDSemhaDBRWy8yiorjweYUGJzceBFR3GMcHzHkI7iATA9QxTZ0qmm1zfITVW03WII2lh1jiX9G+tsmYvtefug+LNJAVTkr5aN+uAhhjEqjg1sPG4NYBNJCLwuBBsJGCaK6711Gb9ZayQs92KL9vVyk9cOKlKxw+N4f0cHwwn70QTOcX9V/KvmzQDMxbru2Nw7kF5sjBPLLJT9syHXO0N2hyDdwTYU7UFenVSFLYMzBzE7t8GOOPJZxEftMUrcJ3MPqP6FuMUnK0ewtUkHL3lyijFyUocD4yZiVfn60uhYOv5mb2kyNxsocj5qUZcWgbnxUmjUK8UOq5r+zMuDcE7d+wjtzn/b/ky7gjP1LTNfTf16JUkZWJO77lycO+Paolq6JSUjE23BNd2AyVqE7N61iHQaPhy+jpKcVycoMUfuS3mugaHuD7usbSklbXpbStAlNA0xSSLZouAJOAj+4QhoG4v6OKbiEEXL9KdeLhAlZzVHH/X5quc0uxTO6ScpKSSX5WCicBxm8Y9H9mcgYoQUyrB2mPcv5ND8rlVok2YPHSnPPkggFvV3Q96Trb9v2vIOco1/cXqndcoBvew4GMvCrrbhqZEIdQvhJ88ZpOfMyUxdTZNMv3GaIP3n/cKBCp/Q4aMgVtIi4QeYAY0KKLyylh138Xqa6SxHP89vbWnmzsFlO+z+X6Th7gyxNJw8VoDOspWQzFLvoBZYW+hfYq0y+QTnUrqCwrOQRU3KX+r4Mp+8tu+m0qCJNqEXNV/qyrs9gGdSQ==|920

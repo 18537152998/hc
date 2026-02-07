@@ -1,0 +1,2552 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "42": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "43": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "44": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "46": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      }
+    },
+    "Count": 66
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "38": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 24.0
+        }
+      },
+      "66": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 22.0
+        }
+      },
+      "67": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 18.0
+        }
+      },
+      "77": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 28.0
+        }
+      },
+      "82": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 45.0
+        }
+      },
+      "86": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 54.0
+        }
+      },
+      "87": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 72.0
+        }
+      },
+      "88": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 72.0
+        }
+      }
+    },
+    "Count": 90
+  },
+  "Values": {
+    "1,1": "加载盘差表",
+    "1,8": "加载库存表",
+    "1,14": "添加产品",
+    "1,67": "导出",
+    "1,74": "导入",
+    "1,79": "批量删除",
+    "3,12": "sku",
+    "3,62": "其他去处",
+    "3,68": "差值",
+    "3,71": "绝对差值",
+    "3,75": "12月差值",
+    "43,1": "FBA备货",
+    "43,18": "国内退货",
+    "43,32": "借调",
+    "43,46": "自发发存货",
+    "43,60": "FBA发货",
+    "44,8": "—",
+    "44,24": "—",
+    "44,38": "—",
+    "44,52": "—",
+    "44,70": "—",
+    "46,1": "加载FBA备货表",
+    "46,18": "加载国内售后表",
+    "46,32": "加载库存子表",
+    "46,46": "加载自发订单表",
+    "46,60": "加载FBA发货表",
+    "47,1": "库存表添加产品/盘库数据",
+    "47,22": "FBA备货数据",
+    "47,33": "退货数量",
+    "47,50": "FBA发货数据",
+    "47,61": "自发发存货数量",
+    "48,19": "商品名",
+    "56,30": "总借调"
+  },
+  "Formulas": {
+    "4,12": "IFNA(VLOOKUP(H5,B$58:U$65,4,FALSE),\"\")",
+    "4,66": "IF(BQ5>0,\"多\",IF(BQ5<0,\"少\",\"\"))",
+    "4,68": "BF5+BA5+AW5+AS5+AP5-AM5-AJ5-AF5-AA5-V5+BK5",
+    "4,71": "ABS(BQ5)",
+    "49,19": "IFNA(VLOOKUP(B50,B58:C58,2,FALSE),\"\")",
+    "57,30": "Y58+AB58"
+  },
+  "AttachInfos": {
+    "1,1": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+            "ListviewName": "表格1",
+            "UpdateType": 6,
+            "UpdateListviewCommandRunTimeMethodSetting": {
+              "MethodName": "Reload",
+              "ParameterValues": {
+                "clearFilter": false,
+                "clearSort": false
+              }
+            },
+            "BreakpointIdentity": "f0c0a5b1-5d3a-4a9b-a924-551d6623677c"
+          }
+        ],
+        "Text": "加载盘差表",
+        "TemplateKey": "样式7"
+      }
+    },
+    "1,8": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+            "ListviewName": "表格2",
+            "UpdateType": 6,
+            "UpdateListviewCommandRunTimeMethodSetting": {
+              "MethodName": "Reload",
+              "ParameterValues": {
+                "clearFilter": false,
+                "clearSort": false
+              }
+            },
+            "BreakpointIdentity": "dbb8f56f-76e5-448d-bfea-f0d64c555464"
+          },
+          {
+            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+            "ListviewName": "表格3",
+            "UpdateType": 6,
+            "UpdateListviewCommandRunTimeMethodSetting": {
+              "MethodName": "Reload",
+              "ParameterValues": {
+                "clearFilter": false,
+                "clearSort": false
+              }
+            },
+            "BreakpointIdentity": "13495571-5dfd-4b3c-806e-8f8c362cd70e"
+          }
+        ],
+        "Text": "加载库存表",
+        "TemplateKey": "样式7"
+      }
+    },
+    "1,14": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "PassListviewDataCommand.PassListviewDataCommand, PassListviewDataCommand",
+            "ImportMode": 1,
+            "PassValueItems": [
+              {
+                "SourceCell": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=盘差统计all!B50"
+                },
+                "TargetCell": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=盘差统计all!H5"
+                },
+                "IsPrimaryKey": true
+              },
+              {
+                "SourceCell": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=盘差统计all!U50"
+                },
+                "TargetCell": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=盘差统计all!E5"
+                }
+              },
+              {
+                "SourceCell": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=盘差统计all!T50"
+                },
+                "TargetCell": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=盘差统计all!O5"
+                }
+              },
+              {
+                "SourceCell": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=盘差统计all!E50"
+                },
+                "TargetCell": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=盘差统计all!AA5"
+                }
+              },
+              {
+                "SourceCell": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=盘差统计all!H50"
+                },
+                "TargetCell": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=盘差统计all!V5"
+                }
+              },
+              {
+                "SourceCell": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=盘差统计all!K50"
+                },
+                "TargetCell": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=盘差统计all!BF5"
+                }
+              },
+              {
+                "SourceCell": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=盘差统计all!P50"
+                },
+                "TargetCell": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=盘差统计all!BA5"
+                }
+              }
+            ],
+            "Source": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=盘差统计all!B50"
+            },
+            "Target": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=盘差统计all!H5"
+            },
+            "BreakpointIdentity": "9f439390-0b64-4c2c-9579-7587c3520cb3"
+          },
+          {
+            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+            "ListviewName": "表格1",
+            "UpdateType": 3,
+            "BreakpointIdentity": "ec002a4c-6931-4bb8-bbd6-0444777eace6"
+          }
+        ],
+        "Text": "添加产品",
+        "TemplateKey": "样式7"
+      }
+    },
+    "1,21": {
+      "CellType": {
+        "$type": "ElementUI.InputCellType, ElementUI",
+        "CommandList": [],
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ],
+        "type": "text",
+        "placeholder": "库存码/产品名称",
+        "resize": "none",
+        "clearable": true
+      }
+    },
+    "1,35": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "盘差表",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "SubConditions": [
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "盘差表",
+                    "ColumnName": "库存码",
+                    "GUID": "145d31a7-2fdb-4579-8eca-7c381916939a"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=盘差统计all!V2"
+                  }
+                },
+                {
+                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 6,
+                  "ColumnBindingInfo": {
+                    "TableName": "盘差表",
+                    "ColumnName": "产品名称",
+                    "GUID": "0fd93576-6f4f-41ab-9194-04bf05633a80"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=盘差统计all!V2"
+                  }
+                }
+              ],
+              "RelationType": 1
+            },
+            "ID": "a7cf0fc1687f4cd1a646311da2f06d66",
+            "BreakpointIdentity": "caee976e-12f1-4b43-9851-cbcf79c65605"
+          }
+        ],
+        "TemplateKey": "样式7",
+        "Icon": {
+          "Name": "Application/047_search_8.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "1,67": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ExportListViewToExcelCommand, ServerDesignerCommon",
+            "ExportExcelListviewNameMode": 1,
+            "BreakpointIdentity": "b6d5a092-35ec-4268-8055-6e89b0ef5227",
+            "ListViewName": "表格1",
+            "NewOtherName": "盘差表"
+          }
+        ],
+        "Text": "导出",
+        "TemplateKey": "_RS_Main1"
+      }
+    },
+    "1,74": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ImportExcelToListViewCommand, ServerDesignerCommon",
+            "ListViewName": "表格1",
+            "ImportExcelToListViewMode": 1,
+            "ImportExcelToListViewColumnInfos": [
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=盘差统计all!E5"
+                },
+                "ColumnName": "账户",
+                "IsPrimaryKey": true
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=盘差统计all!H5"
+                },
+                "ColumnName": "库存码",
+                "IsPrimaryKey": true
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=盘差统计all!O5"
+                },
+                "ColumnName": "产品名称"
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=盘差统计all!V5"
+                },
+                "ColumnName": "上季度国内"
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=盘差统计all!AA5"
+                },
+                "ColumnName": "上季度在途"
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=盘差统计all!AF5"
+                },
+                "ColumnName": "FBA订货"
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=盘差统计all!AJ5"
+                },
+                "ColumnName": "借入"
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=盘差统计all!AM5"
+                },
+                "ColumnName": "借出"
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=盘差统计all!AP5"
+                },
+                "ColumnName": "退货"
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=盘差统计all!AS5"
+                },
+                "ColumnName": "FBA发货"
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=盘差统计all!AW5"
+                },
+                "ColumnName": "自发发存货"
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=盘差统计all!BA5"
+                },
+                "ColumnName": "本季度国内"
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=盘差统计all!BF5"
+                },
+                "ColumnName": "本季度在途"
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=盘差统计all!BK5"
+                },
+                "ColumnName": "其他去处"
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=盘差统计all!CA5"
+                },
+                "ColumnName": "统计备注"
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=盘差统计all!CF5"
+                },
+                "ColumnName": "业务备注"
+              }
+            ],
+            "IsShowSuccessAlert": true,
+            "SuccessMessage": "Excel文件导入成功！",
+            "BreakpointIdentity": "5b5fa7cf-6776-423d-8575-2bfa690616e4"
+          }
+        ],
+        "Text": "导入",
+        "TemplateKey": "_RS_Main1"
+      }
+    },
+    "1,79": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+            "ListviewName": "表格1",
+            "UpdateType": 2,
+            "BreakpointIdentity": "302e3e41-2081-4757-8bd1-ac641bf08769"
+          },
+          {
+            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+            "ListviewName": "表格1",
+            "UpdateType": 3,
+            "BreakpointIdentity": "7a89c553-1b32-4a83-8fd7-06c1d6a178df"
+          }
+        ],
+        "Text": "批量删除",
+        "TemplateKey": "透明按钮"
+      }
+    },
+    "3,1": {
+      "ListViewInfo": {
+        "Name": "表格1",
+        "TableName": "盘差表",
+        "RowIndex": 3,
+        "ColumnIndex": 1,
+        "RowCount": 39,
+        "ColumnCount": 88,
+        "TopCondition": {
+          "$type": "ForguncyDataAccess.TopCESqlCondition, ForguncyDataAccess",
+          "TopCount": 200
+        },
+        "TableLoadOnDemandInfo": {
+          "IsEnabled": true,
+          "DemandedRowCount": 500
+        },
+        "ListViewStyleName": "样式1",
+        "ShowColumnHeaderInDesigner": true,
+        "IsRowHeaderVisible": true,
+        "IsRowHeaderCheckBoxVisible": true,
+        "IsTotalRowVisible": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "AllowEditInListview": true,
+        "AllowAddNewRow": true,
+        "ShowDeleteButton": true,
+        "ColumnOperation": 2,
+        "DoNotLoadDataWhenLoadPage": true
+      }
+    },
+    "4,3": {
+      "TotalRowSetting": {}
+    },
+    "4,4": {
+      "TotalRowSetting": {},
+      "BindingInfo": {
+        "TableName": "盘差表",
+        "ColumnName": "账户",
+        "GUID": "bc203c8f-e09b-4bac-995c-5f96f1d28ce5"
+      }
+    },
+    "4,7": {
+      "TotalRowSetting": {},
+      "BindingInfo": {
+        "TableName": "盘差表",
+        "ColumnName": "库存码",
+        "GUID": "b0d1ae8c-fb00-4939-a7b2-00158ef7cdb4"
+      },
+      "RulesGuidList": [
+        "8a8e2233-76f4-47ef-b662-b7e7977b1599"
+      ]
+    },
+    "4,12": {
+      "TotalRowSetting": {}
+    },
+    "4,14": {
+      "TotalRowSetting": {
+        "FormulaType": 2
+      },
+      "BindingInfo": {
+        "TableName": "盘差表",
+        "ColumnName": "产品名称",
+        "GUID": "98ff20c0-9690-418d-a7a5-7f1b12c53c55"
+      }
+    },
+    "4,21": {
+      "TotalRowSetting": {
+        "FormulaType": 5
+      },
+      "BindingInfo": {
+        "TableName": "盘差表",
+        "ColumnName": "上季度国内",
+        "GUID": "31fd9399-c391-4fe5-9bfb-08f7c7885ba2"
+      }
+    },
+    "4,26": {
+      "TotalRowSetting": {
+        "FormulaType": 5
+      },
+      "BindingInfo": {
+        "TableName": "盘差表",
+        "ColumnName": "上季度在途",
+        "GUID": "9adb96e4-4a95-4daf-8225-c139f986f672"
+      }
+    },
+    "4,31": {
+      "TotalRowSetting": {
+        "FormulaType": 5
+      },
+      "BindingInfo": {
+        "TableName": "盘差表",
+        "ColumnName": "FBA订货",
+        "GUID": "90d6fd3a-51b4-46fc-904e-6fa2a8ebf192"
+      }
+    },
+    "4,35": {
+      "TotalRowSetting": {
+        "FormulaType": 5
+      },
+      "BindingInfo": {
+        "TableName": "盘差表",
+        "ColumnName": "借入",
+        "GUID": "5919bc22-6f39-4990-a1eb-cea6e67babb8"
+      }
+    },
+    "4,38": {
+      "TotalRowSetting": {
+        "FormulaType": 5
+      },
+      "BindingInfo": {
+        "TableName": "盘差表",
+        "ColumnName": "借出",
+        "GUID": "dc22d334-eb88-44c3-89a5-5fa626f1ca26"
+      }
+    },
+    "4,41": {
+      "TotalRowSetting": {
+        "FormulaType": 5
+      },
+      "BindingInfo": {
+        "TableName": "盘差表",
+        "ColumnName": "退货",
+        "GUID": "d35ed123-b4c8-435b-b503-6aea3250f448"
+      }
+    },
+    "4,44": {
+      "TotalRowSetting": {
+        "FormulaType": 5
+      },
+      "BindingInfo": {
+        "TableName": "盘差表",
+        "ColumnName": "FBA发货",
+        "GUID": "74199129-ee6d-430b-b434-2f703c75b13c"
+      }
+    },
+    "4,48": {
+      "TotalRowSetting": {
+        "FormulaType": 5
+      },
+      "BindingInfo": {
+        "TableName": "盘差表",
+        "ColumnName": "自发发存货",
+        "GUID": "a8e2d1ca-aafd-4f8b-b722-f7cf2e962da4"
+      }
+    },
+    "4,52": {
+      "TotalRowSetting": {
+        "FormulaType": 5
+      },
+      "BindingInfo": {
+        "TableName": "盘差表",
+        "ColumnName": "本季度国内",
+        "GUID": "fe33d2eb-fe61-4383-93f8-c2150e799398"
+      }
+    },
+    "4,57": {
+      "TotalRowSetting": {
+        "FormulaType": 5
+      },
+      "BindingInfo": {
+        "TableName": "盘差表",
+        "ColumnName": "本季度在途",
+        "GUID": "2e427bf8-6b6c-4f11-95bc-e87ec13aae60"
+      }
+    },
+    "4,62": {
+      "TotalRowSetting": {},
+      "BindingInfo": {
+        "TableName": "盘差表",
+        "ColumnName": "其他",
+        "GUID": "4c547df6-52b5-4c6f-a0a8-e9b41d2f0b08"
+      }
+    },
+    "4,66": {
+      "TotalRowSetting": {},
+      "RulesGuidList": [
+        "183fadf5-c839-46bb-adbf-b660ffdaf2a5",
+        "0a1b8b95-0ffe-48d6-944c-9f683c085555"
+      ]
+    },
+    "4,68": {
+      "TotalRowSetting": {
+        "FormulaType": 5
+      }
+    },
+    "4,71": {
+      "TotalRowSetting": {
+        "FormulaType": 5
+      }
+    },
+    "4,75": {
+      "TotalRowSetting": {},
+      "BindingInfo": {
+        "TableName": "盘差表",
+        "ColumnName": "_6_9差值",
+        "GUID": "fad873bb-2821-4f3b-84f7-81edccf98f2d"
+      }
+    },
+    "4,78": {
+      "TotalRowSetting": {},
+      "BindingInfo": {
+        "TableName": "盘差表",
+        "ColumnName": "统计备注",
+        "GUID": "04f7ceaf-0f60-482c-9f7a-cb4a08044c2c"
+      }
+    },
+    "4,83": {
+      "TotalRowSetting": {},
+      "BindingInfo": {
+        "TableName": "盘差表",
+        "ColumnName": "业务备注",
+        "GUID": "decfaac0-06f7-404b-bc18-3bf4440fc8f4"
+      }
+    },
+    "4,87": {
+      "TotalRowSetting": {},
+      "BindingInfo": {
+        "TableName": "盘差表",
+        "ColumnName": "上次统计备注",
+        "GUID": "e51fef3b-42c3-4e67-ba6c-385d3ca0df93"
+      }
+    },
+    "4,88": {
+      "TotalRowSetting": {},
+      "BindingInfo": {
+        "TableName": "盘差表",
+        "ColumnName": "上次业务备注",
+        "GUID": "56cff13d-d2c8-4ffc-8ea3-d57b9e7f8ea1"
+      }
+    },
+    "42,1": {
+      "CellType": {
+        "$type": "表格统计状态栏.表格统计状态栏, 表格统计状态栏",
+        "ListViewName": "表格1"
+      }
+    },
+    "43,1": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "PassListviewDataCommand.PassListviewDataCommand, PassListviewDataCommand",
+            "ImportMode": 1,
+            "PassValueItems": [
+              {
+                "SourceCell": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=盘差统计all!W50"
+                },
+                "TargetCell": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=盘差统计all!H5"
+                },
+                "IsPrimaryKey": true
+              },
+              {
+                "SourceCell": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=盘差统计all!X50"
+                },
+                "TargetCell": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=盘差统计all!AF5"
+                }
+              }
+            ],
+            "Source": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=盘差统计all!W50"
+            },
+            "Target": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=盘差统计all!H5"
+            },
+            "BreakpointIdentity": "130e770b-75d1-4d92-bc8e-94d2328a0a5e"
+          },
+          {
+            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+            "ListviewName": "表格1",
+            "UpdateType": 3,
+            "BreakpointIdentity": "7c63ed36-8b5b-4dab-8d16-9410f796dad5"
+          }
+        ],
+        "Text": "FBA备货",
+        "TemplateKey": "样式7"
+      }
+    },
+    "43,18": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "PassListviewDataCommand.PassListviewDataCommand, PassListviewDataCommand",
+            "ImportMode": 1,
+            "PassValueItems": [
+              {
+                "SourceCell": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=盘差统计all!AH49"
+                },
+                "TargetCell": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=盘差统计all!H5"
+                },
+                "IsPrimaryKey": true
+              },
+              {
+                "SourceCell": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=盘差统计all!AI49"
+                },
+                "TargetCell": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=盘差统计all!AP5"
+                }
+              }
+            ],
+            "Source": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=盘差统计all!AH49"
+            },
+            "Target": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=盘差统计all!H5"
+            },
+            "BreakpointIdentity": "fd587c77-d947-42b7-8b10-cbe33c8a295a"
+          },
+          {
+            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+            "ListviewName": "表格1",
+            "UpdateType": 3,
+            "BreakpointIdentity": "d4179cb1-d6ff-4ec2-a0c4-4c2a6e9a326f"
+          }
+        ],
+        "Text": "国内退货",
+        "TemplateKey": "样式7"
+      }
+    },
+    "43,32": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "Text": "借调",
+        "TemplateKey": "样式7"
+      }
+    },
+    "43,46": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "PassListviewDataCommand.PassListviewDataCommand, PassListviewDataCommand",
+            "ImportMode": 1,
+            "PassValueItems": [
+              {
+                "SourceCell": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=盘差统计all!BJ50"
+                },
+                "TargetCell": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=盘差统计all!H5"
+                },
+                "IsPrimaryKey": true
+              },
+              {
+                "SourceCell": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=盘差统计all!BK50"
+                },
+                "TargetCell": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=盘差统计all!AW5"
+                }
+              }
+            ],
+            "Source": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=盘差统计all!BJ50"
+            },
+            "Target": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=盘差统计all!H5"
+            },
+            "BreakpointIdentity": "b982af70-e40b-4cd6-b6fd-c438fcbfa985"
+          },
+          {
+            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+            "ListviewName": "表格1",
+            "UpdateType": 3,
+            "BreakpointIdentity": "30d81102-0043-43c5-a98c-9e89ac39444f"
+          }
+        ],
+        "Text": "自发发存货",
+        "TemplateKey": "样式7"
+      }
+    },
+    "43,60": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "PassListviewDataCommand.PassListviewDataCommand, PassListviewDataCommand",
+            "ImportMode": 1,
+            "PassValueItems": [
+              {
+                "SourceCell": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=盘差统计all!AY50"
+                },
+                "TargetCell": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=盘差统计all!H5"
+                },
+                "IsPrimaryKey": true
+              },
+              {
+                "SourceCell": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=盘差统计all!AZ49"
+                },
+                "TargetCell": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=盘差统计all!AS5"
+                }
+              }
+            ],
+            "Source": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=盘差统计all!AY50"
+            },
+            "Target": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=盘差统计all!H5"
+            },
+            "BreakpointIdentity": "9dc7f94a-6095-4c76-817e-4099cfa0f829"
+          },
+          {
+            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+            "ListviewName": "表格1",
+            "UpdateType": 3,
+            "BreakpointIdentity": "a3587dfe-53ca-470b-8ef5-adf9c4c651e5"
+          }
+        ],
+        "Text": "FBA发货",
+        "TemplateKey": "样式7"
+      }
+    },
+    "44,1": {
+      "CellType": {
+        "$type": "Forguncy.DateCellType, ServerDesignerCommon",
+        "TemplateKey": "样式1"
+      }
+    },
+    "44,9": {
+      "CellType": {
+        "$type": "Forguncy.DateCellType, ServerDesignerCommon",
+        "TemplateKey": "样式1"
+      }
+    },
+    "44,18": {
+      "CellType": {
+        "$type": "Forguncy.DateCellType, ServerDesignerCommon",
+        "TemplateKey": "样式1"
+      }
+    },
+    "44,25": {
+      "CellType": {
+        "$type": "Forguncy.DateCellType, ServerDesignerCommon",
+        "TemplateKey": "样式1"
+      }
+    },
+    "44,32": {
+      "CellType": {
+        "$type": "Forguncy.DateCellType, ServerDesignerCommon",
+        "TemplateKey": "样式1"
+      }
+    },
+    "44,39": {
+      "CellType": {
+        "$type": "Forguncy.DateCellType, ServerDesignerCommon",
+        "TemplateKey": "样式1"
+      }
+    },
+    "44,46": {
+      "CellType": {
+        "$type": "Forguncy.DateCellType, ServerDesignerCommon",
+        "TemplateKey": "样式1"
+      }
+    },
+    "44,53": {
+      "CellType": {
+        "$type": "Forguncy.DateCellType, ServerDesignerCommon",
+        "TemplateKey": "样式1"
+      }
+    },
+    "44,60": {
+      "CellType": {
+        "$type": "Forguncy.DateCellType, ServerDesignerCommon",
+        "TemplateKey": "样式1"
+      }
+    },
+    "44,71": {
+      "CellType": {
+        "$type": "Forguncy.DateCellType, ServerDesignerCommon",
+        "TemplateKey": "样式1"
+      }
+    },
+    "46,1": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+            "ListviewName": "表格4",
+            "UpdateType": 6,
+            "UpdateListviewCommandRunTimeMethodSetting": {
+              "MethodName": "Reload",
+              "ParameterValues": {
+                "clearFilter": false,
+                "clearSort": false
+              }
+            },
+            "BreakpointIdentity": "4ec83baa-ddd6-42e3-aaf4-a7f76e4cbf25"
+          }
+        ],
+        "Text": "加载FBA备货表",
+        "TemplateKey": "样式7"
+      }
+    },
+    "46,18": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+            "ListviewName": "表格5",
+            "UpdateType": 6,
+            "UpdateListviewCommandRunTimeMethodSetting": {
+              "MethodName": "Reload",
+              "ParameterValues": {
+                "clearFilter": false,
+                "clearSort": false
+              }
+            },
+            "BreakpointIdentity": "62caf9e4-1a39-4b54-a116-e7a9d9f84ae5"
+          }
+        ],
+        "Text": "加载国内售后表",
+        "TemplateKey": "样式7"
+      }
+    },
+    "46,32": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+            "ListviewName": "表格6",
+            "UpdateType": 6,
+            "UpdateListviewCommandRunTimeMethodSetting": {
+              "MethodName": "Reload",
+              "ParameterValues": {
+                "clearFilter": false,
+                "clearSort": false
+              }
+            },
+            "BreakpointIdentity": "ece6fa95-2803-4316-a478-9c34950b464d"
+          }
+        ],
+        "Text": "加载库存子表",
+        "TemplateKey": "样式7"
+      }
+    },
+    "46,46": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+            "ListviewName": "表格9",
+            "UpdateType": 6,
+            "UpdateListviewCommandRunTimeMethodSetting": {
+              "MethodName": "Reload",
+              "ParameterValues": {
+                "clearFilter": false,
+                "clearSort": false
+              }
+            },
+            "BreakpointIdentity": "97768164-f2f7-40e8-b770-891944b7645f"
+          }
+        ],
+        "Text": "加载自发订单表",
+        "TemplateKey": "样式7"
+      }
+    },
+    "46,60": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+            "ListviewName": "表格8",
+            "UpdateType": 6,
+            "UpdateListviewCommandRunTimeMethodSetting": {
+              "MethodName": "Reload",
+              "ParameterValues": {
+                "clearFilter": false,
+                "clearSort": false
+              }
+            },
+            "BreakpointIdentity": "23405e27-978d-45c3-90e8-2d0f1779eff3"
+          }
+        ],
+        "Text": "加载FBA发货表",
+        "TemplateKey": "样式7"
+      }
+    },
+    "47,77": {
+      "ListViewInfo": {
+        "Name": "表格12",
+        "TableName": "组合关系表",
+        "RowIndex": 47,
+        "ColumnIndex": 77,
+        "RowCount": 8,
+        "ColumnCount": 13,
+        "TopCondition": null,
+        "ListViewStyleName": "样式1",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "48,1": {
+      "ListViewInfo": {
+        "Name": "表格2",
+        "TableName": "fh库存表",
+        "RowIndex": 48,
+        "ColumnIndex": 1,
+        "RowCount": 7,
+        "ColumnCount": 20,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "SubConditions": [
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 1,
+              "ColumnBindingInfo": {
+                "TableName": "fh库存表",
+                "ColumnName": "库存码",
+                "GUID": "952a7332-5a42-4c62-8d17-3640e73317ab"
+              },
+              "Value": "%Null%"
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 1,
+              "ColumnBindingInfo": {
+                "TableName": "fh库存表",
+                "ColumnName": "库存码",
+                "GUID": "27aafa6b-246c-44ab-b9ac-dc274ac66df8"
+              },
+              "Value": "/"
+            }
+          ]
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "样式1",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2,
+        "DoNotLoadDataWhenLoadPage": true
+      }
+    },
+    "48,22": {
+      "ListViewInfo": {
+        "Name": "表格4",
+        "TableName": "fh_FBA备货记录",
+        "RowIndex": 48,
+        "ColumnIndex": 22,
+        "RowCount": 7,
+        "ColumnCount": 9,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "SubConditions": [
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 3,
+              "ColumnBindingInfo": {
+                "TableName": "fh_FBA备货记录",
+                "ColumnName": "支付时间",
+                "GUID": "56803614-fbbb-4916-931b-eddb6e39e485"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=盘差统计all!B45"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 5,
+              "ColumnBindingInfo": {
+                "TableName": "fh_FBA备货记录",
+                "ColumnName": "支付时间",
+                "GUID": "46662b90-19fd-40cc-ae29-3fa0fe1f291b"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=盘差统计all!J45"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "fh_FBA备货记录",
+                "ColumnName": "采购状态",
+                "GUID": "1473dfc1-9c2b-471e-9f5f-c38095a91716"
+              },
+              "Value": "已采购"
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 1,
+              "ColumnBindingInfo": {
+                "TableName": "fh_FBA备货记录",
+                "ColumnName": "识别码",
+                "GUID": "93c7163d-5fbd-4e07-a49f-2b8d22802cb1",
+                "RelationBinding": {
+                  "RelatedTable": "fh库存表",
+                  "RelatedColumn": "识别码",
+                  "DisplayColumn": "库存码"
+                }
+              },
+              "Value": "%Null%"
+            }
+          ]
+        },
+        "TopCondition": null,
+        "TableLoadOnDemandInfo": {
+          "DemandedRowCount": 500
+        },
+        "ListViewStyleName": "样式1",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2,
+        "DoNotLoadDataWhenLoadPage": true
+      }
+    },
+    "48,33": {
+      "ListViewInfo": {
+        "Name": "表格5",
+        "TableName": "国内售后",
+        "RowIndex": 48,
+        "ColumnIndex": 33,
+        "RowCount": 7,
+        "ColumnCount": 6,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "SubConditions": [
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 3,
+              "ColumnBindingInfo": {
+                "TableName": "国内售后",
+                "ColumnName": "日期",
+                "GUID": "fcff53f9-97b4-4823-af52-f4c661012773"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=盘差统计all!S45"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 5,
+              "ColumnBindingInfo": {
+                "TableName": "国内售后",
+                "ColumnName": "日期",
+                "GUID": "0f60f23f-3b31-4176-b82a-62956379f18b"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=盘差统计all!Z45"
+              }
+            }
+          ]
+        },
+        "TopCondition": null,
+        "TableLoadOnDemandInfo": {
+          "DemandedRowCount": 500
+        },
+        "ListViewStyleName": "样式1",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2,
+        "DoNotLoadDataWhenLoadPage": true
+      }
+    },
+    "48,50": {
+      "ListViewInfo": {
+        "Name": "表格8",
+        "TableName": "FBA发货详情表",
+        "RowIndex": 48,
+        "ColumnIndex": 50,
+        "RowCount": 7,
+        "ColumnCount": 6,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "SubConditions": [
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 3,
+              "ColumnBindingInfo": {
+                "TableName": "FBA发货详情表",
+                "ColumnName": "FBA发货表ID",
+                "GUID": "4cd427df-d24a-41da-b822-e5abcc5d89c9",
+                "RelationBinding": {
+                  "RelatedTable": "FBA发货表3",
+                  "RelatedColumn": "ID",
+                  "DisplayColumn": "日期"
+                }
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=盘差统计all!BI45"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 5,
+              "ColumnBindingInfo": {
+                "TableName": "FBA发货详情表",
+                "ColumnName": "FBA发货表ID",
+                "GUID": "4acaae0a-1817-413b-88a4-e0079a2c981a",
+                "RelationBinding": {
+                  "RelatedTable": "FBA发货表3",
+                  "RelatedColumn": "ID",
+                  "DisplayColumn": "日期"
+                }
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=盘差统计all!BT45"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 1,
+              "ColumnBindingInfo": {
+                "TableName": "FBA发货详情表",
+                "ColumnName": "FBA发货表ID",
+                "GUID": "38966bd5-a87e-4169-b3f6-6328f14dc7b5",
+                "RelationBinding": {
+                  "RelatedTable": "FBA发货表3",
+                  "RelatedColumn": "ID",
+                  "DisplayColumn": "海外仓"
+                }
+              },
+              "Value": "出-海外仓"
+            }
+          ]
+        },
+        "TopCondition": null,
+        "TableLoadOnDemandInfo": {
+          "DemandedRowCount": 500
+        },
+        "ListViewStyleName": "样式1",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2,
+        "DoNotLoadDataWhenLoadPage": true
+      }
+    },
+    "48,61": {
+      "ListViewInfo": {
+        "Name": "表格9",
+        "TableName": "sfh订单总表",
+        "RowIndex": 48,
+        "ColumnIndex": 61,
+        "RowCount": 7,
+        "ColumnCount": 7,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "SubConditions": [
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "sfh订单总表",
+                "ColumnName": "采购指令",
+                "GUID": "ae3cbac0-475d-4f5b-a7de-c189d0363128"
+              },
+              "Value": "有存货"
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 3,
+              "ColumnBindingInfo": {
+                "TableName": "sfh订单总表",
+                "ColumnName": "出货时间",
+                "GUID": "60ac8928-0272-424d-a1c3-04f9b8240723"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=盘差统计all!AU45"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 5,
+              "ColumnBindingInfo": {
+                "TableName": "sfh订单总表",
+                "ColumnName": "出货时间",
+                "GUID": "254a9e32-9329-4936-bbc2-43a30b1b0f4e"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=盘差统计all!BB45"
+              }
+            }
+          ]
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "样式1",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2,
+        "DoNotLoadDataWhenLoadPage": true
+      }
+    },
+    "48,77": {
+      "BindingInfo": {
+        "TableName": "组合关系表",
+        "ColumnName": "账户",
+        "GUID": "2ffd5fee-89fc-4586-a4bf-8ce18578a2b4"
+      }
+    },
+    "48,79": {
+      "BindingInfo": {
+        "TableName": "组合关系表",
+        "ColumnName": "组合库存码",
+        "GUID": "e6d4ff39-d0cd-430d-97b0-9a115e3ddbbd"
+      }
+    },
+    "48,80": {
+      "BindingInfo": {
+        "TableName": "组合关系表",
+        "ColumnName": "单品1",
+        "GUID": "9c31f4ad-40ea-4c38-8077-2e59945de38a"
+      }
+    },
+    "48,81": {
+      "BindingInfo": {
+        "TableName": "组合关系表",
+        "ColumnName": "比例1",
+        "GUID": "9c96bc96-824f-4370-88ff-1f99e0a21227"
+      }
+    },
+    "48,82": {
+      "BindingInfo": {
+        "TableName": "组合关系表",
+        "ColumnName": "单品2",
+        "GUID": "db0f525b-d864-47d0-bb4e-0c3f7a4030b1"
+      }
+    },
+    "48,83": {
+      "BindingInfo": {
+        "TableName": "组合关系表",
+        "ColumnName": "比例2",
+        "GUID": "e56d4920-7c89-4fb7-95c0-aae56c5a852c"
+      }
+    },
+    "48,84": {
+      "BindingInfo": {
+        "TableName": "组合关系表",
+        "ColumnName": "单品3",
+        "GUID": "57dea9d2-0068-4c9b-afb5-38b6452d84fb"
+      }
+    },
+    "48,85": {
+      "BindingInfo": {
+        "TableName": "组合关系表",
+        "ColumnName": "比例3",
+        "GUID": "942f4482-b40e-4e1c-9a9b-9e2307a238f8"
+      }
+    },
+    "48,86": {
+      "BindingInfo": {
+        "TableName": "组合关系表",
+        "ColumnName": "单品4",
+        "GUID": "78a33d74-85a3-4021-90a3-866a1fe2d552"
+      }
+    },
+    "48,87": {
+      "BindingInfo": {
+        "TableName": "组合关系表",
+        "ColumnName": "比例4",
+        "GUID": "fd5190fc-e026-4105-a596-185007a9a6f1"
+      }
+    },
+    "48,88": {
+      "BindingInfo": {
+        "TableName": "组合关系表",
+        "ColumnName": "单品5",
+        "GUID": "dc341661-6425-4ea0-9059-5ee4b9507fc7"
+      }
+    },
+    "48,89": {
+      "BindingInfo": {
+        "TableName": "组合关系表",
+        "ColumnName": "比例5",
+        "GUID": "fce48b13-c29e-4104-9d4f-b83da9d1d068"
+      }
+    },
+    "49,1": {
+      "BindingInfo": {
+        "TableName": "fh库存表",
+        "ColumnName": "库存码",
+        "GUID": "4c8b84f7-2be5-4f49-a7e5-dc4919fd5e45"
+      }
+    },
+    "49,4": {
+      "BindingInfo": {
+        "TableName": "fh库存表",
+        "ColumnName": "上季度在途",
+        "GUID": "9c251cb2-87ad-4a1f-8dbf-aff34e8fb9aa"
+      }
+    },
+    "49,7": {
+      "BindingInfo": {
+        "TableName": "fh库存表",
+        "ColumnName": "上季度国内",
+        "GUID": "31875dad-d4e9-4938-8929-2ca09fe860bc"
+      }
+    },
+    "49,10": {
+      "BindingInfo": {
+        "TableName": "fh库存表",
+        "ColumnName": "国内在途",
+        "GUID": "492edcc1-3a34-482e-a452-0bdf4756d255"
+      }
+    },
+    "49,15": {
+      "BindingInfo": {
+        "TableName": "fh库存表",
+        "ColumnName": "国内总库存",
+        "GUID": "bbbeb8cd-6759-4bb9-b3e2-42107f0d470f"
+      }
+    },
+    "49,18": {
+      "BindingInfo": {
+        "TableName": "fh库存表",
+        "ColumnName": "统计库存码个数",
+        "GUID": "d1742720-cfa4-46c5-94cc-7448bb7bcd27"
+      }
+    },
+    "49,20": {
+      "BindingInfo": {
+        "TableName": "fh库存表",
+        "ColumnName": "平台",
+        "GUID": "f5642cc4-3875-4d20-93ee-778e6493e0f5"
+      }
+    },
+    "49,22": {
+      "BindingInfo": {
+        "TableName": "fh_FBA备货记录",
+        "ColumnName": "识别码",
+        "GUID": "445d155e-581a-4d29-9bfb-a5724d1ebb59",
+        "RelationBinding": {
+          "RelatedTable": "fh库存表",
+          "RelatedColumn": "识别码",
+          "DisplayColumn": "库存码"
+        }
+      }
+    },
+    "49,23": {
+      "BindingInfo": {
+        "TableName": "fh_FBA备货记录",
+        "ColumnName": "数量总和",
+        "GUID": "88b5f395-b770-4090-ab57-19b8a095eff9"
+      }
+    },
+    "49,27": {
+      "BindingInfo": {
+        "TableName": "fh_FBA备货记录",
+        "ColumnName": "识别码",
+        "GUID": "81d9efd5-0873-4cc7-b472-86f796d01d96",
+        "RelationBinding": {
+          "RelatedTable": "fh库存表",
+          "RelatedColumn": "识别码",
+          "DisplayColumn": "统计库存码个数"
+        }
+      }
+    },
+    "49,33": {
+      "BindingInfo": {
+        "TableName": "国内售后",
+        "ColumnName": "识别码",
+        "GUID": "76f67cd9-f6ab-4d0d-a9df-d0f10a8efc9a",
+        "RelationBinding": {
+          "RelatedTable": "fh库存表",
+          "RelatedColumn": "识别码",
+          "DisplayColumn": "库存码"
+        }
+      }
+    },
+    "49,34": {
+      "BindingInfo": {
+        "TableName": "国内售后",
+        "ColumnName": "总退货数",
+        "GUID": "24ae8445-4fbf-438c-911b-3fd9f50619cb"
+      }
+    },
+    "49,50": {
+      "BindingInfo": {
+        "TableName": "FBA发货详情表",
+        "ColumnName": "发货识别码",
+        "GUID": "93ffec59-426a-4f6b-bf70-a10f6b5bc4e5",
+        "RelationBinding": {
+          "RelatedTable": "fh库存表",
+          "RelatedColumn": "识别码",
+          "DisplayColumn": "库存码"
+        }
+      }
+    },
+    "49,51": {
+      "BindingInfo": {
+        "TableName": "FBA发货详情表",
+        "ColumnName": "发货数量",
+        "GUID": "ab6565df-ca69-441c-90b1-08e79e5608df"
+      }
+    },
+    "49,61": {
+      "NameUsedInJavaScript": "库存码",
+      "BindingInfo": {
+        "TableName": "sfh订单总表",
+        "ColumnName": "识别码",
+        "GUID": "a8d00d61-1288-478c-9a17-a304b1104b3e",
+        "RelationBinding": {
+          "RelatedTable": "fh库存表",
+          "RelatedColumn": "识别码",
+          "DisplayColumn": "库存码"
+        }
+      }
+    },
+    "49,62": {
+      "NameUsedInJavaScript": "数量总和",
+      "BindingInfo": {
+        "TableName": "sfh订单总表",
+        "ColumnName": "数量总和",
+        "GUID": "8cf7cb0d-df2d-4759-bf3d-fd648b018716"
+      }
+    },
+    "56,1": {
+      "ListViewInfo": {
+        "Name": "表格3",
+        "TableName": "fh库存表",
+        "RowIndex": 56,
+        "ColumnIndex": 1,
+        "RowCount": 9,
+        "ColumnCount": 20,
+        "TopCondition": null,
+        "ListViewStyleName": "样式1",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2,
+        "DoNotLoadDataWhenLoadPage": true
+      }
+    },
+    "56,22": {
+      "ListViewInfo": {
+        "Name": "表格6",
+        "TableName": "实时库存表_子表",
+        "RowIndex": 56,
+        "ColumnIndex": 22,
+        "RowCount": 9,
+        "ColumnCount": 18,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "SubConditions": [
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 3,
+              "ColumnBindingInfo": {
+                "TableName": "实时库存表_子表",
+                "ColumnName": "操作时间",
+                "GUID": "5a16f4ab-8c6e-4c2c-931f-0456e20823b1"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=盘差统计all!AG45"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 5,
+              "ColumnBindingInfo": {
+                "TableName": "实时库存表_子表",
+                "ColumnName": "操作时间",
+                "GUID": "e4a3ce89-d20e-4178-a60f-25fffaa7998a"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=盘差统计all!AN45"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "SubConditions": [
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "实时库存表_子表",
+                    "ColumnName": "操作内容",
+                    "GUID": "212d8ef0-6eac-4e9d-a000-432f84c8ce1e"
+                  },
+                  "Value": "库存借入",
+                  "LeftBracket": 1
+                },
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "实时库存表_子表",
+                    "ColumnName": "操作内容",
+                    "GUID": "d69ebc89-e930-4376-811b-6950db4a7396"
+                  },
+                  "Value": "库存借出",
+                  "RightBracket": 1
+                }
+              ],
+              "RelationType": 1
+            }
+          ]
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "样式1",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2,
+        "DoNotLoadDataWhenLoadPage": true
+      }
+    },
+    "57,1": {
+      "BindingInfo": {
+        "TableName": "fh库存表",
+        "ColumnName": "库存码",
+        "GUID": "b86907aa-f77d-40aa-9ef9-60e42b394b17"
+      }
+    },
+    "57,2": {
+      "BindingInfo": {
+        "TableName": "fh库存表",
+        "ColumnName": "商品名",
+        "GUID": "b40baa2f-0f1e-4ed9-aaf7-6ea62730a11c"
+      }
+    },
+    "57,4": {
+      "BindingInfo": {
+        "TableName": "fh库存表",
+        "ColumnName": "SKU",
+        "GUID": "eac8ee8b-dbf2-4a0a-beee-d935d7892b34"
+      }
+    },
+    "57,6": {
+      "BindingInfo": {
+        "TableName": "fh库存表",
+        "ColumnName": "识别码",
+        "GUID": "5f918c60-70ec-438f-be2e-36dd9326651a"
+      }
+    },
+    "57,8": {
+      "BindingInfo": {
+        "TableName": "fh库存表",
+        "ColumnName": "国内在途9_28",
+        "GUID": "56c471ca-da13-456a-971d-a8107c8d74fa"
+      }
+    },
+    "57,10": {
+      "BindingInfo": {
+        "TableName": "fh库存表",
+        "ColumnName": "库存国内总9_28",
+        "GUID": "a122b365-47c9-49bf-ab39-0887cd735b1b"
+      }
+    },
+    "57,12": {
+      "BindingInfo": {
+        "TableName": "fh库存表",
+        "ColumnName": "国内在途12_27",
+        "GUID": "eb2fa7dc-6da5-41ce-baee-b36be4e1e853"
+      }
+    },
+    "57,14": {
+      "BindingInfo": {
+        "TableName": "fh库存表",
+        "ColumnName": "库存国内总12_27",
+        "GUID": "6d266b5b-d243-4b3f-a5e1-70c1a1686a04"
+      }
+    },
+    "57,22": {
+      "BindingInfo": {
+        "TableName": "实时库存表_子表",
+        "ColumnName": "库存表_ID",
+        "GUID": "4867ee59-ecd6-4e18-a729-30c6a0825dcf",
+        "RelationBinding": {
+          "RelatedTable": "实时库存表",
+          "RelatedColumn": "ID",
+          "DisplayColumn": "x库存码"
+        }
+      }
+    },
+    "57,24": {
+      "BindingInfo": {
+        "TableName": "实时库存表_子表",
+        "ColumnName": "总未包",
+        "GUID": "158d150a-0abb-4e18-aea9-7fdb77ef0ec8"
+      }
+    },
+    "57,27": {
+      "BindingInfo": {
+        "TableName": "实时库存表_子表",
+        "ColumnName": "总已包",
+        "GUID": "5c888561-4206-4598-ab41-2ddb4bef30a7"
+      }
+    },
+    "57,33": {
+      "BindingInfo": {
+        "TableName": "实时库存表_子表",
+        "ColumnName": "操作内容",
+        "GUID": "0cb48994-4ec8-4a9d-8a0e-9ba176be2536"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "FontWeight": 1,
+        "Formatter": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "FontWeight": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 13.333333333333332,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "FontWeight": 1,
+        "Foreground": 3,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "HorizontalAlignment": 4,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Formatter": 5,
+        "HorizontalAlignment": 6,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "HorizontalAlignment": 6,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Foreground": 3,
+        "Formatter": 5,
+        "HorizontalAlignment": 6,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Formatter": 7,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 13.333333333333332,
+        "FontWeight": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontWeight": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "FontWeight": 1,
+        "Formatter": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 8,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 8,
+        "FontFamily": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontSize": 16.0,
+        "FontWeight": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontSize": 16.0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontSize": 13.333333333333332,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "Bold",
+        "[AUTO]General",
+        "#FFFF0000",
+        "Left",
+        "General",
+        "Center",
+        "0",
+        "#FFFFFF00"
+      ]
+    },
+    "CellStyles": {
+      "1,1": 0,
+      "1,2": 1,
+      "1,4": 1,
+      "1,5": 1,
+      "1,6": 1,
+      "1,8": 2,
+      "1,13": 3,
+      "1,14": 2,
+      "1,15": 1,
+      "1,16": 1,
+      "1,17": 1,
+      "1,18": 1,
+      "1,19": 1,
+      "1,20": 1,
+      "1,21": 1,
+      "1,56": 1,
+      "1,57": 1,
+      "1,58": 1,
+      "1,67": 2,
+      "1,74": 2,
+      "1,75": 1,
+      "1,76": 1,
+      "1,77": 1,
+      "1,79": 4,
+      "1,80": 1,
+      "1,81": 1,
+      "1,82": 1,
+      "1,83": 4,
+      "1,84": 1,
+      "1,85": 1,
+      "1,86": 1,
+      "3,87": 5,
+      "3,88": 5,
+      "4,21": 6,
+      "4,26": 6,
+      "4,31": 6,
+      "4,35": 6,
+      "4,38": 6,
+      "4,41": 6,
+      "4,44": 6,
+      "4,48": 6,
+      "4,52": 6,
+      "4,57": 6,
+      "4,66": 7,
+      "4,68": 8,
+      "4,71": 6,
+      "4,87": 9,
+      "4,88": 9,
+      "42,1": 10,
+      "43,1": 2,
+      "43,17": 10,
+      "43,18": 2,
+      "43,31": 10,
+      "43,32": 2,
+      "43,46": 0,
+      "43,60": 2,
+      "43,80": 1,
+      "43,81": 1,
+      "43,82": 1,
+      "44,1": 1,
+      "44,2": 1,
+      "44,4": 1,
+      "44,5": 1,
+      "44,6": 1,
+      "44,7": 1,
+      "44,8": 11,
+      "44,9": 1,
+      "44,16": 1,
+      "44,17": 10,
+      "44,18": 1,
+      "44,19": 1,
+      "44,20": 1,
+      "44,21": 1,
+      "44,22": 1,
+      "44,23": 1,
+      "44,24": 11,
+      "44,25": 1,
+      "44,26": 1,
+      "44,27": 1,
+      "44,28": 1,
+      "44,29": 1,
+      "44,30": 1,
+      "44,32": 1,
+      "44,33": 1,
+      "44,34": 1,
+      "44,35": 1,
+      "44,36": 1,
+      "44,37": 1,
+      "44,38": 11,
+      "44,39": 1,
+      "44,40": 1,
+      "44,41": 1,
+      "44,42": 1,
+      "44,43": 1,
+      "44,44": 1,
+      "44,46": 1,
+      "44,47": 1,
+      "44,48": 1,
+      "44,49": 1,
+      "44,50": 1,
+      "44,51": 1,
+      "44,52": 11,
+      "44,53": 1,
+      "44,54": 1,
+      "44,55": 1,
+      "44,56": 1,
+      "44,57": 1,
+      "44,58": 1,
+      "44,60": 1,
+      "44,61": 1,
+      "44,66": 1,
+      "44,67": 1,
+      "44,68": 1,
+      "44,69": 1,
+      "44,70": 11,
+      "44,71": 1,
+      "44,72": 1,
+      "44,73": 1,
+      "44,74": 1,
+      "44,75": 1,
+      "44,76": 1,
+      "45,1": 1,
+      "45,2": 1,
+      "45,3": 1,
+      "45,4": 1,
+      "45,5": 1,
+      "45,6": 1,
+      "45,7": 1,
+      "45,8": 11,
+      "45,9": 1,
+      "45,10": 1,
+      "45,11": 1,
+      "45,12": 1,
+      "45,13": 1,
+      "45,14": 1,
+      "45,15": 1,
+      "45,16": 1,
+      "45,17": 10,
+      "45,18": 1,
+      "45,19": 1,
+      "45,20": 1,
+      "45,21": 1,
+      "45,22": 1,
+      "45,23": 1,
+      "45,24": 11,
+      "45,25": 1,
+      "45,26": 1,
+      "45,27": 1,
+      "45,28": 1,
+      "45,29": 1,
+      "45,30": 1,
+      "45,32": 1,
+      "45,33": 1,
+      "45,34": 1,
+      "45,35": 1,
+      "45,36": 1,
+      "45,37": 1,
+      "45,38": 11,
+      "45,39": 1,
+      "45,40": 1,
+      "45,41": 1,
+      "45,42": 1,
+      "45,43": 1,
+      "45,44": 1,
+      "45,46": 1,
+      "45,47": 1,
+      "45,48": 1,
+      "45,49": 1,
+      "45,50": 1,
+      "45,51": 1,
+      "45,52": 11,
+      "45,53": 1,
+      "45,54": 1,
+      "45,55": 1,
+      "45,56": 1,
+      "45,57": 1,
+      "45,58": 1,
+      "45,60": 1,
+      "45,61": 1,
+      "45,62": 1,
+      "45,63": 1,
+      "45,64": 1,
+      "45,65": 1,
+      "45,66": 1,
+      "45,67": 1,
+      "45,68": 1,
+      "45,69": 1,
+      "45,70": 11,
+      "45,71": 1,
+      "45,72": 1,
+      "45,73": 1,
+      "45,74": 1,
+      "45,75": 1,
+      "45,76": 1,
+      "46,1": 12,
+      "46,17": 13,
+      "46,18": 12,
+      "46,32": 12,
+      "46,45": 13,
+      "46,46": 14,
+      "46,60": 12,
+      "47,1": 15,
+      "47,22": 15,
+      "47,33": 15,
+      "47,50": 15,
+      "47,61": 16,
+      "47,62": 1,
+      "47,63": 1,
+      "47,64": 1,
+      "47,65": 1,
+      "47,66": 1,
+      "47,67": 1,
+      "48,61": 1,
+      "48,62": 1,
+      "48,63": 1,
+      "48,64": 1,
+      "48,65": 1,
+      "48,66": 1,
+      "48,67": 1,
+      "48,80": 1,
+      "48,81": 1,
+      "48,82": 1,
+      "48,83": 1,
+      "48,84": 1,
+      "48,85": 1,
+      "48,86": 1,
+      "48,87": 1,
+      "48,88": 1,
+      "49,18": 1,
+      "49,27": 1,
+      "49,61": 1,
+      "49,62": 1,
+      "49,63": 1,
+      "49,64": 1,
+      "49,65": 1,
+      "49,66": 1,
+      "49,67": 1,
+      "50,61": 1,
+      "50,62": 1,
+      "50,63": 1,
+      "50,64": 1,
+      "50,65": 1,
+      "50,66": 1,
+      "50,67": 1,
+      "51,61": 1,
+      "51,62": 1,
+      "51,63": 1,
+      "51,64": 1,
+      "51,65": 1,
+      "51,66": 1,
+      "51,67": 1,
+      "52,61": 1,
+      "52,62": 1,
+      "52,63": 1,
+      "52,64": 1,
+      "52,65": 1,
+      "52,66": 1,
+      "52,67": 1,
+      "53,61": 1,
+      "53,62": 1,
+      "53,63": 1,
+      "53,64": 1,
+      "53,65": 1,
+      "53,66": 1,
+      "53,67": 1,
+      "54,61": 1,
+      "54,62": 1,
+      "54,63": 1,
+      "54,64": 1,
+      "54,65": 1,
+      "54,66": 1,
+      "54,67": 1,
+      "55,59": 1,
+      "57,37": 1,
+      "57,38": 1,
+      "57,39": 1,
+      "57,47": 1,
+      "57,48": 1
+    },
+    "RowStyles": {
+      "3": 17,
+      "4": 18,
+      "46": 19
+    },
+    "SheetStyle": {
+      "FontFamily": 0,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
+    }
+  },
+  "Spans": [
+    "1,1,1,6",
+    "1,8,1,5",
+    "1,14,1,5",
+    "1,21,1,14",
+    "1,35,1,3",
+    "1,67,1,5",
+    "1,74,1,4",
+    "1,79,1,4",
+    "1,83,1,4",
+    "4,1,1,2",
+    "4,4,1,3",
+    "4,7,1,5",
+    "4,12,1,2",
+    "4,14,1,7",
+    "4,21,1,5",
+    "4,26,1,5",
+    "4,31,1,4",
+    "4,35,1,3",
+    "4,38,1,3",
+    "4,41,1,3",
+    "4,44,1,4",
+    "4,48,1,4",
+    "4,52,1,5",
+    "4,57,1,5",
+    "4,62,1,4",
+    "4,66,1,2",
+    "4,68,1,3",
+    "4,71,1,4",
+    "4,75,1,3",
+    "4,78,1,5",
+    "4,83,1,4",
+    "5,1,37,88",
+    "42,1,1,34",
+    "43,1,1,15",
+    "43,18,1,13",
+    "43,32,1,13",
+    "43,46,1,13",
+    "43,60,1,17",
+    "44,1,1,7",
+    "44,9,1,7",
+    "44,18,1,6",
+    "44,25,1,6",
+    "44,32,1,6",
+    "44,39,1,6",
+    "44,46,1,6",
+    "44,53,1,6",
+    "44,60,1,10",
+    "44,71,1,6",
+    "46,1,1,15",
+    "46,18,1,13",
+    "46,32,1,13",
+    "46,46,1,13",
+    "46,60,1,17",
+    "47,1,1,20",
+    "47,22,1,9",
+    "47,33,1,6",
+    "47,50,1,6",
+    "47,61,1,7",
+    "48,77,1,2",
+    "49,4,1,3",
+    "49,7,1,3",
+    "49,10,1,5",
+    "49,15,1,3",
+    "49,23,1,4",
+    "49,27,1,2",
+    "49,34,1,3",
+    "49,51,1,3",
+    "49,62,1,3",
+    "49,77,6,13",
+    "50,1,5,20",
+    "50,22,5,9",
+    "50,33,5,6",
+    "50,50,5,6",
+    "50,61,5,7",
+    "57,4,1,2",
+    "57,6,1,2",
+    "57,8,1,2",
+    "57,10,1,2",
+    "57,12,1,2",
+    "57,14,1,2",
+    "57,22,1,2",
+    "57,24,1,3",
+    "57,27,1,3",
+    "57,30,1,3",
+    "57,33,1,4",
+    "58,1,7,20",
+    "58,22,7,18",
+    "57,37,1,3",
+    "3,1,1,2",
+    "3,4,1,3",
+    "3,7,1,5",
+    "3,12,1,2",
+    "3,14,1,7",
+    "3,21,1,5",
+    "3,26,1,5",
+    "3,31,1,4",
+    "3,35,1,3",
+    "3,38,1,3",
+    "3,41,1,3",
+    "3,44,1,4",
+    "3,48,1,4",
+    "3,52,1,5",
+    "3,57,1,5",
+    "3,62,1,4",
+    "3,66,1,2",
+    "3,68,1,3",
+    "3,71,1,4",
+    "3,75,1,3",
+    "3,78,1,5",
+    "3,83,1,4",
+    "47,77,1,2",
+    "48,4,1,3",
+    "48,7,1,3",
+    "48,10,1,5",
+    "48,15,1,3",
+    "48,23,1,4",
+    "48,27,1,2",
+    "48,34,1,3",
+    "48,51,1,3",
+    "48,62,1,3",
+    "56,4,1,2",
+    "56,6,1,2",
+    "56,8,1,2",
+    "56,10,1,2",
+    "56,12,1,2",
+    "56,14,1,2",
+    "56,22,1,2",
+    "56,24,1,3",
+    "56,27,1,3",
+    "56,30,1,3",
+    "56,33,1,4",
+    "56,37,1,3"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "PageLoadingMode": 1,
+    "ConditionFormatRulesCollection": {
+      "Rules": [
+        {
+          "$type": "Forguncy.ConditionFormat.DuplicateRule, ServerDesignerCommon",
+          "GUID": "8a8e2233-76f4-47ef-b662-b7e7977b1599",
+          "StyleInfo": {
+            "Background": "#FFFFFF00",
+            "Underline": null,
+            "Strikethrough": null
+          }
+        },
+        {
+          "$type": "Forguncy.ConditionFormat.CellValueRule, ServerDesignerCommon",
+          "Operator": 3,
+          "Value1": "=\"多\"",
+          "Priority": 1,
+          "GUID": "183fadf5-c839-46bb-adbf-b660ffdaf2a5",
+          "StyleInfo": {
+            "Background": "#FF92D050",
+            "Underline": null,
+            "Strikethrough": null
+          }
+        },
+        {
+          "$type": "Forguncy.ConditionFormat.CellValueRule, ServerDesignerCommon",
+          "Operator": 3,
+          "Value1": "=\"少\"",
+          "Priority": 2,
+          "GUID": "0a1b8b95-0ffe-48d6-944c-9f683c085555",
+          "StyleInfo": {
+            "Background": "#FFFFFF00",
+            "Underline": null,
+            "Strikethrough": null
+          }
+        }
+      ]
+    }
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//QmYVS6q/iHmGKopBrEt7a4bFUrFUW+Bgs0ifQUJ13DdY0BhZTDfT7Oy1/dvOYcSF6kAy9gxCOQttLUTHPHd3m+0QAtA8FgMz9KYOcj0CVUjvrLhXX5Ll7PtZQhK5KyPtSNH4l9LA/ButrpRqLbZCslD52T/gpyxLRvqkdFl1bxPSFh+dmW9QnxVbxzkINGZ3h6zIxF44A5jwJ8SnfXTmfduZv4Sx+cVgYO+CiudehHlNDJhBQPUSHafBKROoOhN1ljRleZZ+iEurvBTSP2RpT4oka6Z0ObqJnUDIeXKrcKxbiczHSeuOPBOM/PkeW1jp4sblEQJZ2RYsddpEvrY3p8F+cbEMMGVAM4I8WcEZ7WmTY3h+xCnIn3IfWtoPWrRV7QkSfKH2o1mw+zVdkLn9gLe92PBr3HMG4RD26GqOIndCHSP3e27q7K/3qIHUfHko0hBbgFvvrAdRDqYJMjOoU+NUNOHV7e8c6TKKRzHuAAguTbcvv2RPir2A0PKAoPAkumN4CqLmN2YKGOeor1wAO5sdytng5H21g2TnG4RJb9BpTyoRTW+y+s6C9wcrcqcizFyLLkAAan6/BlGAw4bajnRL1Noq2AMLroR7oAJf1aUby2Yyfz+gN1/AdX83TGoXL6ZAZyZvY0ny9h5PGyDZ0vvVBMGWvNQBoCStqiyKVitnkEoWqLBAPa8WfEdD6p96Oxz/n0FqGC6oYlqV1z0YnYWg83CMdGpEwaO0URUMxHU8ZIz3z7JjeCAuEBEo4eyTwyJgGHW6wUL6qTAbgD135PJBmz8Qn6wqyttQZRN8iaTRxdWIKPOQJgzOvM/NaIL6W5bMRDXNC0NyoAxMzxUNOa3MpSv14H/BBEeBRxXvKdMoLB+VV1iCGlMVijiNiGZIe3OaE5MA6pS3172Sn7x2zg==|920

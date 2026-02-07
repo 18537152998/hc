@@ -1,0 +1,996 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 50.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      26
+    ],
+    "Count": 28
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 57.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 45.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 218.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 116.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 114.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 107.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 90.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 90.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 151.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 151.0
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 192.0
+        }
+      },
+      "10": {},
+      "11": {}
+    },
+    "InVisibleIndexes": [
+      10,
+      11
+    ],
+    "InLogicalVisibleIndexes": [
+      10,
+      11,
+      12
+    ],
+    "Count": 13,
+    "DefaultSize": 90.0
+  },
+  "Values": {
+    "0,0": "PACKING LIST",
+    "5,6": "Date:",
+    "6,0": "TO :",
+    "10,0": "ITEM",
+    "10,2": "Item Description",
+    "10,3": "Model",
+    "10,4": "QUANTITY",
+    "10,5": "Case carton",
+    "10,6": "G.W(KG)",
+    "10,7": "N.W(KG)",
+    "10,8": "Size",
+    "24,0": "TOTAL",
+    "25,0": " ",
+    "27,6": "Signature:              "
+  },
+  "Formulas": {
+    "24,4": "SUM(E12)",
+    "24,5": "SUM(F12)",
+    "24,6": "SUM(G12)",
+    "24,7": "SUM(H12)",
+    "24,8": "SUM(I12)",
+    "26,5": "C27&E27&\"001\""
+  },
+  "AttachInfos": {
+    "1,8": {
+      "BindingInfo": {
+        "TableName": "FBA发货表3",
+        "ColumnName": "合同协议号",
+        "GUID": "746c54b3-d0a8-4fbc-ad85-d992454c8778"
+      }
+    },
+    "2,0": {
+      "BindingInfo": {
+        "TableName": "FBA发货表3",
+        "ColumnName": "账户_报关方式",
+        "GUID": "ee9c5ddc-4494-496d-a9ed-22674351d032",
+        "RelationBinding": {
+          "RelatedTable": "正报账户信息",
+          "RelatedColumn": "账户_报关方式",
+          "DisplayColumn": "发货人中英文"
+        }
+      }
+    },
+    "3,0": {
+      "BindingInfo": {
+        "TableName": "FBA发货表3",
+        "ColumnName": "账户_报关方式",
+        "GUID": "2acc819e-a12f-4ff6-9910-b8c091fe768c",
+        "RelationBinding": {
+          "RelatedTable": "正报账户信息",
+          "RelatedColumn": "账户_报关方式",
+          "DisplayColumn": "发货人地址"
+        }
+      },
+      "CellType": {
+        "$type": "Forguncy.MultilineTextBox, ServerDesignerCommon",
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "5,8": {
+      "BindingInfo": {
+        "TableName": "FBA发货表3",
+        "ColumnName": "日期",
+        "GUID": "360e4d27-9f60-4d8d-a5ee-3566ee96928a"
+      }
+    },
+    "6,1": {
+      "BindingInfo": {
+        "TableName": "FBA发货表3",
+        "ColumnName": "账户_报关方式",
+        "GUID": "dafdc953-6db4-464e-ad15-0bd9fc9f9167",
+        "RelationBinding": {
+          "RelatedTable": "正报账户信息",
+          "RelatedColumn": "账户_报关方式",
+          "DisplayColumn": "境外收货人"
+        }
+      }
+    },
+    "7,0": {
+      "BindingInfo": {
+        "TableName": "FBA发货表3",
+        "ColumnName": "账户_报关方式",
+        "GUID": "7dd95024-9eae-406a-8715-52e4788e6206",
+        "RelationBinding": {
+          "RelatedTable": "正报账户信息",
+          "RelatedColumn": "账户_报关方式",
+          "DisplayColumn": "收货人地址"
+        }
+      },
+      "CellType": {
+        "$type": "Forguncy.MultilineTextBox, ServerDesignerCommon",
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "10,0": {
+      "ListViewInfo": {
+        "Name": "表格1",
+        "TableName": "FBA发货详情表",
+        "RowIndex": 10,
+        "RowCount": 14,
+        "ColumnCount": 12,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+          "CompareType": 8,
+          "ColumnBindingInfo": {
+            "TableName": "FBA发货详情表",
+            "ColumnName": "FBA发货表ID",
+            "GUID": "112a003d-6407-4421-9d55-adfb349e8e1e"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=装箱单!A27"
+          }
+        },
+        "NullFormulaValueQueryPolicy": 0,
+        "TopCondition": null,
+        "ListViewStyleName": "样式20",
+        "ShowColumnHeaderInDesigner": true,
+        "IsRowHeaderVisible": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "11,0": {
+      "NameUsedInJavaScript": "_箱号"
+    },
+    "11,2": {
+      "NameUsedInJavaScript": "中英文品名",
+      "BindingInfo": {
+        "TableName": "FBA发货详情表",
+        "ColumnName": "发货识别码",
+        "GUID": "0517a287-bf26-4cc5-9c48-831c9b5264dc",
+        "RelationBinding": {
+          "RelatedTable": "正报信息表",
+          "RelatedColumn": "识别码",
+          "DisplayColumn": "申报中英文"
+        }
+      }
+    },
+    "11,3": {
+      "BindingInfo": {
+        "TableName": "FBA发货详情表",
+        "ColumnName": "发货识别码",
+        "GUID": "3168e2ed-8916-4748-91a1-998c5a19d562",
+        "RelationBinding": {
+          "RelatedTable": "正报信息表",
+          "RelatedColumn": "识别码",
+          "DisplayColumn": "型号"
+        }
+      }
+    },
+    "11,4": {
+      "NameUsedInJavaScript": "_总数量",
+      "BindingInfo": {
+        "TableName": "FBA发货详情表",
+        "ColumnName": "总数量",
+        "GUID": "2f60575f-1223-44ad-8962-ec1c262d38b6"
+      }
+    },
+    "11,5": {
+      "NameUsedInJavaScript": "_箱数",
+      "BindingInfo": {
+        "TableName": "FBA发货详情表",
+        "ColumnName": "总箱数",
+        "GUID": "a808382a-25bf-4210-bd93-161924864e19"
+      }
+    },
+    "11,6": {
+      "BindingInfo": {
+        "TableName": "FBA发货详情表",
+        "ColumnName": "汇总实重",
+        "GUID": "e1fc6303-e3e8-4a96-b86f-d142fdd18fbd"
+      }
+    },
+    "11,7": {
+      "BindingInfo": {
+        "TableName": "FBA发货详情表",
+        "ColumnName": "汇总净重",
+        "GUID": "5bb9f49c-7c35-4b67-900f-75ed957a4e77"
+      }
+    },
+    "11,8": {
+      "NameUsedInJavaScript": "CBM",
+      "BindingInfo": {
+        "TableName": "FBA发货详情表",
+        "ColumnName": "总体积",
+        "GUID": "bfad4044-fae1-457f-b7df-e136e5476572"
+      }
+    },
+    "11,9": {
+      "BindingInfo": {
+        "TableName": "FBA发货详情表",
+        "ColumnName": "FBA发货表ID",
+        "GUID": "e4f72c97-2abe-422a-a329-62cfed709ba2",
+        "RelationBinding": {
+          "RelatedTable": "FBA发货表3",
+          "RelatedColumn": "ID",
+          "DisplayColumn": "备注"
+        }
+      }
+    },
+    "11,10": {
+      "BindingInfo": {
+        "TableName": "FBA发货详情表",
+        "ColumnName": "sku",
+        "GUID": "3900b268-abba-4a47-a867-c063471d2e86"
+      }
+    },
+    "11,11": {
+      "BindingInfo": {
+        "TableName": "FBA发货详情表",
+        "ColumnName": "不重复",
+        "GUID": "e431a002-5914-4c78-9b30-40b00bf522e2"
+      }
+    },
+    "26,0": {
+      "BindingInfo": {
+        "TableName": "FBA发货表3",
+        "ColumnName": "合并报关ID",
+        "GUID": "6069fc53-21fb-4398-87ec-bf979f9bd789"
+      }
+    },
+    "26,2": {
+      "BindingInfo": {
+        "TableName": "FBA发货表3",
+        "ColumnName": "账户_报关方式",
+        "GUID": "fcf9feca-80d0-45a9-8a2d-5439d48764c7",
+        "RelationBinding": {
+          "RelatedTable": "正报账户信息",
+          "RelatedColumn": "账户_报关方式",
+          "DisplayColumn": "账户简称"
+        }
+      }
+    },
+    "26,4": {
+      "BindingInfo": {
+        "TableName": "FBA发货表3",
+        "ColumnName": "合同协议日期",
+        "GUID": "d8fd4b91-138b-4225-ae6d-d5e791ff6c80"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontSize": 24.0,
+        "FontWeight": 0,
+        "Formatter": 1,
+        "HorizontalAlignment": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontSize": 24.0,
+        "FontWeight": 0,
+        "Formatter": 1,
+        "HorizontalAlignment": 2
+      },
+      {
+        "Formatter": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "HorizontalAlignment": 3
+      },
+      {
+        "HorizontalAlignment": 3,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Formatter": 1,
+        "WordWrap": true,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Formatter": 1,
+        "WordWrap": true
+      },
+      {
+        "Formatter": 4,
+        "VerticalAlignment": 5,
+        "WordWrap": true,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Formatter": 4,
+        "VerticalAlignment": 5,
+        "WordWrap": true
+      },
+      {
+        "Formatter": 1,
+        "HorizontalAlignment": 6,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 7,
+        "Formatter": 8,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 7,
+        "Formatter": 8
+      },
+      {
+        "Formatter": 1,
+        "HorizontalAlignment": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Formatter": 1
+      },
+      {
+        "Formatter": 1,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontWeight": 0,
+        "Formatter": 1,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": null,
+        "BorderRight": 0
+      },
+      {
+        "FontWeight": 0,
+        "Formatter": 1,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontWeight": 0,
+        "Formatter": 1,
+        "BorderTop": 0
+      },
+      {
+        "BorderTop": 0
+      },
+      {
+        "BorderTop": 0,
+        "BorderRight": 0
+      },
+      {
+        "Formatter": 4,
+        "HorizontalAlignment": 2,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "Formatter": 1,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "Formatter": 1,
+        "HorizontalAlignment": 2,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "Formatter": 10,
+        "HorizontalAlignment": 2,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "Formatter": 11,
+        "HorizontalAlignment": 2,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "Formatter": 11,
+        "HorizontalAlignment": 2,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderRight": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "Formatter": 1,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderRight": 0
+      },
+      {
+        "Formatter": 1,
+        "BorderBottom": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Formatter": 1,
+        "HorizontalAlignment": 2,
+        "BorderBottom": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Formatter": 10,
+        "HorizontalAlignment": 2,
+        "BorderBottom": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 7,
+        "FontWeight": 0,
+        "Formatter": 10,
+        "HorizontalAlignment": 2,
+        "BorderBottom": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Formatter": 11,
+        "HorizontalAlignment": 2,
+        "BorderBottom": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Formatter": 11,
+        "HorizontalAlignment": 2
+      },
+      {
+        "Foreground": 12,
+        "Formatter": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Foreground": 12
+      },
+      {
+        "FontFamily": 7,
+        "FontSize": 12.0,
+        "FontStyle": 13,
+        "FontWeight": 0,
+        "Foreground": 12,
+        "Formatter": 4,
+        "TextIndent": 0,
+        "HorizontalAlignment": 3,
+        "VerticalAlignment": 5,
+        "WordWrap": false,
+        "Strikethrough": false,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 7,
+        "FontSize": 12.0,
+        "FontStyle": 13,
+        "FontWeight": 13,
+        "Foreground": 12,
+        "Formatter": 4,
+        "TextIndent": 0,
+        "HorizontalAlignment": 3,
+        "VerticalAlignment": 5,
+        "WordWrap": false,
+        "Strikethrough": false,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 14,
+        "FontFamily": 7,
+        "Foreground": 12,
+        "Formatter": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontWeight": 0,
+        "HorizontalAlignment": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Foreground": 12,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 14,
+        "Foreground": 14,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Bold",
+        "[AUTO]General",
+        "Center",
+        "Left",
+        "@",
+        "Top",
+        "Right",
+        "Body",
+        "YYYYMMDD",
+        "black",
+        "0.00",
+        "0.0000",
+        "#FFFF0000",
+        "Normal",
+        "Background 1 0"
+      ],
+      "Borders": [
+        {
+          "Color": 9
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,0": 0,
+      "0,9": 1,
+      "0,10": 0,
+      "0,11": 0,
+      "0,12": 1,
+      "1,6": 2,
+      "1,7": 2,
+      "1,8": 3,
+      "1,9": 3,
+      "1,10": 4,
+      "1,11": 4,
+      "1,12": 3,
+      "2,0": 5,
+      "2,9": 6,
+      "2,10": 5,
+      "2,11": 5,
+      "2,12": 6,
+      "3,0": 7,
+      "3,9": 8,
+      "3,10": 7,
+      "3,11": 7,
+      "3,12": 8,
+      "4,9": 8,
+      "4,10": 7,
+      "4,11": 7,
+      "4,12": 8,
+      "5,6": 9,
+      "5,7": 2,
+      "5,8": 10,
+      "5,9": 11,
+      "5,10": 10,
+      "5,11": 10,
+      "5,12": 11,
+      "6,0": 12,
+      "6,1": 2,
+      "6,9": 13,
+      "6,10": 2,
+      "6,11": 2,
+      "6,12": 13,
+      "7,0": 7,
+      "7,9": 8,
+      "7,10": 7,
+      "7,11": 7,
+      "7,12": 8,
+      "8,9": 8,
+      "8,10": 7,
+      "8,11": 7,
+      "8,12": 8,
+      "9,0": 14,
+      "9,1": 14,
+      "10,0": 15,
+      "10,1": 16,
+      "10,2": 17,
+      "10,3": 17,
+      "10,4": 17,
+      "10,5": 17,
+      "10,6": 17,
+      "10,7": 17,
+      "10,8": 15,
+      "10,9": 18,
+      "10,10": 19,
+      "10,11": 20,
+      "11,0": 21,
+      "11,1": 16,
+      "11,2": 22,
+      "11,3": 22,
+      "11,4": 23,
+      "11,5": 23,
+      "11,6": 24,
+      "11,7": 24,
+      "11,8": 25,
+      "11,9": 26,
+      "11,11": 27,
+      "12,0": 22,
+      "12,1": 28,
+      "12,2": 22,
+      "12,3": 28,
+      "12,4": 22,
+      "12,5": 22,
+      "12,6": 22,
+      "12,7": 28,
+      "12,8": 29,
+      "12,11": 27,
+      "12,12": 13,
+      "13,0": 30,
+      "13,8": 31,
+      "13,11": 27,
+      "13,12": 13,
+      "14,0": 30,
+      "14,8": 31,
+      "14,11": 27,
+      "14,12": 13,
+      "15,0": 30,
+      "15,8": 31,
+      "15,11": 27,
+      "15,12": 13,
+      "16,0": 30,
+      "16,8": 31,
+      "16,11": 27,
+      "16,12": 13,
+      "17,0": 30,
+      "17,8": 31,
+      "17,11": 27,
+      "17,12": 13,
+      "18,0": 30,
+      "18,8": 31,
+      "18,11": 27,
+      "18,12": 13,
+      "19,0": 30,
+      "19,8": 31,
+      "19,11": 27,
+      "19,12": 13,
+      "20,0": 22,
+      "20,1": 28,
+      "20,2": 22,
+      "20,3": 28,
+      "20,4": 22,
+      "20,5": 22,
+      "20,6": 22,
+      "20,7": 28,
+      "20,8": 29,
+      "20,11": 27,
+      "20,12": 13,
+      "21,0": 22,
+      "21,1": 28,
+      "21,2": 22,
+      "21,3": 28,
+      "21,4": 22,
+      "21,5": 22,
+      "21,6": 22,
+      "21,7": 28,
+      "21,8": 29,
+      "21,11": 27,
+      "21,12": 13,
+      "22,0": 22,
+      "22,1": 28,
+      "22,2": 22,
+      "22,3": 28,
+      "22,4": 22,
+      "22,5": 22,
+      "22,6": 22,
+      "22,7": 28,
+      "22,8": 29,
+      "22,11": 27,
+      "22,12": 13,
+      "23,0": 22,
+      "23,1": 28,
+      "23,2": 22,
+      "23,3": 28,
+      "23,4": 22,
+      "23,5": 22,
+      "23,6": 22,
+      "23,7": 28,
+      "23,8": 29,
+      "23,9": 32,
+      "23,10": 32,
+      "23,11": 33,
+      "23,12": 13,
+      "24,0": 34,
+      "24,1": 34,
+      "24,4": 35,
+      "24,5": 35,
+      "24,6": 36,
+      "24,7": 37,
+      "24,8": 38,
+      "24,9": 39,
+      "24,10": 38,
+      "24,11": 38,
+      "24,12": 39,
+      "25,0": 40,
+      "25,1": 2,
+      "25,2": 41,
+      "25,3": 41,
+      "25,4": 41,
+      "25,5": 41,
+      "25,6": 41,
+      "25,7": 41,
+      "25,8": 41,
+      "25,9": 41,
+      "26,0": 41,
+      "26,2": 42,
+      "26,3": 42,
+      "26,4": 43,
+      "26,5": 43,
+      "26,6": 41,
+      "26,7": 41,
+      "26,8": 41,
+      "26,9": 41,
+      "27,0": 41,
+      "27,1": 41,
+      "27,2": 41,
+      "27,3": 41,
+      "27,4": 41,
+      "27,5": 41,
+      "27,6": 44,
+      "27,7": 44,
+      "27,8": 41,
+      "27,9": 41
+    },
+    "RowStyles": {
+      "3": 4,
+      "4": 4,
+      "24": 45,
+      "25": 46,
+      "26": 47
+    },
+    "SheetStyle": {
+      "FontFamily": 7,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
+    }
+  },
+  "Spans": [
+    "0,0,1,9",
+    "2,0,1,9",
+    "3,0,2,9",
+    "5,6,1,2",
+    "6,1,1,8",
+    "7,0,2,9",
+    "9,0,1,2",
+    "10,0,1,2",
+    "11,0,1,2",
+    "12,0,12,12",
+    "24,0,1,2",
+    "25,0,1,2",
+    "26,0,1,2",
+    "27,6,1,2"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "FBA发货详情表"
+  },
+  "PrintInfo": {
+    "ColumnStart": 0,
+    "ColumnEnd": 8,
+    "RowStart": 0,
+    "RowEnd": 26,
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "Pictures": [
+    {
+      "Name": "a2f1f901-9351-4845-8bf9-e28cf67edbd3",
+      "ForguncyPictureName": "维山章.png",
+      "ForguncyPictureSourceType": 0,
+      "Stretch": 2,
+      "Location": "586,27",
+      "Size": "189.12037658691406,132.4802703857422"
+    }
+  ]
+}//q0nmWidRza7nJVOTJULebT6YIff2VeQl9od7+zzjnVylCtAB9Iz40ul+QymCNcIN8BHqMTO2wukpbsYNMZ49UY2a9er5ujAKunxTtc7Z5yjvjPkcul2L1Uo4VZYzpI8qHzgmqnttJQEJDpln+xwV/EipeBATYzUs0FUOU+1YTd0FiafD+18zZgnfmLREFLLyqsOu2OajPz2phrBRN722T+KopSDah+fQRjHKJ+3MCOebm4XjzcGh96nggVhDjC0WFgp06OjNUVAsefK4a4PxHiIq1tCfVqWGlFxC0RIrKpTsxo6xq1utC5h05fBWx4L63KwujIsQWJ3Q38gslgTGdsqIewDy4EikN92Cfv7vc6mUPoPCFhT5mqeVgDkdSophByh2gP2rdQQA/bQrGA/BuEL8oDFPi9wKpeyMMT841b8LdlFTauRTvde61vhe2N63UjC8ytTH2hXl+K8bPpUtHlexSZYGYE0JNSbyIwdaY4ETJYJRQJnnl8A6Gx9zBu5ftzhYyrGkb28b7Gp3pz6O6Y3mycYR6Y+PdWVls1iZKEqOf4PNU3lFJK4aBAxsY8tKjRj7mHQIMZhRQZbGt5hPA9nj0W48s82zbZBiUYIgyZ+L2MfOUdhizhHmRASAX9rupIMSShYL/FakH6KyPY1A78mbPsU7pRko/GbmuuscUy75wxa77JRfkd+/jOF2LcQzmfPXQeeCaG3KpyYeWI7TfMgSpAHBS55Fj9YtLc9ohwpZ/EmU18gP6ZPq4v+eVsMmCqQmfqXMgpTxEU3O0H/oaHwCKCO/uFHTax86Pp7UMyIpVJ52hFVQCLDEk5zNenggP6LOHazDjpufHlRN5Ws5v5Rh8t19Z+whvPXYO4JUtmYtP+9TcjzmPeufaz+oYCPURmJj+sJuaTqAxMSHEt4MFw==|920

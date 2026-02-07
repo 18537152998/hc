@@ -1,0 +1,504 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 110.0
+        }
+      }
+    },
+    "Count": 33
+  },
+  "Cols": {
+    "Count": 20
+  },
+  "Values": {
+    "10,5": "后退"
+  },
+  "AttachInfos": {
+    "4,2": {
+      "ListViewInfo": {
+        "Name": "表格1",
+        "TableName": "订单信息表__2_",
+        "RowIndex": 4,
+        "ColumnIndex": 2,
+        "RowCount": 5,
+        "ColumnCount": 14,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "订单信息表__2_",
+            "ColumnName": "快递追踪号",
+            "GUID": "e8a3cc99-aa40-42b1-9628-4de925654faa"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=制单信息!C2"
+          }
+        },
+        "TopCondition": null,
+        "TableLoadOnDemandInfo": {
+          "IsEnabled": true
+        },
+        "ListViewStyleName": "样式7",
+        "ShowColumnHeaderInDesigner": true,
+        "ColumnOperation": 1,
+        "ShowGridLine": true
+      }
+    },
+    "5,2": {
+      "BindingInfo": {
+        "TableName": "订单信息表__2_",
+        "ColumnName": "制单要求",
+        "GUID": "b47b4bd0-48bc-4e4e-8304-06844036a569"
+      },
+      "CellType": {
+        "$type": "Forguncy.MultilineTextBox, ServerDesignerCommon"
+      }
+    },
+    "10,5": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "NavigateType": "back",
+            "IgnoreTargetPageCachedCurrentRowInfo": false,
+            "BreakpointIdentity": "f7fa0062-8c1f-433e-a7df-60d6f15fc770"
+          }
+        ],
+        "Text": "后退"
+      }
+    },
+    "15,0": {
+      "CellType": {
+        "$type": "Forguncy.CustomMenu.ForguncyIconMenuCellType, Forguncy.CustomMenu",
+        "Items": [
+          {
+            "Text": "首页",
+            "IconPath": "Home2.png",
+            "SelectedIconPath": "Home3.png",
+            "IsDefaultItem": true,
+            "IsOldMenuPath": false,
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                "PageName": "FGC_登录_手机版",
+                "IgnoreTargetPageCachedCurrentRowInfo": false,
+                "BreakpointIdentity": "5fbada3a-fdc7-4340-85da-c02b6a04d635"
+              }
+            ],
+            "CanVisitRoleList": [
+              "FGC_LoginUser"
+            ]
+          },
+          {
+            "Value": "订单表",
+            "Text": "订单表",
+            "IconPath": "Application/030_edit_file_1.svg",
+            "IconColor": "Accent 1",
+            "SelectedIconPath": "Application/031_edit_file_2.svg",
+            "IsOldMenuPath": false,
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                "NavigateType": "back",
+                "IgnoreTargetPageCachedCurrentRowInfo": false,
+                "BreakpointIdentity": "1b5b59f3-231b-41a6-a7b3-b8439b728662"
+              }
+            ],
+            "CanVisitRoleList": [
+              "Administrator",
+              "销售"
+            ]
+          },
+          {
+            "Text": "发货表",
+            "IconPath": "Forms.png",
+            "SelectedIconPath": "Forms2.png",
+            "IsOldMenuPath": false,
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                "PageName": "发货信zf息手机",
+                "IgnoreTargetPageCachedCurrentRowInfo": false,
+                "BreakpointIdentity": "a77563ad-64ed-46d3-b407-f932b4895d88"
+              }
+            ],
+            "CanVisitRoleList": [
+              "FGC_LoginUser"
+            ]
+          },
+          {
+            "Text": "扫码出入库",
+            "IconPath": "Search3.png",
+            "SelectedIconPath": "Search4.png",
+            "IsOldMenuPath": false,
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                "PageName": "扫码页",
+                "IgnoreTargetPageCachedCurrentRowInfo": false,
+                "BreakpointIdentity": "db4f6bcb-944c-409e-b97f-a6feb62fe0c8"
+              }
+            ],
+            "CanVisitRoleList": [
+              "FGC_LoginUser"
+            ]
+          },
+          {
+            "Text": "FN",
+            "IconPath": "Mobile/468_edit_1.svg",
+            "SelectedIconColor": "Background 1",
+            "IconColor": "Accent 5 0",
+            "IsOldMenuPath": false,
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                "PageName": "更新包装量",
+                "IgnoreTargetPageCachedCurrentRowInfo": false,
+                "BreakpointIdentity": "8bf54357-d42a-43ec-b6a4-482bf603c728"
+              }
+            ],
+            "CanVisitRoleList": [
+              "FGC_LoginUser"
+            ]
+          }
+        ],
+        "Orientation": 0,
+        "MenuLevelsStyle": [
+          {
+            "BackColor": "#fcfcfc",
+            "ForeColor": "#9e9e9e",
+            "SelectedBackColor": "#fcfcfc",
+            "SelectedForeColor": "#00a1e9",
+            "FontSize": 11.0,
+            "Bold": true,
+            "Height": 55.0,
+            "IconHeight": 32.0,
+            "IconWidth": 32.0
+          }
+        ]
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Background": 0,
+        "FontSize": 21.33333396911621,
+        "FontWeight": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": 0,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": 0,
+        "BorderLeft": null,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 3,
+        "FontSize": 14.670000076293945,
+        "VerticalAlignment": 4,
+        "WordWrap": true,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 3,
+        "FontSize": 14.670000076293945,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 3,
+        "FontSize": 14.670000076293945,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": null,
+        "BorderRight": 0
+      },
+      {
+        "BorderLeft": 0
+      },
+      {
+        "BorderRight": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderBottom": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontSize": 18.66666603088379,
+        "Formatter": 5,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontSize": 18.66666603088379,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 6,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "#FFCCC0DA",
+        "Bold",
+        "#FFA9A9A9",
+        "宋体",
+        "Top",
+        "[AUTO]General",
+        "微软雅黑"
+      ],
+      "Borders": [
+        {
+          "Color": 2
+        }
+      ]
+    },
+    "CellStyles": {
+      "1,2": 0,
+      "1,3": 0,
+      "1,4": 0,
+      "1,5": 0,
+      "1,6": 0,
+      "1,7": 0,
+      "1,8": 0,
+      "1,9": 0,
+      "1,10": 0,
+      "1,11": 0,
+      "1,12": 0,
+      "1,13": 0,
+      "1,14": 0,
+      "1,15": 0,
+      "2,2": 0,
+      "2,3": 0,
+      "2,4": 0,
+      "2,5": 0,
+      "2,6": 0,
+      "2,7": 0,
+      "2,8": 0,
+      "2,9": 0,
+      "2,10": 0,
+      "2,11": 0,
+      "2,12": 0,
+      "2,13": 0,
+      "2,14": 0,
+      "2,15": 0,
+      "4,2": 1,
+      "4,3": 2,
+      "4,4": 2,
+      "4,5": 2,
+      "4,6": 2,
+      "4,7": 2,
+      "4,8": 2,
+      "4,9": 2,
+      "4,10": 2,
+      "4,11": 2,
+      "4,12": 2,
+      "4,13": 2,
+      "4,14": 2,
+      "4,15": 3,
+      "5,2": 4,
+      "5,3": 5,
+      "5,4": 5,
+      "5,5": 5,
+      "5,6": 5,
+      "5,7": 5,
+      "5,8": 5,
+      "5,9": 5,
+      "5,10": 5,
+      "5,11": 5,
+      "5,12": 5,
+      "5,13": 5,
+      "5,14": 5,
+      "5,15": 6,
+      "6,2": 7,
+      "6,15": 8,
+      "7,2": 7,
+      "7,15": 8,
+      "8,2": 9,
+      "8,3": 10,
+      "8,4": 10,
+      "8,5": 10,
+      "8,6": 10,
+      "8,7": 10,
+      "8,8": 10,
+      "8,9": 10,
+      "8,10": 10,
+      "8,11": 10,
+      "8,12": 10,
+      "8,13": 10,
+      "8,14": 10,
+      "8,15": 11,
+      "10,5": 12,
+      "10,6": 13,
+      "10,7": 13,
+      "10,8": 13,
+      "10,9": 13,
+      "10,10": 13,
+      "10,11": 13,
+      "10,12": 13,
+      "11,5": 13,
+      "11,6": 13,
+      "11,7": 13,
+      "11,8": 13,
+      "11,9": 13,
+      "11,10": 13,
+      "11,11": 13,
+      "11,12": 13,
+      "15,0": 14,
+      "15,1": 14,
+      "15,2": 14,
+      "15,3": 14,
+      "15,4": 14,
+      "15,5": 14,
+      "15,6": 14,
+      "15,7": 14,
+      "15,8": 14,
+      "15,9": 14,
+      "15,10": 14,
+      "15,11": 14,
+      "15,12": 14,
+      "15,13": 14,
+      "15,14": 14,
+      "15,15": 14,
+      "15,16": 14,
+      "15,17": 14,
+      "15,18": 14,
+      "15,19": 14,
+      "16,0": 14,
+      "16,1": 14,
+      "16,2": 14,
+      "16,3": 14,
+      "16,4": 14,
+      "16,5": 14,
+      "16,6": 14,
+      "16,7": 14,
+      "16,8": 14,
+      "16,9": 14,
+      "16,10": 14,
+      "16,11": 14,
+      "16,12": 14,
+      "16,13": 14,
+      "16,14": 14,
+      "16,15": 14,
+      "16,16": 14,
+      "16,17": 14,
+      "16,18": 14,
+      "16,19": 14,
+      "17,0": 14,
+      "17,1": 14,
+      "17,2": 14,
+      "17,3": 14,
+      "17,4": 14,
+      "17,5": 14,
+      "17,6": 14,
+      "17,7": 14,
+      "17,8": 14,
+      "17,9": 14,
+      "17,10": 14,
+      "17,11": 14,
+      "17,12": 14,
+      "17,13": 14,
+      "17,14": 14,
+      "17,15": 14,
+      "17,16": 14,
+      "17,17": 14,
+      "17,18": 14,
+      "17,19": 14,
+      "18,0": 14,
+      "18,1": 14,
+      "18,2": 14,
+      "18,3": 14,
+      "18,4": 14,
+      "18,5": 14,
+      "18,6": 14,
+      "18,7": 14,
+      "18,8": 14,
+      "18,9": 14,
+      "18,10": 14,
+      "18,11": 14,
+      "18,12": 14,
+      "18,13": 14,
+      "18,14": 14,
+      "18,15": 14,
+      "18,16": 14,
+      "18,17": 14,
+      "18,18": 14,
+      "18,19": 14
+    },
+    "SheetStyle": {
+      "FontFamily": 3
+    }
+  },
+  "Spans": [
+    "10,5,2,8",
+    "1,2,2,14",
+    "5,2,1,14",
+    "6,2,3,14",
+    "15,0,4,18",
+    "4,2,1,14"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "IsMobilePage": true
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//q6yfUdBgZchRcTVewTHfNJ648gyGZtYGjVRmYNusPZkkPHvmE7jZQ8Yi8ijlFLB+7FJp7skDyRKX7ehzzETbUE0HDmTafsDzvK4udWk11CMueBvfEOWK7tti7pILg58MbLmWHkJ3uZTjP4Z+knZaZRcBZ2n+h/e4kNv3r7iJ5lgcbay5YeHJJdo4jvsWmpTAG+C/qUhlmpeet9zPE5CmjgY5R0MbkhI+GHaNLckCH8iwmi1ZZVinepImz7G7WvWAA0KNtj4BnhD0WD1dRzJIgIPmfGqt/NDbQPIl7zzw6qHG5C6iph6i6n2toM8nbtPAGqIyEEXHGGb4QTWLt5QTIFd39G7V2aKuEBzePGq0obCOI/EYOg07hlwzOUeOm+UiVXLJTu/KlXwSGkmfGfoFLo8OBwU1p9aQ0wjZGnMYfafFKeBhW6MZ0EOTSS1mMHeM2KR7CdvtMygp51y8R789S1xwJ3sQ5eDAl86peE8iE3YOMlQL8LqBr86mdNfGQq/B+TfCGs58onUOYFLNULMoQvpadoXqNYyjN8U0noB2LjbkPZsPX+y0FsbLSQcoI9SOfbcpTa/PZ2EVgCl1x6uEcoVszZwIPG3/ljqkBaH1mjUbQUIdFZIWmMH8bnc/0MKYtRvICYZiqcwtwuYw5Wt3ZFY1MIEnc5pvCo/eCRM8LeE6QFquTDc7FYw0GFBl/nTQ0L3ilDI6b8uL0Txgy8MDIPI43hIxyf00oaOARgxr/7ZWfese4penDfgu9/qTDvagev2JY27dad6ggf6bJfCEPgn3Fu2f5suj0WUwRVHIZIJ9lp/nYBiWtdp+mmhJAXCtBARUZ8g32wyu1UbP8a1cQ+wofAo4Xtn5RksC5/SkE/jcT43aYCZS60RL1oFbfeEicP4CBNpjr6S32ovORb0bSw==|920

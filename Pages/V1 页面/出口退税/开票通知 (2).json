@@ -1,0 +1,1278 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 52.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 40.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 29.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 29.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 29.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 21.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 33.266666666666666
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 33.266666666666666
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 33.266666666666666
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 33.266666666666666
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 33.266666666666666
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 33.266666666666666
+        }
+      }
+    },
+    "Count": 25,
+    "DefaultSize": 33.0
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 16.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 191.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 83.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 76.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 130.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 154.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 143.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 78.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 115.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 70.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 245.0
+        }
+      },
+      "15": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 107.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      11,
+      12,
+      13,
+      14
+    ],
+    "Count": 16,
+    "DefaultSize": 39.0
+  },
+  "Values": {
+    "0,1": "开票通知书",
+    "2,1": "合同号",
+    "2,5": "请根据以下资料开",
+    "2,6": "增值税专用发票",
+    "2,7": "项目名称、数量、单位、规格型号，请勿修改。",
+    "6,1": "项目名称",
+    "6,2": "数量",
+    "6,3": "单位",
+    "6,4": "型号",
+    "6,5": "含税总额（RMB）",
+    "6,6": "发票备注栏内容",
+    "14,1": "开票金额合计：",
+    "14,4": "(已含税)",
+    "14,5": " ",
+    "15,1": "请特别注意：品名、数量、单位、型号、价税总额、备注信息，务必按照上面表格标注的开具，谢谢",
+    "16,1": "我司开票信息：",
+    "17,1": "公司名称：郑州维山科技有限公司",
+    "18,1": "纳税人识别号：91410100MADMR5X527",
+    "19,1": "地址：河南省郑州市高新技术产业开发区西四环228号29号楼2层201号-02室",
+    "19,4": "导出",
+    "21,1": "开户行及账号：平安银行郑州分行营业部15605944160056",
+    "23,1": "电话：15346594681"
+  },
+  "Formulas": {
+    "14,2": "SUM(F8)",
+    "7,6": "IFERROR(L8&\"-\"&M8&\"发货时间\"&TEXT(N8,\"yyyy/mm/dd\"),\"\")",
+    "7,8": "\"发票\"&ROW()-7",
+    "7,13": "O8-3"
+  },
+  "AttachInfos": {
+    "2,2": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "样式3"
+      }
+    },
+    "2,6": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_NewLittleRoundCorner",
+        "Items": [
+          {
+            "Value": "增值税专用发票",
+            "DisplayValue": "增值税专用发票"
+          },
+          {
+            "Value": "增值税普通发票",
+            "DisplayValue": "增值税普通发票"
+          }
+        ],
+        "CellDefaultValue": "增值税专用发票"
+      }
+    },
+    "7,1": {
+      "ListViewInfo": {
+        "Name": "表格1",
+        "TableName": "正报退税汇总表_子表",
+        "RowIndex": 7,
+        "ColumnIndex": 1,
+        "RowCount": 6,
+        "ColumnCount": 14,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+          "CompareType": 8,
+          "ColumnBindingInfo": {
+            "TableName": "正报退税汇总表_子表",
+            "ColumnName": "ID",
+            "GUID": "81dd6075-b7ec-44a1-8e85-d35213d9780d"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "='开票通知 (2)'!E22"
+          }
+        },
+        "NullFormulaValueQueryPolicy": 0,
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_NewFashionStripedStyle1",
+        "ShowColumnHeaderInDesigner": true,
+        "IsColumnHeaderVisible": false,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "AllowEditInListview": true,
+        "AllowAddNewRow": true,
+        "ShowDeleteButton": true,
+        "ColumnOperation": 2,
+        "CommitType": 1
+      },
+      "BindingInfo": {
+        "TableName": "正报退税汇总表_子表",
+        "ColumnName": "采购入库码",
+        "GUID": "9de24149-6ca2-4577-9213-908a5d5667ab",
+        "RelationBinding": {
+          "RelatedTable": "采购记录表",
+          "RelatedColumn": "采购编号",
+          "DisplayColumn": "项目名称"
+        }
+      }
+    },
+    "7,2": {
+      "BindingInfo": {
+        "TableName": "正报退税汇总表_子表",
+        "ColumnName": "产品数量",
+        "GUID": "6dda8862-2db1-4a53-8615-4c3a34458918"
+      }
+    },
+    "7,3": {
+      "BindingInfo": {
+        "TableName": "正报退税汇总表_子表",
+        "ColumnName": "成交单位",
+        "GUID": "2eba670d-dc1e-4a57-b6fe-f0d8c076ef46"
+      }
+    },
+    "7,4": {
+      "BindingInfo": {
+        "TableName": "正报退税汇总表_子表",
+        "ColumnName": "开票型号",
+        "GUID": "3b0a400a-b52a-4469-b0fd-5d1d1b7d500b"
+      }
+    },
+    "7,5": {
+      "BindingInfo": {
+        "TableName": "正报退税汇总表_子表",
+        "ColumnName": "采购总价",
+        "GUID": "e9c17cf9-ed69-45c9-9a87-46be61023773"
+      }
+    },
+    "7,11": {
+      "BindingInfo": {
+        "TableName": "正报退税汇总表_子表",
+        "ColumnName": "合同号",
+        "GUID": "27500445-2ccb-4a73-8e20-6a8e5cf1208b"
+      }
+    },
+    "7,12": {
+      "BindingInfo": {
+        "TableName": "正报退税汇总表_子表",
+        "ColumnName": "采购入库码",
+        "GUID": "3805ab86-17a4-43e3-b333-c83355c25e1e",
+        "RelationBinding": {
+          "RelatedTable": "采购记录表",
+          "RelatedColumn": "采购编号",
+          "DisplayColumn": "采购订单编号"
+        }
+      }
+    },
+    "7,14": {
+      "BindingInfo": {
+        "TableName": "正报退税汇总表_子表",
+        "ColumnName": "采购入库码",
+        "GUID": "dbf2ceee-7711-4b40-96df-dc1af9598fdc",
+        "RelationBinding": {
+          "RelatedTable": "采购记录表",
+          "RelatedColumn": "采购编号",
+          "DisplayColumn": "入库日期"
+        }
+      }
+    },
+    "19,4": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='开票通知 (2)'!E20"
+                },
+                "PropertyType": 1,
+                "Value": false
+              }
+            ],
+            "BreakpointIdentity": "f73a7bf2-5c8e-47f4-9b00-8e8ece111503"
+          },
+          {
+            "$type": "Forguncy.Model.ExportPageToExcelCommand, ServerDesignerCommon",
+            "ExportExcelPageNameMode": 2,
+            "BreakpointIdentity": "bc350ad7-cf37-4b54-b12a-e90c639a6549",
+            "NewOtherName": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "='开票通知 (2)'!E21&\"-开票通知\""
+            }
+          }
+        ],
+        "Text": "导出",
+        "ClickMode": 1,
+        "TemplateKey": "_RS_Main"
+      }
+    },
+    "20,4": {
+      "BindingInfo": {
+        "TableName": "采购记录表",
+        "ColumnName": "供应商",
+        "GUID": "a65412c8-e9db-43b7-9132-1692f795ac1d"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "FontSize": 26.66666603088379,
+        "FontStyle": 1,
+        "FontWeight": 2,
+        "Foreground": 3,
+        "Formatter": 4,
+        "TextIndent": 0,
+        "HorizontalAlignment": 5,
+        "VerticalAlignment": 5,
+        "WordWrap": false,
+        "Strikethrough": false,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 26.66666603088379,
+        "FontStyle": 1,
+        "FontWeight": 2,
+        "Formatter": 4,
+        "TextIndent": 0,
+        "HorizontalAlignment": 5,
+        "VerticalAlignment": 5,
+        "WordWrap": false,
+        "Strikethrough": false,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 26.66666603088379,
+        "FontStyle": 1,
+        "FontWeight": 2,
+        "Foreground": 3,
+        "Formatter": 4,
+        "TextIndent": 0,
+        "HorizontalAlignment": 5,
+        "VerticalAlignment": 5,
+        "WordWrap": false,
+        "Strikethrough": false
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 26.66666603088379,
+        "FontStyle": 1,
+        "FontWeight": 2,
+        "Formatter": 4,
+        "TextIndent": 0,
+        "HorizontalAlignment": 5,
+        "VerticalAlignment": 5,
+        "WordWrap": false,
+        "Strikethrough": false
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 18.66666603088379,
+        "FontStyle": 1,
+        "FontWeight": 2,
+        "Foreground": 3,
+        "Formatter": 4,
+        "HorizontalAlignment": 5,
+        "VerticalAlignment": 5,
+        "WordWrap": false,
+        "Strikethrough": false,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Foreground": null,
+        "Formatter": 6,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 14.666666666666666,
+        "FontStyle": 1,
+        "FontWeight": 1,
+        "Foreground": 3,
+        "Formatter": 4,
+        "TextIndent": 0,
+        "HorizontalAlignment": 7,
+        "VerticalAlignment": 5,
+        "WordWrap": false,
+        "Strikethrough": false,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "FontStyle": 1,
+        "FontWeight": 1,
+        "Foreground": 3,
+        "Formatter": 4,
+        "TextIndent": 0,
+        "HorizontalAlignment": 7,
+        "VerticalAlignment": 5,
+        "WordWrap": false,
+        "Strikethrough": false,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Foreground": 8
+      },
+      {
+        "FontFamily": 0,
+        "FontStyle": 1,
+        "FontWeight": 2,
+        "Foreground": 3,
+        "Formatter": 4,
+        "TextIndent": 0,
+        "HorizontalAlignment": 5,
+        "VerticalAlignment": 5,
+        "WordWrap": false,
+        "Strikethrough": false,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "FontStyle": 1,
+        "FontWeight": 2,
+        "Foreground": 3,
+        "Formatter": 4,
+        "TextIndent": 0,
+        "HorizontalAlignment": 5,
+        "VerticalAlignment": 5,
+        "WordWrap": false,
+        "Strikethrough": false,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "FontStyle": 1,
+        "FontWeight": 2,
+        "Foreground": 3,
+        "Formatter": 4,
+        "TextIndent": 0,
+        "HorizontalAlignment": 7,
+        "VerticalAlignment": 5,
+        "WordWrap": false,
+        "Strikethrough": false,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "FontStyle": 1,
+        "FontWeight": 1,
+        "Foreground": 3,
+        "Formatter": 4,
+        "TextIndent": 0,
+        "HorizontalAlignment": 5,
+        "VerticalAlignment": 5,
+        "WordWrap": false,
+        "Strikethrough": false,
+        "BorderTop": 0,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "FontStyle": 1,
+        "FontWeight": 2,
+        "Foreground": 3,
+        "Formatter": 4,
+        "TextIndent": 0,
+        "HorizontalAlignment": 5,
+        "VerticalAlignment": 5,
+        "WordWrap": false,
+        "Strikethrough": false,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderTop": 0
+      },
+      {
+        "BorderTop": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 0,
+        "FontStyle": 1,
+        "FontWeight": 2,
+        "Foreground": 8,
+        "Formatter": 4,
+        "TextIndent": 0,
+        "HorizontalAlignment": 7,
+        "VerticalAlignment": 5,
+        "WordWrap": false,
+        "Strikethrough": false,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "BorderTop": 0,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "FontStyle": 1,
+        "FontWeight": 2,
+        "Foreground": 8,
+        "Formatter": 4,
+        "TextIndent": 0,
+        "HorizontalAlignment": 7,
+        "VerticalAlignment": 5,
+        "WordWrap": false,
+        "Strikethrough": false,
+        "BorderTop": 0
+      },
+      {
+        "FontSize": -1.0,
+        "FontStyle": 1,
+        "FontWeight": 1,
+        "Foreground": null,
+        "Formatter": null,
+        "HorizontalAlignment": 5,
+        "VerticalAlignment": 5,
+        "WordWrap": false,
+        "Strikethrough": null,
+        "BorderBottom": 1,
+        "BorderTop": 1,
+        "BorderLeft": 1,
+        "BorderRight": 1
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": -1.0,
+        "FontStyle": 1,
+        "FontWeight": 1,
+        "Foreground": null,
+        "Formatter": 10,
+        "HorizontalAlignment": 5,
+        "VerticalAlignment": 5,
+        "WordWrap": false,
+        "Strikethrough": null,
+        "BorderBottom": 1,
+        "BorderTop": 1,
+        "BorderLeft": 1,
+        "BorderRight": 1
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": -1.0,
+        "FontStyle": 1,
+        "FontWeight": 1,
+        "Foreground": null,
+        "Formatter": null,
+        "HorizontalAlignment": 5,
+        "VerticalAlignment": 5,
+        "WordWrap": false,
+        "Strikethrough": null,
+        "BorderBottom": 1,
+        "BorderTop": 1,
+        "BorderLeft": 1,
+        "BorderRight": 1
+      },
+      {
+        "BorderBottom": 1,
+        "BorderTop": 1,
+        "BorderLeft": 1,
+        "BorderRight": 1
+      },
+      {
+        "FontSize": -1.0,
+        "FontStyle": 1,
+        "FontWeight": 1,
+        "Formatter": null,
+        "HorizontalAlignment": 5,
+        "VerticalAlignment": 5,
+        "WordWrap": false,
+        "Strikethrough": null,
+        "BorderBottom": 1,
+        "BorderTop": 1,
+        "BorderLeft": 1,
+        "BorderRight": 1
+      },
+      {
+        "FontSize": -1.0,
+        "FontStyle": 1,
+        "FontWeight": 1,
+        "Formatter": null,
+        "HorizontalAlignment": 5,
+        "VerticalAlignment": 5,
+        "WordWrap": false,
+        "Strikethrough": null,
+        "BorderBottom": 1,
+        "BorderTop": 1,
+        "BorderLeft": 1
+      },
+      {
+        "FontSize": -1.0,
+        "FontStyle": 1,
+        "FontWeight": 1,
+        "Formatter": null,
+        "HorizontalAlignment": 5,
+        "VerticalAlignment": 5,
+        "WordWrap": false,
+        "Strikethrough": null,
+        "BorderBottom": 1,
+        "BorderTop": 1
+      },
+      {
+        "BorderBottom": 1,
+        "BorderTop": 1
+      },
+      {
+        "BorderBottom": 1,
+        "BorderTop": 1,
+        "BorderLeft": 1
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "FontStyle": 1,
+        "FontWeight": 1,
+        "Foreground": 11,
+        "Formatter": 4,
+        "TextIndent": 0,
+        "HorizontalAlignment": 12,
+        "VerticalAlignment": 5,
+        "WordWrap": false,
+        "Strikethrough": false,
+        "BorderBottom": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "FontStyle": 1,
+        "FontWeight": 1,
+        "Foreground": 3,
+        "Formatter": 4,
+        "TextIndent": 0,
+        "HorizontalAlignment": 12,
+        "VerticalAlignment": 5,
+        "WordWrap": false,
+        "Strikethrough": false,
+        "BorderBottom": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "FontStyle": 1,
+        "FontWeight": 1,
+        "Formatter": 4,
+        "TextIndent": 0,
+        "HorizontalAlignment": 12,
+        "VerticalAlignment": 5,
+        "WordWrap": false,
+        "Strikethrough": false,
+        "BorderBottom": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "FontStyle": 1,
+        "FontWeight": 1,
+        "Foreground": 11,
+        "Formatter": 4,
+        "TextIndent": 0,
+        "HorizontalAlignment": 12,
+        "VerticalAlignment": 5,
+        "WordWrap": false,
+        "Strikethrough": false
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 21.33333396911621,
+        "FontStyle": 1,
+        "FontWeight": 1,
+        "Foreground": 3,
+        "Formatter": 4,
+        "TextIndent": 0,
+        "HorizontalAlignment": 12,
+        "VerticalAlignment": 5,
+        "WordWrap": false,
+        "Strikethrough": false,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 21.33333396911621,
+        "FontStyle": 1,
+        "FontWeight": 2,
+        "Foreground": 13,
+        "Formatter": 14,
+        "TextIndent": 0,
+        "HorizontalAlignment": 12,
+        "VerticalAlignment": 5,
+        "WordWrap": false,
+        "Strikethrough": false,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 21.33333396911621,
+        "FontStyle": 1,
+        "FontWeight": 2,
+        "Foreground": 13,
+        "Formatter": 15,
+        "TextIndent": 0,
+        "HorizontalAlignment": 12,
+        "VerticalAlignment": 5,
+        "WordWrap": false,
+        "Strikethrough": false,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 21.33333396911621,
+        "FontStyle": 1,
+        "FontWeight": 2,
+        "Foreground": 13,
+        "Formatter": 15,
+        "TextIndent": 0,
+        "HorizontalAlignment": 12,
+        "VerticalAlignment": 5,
+        "WordWrap": false,
+        "Strikethrough": false
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 21.33333396911621,
+        "FontStyle": 1,
+        "FontWeight": 2,
+        "Formatter": 15,
+        "TextIndent": 0,
+        "HorizontalAlignment": 12,
+        "VerticalAlignment": 5,
+        "WordWrap": false,
+        "Strikethrough": false,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 21.33333396911621,
+        "FontStyle": 1,
+        "FontWeight": 2,
+        "Foreground": 11,
+        "Formatter": 4,
+        "TextIndent": 0,
+        "HorizontalAlignment": 7,
+        "VerticalAlignment": 5,
+        "WordWrap": false,
+        "Strikethrough": false,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 16,
+        "FontFamily": 0,
+        "FontSize": 21.33333396911621,
+        "FontStyle": 1,
+        "FontWeight": 1,
+        "Foreground": 3,
+        "Formatter": 7,
+        "TextIndent": 0,
+        "HorizontalAlignment": 7,
+        "VerticalAlignment": 5,
+        "WordWrap": false,
+        "Strikethrough": false,
+        "BorderBottom": 1,
+        "BorderTop": 1,
+        "BorderLeft": 1,
+        "BorderRight": 1
+      },
+      {
+        "Background": 16,
+        "FontSize": 16.0,
+        "Formatter": 7,
+        "HorizontalAlignment": 12,
+        "BorderBottom": 1,
+        "BorderTop": 1,
+        "BorderLeft": 1,
+        "BorderRight": 1
+      },
+      {
+        "Background": 16,
+        "FontSize": 16.0,
+        "Formatter": 7,
+        "HorizontalAlignment": 12,
+        "BorderBottom": 1,
+        "BorderTop": 1,
+        "BorderLeft": 1
+      },
+      {
+        "BorderBottom": 1,
+        "BorderTop": 1,
+        "BorderRight": 1
+      },
+      {
+        "Background": 16,
+        "FontFamily": 17,
+        "FontSize": 16.0,
+        "FontStyle": 1,
+        "FontWeight": 1,
+        "Foreground": 3,
+        "Formatter": 7,
+        "HorizontalAlignment": 12,
+        "WordWrap": true,
+        "Strikethrough": false,
+        "BorderBottom": 1,
+        "BorderTop": 1,
+        "BorderLeft": 1,
+        "BorderRight": 1
+      },
+      {
+        "HorizontalAlignment": 5,
+        "Underline": true,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "FontStyle": 1,
+        "FontWeight": 1,
+        "Foreground": 8,
+        "Formatter": 4,
+        "TextIndent": 0,
+        "HorizontalAlignment": 7,
+        "VerticalAlignment": 5,
+        "WordWrap": false,
+        "Strikethrough": false,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 17,
+        "FontSize": 18.66666603088379,
+        "FontStyle": 1,
+        "FontWeight": 1,
+        "Foreground": 3,
+        "Formatter": 4,
+        "TextIndent": 0,
+        "HorizontalAlignment": 18,
+        "VerticalAlignment": 5,
+        "WordWrap": true,
+        "Strikethrough": false,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 18.66666603088379,
+        "FontStyle": 1,
+        "FontWeight": 1,
+        "Foreground": 3,
+        "Formatter": 4,
+        "TextIndent": 0,
+        "HorizontalAlignment": 7,
+        "VerticalAlignment": 5,
+        "WordWrap": false,
+        "Strikethrough": false,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "FontStyle": 1,
+        "FontWeight": 1,
+        "Foreground": 3,
+        "Formatter": 4,
+        "TextIndent": 0,
+        "HorizontalAlignment": 5,
+        "VerticalAlignment": 5,
+        "WordWrap": false,
+        "Strikethrough": false,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "Normal",
+        "Bold",
+        "#FF000000",
+        "[AUTO]General",
+        "Center",
+        "@",
+        "General",
+        "Background 1 0",
+        "black",
+        "0.00",
+        "#FFFF0000",
+        "Left",
+        "#FF00B050",
+        " ¥#,##0.00_);[Red] ¥(#,##0.00)",
+        "[AUTO]\"￥\"0.00\"(已含税)\"",
+        "Background 1 -5",
+        "宋体",
+        "Distributed"
+      ],
+      "Borders": [
+        {
+          "Color": 3
+        },
+        {
+          "Color": 9
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,1": 0,
+      "0,2": 0,
+      "0,3": 0,
+      "0,4": 0,
+      "0,5": 0,
+      "0,6": 0,
+      "0,7": 0,
+      "0,8": 0,
+      "0,9": 0,
+      "0,11": 1,
+      "0,14": 2,
+      "1,1": 0,
+      "1,2": 0,
+      "1,3": 0,
+      "1,4": 0,
+      "1,5": 0,
+      "1,6": 0,
+      "1,7": 0,
+      "1,8": 0,
+      "1,9": 0,
+      "1,10": 2,
+      "1,11": 1,
+      "1,12": 1,
+      "1,13": 3,
+      "1,14": 3,
+      "2,1": 4,
+      "2,2": 5,
+      "2,5": 6,
+      "2,6": 7,
+      "2,11": 8,
+      "2,12": 8,
+      "2,13": 8,
+      "2,14": 8,
+      "3,11": 8,
+      "3,12": 8,
+      "3,13": 8,
+      "3,14": 8,
+      "4,11": 8,
+      "4,12": 8,
+      "4,13": 8,
+      "4,14": 8,
+      "6,1": 9,
+      "6,2": 9,
+      "6,3": 9,
+      "6,4": 9,
+      "6,5": 10,
+      "6,6": 11,
+      "6,7": 12,
+      "6,8": 13,
+      "6,9": 14,
+      "6,10": 15,
+      "6,11": 16,
+      "6,12": 17,
+      "6,13": 14,
+      "6,14": 18,
+      "7,1": 19,
+      "7,2": 19,
+      "7,3": 19,
+      "7,4": 19,
+      "7,5": 20,
+      "7,6": 21,
+      "7,7": 22,
+      "7,8": 19,
+      "7,9": 22,
+      "7,10": 22,
+      "7,11": 23,
+      "7,12": 24,
+      "7,13": 25,
+      "7,14": 26,
+      "8,1": 22,
+      "8,2": 22,
+      "8,3": 22,
+      "8,4": 22,
+      "8,5": 22,
+      "8,6": 22,
+      "8,7": 22,
+      "8,8": 22,
+      "8,9": 22,
+      "8,10": 22,
+      "8,11": 22,
+      "8,12": 27,
+      "9,1": 22,
+      "9,2": 22,
+      "9,3": 22,
+      "9,4": 22,
+      "9,5": 22,
+      "9,6": 22,
+      "9,7": 22,
+      "9,8": 22,
+      "9,9": 22,
+      "9,10": 22,
+      "9,11": 22,
+      "9,12": 27,
+      "10,1": 22,
+      "10,2": 22,
+      "10,3": 22,
+      "10,4": 22,
+      "10,5": 22,
+      "10,6": 22,
+      "10,7": 22,
+      "10,8": 22,
+      "10,9": 22,
+      "10,10": 22,
+      "10,11": 22,
+      "10,12": 27,
+      "11,1": 22,
+      "11,2": 22,
+      "11,3": 22,
+      "11,4": 22,
+      "11,5": 22,
+      "11,6": 22,
+      "11,7": 22,
+      "11,8": 22,
+      "11,9": 22,
+      "11,10": 22,
+      "11,11": 22,
+      "11,12": 27,
+      "12,1": 22,
+      "12,2": 22,
+      "12,3": 22,
+      "12,4": 22,
+      "12,5": 22,
+      "12,6": 22,
+      "12,7": 22,
+      "12,8": 22,
+      "12,9": 22,
+      "12,10": 22,
+      "12,11": 22,
+      "12,12": 27,
+      "13,1": 28,
+      "13,2": 29,
+      "13,3": 29,
+      "13,4": 29,
+      "13,5": 29,
+      "13,6": 29,
+      "13,7": 29,
+      "13,8": 29,
+      "13,9": 29,
+      "13,11": 30,
+      "13,14": 31,
+      "14,1": 32,
+      "14,2": 33,
+      "14,4": 34,
+      "14,5": 34,
+      "14,6": 34,
+      "14,7": 34,
+      "14,8": 34,
+      "14,9": 34,
+      "14,10": 35,
+      "14,11": 36,
+      "15,1": 37,
+      "16,1": 38,
+      "16,2": 22,
+      "16,3": 22,
+      "17,1": 39,
+      "17,2": 22,
+      "17,3": 22,
+      "18,1": 40,
+      "18,2": 26,
+      "18,3": 41,
+      "19,1": 42,
+      "19,2": 22,
+      "19,3": 22,
+      "19,4": 43,
+      "20,1": 22,
+      "20,2": 22,
+      "20,3": 22,
+      "20,4": 44,
+      "21,1": 42,
+      "21,2": 22,
+      "21,3": 22,
+      "21,4": 44,
+      "22,1": 22,
+      "22,2": 22,
+      "22,3": 22,
+      "23,1": 42,
+      "23,2": 22,
+      "23,3": 22,
+      "24,1": 45
+    },
+    "RowStyles": {
+      "2": 46,
+      "3": 46,
+      "4": 46,
+      "6": 47
+    },
+    "ColStyles": {
+      "1": 7,
+      "2": 7,
+      "3": 7,
+      "4": 7,
+      "5": 7,
+      "6": 7,
+      "7": 7,
+      "8": 7,
+      "9": 7,
+      "10": 7,
+      "11": 44,
+      "12": 44,
+      "13": 44,
+      "14": 44,
+      "15": 7
+    },
+    "SheetStyle": {
+      "FontFamily": 0,
+      "FontSize": 14.666666984558105,
+      "FontStyle": 1,
+      "FontWeight": 1,
+      "Foreground": 3,
+      "Formatter": 4,
+      "TextIndent": 0,
+      "HorizontalAlignment": 7,
+      "VerticalAlignment": 5,
+      "WordWrap": false,
+      "Strikethrough": false,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
+    }
+  },
+  "Spans": [
+    "0,1,1,14",
+    "2,2,1,2",
+    "6,11,1,4",
+    "13,1,1,14",
+    "14,2,1,2",
+    "16,1,1,3",
+    "17,1,1,3",
+    "19,1,2,3",
+    "21,1,2,3",
+    "23,1,1,3",
+    "18,1,1,3",
+    "7,6,1,2",
+    "6,6,1,2",
+    "7,8,1,3",
+    "6,8,1,3",
+    "8,1,5,14"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "正报退税汇总表_子表"
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {
+      "Top": 100,
+      "Bottom": 100,
+      "Left": 75,
+      "Right": 75,
+      "Header": 50,
+      "Footer": 50
+    },
+    "PageOrder": 1
+  }
+}//gmDERSP3Kgy4uKPizcygmtRx9c1HiQs9bfoSfUMmkz3Vs8QEwEWQHrdaGwB/SIlBqT6L8sJ5Z0tfu6Fzz8cLdoJL8aTdr2lC+WtFwhoENE4/qiBf5Sc8+PjZ0DRS9dHVBtK5Y8a7nTLSFbHD8wujY8goikPSKg4E0QxpVvKJSIMo4Y9hDFzvqLEZoA9BBSYp8j3Nnv10YbpUWtTquA1eO2lAa3n0nvBur55Lh9Aih/FqMnX6VA2DOMnxjLklDHq919p471Sg+NqxVFnkld6wc2Dp2N/+0wxGipgQ6MpX0IyadeKVKxOE4cAqXpg2hxZ/al974UvNWqsqEn+ECeN5TOQytD9D9MTmbKMMwJKEBlctEx5irYbN9BcZJM7FfXOCK5IbhatjssuJDjTxgV36BdwGEmwTmgjFrCqOz5W+bFNIQp/B5PXQDyMQNJm3SboV0BOP0NkX2/7dxFE48TZLYVXMQxS3+2Edg32McFRh5jXmZqtrxoasbDcBDX20JwjjqsMUUJQnEe1qWvcVe3EB2VWCzs/taOeRyJSzMDWFO8seU66g1NRIGRAX+bn3D7G4e1EGmpaxnjXOmjtSE14eonYB/V5YtGW2eWkIL+P4gRdQ3Q+nXCcV9HETAtYmzo6XIS1pBEVc4e4lSooRBjB1PhQsd8lX6u+L6CVa3tErpn/ZtIlrXIAYviL4WClp+FLj0p54oijKxPQ7kW0vULlL8i1xwxx9CkqdjpDs/q8kOA9hX4H5SBV72v5PHo4DRDbLUw8aqTjqyJXVSlx404F5EML5CpotKsg69DN8MboOSDBApPexI9sItLYhKa3st+cQTZy+odQr26bdT0bWcaGxTZLjVXgx1wW75CtQdRNjK8SDrKm5/uj3y1H6dcfbYEzdK0fbUC5KX6Qav68sFv6cIA==|920

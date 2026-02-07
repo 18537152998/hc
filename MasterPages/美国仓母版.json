@@ -1,0 +1,720 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      }
+    },
+    "Count": 38
+  },
+  "Cols": {
+    "Count": 79
+  },
+  "Values": {
+    "1,47": "郑州"
+  },
+  "AttachInfos": {
+    "1,47": {
+      "CellType": {
+        "$type": "Forguncy.RadioGroupCellType, ServerDesignerCommon",
+        "Style": 3,
+        "PrimaryColor": "Accent 2 0",
+        "CellDefaultValue": "郑州",
+        "Items": [
+          {
+            "Value": "郑州",
+            "DisplayValue": "郑州"
+          },
+          {
+            "Value": "杭州",
+            "DisplayValue": "杭州"
+          }
+        ],
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=美国仓母版!AV2"
+                      }
+                    ]
+                  },
+                  "value": "杭州"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "ValueFormula": "http://116.205.131.154/fh/%E5%BE%85%E9%80%80%E8%B4%A7",
+                    "IgnoreTargetPageCachedCurrentRowInfo": false,
+                    "BreakpointIdentity": "a280206d-c8cb-452a-8500-fbcb0e3f03b1"
+                  }
+                ],
+                "ID": "3cf3b2ec-660d-4089-9d6f-84890fe4cfd6"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "ValueFormula": "http://116.205.131.154/hc/%E5%BE%85%E9%80%80%E8%B4%A7",
+                    "IgnoreTargetPageCachedCurrentRowInfo": false,
+                    "BreakpointIdentity": "f1c402fd-3ba1-414c-ab0b-2f0268dd1b47"
+                  }
+                ],
+                "ID": "b4a451e5-de8f-4c89-baf8-6587f23df010"
+              }
+            ],
+            "BreakpointIdentity": "7121ca10-de0b-40f7-a1e2-00adba0e3a3a"
+          }
+        ],
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "Enabled": true,
+            "AllowRoles": [
+              "Administrator",
+              "h采购",
+              "制单",
+              "采购",
+              "财务",
+              "财务主管",
+              "总经理",
+              "海外仓",
+              "会计"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ]
+      }
+    },
+    "1,60": {
+      "CellType": {
+        "$type": "Forguncy.CurrentUserCellType, ServerDesignerCommon",
+        "CellCustomValue": "%CurrentUser%",
+        "NavigateSettingWhenLogout": {
+          "NavigateWhenLogoutMode": 1
+        }
+      }
+    },
+    "5,0": {
+      "CellType": {
+        "$type": "Forguncy.CustomMenu.ForguncyMenuCellType, Forguncy.CustomMenu",
+        "TemplateKey": "样式4",
+        "Items": [
+          {
+            "Text": "待退货",
+            "SelectedIconColor": "Background 1",
+            "SelectedIconColorUseItemColor": true,
+            "IconColorUseItemColor": true,
+            "IsOldMenuPath": false,
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                "ConditionAndCommandPairList": [
+                  {
+                    "Condition": {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionCurrentUserInfoParam, ServerDesignerCommon",
+                        "currentUserProperty": {
+                          "UserProperty": "角色",
+                          "PropertyType": 3
+                        }
+                      },
+                      "value": "海外仓"
+                    },
+                    "CommandList": [
+                      {
+                        "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                        "PageName": "待退货L",
+                        "PassValues": [
+                          {
+                            "Source": "待退货",
+                            "TargetCell": {
+                              "SerializeProperty": "biaoti"
+                            }
+                          }
+                        ],
+                        "IgnoreTargetPageCachedCurrentRowInfo": false,
+                        "BreakpointIdentity": "1496b00f-bb9c-423d-830d-5dda0e8fa5a9"
+                      }
+                    ],
+                    "ID": "9e665a57-108b-471a-809a-741d258562e2"
+                  },
+                  {
+                    "CommandList": [
+                      {
+                        "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                        "PageName": "待退货",
+                        "PassValues": [
+                          {
+                            "Source": "待退货",
+                            "TargetCell": {
+                              "SerializeProperty": "biaoti"
+                            }
+                          }
+                        ],
+                        "IgnoreTargetPageCachedCurrentRowInfo": false,
+                        "BreakpointIdentity": "e9d790f2-32d8-4d81-b8c8-e5bc8dc38a36"
+                      }
+                    ],
+                    "ID": "37c39d96-0a20-4a27-bb8b-2c86ee8a7cc8"
+                  }
+                ],
+                "BreakpointIdentity": "f9b50010-830b-4d91-9e37-6b136ca7d15e"
+              }
+            ],
+            "CanVisitRoleList": [
+              "FGC_LoginUser"
+            ]
+          },
+          {
+            "Text": "海外仓库存",
+            "SelectedIconColor": "Background 1",
+            "SelectedIconColorUseItemColor": true,
+            "IconColorUseItemColor": true,
+            "IsOldMenuPath": false,
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                "ConditionAndCommandPairList": [
+                  {
+                    "Condition": {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionCurrentUserInfoParam, ServerDesignerCommon",
+                        "currentUserProperty": {
+                          "UserProperty": "角色",
+                          "PropertyType": 3
+                        }
+                      },
+                      "value": "海外仓"
+                    },
+                    "CommandList": [
+                      {
+                        "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                        "PageName": "美国库存L",
+                        "PassValues": [
+                          {
+                            "Source": "美国库存",
+                            "TargetCell": {
+                              "SerializeProperty": "biaoti"
+                            }
+                          }
+                        ],
+                        "IgnoreTargetPageCachedCurrentRowInfo": false,
+                        "BreakpointIdentity": "4fd09b88-e8d7-4c8e-88c3-bf53dd76b748"
+                      }
+                    ],
+                    "ID": "7c104e6f-5836-4e38-b399-6ad908a7f1a7"
+                  },
+                  {
+                    "CommandList": [
+                      {
+                        "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                        "PageName": "美国库存",
+                        "PassValues": [
+                          {
+                            "Source": "美国库存",
+                            "TargetCell": {
+                              "SerializeProperty": "biaoti"
+                            }
+                          }
+                        ],
+                        "IgnoreTargetPageCachedCurrentRowInfo": false,
+                        "BreakpointIdentity": "68a1b50e-cc9c-47cb-8547-4a424e0d2037"
+                      }
+                    ],
+                    "ID": "66ea395a-c057-44d8-a746-11292328cc3a"
+                  }
+                ],
+                "BreakpointIdentity": "bedd6af5-fdd8-41f6-9084-0c8a7d7112a0"
+              }
+            ],
+            "CanVisitRoleList": [
+              "FGC_LoginUser"
+            ]
+          },
+          {
+            "Text": "出库结算表",
+            "SelectedIconColor": "Background 1",
+            "SelectedIconColorUseItemColor": true,
+            "IconColorUseItemColor": true,
+            "IsOldMenuPath": false,
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                "ConditionAndCommandPairList": [
+                  {
+                    "Condition": {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionCurrentUserInfoParam, ServerDesignerCommon",
+                        "currentUserProperty": {
+                          "UserProperty": "角色",
+                          "PropertyType": 3
+                        }
+                      },
+                      "value": "海外仓"
+                    },
+                    "CommandList": [
+                      {
+                        "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                        "PageName": "出库结算表L",
+                        "PassValues": [
+                          {
+                            "Source": "出库结算表",
+                            "TargetCell": {
+                              "SerializeProperty": "biaoti"
+                            }
+                          }
+                        ],
+                        "IgnoreTargetPageCachedCurrentRowInfo": false,
+                        "BreakpointIdentity": "c52ff79b-97c1-4481-a49f-173b066b6190"
+                      }
+                    ],
+                    "ID": "fa4ea031-c93d-449b-a164-ddbb5c16a69c"
+                  },
+                  {
+                    "CommandList": [
+                      {
+                        "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                        "PageName": "出库结算表",
+                        "PassValues": [
+                          {
+                            "Source": "出库结算表",
+                            "TargetCell": {
+                              "SerializeProperty": "biaoti"
+                            }
+                          }
+                        ],
+                        "IgnoreTargetPageCachedCurrentRowInfo": false,
+                        "BreakpointIdentity": "78924b3d-537e-449c-a82d-68c8f4a876e3"
+                      }
+                    ],
+                    "ID": "65e03150-632d-4c7e-9e74-f4eba6cd5dce"
+                  }
+                ],
+                "BreakpointIdentity": "9af5799c-cc7f-4e1e-aead-d697cb639316"
+              }
+            ],
+            "CanVisitRoleList": [
+              "FGC_LoginUser"
+            ]
+          },
+          {
+            "Value": "海外仓出售",
+            "Text": "海外仓出售",
+            "SelectedIconColor": "Background 1",
+            "SelectedIconColorUseItemColor": true,
+            "IconColorUseItemColor": true,
+            "IsOldMenuPath": false,
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                "ConditionAndCommandPairList": [
+                  {
+                    "Condition": {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionCurrentUserInfoParam, ServerDesignerCommon",
+                        "currentUserProperty": {
+                          "UserProperty": "角色",
+                          "PropertyType": 3
+                        }
+                      },
+                      "value": "海外仓"
+                    },
+                    "CommandList": [
+                      {
+                        "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                        "PageName": "海外仓出售L",
+                        "PassValues": [
+                          {
+                            "Source": "LEO出售",
+                            "TargetCell": {
+                              "SerializeProperty": "标题"
+                            }
+                          }
+                        ],
+                        "IgnoreTargetPageCachedCurrentRowInfo": false,
+                        "BreakpointIdentity": "84612bb2-f66f-44a5-8f77-4d14a848a097"
+                      }
+                    ],
+                    "ID": "a4c74a88-9002-4785-8d28-9003449fa397"
+                  },
+                  {
+                    "CommandList": [
+                      {
+                        "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                        "PageName": "海外仓出售",
+                        "PassValues": [
+                          {
+                            "Source": "LEO出售",
+                            "TargetCell": {
+                              "SerializeProperty": "biaoti"
+                            }
+                          }
+                        ],
+                        "IgnoreTargetPageCachedCurrentRowInfo": false,
+                        "BreakpointIdentity": "b0f2dac2-7ac8-4a01-af56-e1caafad3347"
+                      }
+                    ],
+                    "ID": "cca0a960-75a0-4484-b89c-fc6148cea43c"
+                  }
+                ],
+                "BreakpointIdentity": "138c81c2-2c5e-4f97-91e1-80bf27d7916c"
+              }
+            ],
+            "CanVisitRoleList": [
+              "FGC_LoginUser"
+            ]
+          },
+          {
+            "Value": "报废库存",
+            "Text": "报废库存",
+            "SelectedIconColor": "Background 1",
+            "SelectedIconColorUseItemColor": true,
+            "IconColorUseItemColor": true,
+            "IsOldMenuPath": false,
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                "ConditionAndCommandPairList": [
+                  {
+                    "Condition": {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionCurrentUserInfoParam, ServerDesignerCommon",
+                        "currentUserProperty": {
+                          "UserProperty": "角色",
+                          "PropertyType": 3
+                        }
+                      },
+                      "value": "海外仓"
+                    },
+                    "CommandList": [
+                      {
+                        "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                        "PageName": "报废库存L",
+                        "PassValues": [
+                          {
+                            "Source": "报废库存",
+                            "TargetCell": {
+                              "SerializeProperty": "biaoti"
+                            }
+                          }
+                        ],
+                        "IgnoreTargetPageCachedCurrentRowInfo": false,
+                        "BreakpointIdentity": "973c29ba-4ec2-4da3-95f2-4c56a5ae84d5"
+                      }
+                    ],
+                    "ID": "b05b74a8-7d34-4578-845f-5c91fbaa52ab"
+                  },
+                  {
+                    "CommandList": [
+                      {
+                        "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                        "PageName": "报废库存",
+                        "PassValues": [
+                          {
+                            "Source": "报废库存",
+                            "TargetCell": {
+                              "SerializeProperty": "biaoti"
+                            }
+                          }
+                        ],
+                        "IgnoreTargetPageCachedCurrentRowInfo": false,
+                        "BreakpointIdentity": "0fc3438f-bc03-44a2-a9ce-e47c51af77e6"
+                      }
+                    ],
+                    "ID": "70c585b6-de1a-45e4-8e6f-0e7b9b928c3c"
+                  }
+                ],
+                "BreakpointIdentity": "35a9e8f8-ecd3-49c0-95ae-20079b092353"
+              }
+            ],
+            "CanVisitRoleList": [
+              "FGC_LoginUser"
+            ]
+          },
+          {
+            "Value": "线上售后结算",
+            "Text": "线上售后结算",
+            "SelectedIconColor": "Background 1",
+            "SelectedIconColorUseItemColor": true,
+            "IconColorUseItemColor": true,
+            "IsOldMenuPath": false,
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                "ConditionAndCommandPairList": [
+                  {
+                    "Condition": {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionCurrentUserInfoParam, ServerDesignerCommon",
+                        "currentUserProperty": {
+                          "UserProperty": "角色",
+                          "PropertyType": 3
+                        }
+                      },
+                      "value": "海外仓"
+                    },
+                    "CommandList": [
+                      {
+                        "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                        "PageName": "线上售后结算L",
+                        "PassValues": [
+                          {
+                            "Source": "线上售后结算",
+                            "TargetCell": {
+                              "SerializeProperty": "biaoti"
+                            }
+                          }
+                        ],
+                        "IgnoreTargetPageCachedCurrentRowInfo": false,
+                        "BreakpointIdentity": "c5b2fd5c-a0d6-4c5b-8543-258b7404adb3"
+                      }
+                    ],
+                    "ID": "a1714b8b-c3d6-4256-b66c-b84db9dddcca"
+                  },
+                  {
+                    "CommandList": [
+                      {
+                        "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                        "PageName": "线上售后结算",
+                        "PassValues": [
+                          {
+                            "Source": "线上售后结算",
+                            "TargetCell": {
+                              "SerializeProperty": "biaoti"
+                            }
+                          }
+                        ],
+                        "IgnoreTargetPageCachedCurrentRowInfo": false,
+                        "BreakpointIdentity": "ed4b1002-cc12-496e-b0e0-608d2cfeaaef"
+                      }
+                    ],
+                    "ID": "09ebd009-d121-41ef-b3f7-148c51614565"
+                  }
+                ],
+                "BreakpointIdentity": "c1425af1-b15b-4a69-b410-6118f99aad45"
+              }
+            ],
+            "CanVisitRoleList": [
+              "FGC_LoginUser"
+            ]
+          }
+        ],
+        "MenuLevelsStyle": [
+          {
+            "FontSize": 17.33,
+            "Bold": true,
+            "Height": 45.0,
+            "IconHeight": 24.0,
+            "IconWidth": 24.0
+          },
+          {
+            "FontSize": 16.0,
+            "Bold": false,
+            "Height": 40.0,
+            "IconHeight": 24.0,
+            "IconWidth": 24.0
+          }
+        ]
+      }
+    },
+    "5,7": {
+      "IsPlaceHolderCell": true
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontSize": 21.333333333333332,
+        "FontWeight": 0,
+        "Foreground": 1,
+        "HorizontalAlignment": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 3,
+        "Foreground": 4,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 3,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Foreground": 4,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Bold",
+        "#FFFFC000",
+        "Center",
+        "Body",
+        "Text 2 0"
+      ]
+    },
+    "CellStyles": {
+      "1,28": 0,
+      "1,60": 1,
+      "1,61": 2,
+      "1,62": 2,
+      "1,63": 2,
+      "1,64": 2,
+      "1,65": 2,
+      "1,66": 2,
+      "1,67": 2,
+      "1,68": 2,
+      "1,69": 2,
+      "1,70": 3,
+      "1,71": 3,
+      "1,72": 3,
+      "1,73": 3,
+      "1,74": 3,
+      "1,75": 3,
+      "1,76": 3,
+      "1,77": 3,
+      "1,78": 3,
+      "2,60": 2,
+      "2,61": 2,
+      "2,62": 2,
+      "2,63": 2,
+      "2,64": 2,
+      "2,65": 2,
+      "2,66": 2,
+      "2,67": 2,
+      "2,68": 2,
+      "2,69": 2,
+      "2,70": 3,
+      "2,71": 3,
+      "2,72": 3,
+      "2,73": 3,
+      "2,74": 3,
+      "2,75": 3,
+      "2,76": 3,
+      "2,77": 3,
+      "2,78": 3,
+      "3,60": 2,
+      "3,61": 2,
+      "3,62": 2,
+      "3,63": 2,
+      "3,64": 2,
+      "3,65": 2,
+      "3,66": 2,
+      "3,67": 2,
+      "3,68": 2,
+      "3,69": 2,
+      "3,70": 3,
+      "3,71": 3,
+      "3,72": 3,
+      "3,73": 3,
+      "3,74": 3,
+      "3,75": 3,
+      "3,76": 3,
+      "3,77": 3,
+      "3,78": 3
+    },
+    "SheetStyle": {
+      "FontFamily": 3,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
+    }
+  },
+  "Spans": [
+    "1,28,3,9",
+    "1,60,3,10",
+    "5,0,33,7",
+    "5,7,33,72",
+    "1,47,3,8"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.MasterPage, ServerDesignerCommon",
+    "PageLoadedCommandList": [],
+    "PageResponsiveMode": 4
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "BackgroundPictures": [
+    {
+      "FitToBrowserWidth": true,
+      "FitToBrowserHeight": true,
+      "Repeat": true,
+      "Name": "7740d925-20a1-42a1-858e-43386e34af9b",
+      "DisplayName": "背景图1",
+      "ForguncyPictureName": "PCMasterBackground",
+      "ForguncyPictureSourceType": 2,
+      "Stretch": 2,
+      "Size": "160,170"
+    },
+    {
+      "Name": "d0a49168-03ed-4efa-831e-99e3210e332d",
+      "DisplayName": "背景图2",
+      "ForguncyPictureName": "PCMasterBanner",
+      "ForguncyPictureSourceType": 2,
+      "Stretch": 3,
+      "Size": "1580,61"
+    }
+  ],
+  "CustomNames": [
+    {
+      "Name": "biaoti",
+      "Formula": "美国仓母版!$AC$2"
+    }
+  ]
+}//SbakTgat+ZA8gAWBVtZD2CJ0FVVOMJMiTxKxw0tNhIuPS8aHz2878JANMvt2hPAiNluxme0LouayOfWy8bnD+wZu2y4+djoGxxAKdIAIaGaACCE+bItyvPvv+0bbpANH9+vWTtd+x7epc74qC+UKW+vIidIMKBJe/tbUmqmBoTXRu2Pl8+nfu1di33ehqPiyZhvyLr211NGyco96iiOVHeyEBb1oEc+VdagQTBM1sq8VnyMfgGnsFEKlWqjI/RQ8FbaG2fo+4mIxRNc9SF7d4u9BcQTRVoPvToUdHfSoXCAnhpZA8LfqLhQGVRXBY+2I0NmOAD6a2dRwto4EmVdq3OJh2UkEjxVU6ZfU5Siw6hxmCbkS6foOg0IGN+Bl8hdLROwzSrtlNB6wbWi0RfDO9teRYpC0Kpc+UUThkjrTbCgPvz9bcWToypDdbeax8qotnUn++jKDMIMOLesnLrTEVZFSkMWUhCaE1yPRp8iopThx5lJauU1axZkeLQSn1uTt6QEPp3R9IjJ29wBTMftC/s1X2Mp590zR3l1OVrGw/M+IRh1CS2x3kMYdjDlW9psYeYf1zXwcRiqyw6Jcs3P/RbncKEqkZv2/OEzpLdsbfpFq9azdVBUHlp0zA7JEtxUKhURKDkfn2si7JcPWt+ZrCtjNeSmgobridGayF3tm1ugYEM8XqQ1DW0nWB+5rukR0TCg+gh4r/X8Ecg4sexdhR38Wr+24+xA1eYZY6B9nFemjsi3FW/DoawGcVGW1GNh/fwLkvabBUTsKGHzlVYY4oHaPeFjVS3VCmrFS48QGsj/y7yTrMVnQAj4pJKNiEUNO6FlYHwf44N1jgpe04QfkKEtNIrV95XEhmnXSo+utrC96rcZq6AOc3BDKa/PWmBdQgUD9qa0R9pPCQqM9W1557A==|920

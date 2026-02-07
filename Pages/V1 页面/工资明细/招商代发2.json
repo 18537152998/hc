@@ -1,0 +1,215 @@
+{
+  "Rows": {
+    "Count": 27
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 77.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 77.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 77.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 39.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 19.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      8,
+      9
+    ],
+    "Count": 10,
+    "DefaultSize": 77.0
+  },
+  "Values": {
+    "0,0": "交易序号",
+    "0,1": "账号",
+    "0,2": "户名",
+    "0,3": "金额",
+    "0,4": "开户行",
+    "0,5": "开户地",
+    "0,6": "汇款备注",
+    "1,0": "00000001",
+    "1,4": "招商银行",
+    "1,6": "网上代发代扣"
+  },
+  "Formulas": {
+    "1,0": "TEXT(ROW()-1,\"0000000\")",
+    "1,3": "ROUND(I2,2)"
+  },
+  "AttachInfos": {
+    "0,0": {
+      "ListViewInfo": {
+        "Name": "表格1",
+        "TableName": "工资条",
+        "RowCount": 19,
+        "ColumnCount": 9,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "SubConditions": [
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "工资条",
+                "ColumnName": "所属公司",
+                "GUID": "d891afe1-9174-4f39-8a27-59e3a06a2e87"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=招商代发2!J3"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "工资条",
+                "ColumnName": "年月",
+                "GUID": "3d4016b7-b95a-498b-aa36-4abc0654416d"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=招商代发2!J1"
+              }
+            }
+          ]
+        },
+        "NullFormulaValueQueryPolicy": 0,
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_NewFashionListStyle1",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "0,9": {
+      "BindingInfo": {
+        "TableName": "工资条",
+        "ColumnName": "年月",
+        "GUID": "33e3359d-450f-45c4-9eeb-6f9d342f9ef1"
+      }
+    },
+    "1,1": {
+      "BindingInfo": {
+        "TableName": "工资条",
+        "ColumnName": "银行卡",
+        "GUID": "f2221a06-0d8d-4094-8faa-91c1b5f20065"
+      }
+    },
+    "1,2": {
+      "BindingInfo": {
+        "TableName": "工资条",
+        "ColumnName": "姓名",
+        "GUID": "684fae9a-d3c8-4a7f-92aa-d0c6c71223dc"
+      }
+    },
+    "1,8": {
+      "BindingInfo": {
+        "TableName": "工资条",
+        "ColumnName": "_20号发",
+        "GUID": "b109aa75-8435-4c9f-9fc9-2cbec18a2804"
+      }
+    },
+    "2,9": {
+      "BindingInfo": {
+        "TableName": "工资条",
+        "ColumnName": "所属公司",
+        "GUID": "8bde6e1f-c1c1-4aaa-8e25-a7d93ec2258e"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0
+      },
+      {
+        "Background": 1,
+        "FontFamily": 0
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 2
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "#FFFFFF00",
+        "0.00"
+      ]
+    },
+    "CellStyles": {
+      "0,0": 0,
+      "0,1": 0,
+      "0,2": 0,
+      "0,3": 0,
+      "0,4": 0,
+      "0,5": 0,
+      "0,6": 0,
+      "0,7": 0,
+      "0,9": 1,
+      "1,0": 0,
+      "1,1": 0,
+      "1,2": 0,
+      "1,3": 2,
+      "1,4": 0,
+      "1,5": 0,
+      "1,6": 0,
+      "1,7": 0,
+      "1,9": 0,
+      "2,9": 1
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "2,0,17,9"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "工资条"
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//89bdlqoG+0I6z59v5j175Q0qZ7wS6nT6N6KpP8GaBcpdpkGQK+16YVDu0hbthQnVtkJP7Xa3DCp59S635gzM0hS1iBJ9H5M0Vtlr/3/qXpnHg4iKtyNeD+odWSGsM8Zqoc3OvRMqGlaaJta9Aanzbeor+30C+wzUkUC+Hq+PpZYdPi7Kr3vSsy1P5xvyfJtJ0zEbD/oPodGnSJHgQXcjczc/fc6r0e1E4Ye3HgNt8ChlNwYWLwUqfuwjYWR5XktEfxosYw4+wOXAe9gleg2OrH5UIraBlrqCZLgqsE2BwggxyYJC4/vA42MM7n+LMwdvegtS5/9+XTo+91lLWsmdwzHAfqYT5ymQ8R4aL2wVg42UtwbzMEU9Hm4zc2USoYGc7qeNeYIv5ZToZ6QZjkmBSZHQiIdbfLq9cPd4dNpdnK5xJe0xrhE0+ejbXgSNMXkVM4DMEZTvU/kR7iEIUQcfO/XMMGInjAyL4vafKnjCW9AtGati1rRycLkKsH29h1ITcLhA77nffmamXsgc72e1MC3XtJGDjShtocfxrHiQEBBGs6oVxTNGx8fnaC44iWFIBWXJv2O999BBh18V6/O0V6jV9W4gcM0OgF+fKaPpp37y+W0cJg0ord+0+/R+hjXC5Fcta8za1uPr3Km6Iqb7kQ19VPmsZ5TpZm9x4tYXhKWOefX/QbfiHt03yGQWyPuNCr8iIKzOFdFE/rcCNHQJ3pRW3GCjjTYCmJNymLBzSaJ9/E0RHckwmyK8EVe/c60qncjmSxtS/bV2xrROcX25vfHH57iSdHTAeY4Rm6XCQNJpbAiFyQkDSC3sUMVn2KbCCV51h9wt997WKThjQmF3Kpbp8pcL2LehutMRJ9bUHCxPwdMrIY/tYnZROva5woVa0672MFeJBQzLz13EheEWMA==|920

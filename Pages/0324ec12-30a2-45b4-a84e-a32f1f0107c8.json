@@ -1,0 +1,175 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 7.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 7.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 7.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 7.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 7.0
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      }
+    },
+    "Count": 13,
+    "DefaultSize": 18.0
+  },
+  "Cols": {
+    "Count": 16
+  },
+  "Values": {
+    "1,8": "平台",
+    "3,8": "品名",
+    "5,8": "数量",
+    "7,8": "仓库",
+    "9,8": "退货",
+    "11,8": "处理"
+  },
+  "AttachInfos": {
+    "1,0": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PageName": "图片详情页",
+            "PassValues": [
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='0324ec12-30a2-45b4-a84e-a32f1f0107c8'!A2"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=#REF!"
+                }
+              }
+            ],
+            "IgnoreTargetPageCachedCurrentRowInfo": false,
+            "BreakpointIdentity": "f17fab96-b124-487b-b9de-3ea195427edb"
+          }
+        ]
+      },
+      "TemplateCellSource": "图片"
+    },
+    "1,10": {
+      "TemplateCellSource": "平台"
+    },
+    "3,10": {
+      "TemplateCellSource": "商品名"
+    },
+    "5,10": {
+      "TemplateCellSource": "数量"
+    },
+    "7,10": {
+      "TemplateCellSource": "退货仓库"
+    },
+    "9,10": {
+      "TemplateCellSource": "退货时间"
+    },
+    "11,10": {
+      "TemplateCellSource": "需要做的处理"
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "yyyy/m/d"
+      ]
+    },
+    "CellStyles": {
+      "1,0": 0,
+      "1,9": 0,
+      "1,10": 0,
+      "2,8": 0,
+      "2,9": 0,
+      "2,10": 0,
+      "2,11": 0,
+      "2,12": 0,
+      "2,13": 0,
+      "2,14": 0,
+      "3,9": 0,
+      "3,10": 0,
+      "4,8": 0,
+      "4,9": 0,
+      "4,10": 0,
+      "4,11": 0,
+      "4,12": 0,
+      "4,13": 0,
+      "4,14": 0,
+      "5,9": 0,
+      "5,10": 0,
+      "7,10": 0,
+      "9,10": 1,
+      "11,10": 0
+    },
+    "SheetStyle": {
+      "FontFamily": 0,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
+    }
+  },
+  "Spans": [
+    "1,0,11,8",
+    "1,10,1,6",
+    "3,10,1,6",
+    "5,10,1,6",
+    "7,10,1,6",
+    "9,10,1,6",
+    "11,10,1,6"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.TemplatePage, ServerDesignerCommon",
+    "ParentPageName": "待退货sj",
+    "IsMobilePage": true
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//Hm0JRMxmR2RpgyJ+sL3oPhvYyGThyIYXtATWksUe4CmJRnunNWoO+S1j9p11oA8Fg6Vbc7UQIsGnYbQcrWyAcdChsqVdkU26HPAvympFd8OJ0BUy0MX2MqDhwtdzlhPtN2C9IgKh7Eo4HM0yIke4N9g/DVCBD3ciTKLHIWQ9LFezLcmcehmkr/EXPCDmWPVxLQ4UQEI5Dq3gYSp5aNVvnd93mrCLSZGTzN3vM9XwlmXVw4X1VphFu0BEngWu8mMkp2W424Cf8NQmSooILfdWTqE/InKgrEIOCv/OIRsZ9KZUNNmpLpA7Sv4j76VmGufBFHgX2ucrmDta3NlZhy9ZdlgijH/EJ1NKN2Q3G/bGvSbxaIr8jsiPZBj0u30KeMNsD/beFhV9XQHhMjyVZSJI0Rczp8TXYSbeBhbMjem5iPysMXo2vTu0MV1LzaDH/WPKLWn3dsw++yvD+hNAx8EntQJKz81hMmH++2kVzA88TCzQHlsihugCZtv9P9/RQsPSWCL358b5RKfvdfwhzfRSI6d+NrYIMTlaH2yRjtuKe/6zBOhxg2LzOjan+IYnVuh3r6ByZLLH6+maO56er1CXlUFwIdu2JK4QRm5ftnc5xrAKR8Ikn4gah3aTwxBAHMgneck2ffg1/zgm9fgqSaChlrCsZA5dtDypj0+kHlRRaGYzRsmhjGcPZdPxSP7QU0BlqvrCMbNEFE0Go4dWRssZGIJ9IsjpB3TDt5TyN4UGIT7DagwQJRXyOCWwFspzeCfp3ZeCoHR3rOsjBa86DqWHnEXFSH75nfqf3H2XIQ//9G3yfAKVUYQJ2aI1O1t6A0Gq/i7RR5ATioH1I1x1MQFw6Yyv4p6m0jtAXLqcPCafEgPQ1SQT5fvDX8FvfLIZVp1ODIim6XN+YslhVqm6bnq/RA==|920

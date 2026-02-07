@@ -1,0 +1,1089 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 55.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      }
+    },
+    "Count": 45
+  },
+  "Cols": {
+    "Count": 60
+  },
+  "Values": {
+    "3,24": "配件库存表",
+    "5,4": "关键字",
+    "5,47": "查询"
+  },
+  "AttachInfos": {
+    "3,38": {
+      "CellType": {
+        "$type": "Forguncy.CurrentUserCellType, ServerDesignerCommon",
+        "CellCustomValue": "%CurrentUser%",
+        "NavigateSettingWhenLogout": {
+          "NavigateWhenLogoutMode": 1
+        }
+      }
+    },
+    "5,7": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "样式1"
+      }
+    },
+    "5,26": {
+      "CellType": {
+        "$type": "Forguncy.RadioGroupCellType, ServerDesignerCommon",
+        "Style": 1,
+        "Items": [
+          {
+            "Value": "负库存",
+            "DisplayValue": "负库存"
+          },
+          {
+            "Value": "超出上限",
+            "DisplayValue": "超出上限"
+          },
+          {
+            "Value": "低于下限",
+            "DisplayValue": "低于下限"
+          }
+        ],
+        "OtherItemTextBoxWidthSetting": 80
+      }
+    },
+    "5,47": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=配件库存表页面!AA6"
+                      }
+                    ]
+                  },
+                  "value": "负库存"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                    "TargetTableName": "配件库存表",
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                      "SubConditions": [
+                        {
+                          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                          "SubConditions": [
+                            {
+                              "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                              "CompareType": 6,
+                              "ColumnBindingInfo": {
+                                "TableName": "配件库存表",
+                                "ColumnName": "产品名",
+                                "GUID": "1ccc66f9-f4c2-4f13-89df-eeba13c4be40"
+                              },
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=配件库存表页面!H6"
+                              }
+                            },
+                            {
+                              "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                              "CompareType": 6,
+                              "ColumnBindingInfo": {
+                                "TableName": "配件库存表",
+                                "ColumnName": "配件名",
+                                "GUID": "c9002e4d-bf81-47bd-a56d-234bc96ce3cc"
+                              },
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=配件库存表页面!H6"
+                              }
+                            },
+                            {
+                              "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                              "CompareType": 6,
+                              "ColumnBindingInfo": {
+                                "TableName": "配件库存表",
+                                "ColumnName": "采购地址",
+                                "GUID": "df91e373-d16b-458c-b8b5-8a7ea675914a"
+                              },
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=配件库存表页面!H6"
+                              }
+                            }
+                          ],
+                          "RelationType": 1
+                        },
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "CompareType": 4,
+                          "ColumnBindingInfo": {
+                            "TableName": "配件库存表",
+                            "ColumnName": "数量",
+                            "GUID": "5e44d8fe-8c04-4fa7-9b0c-39178026790e"
+                          },
+                          "Value": "0"
+                        }
+                      ]
+                    },
+                    "ID": "73b944e6cb814f03bb8f423359787914",
+                    "BreakpointIdentity": "cd51560b-55a5-4b1a-8b4f-482632f1529c"
+                  }
+                ],
+                "ID": "adde7b40-a883-48eb-816f-6d559c44628d"
+              },
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=配件库存表页面!AA6"
+                      }
+                    ]
+                  },
+                  "value": "超出上限"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                    "TargetTableName": "配件库存表",
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                      "SubConditions": [
+                        {
+                          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                          "SubConditions": [
+                            {
+                              "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                              "CompareType": 6,
+                              "ColumnBindingInfo": {
+                                "TableName": "配件库存表",
+                                "ColumnName": "产品名",
+                                "GUID": "3b22ca5d-ac5f-42be-960d-b7ebbde9e978"
+                              },
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=配件库存表页面!H6"
+                              }
+                            },
+                            {
+                              "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                              "CompareType": 6,
+                              "ColumnBindingInfo": {
+                                "TableName": "配件库存表",
+                                "ColumnName": "配件名",
+                                "GUID": "0a0fe66e-9632-4ed6-8266-7984de31f2d8"
+                              },
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=配件库存表页面!H6"
+                              }
+                            },
+                            {
+                              "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                              "CompareType": 6,
+                              "ColumnBindingInfo": {
+                                "TableName": "配件库存表",
+                                "ColumnName": "采购地址",
+                                "GUID": "f2747450-aa2c-4a84-a038-8ea4f726ba70"
+                              },
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=配件库存表页面!H6"
+                              }
+                            }
+                          ],
+                          "RelationType": 1
+                        },
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "CompareType": 2,
+                          "ColumnBindingInfo": {
+                            "TableName": "配件库存表",
+                            "ColumnName": "库存超出上限",
+                            "GUID": "e0205afd-301b-4d76-bfa0-85b691bb3690"
+                          },
+                          "Value": "0"
+                        }
+                      ]
+                    },
+                    "ID": "8d665f48b30e4c12a0f69de8813ba273",
+                    "BreakpointIdentity": "8e2e0d04-389d-4916-b03a-c901959d70d6"
+                  }
+                ],
+                "ID": "9472abad-939f-4557-a25c-bdb559915d27"
+              },
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=配件库存表页面!AA6"
+                      }
+                    ]
+                  },
+                  "value": "低于下限"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                    "TargetTableName": "配件库存表",
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                      "SubConditions": [
+                        {
+                          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                          "SubConditions": [
+                            {
+                              "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                              "CompareType": 6,
+                              "ColumnBindingInfo": {
+                                "TableName": "配件库存表",
+                                "ColumnName": "产品名",
+                                "GUID": "c1d6a95b-a093-4a88-a4f1-e28108c03779"
+                              },
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=配件库存表页面!H6"
+                              }
+                            },
+                            {
+                              "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                              "CompareType": 6,
+                              "ColumnBindingInfo": {
+                                "TableName": "配件库存表",
+                                "ColumnName": "配件名",
+                                "GUID": "61dc4e13-e072-454e-8d11-1adc9d5c5d7f"
+                              },
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=配件库存表页面!H6"
+                              }
+                            },
+                            {
+                              "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                              "CompareType": 6,
+                              "ColumnBindingInfo": {
+                                "TableName": "配件库存表",
+                                "ColumnName": "采购地址",
+                                "GUID": "3b4a78ed-03d7-4ad6-a0cf-fbaa32900aae"
+                              },
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=配件库存表页面!H6"
+                              }
+                            }
+                          ],
+                          "RelationType": 1
+                        },
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "CompareType": 2,
+                          "ColumnBindingInfo": {
+                            "TableName": "配件库存表",
+                            "ColumnName": "库存超出下限",
+                            "GUID": "52922c93-5907-44ec-a58a-ebd8068e444b"
+                          },
+                          "Value": "0"
+                        }
+                      ]
+                    },
+                    "ID": "cfac2b26e2b541099e17bfbc2122ebd4",
+                    "BreakpointIdentity": "17ccedeb-0375-4479-b34b-28fd16171114"
+                  }
+                ],
+                "ID": "645e4ecf-00ee-4247-be05-325f1e34fb6b"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                    "TargetTableName": "配件库存表",
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                      "SubConditions": [
+                        {
+                          "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                          "CompareType": 6,
+                          "ColumnBindingInfo": {
+                            "TableName": "配件库存表",
+                            "ColumnName": "产品名",
+                            "GUID": "813ae265-393a-4dd4-b26a-2bdcd75a1795"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=配件库存表页面!H6"
+                          }
+                        },
+                        {
+                          "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                          "CompareType": 6,
+                          "ColumnBindingInfo": {
+                            "TableName": "配件库存表",
+                            "ColumnName": "配件名",
+                            "GUID": "91d10e6a-89dc-4a5d-9fdc-4695250d8faf"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=配件库存表页面!H6"
+                          }
+                        },
+                        {
+                          "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                          "CompareType": 6,
+                          "ColumnBindingInfo": {
+                            "TableName": "配件库存表",
+                            "ColumnName": "采购地址",
+                            "GUID": "8883cd3a-75ef-40cc-b3b8-449b80ddf2c0"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=配件库存表页面!H6"
+                          }
+                        }
+                      ],
+                      "RelationType": 1
+                    },
+                    "ID": "46d875cfbb9a47baaafb72e53b99af87",
+                    "BreakpointIdentity": "046d4fb7-dfb8-4379-9867-d699c4bc05ef"
+                  }
+                ],
+                "ID": "188a6d15-1635-44ca-86cf-9bc1f6d17026"
+              }
+            ],
+            "BreakpointIdentity": "c27fb320-2db5-489d-8075-1f33787c73f8"
+          }
+        ],
+        "Text": "查询",
+        "TemplateKey": "样式13"
+      }
+    },
+    "8,2": {
+      "ListViewInfo": {
+        "Name": "表格1",
+        "TableName": "配件库存表",
+        "RowIndex": 8,
+        "ColumnIndex": 2,
+        "RowCount": 30,
+        "ColumnCount": 56,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "配件库存表",
+            "ColumnName": "产品名",
+            "GUID": "4765b6ae-0c02-4461-8a94-035b1816cedf"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=配件库存表页面!BH1"
+          }
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "样式1",
+        "ShowColumnHeaderInDesigner": true,
+        "IsRowHeaderVisible": true,
+        "AllowEditInListview": true,
+        "AllowAddNewRow": true,
+        "ShowDeleteButton": true,
+        "AllowDragFill": true,
+        "ColumnOperation": 2,
+        "ShowGridLine": true
+      }
+    },
+    "9,4": {
+      "BindingInfo": {
+        "TableName": "配件库存表",
+        "ColumnName": "产品名",
+        "GUID": "7fbdd8f6-a2a8-4fd0-b2ae-2c806eda05a0"
+      }
+    },
+    "9,12": {
+      "BindingInfo": {
+        "TableName": "配件库存表",
+        "ColumnName": "配件名",
+        "GUID": "0dc0f2ba-a233-4a81-b994-30fe9f328f24"
+      }
+    },
+    "9,21": {
+      "BindingInfo": {
+        "TableName": "配件库存表",
+        "ColumnName": "单位",
+        "GUID": "64272b68-e04e-4fbd-a523-869006bff7b5"
+      }
+    },
+    "9,24": {
+      "BindingInfo": {
+        "TableName": "配件库存表",
+        "ColumnName": "数量",
+        "GUID": "97557259-7546-40fe-893c-ce8c18c4d4d1"
+      }
+    },
+    "9,27": {
+      "BindingInfo": {
+        "TableName": "配件库存表",
+        "ColumnName": "价格",
+        "GUID": "639d86e5-d238-496b-bc95-edea49d71b58"
+      }
+    },
+    "9,31": {
+      "BindingInfo": {
+        "TableName": "配件库存表",
+        "ColumnName": "采购地址",
+        "GUID": "b48369af-933b-41bd-8799-eae5fc140c71"
+      }
+    },
+    "9,39": {
+      "BindingInfo": {
+        "TableName": "配件库存表",
+        "ColumnName": "预警上限",
+        "GUID": "b5ea671a-cb43-4f56-8536-1f1bb352caf5"
+      }
+    },
+    "9,43": {
+      "BindingInfo": {
+        "TableName": "配件库存表",
+        "ColumnName": "预警下限",
+        "GUID": "0e952ad8-3505-467d-8a16-e1d166190965"
+      }
+    },
+    "9,47": {
+      "BindingInfo": {
+        "TableName": "配件库存表",
+        "ColumnName": "图片",
+        "GUID": "753f410d-06ea-4a0a-8307-9a68029f510e",
+        "IsImagePath": true
+      },
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon"
+      }
+    },
+    "9,49": {
+      "BindingInfo": {
+        "TableName": "配件库存表",
+        "ColumnName": "备注",
+        "GUID": "427926e6-29c5-4502-a510-a7fc1216dadf"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Background": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontSize": 30.0,
+        "HorizontalAlignment": 1,
+        "VerticalAlignment": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 15.0,
+        "HorizontalAlignment": 3,
+        "VerticalAlignment": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 2,
+        "Formatter": 4,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Foreground": 5,
+        "Underline": true,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": 0,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": 0,
+        "BorderLeft": null,
+        "BorderRight": 0
+      },
+      {
+        "BorderBottom": 1,
+        "BorderTop": null,
+        "BorderLeft": 0,
+        "BorderRight": 1
+      },
+      {
+        "BorderBottom": 1,
+        "BorderTop": null,
+        "BorderLeft": 1,
+        "BorderRight": 1
+      },
+      {
+        "HorizontalAlignment": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": 1,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 14.67,
+        "HorizontalAlignment": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 14.67,
+        "HorizontalAlignment": 1,
+        "BorderBottom": 1,
+        "BorderTop": null,
+        "BorderLeft": 1,
+        "BorderRight": 1
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 14.67,
+        "BorderBottom": 1,
+        "BorderTop": null,
+        "BorderLeft": 1,
+        "BorderRight": 1
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 14.67,
+        "HorizontalAlignment": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": 1,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": 1
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": 0
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": 0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "#FFFFFF00",
+        "Center",
+        "Body",
+        "Right",
+        "[AUTO]General",
+        "Blue",
+        "DarkGray",
+        "#D8D8D8"
+      ],
+      "Borders": [
+        {
+          "Color": 6
+        },
+        {
+          "Color": 7
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,59": 0,
+      "3,24": 1,
+      "3,38": 2,
+      "3,39": 3,
+      "3,40": 3,
+      "3,41": 3,
+      "3,42": 3,
+      "3,43": 3,
+      "3,44": 3,
+      "5,26": 3,
+      "5,47": 4,
+      "7,6": 5,
+      "8,2": 6,
+      "8,3": 7,
+      "8,4": 7,
+      "8,5": 7,
+      "8,6": 7,
+      "8,7": 7,
+      "8,8": 7,
+      "8,9": 7,
+      "8,10": 7,
+      "8,11": 7,
+      "8,12": 7,
+      "8,13": 7,
+      "8,14": 7,
+      "8,15": 7,
+      "8,16": 7,
+      "8,17": 7,
+      "8,18": 7,
+      "8,19": 7,
+      "8,20": 7,
+      "8,21": 7,
+      "8,22": 7,
+      "8,23": 7,
+      "8,24": 7,
+      "8,25": 7,
+      "8,26": 7,
+      "8,27": 7,
+      "8,28": 7,
+      "8,29": 7,
+      "8,30": 7,
+      "8,31": 7,
+      "8,32": 7,
+      "8,33": 7,
+      "8,34": 7,
+      "8,35": 7,
+      "8,36": 7,
+      "8,37": 7,
+      "8,38": 7,
+      "8,39": 7,
+      "8,40": 7,
+      "8,41": 7,
+      "8,42": 7,
+      "8,43": 7,
+      "8,44": 7,
+      "8,45": 7,
+      "8,46": 7,
+      "8,47": 7,
+      "8,48": 7,
+      "8,49": 7,
+      "8,50": 7,
+      "8,51": 7,
+      "8,52": 7,
+      "8,53": 7,
+      "8,54": 7,
+      "8,55": 7,
+      "8,56": 7,
+      "8,57": 8,
+      "9,2": 9,
+      "9,3": 10,
+      "9,4": 11,
+      "9,12": 12,
+      "9,21": 13,
+      "9,22": 14,
+      "9,23": 14,
+      "9,24": 13,
+      "9,25": 14,
+      "9,26": 14,
+      "9,27": 15,
+      "9,28": 3,
+      "9,29": 3,
+      "9,30": 3,
+      "9,31": 15,
+      "9,32": 3,
+      "9,33": 3,
+      "9,34": 3,
+      "9,35": 3,
+      "9,36": 3,
+      "9,37": 3,
+      "9,38": 3,
+      "9,39": 15,
+      "9,43": 12,
+      "9,47": 3,
+      "9,49": 12,
+      "9,56": 16,
+      "9,57": 17,
+      "10,2": 18,
+      "10,38": 17,
+      "10,57": 17,
+      "11,2": 18,
+      "11,38": 17,
+      "11,57": 17,
+      "12,2": 18,
+      "12,38": 17,
+      "12,57": 17,
+      "13,2": 18,
+      "13,38": 17,
+      "13,57": 17,
+      "14,2": 18,
+      "14,38": 17,
+      "14,57": 17,
+      "15,2": 18,
+      "15,38": 17,
+      "15,57": 17,
+      "16,2": 18,
+      "16,38": 17,
+      "16,57": 17,
+      "17,2": 18,
+      "17,38": 17,
+      "17,57": 17,
+      "18,2": 18,
+      "18,38": 17,
+      "18,57": 17,
+      "19,2": 19,
+      "19,3": 20,
+      "19,4": 20,
+      "19,5": 20,
+      "19,6": 20,
+      "19,7": 20,
+      "19,8": 20,
+      "19,9": 20,
+      "19,10": 20,
+      "19,11": 20,
+      "19,12": 20,
+      "19,13": 20,
+      "19,14": 20,
+      "19,15": 20,
+      "19,16": 20,
+      "19,17": 20,
+      "19,18": 20,
+      "19,19": 20,
+      "19,20": 20,
+      "19,21": 20,
+      "19,22": 20,
+      "19,23": 20,
+      "19,24": 20,
+      "19,25": 20,
+      "19,26": 20,
+      "19,27": 20,
+      "19,28": 20,
+      "19,29": 20,
+      "19,30": 20,
+      "19,31": 20,
+      "19,32": 20,
+      "19,33": 20,
+      "19,34": 20,
+      "19,35": 20,
+      "19,36": 20,
+      "19,37": 20,
+      "19,38": 21,
+      "19,57": 17,
+      "20,2": 18,
+      "20,57": 17,
+      "21,2": 18,
+      "21,57": 17,
+      "22,2": 18,
+      "22,57": 17,
+      "23,2": 18,
+      "23,57": 17,
+      "24,2": 18,
+      "24,57": 17,
+      "25,2": 19,
+      "25,3": 20,
+      "25,4": 20,
+      "25,5": 20,
+      "25,6": 20,
+      "25,7": 20,
+      "25,8": 20,
+      "25,9": 20,
+      "25,10": 20,
+      "25,11": 20,
+      "25,12": 20,
+      "25,13": 20,
+      "25,14": 20,
+      "25,15": 20,
+      "25,16": 20,
+      "25,17": 20,
+      "25,18": 20,
+      "25,19": 20,
+      "25,20": 20,
+      "25,21": 20,
+      "25,22": 20,
+      "25,23": 20,
+      "25,24": 20,
+      "25,25": 20,
+      "25,26": 20,
+      "25,27": 20,
+      "25,28": 20,
+      "25,29": 20,
+      "25,30": 20,
+      "25,31": 20,
+      "25,32": 20,
+      "25,33": 20,
+      "25,34": 20,
+      "25,35": 20,
+      "25,36": 20,
+      "25,37": 20,
+      "25,38": 20,
+      "25,39": 20,
+      "25,40": 20,
+      "25,41": 20,
+      "25,42": 20,
+      "25,43": 20,
+      "25,44": 20,
+      "25,45": 20,
+      "25,46": 20,
+      "25,47": 20,
+      "25,48": 20,
+      "25,49": 20,
+      "25,50": 20,
+      "25,51": 20,
+      "25,52": 20,
+      "25,53": 20,
+      "25,54": 20,
+      "25,55": 20,
+      "25,56": 20,
+      "25,57": 21,
+      "26,2": 18,
+      "26,57": 17,
+      "27,2": 18,
+      "27,57": 17,
+      "28,2": 18,
+      "28,57": 17,
+      "29,2": 18,
+      "29,57": 17,
+      "30,2": 18,
+      "30,57": 17,
+      "31,2": 18,
+      "31,57": 17,
+      "32,2": 18,
+      "32,57": 17,
+      "33,2": 18,
+      "33,57": 17,
+      "34,2": 18,
+      "34,57": 17,
+      "35,2": 18,
+      "35,57": 17,
+      "36,2": 18,
+      "36,57": 17,
+      "37,2": 19,
+      "37,3": 20,
+      "37,4": 20,
+      "37,5": 20,
+      "37,6": 20,
+      "37,7": 20,
+      "37,8": 20,
+      "37,9": 20,
+      "37,10": 20,
+      "37,11": 20,
+      "37,12": 20,
+      "37,13": 20,
+      "37,14": 20,
+      "37,15": 20,
+      "37,16": 20,
+      "37,17": 20,
+      "37,18": 20,
+      "37,19": 20,
+      "37,20": 20,
+      "37,21": 20,
+      "37,22": 20,
+      "37,23": 20,
+      "37,24": 20,
+      "37,25": 20,
+      "37,26": 20,
+      "37,27": 20,
+      "37,28": 20,
+      "37,29": 20,
+      "37,30": 20,
+      "37,31": 20,
+      "37,32": 20,
+      "37,33": 20,
+      "37,34": 20,
+      "37,35": 20,
+      "37,36": 20,
+      "37,37": 20,
+      "37,38": 20,
+      "37,39": 20,
+      "37,40": 20,
+      "37,41": 20,
+      "37,42": 20,
+      "37,43": 20,
+      "37,44": 20,
+      "37,45": 20,
+      "37,46": 20,
+      "37,47": 20,
+      "37,48": 20,
+      "37,49": 20,
+      "37,50": 20,
+      "37,51": 20,
+      "37,52": 20,
+      "37,53": 20,
+      "37,54": 20,
+      "37,55": 20,
+      "37,56": 20,
+      "37,57": 21
+    },
+    "SheetStyle": {
+      "FontFamily": 2,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
+    }
+  },
+  "Spans": [
+    "3,38,1,7",
+    "5,7,1,16",
+    "5,26,1,17",
+    "5,47,1,4",
+    "9,2,1,2",
+    "9,4,1,8",
+    "9,12,1,9",
+    "9,21,1,3",
+    "9,24,1,3",
+    "9,27,1,4",
+    "9,31,1,8",
+    "9,39,1,4",
+    "9,43,1,4",
+    "9,47,1,2",
+    "9,49,1,8",
+    "10,2,28,56",
+    "8,2,1,2",
+    "8,4,1,8",
+    "8,12,1,9",
+    "8,21,1,3",
+    "8,24,1,3",
+    "8,27,1,4",
+    "8,31,1,8",
+    "8,39,1,4",
+    "8,43,1,4",
+    "8,47,1,2",
+    "8,49,1,8"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "MasterPageName": "生产管理母版页",
+    "PageLoadedCommandList": [
+      {
+        "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+        "ConditionAndCommandPairList": [
+          {
+            "Condition": {
+              "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+              "param": {
+                "$type": "Forguncy.Model.IfConditionCurrentUserInfoParam, ServerDesignerCommon",
+                "currentUserProperty": {
+                  "UserProperty": "角色",
+                  "PropertyType": 3
+                }
+              },
+              "value": "财务",
+              "compareType": 11
+            },
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                "PageName": "FGC_401页面",
+                "IgnoreTargetPageCachedCurrentRowInfo": false,
+                "BreakpointIdentity": "45e5ddf0-9d02-40c3-9152-a7c0ec887736"
+              }
+            ],
+            "ID": "8c7f1666-ac3f-4a4a-b842-5d0b163cfac8"
+          }
+        ],
+        "BreakpointIdentity": "1d3a4578-41fb-44a1-a506-1df1f9ba0d8d"
+      }
+    ],
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "PageResponsiveMode": 4
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//G7eQPoF/CZ7xILH4WdfKEjTtO1NK0WsLZ3wwI8RG59fW7uoCTQT8+RV5fSAKzo5Sjf6RL9XRzibCH9rAcOWkSkg/7B3HzrseECpOso5w3V4uRAGxYbjoRENbnPHQqCCOnEOZxezy1V7Be3+z0aYmlXSeRgaRuqw09iIrndSHaQ5Z/xSQD2jK8wCFNchys+eTb6yMXQpTE96Qe46YAqFmIgcY0Ru/YQn0ZnlEt2+Kl45X1KAHKDOtd3WtL11lDqsq1EtK+oVY3UQ+vcVqCav9qKVgNu4VtvelChLKSqYzoBrIzmfgtm4Fu6EeVaD9IxBIFtvMVTlR5enppzvhIH9NV5qUfjefI13Lk2p75BOuYLLlSg8dke7mxXrABZ3/4zq8PFOjqHqYVshvwGnwWOzCqB8+NZoElP3og+NnhlRCd0FolkzcahzwIgXQ/Gwsdyr5/ujPf2xaHvWzx4LTCBM+eVmdErvXhRh/tR8NcMRzXTkwxcwQ3as9hVyTH1ygD9hcjg03m6OQJdtQva8bUN91tXmcurRgifZtRQBHrDcQdHoCpz8nOO+C6LfT7C6UhRIP0svvUEmgYqthZi7cRhVs/bFqKJUYGVpvIpH6+XRpCpLdtFC37Pk0d+cA+m7L2MzOC1RjWfrwbCmxZrB+mnADytWtnVTCFfD9XOS3GidrnH4aFCOAyGPu05An3+sCbwBiMRXlS+bkAn4s9Qggl/3ic/e6YNnmD12lQYIhHn8qivN/OtxDL3aqZD05+jHNMpsGt3JuxkKIX+jO5REySS24578h+gs36Brxmy3DamNOacGVDSbSU6oD2LSq1OjEwSdtruIQ+bMKkd4cqD5rKNzzhTKvVe6epDv0/lDW64FEpfdIp9KtSh9Z+C6+MVxkyOz2lBXfb3MleDvh36Esss4riQ==|920

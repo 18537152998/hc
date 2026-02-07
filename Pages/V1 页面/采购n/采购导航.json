@@ -1,0 +1,1264 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 8.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 8.0
+        }
+      },
+      "15": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      }
+    },
+    "Count": 39
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 16.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 16.0,
+          "Mode": 1
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "30": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "81": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 1
+        }
+      },
+      "82": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 1
+        }
+      },
+      "83": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 1
+        }
+      },
+      "84": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 1
+        }
+      },
+      "85": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 1
+        }
+      },
+      "86": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 1
+        }
+      },
+      "87": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 1
+        }
+      },
+      "89": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 109.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      7,
+      8,
+      9,
+      89
+    ],
+    "Count": 90
+  },
+  "Values": {
+    "1,1": "    郑州恒辰",
+    "1,72": "综合页面",
+    "1,77": "",
+    "1,79": "",
+    "3,0": "%PageName%",
+    "3,7": "%PageName%",
+    "3,89": false,
+    "29,8": "%CurrentUser.账户%"
+  },
+  "Formulas": {
+    "30,8": "ODATA(\"采购记录表/$count?$filter=销售账户 eq \"&IF(ISBLANK(I30),\"null\",\"'\"&I30&\"'\")&\" and 入库日期 ge \"&IF(ISBLANK(TODAY()-2),\"null\",TEXT(TODAY()-2,\"yyyy-MM-ddThh:mm:ssZ\")))",
+    "31,8": "ODATA(\"采购记录表/$count?$filter=入库日期 ge \"&IF(ISBLANK(TODAY()-2),\"null\",TEXT(TODAY()-2,\"yyyy-MM-ddThh:mm:ssZ\")))"
+  },
+  "AttachInfos": {
+    "1,1": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "首页",
+            "BreakpointIdentity": "cb64553c-917f-4eef-8233-0a51b690c3f4"
+          }
+        ],
+        "Text": "    郑州恒辰",
+        "HorizontalAlignment": 0,
+        "ImagePath": ""
+      }
+    },
+    "1,11": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=采购导航!菜单显示"
+                      }
+                    ]
+                  },
+                  "value": "true"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "Location": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=采购导航!A:G"
+                        },
+                        "Value": true
+                      },
+                      {
+                        "Location": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=采购导航!H:J"
+                        },
+                        "Value": false
+                      }
+                    ],
+                    "BreakpointIdentity": "55de852c-02d8-44e0-a6f1-5f19852ebe7a"
+                  },
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=采购导航!菜单显示"
+                        },
+                        "Value": "false"
+                      }
+                    ],
+                    "BreakpointIdentity": "963387ff-5fe4-4bcc-b108-4c95e8f560e2"
+                  }
+                ],
+                "ID": "bdf0b916-4cb0-4dfb-a2b8-6348a2ef471e"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "Location": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=采购导航!A:G"
+                        },
+                        "Value": false
+                      },
+                      {
+                        "Location": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=采购导航!H:J"
+                        },
+                        "Value": true
+                      }
+                    ],
+                    "BreakpointIdentity": "8fce2fb1-036b-4f0f-a6ec-6003a9640fed"
+                  },
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=采购导航!菜单显示"
+                        },
+                        "Value": "true"
+                      }
+                    ],
+                    "BreakpointIdentity": "39644f1e-e877-4cab-9f7c-e2b26a754e42"
+                  }
+                ],
+                "ID": "374c0811-c370-4303-a2e5-bf076c87fef5"
+              }
+            ],
+            "BreakpointIdentity": "7f1df06f-2721-4def-8f33-1b8619c407ea"
+          }
+        ],
+        "ImagePath": "Navigation/131_list_3.svg",
+        "BuiltIn": true,
+        "UseCellForeColor": true
+      }
+    },
+    "1,72": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "ValueFormula": "http://116.205.131.154/sh",
+            "IsOpenInNewTab": true,
+            "BreakpointIdentity": "9570e9c2-b558-4657-a6ba-952bfa58ff84"
+          }
+        ],
+        "Text": "综合页面",
+        "TemplateKey": "样式3"
+      }
+    },
+    "1,77": {
+      "CssName": "pd-3",
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "ValueFormula": "https://hengchen.myds.me:5881/?launchApp=SYNO.SDS.Drive.Application#MyDrive",
+            "IsOpenInNewTab": true,
+            "BreakpointIdentity": "f318db18-42cb-4803-aaa3-aad5c2421b89"
+          }
+        ],
+        "ToolTip": "云盘",
+        "ImagePath": "Arrow/338_upload_5.svg",
+        "BuiltIn": true,
+        "UseCellForeColor": true
+      }
+    },
+    "1,79": {
+      "CssName": "pd-3",
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "ValueFormula": "https://hengchen.myds.me:5881/?launchApp=SYNO.SDS.Drive.Application#MyDrive",
+            "IsOpenInNewTab": true,
+            "BreakpointIdentity": "fe0f3511-ffe3-480d-93eb-a4815a76307b"
+          }
+        ],
+        "ToolTip": "帮助文档",
+        "ImagePath": "Application/125_help_2.svg",
+        "BuiltIn": true,
+        "UseCellForeColor": true
+      }
+    },
+    "1,81": {
+      "CssName": "userView",
+      "CellType": {
+        "$type": "Forguncy.CurrentUserCellType, ServerDesignerCommon",
+        "CellCustomValue": "%CurrentUser%",
+        "ShowDropDown": false,
+        "NavigateSettingWhenLogout": {
+          "NavigateWhenLogoutMode": 1
+        }
+      }
+    },
+    "3,0": {
+      "CellType": {
+        "$type": "ElementUI.NavMenuCellType, ElementUI",
+        "SelectCommand": {
+          "Commands": [],
+          "ParamProperties": {
+            "value": "值",
+            "label": "显示文本",
+            "parentId": "父节点值"
+          }
+        },
+        "ClickCommand": {
+          "Commands": [
+            {
+              "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+              "ConditionAndCommandPairList": [
+                {
+                  "Condition": {
+                    "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                    "param": {
+                      "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                      "cellLocations": [
+                        {
+                          "SerializeProperty": "=采购导航!值"
+                        }
+                      ]
+                    },
+                    "value": "0",
+                    "compareType": 1
+                  },
+                  "CommandList": [
+                    {
+                      "$type": "TabManager.TabOpenCommand, TabManager",
+                      "PageName": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=采购导航!值"
+                      },
+                      "UrlTitle": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=采购导航!显示文本"
+                      },
+                      "UsedMode": 1,
+                      "PassedValueList": [
+                        {}
+                      ],
+                      "BreakpointIdentity": "b3fcc405-11e3-4a16-b06c-18b01399df88"
+                    }
+                  ],
+                  "ID": "6d753f14-5dd7-4ba6-8c4a-0fc3b4f3f1a9"
+                },
+                {
+                  "CommandList": [],
+                  "ID": "a89f116d-31f2-411c-ae26-7fb360b673f1"
+                }
+              ],
+              "BreakpointIdentity": "98416311-710b-4dd3-97b3-8b186f3e563e"
+            }
+          ],
+          "ParamProperties": {
+            "value": "值",
+            "label": "显示文本",
+            "parentId": "父节点值"
+          }
+        },
+        "options": [
+          {
+            "$type": "ElementUI.MenuNode, ElementUI",
+            "value": "0",
+            "label": "采购",
+            "icon": {
+              "Name": "Navigation/181_cart_1.svg",
+              "BuiltIn": true,
+              "Color": "Accent 1 0",
+              "UseCellTypeForeColor": true
+            },
+            "CanVisitRoleList": [
+              "采购",
+              "采购助理"
+            ],
+            "expend": true,
+            "children": [
+              {
+                "value": "订单信息表__2__c897g",
+                "label": "自发货订单",
+                "CanVisitRoleList": [
+                  "采购",
+                  "采购助理"
+                ]
+              },
+              {
+                "value": "FBA备货表.页面cgcw",
+                "label": "FBA订单",
+                "CanVisitRoleList": [
+                  "采购",
+                  "采购助理"
+                ]
+              },
+              {
+                "value": "采购页-cgall",
+                "label": "采购全部可编辑",
+                "CanVisitRoleList": [
+                  "采购",
+                  "采购助理"
+                ]
+              },
+              {
+                "value": "采购页-cgallno",
+                "label": "采购全部-不可编辑",
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ]
+              },
+              {
+                "value": "采购形式发票1_列表页面",
+                "label": "采购形式发票管理",
+                "CanVisitRoleList": [
+                  "采购"
+                ]
+              },
+              {
+                "value": "采购页-cg未",
+                "label": "采购未审核",
+                "CanVisitRoleList": [
+                  "采购",
+                  "采购助理"
+                ]
+              },
+              {
+                "value": "采购开票页",
+                "label": "采购开票页",
+                "CanVisitRoleList": [
+                  "采购",
+                  "采购助理"
+                ]
+              },
+              {
+                "value": "正报信息表_cw",
+                "label": "正报信息表",
+                "CanVisitRoleList": [
+                  "采购"
+                ]
+              },
+              {
+                "value": "国内售后表cg",
+                "label": "国内售后表",
+                "CanVisitRoleList": [
+                  "采购",
+                  "采购助理"
+                ]
+              },
+              {
+                "value": "http://116.205.131.154/sh/%E5%94%AE%E5%90%8E%E8%A1%A8_-CdsfgadsW",
+                "label": "国外售后",
+                "CanVisitRoleList": [
+                  "采购助理",
+                  "采购"
+                ]
+              },
+              {
+                "value": "到货提醒",
+                "label": "到货提醒",
+                "notification": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=IF(采购导航!I30=\"\",采购导航!I32,采购导航!I31)"
+                },
+                "CanVisitRoleList": [
+                  "采购",
+                  "采购助理"
+                ]
+              },
+              {
+                "value": "库存新c@_￥g",
+                "label": "库存表",
+                "CanVisitRoleList": [
+                  "采购"
+                ]
+              },
+              {
+                "value": "采购合同管理cg",
+                "label": "采购合同管理",
+                "CanVisitRoleList": [
+                  "采购",
+                  "采购助理"
+                ]
+              },
+              {
+                "value": "入库记录",
+                "label": "入库记录",
+                "CanVisitRoleList": [
+                  "采购",
+                  "采购助理"
+                ]
+              },
+              {
+                "value": "入库流水",
+                "label": "入库流水",
+                "CanVisitRoleList": [
+                  "采购助理",
+                  "采购"
+                ]
+              }
+            ]
+          },
+          {
+            "$type": "ElementUI.MenuNode, ElementUI",
+            "value": "0",
+            "label": "采购结算",
+            "icon": {
+              "Name": "Application/134_calculator_1.svg",
+              "BuiltIn": true,
+              "Color": "#c0c4cc",
+              "UseCellTypeForeColor": true
+            },
+            "CanVisitRoleList": [
+              "采购",
+              "采购助理"
+            ],
+            "expend": true,
+            "children": [
+              {
+                "value": "日付-银行卡cg",
+                "label": "日付-银行卡",
+                "CanVisitRoleList": [
+                  "采购",
+                  "采购助理"
+                ]
+              },
+              {
+                "value": "日付-支付宝cg",
+                "label": "日付-支付宝",
+                "CanVisitRoleList": [
+                  "采购",
+                  "采购助理"
+                ]
+              },
+              {
+                "value": "日付-pingpongcg",
+                "label": "日付-pingpong",
+                "CanVisitRoleList": [
+                  "采购",
+                  "采购助理"
+                ]
+              },
+              {
+                "value": "账期-支付宝cg",
+                "label": "账期-支付宝",
+                "CanVisitRoleList": [
+                  "采购",
+                  "采购助理"
+                ]
+              },
+              {
+                "value": "账期-pingpongcg子表",
+                "label": "账期-pingpong",
+                "CanVisitRoleList": [
+                  "采购",
+                  "采购助理"
+                ]
+              },
+              {
+                "value": "余额调节表cg",
+                "label": "余额调节",
+                "CanVisitRoleList": [
+                  "采购",
+                  "采购助理"
+                ]
+              }
+            ]
+          },
+          {
+            "$type": "ElementUI.MenuNode, ElementUI",
+            "value": "0",
+            "label": "代采表",
+            "icon": {
+              "Name": "Navigation/250_cart_3.svg",
+              "BuiltIn": true,
+              "Color": "Accent 1 0",
+              "UseCellTypeForeColor": true
+            },
+            "CanVisitRoleList": [
+              "采购"
+            ],
+            "expend": true,
+            "children": [
+              {
+                "value": "代采表页面-zcg",
+                "label": "郑州代杭州采购",
+                "icon": {
+                  "Name": "HC-logo.png"
+                },
+                "CanVisitRoleList": [
+                  "采购",
+                  "采购助理"
+                ]
+              },
+              {
+                "value": "http://114.115.147.188/fh/%E4%BB%A3%E9%87%87%E8%A1%A8%E9%A1%B5%E9%9D%A2-zcg",
+                "label": "杭州代郑州采购",
+                "icon": {
+                  "Name": "丰海.jpg"
+                },
+                "CanVisitRoleList": [
+                  "采购",
+                  "采购助理"
+                ]
+              }
+            ]
+          },
+          {
+            "$type": "ElementUI.MenuNode, ElementUI",
+            "value": "0",
+            "label": "新库存",
+            "CanVisitRoleList": [
+              "采购"
+            ],
+            "children": [
+              {
+                "value": "公司库存cg",
+                "label": "新-公司库存",
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ]
+              },
+              {
+                "value": "账户库存ad",
+                "label": "新-账户库存",
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ]
+              },
+              {
+                "value": "组合商品页",
+                "label": "新-组合商品",
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ]
+              },
+              {
+                "value": "分类管理",
+                "label": "新-类目管理",
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ]
+              },
+              {
+                "value": "辅料管理页",
+                "label": "新-辅料管理",
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ]
+              },
+              {
+                "value": "供应商页面",
+                "label": "新-供应商管理",
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ]
+              }
+            ]
+          },
+          {
+            "$type": "ElementUI.MenuNode, ElementUI",
+            "value": "费用审批表yg",
+            "label": "费用报销",
+            "icon": {
+              "Name": "Application/136_calendar_1.svg",
+              "BuiltIn": true,
+              "Color": "Accent 1 0",
+              "UseCellTypeForeColor": true
+            },
+            "CanVisitRoleList": [
+              "采购",
+              "采购助理"
+            ]
+          },
+          {
+            "$type": "ElementUI.MenuNode, ElementUI",
+            "value": "工资明细二次",
+            "label": "工资明细",
+            "CanVisitRoleList": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "$type": "ElementUI.MenuNode, ElementUI",
+            "value": "0",
+            "label": "物料采购表",
+            "icon": {
+              "Name": "Mobile/419_share_1.svg",
+              "BuiltIn": true,
+              "Color": "#c0c4cc",
+              "UseCellTypeForeColor": true
+            },
+            "CanVisitRoleList": [
+              "采购",
+              "采购助理"
+            ],
+            "children": [
+              {
+                "value": "物料采购表_CZ",
+                "label": "物料全部",
+                "CanVisitRoleList": [
+                  "采购",
+                  "采购助理"
+                ]
+              },
+              {
+                "value": "物料采购表_未cg",
+                "label": "物料未审核",
+                "CanVisitRoleList": [
+                  "采购",
+                  "采购助理"
+                ]
+              },
+              {
+                "value": "物料采购表_审",
+                "label": "物料审核中",
+                "CanVisitRoleList": [
+                  "采购",
+                  "采购助理"
+                ]
+              },
+              {
+                "value": "物料采购表_已",
+                "label": "物料已审核",
+                "CanVisitRoleList": [
+                  "采购",
+                  "采购助理"
+                ]
+              }
+            ]
+          },
+          {
+            "$type": "ElementUI.MenuNode, ElementUI",
+            "value": "供应商管理",
+            "label": "供应商管理及评分",
+            "icon": {
+              "Name": "Navigation/172_user_group_1.svg",
+              "BuiltIn": true,
+              "Color": "#c0c4cc",
+              "UseCellTypeForeColor": true
+            },
+            "CanVisitRoleList": [
+              "采购"
+            ]
+          },
+          {
+            "$type": "ElementUI.MenuNode, ElementUI",
+            "value": "供应商信息库",
+            "label": "供应商信息库",
+            "icon": {
+              "Name": "Mobile/428_address_book_1.svg",
+              "BuiltIn": true,
+              "Color": "#c0c4cc",
+              "UseCellTypeForeColor": true
+            },
+            "CanVisitRoleList": [
+              "采购"
+            ]
+          }
+        ],
+        "bindingOptions": {
+          "$type": "ServerDesignerCommon.Model.BindingDataSourceModel, ServerDesignerCommon",
+          "TableName": "菜单字典表",
+          "CustomColumns": []
+        },
+        "mode": "vertical",
+        "DefaultExpansion": "expand",
+        "menuTrigger": "hover",
+        "theme": "dark",
+        "lastCustomBackgroundColor": "#FF000000",
+        "lastCustomTextColor": "Background 1 0",
+        "lastCustomActiveTextColor": "Accent 3 0",
+        "backgroundColor": "#545c64",
+        "textColor": "#fff",
+        "activeTextColor": "#ffd04b"
+      }
+    },
+    "3,7": {
+      "CellType": {
+        "$type": "ElementUI.NavMenuCellType, ElementUI",
+        "SelectCommand": {
+          "Commands": [],
+          "ParamProperties": {
+            "value": "值",
+            "label": "显示文本",
+            "parentId": "父节点值"
+          }
+        },
+        "ClickCommand": {
+          "Commands": [
+            {
+              "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+              "ConditionAndCommandPairList": [
+                {
+                  "Condition": {
+                    "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                    "param": {
+                      "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                      "cellLocations": [
+                        {
+                          "SerializeProperty": "=采购导航!值"
+                        }
+                      ]
+                    },
+                    "value": "0",
+                    "compareType": 1
+                  },
+                  "CommandList": [
+                    {
+                      "$type": "TabManager.TabOpenCommand, TabManager",
+                      "PageName": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=采购导航!值"
+                      },
+                      "UrlTitle": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=采购导航!显示文本"
+                      },
+                      "UsedMode": 1,
+                      "PassedValueList": [
+                        {}
+                      ],
+                      "BreakpointIdentity": "56e4854f-dd53-4ea2-b34d-ed4a9376c1b4"
+                    }
+                  ],
+                  "ID": "22b592b3-4a18-46ca-b9da-e3a9b3bce7ef"
+                },
+                {
+                  "CommandList": [],
+                  "ID": "f928ff02-de09-40d0-937b-b359c991568a"
+                }
+              ],
+              "BreakpointIdentity": "d29c0f70-fffb-4e92-ab63-7fe4fd57465b"
+            }
+          ],
+          "ParamProperties": {
+            "value": "值",
+            "label": "显示文本",
+            "parentId": "父节点值"
+          }
+        },
+        "options": [
+          {
+            "$type": "ElementUI.MenuNode, ElementUI",
+            "value": "节点1",
+            "label": "节点1",
+            "CanVisitRoleList": [
+              "FGC_Anonymous"
+            ]
+          }
+        ],
+        "bindingOptions": {
+          "$type": "ServerDesignerCommon.Model.BindingDataSourceModel, ServerDesignerCommon",
+          "TableName": "菜单字典表",
+          "CustomColumns": []
+        },
+        "mode": "vertical",
+        "collapse": true,
+        "DefaultExpansion": "expand",
+        "menuTrigger": "hover",
+        "theme": "dark",
+        "lastCustomBackgroundColor": "#FF000000",
+        "lastCustomTextColor": "Background 1 0",
+        "lastCustomActiveTextColor": "Accent 3 0",
+        "backgroundColor": "#545c64",
+        "textColor": "#fff",
+        "activeTextColor": "#ffd04b"
+      }
+    },
+    "3,10": {
+      "CellType": {
+        "$type": "TabManager.TabCellType, TabManager",
+        "TemplateKey": "_RS_Dark_ThemeStyle1"
+      }
+    },
+    "3,89": {
+      "CellComment": {
+        "Comments": "菜单隐藏的标志位"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Background": null,
+        "FontFamily": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": null,
+        "FontFamily": 0,
+        "Foreground": 1,
+        "HorizontalAlignment": 2,
+        "Underline": true,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": null,
+        "FontFamily": 3,
+        "FontWeight": 4,
+        "Foreground": 5,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": null,
+        "FontFamily": 0,
+        "FontSize": 13.333333333333332,
+        "Foreground": 5,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "Background": null,
+        "FontFamily": 0,
+        "Foreground": 5,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": null,
+        "FontFamily": 0,
+        "FontSize": 13.333333333333332,
+        "Foreground": 5,
+        "Formatter": 7,
+        "HorizontalAlignment": 8,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 9,
+        "FontFamily": 0,
+        "HorizontalAlignment": 2,
+        "Underline": true
+      },
+      {
+        "Background": null,
+        "FontFamily": 0,
+        "FontSize": 13.333333333333332,
+        "Foreground": 10,
+        "Formatter": 7,
+        "TextIndent": 5,
+        "HorizontalAlignment": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 9,
+        "FontFamily": 0,
+        "FontSize": 14.666666984558105,
+        "Foreground": 9,
+        "Formatter": 11,
+        "TextIndent": 40,
+        "HorizontalAlignment": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 9,
+        "FontFamily": 12,
+        "FontStretch": 13,
+        "FontStyle": 13,
+        "FontWeight": 13,
+        "Foreground": 9,
+        "Formatter": null,
+        "TextIndent": 0,
+        "HorizontalAlignment": 7,
+        "VerticalAlignment": 14,
+        "WordWrap": false,
+        "Underline": false,
+        "Strikethrough": false,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 12,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "微软雅黑",
+        "Accent 1",
+        "Left",
+        "宋体",
+        "Bold",
+        "Background 1 0",
+        "black",
+        "General",
+        "Right",
+        "#FF545C64",
+        "#FF000000",
+        "[AUTO]General",
+        "Body",
+        "Normal",
+        "Center"
+      ],
+      "Borders": [
+        {
+          "Color": 6
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,0": 0,
+      "0,1": 0,
+      "0,2": 1,
+      "0,3": 1,
+      "0,4": 1,
+      "0,5": 1,
+      "0,6": 1,
+      "1,0": 0,
+      "1,1": 2,
+      "1,2": 0,
+      "1,3": 0,
+      "1,4": 0,
+      "1,5": 0,
+      "1,6": 0,
+      "1,11": 3,
+      "1,77": 4,
+      "1,78": 0,
+      "1,79": 4,
+      "1,80": 0,
+      "1,81": 5,
+      "1,82": 0,
+      "1,83": 0,
+      "1,84": 0,
+      "1,85": 0,
+      "1,86": 0,
+      "1,87": 0,
+      "2,0": 0,
+      "2,1": 0,
+      "2,2": 1,
+      "2,3": 1,
+      "2,4": 1,
+      "2,5": 1,
+      "2,6": 1,
+      "3,0": 6,
+      "3,7": 6,
+      "3,89": 7,
+      "29,8": 8,
+      "30,8": 8,
+      "31,8": 9,
+      "32,8": 10
+    },
+    "SheetStyle": {
+      "FontFamily": 12,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
+    }
+  },
+  "Spans": [
+    "1,1,1,5",
+    "1,81,1,7",
+    "3,0,36,7",
+    "3,7,26,3",
+    "1,72,1,4",
+    "3,10,34,78"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PageLoadedCommandList": [
+      {
+        "$type": "TabManager.TabOpenCommand, TabManager",
+        "PageName": "采购页-cgall",
+        "UrlTitle": "采购全部",
+        "UsedMode": 1,
+        "PassedValueList": [
+          {}
+        ],
+        "BreakpointIdentity": "55813a17-ac3d-4377-92be-0b71c960be0c"
+      },
+      {
+        "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+        "ConditionAndCommandPairList": [
+          {
+            "Condition": {
+              "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+              "param": {
+                "$type": "Forguncy.Model.IfConditionCurrentUserInfoParam, ServerDesignerCommon",
+                "currentUserProperty": {
+                  "UserProperty": "角色",
+                  "PropertyType": 3
+                }
+              },
+              "value": "采购兼职"
+            },
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                "PageName": "采购页-cgall",
+                "BreakpointIdentity": "77917c49-8bfa-406c-a1a8-d0e01d3e11c0"
+              }
+            ],
+            "ID": "c7520369-27fd-4c22-b617-6487480ed84e"
+          }
+        ],
+        "BreakpointIdentity": "ef28a69e-1b2e-43b4-b7f0-4cab7f724548"
+      }
+    ],
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "Pictures": [
+    {
+      "Name": "701492a3-68c5-4b4e-a99b-ced0200cedaa.png",
+      "ForguncyPictureName": "333.jpg",
+      "ForguncyPictureSourceType": 0,
+      "Stretch": 2,
+      "PictureCommands": [
+        {
+          "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+          "PageName": "采购导航",
+          "BreakpointIdentity": "8dac0792-62f1-423f-95c8-ab1ecaa289bd"
+        }
+      ],
+      "Location": "133,0",
+      "Size": "52,38"
+    },
+    {
+      "Name": "eae68b9b-d95e-455a-b0cb-e652a0d39d06.png",
+      "ForguncyPictureName": "logo.png",
+      "ForguncyPictureSourceType": 0,
+      "Stretch": 2,
+      "Location": "126,0",
+      "Size": "73,34"
+    },
+    {
+      "Name": "bf83f132-39b7-48a7-bf4b-eba4b4aadb37.png",
+      "Stretch": 2,
+      "Location": "132,0",
+      "Size": "58,35"
+    }
+  ],
+  "BackgroundPictures": [
+    {
+      "FitToBrowserHeight": true,
+      "Name": "BackgroundPicture0",
+      "DisplayName": "左侧菜单背景",
+      "StyleInfo": {
+        "Fill": "Background 1 0",
+        "Stroke": "black",
+        "StrokeThickness": 0.0
+      },
+      "IsAutomaticStroke": false,
+      "IsAutomaticFill": false,
+      "Size": "132,136"
+    },
+    {
+      "Name": "764f3339-8a86-47d1-a05b-75139810b6e3.png",
+      "DisplayName": "背景图1",
+      "StyleInfo": {
+        "Fill": "Text 1 0"
+      },
+      "IsAutomaticFill": false,
+      "Size": "1881,36"
+    },
+    {
+      "Name": "BackgroundPicture2",
+      "DisplayName": "背景图2",
+      "StyleInfo": {
+        "Fill": "#FF545C64"
+      },
+      "IsAutomaticFill": false,
+      "Location": "132,36",
+      "Size": "60,720"
+    }
+  ],
+  "CustomNames": [
+    {
+      "Name": "菜单显示",
+      "Formula": "采购导航!$CL$4"
+    }
+  ]
+}//sU2Pe0tLw0SpjoEi3mPWdOa4TqsYljkO+OIZxBTt8mRbtWqutepwRdRetBmBehgRI51mF4Ig6tHWg00cadJqIpbY7/aY9QvpAXX40ipJmT7ZSbtqZDogPqz8J3Gnh60tZzRuiuez15n+GiApvRGaKI5sxY7ERWBR4Yku7XfyqKPrg7z2D+/Ksn8K8f2TmV25cw/+Au8mAsTsDitv3Y9E0+myKPBCRuzyDn5catbTwWzzm5YtO36bmAivIW3geNMaDthF3RgQRc8be2nXf2uhtsqhDEqHrVHK9IIcyP1WYzRSg+ta3AnuXJUuMdDt1Ws8XIF+y9frf7dOG8WmIMBpLRxUsnZOhcBoQKEkDi83vTPw1B7OswRse9T75I1cBs3Lu/h/F1oC7OZU92BL3BDnGr9VXiwF6O4JfxvcjNqKURKY8VvBbBIP+v4n4uH3QONGkvYJwnuCjifFGGLSjIxlyEec0+9wWuEpPhpXFl+/slbzO/RugqXbTKlBWN9qwujGJa5SBvRRF0pd16j+ZF91joBAYdBpO/ySRAIXM5zSivK72Gtx8NyOyNjOuHjW0PG8butF2QUfdE1RVuoZCvAAiKf8VTsTdLETeJYPbatHBlPocPhMFr/IrEXlhq9N6z/s5dsgo6OEdPjeJfvsEk1XO/DvVbMXxvdxkn7Z+xMy/qMoS+Ub0qJLPAEfReYnm4cN2JhVJxBElRQiqkEMOeYYYrW594aRGeP8dvVt40OGnsF0K7ekMQAKqjh+P0JXcFEdVqjmxQMHlXWXSSHo/r6rB7pexo0u/yJOylSEwv9N6HiOhp4ZXqZwI0wD6WV9OdUUFcLRcHdbZXNcWu96lRdhpY5giAAWeQ8MPXYp4tSQvBuDpFcPsQm/rWG/qgftbhdJlLQ9DpLTFkNTstxazFDWTg==|920

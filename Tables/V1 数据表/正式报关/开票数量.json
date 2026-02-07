@@ -1,0 +1,28 @@
+{
+  "Name": "开票数量",
+  "Columns": [
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "采购入库码",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Object",
+      "MaxLength": -1,
+      "Name": "产品数量汇总",
+      "ColumnType": "System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    }
+  ],
+  "BuiltInViewInfo": {
+    "ViewName": "开票数量",
+    "SourceViewName": "fgcc737c8acb61745498df5c41fde5",
+    "CreateViewSql": "SELECT\r\n    z.采购入库码,\r\n    SUM(IFNULL(z.产品数量, 0)) AS 产品数量汇总\r\nFROM 正报退税汇总表_子表 z\r\nINNER JOIN 正报退税汇总表 m\r\n    ON m.ID = z.正报退税汇总表_ID\r\nWHERE\r\n    m.状态 = '通知开票'\r\n    AND z.采购入库码 IS NOT NULL\r\n    AND TRIM(z.采购入库码) <> ''\r\nGROUP BY\r\n    z.采购入库码"
+  },
+  "PrimaryKey": [
+    "采购入库码"
+  ],
+  "Indexes": []
+}

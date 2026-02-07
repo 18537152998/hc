@@ -1,0 +1,221 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 7.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 7.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 7.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 7.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 7.0
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      }
+    },
+    "Count": 13,
+    "DefaultSize": 18.0
+  },
+  "Cols": {
+    "Count": 16
+  },
+  "Values": {
+    "1,8": "编号",
+    "3,8": "平台",
+    "5,8": "品名",
+    "7,8": "入库",
+    "9,0": "数量",
+    "9,4": "处理情况",
+    "11,0": "退货单号或标签"
+  },
+  "AttachInfos": {
+    "1,0": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PageName": "图片详情页",
+            "PassValues": [
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='04e90bfa-08f0-4481-a4d1-6238cc9e0596'!A2"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=#REF!"
+                }
+              }
+            ],
+            "IgnoreTargetPageCachedCurrentRowInfo": false,
+            "BreakpointIdentity": "9b41c51e-b146-426a-b578-2a10a31911a5"
+          }
+        ]
+      },
+      "TemplateCellSource": "图片"
+    },
+    "1,10": {
+      "TemplateCellSource": "库存编号"
+    },
+    "3,10": {
+      "TemplateCellSource": "平台"
+    },
+    "5,10": {
+      "TemplateCellSource": "商品名"
+    },
+    "7,10": {
+      "TemplateCellSource": "入库时间"
+    },
+    "9,2": {
+      "TemplateCellSource": "数量"
+    },
+    "9,7": {
+      "TemplateCellSource": "处理情况"
+    },
+    "11,6": {
+      "TemplateCellSource": "退货单号预付标签"
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Formatter": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "yyyy/m/d",
+        "[AUTO]General"
+      ]
+    },
+    "CellStyles": {
+      "1,0": 0,
+      "3,8": 0,
+      "3,9": 0,
+      "3,10": 0,
+      "3,11": 0,
+      "3,12": 0,
+      "3,13": 0,
+      "3,14": 0,
+      "3,15": 0,
+      "4,8": 0,
+      "4,9": 0,
+      "4,10": 0,
+      "4,11": 0,
+      "4,12": 0,
+      "4,13": 0,
+      "4,14": 0,
+      "4,15": 0,
+      "5,8": 0,
+      "5,9": 0,
+      "5,10": 0,
+      "5,11": 0,
+      "5,12": 0,
+      "5,13": 0,
+      "5,14": 0,
+      "5,15": 0,
+      "6,8": 0,
+      "6,9": 0,
+      "6,10": 0,
+      "6,11": 0,
+      "6,12": 0,
+      "6,13": 0,
+      "6,14": 0,
+      "6,15": 0,
+      "7,8": 0,
+      "7,9": 0,
+      "7,10": 1,
+      "7,11": 0,
+      "7,12": 0,
+      "7,13": 0,
+      "7,14": 0,
+      "7,15": 0,
+      "8,8": 0,
+      "8,9": 0,
+      "8,10": 0,
+      "8,11": 0,
+      "8,12": 0,
+      "8,13": 0,
+      "8,14": 0,
+      "8,15": 0,
+      "9,0": 0,
+      "9,1": 0,
+      "9,2": 0,
+      "9,3": 0,
+      "9,4": 0,
+      "9,5": 0,
+      "9,6": 0,
+      "9,7": 0,
+      "11,0": 2
+    },
+    "SheetStyle": {
+      "FontFamily": 0,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
+    }
+  },
+  "Spans": [
+    "1,0,7,8",
+    "1,10,1,6",
+    "3,10,1,6",
+    "5,10,1,6",
+    "7,10,1,6",
+    "9,7,1,9",
+    "11,6,1,10"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.TemplatePage, ServerDesignerCommon",
+    "ParentPageName": "库存表sj",
+    "IsMobilePage": true
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//UsYRMWUSkUlA6S+BZRJunBuQu0h8hW9t22etr8LWxEYp4FXfbK3AxndZTA4AqvalAIZTBZTAeO9tVIDKaKmnDEhsFVYKjMRHHNvq6r3xOByX2AI+lp97se7MX7xQwSGqRRVwOAmyfiPnYQana5L7Zz2S29dQ8lg46wQvD5q+8M/0waG5AyXHLzHrwjvx9iW7I2L9LKYQ3bwjNRzgpXhCqERMQwk+2TBldQVo/I4tFdtwLVakWRVTq4pfqbVxmJAucV31Xo+5SyPjyWOqT2LwhVOZ9vVDiRGYpOaMCjJLMrVTmiMKjvbKiW4VZGPKeCPLhKvAkIuyP6xe/H7p0GZSFKzmOQQcbMp/SPMbgx0GQ2k6hDYO1geC6dd6RteOQo7aW3ufKiwxgeKgXgZLQGNQbzZ/FcifgcmwKptYwzEmNLsVypC4oBUB1E+R2VtLYMs1/iCS/oawug53Q37aJE9glt3eHo8yx4bbZO7lsidQz0PaUDBSYkAuLsFLqSYsR6GHTzh0KHzpS9T2tVJAM8DfFS1yJ0tSaolxDxAjF0IM10LzQyXNoiAks/Ib4Y+TUiOfd6VqvFdrcEdVYU5C0sTiPewhUAUBWSd7IYJfgiatx+WqtNk1yd0893tCoWASgf2ss6ESAtFVFuiGq6EW63MHwNq5jKmHiy6pxtF43ySC3gTG0oq2Vm173NRb8rSLHEmRPI/pbKBhj850dD7zErLnuF7pwaZP6RUTjwiK6hdCQ9A96BoQqUZ2QhtmWC1ru+GxmbwYzSznlWDGeMvuzS1h/L9Gx13jyFedE/xODBJc/3gQyt/TbOz5nAvHWsrUUCNxW2xNSEtX/ZJiFMvQc0tb/+mR1NKKY/G4+NKfdUbMRXZauMs3n2SePYLDhdXlx9NqskdcFfLaEh3D8Q10pQYP1A==|920

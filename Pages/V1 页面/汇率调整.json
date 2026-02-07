@@ -1,0 +1,369 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      }
+    },
+    "Count": 24
+  },
+  "Cols": {
+    "Count": 46
+  },
+  "Values": {
+    "3,44": "x"
+  },
+  "AttachInfos": {
+    "2,1": {
+      "ListViewInfo": {
+        "Name": "表格1",
+        "TableName": "币种汇率",
+        "RowIndex": 2,
+        "ColumnIndex": 1,
+        "RowCount": 19,
+        "ColumnCount": 44,
+        "TopCondition": null,
+        "ListViewStyleName": "样式17",
+        "ShowColumnHeaderInDesigner": true,
+        "IsRowHeaderVisible": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "AllowEditInListview": true,
+        "AllowAddNewRow": true,
+        "ShowDeleteButton": true,
+        "AllowDragFill": true,
+        "IsSingleSelection": true,
+        "RowHeaderContextMenu": {
+          "ContextMenuItems": [
+            {
+              "Text": "插入",
+              "OperationType": 2
+            },
+            {
+              "Text": "删除",
+              "Visible": true,
+              "OperationType": 3
+            },
+            {
+              "Text": "复制并插入",
+              "OperationType": 4
+            }
+          ]
+        }
+      }
+    },
+    "3,3": {
+      "BindingInfo": {
+        "TableName": "币种汇率",
+        "ColumnName": "货币代码",
+        "GUID": "e6f7a98b-e8dd-4c3a-b46e-6983bba18e86"
+      }
+    },
+    "3,10": {
+      "BindingInfo": {
+        "TableName": "币种汇率",
+        "ColumnName": "站点",
+        "GUID": "3b1b6f4f-aa0d-4bc1-a2bc-7584a9c5e87e"
+      }
+    },
+    "3,18": {
+      "BindingInfo": {
+        "TableName": "币种汇率",
+        "ColumnName": "汇率",
+        "GUID": "d91e2a46-9328-45d8-a353-ef249d91c6a3"
+      }
+    },
+    "3,27": {
+      "BindingInfo": {
+        "TableName": "币种汇率",
+        "ColumnName": "FGC_LastModifier",
+        "GUID": "879e66d8-ddec-4075-996c-d45a68304a77"
+      }
+    },
+    "3,33": {
+      "BindingInfo": {
+        "TableName": "币种汇率",
+        "ColumnName": "FGC_LastModifyDate",
+        "GUID": "7f65a28f-b684-437c-8bbd-fc1ca86e3c1d"
+      }
+    },
+    "3,44": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.DeleteRecordCommand, ServerDesignerCommon",
+            "ShowConfirm": true,
+            "ConfirmText": "您确定要删除吗？",
+            "BreakpointIdentity": "e01ee75a-1fff-46e1-9622-7da2f1aa248f"
+          }
+        ],
+        "Text": "x",
+        "ClickMode": 1
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Foreground": 0,
+        "Underline": true,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "HorizontalAlignment": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 2,
+        "HorizontalAlignment": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 18.666666666666664,
+        "FontWeight": 3,
+        "HorizontalAlignment": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 18.666666666666664,
+        "FontWeight": 3,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Foreground": 4,
+        "Formatter": 5,
+        "HorizontalAlignment": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 2,
+        "FontWeight": 6,
+        "HorizontalAlignment": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Foreground": 4,
+        "HorizontalAlignment": 1,
+        "Underline": false,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontWeight": 3,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Formatter": 7,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontSize": 18.666666666666664,
+        "FontWeight": 3,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Blue",
+        "Center",
+        "Body",
+        "Bold",
+        "#FFFF0000",
+        "0.0000",
+        "Normal",
+        "@"
+      ]
+    },
+    "CellStyles": {
+      "0,38": 0,
+      "2,1": 1,
+      "2,10": 2,
+      "2,11": 2,
+      "2,12": 2,
+      "2,13": 2,
+      "2,14": 2,
+      "2,15": 2,
+      "2,16": 3,
+      "2,18": 1,
+      "2,27": 1,
+      "2,31": 1,
+      "2,33": 1,
+      "2,42": 1,
+      "2,43": 1,
+      "2,44": 1,
+      "3,1": 1,
+      "3,3": 4,
+      "3,10": 4,
+      "3,11": 5,
+      "3,12": 5,
+      "3,13": 5,
+      "3,14": 5,
+      "3,15": 5,
+      "3,16": 5,
+      "3,17": 5,
+      "3,18": 6,
+      "3,27": 7,
+      "3,28": 2,
+      "3,29": 2,
+      "3,30": 2,
+      "3,31": 2,
+      "3,32": 2,
+      "3,33": 7,
+      "3,34": 2,
+      "3,35": 2,
+      "3,36": 2,
+      "3,37": 2,
+      "3,38": 2,
+      "3,39": 2,
+      "3,40": 2,
+      "3,41": 2,
+      "3,42": 2,
+      "3,43": 2,
+      "3,44": 8,
+      "5,6": 9,
+      "5,14": 10,
+      "7,6": 9,
+      "9,6": 9,
+      "11,6": 9,
+      "22,14": 2,
+      "22,15": 2,
+      "22,16": 2,
+      "22,17": 2,
+      "22,18": 2,
+      "22,19": 2,
+      "22,20": 2,
+      "22,21": 2,
+      "22,22": 2,
+      "22,23": 2,
+      "22,24": 2,
+      "22,25": 2,
+      "22,26": 2,
+      "22,27": 2,
+      "22,28": 2,
+      "22,29": 2
+    },
+    "RowStyles": {
+      "3": 11
+    },
+    "SheetStyle": {
+      "FontFamily": 2,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
+    }
+  },
+  "Spans": [
+    "2,1,1,2",
+    "2,3,1,7",
+    "2,10,1,8",
+    "2,18,1,9",
+    "2,27,1,6",
+    "2,33,1,11",
+    "3,1,1,2",
+    "3,3,1,7",
+    "3,10,1,8",
+    "3,18,1,9",
+    "3,27,1,6",
+    "3,33,1,11",
+    "4,1,17,44"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "ShouldCheckDirty": true,
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//Kia1mhuOZba4mbvQXeHCwPYRxCFe7Wdr+SgmtZPaabjNrra7/J8Boju7BV7f44kNjBePueWHHQgqMx5pGxsbJHL7zBal3aVpsvPKA54pFhMdkdd6l9tdAtTX9RTPaSynRu1h+Q1sEt/rJDGCNC/hecUyYgwDHNdy7yAQ9ZJ2zB8VOOWeqtoxr7Q1gZ15yeLJxgfYc2LAPJ3qdxgktr7uOk8YA6OyPAXwYqM49EnhEVRsGfMDasybC0EAj/MyZRrhytVOxj3iqE/UoEbVCPBfv10Wly12fVlDR641+MKIQwdwelvHMbf4C6DUnU02gUsc0c4NUozkgGU8/o6NcjtYIbB9pnSQ+ZkrwDLo1Tv2/8WKW7iy87deFBWWCo+tekJUGwM7PMYjTnI6gS1F2R4/Mor7IYRUxVsFTQWdlUYyORS0UQNUJg1qPs1+q77XVEykx7U0A97XFtpBApRpBeOuzCrPJV40Y7kWV9mb/z93LEH31S4WVNfD698tC1goi1AEPynW8bmCr5XxUoqsEvUHjmdlmR+HsNSnu9N90mycdv2YPN4nqSa6fT5RDe/XceC3QQR1yyngXD20BHeHK6zCu6BbwT4qsQVZV2rZyUbuNMjPnkIezf81b/WYm+0jXdP5pXA7ShFl5SC6ytv48UApFnZKFDmZxBd/tfq35YDL5X7Qdg3rQHO4nOYRed3LvHlAwzu2t8krkRS+A1MBPV5qfeBMaj2TjwfNmTtrvq5izKCnAwY9bs1KZyuFYSCTTSWu5KvLreuNRde6TWjyhjldTpynHg40r7zA0RpkBqye/ee32rMb6QpmgTl0ZNd6T5/TUqPyUX3S5uvR2wKlfWLxXJJcZb9P95H94UYvgC1P488byeUxPIbGPc/R0L3zh/9qCfRBKM7VLIUJ2q9DL1WYxg==|920

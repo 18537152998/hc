@@ -1,0 +1,433 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      22
+    ],
+    "Count": 25
+  },
+  "Cols": {
+    "Count": 46
+  },
+  "Values": {
+    "4,6": "币种代码:",
+    "6,6": "货币名称:",
+    "8,6": "记账日期:",
+    "10,6": "IS记账汇率:",
+    "12,6": "BS记账汇率:",
+    "18,14": "取消"
+  },
+  "Formulas": {
+    "6,14": "IFERROR(ODATA(\"货币代码表?$select=货币名称&$filter=货币代码 eq \"&IF(ISBLANK(O5),\"null\",\"'\"&O5&\"'\")),\"\")",
+    "22,2": "O5&O9"
+  },
+  "AttachInfos": {
+    "4,14": {
+      "BindingInfo": {
+        "TableName": "币种汇率",
+        "ColumnName": "币种代码",
+        "GUID": "4b622510-53c0-44e7-b226-9edc0cf46233"
+      },
+      "CellType": {
+        "$type": "ElementUI.SelectCellType, ElementUI",
+        "CommandList": [],
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ],
+        "useBinding": true,
+        "options": [
+          {
+            "value": "黄金糕",
+            "label": "黄金糕"
+          },
+          {
+            "value": "双皮奶",
+            "label": "双皮奶"
+          },
+          {
+            "value": "蚵仔煎",
+            "label": "蚵仔煎"
+          },
+          {
+            "value": "龙须面",
+            "label": "龙须面"
+          },
+          {
+            "value": "北京烤鸭",
+            "label": "北京烤鸭"
+          }
+        ],
+        "bindingOptions": {
+          "$type": "ServerDesignerCommon.Model.BindingDataSourceModel, ServerDesignerCommon",
+          "TableName": "货币代码表",
+          "BindingInfos": [
+            {
+              "GUID": "49689cdf-24c1-4345-b862-fe997d4e16e8",
+              "BindingInfo": {
+                "TableName": "货币代码表",
+                "ColumnName": "货币代码",
+                "GUID": "67c19c8e-120c-4fa2-8a6c-9e78d270f39f"
+              },
+              "ColumnName": "value"
+            },
+            {
+              "GUID": "3ca99889-0bff-4ab9-a710-894191faee61",
+              "BindingInfo": {
+                "TableName": "货币代码表",
+                "ColumnName": "货币代码",
+                "GUID": "4e6e4cb6-804c-480e-96cb-8ce80f347b1c"
+              },
+              "ColumnName": "label"
+            }
+          ],
+          "CustomColumns": []
+        },
+        "placeholder": "请选择或搜索",
+        "noDataText": "无数据",
+        "filterable": true,
+        "filterInServerOptions": {
+          "matchMethod": "contains",
+          "loadingText": "加载中"
+        },
+        "noMatchText": "无匹配数据",
+        "clearable": true
+      }
+    },
+    "6,14": {
+      "BindingInfo": {
+        "TableName": "币种汇率",
+        "ColumnName": "货币名称",
+        "GUID": "858c8ead-1ea4-4588-be80-efdb2b2d6090"
+      }
+    },
+    "8,14": {
+      "BindingInfo": {
+        "TableName": "币种汇率",
+        "ColumnName": "记账日期",
+        "GUID": "35f10345-c9f8-4200-af93-04aa6329f0a4"
+      },
+      "CellType": {
+        "$type": "ElementUI.DatePickerCellType, ElementUI",
+        "CommandList": [],
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ],
+        "type": "month",
+        "startPlaceholder": "开始日期",
+        "rangeSeparator": "至",
+        "endPlaceholder": "结束日期",
+        "firstDayOfWeek": 1,
+        "DefautWeekFormat": "yyyy 第 WW 周"
+      }
+    },
+    "10,14": {
+      "BindingInfo": {
+        "TableName": "币种汇率",
+        "ColumnName": "IS记账汇率",
+        "GUID": "b7a88320-573b-4628-b8b2-cc9d299f480d"
+      },
+      "CellType": {
+        "$type": "Forguncy.NumberCellType, ServerDesignerCommon",
+        "DecimalPlacesNumber": 4,
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "12,14": {
+      "BindingInfo": {
+        "TableName": "币种汇率",
+        "ColumnName": "BS记账汇率",
+        "GUID": "be3ac4d0-902f-479b-9ec9-09f9627714fb"
+      },
+      "CellType": {
+        "$type": "Forguncy.NumberCellType, ServerDesignerCommon",
+        "DecimalPlacesNumber": 4,
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "18,14": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "BreakpointIdentity": "7028ea4e-3a6f-4408-b167-0230806ccfa4"
+          }
+        ],
+        "Text": "取消",
+        "TemplateKey": "_RS_Minor1"
+      }
+    },
+    "18,26": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=币种汇率_增改!AA19"
+                      }
+                    ]
+                  },
+                  "value": "添加"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "币种汇率",
+                    "UpdateType": "add",
+                    "ShowConfirm": false,
+                    "BreakpointIdentity": "0dda1148-fa1c-42ea-aa25-6b2c213efe29"
+                  }
+                ],
+                "ID": "7312f328-a79a-45a3-82a9-927f4523adc3"
+              },
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=币种汇率_增改!AA19"
+                      }
+                    ]
+                  },
+                  "value": "编辑"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "币种汇率",
+                    "ShowConfirm": false,
+                    "BreakpointIdentity": "bc89efad-ac70-44d2-8628-4606b5d130d5"
+                  }
+                ],
+                "ID": "379d8ca8-a0ca-43af-a3b9-8571aa7660bf"
+              }
+            ],
+            "BreakpointIdentity": "128c5396-69bf-42a3-8f1d-9af15d994c9c"
+          },
+          {
+            "$type": "Forguncy.Model.ShareCommand, ServerDesignerCommon",
+            "ShareCommandContainerRefer": {
+              "ShareCommandContainerID": "c6826632-3693-4ace-9428-9b55f54d5dfd"
+            },
+            "Params": [
+              {
+                "ParamReferObject": {
+                  "ParamID": "eea110f4-3b60-43b6-af4e-c1511ab08aa0",
+                  "ShareCommandContainerReferObject": {
+                    "ShareCommandContainerID": "c6826632-3693-4ace-9428-9b55f54d5dfd"
+                  }
+                },
+                "Value": "操作成功！"
+              },
+              {
+                "ParamReferObject": {
+                  "ParamID": "3badc0e1-9000-4a1c-8f39-26cb9e897b5c",
+                  "ShareCommandContainerReferObject": {
+                    "ShareCommandContainerID": "c6826632-3693-4ace-9428-9b55f54d5dfd"
+                  }
+                },
+                "Value": "成功"
+              }
+            ],
+            "ReturnPropertiesTo": [
+              {
+                "ReturnPropertyReferObject": {
+                  "ParamID": "67060bbc-e869-4e69-adae-87c9e87f672d",
+                  "ShareCommandContainerReferObject": {
+                    "ShareCommandContainerID": "c6826632-3693-4ace-9428-9b55f54d5dfd"
+                  }
+                }
+              }
+            ],
+            "BreakpointIdentity": "7e4e9aea-1137-498b-a7d6-ebad16ac4f83"
+          },
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "ReloadData": true,
+            "BreakpointIdentity": "1590ad0a-4819-4a88-a7cf-d95193e3038f"
+          }
+        ],
+        "TemplateKey": "_RS_Main1",
+        "Icon": {
+          "Name": "Application/145_check_2.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "22,2": {
+      "BindingInfo": {
+        "TableName": "币种汇率",
+        "ColumnName": "账期币种",
+        "GUID": "6b92077d-21b2-4466-a047-576c884c0f9a"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontWeight": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 2,
+        "FontFamily": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Bold",
+        "Body",
+        "#FFFFFF00"
+      ]
+    },
+    "CellStyles": {
+      "4,6": 0,
+      "6,6": 0,
+      "8,6": 0,
+      "10,6": 0,
+      "12,6": 0,
+      "17,18": 1,
+      "17,19": 1,
+      "18,14": 1,
+      "18,15": 1,
+      "18,16": 1,
+      "18,17": 1,
+      "18,26": 1,
+      "18,27": 1,
+      "18,28": 1,
+      "18,29": 1,
+      "22,2": 2,
+      "22,3": 1,
+      "22,4": 1,
+      "22,5": 1,
+      "22,6": 1,
+      "22,7": 1
+    },
+    "SheetStyle": {
+      "FontFamily": 1,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
+    }
+  },
+  "Spans": [
+    "4,14,1,23",
+    "6,14,1,23",
+    "8,14,1,23",
+    "10,14,1,23",
+    "12,14,1,23",
+    "18,14,1,4",
+    "18,26,1,4",
+    "22,2,1,6"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "ShouldCheckDirty": true,
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//UgifPAu9gctrhf4Yom7T2wbAIuOmlFnWuWu3x7KGIliu2WHUJcwTFXE4DYIjo4PVYX8TNn/vXsBFmhfmQ2nlKXQlDXSyjB4fJd+ZQVlTYBM7TGZ6qg+x/8HaHAlz7fv5YzuIVCy52YsT+2cMNv4+LdNBg7UuP48O5nY2xD2VAGtVMl6Ueyn5ZzPqY1ZjAVaBQx8Nwf0MwOBmPBQ+c8S8BoG/MwhVMRqmbAlmW/tEJ2j6hiOTnTsbdkJSXpRVuZ6etGOjWnuC70Z6Y9j78Yej9n8JNZcfFWMIEdKI/pU5DTra5ywwu68mwGsiR/81/fLbY3E1UJ+Veb83JNUPUaT2Qk3vGNiHr+Gt6ZV8vSWwAJJYpl32QNQ29mkUrloDCa70JrS8QN2jFyDwnsOxVBL1XsosY1gcSb7sVlFFIn9Rq0qQxJq5rS9uxYYjpvKRHhV6feKFyHuJCJQerGEVUSHc7aOwAEIEoAcuM6AR4QdJrl4my1bLfQyXkR5jIUFGuhHWNAl7exew8T5Mbb6vvaGtXe+OKUhxodV2RlBO7GMdmbZgau3LxeaqHYPAxR8B9aQ5d3pYPP+RMbRVsnpRsTXLMaDX70IrV6tslWi0b7AbjStUYua8ZKrkWboCic+YhBZarzzUjHCw6fQnwFyQQFj3hTU034Q9+PB8t3JyEWTM3AYVi5+U36XqzZMkcISx+HyOkURxEOgABnuf+hR9TYtw0XyMFeMyijtkOznq4izIcmJJmbyDT4i+Mb0KtOWWaj3PQqUu2s5Lz24ohyummNi7YxE1SzRt5/CDMxo0P21tanxncMvbJ+sHqvgnDtBoR9wo4L3g2lWnMx/YRVah89B4ASyFFEwos16QdifP3FMM8QLtxAWvUFtUNXHiNxl6eWBtW7l4nEQnxRcLuPP/M0VRLQ==|920

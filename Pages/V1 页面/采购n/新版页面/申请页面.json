@@ -1,0 +1,913 @@
+{
+  "Rows": {
+    "InLogicalVisibleIndexes": [
+      26,
+      27,
+      28
+    ],
+    "Count": 29
+  },
+  "Cols": {
+    "Count": 21
+  },
+  "Values": {
+    "0,0": "货款登记",
+    "6,4": "号结余",
+    "11,12": "申请",
+    "15,3": "银行卡账户",
+    "15,14": "%CurrentUser.UserName%",
+    "19,3": "支付宝账户",
+    "19,14": "输入账户",
+    "23,3": "提交",
+    "23,13": "关闭"
+  },
+  "Formulas": {
+    "6,3": "DAY(A27)",
+    "11,3": "TODAY()",
+    "26,0": "TODAY()-1",
+    "27,9": "E28"
+  },
+  "AttachInfos": {
+    "6,8": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "样式1",
+        "WaterMark": "请输入金额"
+      }
+    },
+    "11,3": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "样式1",
+        "ReadOnly": true
+      }
+    },
+    "15,8": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "SelectOnly": false,
+        "TemplateKey": "样式1",
+        "WaterMark": "请输入金额",
+        "Items": [
+          {
+            "Value": "0",
+            "DisplayValue": "0"
+          },
+          {
+            "Value": "10000",
+            "DisplayValue": "10000"
+          },
+          {
+            "Value": "20000",
+            "DisplayValue": "20000"
+          },
+          {
+            "Value": "30000",
+            "DisplayValue": "30000"
+          }
+        ]
+      }
+    },
+    "15,14": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "TemplateKey": "样式1",
+        "Items": [
+          {
+            "Value": "刘丽娟",
+            "DisplayValue": "刘丽娟"
+          },
+          {
+            "Value": "白晓婷",
+            "DisplayValue": "白晓婷"
+          },
+          {
+            "Value": "刘佳琦",
+            "DisplayValue": "刘佳琦"
+          }
+        ],
+        "CellDefaultValue": "%CurrentUser.UserName%"
+      }
+    },
+    "19,8": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "SelectOnly": false,
+        "TemplateKey": "样式1",
+        "WaterMark": "请输入金额",
+        "Items": [
+          {
+            "Value": "0",
+            "DisplayValue": "0"
+          },
+          {
+            "Value": "10000",
+            "DisplayValue": "10000"
+          },
+          {
+            "Value": "20000",
+            "DisplayValue": "20000"
+          },
+          {
+            "Value": "30000",
+            "DisplayValue": "30000"
+          }
+        ]
+      }
+    },
+    "19,14": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "TemplateKey": "样式1",
+        "WaterMark": "选择账户",
+        "Items": [
+          {
+            "Value": "支付宝-A",
+            "DisplayValue": "支付宝-A"
+          },
+          {
+            "Value": "支付宝-B",
+            "DisplayValue": "支付宝-B"
+          },
+          {
+            "Value": "支付宝-C",
+            "DisplayValue": "支付宝-C"
+          }
+        ],
+        "CellDefaultValue": "输入账户"
+      }
+    },
+    "23,3": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=申请页面!J28"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=申请页面!E28"
+                }
+              }
+            ],
+            "BreakpointIdentity": "1b0285e3-deaf-4155-8a3c-ae9473f10974"
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "SubConditions": [
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=申请页面!I7"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=申请页面!I16"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=申请页面!O16"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=申请页面!I20"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=申请页面!O20"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    }
+                  ],
+                  "RelationType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "请补充数据！",
+                    "BreakpointIdentity": "0e62b598-93a9-4c2e-a77d-a3c8231b93fa"
+                  }
+                ],
+                "ID": "e54b2147-e666-4743-bb29-a135f6283228"
+              },
+              {
+                "Condition": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "SubConditions": [
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=申请页面!J28"
+                          }
+                        ]
+                      },
+                      "value": "0",
+                      "compareType": 1
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=申请页面!J28"
+                          }
+                        ]
+                      },
+                      "value": "%Null%",
+                      "compareType": 1
+                    }
+                  ]
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "今日已申请，请勿重复提交！",
+                    "BreakpointIdentity": "6215c67f-b5f8-4916-9925-b2bfd64a2b13"
+                  }
+                ],
+                "ID": "ab698a34-9aea-4403-aa6b-d60f2b822b96"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "日付银行卡",
+                    "UpdateType": "add",
+                    "ShowConfirm": false,
+                    "UpdateBindingValues": [
+                      {
+                        "BindingInfo": {
+                          "TableName": "日付银行卡",
+                          "ColumnName": "日期",
+                          "GUID": "59adc97b-d389-4320-add9-40c26334fe01"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=申请页面!D12"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "日付银行卡",
+                          "ColumnName": "收入",
+                          "GUID": "adfac514-cdec-4d08-8a5f-6978dbc4ee84"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=申请页面!I16"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "日付银行卡",
+                          "ColumnName": "采购员",
+                          "GUID": "e11d6b5e-f681-4fa2-a6a4-3d4fbf2d2353"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=申请页面!O16"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "日付银行卡",
+                          "ColumnName": "每日结余",
+                          "GUID": "fd39b0ba-3e43-4179-98c3-1328e9a1bcd2"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=申请页面!I7"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "日付银行卡",
+                          "ColumnName": "商品名",
+                          "GUID": "cf80f829-c0b6-4fb6-97f4-85abc5956cab"
+                        },
+                        "Value": "货款申请-采购"
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "日付银行卡",
+                          "ColumnName": "发货方式",
+                          "GUID": "2c96cddd-d3d8-4a96-928a-1d8517ba2583"
+                        },
+                        "Value": "货款申请"
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "日付银行卡",
+                          "ColumnName": "供应商",
+                          "GUID": "0ef07a80-dd97-4688-9757-171bc5046b54"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=申请页面!O16"
+                        }
+                      }
+                    ],
+                    "ParamNameToSaveNewRowValue": "NewRow",
+                    "BreakpointIdentity": "fa24c0e8-4c46-45b9-841a-ea6ba319ca09"
+                  },
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "日付支付宝",
+                    "UpdateType": "add",
+                    "ShowConfirm": false,
+                    "UpdateBindingValues": [
+                      {
+                        "BindingInfo": {
+                          "TableName": "日付支付宝",
+                          "ColumnName": "日期",
+                          "GUID": "fe1ea349-4db6-42cb-975e-11155c3dd59b"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=申请页面!D12"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "日付支付宝",
+                          "ColumnName": "收入",
+                          "GUID": "2dff02d6-a7a1-4fb0-84ab-8a789ddff9a4"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=申请页面!I20"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "日付支付宝",
+                          "ColumnName": "供应商",
+                          "GUID": "84a32624-2177-4be3-8fc6-f9309b6891a4"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=申请页面!O20"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "日付支付宝",
+                          "ColumnName": "商品名",
+                          "GUID": "e1a874fa-e563-4d79-93dd-aac97a2897e5"
+                        },
+                        "Value": "货款申请-采购"
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "日付支付宝",
+                          "ColumnName": "采购员",
+                          "GUID": "d5496b0f-ff56-4227-a338-11305af3f809"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=申请页面!O16"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "日付支付宝",
+                          "ColumnName": "发货方式",
+                          "GUID": "4a2fd077-dc92-4ec7-98da-9fd898e4e58c"
+                        },
+                        "Value": "货款申请"
+                      }
+                    ],
+                    "ParamNameToSaveNewRowValue": "NewRow",
+                    "BreakpointIdentity": "a7e15b5c-f929-45c1-8f48-04a532de20de"
+                  },
+                  {
+                    "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+                    "ReloadData": true,
+                    "BreakpointIdentity": "b5b3f459-4828-4af1-abd0-73315403ac26"
+                  }
+                ],
+                "ID": "811b29f2-c5be-496d-9a5f-5b5c9c20a570"
+              }
+            ],
+            "BreakpointIdentity": "5b0ead61-c75f-4e5f-aa6f-3144f200fdab"
+          }
+        ],
+        "Text": "提交",
+        "TemplateKey": "样式8"
+      }
+    },
+    "23,13": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "BreakpointIdentity": "acc63f76-7146-4880-b1bd-a70e8a7a3eef"
+          }
+        ],
+        "Text": "关闭",
+        "TemplateKey": "样式8"
+      }
+    },
+    "26,1": {
+      "ListViewInfo": {
+        "Name": "表格1",
+        "TableName": "日付银行卡",
+        "RowIndex": 26,
+        "ColumnIndex": 1,
+        "RowCount": 3,
+        "ColumnCount": 8,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "SubConditions": [
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "日付银行卡",
+                "ColumnName": "日期",
+                "GUID": "090fec7c-6451-400b-8d37-fa0d230f30cc"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=申请页面!D12"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "日付银行卡",
+                "ColumnName": "采购员",
+                "GUID": "efba20ce-9486-47a2-923e-5c42b4943a85"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=申请页面!O16"
+              }
+            }
+          ]
+        },
+        "OrderByCondition": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "日付银行卡",
+                "ColumnName": "收入",
+                "GUID": "5bcfbe48-59b9-42f3-9050-46c709ad4443"
+              },
+              "Order": 1
+            }
+          ]
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "样式1",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2,
+        "ShowGridLine": true
+      }
+    },
+    "27,1": {
+      "BindingInfo": {
+        "TableName": "日付银行卡",
+        "ColumnName": "日期",
+        "GUID": "f271814f-c1f3-412c-bcb9-319a52b2eca4"
+      }
+    },
+    "27,4": {
+      "BindingInfo": {
+        "TableName": "日付银行卡",
+        "ColumnName": "收入",
+        "GUID": "b90639f6-2abf-4b58-867c-3a9c63e4bb2b"
+      }
+    },
+    "27,7": {
+      "BindingInfo": {
+        "TableName": "日付银行卡",
+        "ColumnName": "采购员",
+        "GUID": "424e5286-e4f6-4c37-a478-0e0865817540"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontSize": 16.0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontSize": 13.333333333333332,
+        "Foreground": 0,
+        "Formatter": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 3,
+        "FontSize": 18.666666666666664,
+        "Foreground": 4,
+        "Formatter": 5,
+        "HorizontalAlignment": 6,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 3,
+        "FontFamily": 7,
+        "FontSize": 18.666666666666664,
+        "Foreground": 4,
+        "Formatter": 1,
+        "HorizontalAlignment": 8,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 7,
+        "Formatter": 9,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 7,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 7,
+        "FontSize": 13.333333333333332,
+        "Foreground": 0,
+        "Formatter": 10,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 7,
+        "FontSize": 12.0,
+        "FontWeight": 11,
+        "Foreground": 0,
+        "Formatter": 9,
+        "HorizontalAlignment": 12,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 13,
+        "Foreground": 14,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 7,
+        "FontSize": 12.0,
+        "Foreground": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontSize": 16.0,
+        "Foreground": 4,
+        "HorizontalAlignment": 12,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 7,
+        "FontSize": 16.0,
+        "Foreground": 4,
+        "HorizontalAlignment": 12,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 7,
+        "FontSize": 14.67,
+        "BorderBottom": null,
+        "BorderTop": 1,
+        "BorderLeft": 1,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 7,
+        "FontSize": 14.67,
+        "BorderBottom": null,
+        "BorderTop": 1,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 7,
+        "FontSize": 14.67,
+        "BorderBottom": null,
+        "BorderTop": 1,
+        "BorderLeft": null,
+        "BorderRight": 1
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": 1,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": 1
+      },
+      {
+        "BorderBottom": 1,
+        "BorderTop": null,
+        "BorderLeft": 1,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": 1,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": 1,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": 1
+      },
+      {
+        "Background": 3,
+        "FontFamily": 16,
+        "FontSize": 32.0,
+        "Foreground": 4,
+        "HorizontalAlignment": 12,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "#FF000000",
+        "@",
+        "black",
+        "Accent 1 0",
+        "Background 1 0",
+        "m\"月\"d\"日\"",
+        "Right",
+        "Body",
+        "Left",
+        "[AUTO]General",
+        "0.00",
+        "Bold",
+        "Center",
+        "#FFFFFF00",
+        "#FFFF0000",
+        "DarkGray",
+        "黑体"
+      ],
+      "Borders": [
+        {
+          "Style": 6,
+          "Color": 2
+        },
+        {
+          "Color": 15
+        }
+      ]
+    },
+    "CellStyles": {
+      "6,3": 0,
+      "6,4": 0,
+      "6,8": 1,
+      "7,8": 2,
+      "7,9": 2,
+      "7,10": 2,
+      "7,11": 2,
+      "7,12": 2,
+      "7,13": 2,
+      "7,14": 2,
+      "7,15": 2,
+      "11,3": 3,
+      "11,12": 4,
+      "15,3": 5,
+      "15,4": 6,
+      "15,5": 6,
+      "15,6": 6,
+      "15,7": 6,
+      "15,8": 7,
+      "15,13": 6,
+      "15,14": 8,
+      "16,3": 6,
+      "16,4": 6,
+      "16,5": 6,
+      "16,6": 6,
+      "16,7": 6,
+      "16,8": 2,
+      "16,9": 2,
+      "16,10": 2,
+      "16,11": 2,
+      "16,12": 2,
+      "16,13": 6,
+      "16,14": 2,
+      "16,15": 2,
+      "16,16": 2,
+      "16,17": 2,
+      "16,18": 9,
+      "16,19": 9,
+      "16,20": 9,
+      "19,3": 5,
+      "19,4": 6,
+      "19,5": 6,
+      "19,6": 6,
+      "19,7": 6,
+      "19,8": 7,
+      "19,13": 6,
+      "19,14": 10,
+      "20,3": 6,
+      "20,4": 6,
+      "20,5": 6,
+      "20,6": 6,
+      "20,7": 6,
+      "20,8": 2,
+      "20,9": 2,
+      "20,10": 2,
+      "20,11": 2,
+      "20,12": 2,
+      "20,13": 6,
+      "20,14": 2,
+      "20,15": 2,
+      "20,16": 2,
+      "20,17": 2,
+      "23,3": 11,
+      "23,13": 12,
+      "26,1": 13,
+      "26,2": 14,
+      "26,3": 14,
+      "26,4": 14,
+      "26,5": 14,
+      "26,6": 14,
+      "26,7": 14,
+      "26,8": 15,
+      "27,1": 16,
+      "27,4": 6,
+      "27,8": 17,
+      "28,1": 18,
+      "28,2": 19,
+      "28,3": 20,
+      "28,4": 19,
+      "28,5": 19,
+      "28,6": 20,
+      "28,7": 19,
+      "28,8": 20
+    },
+    "RowStyles": {
+      "0": 21,
+      "1": 21,
+      "2": 21,
+      "3": 21
+    },
+    "SheetStyle": {
+      "FontFamily": 7,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
+    }
+  },
+  "Spans": [
+    "0,0,4,21",
+    "6,3,2,1",
+    "6,4,2,3",
+    "6,8,2,8",
+    "11,3,2,9",
+    "11,12,2,6",
+    "15,3,2,4",
+    "15,8,2,5",
+    "15,14,2,4",
+    "19,3,2,4",
+    "19,8,2,5",
+    "19,14,2,4",
+    "23,3,2,5",
+    "23,13,2,5",
+    "27,1,1,3",
+    "27,4,1,3",
+    "27,7,1,2",
+    "28,1,1,8",
+    "26,1,1,3",
+    "26,4,1,3",
+    "26,7,1,2"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//g2kouav7JmqEC9LfekKgjVEY/zIHjxbcEao8gTpg/oyX+nsFNU1+2mU17XYNcqzdp3+toDrv7D+VhW9gZTxw5Ml2jtzh8+fj0cyYrsE64ygCT29umuJ/16IkgcaDe1lq0Mf5teX/uRSSjVybsuZWe52266bBxChaK6Dhf4v9XWzd1S+e1k/aoxHfTOIBKmsvaIRni6jhVqfFFmAz5ZYV/d/ekuU0+0fKW+vvWnstWleTqpkD1skcjjSM0RfUvj+k16HYSJIyXXltzibA74ZtAq4rXLfywippXdNpvOWXSZ4GpMPDUC6zklwkZllS7t9Q1Dqja/SYxbx/+0dl2EWPZ8bHtL/GhKKBW7xx4qZ3uEgNc85rkXkUBP106PdNOF+M2PdH++D0w9oWYRxO1LyzmD94BM1MjeKxrvjps/GYZr9A7TR9N31HPqsUSDUMM4EpiRUHi7uJp4McxEDgpa3XfSyqDvKWb6clwzHkFFI5ZL/Posqtxoq8sa+k7PO9a9kPH8QZ6uTf96q7SlEE7YyFvJx5bRG1xsRHIFkt69Q0YAl3/ryaKKHqWFbqHNj8eIVxBRIwf4qVnyFWBuECcSjPT9B4j4Ow1CT65kI6vCI9n+v6z9DLpmxWX/jyXmrfg5fMApRk982jqROr8RD2KMaua/uYyv4LLhEPZsEzJYRQHAsB9Al2MESR/Aff1PCvdwzM/Y+7OcBfUyLJD0B80a93GIaB01JH3PA/KVKKnZYyClr4J18Cau9l2psBlHzRWGoAIlC6V5g1Kk7OlWnDXMcIc4p0TbGQnGGHILUHHxAoz/I442DtsSPk6gERM/G/CTucllx7re9p/Afz5SvkmEqhYN5jyjEW6rwaRT3O43AP/fHWOkpPuZgOX/M709MDyiITDa3QlYqb9zovpGkVAxN41g==|920

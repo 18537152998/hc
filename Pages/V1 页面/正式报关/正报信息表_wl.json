@@ -1,0 +1,1047 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 16.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 16.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 40.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 42.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      }
+    },
+    "Count": 27,
+    "DefaultSize": 32.0
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 41.0
+        }
+      },
+      "105": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 32.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      }
+    },
+    "Count": 107,
+    "DefaultSize": 32.0
+  },
+  "Values": {
+    "1,9": "刷新",
+    "1,15": "正式报关信息表",
+    "1,30": "选择列",
+    "4,3": "🔍",
+    "4,104": "删除",
+    "25,55": "全部加载"
+  },
+  "AttachInfos": {
+    "0,0": {
+      "BindingInfo": {
+        "TableName": "正报信息表",
+        "ColumnName": "识别码",
+        "GUID": "e1592717-ea3e-4f91-8f40-be4401caebb1",
+        "IsImagePath": true,
+        "RelationBinding": {
+          "RelatedTable": "库存表",
+          "RelatedColumn": "识别码",
+          "DisplayColumn": "图片"
+        }
+      },
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon"
+      }
+    },
+    "1,2": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "Icon": {
+          "Name": "Application/047_search_8.svg",
+          "BuiltIn": true,
+          "Color": "Text 1 70"
+        },
+        "TemplateKey": "_RS_NewLittleRoundCorner",
+        "WaterMark": "商品名/供应商/sku",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "正报信息表",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "SubConditions": [
+                {
+                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 6,
+                  "ColumnBindingInfo": {
+                    "TableName": "正报信息表",
+                    "ColumnName": "识别码",
+                    "GUID": "0c2910ed-ea17-4fc3-bab2-056eec66ccdf",
+                    "RelationBinding": {
+                      "RelatedTable": "库存表",
+                      "RelatedColumn": "识别码",
+                      "DisplayColumn": "商品名"
+                    }
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=正报信息表_wl!C2"
+                  }
+                },
+                {
+                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 6,
+                  "ColumnBindingInfo": {
+                    "TableName": "正报信息表",
+                    "ColumnName": "识别码",
+                    "GUID": "6fadaccd-9b5a-4dc7-8191-e52edeb0738f",
+                    "RelationBinding": {
+                      "RelatedTable": "库存表",
+                      "RelatedColumn": "识别码",
+                      "DisplayColumn": "SKU"
+                    }
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=正报信息表_wl!C2"
+                  }
+                },
+                {
+                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 6,
+                  "ColumnBindingInfo": {
+                    "TableName": "正报信息表",
+                    "ColumnName": "供应商全称",
+                    "GUID": "80c8ddc8-515b-4f43-95da-239a57fc6765"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=正报信息表_wl!C2"
+                  }
+                }
+              ],
+              "RelationType": 1
+            },
+            "ID": "f1ffcb4c1e9e436383935f20716e02c1",
+            "BreakpointIdentity": "f70a80cb-f7ac-4294-81a2-1340b0f7b209"
+          }
+        ]
+      }
+    },
+    "1,9": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+            "ListviewName": "表格1",
+            "UpdateType": 6,
+            "UpdateListviewCommandRunTimeMethodSetting": {
+              "MethodName": "Reload",
+              "ParameterValues": {
+                "clearFilter": false,
+                "clearSort": false,
+                "clearRuntimeQueryConditions": false
+              }
+            },
+            "BreakpointIdentity": "4747e1ea-4a92-4afb-9373-2c78a795513d"
+          }
+        ],
+        "Text": "刷新",
+        "TemplateKey": "_RS_Main1"
+      }
+    },
+    "1,30": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ColumnOptionsCommand, ServerDesignerCommon",
+            "ListviewName": "表格1",
+            "Columns": [],
+            "ID": "7a2835105f684cbbabc5e13fedbb37e9",
+            "BreakpointIdentity": "4b3c673a-9b96-4b86-b005-560fe4537eb9"
+          }
+        ],
+        "Text": "选择列",
+        "TemplateKey": "样式7"
+      }
+    },
+    "3,1": {
+      "ListViewInfo": {
+        "Name": "表格1",
+        "TableName": "正报信息表",
+        "RowIndex": 3,
+        "ColumnIndex": 1,
+        "RowCount": 22,
+        "ColumnCount": 105,
+        "TopCondition": null,
+        "ListViewStyleName": "样式15",
+        "ShowColumnHeaderInDesigner": true,
+        "IsRowHeaderVisible": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "AllowEditInListview": true,
+        "AllowAddNewRow": true,
+        "AllowDragFill": true,
+        "ColumnOperation": 2,
+        "CacheListviewStatus": true,
+        "AllowDragHeaderToMoveColumn": true
+      }
+    },
+    "4,2": {
+      "NameUsedInJavaScript": "图片",
+      "BindingInfo": {
+        "TableName": "正报信息表",
+        "ColumnName": "识别码",
+        "GUID": "de653907-1058-4aee-8436-58eaaedf740e",
+        "IsImagePath": true,
+        "RelationBinding": {
+          "RelatedTable": "库存表",
+          "RelatedColumn": "识别码",
+          "DisplayColumn": "图片"
+        }
+      },
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_Small",
+        "BuiltIn": true,
+        "UseCellForeColor": true
+      }
+    },
+    "4,3": {
+      "NameUsedInJavaScript": "__",
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "ImageViewerCommand.ImageViewerCommand, ImageViewerCommand",
+            "TargetCell": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=正报信息表_wl!A1"
+            },
+            "BreakpointIdentity": "8a03df79-8488-4f62-ac18-207d9e8b6f63"
+          }
+        ],
+        "Text": "🔍",
+        "ClickMode": 1
+      }
+    },
+    "4,4": {
+      "NameUsedInJavaScript": "商品名",
+      "BindingInfo": {
+        "TableName": "正报信息表",
+        "ColumnName": "识别码",
+        "GUID": "aefe227c-3c2a-4200-9347-0a2566ddb304",
+        "RelationBinding": {
+          "RelatedTable": "库存表",
+          "RelatedColumn": "识别码",
+          "DisplayColumn": "商品名"
+        }
+      }
+    },
+    "4,9": {
+      "NameUsedInJavaScript": "账户",
+      "BindingInfo": {
+        "TableName": "正报信息表",
+        "ColumnName": "识别码",
+        "GUID": "fdfe33e0-2b41-4683-9f90-55280ea569ca",
+        "RelationBinding": {
+          "RelatedTable": "库存表",
+          "RelatedColumn": "识别码",
+          "DisplayColumn": "账户"
+        }
+      }
+    },
+    "4,12": {
+      "NameUsedInJavaScript": "站点",
+      "BindingInfo": {
+        "TableName": "正报信息表",
+        "ColumnName": "识别码",
+        "GUID": "b71a5c26-59f3-4d40-9c5f-fc66290829fe",
+        "RelationBinding": {
+          "RelatedTable": "库存表",
+          "RelatedColumn": "识别码",
+          "DisplayColumn": "站点"
+        }
+      }
+    },
+    "4,15": {
+      "NameUsedInJavaScript": "SKU",
+      "BindingInfo": {
+        "TableName": "正报信息表",
+        "ColumnName": "识别码",
+        "GUID": "e2c1ee87-1a40-4dbb-b261-45d4f307d4cb",
+        "RelationBinding": {
+          "RelatedTable": "库存表",
+          "RelatedColumn": "识别码",
+          "DisplayColumn": "SKU"
+        }
+      }
+    },
+    "4,19": {
+      "NameUsedInJavaScript": "总成本",
+      "BindingInfo": {
+        "TableName": "正报信息表",
+        "ColumnName": "识别码",
+        "GUID": "9653a2ae-ea30-4993-8c7b-b7f6116be539",
+        "RelationBinding": {
+          "RelatedTable": "库存表",
+          "RelatedColumn": "识别码",
+          "DisplayColumn": "总成本"
+        }
+      }
+    },
+    "4,22": {
+      "NameUsedInJavaScript": "开票品名",
+      "BindingInfo": {
+        "TableName": "正报信息表",
+        "ColumnName": "开票品名",
+        "GUID": "06cf9559-a5c6-41b4-8aef-32d1f138bb2b"
+      }
+    },
+    "4,25": {
+      "NameUsedInJavaScript": "开票大类",
+      "BindingInfo": {
+        "TableName": "正报信息表",
+        "ColumnName": "开票大类",
+        "GUID": "a691858a-99b4-4d6c-99c9-ce13073bf289"
+      }
+    },
+    "4,28": {
+      "NameUsedInJavaScript": "发票单位",
+      "BindingInfo": {
+        "TableName": "正报信息表",
+        "ColumnName": "发票单位",
+        "GUID": "c75a5e1a-0f78-4cd0-ba7f-a1ad32cc0561"
+      }
+    },
+    "4,31": {
+      "NameUsedInJavaScript": "普票税点",
+      "BindingInfo": {
+        "TableName": "正报信息表",
+        "ColumnName": "普票税点",
+        "GUID": "394b76db-8a81-430e-ad80-f976e11f46ad"
+      }
+    },
+    "4,34": {
+      "NameUsedInJavaScript": "专票税点",
+      "BindingInfo": {
+        "TableName": "正报信息表",
+        "ColumnName": "专票税点",
+        "GUID": "0fc8116f-f76d-4319-8361-4d84f28d0e83"
+      }
+    },
+    "4,37": {
+      "NameUsedInJavaScript": "订货票型",
+      "BindingInfo": {
+        "TableName": "正报信息表",
+        "ColumnName": "订货票型",
+        "GUID": "760658c3-5006-4c85-8913-56c471ac73e8"
+      }
+    },
+    "4,40": {
+      "NameUsedInJavaScript": "型号",
+      "BindingInfo": {
+        "TableName": "正报信息表",
+        "ColumnName": "型号",
+        "GUID": "e851ba83-f4bb-40dc-9230-c1fd6fec832e"
+      }
+    },
+    "4,43": {
+      "NameUsedInJavaScript": "申报名CN",
+      "BindingInfo": {
+        "TableName": "正报信息表",
+        "ColumnName": "申报名CN",
+        "GUID": "c3e08544-994f-4b30-b8d4-43fb471921c1"
+      }
+    },
+    "4,46": {
+      "NameUsedInJavaScript": "申报名EN",
+      "BindingInfo": {
+        "TableName": "正报信息表",
+        "ColumnName": "申报名EN",
+        "GUID": "2871b526-c028-446d-923f-4ce9e631057a"
+      }
+    },
+    "4,49": {
+      "NameUsedInJavaScript": "出口申报HS",
+      "BindingInfo": {
+        "TableName": "正报信息表",
+        "ColumnName": "出口申报HS",
+        "GUID": "2e9b2130-afda-4841-8381-98a3eaa2d6b3"
+      }
+    },
+    "4,52": {
+      "NameUsedInJavaScript": "目的国HS",
+      "BindingInfo": {
+        "TableName": "正报信息表",
+        "ColumnName": "目的国HS",
+        "GUID": "cb2b85b2-b1a9-43d0-ab01-0a865ca158bb"
+      }
+    },
+    "4,55": {
+      "NameUsedInJavaScript": "境内货源地",
+      "BindingInfo": {
+        "TableName": "正报信息表",
+        "ColumnName": "境内货源地",
+        "GUID": "abed85b4-5eff-4e64-9c61-940dea68f925"
+      }
+    },
+    "4,58": {
+      "NameUsedInJavaScript": "申报要素",
+      "BindingInfo": {
+        "TableName": "正报信息表",
+        "ColumnName": "申报要素",
+        "GUID": "3908ae16-e6e6-45ee-bea6-6447459747e5"
+      }
+    },
+    "4,61": {
+      "NameUsedInJavaScript": "申报要素正式格式",
+      "BindingInfo": {
+        "TableName": "正报信息表",
+        "ColumnName": "申报要素正式格式",
+        "GUID": "09e0dc0c-05bf-4ec8-9adb-25472787a3e8"
+      }
+    },
+    "4,64": {
+      "NameUsedInJavaScript": "品牌",
+      "BindingInfo": {
+        "TableName": "正报信息表",
+        "ColumnName": "品牌",
+        "GUID": "c80ec517-ad3d-4bed-a6b7-bc05e0ea49e2"
+      }
+    },
+    "4,67": {
+      "NameUsedInJavaScript": "品牌类型",
+      "BindingInfo": {
+        "TableName": "正报信息表",
+        "ColumnName": "品牌类型",
+        "GUID": "9c9ff33d-b69c-42be-b2cd-7fbc90f9f50d"
+      }
+    },
+    "4,70": {
+      "NameUsedInJavaScript": "出口享惠情况",
+      "BindingInfo": {
+        "TableName": "正报信息表",
+        "ColumnName": "出口享惠情况",
+        "GUID": "4ff9f4a8-9e86-4ccc-ab03-e3e8c0793692"
+      }
+    },
+    "4,73": {
+      "NameUsedInJavaScript": "第一单位",
+      "BindingInfo": {
+        "TableName": "正报信息表",
+        "ColumnName": "第一单位",
+        "GUID": "3395c335-5a5b-42cb-8558-e863eb249869"
+      }
+    },
+    "4,76": {
+      "NameUsedInJavaScript": "第二单位",
+      "BindingInfo": {
+        "TableName": "正报信息表",
+        "ColumnName": "第二单位",
+        "GUID": "62ad9d4f-3b58-40a9-887b-b0d4855c9f34"
+      }
+    },
+    "4,79": {
+      "NameUsedInJavaScript": "材质成分",
+      "BindingInfo": {
+        "TableName": "正报信息表",
+        "ColumnName": "材质成分",
+        "GUID": "19a93ef3-62cc-4fb5-8682-3f9540b83761"
+      }
+    },
+    "4,82": {
+      "NameUsedInJavaScript": "带电标记",
+      "BindingInfo": {
+        "TableName": "正报信息表",
+        "ColumnName": "带电标记",
+        "GUID": "a5c8ebb3-7848-4ba6-83e8-0dfb437677a2"
+      }
+    },
+    "4,85": {
+      "NameUsedInJavaScript": "敏感货标记",
+      "BindingInfo": {
+        "TableName": "正报信息表",
+        "ColumnName": "敏感货标记",
+        "GUID": "2368852c-6883-449f-b11f-90697fa412ac"
+      }
+    },
+    "4,88": {
+      "NameUsedInJavaScript": "采购备注",
+      "BindingInfo": {
+        "TableName": "正报信息表",
+        "ColumnName": "采购备注",
+        "GUID": "ef471146-859a-484f-8dec-aef92579e5b2"
+      }
+    },
+    "4,91": {
+      "NameUsedInJavaScript": "财务建议",
+      "BindingInfo": {
+        "TableName": "正报信息表",
+        "ColumnName": "财务建议",
+        "GUID": "a5b976b9-2855-45dc-8077-4fe1cec92132"
+      }
+    },
+    "4,94": {
+      "NameUsedInJavaScript": "物流审核",
+      "BindingInfo": {
+        "TableName": "正报信息表",
+        "ColumnName": "物流审核",
+        "GUID": "61d6ef96-758d-4196-9a96-5d6535eb2a0a"
+      }
+    },
+    "4,97": {
+      "NameUsedInJavaScript": "财务审核",
+      "BindingInfo": {
+        "TableName": "正报信息表",
+        "ColumnName": "财务审核",
+        "GUID": "48375bcb-4c14-4b3d-a681-3b789677b58a"
+      }
+    },
+    "4,100": {
+      "NameUsedInJavaScript": "识别码",
+      "BindingInfo": {
+        "TableName": "正报信息表",
+        "ColumnName": "识别码",
+        "GUID": "08f330ef-5dcd-48a6-9d4b-fc78bd53af21"
+      }
+    },
+    "4,104": {
+      "NameUsedInJavaScript": "删除",
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.DeleteRecordCommand, ServerDesignerCommon",
+            "ConfirmText": "您确定要删除吗？",
+            "BreakpointIdentity": "271a9ae5-14ef-41b6-a0d4-5e88f9fac534"
+          }
+        ],
+        "Text": "删除"
+      }
+    },
+    "25,2": {
+      "CellType": {
+        "$type": "ElementUI.CellTypes.PaginationCellType, ElementUI",
+        "ListviewName": "表格1",
+        "pageSize": 20,
+        "pagerCount": 15,
+        "layout": [
+          {
+            "layoutItem": "prev"
+          },
+          {
+            "layoutItem": "pager"
+          },
+          {
+            "layoutItem": "next"
+          },
+          {
+            "layoutItem": "jumper"
+          },
+          {
+            "layoutItem": "->"
+          },
+          {
+            "layoutItem": "total"
+          }
+        ],
+        "pageSizes": [
+          {},
+          {
+            "value": 20
+          },
+          {
+            "value": 30
+          },
+          {
+            "value": 40
+          },
+          {
+            "value": 50
+          },
+          {
+            "value": 100
+          }
+        ],
+        "background": true,
+        "hideOnSinglePage": true
+      }
+    },
+    "25,55": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.OperateCellTypeCommand, ServerDesignerCommon",
+            "TargetPageElement": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=正报信息表_wl!C26"
+            },
+            "TargetType": "ElementUI.CellTypes.PaginationCellType, ElementUI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e50995ee76bfe560",
+            "MethodName": "SetPageSize",
+            "ParameterValues": {
+              "pageSize": "9999999"
+            },
+            "BreakpointIdentity": "36ed8848-ed7f-4692-bbfb-4e3117ca35f7"
+          }
+        ],
+        "Text": "全部加载",
+        "TemplateKey": "样式11"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Formatter": 0
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 2
+      },
+      {
+        "FontFamily": 1
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 24.0,
+        "FontWeight": 3
+      },
+      {
+        "FontFamily": 4,
+        "FontSize": 13.333333333333332,
+        "HorizontalAlignment": 5,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Foreground": 7,
+        "Underline": false
+      },
+      {
+        "Formatter": 8
+      },
+      {
+        "Formatter": 9
+      },
+      {
+        "HorizontalAlignment": 5
+      },
+      {
+        "Foreground": 7,
+        "Underline": true
+      },
+      {
+        "HorizontalAlignment": 10
+      },
+      {
+        "Background": 11,
+        "FontFamily": 4,
+        "Foreground": 12,
+        "Underline": true,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderTop": 0
+      },
+      {
+        "BorderTop": 0,
+        "BorderRight": 0
+      },
+      {
+        "Background": null,
+        "FontFamily": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 11,
+        "FontFamily": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderBottom": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderRight": 0
+      },
+      {
+        "Background": null,
+        "FontFamily": 1,
+        "FontSize": -1.0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "@",
+        "Body",
+        "[AUTO]General",
+        "Bold",
+        "微软雅黑",
+        "Center",
+        "black",
+        "Accent 1",
+        "0.00",
+        "0.00%",
+        "Right",
+        "#FFB7DEE8",
+        "Blue"
+      ],
+      "Borders": [
+        {
+          "Color": 6
+        }
+      ]
+    },
+    "CellStyles": {
+      "1,2": 0,
+      "1,9": 1,
+      "1,10": 2,
+      "1,15": 3,
+      "1,30": 4,
+      "1,31": 5,
+      "1,32": 5,
+      "4,3": 6,
+      "4,12": 2,
+      "4,15": 2,
+      "4,19": 7,
+      "4,31": 8,
+      "4,34": 8,
+      "4,46": 9,
+      "4,52": 9,
+      "4,88": 9,
+      "4,91": 9,
+      "4,103": 10,
+      "4,104": 10,
+      "25,1": 11,
+      "25,2": 12,
+      "25,3": 13,
+      "25,4": 13,
+      "25,5": 13,
+      "25,6": 13,
+      "25,7": 13,
+      "25,8": 13,
+      "25,9": 13,
+      "25,10": 13,
+      "25,11": 13,
+      "25,12": 13,
+      "25,13": 13,
+      "25,14": 13,
+      "25,15": 13,
+      "25,16": 13,
+      "25,17": 13,
+      "25,18": 13,
+      "25,19": 13,
+      "25,20": 13,
+      "25,21": 13,
+      "25,22": 13,
+      "25,23": 13,
+      "25,24": 13,
+      "25,25": 13,
+      "25,26": 13,
+      "25,27": 13,
+      "25,28": 13,
+      "25,29": 13,
+      "25,30": 13,
+      "25,31": 13,
+      "25,32": 13,
+      "25,33": 13,
+      "25,34": 13,
+      "25,35": 13,
+      "25,36": 13,
+      "25,37": 13,
+      "25,38": 13,
+      "25,39": 13,
+      "25,40": 13,
+      "25,41": 13,
+      "25,42": 13,
+      "25,43": 14,
+      "25,44": 2,
+      "25,45": 2,
+      "25,46": 2,
+      "25,47": 2,
+      "25,48": 2,
+      "25,49": 2,
+      "25,50": 2,
+      "25,51": 2,
+      "25,52": 2,
+      "25,53": 2,
+      "25,54": 2,
+      "25,55": 15,
+      "25,56": 16,
+      "25,57": 16,
+      "25,58": 16,
+      "25,59": 2,
+      "25,60": 2,
+      "25,61": 2,
+      "25,62": 2,
+      "25,63": 2,
+      "25,64": 2,
+      "25,65": 2,
+      "25,66": 2,
+      "25,67": 2,
+      "25,68": 2,
+      "25,69": 2,
+      "25,70": 2,
+      "25,71": 2,
+      "25,72": 2,
+      "25,73": 2,
+      "25,74": 2,
+      "25,75": 2,
+      "25,76": 2,
+      "25,77": 2,
+      "25,78": 2,
+      "26,2": 17,
+      "26,3": 18,
+      "26,4": 18,
+      "26,5": 18,
+      "26,6": 18,
+      "26,7": 18,
+      "26,8": 18,
+      "26,9": 18,
+      "26,10": 18,
+      "26,11": 18,
+      "26,12": 18,
+      "26,13": 18,
+      "26,14": 18,
+      "26,15": 18,
+      "26,16": 18,
+      "26,17": 18,
+      "26,18": 18,
+      "26,19": 18,
+      "26,20": 18,
+      "26,21": 18,
+      "26,22": 18,
+      "26,23": 18,
+      "26,24": 18,
+      "26,25": 18,
+      "26,26": 18,
+      "26,27": 18,
+      "26,28": 18,
+      "26,29": 18,
+      "26,30": 18,
+      "26,31": 18,
+      "26,32": 18,
+      "26,33": 18,
+      "26,34": 18,
+      "26,35": 18,
+      "26,36": 18,
+      "26,37": 18,
+      "26,38": 18,
+      "26,39": 18,
+      "26,40": 18,
+      "26,41": 18,
+      "26,42": 18,
+      "26,43": 19,
+      "26,44": 2,
+      "26,45": 2,
+      "26,46": 2,
+      "26,47": 2,
+      "26,48": 2,
+      "26,49": 2,
+      "26,50": 2,
+      "26,51": 2,
+      "26,52": 2,
+      "26,53": 2,
+      "26,54": 2,
+      "26,55": 20,
+      "26,56": 20,
+      "26,57": 20,
+      "26,58": 20,
+      "26,59": 2,
+      "26,60": 2,
+      "26,61": 2,
+      "26,62": 2,
+      "26,63": 2,
+      "26,64": 2,
+      "26,65": 2,
+      "26,66": 2,
+      "26,67": 2,
+      "26,68": 2,
+      "26,69": 2,
+      "26,70": 2,
+      "26,71": 2,
+      "26,72": 2,
+      "26,73": 2,
+      "26,74": 2,
+      "26,75": 2,
+      "26,76": 2,
+      "26,77": 2,
+      "26,78": 2
+    },
+    "SheetStyle": {
+      "FontFamily": 1
+    }
+  },
+  "Spans": [
+    "4,22,1,3",
+    "3,22,1,3",
+    "4,25,1,3",
+    "3,25,1,3",
+    "4,28,1,3",
+    "3,28,1,3",
+    "4,31,1,3",
+    "3,31,1,3",
+    "4,34,1,3",
+    "3,34,1,3",
+    "4,37,1,3",
+    "3,37,1,3",
+    "4,40,1,3",
+    "3,40,1,3",
+    "4,43,1,3",
+    "3,43,1,3",
+    "4,49,1,3",
+    "3,49,1,3",
+    "4,55,1,3",
+    "3,55,1,3",
+    "4,58,1,3",
+    "3,58,1,3",
+    "4,61,1,3",
+    "3,61,1,3",
+    "4,64,1,3",
+    "3,64,1,3",
+    "4,67,1,3",
+    "3,67,1,3",
+    "4,70,1,3",
+    "3,70,1,3",
+    "4,73,1,3",
+    "3,73,1,3",
+    "4,76,1,3",
+    "3,76,1,3",
+    "4,79,1,3",
+    "3,79,1,3",
+    "4,82,1,3",
+    "3,82,1,3",
+    "4,85,1,3",
+    "3,85,1,3",
+    "4,94,1,3",
+    "3,94,1,3",
+    "4,97,1,3",
+    "3,97,1,3",
+    "4,100,1,3",
+    "3,100,1,3",
+    "4,104,1,2",
+    "3,104,1,2",
+    "4,4,1,5",
+    "3,4,1,5",
+    "4,9,1,3",
+    "3,9,1,3",
+    "4,12,1,3",
+    "3,12,1,3",
+    "4,15,1,4",
+    "3,15,1,4",
+    "1,2,1,6",
+    "25,2,2,42",
+    "25,55,2,4",
+    "5,1,20,105",
+    "4,19,1,3",
+    "3,19,1,3",
+    "1,30,1,3",
+    "4,46,1,3",
+    "3,46,1,3",
+    "4,88,1,3",
+    "3,88,1,3",
+    "4,91,1,3",
+    "3,91,1,3",
+    "4,52,1,3",
+    "3,52,1,3",
+    "1,9,1,2"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PageLoadedCommandList": [
+      {
+        "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+        "ListviewName": "表格1",
+        "UpdateType": 6,
+        "UpdateListviewCommandRunTimeMethodSetting": {
+          "MethodName": "LoadStatusCacheData",
+          "ParameterValues": {
+            "customName": null
+          }
+        },
+        "BreakpointIdentity": "405ed460-1186-4666-a03b-752a1f1032c8"
+      }
+    ],
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "正报信息表"
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//jB8pQDLpp973uHr1jlHl4HpDnlvs5yihQTvnzjZ7eoPlXQTR+txGWVHVPHXgIESoHh1uzbX5yRv4cx4FLXRX+IvpRsxAhHw8/aQy8SaP0sae9jAclXdW5kQT9tJbjdXqrtX7ErZJhz2OXdQSzb5j7gwwGP7CFawt+Vruu2dyXejC5pkwhGixjeev2MV9PwuLSHZLKlOmFvekLqpK7jUQO/Gt/c6w0TjHAYhIwKRDqSuYl6otSEaT7MBNutHLfLbk+WsyHYrdWo/w0AfQyZ7QbDZjoqdyURUDMsJG0VVA1RR98ST5ACNd7FpID57JbnVfulvKMBbWCvERpgkCqE002+djGCiwo18bK5u1ceURlt/iNW7cbMOxg516srE7RpbB90vp/mdz/sVFjaei51P98eqT14zzlnN0S+S9CeEYM9rtPxIbGQRopaSggryJ0FLq9WF8BHq2IdCKtgQO49VgMd+GRDN7XPeKSvqb//s/f7QwEf3CRRb+/hfpfoDM8lYRRuDqq4Fwq2D9J9kX5yRCwSSZyylIquubDMiYDDHcRwbi0yn23XnJugu01YcKgl5xCvC0mbyzoFWEFFGpeUqjp8ukEe+3hsn5YduAMqAf6wFOaMPxYZTJZzgRsB6I37HaGUXuBYr4o0i3tKJ/of0R8lMo6SgfV3ppYZq5l3bDOW5UjR42wN4AcjA+zPBVkRS12lvV/PCHFk8YFSUEV0TyPYvgC19vNsyFNpm13eElWY/a+lspXytx+FjaeKU4ffuuqi17xWWqCyO4Bsm5Y5btyMqJOq3kpzCnsuoIjuq3W6o59OZpW5XjskfV0WA/uZnjKO2tp7asi+9jkFd37hdFjjM/uh7BEfhraUKY+g93M8oT02uj5GMqt2osD8MfFNqHXccpaGQV9ZP4hFYaskcVSQ==|920

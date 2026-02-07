@@ -1,0 +1,629 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 16.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 16.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 16.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 48.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 48.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 32.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 32.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 32.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 32.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 32.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 32.0
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 32.0
+        }
+      },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 16.0
+        }
+      },
+      "15": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 16.0
+        }
+      }
+    },
+    "Count": 16,
+    "DefaultSize": 32.0
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 16.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 16.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "19": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "20": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "24": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "25": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "26": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "27": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "28": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "29": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 32.0
+        }
+      },
+      "30": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 251.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      30
+    ],
+    "Count": 31
+  },
+  "Values": {
+    "1,1": "发票历史记录",
+    "1,25": "关闭",
+    "5,26": "删除"
+  },
+  "AttachInfos": {
+    "1,25": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "ReloadData": true,
+            "BreakpointIdentity": "d8b347f1-656e-4515-8810-f76fb30f5a99"
+          }
+        ],
+        "Text": "关闭",
+        "TemplateKey": "_RS_Minor1"
+      }
+    },
+    "4,2": {
+      "ListViewInfo": {
+        "Name": "表格1",
+        "TableName": "采购订单到票历史表",
+        "RowIndex": 4,
+        "ColumnIndex": 2,
+        "RowCount": 9,
+        "ColumnCount": 27,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "采购订单到票历史表",
+            "ColumnName": "采购表ID",
+            "GUID": "cd0b0599-47da-48df-8104-97baffda1c33"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "='发票记录 (2)'!AE5"
+          }
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "样式5",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "4,30": {
+      "BindingInfo": {
+        "TableName": "采购记录表",
+        "ColumnName": "ID",
+        "GUID": "e745fdad-d933-45fb-8c52-21c4cbe9da6f"
+      }
+    },
+    "5,2": {
+      "NameUsedInJavaScript": "日期",
+      "BindingInfo": {
+        "TableName": "采购订单到票历史表",
+        "ColumnName": "日期",
+        "GUID": "e4ec52a3-6b94-494d-aa05-ef2fde9c8472"
+      }
+    },
+    "5,7": {
+      "NameUsedInJavaScript": "本期到票金额",
+      "BindingInfo": {
+        "TableName": "采购订单到票历史表",
+        "ColumnName": "本期到票金额",
+        "GUID": "e583f003-0dfc-48ed-86c4-a8a4db805448"
+      }
+    },
+    "5,13": {
+      "NameUsedInJavaScript": "发票号码",
+      "BindingInfo": {
+        "TableName": "采购订单到票历史表",
+        "ColumnName": "发票号码",
+        "GUID": "f98e5f64-53fd-436f-9ce7-43cc4050e980"
+      }
+    },
+    "5,20": {
+      "NameUsedInJavaScript": "备注",
+      "BindingInfo": {
+        "TableName": "采购订单到票历史表",
+        "ColumnName": "备注",
+        "GUID": "e1f5803d-2b3a-4df4-ac3f-ba6ed15f52df"
+      }
+    },
+    "5,26": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "ElementUI.Commands.ShowMessageBox, ElementUI",
+            "Title": "删除后金额会回滚，确认删除？",
+            "Message": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=\"付款记录：\"&TEXT('发票记录 (2)'!C6,\"yyyy年mm月dd日\")&\" 金额 ¥ \"&'发票记录 (2)'!H6"
+            },
+            "Type": "warning",
+            "ConfirmButtonText": "确定",
+            "ShowCancelButton": true,
+            "CancelButtonText": "取消",
+            "ShowClose": false,
+            "DialogResult": "result",
+            "AdvancedSettings": {},
+            "BreakpointIdentity": "0fa1636c-44fd-4618-8e68-9e0068fbde66"
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "='发票记录 (2)'!result"
+                      }
+                    ]
+                  },
+                  "value": "confirm"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+                    "ServerCommandName": "采购发票维护",
+                    "Parameters": [
+                      {
+                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                        "ParamName": "采购单ID"
+                      },
+                      {
+                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                        "ParamName": "到票金额"
+                      },
+                      {
+                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                        "ParamName": "发票编号"
+                      },
+                      {
+                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                        "ParamName": "备注"
+                      },
+                      {
+                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                        "ParamName": "类型",
+                        "Value": "删除"
+                      },
+                      {
+                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                        "ParamName": "记录ID",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "='发票记录 (2)'!AE6"
+                        }
+                      }
+                    ],
+                    "RefreshAfterFinish": true,
+                    "CheckDataValidation": true,
+                    "BreakpointIdentity": "7f4a2788-ed95-4caf-86d0-dc1826247e67"
+                  },
+                  {
+                    "$type": "Forguncy.Model.ShareCommand, ServerDesignerCommon",
+                    "ShareCommandContainerRefer": {
+                      "ShareCommandContainerID": "c6826632-3693-4ace-9428-9b55f54d5dfd"
+                    },
+                    "Params": [
+                      {
+                        "ParamReferObject": {
+                          "ParamID": "eea110f4-3b60-43b6-af4e-c1511ab08aa0",
+                          "ShareCommandContainerReferObject": {
+                            "ShareCommandContainerID": "c6826632-3693-4ace-9428-9b55f54d5dfd"
+                          }
+                        },
+                        "Value": "删除成功"
+                      },
+                      {
+                        "ParamReferObject": {
+                          "ParamID": "3badc0e1-9000-4a1c-8f39-26cb9e897b5c",
+                          "ShareCommandContainerReferObject": {
+                            "ShareCommandContainerID": "c6826632-3693-4ace-9428-9b55f54d5dfd"
+                          }
+                        },
+                        "Value": "成功"
+                      }
+                    ],
+                    "ReturnPropertiesTo": [
+                      {
+                        "ReturnPropertyReferObject": {
+                          "ParamID": "67060bbc-e869-4e69-adae-87c9e87f672d",
+                          "ShareCommandContainerReferObject": {
+                            "ShareCommandContainerID": "c6826632-3693-4ace-9428-9b55f54d5dfd"
+                          }
+                        }
+                      }
+                    ],
+                    "BreakpointIdentity": "d4484641-3538-494c-b380-53bf5d366ed7"
+                  }
+                ],
+                "ID": "03d92d46-d101-4bc0-abe9-82309a967a42"
+              }
+            ],
+            "BreakpointIdentity": "1f8c0aa2-daac-4fca-966c-967ea8b13f64"
+          }
+        ],
+        "Text": "删除",
+        "TemplateKey": "样式12"
+      }
+    },
+    "5,30": {
+      "BindingInfo": {
+        "TableName": "采购订单到票历史表",
+        "ColumnName": "ID",
+        "GUID": "4a42b8a6-8ce5-493d-87f6-1de1d0231e27"
+      }
+    },
+    "14,2": {
+      "CellType": {
+        "$type": "ElementUI.CellTypes.PaginationCellType, ElementUI",
+        "ListviewName": "表格1",
+        "pagerCount": 5,
+        "layout": [
+          {
+            "layoutItem": "total"
+          },
+          {
+            "layoutItem": "->"
+          },
+          {
+            "layoutItem": "prev"
+          },
+          {
+            "layoutItem": "pager"
+          },
+          {
+            "layoutItem": "next"
+          },
+          {
+            "layoutItem": "sizes"
+          }
+        ],
+        "pageSizes": [
+          {},
+          {
+            "value": 20
+          },
+          {
+            "value": 50
+          }
+        ],
+        "small": true
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontSize": 18.666666666666664,
+        "FontWeight": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "HorizontalAlignment": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Formatter": 3,
+        "HorizontalAlignment": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 4,
+        "Formatter": 5,
+        "HorizontalAlignment": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 4,
+        "HorizontalAlignment": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 4,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Bold",
+        "Background 1 -5",
+        "Center",
+        "yyyy/m/d",
+        "Body",
+        "¥#,##0_);[Red](¥#,##0)"
+      ],
+      "Borders": [
+        {
+          "Color": 1
+        }
+      ]
+    },
+    "CellStyles": {
+      "1,1": 0,
+      "2,0": 1,
+      "2,1": 1,
+      "2,2": 1,
+      "2,3": 1,
+      "2,4": 1,
+      "2,5": 1,
+      "2,6": 1,
+      "2,7": 1,
+      "2,8": 1,
+      "2,9": 1,
+      "2,10": 1,
+      "2,11": 1,
+      "2,12": 1,
+      "2,13": 1,
+      "2,14": 1,
+      "2,15": 1,
+      "2,16": 1,
+      "2,17": 1,
+      "2,18": 1,
+      "2,19": 1,
+      "2,20": 1,
+      "2,21": 1,
+      "2,22": 1,
+      "2,23": 1,
+      "2,24": 1,
+      "2,25": 1,
+      "2,26": 1,
+      "2,27": 1,
+      "2,28": 1,
+      "2,29": 1,
+      "4,2": 2,
+      "4,7": 2,
+      "4,13": 2,
+      "4,20": 2,
+      "4,26": 2,
+      "5,2": 3,
+      "5,7": 4,
+      "5,13": 5,
+      "5,20": 5,
+      "5,26": 2,
+      "14,2": 6,
+      "14,3": 6,
+      "14,4": 6,
+      "14,7": 6,
+      "14,8": 6,
+      "14,10": 6,
+      "14,11": 6,
+      "14,12": 6,
+      "14,13": 6,
+      "14,14": 6,
+      "14,15": 6,
+      "14,16": 6,
+      "14,17": 6,
+      "14,18": 6,
+      "14,19": 6,
+      "14,20": 6,
+      "14,24": 6,
+      "14,25": 6,
+      "14,26": 6,
+      "14,27": 6,
+      "14,28": 6,
+      "14,29": 6,
+      "14,30": 6
+    },
+    "SheetStyle": {
+      "FontFamily": 4,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
+    }
+  },
+  "Spans": [
+    "1,25,1,4",
+    "4,2,1,5",
+    "4,7,1,6",
+    "4,13,1,7",
+    "4,20,1,6",
+    "4,26,1,3",
+    "5,2,1,5",
+    "5,7,1,6",
+    "5,13,1,7",
+    "5,20,1,6",
+    "5,26,1,3",
+    "6,2,7,27",
+    "14,2,1,28"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//5WwHG0ihKJL/nEDK1HPnLFSmH+WInXPz3I4I5rmVn554DI9KntMPAMqDT7zPoysNMf0GRTh8BEgyKPifrGzntOgTY0fTOWUy4oLZpt/WowlcfMOgfnuSrWv8qU0RuzP1uijQfg9lJXGlBw+UIhyvShaGsacYiTmGXJo09UyT5EobTSGO2s6Mc3iZZOIphjsg/v8nkUNKOf/1YXITjqNw1a9KWXH7+59tLZBhKzKpt/br4qA0UoPyMVpCWASpaR99CzBfa/EG3Vlaz4gBZwezXHBS3nkr0RAgFDt4vt44/HRCMazidIqJvg8rMMMBNtpJQemMOrdzVssF+ejFPSlVUyBZWmcFyB5J4NMJM2s+8p2eOm6E+BXWOk8shYpd9QF6H3qWcA4Ma/SjSQ/E72vYnsdAs1Gyly6YGgtIYOSQjdEPx81gBhHQ23iFqDcGQH0oFqc6vjAAH+OHmL77Bp60mwBgsWE++7bU2VoG46ZyxQt/lHdr8GYqxkd9Atf8PnKR6hVsJ7cHXgoQNUBJYmI2R9ptizJKi1ku0UfP5Yq3LObYXQmbmUlA2YKH/IlzEVvfag62W7y0AXN+GU8n8DScVhku6EOzawZ5OovPwt9795pPcY+aPU5oxvvVsyhdOdekiovRD5M2iEpcSCxX42IWsqVEjN7N5AJW2dZqKBpGInIiq+g7I3Yi2RldZ7CW7AU2dbGKM2ULXNynya7YcVqYetl/jSF0kwJUOGFs6UoVvlK2eYhV/8q74IdE0Jkiesrq360fgCm3in2JE9tpYot0WFTLDad/0HWDjmf9XH/TeCWaKFhQ23xpfdXnUwRac8E7WKFkU0iRWgxTmxZHGatd5sigAwXyZdkTrEOY8WARg+9ITobXyy9bGoBFEb+17WxPFxGgfNU3S5sZQoaoDvqtjw==|920

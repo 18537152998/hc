@@ -1,0 +1,1692 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 35.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88
+    ],
+    "Count": 89
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 43.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 19.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 19.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 19.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 19.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 19.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 19.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 19.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 19.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 19.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 19.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 19.0
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 19.0
+        }
+      },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 19.0
+        }
+      }
+    },
+    "Count": 82
+  },
+  "Values": {
+    "1,1": "刷新",
+    "1,5": "导出表格",
+    "3,0": "退货数据",
+    "48,0": "包装账户退货数据",
+    "78,8": "总退货量",
+    "78,9": "占比",
+    "78,72": "总量",
+    "78,76": "占比"
+  },
+  "Formulas": {
+    "79,8": "VLOOKUP(E80,D$74:F$74,3)",
+    "79,9": "H80/I80",
+    "79,72": "VLOOKUP(CC80,$D$74:$F$74,3)",
+    "79,76": "BQ80/BU80"
+  },
+  "AttachInfos": {
+    "1,1": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "FBA退货报告2",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 1,
+              "ColumnBindingInfo": {
+                "TableName": "FBA退货报告2",
+                "ColumnName": "ID",
+                "GUID": "38c5ae99-e872-4ba9-87f0-074f1b18bb7e"
+              },
+              "Value": "%Null%"
+            },
+            "ID": "738150c094094c0b927c0b0c63dab85a",
+            "BreakpointIdentity": "89adaabf-8f5c-4b84-ad75-4824c33f894b"
+          }
+        ],
+        "Text": "刷新",
+        "TemplateKey": "样式1"
+      }
+    },
+    "1,5": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ExportListViewToExcelCommand, ServerDesignerCommon",
+            "BreakpointIdentity": "6a3907a8-9011-4786-8a4a-55444c0882a8",
+            "ListViewName": "表格3",
+            "NewOtherName": ""
+          }
+        ],
+        "Text": "导出表格",
+        "TemplateKey": "样式1"
+      }
+    },
+    "1,36": {
+      "CellType": {
+        "$type": "Forguncy.CheckBoxGroupCellType, ServerDesignerCommon",
+        "Style": 1,
+        "IsBounding": true,
+        "DataSource": "FBA退货报告2",
+        "ValueColumnBindingInfo": {
+          "TableName": "FBA退货报告2",
+          "ColumnName": "年月",
+          "GUID": "5351288c-e532-48de-9af2-0a85b8456110"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "FBA退货报告2",
+          "ColumnName": "年月",
+          "GUID": "a991f4bb-aa3b-4eb9-b0b0-f4415941729d"
+        },
+        "ItemsSort": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "FBA退货报告2",
+                "ColumnName": "年月",
+                "GUID": "19ef6392-385e-4294-a671-4901bdc510ca"
+              },
+              "Order": 1
+            }
+          ]
+        },
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "FBA退货报告2",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+              "CompareType": 8,
+              "ColumnBindingInfo": {
+                "TableName": "FBA退货报告2",
+                "ColumnName": "年月",
+                "GUID": "4a8da06d-9dfd-4e83-b9c5-736edfc0a379"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=退货概览!AK2"
+              }
+            },
+            "ID": "b454db4b498e4de2be85e970e90a40c4",
+            "BreakpointIdentity": "7d1a1390-e40d-4ca7-b850-10709f10dc3a"
+          }
+        ]
+      }
+    },
+    "3,1": {
+      "CellType": {
+        "$type": "Forguncy.PivotTableCellType, ServerDesignerCommon",
+        "PivotTableSetting": {
+          "SelectedListViewName": "表格1",
+          "Rows": [
+            {
+              "DatabaseColumnName": "包装账户",
+              "DisplayName": "包装账户",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=退货概览!C80"
+              }
+            },
+            {
+              "DatabaseColumnName": "平台",
+              "DisplayName": "平台",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=退货概览!D80"
+              },
+              "BackgroundValue": {}
+            },
+            {
+              "DatabaseColumnName": "退货标记",
+              "DisplayName": "退货标记",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=退货概览!F80"
+              },
+              "BackgroundValue": {}
+            }
+          ],
+          "Cols": [
+            {
+              "DatabaseColumnName": "年月",
+              "DisplayName": "年月",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=退货概览!G80"
+              },
+              "BackgroundValue": {}
+            }
+          ],
+          "Values": [
+            {
+              "DatabaseColumnName": "数量",
+              "DisplayName": "数量",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=退货概览!H80"
+              },
+              "Aggregator": 0,
+              "TotalAggregator": 0,
+              "BackgroundValue": {}
+            },
+            {
+              "DatabaseColumnName": "占比",
+              "DisplayName": "占比",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=退货概览!J80"
+              },
+              "Format": "0.0%",
+              "Aggregator": 0,
+              "TotalAggregator": 0,
+              "BackgroundValue": {}
+            }
+          ],
+          "DatabaseColumns": [
+            {
+              "DatabaseColumnName": "包装账户",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=退货概览!C80"
+              }
+            },
+            {
+              "DatabaseColumnName": "平台",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=退货概览!D80"
+              }
+            },
+            {
+              "DatabaseColumnName": "站点",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=退货概览!K80"
+              }
+            },
+            {
+              "DatabaseColumnName": "平台_年月",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=退货概览!E80"
+              }
+            },
+            {
+              "DatabaseColumnName": "退货标记",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=退货概览!F80"
+              }
+            },
+            {
+              "DatabaseColumnName": "年月",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=退货概览!G80"
+              }
+            },
+            {
+              "DatabaseColumnName": "数量",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=退货概览!H80"
+              }
+            },
+            {
+              "DatabaseColumnName": "总退货量",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=退货概览!I80"
+              }
+            },
+            {
+              "DatabaseColumnName": "占比",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=退货概览!J80"
+              }
+            }
+          ],
+          "ForceFrozenRowHeader": true
+        },
+        "ShowSubtotal": false,
+        "ShowRowsTotal": false,
+        "PivotTableConditionalFormatSetting": {
+          "Conditions": [
+            {
+              "Label": "数量",
+              "DataConditionFormatRulesCollection": {
+                "Rules": [
+                  {
+                    "$type": "Forguncy.ConditionFormat.CellValueRule, ServerDesignerCommon",
+                    "Operator": 3,
+                    "Value1": "=\"PS\"",
+                    "GUID": "2982533e-9b77-41ee-89d4-c1862e864369",
+                    "StyleInfo": {
+                      "Background": "#FFFFFF00",
+                      "Underline": null,
+                      "Strikethrough": null
+                    }
+                  },
+                  {
+                    "$type": "Forguncy.ConditionFormat.CellValueRule, ServerDesignerCommon",
+                    "Operator": 3,
+                    "Value1": "=\"KS\"",
+                    "GUID": "eb81103a-7790-4af3-9a57-0b1e4c3b5c70",
+                    "StyleInfo": {
+                      "Background": "#FF92D050",
+                      "Underline": null,
+                      "Strikethrough": null
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "Label": "占比"
+            }
+          ]
+        },
+        "PivotTableStyle": {
+          "GrayAreaColor": "Background 1 0",
+          "UseSimpleBar": true
+        },
+        "PivotTableClickCommand": {
+          "RowHeaderList": [
+            {
+              "Label": "包装账户"
+            },
+            {
+              "Label": "平台"
+            },
+            {
+              "Label": "退货标记"
+            }
+          ],
+          "ColumnHeaderList": [
+            {
+              "Label": "年月"
+            }
+          ],
+          "CellValueList": [
+            {
+              "Label": "值的标题"
+            },
+            {
+              "Label": "单元格值"
+            }
+          ],
+          "CommandList": []
+        },
+        "PivotTableID": "8b3a18d3-f045-4d3e-844f-ca3aafa0062b",
+        "TemplateKey": "样式3"
+      }
+    },
+    "48,1": {
+      "CellType": {
+        "$type": "Forguncy.PivotTableCellType, ServerDesignerCommon",
+        "PivotTableSetting": {
+          "SelectedListViewName": "表格1",
+          "Rows": [
+            {
+              "DatabaseColumnName": "包装账户",
+              "DisplayName": "包装账户",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=退货概览!C80"
+              },
+              "BackgroundValue": {}
+            },
+            {
+              "DatabaseColumnName": "退货标记",
+              "DisplayName": "退货标记",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=退货概览!F80"
+              },
+              "BackgroundValue": {}
+            }
+          ],
+          "Cols": [
+            {
+              "DatabaseColumnName": "年月",
+              "DisplayName": "年月",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=退货概览!G80"
+              },
+              "BackgroundValue": {}
+            }
+          ],
+          "Values": [
+            {
+              "DatabaseColumnName": "数量",
+              "DisplayName": "数量",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=退货概览!H80"
+              },
+              "Aggregator": 0,
+              "TotalAggregator": 0,
+              "BackgroundValue": {}
+            },
+            {
+              "DatabaseColumnName": "占比",
+              "DisplayName": "占比",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=退货概览!J80"
+              },
+              "Format": "0.0%",
+              "Aggregator": 0,
+              "TotalAggregator": 0,
+              "BackgroundValue": {}
+            }
+          ],
+          "DatabaseColumns": [
+            {
+              "DatabaseColumnName": "包装账户",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=退货概览!C80"
+              }
+            },
+            {
+              "DatabaseColumnName": "平台",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=退货概览!D80"
+              }
+            },
+            {
+              "DatabaseColumnName": "站点",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=退货概览!K80"
+              }
+            },
+            {
+              "DatabaseColumnName": "平台_年月",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=退货概览!E80"
+              }
+            },
+            {
+              "DatabaseColumnName": "退货标记",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=退货概览!F80"
+              }
+            },
+            {
+              "DatabaseColumnName": "年月",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=退货概览!G80"
+              }
+            },
+            {
+              "DatabaseColumnName": "数量",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=退货概览!H80"
+              }
+            },
+            {
+              "DatabaseColumnName": "总退货量",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=退货概览!I80"
+              }
+            },
+            {
+              "DatabaseColumnName": "占比",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=退货概览!J80"
+              }
+            }
+          ],
+          "ForceFrozenRowHeader": true
+        },
+        "ShowSubtotal": false,
+        "ShowRowsTotal": false,
+        "PivotTableConditionalFormatSetting": {
+          "Conditions": [
+            {
+              "Label": "数量",
+              "DataConditionFormatRulesCollection": {
+                "Rules": [
+                  {
+                    "$type": "Forguncy.ConditionFormat.CellValueRule, ServerDesignerCommon",
+                    "Operator": 3,
+                    "Value1": "=\"PS\"",
+                    "GUID": "1ff288a3-f211-4b09-957e-041ca170e070",
+                    "StyleInfo": {
+                      "Background": "#FFFFFF00",
+                      "Underline": null,
+                      "Strikethrough": null
+                    }
+                  },
+                  {
+                    "$type": "Forguncy.ConditionFormat.CellValueRule, ServerDesignerCommon",
+                    "Operator": 3,
+                    "Value1": "=\"KS\"",
+                    "GUID": "08703ff5-4f9b-4de7-b374-5538b5400154",
+                    "StyleInfo": {
+                      "Background": "#FF92D050",
+                      "Underline": null,
+                      "Strikethrough": null
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "Label": "占比"
+            }
+          ]
+        },
+        "PivotTableStyle": {
+          "GrayAreaColor": "Background 1 0",
+          "UseSimpleBar": true
+        },
+        "PivotTableID": "8b3a18d3-f045-4d3e-844f-ca3aafa0062b",
+        "TemplateKey": "样式3"
+      }
+    },
+    "72,1": {
+      "ListViewInfo": {
+        "Name": "表格2",
+        "TableName": "FBA退货报告2",
+        "RowIndex": 72,
+        "ColumnIndex": 1,
+        "RowCount": 4,
+        "ColumnCount": 5,
+        "TopCondition": null,
+        "ListViewStyleName": "样式3",
+        "ShowColumnHeaderInDesigner": true,
+        "IsRowHeaderVisible": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "AllowEditInListview": true,
+        "AllowAddNewRow": true,
+        "ColumnOperation": 2,
+        "DoNotLoadDataWhenLoadPage": true,
+        "ShowGridLine": true
+      }
+    },
+    "73,2": {
+      "NameUsedInJavaScript": "平台",
+      "BindingInfo": {
+        "TableName": "FBA退货报告2",
+        "ColumnName": "平台",
+        "GUID": "df80d8ba-810f-48e8-b357-7353b9ee517e"
+      }
+    },
+    "73,3": {
+      "NameUsedInJavaScript": "总退货量",
+      "BindingInfo": {
+        "TableName": "FBA退货报告2",
+        "ColumnName": "平台_年月",
+        "GUID": "af8ff2a4-e62b-4301-b426-1e76eba3ca74"
+      }
+    },
+    "73,4": {
+      "NameUsedInJavaScript": "年月",
+      "BindingInfo": {
+        "TableName": "FBA退货报告2",
+        "ColumnName": "年月",
+        "GUID": "1e81f274-ab16-4998-8b6e-d9295ab6c51b"
+      }
+    },
+    "73,5": {
+      "NameUsedInJavaScript": "退货量",
+      "BindingInfo": {
+        "TableName": "FBA退货报告2",
+        "ColumnName": "数量",
+        "GUID": "b557a148-fe30-476e-9048-ceff8b5036d5"
+      }
+    },
+    "78,1": {
+      "ListViewInfo": {
+        "Name": "表格1",
+        "TableName": "FBA退货报告2",
+        "RowIndex": 78,
+        "ColumnIndex": 1,
+        "RowCount": 9,
+        "ColumnCount": 9,
+        "OrderByCondition": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "FBA退货报告2",
+                "ColumnName": "年月",
+                "GUID": "653e18c5-b855-4a30-a69a-a2dd7b555d68"
+              },
+              "Order": 1
+            }
+          ]
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "样式3",
+        "ShowColumnHeaderInDesigner": true,
+        "IsRowHeaderVisible": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "AllowEditInListview": true,
+        "AllowAddNewRow": true,
+        "ColumnOperation": 2,
+        "DoNotLoadDataWhenLoadPage": true,
+        "ShowGridLine": true
+      }
+    },
+    "78,52": {
+      "ListViewInfo": {
+        "Name": "表格3",
+        "TableName": "FBA退货报告2",
+        "RowIndex": 78,
+        "ColumnIndex": 52,
+        "RowCount": 10,
+        "ColumnCount": 29,
+        "OrderByCondition": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "FBA退货报告2",
+                "ColumnName": "年月",
+                "GUID": "87ee5a45-756a-4160-b41b-b58eda8b9c2b"
+              },
+              "Order": 1
+            }
+          ]
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "样式3",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2,
+        "ShowGridLine": true
+      }
+    },
+    "79,2": {
+      "NameUsedInJavaScript": "包装账户",
+      "BindingInfo": {
+        "TableName": "FBA退货报告2",
+        "ColumnName": "包装账户识别码",
+        "GUID": "56e32ea6-b351-4969-a673-87198524dd69",
+        "RelationBinding": {
+          "RelatedTable": "包装账户对应表",
+          "RelatedColumn": "包装账户识别码",
+          "DisplayColumn": "包装账户"
+        }
+      }
+    },
+    "79,3": {
+      "NameUsedInJavaScript": "平台",
+      "BindingInfo": {
+        "TableName": "FBA退货报告2",
+        "ColumnName": "平台",
+        "GUID": "e1fbb73f-00a5-4d24-86b5-7a8120f8e6ab"
+      }
+    },
+    "79,4": {
+      "NameUsedInJavaScript": "总退货量",
+      "BindingInfo": {
+        "TableName": "FBA退货报告2",
+        "ColumnName": "平台_年月",
+        "GUID": "c21dde1d-a040-4b8d-95d2-6d4d12ece971"
+      }
+    },
+    "79,5": {
+      "NameUsedInJavaScript": "标记",
+      "BindingInfo": {
+        "TableName": "FBA退货报告2",
+        "ColumnName": "退货标记",
+        "GUID": "d6932b97-98f1-427e-9eb0-4ac55fa6a06d"
+      }
+    },
+    "79,6": {
+      "NameUsedInJavaScript": "年月",
+      "BindingInfo": {
+        "TableName": "FBA退货报告2",
+        "ColumnName": "年月",
+        "GUID": "7af4b35d-8d54-4d48-a8b6-4481e483fc40"
+      }
+    },
+    "79,7": {
+      "NameUsedInJavaScript": "数量",
+      "BindingInfo": {
+        "TableName": "FBA退货报告2",
+        "ColumnName": "数量",
+        "GUID": "d63d2d98-0358-4575-bc9a-8dfba61d6771"
+      }
+    },
+    "79,8": {
+      "NameUsedInJavaScript": "_总退货量"
+    },
+    "79,9": {
+      "NameUsedInJavaScript": "占比"
+    },
+    "79,52": {
+      "NameUsedInJavaScript": "包装账户",
+      "BindingInfo": {
+        "TableName": "FBA退货报告2",
+        "ColumnName": "包装账户识别码",
+        "GUID": "7cc82f7b-2c14-4dde-a70b-46e6a22230e8",
+        "RelationBinding": {
+          "RelatedTable": "包装账户对应表",
+          "RelatedColumn": "包装账户识别码",
+          "DisplayColumn": "包装账户"
+        }
+      }
+    },
+    "79,56": {
+      "NameUsedInJavaScript": "平台",
+      "BindingInfo": {
+        "TableName": "FBA退货报告2",
+        "ColumnName": "平台",
+        "GUID": "bb8f4274-35e0-4518-9a3d-c42837122989"
+      }
+    },
+    "79,59": {
+      "NameUsedInJavaScript": "年月",
+      "BindingInfo": {
+        "TableName": "FBA退货报告2",
+        "ColumnName": "年月",
+        "GUID": "2ed7f354-5d65-4d8b-bb5b-9b0c9317292b"
+      }
+    },
+    "79,63": {
+      "NameUsedInJavaScript": "退货标记",
+      "BindingInfo": {
+        "TableName": "FBA退货报告2",
+        "ColumnName": "退货标记",
+        "GUID": "12bbea23-d9e2-4fe4-be1e-a21b891dcc09"
+      }
+    },
+    "79,68": {
+      "NameUsedInJavaScript": "数量",
+      "BindingInfo": {
+        "TableName": "FBA退货报告2",
+        "ColumnName": "数量",
+        "GUID": "7f24876a-2965-4992-805d-74acf7025f15"
+      }
+    },
+    "79,72": {
+      "NameUsedInJavaScript": "总量"
+    },
+    "79,76": {
+      "NameUsedInJavaScript": "占比"
+    },
+    "79,80": {
+      "NameUsedInJavaScript": "平台_年月",
+      "BindingInfo": {
+        "TableName": "FBA退货报告2",
+        "ColumnName": "平台_年月",
+        "GUID": "8e080f5d-e8a5-4fc5-bd73-94dace7653b1"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontSize": 16.0,
+        "FontWeight": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 16.0,
+        "FontWeight": 0,
+        "HorizontalAlignment": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "HorizontalAlignment": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "HorizontalAlignment": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "VerticalAlignment": 3,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 4,
+        "FontSize": 26.666666666666664,
+        "Foreground": 5,
+        "HorizontalAlignment": 2,
+        "WordWrap": true,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "HorizontalAlignment": 6,
+        "BorderBottom": null,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "BorderBottom": null,
+        "BorderTop": 0,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "BorderBottom": null,
+        "BorderTop": 0,
+        "BorderLeft": null,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 1,
+        "HorizontalAlignment": 6,
+        "BorderBottom": 1,
+        "BorderTop": null,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "BorderBottom": 1,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 1,
+        "HorizontalAlignment": 6,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "HorizontalAlignment": 6,
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": 0
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": 0,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": 0,
+        "BorderLeft": null,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 9,
+        "BorderBottom": 1,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 10,
+        "BorderBottom": 1,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": 0
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 11,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": 0
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": 0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Bold",
+        "Body",
+        "Center",
+        "Top",
+        "Accent 1 40",
+        "Background 1 0",
+        "Left",
+        "DarkGray",
+        "Text 1 50",
+        "yyyy/MM/dd",
+        "0%",
+        "0.0%"
+      ],
+      "Borders": [
+        {
+          "Color": 7
+        },
+        {
+          "Color": 8
+        }
+      ]
+    },
+    "CellStyles": {
+      "1,1": 0,
+      "1,5": 1,
+      "1,10": 1,
+      "1,11": 2,
+      "1,12": 2,
+      "1,13": 2,
+      "1,15": 3,
+      "1,16": 4,
+      "1,17": 2,
+      "1,18": 2,
+      "1,19": 2,
+      "1,20": 3,
+      "1,21": 4,
+      "1,22": 2,
+      "1,23": 2,
+      "1,24": 2,
+      "1,25": 3,
+      "1,26": 4,
+      "1,27": 2,
+      "1,28": 2,
+      "1,29": 2,
+      "1,30": 3,
+      "1,31": 4,
+      "1,32": 2,
+      "1,33": 2,
+      "1,34": 2,
+      "1,36": 5,
+      "3,0": 6,
+      "3,1": 3,
+      "3,81": 3,
+      "4,81": 3,
+      "5,81": 3,
+      "6,81": 3,
+      "7,81": 3,
+      "8,81": 3,
+      "9,81": 3,
+      "10,81": 3,
+      "11,81": 3,
+      "12,81": 3,
+      "13,81": 3,
+      "14,81": 3,
+      "15,81": 3,
+      "16,81": 3,
+      "17,81": 3,
+      "18,81": 3,
+      "19,81": 3,
+      "20,81": 3,
+      "21,81": 3,
+      "22,81": 3,
+      "23,81": 3,
+      "24,81": 3,
+      "25,81": 3,
+      "26,81": 3,
+      "27,81": 3,
+      "28,81": 3,
+      "29,81": 3,
+      "30,81": 3,
+      "31,81": 3,
+      "32,81": 3,
+      "33,81": 3,
+      "34,81": 3,
+      "35,81": 3,
+      "36,81": 3,
+      "37,81": 3,
+      "38,81": 3,
+      "39,81": 3,
+      "40,81": 3,
+      "41,81": 3,
+      "42,81": 3,
+      "43,81": 3,
+      "44,81": 3,
+      "45,81": 3,
+      "46,81": 3,
+      "47,2": 2,
+      "47,3": 2,
+      "47,4": 2,
+      "47,5": 2,
+      "47,6": 2,
+      "47,7": 2,
+      "47,8": 2,
+      "47,9": 2,
+      "47,10": 2,
+      "47,11": 2,
+      "47,12": 2,
+      "47,13": 2,
+      "47,14": 2,
+      "47,15": 2,
+      "47,16": 2,
+      "47,17": 2,
+      "47,18": 2,
+      "47,19": 2,
+      "47,20": 2,
+      "47,21": 2,
+      "47,22": 2,
+      "47,23": 2,
+      "47,24": 2,
+      "47,25": 2,
+      "47,26": 2,
+      "47,27": 2,
+      "47,28": 2,
+      "47,29": 2,
+      "47,30": 2,
+      "47,31": 2,
+      "47,32": 2,
+      "47,33": 2,
+      "47,34": 2,
+      "47,35": 2,
+      "47,36": 2,
+      "47,37": 2,
+      "47,38": 2,
+      "47,39": 2,
+      "47,40": 2,
+      "47,41": 2,
+      "47,42": 2,
+      "47,43": 2,
+      "47,44": 2,
+      "47,45": 2,
+      "47,46": 2,
+      "47,47": 2,
+      "47,48": 2,
+      "48,0": 6,
+      "48,1": 4,
+      "70,1": 2,
+      "70,2": 2,
+      "70,3": 2,
+      "70,4": 2,
+      "70,5": 2,
+      "70,6": 2,
+      "70,7": 2,
+      "70,8": 2,
+      "70,9": 2,
+      "70,10": 2,
+      "70,11": 2,
+      "70,12": 2,
+      "70,13": 2,
+      "70,14": 2,
+      "70,15": 2,
+      "70,16": 2,
+      "70,17": 2,
+      "70,18": 2,
+      "70,19": 2,
+      "70,20": 2,
+      "70,21": 2,
+      "70,22": 2,
+      "70,23": 2,
+      "70,24": 2,
+      "70,25": 2,
+      "70,26": 2,
+      "70,27": 2,
+      "70,28": 2,
+      "70,29": 2,
+      "70,30": 2,
+      "70,31": 2,
+      "70,32": 2,
+      "70,33": 2,
+      "70,34": 2,
+      "70,35": 2,
+      "70,36": 2,
+      "70,37": 2,
+      "70,38": 2,
+      "70,39": 2,
+      "70,40": 2,
+      "70,41": 2,
+      "70,42": 2,
+      "70,43": 2,
+      "70,44": 2,
+      "70,45": 2,
+      "70,46": 2,
+      "70,47": 2,
+      "70,48": 2,
+      "70,49": 2,
+      "70,50": 2,
+      "70,51": 2,
+      "70,52": 2,
+      "70,53": 2,
+      "70,54": 2,
+      "70,55": 2,
+      "70,56": 2,
+      "70,57": 2,
+      "70,58": 2,
+      "70,59": 2,
+      "70,60": 2,
+      "70,61": 2,
+      "70,62": 2,
+      "70,63": 2,
+      "70,64": 2,
+      "70,65": 2,
+      "70,66": 2,
+      "70,67": 2,
+      "70,68": 2,
+      "70,69": 2,
+      "70,70": 2,
+      "70,71": 2,
+      "70,72": 2,
+      "70,73": 2,
+      "70,74": 2,
+      "70,75": 2,
+      "70,76": 2,
+      "70,77": 2,
+      "70,78": 2,
+      "70,79": 2,
+      "71,1": 2,
+      "71,2": 2,
+      "71,3": 2,
+      "71,4": 2,
+      "71,5": 2,
+      "71,6": 2,
+      "71,7": 2,
+      "71,8": 2,
+      "71,9": 2,
+      "71,10": 2,
+      "71,11": 2,
+      "71,12": 2,
+      "71,13": 2,
+      "71,14": 2,
+      "71,15": 2,
+      "71,16": 2,
+      "71,17": 2,
+      "71,18": 2,
+      "71,19": 2,
+      "71,20": 2,
+      "71,21": 2,
+      "71,22": 2,
+      "71,23": 2,
+      "71,24": 2,
+      "71,25": 2,
+      "71,26": 2,
+      "71,27": 2,
+      "71,28": 2,
+      "71,29": 2,
+      "71,30": 2,
+      "71,31": 2,
+      "71,32": 2,
+      "71,33": 2,
+      "71,34": 2,
+      "71,35": 2,
+      "71,36": 2,
+      "71,37": 2,
+      "71,38": 2,
+      "71,39": 2,
+      "71,40": 2,
+      "71,41": 2,
+      "71,42": 2,
+      "71,43": 2,
+      "71,44": 2,
+      "71,45": 2,
+      "71,46": 2,
+      "71,47": 2,
+      "71,48": 2,
+      "71,49": 2,
+      "71,50": 2,
+      "71,51": 2,
+      "71,52": 2,
+      "71,53": 2,
+      "71,54": 2,
+      "71,55": 2,
+      "71,56": 2,
+      "71,57": 2,
+      "71,58": 2,
+      "71,59": 2,
+      "71,60": 2,
+      "71,61": 2,
+      "71,62": 2,
+      "71,63": 2,
+      "71,64": 2,
+      "71,65": 2,
+      "71,66": 2,
+      "71,67": 2,
+      "71,68": 2,
+      "71,69": 2,
+      "71,70": 2,
+      "71,71": 2,
+      "71,72": 2,
+      "71,73": 2,
+      "71,74": 2,
+      "71,75": 2,
+      "71,76": 2,
+      "71,77": 2,
+      "71,78": 2,
+      "71,79": 2,
+      "72,1": 7,
+      "72,2": 8,
+      "72,3": 8,
+      "72,4": 8,
+      "72,5": 9,
+      "73,1": 10,
+      "73,2": 11,
+      "73,3": 11,
+      "73,4": 2,
+      "73,5": 12,
+      "74,1": 13,
+      "74,2": 14,
+      "74,3": 2,
+      "74,4": 2,
+      "74,5": 12,
+      "75,1": 15,
+      "75,2": 16,
+      "75,3": 17,
+      "75,4": 17,
+      "75,5": 18,
+      "78,1": 7,
+      "78,2": 8,
+      "78,3": 8,
+      "78,4": 19,
+      "78,5": 19,
+      "78,6": 19,
+      "78,7": 8,
+      "78,8": 8,
+      "78,9": 9,
+      "78,52": 20,
+      "78,53": 19,
+      "78,54": 19,
+      "78,55": 19,
+      "78,56": 19,
+      "78,57": 19,
+      "78,58": 19,
+      "78,59": 19,
+      "78,60": 19,
+      "78,61": 19,
+      "78,62": 19,
+      "78,63": 19,
+      "78,64": 19,
+      "78,65": 19,
+      "78,66": 19,
+      "78,67": 19,
+      "78,68": 19,
+      "78,69": 19,
+      "78,70": 19,
+      "78,71": 19,
+      "78,72": 19,
+      "78,73": 19,
+      "78,74": 19,
+      "78,75": 19,
+      "78,76": 19,
+      "78,77": 19,
+      "78,78": 19,
+      "78,79": 19,
+      "78,80": 21,
+      "79,1": 10,
+      "79,2": 22,
+      "79,3": 11,
+      "79,4": 11,
+      "79,5": 11,
+      "79,6": 2,
+      "79,7": 2,
+      "79,8": 11,
+      "79,9": 23,
+      "79,52": 24,
+      "79,56": 14,
+      "79,57": 2,
+      "79,58": 2,
+      "79,59": 2,
+      "79,60": 2,
+      "79,61": 2,
+      "79,62": 2,
+      "79,63": 2,
+      "79,64": 2,
+      "79,65": 2,
+      "79,66": 2,
+      "79,67": 2,
+      "79,68": 2,
+      "79,69": 2,
+      "79,70": 2,
+      "79,71": 12,
+      "79,76": 25,
+      "79,77": 2,
+      "79,78": 2,
+      "79,79": 2,
+      "79,80": 2,
+      "80,1": 13,
+      "80,2": 14,
+      "80,3": 2,
+      "80,4": 2,
+      "80,5": 2,
+      "80,6": 2,
+      "80,7": 2,
+      "80,8": 2,
+      "80,9": 12,
+      "80,52": 24,
+      "80,71": 26,
+      "80,72": 27,
+      "80,73": 27,
+      "80,74": 27,
+      "80,75": 27,
+      "80,76": 26,
+      "80,77": 27,
+      "80,78": 27,
+      "80,79": 27,
+      "80,80": 26,
+      "81,1": 13,
+      "81,2": 14,
+      "81,3": 2,
+      "81,4": 2,
+      "81,5": 2,
+      "81,6": 2,
+      "81,7": 2,
+      "81,8": 2,
+      "81,9": 12,
+      "81,52": 24,
+      "81,71": 26,
+      "81,72": 27,
+      "81,73": 27,
+      "81,74": 27,
+      "81,75": 27,
+      "81,76": 26,
+      "81,77": 27,
+      "81,78": 27,
+      "81,79": 27,
+      "81,80": 26,
+      "82,1": 13,
+      "82,2": 14,
+      "82,3": 2,
+      "82,4": 2,
+      "82,5": 2,
+      "82,6": 2,
+      "82,7": 2,
+      "82,8": 2,
+      "82,9": 12,
+      "82,52": 24,
+      "82,71": 26,
+      "82,72": 27,
+      "82,73": 27,
+      "82,74": 27,
+      "82,75": 27,
+      "82,76": 26,
+      "82,77": 27,
+      "82,78": 27,
+      "82,79": 27,
+      "82,80": 26,
+      "83,1": 13,
+      "83,2": 14,
+      "83,3": 2,
+      "83,4": 2,
+      "83,5": 2,
+      "83,6": 2,
+      "83,7": 2,
+      "83,8": 2,
+      "83,9": 12,
+      "83,52": 24,
+      "83,71": 26,
+      "83,72": 27,
+      "83,73": 27,
+      "83,74": 27,
+      "83,75": 27,
+      "83,76": 26,
+      "83,77": 27,
+      "83,78": 27,
+      "83,79": 27,
+      "83,80": 26,
+      "84,1": 13,
+      "84,2": 14,
+      "84,3": 2,
+      "84,4": 2,
+      "84,5": 2,
+      "84,6": 2,
+      "84,7": 2,
+      "84,8": 2,
+      "84,9": 12,
+      "84,52": 24,
+      "84,71": 26,
+      "84,72": 27,
+      "84,73": 27,
+      "84,74": 27,
+      "84,75": 27,
+      "84,76": 26,
+      "84,77": 27,
+      "84,78": 27,
+      "84,79": 27,
+      "84,80": 26,
+      "85,1": 13,
+      "85,2": 14,
+      "85,3": 2,
+      "85,4": 2,
+      "85,5": 2,
+      "85,6": 2,
+      "85,7": 2,
+      "85,8": 2,
+      "85,9": 12,
+      "85,52": 24,
+      "85,71": 26,
+      "85,72": 27,
+      "85,73": 27,
+      "85,74": 27,
+      "85,75": 27,
+      "85,76": 26,
+      "85,77": 27,
+      "85,78": 27,
+      "85,79": 27,
+      "85,80": 26,
+      "86,1": 15,
+      "86,2": 16,
+      "86,3": 17,
+      "86,4": 17,
+      "86,5": 17,
+      "86,6": 17,
+      "86,7": 17,
+      "86,8": 17,
+      "86,9": 18,
+      "86,52": 24,
+      "86,71": 26,
+      "86,72": 27,
+      "86,73": 27,
+      "86,74": 27,
+      "86,75": 27,
+      "86,76": 26,
+      "86,77": 27,
+      "86,78": 27,
+      "86,79": 27,
+      "86,80": 26,
+      "87,52": 28,
+      "87,53": 29,
+      "87,54": 29,
+      "87,55": 29,
+      "87,56": 29,
+      "87,57": 29,
+      "87,58": 29,
+      "87,59": 29,
+      "87,60": 29,
+      "87,61": 29,
+      "87,62": 29,
+      "87,63": 29,
+      "87,64": 29,
+      "87,65": 29,
+      "87,66": 29,
+      "87,67": 29,
+      "87,68": 29,
+      "87,69": 29,
+      "87,70": 29,
+      "87,71": 30,
+      "87,72": 29,
+      "87,73": 29,
+      "87,74": 29,
+      "87,75": 29,
+      "87,76": 30,
+      "87,77": 29,
+      "87,78": 29,
+      "87,79": 29,
+      "87,80": 30
+    },
+    "SheetStyle": {
+      "FontFamily": 1,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
+    }
+  },
+  "Spans": [
+    "1,1,1,3",
+    "1,5,1,4",
+    "1,10,1,4",
+    "1,36,1,44",
+    "3,0,44,1",
+    "3,1,44,80",
+    "48,0,22,1",
+    "48,1,22,80",
+    "74,1,2,5",
+    "77,34,1,5",
+    "79,52,1,4",
+    "79,56,1,3",
+    "79,59,1,4",
+    "79,63,1,5",
+    "79,68,1,4",
+    "79,72,1,4",
+    "79,76,1,4",
+    "80,1,7,9",
+    "80,52,8,29",
+    "78,52,1,4",
+    "78,56,1,3",
+    "78,59,1,4",
+    "78,63,1,5",
+    "78,68,1,4",
+    "78,72,1,4",
+    "78,76,1,4"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//CRoT+qxPyCKbPR+JHNc0LinZ+DHA2qI8wonqtMVvH8cA/V8TpUjZQKhJ5JSOryga3omzH8km4CNSEcW04N8zUh2pONvrubq31excebcrNzlehjWtggIyasbfIBnQSPVhyL1iTYoWUzd9LgJ8PlPQHiaVwT2fnPvmibAKa3H24i88egupeBTxsVHg+QdV/4H3LlXnGJ5v1lAqjm9cd+Ezq4FtFv5joiKYvjCtrFHkyhOEiiIaeSTXaoDj1CXC5NE/suJwf9eonRhL6ul4nTQehif8lHWGn9ciPYDU6eFarAF/TSy2lTQi2U4oldres1J9DAfBSvxFVPox3iEEypmdc/sLHaGUxunVXZ/c9Lq7Y98GWsm9JR6zztj+WVlsRsVvb0VdvGqr3GDZLY6A51mzNEEjSKpr0UE7vED0KzKS5DC7blAU90oMD3tpLocjAz9KbNccV9skYl8kyXgGtBjHX1WttctiuW4UhBSslSAseOmMbUcE9sgEc2oJbWXxmWr1qhZNXXIgcUJAdW6148pLUAyQqm+y3ujGFYdwT/fcw7KpteZ4JVcoDLqhxgY0fauqpeBOu4HkbuQJKTHBZtd2FT6+A/Bt2K123MBMl6WV6nxDvuYyCBZfcAJ4l4f6bnmvuRs/rD7Qg+X7U3cKeKhVDJ/A17c/CChumgv+aVYBr2d3YKao/hu1SPx3FvyUiIkOkE0LAPQQ/t5czfA+9xYD8fAVjVRw2+wKiNxQQ8Vy5Gn21G8/taR/C3vGG+zKKz7flgcpJadSwS9ooJzbXDw89AxNzAysbykyTXnJE8+IlK9U116Q2msDDN771p2rst26J/uIY1AscFiKEtsIMdlTqB6eQ0MmWq0AoUBid3H8/oTzLnt4coGs5vRBqAR2Dw7Fq/Ev4gwihPe0UpnZpWcKrA==|920

@@ -1,0 +1,295 @@
+{
+  "Rows": {
+    "Count": 25
+  },
+  "Cols": {
+    "Count": 18
+  },
+  "Values": {
+    "2,5": "邮件订阅设置",
+    "5,1": "请选择邮件通知的种类",
+    "21,2": "保存",
+    "21,10": "取消"
+  },
+  "AttachInfos": {
+    "7,1": {
+      "CellType": {
+        "$type": "Forguncy.RadioGroupCellType, ServerDesignerCommon",
+        "LayoutMode": 1,
+        "ItemSpace": 14,
+        "Items": [
+          {
+            "Value": "0",
+            "DisplayValue": "不通知"
+          },
+          {
+            "Value": "1",
+            "DisplayValue": "所有变更都通知"
+          },
+          {
+            "Value": "2",
+            "DisplayValue": "其他用户创建或修改记录的时候发送通知"
+          },
+          {
+            "Value": "3",
+            "DisplayValue": "我创建的记录被修改的时候发送通知"
+          },
+          {
+            "Value": "4",
+            "DisplayValue": "指定给我的记录被修改的时候发送通知"
+          }
+        ],
+        "ForguncyAttribute": "MailSubscription_Choice"
+      }
+    },
+    "21,2": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "Text": "保存",
+        "AutoExecute": true,
+        "ForguncyAttribute": "MailSubscription_Button"
+      }
+    },
+    "21,10": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "NavigateType": "back",
+            "IgnoreTargetPageCachedCurrentRowInfo": false,
+            "BreakpointIdentity": "4814cbc9-2da1-4e3a-9e10-6f9b982f7484"
+          }
+        ],
+        "Text": "取消"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "BorderBottom": null
+      },
+      {
+        "BorderRight": null
+      },
+      {
+        "FontSize": 21.33333396911621,
+        "Foreground": 0,
+        "Formatter": 1,
+        "TextIndent": 0,
+        "HorizontalAlignment": 2,
+        "VerticalAlignment": 3,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderLeft": null
+      },
+      {
+        "BorderBottom": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": 0,
+        "BorderLeft": null
+      },
+      {
+        "BorderTop": null
+      },
+      {
+        "FontSize": 14.666666984558105,
+        "Foreground": 5,
+        "Formatter": 1
+      },
+      {
+        "FontSize": 14.666666984558105,
+        "Foreground": 5,
+        "VerticalAlignment": 6,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 7,
+        "FontSize": 16.0,
+        "FontWeight": 8,
+        "Foreground": 9,
+        "Formatter": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 9,
+        "FontSize": 16.0,
+        "FontWeight": 8,
+        "Foreground": 10,
+        "Formatter": 1,
+        "BorderBottom": null,
+        "BorderTop": 1,
+        "BorderLeft": 1,
+        "BorderRight": null
+      },
+      {
+        "Background": 9,
+        "BorderTop": 1
+      },
+      {
+        "Background": 9,
+        "BorderTop": 1,
+        "BorderRight": 1
+      },
+      {
+        "Background": 9,
+        "BorderBottom": 1,
+        "BorderLeft": 1
+      },
+      {
+        "Background": 9,
+        "BorderBottom": 1
+      },
+      {
+        "Background": 9,
+        "BorderBottom": 1,
+        "BorderRight": 1
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "#FF09519D",
+        "[AUTO]General",
+        "Center",
+        "Bottom",
+        "#FFA9BCD1",
+        "#FF3F3F3F",
+        "Top",
+        "#FF248FFF",
+        "Bold",
+        "#FFFFFFFF",
+        "#FF238EFF",
+        "微软雅黑",
+        "#FF000000"
+      ],
+      "Borders": [
+        {
+          "Color": 4
+        },
+        {
+          "Color": 10
+        }
+      ]
+    },
+    "CellStyles": {
+      "1,5": 0,
+      "1,6": 0,
+      "1,7": 0,
+      "1,8": 0,
+      "1,9": 0,
+      "1,10": 0,
+      "1,11": 0,
+      "1,12": 0,
+      "2,4": 1,
+      "2,5": 2,
+      "2,13": 3,
+      "3,1": 4,
+      "3,2": 4,
+      "3,3": 4,
+      "3,4": 5,
+      "3,13": 6,
+      "3,14": 4,
+      "3,15": 4,
+      "3,16": 4,
+      "4,1": 7,
+      "4,2": 7,
+      "4,3": 7,
+      "4,4": 7,
+      "4,5": 7,
+      "4,6": 7,
+      "4,7": 7,
+      "4,8": 7,
+      "4,9": 7,
+      "4,10": 7,
+      "4,11": 7,
+      "4,12": 7,
+      "4,13": 7,
+      "4,14": 7,
+      "4,15": 7,
+      "4,16": 7,
+      "5,1": 8,
+      "7,1": 9,
+      "20,10": 0,
+      "20,11": 0,
+      "20,12": 0,
+      "20,13": 0,
+      "20,14": 0,
+      "20,15": 0,
+      "21,2": 10,
+      "21,9": 1,
+      "21,10": 11,
+      "21,11": 12,
+      "21,12": 12,
+      "21,13": 12,
+      "21,14": 12,
+      "21,15": 13,
+      "21,16": 3,
+      "22,9": 1,
+      "22,10": 14,
+      "22,11": 15,
+      "22,12": 15,
+      "22,13": 15,
+      "22,14": 15,
+      "22,15": 16,
+      "22,16": 3,
+      "23,10": 7,
+      "23,11": 7,
+      "23,12": 7,
+      "23,13": 7,
+      "23,14": 7,
+      "23,15": 7
+    },
+    "SheetStyle": {
+      "FontFamily": 11,
+      "FontSize": 13.333333015441895,
+      "Foreground": 12
+    }
+  },
+  "Spans": [
+    "2,5,2,8",
+    "7,1,11,16",
+    "21,2,2,6",
+    "21,10,2,6"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_Anonymous"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "IsBuiltInPage": true,
+    "IsMobilePage": true
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//lNLo6kS6diV/4+GIKkFb6RSe7BfdguG8XIP2cLSK6xOMeNcNmbvwiud1R46hpQWESLBc0rbDwjrDS/YMvhsRFF1k9INeDmnY4dbyJnk1Ks9I/Q1li6Dtbf+rdk5sf3gwHhtjQnxr/7o8KvlyqeCkUNet5s+pqLWBGmr7vxDo3yr7cwPT74R9KS4ECwhCU6Se0i2iU9Pf2oQNrTA50yPwKcLfOh7O+6kdwjY7o++UozvccPrzWF+fgjXIYNTFL8j4q6sDv9V6EwRiiqmdMT9WYTv3+QWdOpbaN+ix49Mj/SFtvZN0fQGm1CvV5+75F3gcSytmB1LRJaCH2nLturPBPI1K0UAfpo0Yzxbb0aRY9Ii3lGW9CEAMcGJ6mcdAKYtVm8nr977pVvLCkZs/Qus/vjgRAiUIJz4tTykClGWftG9CXGj1xc+Bs1E8sg8S7yBLqjjAMkP2hmiKqGGSiqXip31bgGOPxXDB8SLR1F0AiLFOYA+pClsQ4R+LISaai9AaFgjfX7VkP78rRt4H9XLHDwol3SZ9RK7n8Cku29x0yotgqfFdm9Cinx4l4yQC7sToeuQTmRf00GwFcC1r6bd5zthyuwzsQ2/85vOkIHo5KOx0QSNgZSJ7fVHRAlXs5UXeCkHug5N1/6dzLid3WdTmhSh7AmcD90xiHjl11bR9q9/pcYnAkK38mH0YYxvplprL/HwMUvKMF4MGHr9LsU/WELxMl6azrLZeMqOz/nZX31KAU+Ggyn2LfK92saQm2V19rqJDRF6pOstV8irBYgl8ZKb/M3b3pz1l+yJDIaOaiiXpR/pT+3vIBtFmsrV1oncgT0Yy3KN1g3/1ZCVJtDR/3eNiG1O0HkB67HF8MGwUSoIYNvvHt2AVA4YV01PvGFj4McWlMHpt4fRiDC40klCNow==|920
