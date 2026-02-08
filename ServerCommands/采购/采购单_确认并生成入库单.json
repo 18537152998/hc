@@ -40,6 +40,13 @@
                 "$type": "Forguncy.SaveLoad.DataValidationInfoSaveData, ServerDesignerCommon"
               },
               "TestData": "1"
+            },
+            {
+              "$type": "Forguncy.SaveLoad.PostRequestParameterSaveData, ServerDesignerCommon",
+              "Name": "新入库单ID",
+              "DataValidationInfo": {
+                "$type": "Forguncy.SaveLoad.DataValidationInfoSaveData, ServerDesignerCommon"
+              }
             }
           ]
         },
@@ -70,7 +77,7 @@
                   "$values": [
                     {
                       "$type": "Forguncy.Model.Commands.ParameterTableValueColumn, ServerDesignerCommon",
-                      "GUID": "948749f0-2f02-443a-8f70-821a5cb1a081",
+                      "GUID": "6fd4e809-6882-4426-b124-e5ac314333bb",
                       "BindingInfo": {
                         "$type": "ForguncyDataAccess.BindingInfo, ForguncyDataAccess",
                         "TableName": "采购单",
@@ -81,7 +88,7 @@
                     },
                     {
                       "$type": "Forguncy.Model.Commands.ParameterTableValueColumn, ServerDesignerCommon",
-                      "GUID": "90024299-3c19-4675-b437-fa4daa2c73c1",
+                      "GUID": "42e0d025-14d9-4037-91fb-0721690c558b",
                       "BindingInfo": {
                         "$type": "ForguncyDataAccess.BindingInfo, ForguncyDataAccess",
                         "TableName": "采购单",
@@ -92,7 +99,7 @@
                     },
                     {
                       "$type": "Forguncy.Model.Commands.ParameterTableValueColumn, ServerDesignerCommon",
-                      "GUID": "ac03d9c4-6501-4b3a-a6c4-10192aeb53a9",
+                      "GUID": "2e11b660-e19c-4fd9-aa2d-62a0444f353c",
                       "BindingInfo": {
                         "$type": "ForguncyDataAccess.BindingInfo, ForguncyDataAccess",
                         "TableName": "采购单",
@@ -103,7 +110,7 @@
                     },
                     {
                       "$type": "Forguncy.Model.Commands.ParameterTableValueColumn, ServerDesignerCommon",
-                      "GUID": "b71f7837-8399-4117-89dc-253b4e2a457e",
+                      "GUID": "a9f4432d-e8eb-442b-8161-52a750558d3e",
                       "BindingInfo": {
                         "$type": "ForguncyDataAccess.BindingInfo, ForguncyDataAccess",
                         "TableName": "采购单",
@@ -114,7 +121,7 @@
                     },
                     {
                       "$type": "Forguncy.Model.Commands.ParameterTableValueColumn, ServerDesignerCommon",
-                      "GUID": "596f840e-0be0-4404-9d77-2c39d0b8de8e",
+                      "GUID": "084cd70d-4997-4615-afb7-32158f0b830f",
                       "BindingInfo": {
                         "$type": "ForguncyDataAccess.BindingInfo, ForguncyDataAccess",
                         "TableName": "采购单",
@@ -125,7 +132,7 @@
                     },
                     {
                       "$type": "Forguncy.Model.Commands.ParameterTableValueColumn, ServerDesignerCommon",
-                      "GUID": "2a4e3b00-18a2-42ed-85b9-6a4a1373d7f7",
+                      "GUID": "a13b81d7-0cb4-46a4-a2ce-481c298c536a",
                       "BindingInfo": {
                         "$type": "ForguncyDataAccess.BindingInfo, ForguncyDataAccess",
                         "TableName": "采购单",
@@ -150,7 +157,7 @@
                   }
                 }
               },
-              "ID": "2152301814df4ec1b7518ea18ecf0895",
+              "ID": "ffaff7e5db1e4931bec95407526258fa",
               "BreakpointIdentity": "549ce9c9-883c-453d-a30f-f2fe116886a9"
             },
             {
@@ -169,7 +176,8 @@
                           "SerializeProperty": "=采购单入库条件.默认入库单ID"
                         }
                       },
-                      "value": "%Null%"
+                      "value": "%Null%",
+                      "compareType": 1
                     },
                     "CommandList": {
                       "$type": "System.Collections.Generic.List`1[[GrapeCity.Forguncy.Commands.Command, Forguncy.Commands]], System.Private.CoreLib",
@@ -177,7 +185,7 @@
                         {
                           "$type": "Forguncy.Model.ReturnCommand, ServerDesignerCommon",
                           "ErrorCode": "1",
-                          "Message": "已生成入库单（ID=xxx），请勿重复确认",
+                          "Message": "已生成，禁止重复",
                           "CustomReturns": {
                             "$type": "System.Collections.Generic.List`1[[Forguncy.Model.CustomReturns, ServerDesignerCommon]], System.Private.CoreLib",
                             "$values": [
@@ -195,7 +203,7 @@
                         }
                       ]
                     },
-                    "ID": "b42f559c-8669-4fbf-830a-42e56d6f258b"
+                    "ID": "61bc2a48-b8d1-4252-a38e-78a8109b7b7d"
                   },
                   {
                     "$type": "Forguncy.Model.ConditionAndCommandPair, ServerDesignerCommon",
@@ -234,7 +242,7 @@
                         }
                       ]
                     },
-                    "ID": "e3f993a7-5bc1-46a3-8c51-bc61300a4b8c"
+                    "ID": "4cdfa5f5-8b7f-4fe2-a01e-76cf7a12888d"
                   },
                   {
                     "$type": "Forguncy.Model.ConditionAndCommandPair, ServerDesignerCommon",
@@ -273,7 +281,7 @@
                         }
                       ]
                     },
-                    "ID": "b6d76617-c7d5-46d5-8410-a6fb84b71b2f"
+                    "ID": "655684ca-6f57-4abe-8013-e0bdf901098a"
                   },
                   {
                     "$type": "Forguncy.Model.ConditionAndCommandPair, ServerDesignerCommon",
@@ -294,7 +302,7 @@
                                   "$type": "ForguncyDataAccess.BindingInfo, ForguncyDataAccess",
                                   "TableName": "采购入库单",
                                   "ColumnName": "采购单ID",
-                                  "GUID": "9957e7f2-05af-453a-9165-5c38a66af572"
+                                  "GUID": "c9229d9c-df4a-4d29-82d5-566c43e53db5"
                                 },
                                 "Value": {
                                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -307,7 +315,7 @@
                                   "$type": "ForguncyDataAccess.BindingInfo, ForguncyDataAccess",
                                   "TableName": "采购入库单",
                                   "ColumnName": "入库日期",
-                                  "GUID": "37e35759-5574-458e-87da-87025b310f37"
+                                  "GUID": "d361de59-1c46-46dd-b607-dbf054ae6c2f"
                                 },
                                 "Value": {
                                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -320,11 +328,11 @@
                                   "$type": "ForguncyDataAccess.BindingInfo, ForguncyDataAccess",
                                   "TableName": "采购入库单",
                                   "ColumnName": "仓库ID",
-                                  "GUID": "d7f4f218-7293-4ce3-b218-26870eb33c39"
+                                  "GUID": "8e95bc72-73f6-4df5-a8a3-25deb41f5fe1"
                                 },
                                 "Value": {
                                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                  "SerializeProperty": "=采购单入库条件.默认入库单ID"
+                                  "SerializeProperty": "=采购单入库条件.默认入库仓库ID"
                                 }
                               },
                               {
@@ -333,7 +341,7 @@
                                   "$type": "ForguncyDataAccess.BindingInfo, ForguncyDataAccess",
                                   "TableName": "采购入库单",
                                   "ColumnName": "入库类型",
-                                  "GUID": "ad1d3d6f-25f6-411a-9402-bd13bc8cc65c"
+                                  "GUID": "4dcf88ce-c3ff-4744-9a6d-f0b27316065c"
                                 },
                                 "Value": "采购入库"
                               },
@@ -343,7 +351,7 @@
                                   "$type": "ForguncyDataAccess.BindingInfo, ForguncyDataAccess",
                                   "TableName": "采购入库单",
                                   "ColumnName": "入库状态",
-                                  "GUID": "bdedcf16-80b2-4f05-b41d-8ba01e0db3e2"
+                                  "GUID": "7c312584-566c-483b-95c8-5df4b884726f"
                                 },
                                 "Value": "草稿"
                               },
@@ -353,7 +361,7 @@
                                   "$type": "ForguncyDataAccess.BindingInfo, ForguncyDataAccess",
                                   "TableName": "采购入库单",
                                   "ColumnName": "备注",
-                                  "GUID": "629f0d88-03e5-4dd6-8878-53d8f51113d7"
+                                  "GUID": "e15a4b8a-7ff5-437a-bf94-71130f5fa2f7"
                                 },
                                 "Value": "采购确认自动生成"
                               }
@@ -373,14 +381,14 @@
                               "$values": [
                                 {
                                   "$type": "Forguncy.Model.Commands.ParameterTableValueColumn, ServerDesignerCommon",
-                                  "GUID": "2b3616c3-ac4c-47a4-88e4-dc5e0774a992",
+                                  "GUID": "743ff1c7-7e06-407c-914d-ce86339d4ceb",
                                   "BindingInfo": {
                                     "$type": "ForguncyDataAccess.BindingInfo, ForguncyDataAccess",
                                     "TableName": "采购入库单",
-                                    "ColumnName": "ID",
-                                    "GUID": "c770b6b0-0c09-4666-9ecd-4b8adf8449f2"
+                                    "ColumnName": "入库单号",
+                                    "GUID": "626d0daa-8790-46c6-a5df-dc72f46666db"
                                   },
-                                  "ColumnName": "新入库单ID"
+                                  "ColumnName": "入库单号"
                                 }
                               ]
                             },
@@ -390,15 +398,15 @@
                                 "$type": "ForguncyDataAccess.BindingInfo, ForguncyDataAccess",
                                 "TableName": "采购入库单",
                                 "ColumnName": "ID",
-                                "GUID": "2f809bd0-328b-4a5c-a0c8-af1a4af49a16"
+                                "GUID": "703f916b-f2fe-430a-9cb9-6231d70ed99b"
                               },
                               "Value": {
                                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                "SerializeProperty": "=采购单入库条件.默认入库单ID"
+                                "SerializeProperty": "=采购单ID"
                               }
                             }
                           },
-                          "ID": "e1b7e8dd1e0c461494699132c88f9590",
+                          "ID": "e4ada8be7550484490c6a15af7edf6be",
                           "BreakpointIdentity": "5acab92d-d0c9-48b6-9751-14214afe35db"
                         },
                         {
@@ -428,7 +436,7 @@
                                   "$type": "ForguncyDataAccess.BindingInfo, ForguncyDataAccess",
                                   "TableName": "采购单",
                                   "ColumnName": "采购状态",
-                                  "GUID": "99738310-fd3c-4a87-bd69-ca32656ef07e"
+                                  "GUID": "3a16adac-3c4a-4a16-89e3-e980456b0124"
                                 },
                                 "Value": "已确认"
                               },
@@ -438,7 +446,7 @@
                                   "$type": "ForguncyDataAccess.BindingInfo, ForguncyDataAccess",
                                   "TableName": "采购单",
                                   "ColumnName": "默认入库单ID",
-                                  "GUID": "ce825d0d-3da1-4dc8-91ee-6569a7ae4e85"
+                                  "GUID": "2185d111-bbbe-4a96-b83d-109683d85ee8"
                                 },
                                 "Value": {
                                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -451,7 +459,7 @@
                                   "$type": "ForguncyDataAccess.BindingInfo, ForguncyDataAccess",
                                   "TableName": "采购单",
                                   "ColumnName": "确认时间",
-                                  "GUID": "52089c6d-db28-4563-835e-c3630ba2ef81"
+                                  "GUID": "0ec78f3a-1041-458c-83e9-9e0251e5175d"
                                 },
                                 "Value": {
                                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -487,7 +495,7 @@
                         }
                       ]
                     },
-                    "ID": "007b09bf-a275-4c9d-ad11-38916bd85707"
+                    "ID": "08d0b157-3a02-4125-81d7-eaaf13ace246"
                   }
                 ]
               },

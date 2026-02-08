@@ -34,6 +34,8 @@
     },
     {
       "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DefaultValue": 0,
+      "Required": true,
       "DatabaseColumnType": "System.Int64",
       "MaxLength": -1,
       "Name": "销售数量",
@@ -41,9 +43,16 @@
     },
     {
       "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DefaultValue": 0,
       "DatabaseColumnType": "System.Int64",
       "MaxLength": -1,
       "Name": "已出库数量",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "Name": "本次出库数量",
       "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
     },
     {
@@ -79,7 +88,7 @@
       "IsDetailTableRelation": true
     },
     {
-      "PrimaryTable": "公司产品表",
+      "PrimaryTable": "账户产品表",
       "PrimaryColumn": "ID",
       "ForeignTable": "销售明细表",
       "ForeignColumn": "账户产品ID",

@@ -34,6 +34,8 @@
     },
     {
       "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DefaultValue": 0,
+      "Required": true,
       "DatabaseColumnType": "System.Int64",
       "MaxLength": -1,
       "Name": "本次入库数量",
@@ -61,6 +63,7 @@
     },
     {
       "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DefaultValue": false,
       "DatabaseColumnType": "System.Int64",
       "MaxLength": -1,
       "Name": "已写流水",
@@ -92,10 +95,13 @@
   ],
   "Relations": [
     {
-      "PrimaryTable": "采购单明细表",
+      "PrimaryTable": "采购入库单",
       "PrimaryColumn": "ID",
       "ForeignTable": "采购入库明细表",
-      "ForeignColumn": "采购入库单_ID"
+      "ForeignColumn": "采购入库单_ID",
+      "RelationTypeOnDelete": 5,
+      "RelationTypeOnUpdate": 2,
+      "IsDetailTableRelation": true
     },
     {
       "PrimaryTable": "采购单明细表",

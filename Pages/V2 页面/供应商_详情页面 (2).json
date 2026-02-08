@@ -1,0 +1,880 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "26": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 40.0
+        }
+      },
+      "27": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 48.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "41": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 40.0
+        }
+      },
+      "42": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 48.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "56": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 40.0
+        }
+      },
+      "57": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 48.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "69": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 32.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      }
+    },
+    "Count": 72,
+    "DefaultSize": 32.0
+  },
+  "Cols": {
+    "Count": 47,
+    "DefaultSize": 32.0
+  },
+  "Values": {
+    "1,1": "供应商信息",
+    "3,1": "供应商代码",
+    "3,17": "供应商全称",
+    "3,33": "地址",
+    "6,1": "是否启用",
+    "6,17": "税号",
+    "6,33": "开票抬头",
+    "9,1": "开票地址电话",
+    "9,17": "开票开户行",
+    "9,33": "开票账号",
+    "12,1": "默认付款方式",
+    "12,17": "账期天数",
+    "12,33": "审核状态",
+    "15,1": "风险等级",
+    "15,17": "备注",
+    "18,1": "附件",
+    "24,1": "供应商联系人表信息",
+    "39,1": "供应商收款账户表信息",
+    "54,1": "供应商开票资料表信息",
+    "70,5": "取消"
+  },
+  "AttachInfos": {
+    "4,1": {
+      "BindingInfo": {
+        "TableName": "供应商",
+        "ColumnName": "供应商代码",
+        "GUID": "d5e6bece-8655-40b7-9ec5-ac3471dcd2ea"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "4,17": {
+      "BindingInfo": {
+        "TableName": "供应商",
+        "ColumnName": "供应商全称",
+        "GUID": "553a90ba-5bfa-4958-a730-08f8bad4cfc7"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      },
+      "DataValidationInfo": {
+        "IgnoreBlank": false
+      }
+    },
+    "4,33": {
+      "BindingInfo": {
+        "TableName": "供应商",
+        "ColumnName": "地址",
+        "GUID": "e86d261d-9083-4f34-9bb0-426caedb8ed9"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "7,1": {
+      "BindingInfo": {
+        "TableName": "供应商",
+        "ColumnName": "是否启用",
+        "GUID": "e5d866ce-63a5-443c-9786-0cce73d05355"
+      },
+      "CellType": {
+        "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
+        "Style": 1
+      }
+    },
+    "7,17": {
+      "BindingInfo": {
+        "TableName": "供应商",
+        "ColumnName": "税号",
+        "GUID": "8cf17048-ffb3-400d-a42d-20a8fd2c48fe"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "7,33": {
+      "BindingInfo": {
+        "TableName": "供应商",
+        "ColumnName": "开票抬头",
+        "GUID": "3b743e6d-a1ac-43ee-9904-2fa9c10e932f"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "10,1": {
+      "BindingInfo": {
+        "TableName": "供应商",
+        "ColumnName": "开票地址电话",
+        "GUID": "fdb7b3fe-2951-470c-8e57-e0eee83b0824"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "10,17": {
+      "BindingInfo": {
+        "TableName": "供应商",
+        "ColumnName": "开票开户行",
+        "GUID": "9d661aae-42b8-4708-bf5e-3a9fd55e99f6"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "10,33": {
+      "BindingInfo": {
+        "TableName": "供应商",
+        "ColumnName": "开票账号",
+        "GUID": "d5848685-4f85-4e6a-8d6a-ef13850bfcde"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "13,1": {
+      "BindingInfo": {
+        "TableName": "供应商",
+        "ColumnName": "默认付款方式",
+        "GUID": "8671e0aa-e994-4a5e-98f1-01666d6a4897"
+      },
+      "CellType": {
+        "$type": "Forguncy.NumberCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "13,17": {
+      "BindingInfo": {
+        "TableName": "供应商",
+        "ColumnName": "账期天数",
+        "GUID": "1623ed50-6fd2-45cd-9f94-be35955a14d2"
+      },
+      "CellType": {
+        "$type": "Forguncy.NumberCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "13,33": {
+      "BindingInfo": {
+        "TableName": "供应商",
+        "ColumnName": "审核状态",
+        "GUID": "6a91a97b-1971-4871-9628-2f529cf93a0c"
+      },
+      "CellType": {
+        "$type": "Forguncy.NumberCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "16,1": {
+      "BindingInfo": {
+        "TableName": "供应商",
+        "ColumnName": "风险等级",
+        "GUID": "e06e4a26-9c5d-47df-a453-57791c2137f8"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "16,17": {
+      "BindingInfo": {
+        "TableName": "供应商",
+        "ColumnName": "备注",
+        "GUID": "34354831-2610-4aa9-be02-57fb70dbe6bc"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "19,1": {
+      "BindingInfo": {
+        "TableName": "供应商",
+        "ColumnName": "附件",
+        "GUID": "0be93dc1-914e-4b0f-8d17-b62e9f1429c2"
+      },
+      "CellType": {
+        "$type": "Forguncy.AttachmentCelltype, ServerDesignerCommon",
+        "UploadLimit": {
+          "ExtensionFilter": ".jpg, .jpeg, .png, .gif, .bmp, .xlsx, .docx, .doc, .xls, .pdf"
+        },
+        "TemplateKey": "_RS_NewFashionStyle1"
+      }
+    },
+    "26,1": {
+      "ListViewInfo": {
+        "Name": "表格1",
+        "TableName": "供应商联系人表",
+        "RowIndex": 26,
+        "ColumnIndex": 1,
+        "RowCount": 12,
+        "ColumnCount": 28,
+        "DetailListViewInfo": {
+          "ColumnOfDetailTable": "供应商_ID",
+          "MasterTable": "供应商",
+          "ColumnOfMasterTable": "ID",
+          "DataCommitType": 2
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "样式1",
+        "ShowColumnHeaderInDesigner": true,
+        "IsRowHeaderVisible": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "AllowEditInListview": true,
+        "AllowAddNewRow": true,
+        "ShowDeleteButton": true,
+        "AllowDragFill": true,
+        "AllowDragMove": true,
+        "ColumnOperation": 2,
+        "CommitType": 1
+      }
+    },
+    "27,2": {
+      "NameUsedInJavaScript": "ID",
+      "BindingInfo": {
+        "TableName": "供应商联系人表",
+        "ColumnName": "ID",
+        "GUID": "b0f617f7-a0d6-4e7e-8721-42b56db15fa2"
+      }
+    },
+    "27,5": {
+      "NameUsedInJavaScript": "联系人姓名",
+      "BindingInfo": {
+        "TableName": "供应商联系人表",
+        "ColumnName": "联系人姓名",
+        "GUID": "94357610-08a2-46f1-b3ce-9505ce03eb0f"
+      }
+    },
+    "27,8": {
+      "NameUsedInJavaScript": "联系电话",
+      "BindingInfo": {
+        "TableName": "供应商联系人表",
+        "ColumnName": "联系电话",
+        "GUID": "69f9be72-ba81-4597-bf56-7980508c0455"
+      }
+    },
+    "27,11": {
+      "NameUsedInJavaScript": "邮箱",
+      "BindingInfo": {
+        "TableName": "供应商联系人表",
+        "ColumnName": "邮箱",
+        "GUID": "2a598f57-2689-4123-bb8a-027aa3d52d80"
+      }
+    },
+    "27,14": {
+      "NameUsedInJavaScript": "微信_QQ",
+      "BindingInfo": {
+        "TableName": "供应商联系人表",
+        "ColumnName": "微信_QQ",
+        "GUID": "1c1e3586-ff34-409a-bf27-54c702bfc91d"
+      }
+    },
+    "27,17": {
+      "NameUsedInJavaScript": "岗位_角色",
+      "BindingInfo": {
+        "TableName": "供应商联系人表",
+        "ColumnName": "岗位_角色",
+        "GUID": "b5c6e55a-ca41-468b-a8a2-6939db66f0ed"
+      }
+    },
+    "27,20": {
+      "NameUsedInJavaScript": "是否默认",
+      "BindingInfo": {
+        "TableName": "供应商联系人表",
+        "ColumnName": "是否默认",
+        "GUID": "eacb528f-1e7b-45af-a807-ec55df645938"
+      }
+    },
+    "27,23": {
+      "NameUsedInJavaScript": "是否启用",
+      "BindingInfo": {
+        "TableName": "供应商联系人表",
+        "ColumnName": "是否启用",
+        "GUID": "8c249354-fcc9-4cea-bd8a-8c50727c42c9"
+      }
+    },
+    "27,26": {
+      "NameUsedInJavaScript": "备注",
+      "BindingInfo": {
+        "TableName": "供应商联系人表",
+        "ColumnName": "备注",
+        "GUID": "7859dfd6-80e6-4868-b809-0c054dda8717"
+      }
+    },
+    "41,1": {
+      "ListViewInfo": {
+        "Name": "表格2",
+        "TableName": "供应商收款账户表",
+        "RowIndex": 41,
+        "ColumnIndex": 1,
+        "RowCount": 12,
+        "ColumnCount": 28,
+        "DetailListViewInfo": {
+          "ColumnOfDetailTable": "供应商_ID",
+          "MasterTable": "供应商",
+          "ColumnOfMasterTable": "ID",
+          "DataCommitType": 2
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "样式1",
+        "ShowColumnHeaderInDesigner": true,
+        "IsRowHeaderVisible": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "AllowEditInListview": true,
+        "AllowAddNewRow": true,
+        "ShowDeleteButton": true,
+        "AllowDragFill": true,
+        "AllowDragMove": true,
+        "ColumnOperation": 2,
+        "CommitType": 1
+      }
+    },
+    "42,2": {
+      "NameUsedInJavaScript": "ID",
+      "BindingInfo": {
+        "TableName": "供应商收款账户表",
+        "ColumnName": "ID",
+        "GUID": "904bb265-6ade-4c56-9c54-cea0d37259fa"
+      }
+    },
+    "42,5": {
+      "NameUsedInJavaScript": "账户类型",
+      "BindingInfo": {
+        "TableName": "供应商收款账户表",
+        "ColumnName": "账户类型",
+        "GUID": "102951c3-5623-47e4-816a-fb51724b026b"
+      }
+    },
+    "42,8": {
+      "NameUsedInJavaScript": "开户名",
+      "BindingInfo": {
+        "TableName": "供应商收款账户表",
+        "ColumnName": "开户名",
+        "GUID": "46159ba0-a5aa-4a70-8d86-fe8e7d0f42b9"
+      }
+    },
+    "42,11": {
+      "NameUsedInJavaScript": "银行名称",
+      "BindingInfo": {
+        "TableName": "供应商收款账户表",
+        "ColumnName": "银行名称",
+        "GUID": "eadcc669-197b-4dcc-8fba-41a7e1c9bde4"
+      }
+    },
+    "42,14": {
+      "NameUsedInJavaScript": "银行账号",
+      "BindingInfo": {
+        "TableName": "供应商收款账户表",
+        "ColumnName": "银行账号",
+        "GUID": "93ae4e26-cd5a-40a7-9496-9abc52b0e7a3"
+      }
+    },
+    "42,17": {
+      "NameUsedInJavaScript": "开户地址",
+      "BindingInfo": {
+        "TableName": "供应商收款账户表",
+        "ColumnName": "开户地址",
+        "GUID": "ed24f8d0-8349-4e41-91f5-bcf7d2a2f718"
+      }
+    },
+    "42,20": {
+      "NameUsedInJavaScript": "是否默认",
+      "BindingInfo": {
+        "TableName": "供应商收款账户表",
+        "ColumnName": "是否默认",
+        "GUID": "cdcbd5f7-aafd-49a2-88cc-9ff8d8313990"
+      }
+    },
+    "42,23": {
+      "NameUsedInJavaScript": "是否启用",
+      "BindingInfo": {
+        "TableName": "供应商收款账户表",
+        "ColumnName": "是否启用",
+        "GUID": "8e135539-12ca-44b1-9d6f-98159768bf02"
+      }
+    },
+    "42,26": {
+      "NameUsedInJavaScript": "备注",
+      "BindingInfo": {
+        "TableName": "供应商收款账户表",
+        "ColumnName": "备注",
+        "GUID": "227beff7-d3cf-4c26-b430-bc15d8af33b1"
+      }
+    },
+    "56,1": {
+      "ListViewInfo": {
+        "Name": "表格3",
+        "TableName": "供应商开票资料表",
+        "RowIndex": 56,
+        "ColumnIndex": 1,
+        "RowCount": 12,
+        "ColumnCount": 31,
+        "DetailListViewInfo": {
+          "ColumnOfDetailTable": "供应商_ID",
+          "MasterTable": "供应商",
+          "ColumnOfMasterTable": "ID",
+          "DataCommitType": 2
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "样式1",
+        "ShowColumnHeaderInDesigner": true,
+        "IsRowHeaderVisible": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "AllowEditInListview": true,
+        "AllowAddNewRow": true,
+        "ShowDeleteButton": true,
+        "AllowDragFill": true,
+        "AllowDragMove": true,
+        "ColumnOperation": 2,
+        "CommitType": 1
+      }
+    },
+    "57,2": {
+      "NameUsedInJavaScript": "ID",
+      "BindingInfo": {
+        "TableName": "供应商开票资料表",
+        "ColumnName": "ID",
+        "GUID": "41813800-6aa9-43fe-afd1-ba87bd3efe36"
+      }
+    },
+    "57,5": {
+      "NameUsedInJavaScript": "发票类型",
+      "BindingInfo": {
+        "TableName": "供应商开票资料表",
+        "ColumnName": "发票类型",
+        "GUID": "00ee17fc-5fe4-4ee0-a14c-dc279277713f"
+      }
+    },
+    "57,8": {
+      "NameUsedInJavaScript": "开票抬头",
+      "BindingInfo": {
+        "TableName": "供应商开票资料表",
+        "ColumnName": "开票抬头",
+        "GUID": "9fdfe058-0049-4468-ac46-68bbca6b2b3a"
+      }
+    },
+    "57,11": {
+      "NameUsedInJavaScript": "税号",
+      "BindingInfo": {
+        "TableName": "供应商开票资料表",
+        "ColumnName": "税号",
+        "GUID": "a465d1ac-4d2a-48a0-a821-c2b014d34bf5"
+      }
+    },
+    "57,14": {
+      "NameUsedInJavaScript": "开票地址电话",
+      "BindingInfo": {
+        "TableName": "供应商开票资料表",
+        "ColumnName": "开票地址电话",
+        "GUID": "594f5ce6-145c-4b14-bbd0-ab2f474475b1"
+      }
+    },
+    "57,17": {
+      "NameUsedInJavaScript": "开票开户行",
+      "BindingInfo": {
+        "TableName": "供应商开票资料表",
+        "ColumnName": "开票开户行",
+        "GUID": "ab7b510a-23ec-4f77-bda4-2fc795fc2c35"
+      }
+    },
+    "57,20": {
+      "NameUsedInJavaScript": "开票账号",
+      "BindingInfo": {
+        "TableName": "供应商开票资料表",
+        "ColumnName": "开票账号",
+        "GUID": "feb36e83-530a-4760-a533-4ec6da8fe6c0"
+      }
+    },
+    "57,23": {
+      "NameUsedInJavaScript": "是否默认",
+      "BindingInfo": {
+        "TableName": "供应商开票资料表",
+        "ColumnName": "是否默认",
+        "GUID": "d85c45d2-a58d-4168-8d71-3b716f31161a"
+      }
+    },
+    "57,26": {
+      "NameUsedInJavaScript": "是否启用",
+      "BindingInfo": {
+        "TableName": "供应商开票资料表",
+        "ColumnName": "是否启用",
+        "GUID": "9a9a9ea6-1193-4ad4-b091-c8b011fb1692"
+      }
+    },
+    "57,29": {
+      "NameUsedInJavaScript": "备注",
+      "BindingInfo": {
+        "TableName": "供应商开票资料表",
+        "ColumnName": "备注",
+        "GUID": "58a687e5-ebe8-4053-9a64-9c4b0f37d383"
+      }
+    },
+    "70,1": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "='供应商_详情页面 (2)'!B71"
+                      }
+                    ]
+                  },
+                  "value": "添加"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "供应商",
+                    "UpdateType": "add",
+                    "BreakpointIdentity": "e0ba8036-bf2e-433d-baf7-f57f10f590fc"
+                  }
+                ],
+                "ID": "25444ff5-ab1e-4f55-bea5-804eb3df09e7"
+              },
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "='供应商_详情页面 (2)'!B71"
+                      }
+                    ]
+                  },
+                  "value": "更改"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "供应商",
+                    "BreakpointIdentity": "14d5477f-ef6c-40ab-ba45-257c8bf6d09b"
+                  }
+                ],
+                "ID": "0c19c1d7-01ae-446f-aa09-243b50ffbf89"
+              }
+            ],
+            "BreakpointIdentity": "b0962a60-b846-4408-a382-35c18e7d6036"
+          },
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "NavigateType": "back",
+            "BreakpointIdentity": "ec0b5c9e-4c41-4120-b2c9-800ce9d6cfba"
+          }
+        ],
+        "TemplateKey": "_RS_Main1"
+      }
+    },
+    "70,5": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "NavigateType": "back",
+            "BreakpointIdentity": "8f408ed7-f8aa-4a25-9d69-beaaae17cd55"
+          }
+        ],
+        "Text": "取消",
+        "TemplateKey": "_RS_Minor3"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontSize": 16.0,
+        "FontWeight": 0,
+        "TextIndent": 10,
+        "BorderLeft": 0
+      },
+      {
+        "Formatter": 2
+      },
+      {
+        "Underline": true
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Bold",
+        "#1890FF",
+        "@",
+        "Body"
+      ],
+      "Borders": [
+        {
+          "Style": 5,
+          "Color": 1
+        }
+      ]
+    },
+    "CellStyles": {
+      "1,1": 0,
+      "4,1": 1,
+      "4,17": 1,
+      "4,33": 1,
+      "7,17": 1,
+      "7,33": 1,
+      "10,1": 1,
+      "10,17": 1,
+      "10,33": 1,
+      "16,1": 1,
+      "16,17": 1,
+      "19,1": 2,
+      "24,1": 0,
+      "39,1": 0,
+      "54,1": 0
+    },
+    "SheetStyle": {
+      "FontFamily": 3
+    }
+  },
+  "Spans": [
+    "1,1,1,6",
+    "3,1,1,6",
+    "4,1,1,13",
+    "3,17,1,6",
+    "4,17,1,13",
+    "3,33,1,6",
+    "4,33,1,13",
+    "6,1,1,6",
+    "7,1,1,13",
+    "6,17,1,6",
+    "7,17,1,13",
+    "6,33,1,6",
+    "7,33,1,13",
+    "9,1,1,6",
+    "10,1,1,13",
+    "9,17,1,6",
+    "10,17,1,13",
+    "9,33,1,6",
+    "10,33,1,13",
+    "12,1,1,6",
+    "13,1,1,13",
+    "12,17,1,6",
+    "13,17,1,13",
+    "12,33,1,6",
+    "13,33,1,13",
+    "15,1,1,6",
+    "16,1,1,13",
+    "15,17,1,6",
+    "16,17,1,13",
+    "18,1,1,6",
+    "19,1,4,13",
+    "24,1,1,6",
+    "28,1,10,28",
+    "27,2,1,3",
+    "26,2,1,3",
+    "27,5,1,3",
+    "26,5,1,3",
+    "27,8,1,3",
+    "26,8,1,3",
+    "27,11,1,3",
+    "26,11,1,3",
+    "27,14,1,3",
+    "26,14,1,3",
+    "27,17,1,3",
+    "26,17,1,3",
+    "27,20,1,3",
+    "26,20,1,3",
+    "27,23,1,3",
+    "26,23,1,3",
+    "27,26,1,3",
+    "26,26,1,3",
+    "39,1,1,6",
+    "43,1,10,28",
+    "42,2,1,3",
+    "41,2,1,3",
+    "42,5,1,3",
+    "41,5,1,3",
+    "42,8,1,3",
+    "41,8,1,3",
+    "42,11,1,3",
+    "41,11,1,3",
+    "42,14,1,3",
+    "41,14,1,3",
+    "42,17,1,3",
+    "41,17,1,3",
+    "42,20,1,3",
+    "41,20,1,3",
+    "42,23,1,3",
+    "41,23,1,3",
+    "42,26,1,3",
+    "41,26,1,3",
+    "54,1,1,6",
+    "58,1,10,31",
+    "57,2,1,3",
+    "56,2,1,3",
+    "57,5,1,3",
+    "56,5,1,3",
+    "57,8,1,3",
+    "56,8,1,3",
+    "57,11,1,3",
+    "56,11,1,3",
+    "57,14,1,3",
+    "56,14,1,3",
+    "57,17,1,3",
+    "56,17,1,3",
+    "57,20,1,3",
+    "56,20,1,3",
+    "57,23,1,3",
+    "56,23,1,3",
+    "57,26,1,3",
+    "56,26,1,3",
+    "57,29,1,3",
+    "56,29,1,3",
+    "70,1,1,3",
+    "70,5,1,3"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "ShouldCheckDirty": true,
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//TJ8DQCs4k6vsMBSkeYA7wXkeOGH97Pt9CMPAt44sVFajKivCIt1ey6THG+mhh11KcnXnD5ReFIPZkH1GfoVg+pzAFcUsOvljcdXZmG0al7gJcHyXX5M/9pmE/Ko5XofpyzDq7sTphAEphAfqigiyIpyC9uyPU24q4bjlIrWKkec0CCbZpzR1mfKChff49stozSZnlUOHGaeYdBXo5T5Iob+NnG+VIHwTHWSU3dAzYBY9aRrIbkIte30QdXC6AeH2IQuKvrHDxOYtKpBK1gtDj0mrmZVVxOv2OpwuVYJebwhvjIVvIn2SIeNoVLDnWXRsVjo2FLdLV+MKmlk7j6lSG05wpNzwjB84ECJXTmCwXEU49BAval7Ax+3IEQf5gUT0xK29YU2iKucSQ54A35s1bKHhRbmBzI73MzjVcj7nz/bJKr7xbaK1758TcL60y/GZdLaMjaAVXljV9wnkYaI4uQ4YzytUDd52AzH5kYjcIFfbO9DmFfuffhlLMzxaq4Kp+VWduJD5p877eYmhZfuvgBF9aXcWylFaioBXIYjFG1XUH9zlwaDQn0uYpuM/k8sf3KxrOQmeovkEX0Wyxa6xzR4d+TvmCwAoS4fvYuxvUyhzn/zWnkll86HWS93jvgA9MMJlYa8J+neJyQ0ZS10VFaultwF2ndOXHLsFL19OeFjpwhk4nnsc6zJZjr7CBrWCfa2q8H9Nl15cS4/gdKJFjvTIW6j3nSvKoBG9ntQm8lOplIvktM3nKhJBpEsNDsVs5hZCVZBrduxHveW5AFqiCYamNMdUCs9hsa9qNShbMRHao6h7hvue65d+6Jhk5zexkzcbm61qrfWgLm+FKvhPAP2hcTQ/yNLVi6x3GPvZB2IxIBmpkfWVZCNK34xYmDgB0ATOw2s3zV8vuP7EKoVSsg==|920

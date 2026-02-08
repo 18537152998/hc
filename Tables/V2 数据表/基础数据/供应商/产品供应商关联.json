@@ -121,11 +121,18 @@
   ],
   "Relations": [
     {
-      "PrimaryTable": "库存表",
+      "PrimaryTable": "公司产品表",
       "PrimaryColumn": "ID",
       "ForeignTable": "产品供应商关联",
       "ForeignColumn": "公司产品ID",
-      "IsDetailTableRelation": true
+      "IsDetailTableRelation": false
+    },
+    {
+      "PrimaryTable": "供应商",
+      "PrimaryColumn": "ID",
+      "ForeignTable": "产品供应商关联",
+      "ForeignColumn": "供应商ID",
+      "IsDetailTableRelation": false
     }
   ],
   "Indexes": []
